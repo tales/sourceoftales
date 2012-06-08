@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="55" height="42" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="terrains" tilewidth="32" tileheight="32">
+  <image source="../tiles/terrains.png" width="480" height="512"/>
+  <terraintypes>
+   <terrain name="Dirt" tile="46" distances=",0,2,1,1"/>
+   <terrain name="Dark Dirt" tile="49" distances=",2,0,1,2"/>
+   <terrain name="Grass" tile="52" distances=",1,1,0,1"/>
+   <terrain name="Water" tile="58" distances=",1,2,1,0"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="1,1,1,"/>
+  <tile id="5" terrain="1,1,,1"/>
+  <tile id="7" terrain="2,2,2,"/>
+  <tile id="8" terrain="2,2,,2"/>
+  <tile id="13" terrain="3,3,3,"/>
+  <tile id="14" terrain="3,3,,3"/>
+  <tile id="16" terrain="0,,0,0"/>
+  <tile id="17" terrain=",0,0,0"/>
+  <tile id="19" terrain="1,,1,1"/>
+  <tile id="20" terrain=",1,1,1"/>
+  <tile id="22" terrain="2,,2,2"/>
+  <tile id="23" terrain=",2,2,2"/>
+  <tile id="28" terrain="3,,3,3"/>
+  <tile id="29" terrain=",3,3,3"/>
+  <tile id="30" terrain=",,,0"/>
+  <tile id="31" terrain=",,0,0"/>
+  <tile id="32" terrain=",,0,"/>
+  <tile id="33" terrain=",,,1"/>
+  <tile id="34" terrain=",,1,1"/>
+  <tile id="35" terrain=",,1,"/>
+  <tile id="36" terrain=",,,2"/>
+  <tile id="37" terrain=",,2,2"/>
+  <tile id="38" terrain=",,2,"/>
+  <tile id="42" terrain=",,,3"/>
+  <tile id="43" terrain=",,3,3"/>
+  <tile id="44" terrain=",,3,"/>
+  <tile id="45" terrain=",0,,0"/>
+  <tile id="46" terrain="0,0,0,0"/>
+  <tile id="47" terrain="0,,0,"/>
+  <tile id="48" terrain=",1,,1"/>
+  <tile id="49" terrain="1,1,1,1"/>
+  <tile id="50" terrain="1,,1,"/>
+  <tile id="51" terrain=",2,,2"/>
+  <tile id="52" terrain="2,2,2,2"/>
+  <tile id="53" terrain="2,,2,"/>
+  <tile id="57" terrain=",3,,3"/>
+  <tile id="58" terrain="3,3,3,3"/>
+  <tile id="59" terrain="3,,3,"/>
+  <tile id="60" terrain=",0,,"/>
+  <tile id="61" terrain="0,0,,"/>
+  <tile id="62" terrain="0,,,"/>
+  <tile id="63" terrain=",1,,"/>
+  <tile id="64" terrain="1,1,,"/>
+  <tile id="65" terrain="1,,,"/>
+  <tile id="66" terrain=",2,,"/>
+  <tile id="67" terrain="2,2,,"/>
+  <tile id="68" terrain="2,,,"/>
+  <tile id="72" terrain=",3,,"/>
+  <tile id="73" terrain="3,3,,"/>
+  <tile id="74" terrain="3,,,"/>
+  <tile id="75" terrain="0,0,0,0"/>
+  <tile id="76" terrain="0,0,0,0"/>
+  <tile id="77" terrain="0,0,0,0"/>
+  <tile id="78" terrain="1,1,1,1"/>
+  <tile id="79" terrain="1,1,1,1"/>
+  <tile id="80" terrain="1,1,1,1"/>
+  <tile id="81" terrain="2,2,2,2"/>
+  <tile id="82" terrain="2,2,2,2"/>
+  <tile id="83" terrain="2,2,2,2"/>
+  <tile id="87" terrain="3,3,3,3"/>
+  <tile id="88" terrain="3,3,3,3"/>
+  <tile id="89" terrain="3,3,3,3"/>
+  <tile id="90" terrain="0,2,2,0"/>
+  <tile id="91" terrain="0,0,0,2"/>
+  <tile id="92" terrain="0,0,2,0"/>
+  <tile id="93" terrain="1,2,2,1"/>
+  <tile id="94" terrain="1,1,1,2"/>
+  <tile id="95" terrain="1,1,2,1"/>
+  <tile id="105" terrain="2,0,0,2"/>
+  <tile id="106" terrain="0,2,0,0"/>
+  <tile id="107" terrain="2,0,0,0"/>
+  <tile id="108" terrain="2,1,1,2"/>
+  <tile id="109" terrain="1,2,1,1"/>
+  <tile id="110" terrain="2,1,1,1"/>
+  <tile id="120" terrain="2,2,2,0"/>
+  <tile id="121" terrain="2,2,0,0"/>
+  <tile id="122" terrain="2,2,0,2"/>
+  <tile id="123" terrain="2,2,2,1"/>
+  <tile id="124" terrain="2,2,1,1"/>
+  <tile id="125" terrain="2,2,1,2"/>
+  <tile id="135" terrain="2,0,2,0"/>
+  <tile id="136" terrain="0,0,0,0"/>
+  <tile id="137" terrain="0,2,0,2"/>
+  <tile id="138" terrain="2,1,2,1"/>
+  <tile id="139" terrain="1,1,1,1"/>
+  <tile id="140" terrain="1,2,1,2"/>
+  <tile id="150" terrain="2,0,2,2"/>
+  <tile id="151" terrain="0,0,2,2"/>
+  <tile id="152" terrain="0,2,2,2"/>
+  <tile id="153" terrain="2,1,2,2"/>
+  <tile id="154" terrain="1,1,2,2"/>
+  <tile id="155" terrain="1,2,2,2"/>
+  <tile id="165" terrain="0,3,3,0"/>
+  <tile id="166" terrain="0,0,0,3"/>
+  <tile id="167" terrain="0,0,3,0"/>
+  <tile id="168" terrain="2,3,3,2"/>
+  <tile id="169" terrain="2,2,2,3"/>
+  <tile id="170" terrain="2,2,3,2"/>
+  <tile id="172" terrain="2,0,2,3"/>
+  <tile id="173" terrain="0,2,3,2"/>
+  <tile id="180" terrain="3,0,0,3"/>
+  <tile id="181" terrain="0,3,0,0"/>
+  <tile id="182" terrain="3,0,0,0"/>
+  <tile id="183" terrain="3,2,2,3"/>
+  <tile id="184" terrain="2,3,2,2"/>
+  <tile id="185" terrain="3,2,2,2"/>
+  <tile id="187" terrain="2,3,2,0"/>
+  <tile id="188" terrain="3,2,0,2"/>
+  <tile id="195" terrain="3,3,3,0"/>
+  <tile id="196" terrain="3,3,0,0"/>
+  <tile id="197" terrain="3,3,0,3"/>
+  <tile id="198" terrain="3,3,3,2"/>
+  <tile id="199" terrain="3,3,2,2"/>
+  <tile id="200" terrain="3,3,2,3"/>
+  <tile id="202" terrain="3,3,0,0"/>
+  <tile id="210" terrain="3,0,3,0"/>
+  <tile id="211" terrain="0,0,0,0"/>
+  <tile id="212" terrain="0,3,0,3"/>
+  <tile id="213" terrain="3,2,3,2"/>
+  <tile id="214" terrain="2,2,2,2"/>
+  <tile id="215" terrain="2,3,2,3"/>
+  <tile id="216" terrain="3,0,3,2"/>
+  <tile id="217" terrain="0,0,0,0"/>
+  <tile id="218" terrain="2,3,0,3"/>
+  <tile id="225" terrain="3,0,3,3"/>
+  <tile id="226" terrain="0,0,3,3"/>
+  <tile id="227" terrain="0,3,3,3"/>
+  <tile id="228" terrain="3,2,3,3"/>
+  <tile id="229" terrain="2,2,3,3"/>
+  <tile id="230" terrain="2,3,3,3"/>
+  <tile id="231" terrain="3,0,3,3"/>
+  <tile id="232" terrain="0,0,3,3"/>
+  <tile id="233" terrain="0,3,3,3"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="55" height="42">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+</map>
