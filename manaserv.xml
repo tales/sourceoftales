@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<!--
+	An example configuration file.
+
+	Documentation: http://doc.manasource.org/manaserv.xml
+
+	Developers:	If you add any new parameters read from this configuration file
+	don't forget to update the wiki documentation!
+-->
+<configuration>
+<!--
+    Note that you can split the config into multiple files. For example you can
+    create a global config file and let server specific settings into others,
+    including the main one.
+    Including works like this:
+    <include file="otherconfig.xml" />
+-->
+
+<!-- Database configuration ***************************************************
+ Uncomment one of the following parts according to the database backend you
+ would like to use.
+-->
+
+<!--
+	SQLite specific configuration.
+
+	sqlite_database:	name and path to the sqlite database file
+						optional, default="mana.db"
+-->
+<!-- <option name="sqlite_database" value="mana.db"/> -->
+
+
+<!--
+	mySQL specific configuration.
+
+	mysql_hostname:		ip or hostname of the database server
+						optional, default="localhost"
+	mysql_port:			the port where the mysql server listens to
+						optional, default=3306
+	mysql_database:		name of the installed database
+						optional, default="mana"
+	mysql_username:		name of the user to connect to the database server
+						optional, default="mana"
+	mysql_password:		password to use whith the mysql_username
+						optional, default="mana"
+-->
+<!--
+<option name="mysql_hostname" value="localhost"/>
+<option name="mysql_port" value="3306"/>
+<option name="mysql_database" value="mana"/>
+<option name="mysql_username" value="mana"/>
+<option name="mysql_password" value="mana"/>
+-->
+
+
+<!--
+	PostgreSQL specific configuration.
+
+	TODO!
+-->
+
+<!-- end of database configuration **************************************** -->
+
+<!-- Paths configuration ******************************************************
+ Set here the different paths used by both the server to find data.
+-->
+ <!-- Paths to data files -->
+ <option name="serverPath" value="." />
+ <option name="worldDataPath" value="." />
+
+<!-- end of paths configuration ******************************************* -->
+
+<!-- Logs configuration *******************************************************
+ Set here the different paths used by both the server
+ to store statistics and log files.
+-->
+
+ <!--
+ Log output configuration, relative to the folders where the servers were ran.
+ -->
+ <option name="log_statisticsFile" value="./manaserv.stats"/>
+ <option name="log_accountServerFile" value="./manaserv-account.log"/>
+ <option name="log_gameServerFile" value="./manaserv-game.log"/>
+
+ <!--
+ Log levels configuration.
+ Available values are:
+   0. Fatal Errors only.
+   1. All Errors.
+   2. Plus warnings.
+   3. Plus standard information.
+   4. Plus debugging information.
+ -->
+ <option name="log_gameServerLogLevel" value="2"/>
+ <option name="log_accountServerLogLevel" value="2"/>
+
+ <!--
+ Enable log rotation when one log file reaches a max size
+ and/or the current day has changed.
+ -->
+ <option name="log_enableRotation" value="false"/>
+ <!--
+ Set the max log file size. Disabled if set to 0.
+ -->
+ <option name="log_maxFileSize" value="1024"/>
+ <!--
+ Change the log file each day.
+ -->
+ <option name="log_perDay" value="false"/>
+ 
+ <!--
+ Set whether both servers will log also on the standard output.
+ -->
+ <option name="log_toStandardOutput" value="true"/>
+
+<!-- end of logs configuration ****************************************** -->
+
+<!-- Network options configuration ********************************************
+ Set here the different network-related options to set up the servers
+ hosts and ports, for instance.
+-->
+
+ <!--
+ ATTENTION: This is a very important option!
+ the net password is used to let the servers (game and account) speak to each
+ other in a crypted way.
+ This option is REQUIRED FOR THE SERVERS TO START.
+ -->
+ <option name="net_password" value="changeMe"/>
+
+ <!--
+ The game server uses this address to connect to the account server. Clients
+ will also need to be able to connect to the account server through it.
+ Don't use the 'localhost' value when running a public server,
+ but rather the public name.
+
+ The port options set the port to listen to clients and to game servers
+ respectively.
+ -->
+ <option name="net_accountHost" value="localhost"/>
+ <option name="net_accountListenToClientPort" value="9601"/>
+ <option name="net_accountListenToGamePort" value="9602"/>
+
+ <!--
+ Host the chat server will listen to. Defaulted to 'localhost'.
+ Don't use the 'localhost' value when running a public server,
+ but rather the public name.
+ -->
+ <option name="net_chatHost" value="localhost"/>
+ <option name="net_chatListenToClientPort" value="9603"/>
+ <!-- needed to set when hosting behind router or in situations
+      where you cannot bind the server to the public url -->
+ <!-- <option name="net_publicChatHost" value="mydomain.org"/> -->
+
+ <!--
+ The clients use this address to connect to a game server on this machine.
+ Don't use the 'localhost' value when running a public server,
+ but rather the public name.
+ -->
+ <option name="net_gameHost" value="localhost"/>
+ <option name="net_gameListenToClientPort" value="9604"/>
+ <!-- needed to set when hosting behind router or in situations
+      where you cannot bind the server to the public url -->
+ <!-- <option name="net_publicGameHost" value="mydomain.org"/> -->
+
+ <!--
+ Update host url: E.g.: "http://updates.manasource.org/"
+ It gives the http folder where the update files can be downloaded.
+ -->
+ <option name="net_defaultUpdateHost" value="" />
+
+ <!--
+ Client data url: E.g.: "http://data.manasource.org/"
+ Example for local use: "file:///home/user/clientdata/"
+ The base URL where the client will get its data from. This is a new update
+ mechanism that replaces the update host, used by the Mana Mobile client.
+ -->
+ <option name="net_clientDataUrl" value="" />
+
+ <!-- Max connected clients allowed. -->
+ <option name="net_maxClients" value="1000"/>
+
+ <!-- Debug mode for network messages (increases bandwidth usage) -->
+ <option name="net_debugMode" value="false"/>
+
+<!-- end of network options configuration ********************************* -->
+
+<!-- Accounts configuration ***************************************************
+ Set here the different options related to players accounts
+ and used at their creation.
+-->
+
+ <option name="account_allowRegister" value="1" />
+ <option name="account_denyRegisterReason"
+         value="The server administrator has disabled automatic registration!"/>
+ <option name="account_minEmailLength" value="7" />
+ <option name="account_maxEmailLength" value="128" />
+ <option name="account_minNameLength" value="4" />
+ <option name="account_maxNameLength" value="15" />
+ <option name="account_minPasswordLength" value="6" />
+ <option name="account_maxPasswordLength" value="25" />
+ <option name="account_maxCharacters" value="3" />
+ <option name="account_maxGuildsPerCharacter" value="1" />
+
+<!-- end of accounts configuration **************************************** -->
+
+<!-- Characters configuration *************************************************
+ Set here the different options related to players characters.
+-->
+
+ <option name="char_numHairStyles" value="17" />
+ <option name="char_numHairColors" value="11" />
+ <option name="char_numGenders" value="2" />
+ <option name="char_minNameLength" value="4" />
+ <option name="char_maxNameLength" value="25" />
+
+ <!--
+ New player starting location. The map should be defined in data/maps.xml.
+ -->
+ <option name="char_startMap" value="1"/>
+ <!--
+     Respawn coordinates on the start map:
+     In pixels, not in tiles.
+ -->
+ <option name="char_startX" value="1024"/>
+ <option name="char_startY" value="1024"/>
+
+ <!-- Respawn options -->
+ <option name="char_respawnMap" value="1"/>
+ <!--
+     Respawn coordinates on the respawn map:
+     In pixels, not in tiles.
+ -->
+ <option name="char_respawnX" value="1024"/>
+ <option name="char_respawnY" value="1024"/>
+
+ <!-- Default Map id at character loading -->
+ <option name="char_defaultMap" value="1" />
+
+<!-- end of characters configuration ************************************** -->
+
+<!-- Game configuration *************************************************
+ Set here the different options related to the gameplay.
+-->
+
+ <!--
+ Set the player's character visual range around him in pixels.
+ Monsters and other beings further than this value won't appear in its sight.
+ -->
+ <option name="game_visualRange" value="448"/>
+ <!--
+ The time in seconds an item standing on the floor will remain before vanishing.
+ Set it to 0 to disable it.
+ -->
+ <option name="game_floorItemDecayTime" value="0" />
+
+ <!--
+ Set how much time the auto-regeneration is stopped when hurt.
+ (in 1/10th seconds.)
+ -->
+ <option name="game_hpRegenBreakAfterHit" value="10" />
+
+ <!--
+ Default PVP (Player-versus-player) rule on a map not setting this property.
+ Values available: none (No PVP), free (All PVP).
+ -->
+ <option name="game_defaultPvp" value="free" />
+
+<!-- end of game configuration ******************************************** -->
+
+<!-- Commands configuration ***************************************************
+ Set here the different options related to chat commands.
+-->
+
+ <!--
+ Default mute command length (in seconds.)
+ -->
+ <option name="command_defaultMuteLength" value="60" />
+
+<!-- end of commands configuration **************************************** -->
+
+<!-- Chat configuration ***************************************************
+ Set here the different options related to chat handling.
+-->
+
+ <option name="chat_maxChannelNameLength" value="15" />
+
+ <!--
+ TODO: Dehard-code those values, or redo the chat channeling system
+ to not make use of them.
+        MAX_PUBLIC_CHANNELS_RANGE  = 1000,
+        MAX_PRIVATE_CHANNELS_RANGE = 10000,
+        MAX_CHANNEL_ANNOUNCEMENT   = 150,
+        MAX_CHANNEL_PASSWORD       = 12,
+ -->
+
+<!-- end of chat configuration ******************************************** -->
+
+<!-- Mail configuration ***************************************************
+ Set here the different options related to the mail system.
+-->
+
+ <option name="mail_maxAttachments" value="3" />
+ <option name="mail_maxLetters" value="10" />
+
+<!-- end of mail configuration ******************************************** -->
+
+<!-- Scripting configuration ********************************************** -->
+
+ <option name="script_engine" value="lua"/>
+ <option name="script_mainFile" value="scripts/main.lua"/>
+
+<!-- End of scripting configuration *************************************** -->
+
+</configuration>

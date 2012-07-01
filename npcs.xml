@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file maps the NPC appearance IDs the server is sending to the
+    spritesheet(s).
+
+    Note that it is possible to give an NPC multiple sprites. In this case the
+    sprites are drawn in order of declaration.
+-->
+<npcs>
+    <npc id="1"><sprite variant="0">npcs/static-npcs.xml</sprite></npc><!-- Barber 1&2 -->
+    <!-- ... -->
+    <npc id="3"><sprite variant="2">npcs/static-npcs.xml</sprite></npc><!-- Merchant -->
+    <!-- ... -->
+    <npc id="5"><sprite variant="4">npcs/static-npcs.xml</sprite></npc><!-- Smith -->
+    <!-- ... -->
+    <npc id="8"><sprite variant="7">npcs/static-npcs.xml</sprite></npc><!-- Banker -->
+    <npc id="9"><sprite variant="8">npcs/static-npcs.xml</sprite></npc><!-- Tamer -->
+    <!-- ... -->
+    <npc id="11"><sprite variant="10">npcs/static-npcs.xml</sprite></npc><!-- Welcoming girl -->
+</npcs>
