@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<sprite name="player" action="stand">
+    <imageset
+        name="walkcycle"
+        src="sprites/characters/male_walkcycle.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="hurt"
+        src="sprites/characters/male_hurt.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="slash"
+        src="sprites/characters/male_slash.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="spellcast"
+        src="sprites/characters/male_spellcast.png"
+        width="64"
+        height="64"/>
+
+    <action
+        name="stand"
+        imageset="walkcycle">
+        <animation direction="up">
+            <frame index="0"/>
+        </animation>
+        <animation direction="left">
+            <frame index="9"/>
+        </animation>
+        <animation direction="down">
+            <frame index="18"/>
+        </animation>
+        <animation direction="right">
+            <frame index="27"/>
+        </animation>
+    </action>
+
+    <action
+        name="walk"
+        imageset="walkcycle">
+        <animation direction="up">
+            <sequence start="1" end="8" delay="75"/>
+        </animation>
+        <animation direction="left">
+            <sequence start="10" end="17" delay="75"/>
+        </animation>
+        <animation direction="down">
+            <sequence start="19" end="26" delay="75"/>
+        </animation>
+        <animation direction="right">
+            <sequence start="28" end="35" delay="75"/>
+        </animation>
+    </action>
+
+    <action
+        name="sit"
+        imageset="walkcycle">
+    </action>
+
+    <action
+        name="dead"
+        imageset="hurt">
+        <animation direction="up">
+            <sequence start="0" end="4" delay="75"/>
+            <frame index="5"/>
+            <end/>
+        </animation>
+    </action>
+
+    <action
+        name="attack"
+        imageset="slash">
+        <animation direction="up">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="left">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="down">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="right">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+    </action>
+
+    <action
+        name="attack_bow"
+        imageset="walkcycle">
+    </action>
+</sprite>

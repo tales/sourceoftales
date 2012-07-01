@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<sprite>
+    <action name="stand" imageset="base">
+        <animation direction="down">
+            <frame index="0" offsetX="0" offsetY="0"/>
+        </animation>
+    </action>
+</sprite>
