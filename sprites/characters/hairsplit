@@ -1,0 +1,8 @@
+#!/bin/sh
+# ./hairsplit filename
+# filename without .png
+# generates filename#.png
+convert $1.png -crop 40x+80+0 -flop $1_tmp.png
+convert $1.png $1_tmp.png +append $1_tmp.png
+convert $1_tmp.png -crop x40 $1%d.png
+rm $1_tmp.png
