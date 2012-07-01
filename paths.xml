@@ -33,12 +33,12 @@ Also, don't forget to add the '/' path separator at the end of folder values.
 
 <configuration>
     <!-- Required data paths -->
-    <option name="itemIcons" value="graphics/items/" />
+    <option name="itemIcons" value="items/" />
     <option name="unknownItemFile" value="unknown.png" />
-    <option name="sprites" value="graphics/sprites/" />
+    <option name="sprites" value="sprites/" />
     <option name="spriteErrorFile" value="error.xml" />
 
-    <option name="particles" value="graphics/particles/" />
+    <option name="particles" value="particles/" />
     <option name="levelUpEffectFile" value="levelup.particle.xml" />
     <option name="portalEffectFile" value="warparea.particle.xml" />
 
@@ -49,6 +49,6 @@ Also, don't forget to add the '/' path separator at the end of folder values.
     <option name="attackSfxFile" value="fist-swish.ogg" />
     <option name="music" value="music/" />
 
-    <option name="wallpapers" value="graphics/images/" />
+    <option name="wallpapers" value="images/" />
     <option name="wallpaperFile" value="login_wallpaper.png" />
 </configuration>
