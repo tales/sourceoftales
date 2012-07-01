@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<sprite name="player" action="stand">
+    <action
+        name="stand"
+        imageset="walkcycle">
+        <animation direction="up">
+            <frame index="0"/>
+        </animation>
+        <animation direction="left">
+            <frame index="9"/>
+        </animation>
+        <animation direction="down">
+            <frame index="18"/>
+        </animation>
+        <animation direction="right">
+            <frame index="27"/>
+        </animation>
+    </action>
+
+    <action
+        name="walk"
+        imageset="walkcycle">
+        <animation direction="up">
+            <sequence start="0" end="8" delay="75"/>
+        </animation>
+        <animation direction="left">
+            <sequence start="9" end="17" delay="75"/>
+        </animation>
+        <animation direction="down">
+            <sequence start="18" end="26" delay="75"/>
+        </animation>
+        <animation direction="right">
+            <sequence start="27" end="35" delay="75"/>
+        </animation>
+    </action>
+
+    <action
+        name="sit"
+        imageset="walkcycle">
+    </action>
+
+    <action
+        name="dead"
+        imageset="hurt">
+        <animation direction="up">
+            <sequence start="0" end="4" delay="75"/>
+            <frame index="5" delay="-1"/>
+        </animation>
+    </action>
+
+    <action
+        name="attack"
+        imageset="slash">
+        <animation direction="up">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="left">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="down">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+        <animation direction="right">
+            <sequence start="" end="" delay="75"/>
+            <end/>
+        </animation>
+    </action>
+
+    <action
+        name="attack_bow"
+        imageset="walkcycle">
+    </action>
+</sprite>

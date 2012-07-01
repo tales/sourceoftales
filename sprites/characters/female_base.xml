@@ -2,22 +2,22 @@
 <sprite name="player" action="stand">
     <imageset
         name="walkcycle"
-        src="sprites/characters/male_walkcycle.png"
+        src="sprites/characters/female_walkcycle.png"
         width="64"
         height="64"/>
     <imageset
         name="hurt"
-        src="sprites/characters/male_hurt.png"
+        src="sprites/characters/female_hurt.png"
         width="64"
         height="64"/>
     <imageset
         name="slash"
-        src="sprites/characters/male_slash.png"
+        src="sprites/characters/female_slash.png"
         width="64"
         height="64"/>
     <imageset
         name="spellcast"
-        src="sprites/characters/male_spellcast.png"
+        src="sprites/characters/female_spellcast.png"
         width="64"
         height="64"/>
 

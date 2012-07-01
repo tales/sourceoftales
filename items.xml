@@ -53,7 +53,7 @@
     <!-- Base race player sprite -->
     <item id="-100" type="racesprite" name="Human">
         <sprite gender="male">characters/male_base.xml</sprite>
-        <sprite gender="female">races/humans/human_female_base.xml</sprite>
+        <sprite gender="female">characters/female_base.xml</sprite>
     </item>
 
     <!-- Example of an usable items -->
