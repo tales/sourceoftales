@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="dirt" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="dirt2" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt2.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="37" name="grass" tilewidth="32" tileheight="32">
+  <image source="../tiles/grass.png" width="96" height="192"/>
+ </tileset>
+ <layer name="regions" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoD7Qx0HD2Po42OhqqemGoQTwhRE2Nr3NozYYaf4dBaNguAAAY4sHtUAGAAA=
+  </data>
+ </layer>
+ <layer name="input_Terrain" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoD7Qh9LcUFoWTY4bSR5drT4DdQC6uUMJ6DMg3I/M5kYTJ9ZvuMIclz30BtwMqO5DTgvY3E2MedjCCZc9o2AUjALyAAAFcTehQAYAAA==
+  </data>
+ </layer>
+ <layer name="output_Terrain-grass" width="20" height="20" opacity="0.65">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoD7QJyCnj4NNSC85bqCWefQE+MIIG5ve5lEbjDT/joJRMFwAAD81XwxABgAA
+  </data>
+ </layer>
+ <layer name="output_Terrain-dirt" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoB3gxiHOBaV5kMT4aOQGDhqZOxCAH43PS4JedijNSSW3UBMwMSDiH0QzI8lhSyuEALpamBmgtMAGZbMyDK+0MQpGwUAAAHwFaiFABgAA
+  </data>
+ </layer>
+ <layer name="output_Terrain-dirt2" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoD2QpYMdo2AUjIJRMAroCwANs+udQAYAAA==
+  </data>
+ </layer>
+</map>

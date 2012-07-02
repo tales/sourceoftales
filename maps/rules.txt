@@ -1,1 +1,2 @@
 ../automapping/castle_walls.tmx
+../automapping/terrain.tmx
