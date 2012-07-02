@@ -1,6 +1,17 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/farming_fishing.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/fence.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/fence_alt.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/plants.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/plowed_soil.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/reed.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/sand.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/sandwater.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/wheat.png
+daneeklu                           CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale1.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale5.png
