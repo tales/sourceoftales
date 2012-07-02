@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castlewalls" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlewalls.png" width="384" height="480"/>
+ </tileset>
+ <layer name="regions" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA3gH2HmjYJRMApGwUgDAKiwAnNABgAA
+  </data>
+ </layer>
+ <layer name="input_Ground" width="20" height="20" opacity="0.66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA3gH2HmjYJRMApGwUgDAKiwAnNABgAA
+  </data>
+ </layer>
+ <layer name="output_Ground_auto" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA2QprJ56lQ2z5jK5o2CUTAKRsFIAwBcS9oiQAYAAA==
+  </data>
+ </layer>
+</map>
