@@ -2,56 +2,56 @@
 <sprite>
     <action name="default" imageset="base">
         <animation direction="down">
-            <frame index="0" offsetX="0" offsetY="-20"/>
+            <frame index="0" offsetX="0" offsetY="-18"/>
         </animation>
         <animation direction="up">
-            <frame index="1" offsetX="0" offsetY="-20"/>
+            <frame index="1" offsetX="0" offsetY="-18"/>
         </animation>
         <animation direction="right">
-            <frame index="2" offsetX="-2" offsetY="-20"/>
+            <frame index="2" offsetX="-2" offsetY="-18"/>
         </animation>
         <animation direction="left">
-            <frame index="3" offsetX="2" offsetY="-20"/>
+            <frame index="3" offsetX="2" offsetY="-18"/>
         </animation>
     </action>
 
     <action name="walk" imageset="base">
         <animation direction="down">
-            <frame index="0" offsetX="0" offsetY="-20" delay="150"/>
-            <frame index="0" offsetX="0" offsetY="-19" delay="75"/>
-            <frame index="0" offsetX="0" offsetY="-20" delay="225"/>
-            <frame index="0" offsetX="0" offsetY="-19" delay="75"/>
-            <frame index="0" offsetX="0" offsetY="-20" delay="75"/>
+            <frame index="0" offsetX="0" offsetY="-18" delay="150"/>
+            <frame index="0" offsetX="0" offsetY="-17" delay="75"/>
+            <frame index="0" offsetX="0" offsetY="-18" delay="225"/>
+            <frame index="0" offsetX="0" offsetY="-17" delay="75"/>
+            <frame index="0" offsetX="0" offsetY="-18" delay="75"/>
         </animation>
         <animation direction="up">
-            <frame index="1" offsetX="0" offsetY="-20" delay="75"/>
-            <frame index="1" offsetX="0" offsetY="-19" delay="75"/>
-            <frame index="1" offsetX="0" offsetY="-20" delay="225"/>
-            <frame index="1" offsetX="0" offsetY="-19" delay="75"/>
-            <frame index="1" offsetX="0" offsetY="-20" delay="150"/>
+            <frame index="1" offsetX="0" offsetY="-18" delay="75"/>
+            <frame index="1" offsetX="0" offsetY="-17" delay="75"/>
+            <frame index="1" offsetX="0" offsetY="-18" delay="225"/>
+            <frame index="1" offsetX="0" offsetY="-17" delay="75"/>
+            <frame index="1" offsetX="0" offsetY="-18" delay="150"/>
         </animation>
         <animation direction="right">
-            <frame index="2" offsetX="-2" offsetY="-19" delay="150"/>
-            <frame index="2" offsetX="-2" offsetY="-20" delay="150"/>
-            <frame index="2" offsetX="-2" offsetY="-19" delay="150"/>
-            <frame index="2" offsetX="-2" offsetY="-20" delay="150"/>
+            <frame index="2" offsetX="-2" offsetY="-17" delay="150"/>
+            <frame index="2" offsetX="-2" offsetY="-18" delay="150"/>
+            <frame index="2" offsetX="-2" offsetY="-17" delay="150"/>
+            <frame index="2" offsetX="-2" offsetY="-18" delay="150"/>
         </animation>
         <animation direction="left">
-            <frame index="3" offsetX="2" offsetY="-19" delay="150"/>
-            <frame index="3" offsetX="2" offsetY="-20" delay="150"/>
-            <frame index="3" offsetX="2" offsetY="-19" delay="150"/>
-            <frame index="3" offsetX="2" offsetY="-20" delay="150"/>
+            <frame index="3" offsetX="2" offsetY="-17" delay="150"/>
+            <frame index="3" offsetX="2" offsetY="-18" delay="150"/>
+            <frame index="3" offsetX="2" offsetY="-17" delay="150"/>
+            <frame index="3" offsetX="2" offsetY="-18" delay="150"/>
         </animation>
     </action>
 
     <action name="dead" imageset="base">
         <animation direction="down">
-            <frame index="0" offsetX="0" offsetY="-20" delay="75"/>
-            <frame index="0" offsetX="2" offsetY="-19" delay="75"/>
-            <frame index="0" offsetX="2" offsetY="-12" delay="75"/>
-            <frame index="0" offsetX="2" offsetY="-8" delay="75"/>
-            <frame index="1" offsetX="2" offsetY="-2" delay="75"/>
-            <frame index="1" offsetX="3" offsetY="8" delay="-1"/>
+            <frame index="0" offsetX="0" offsetY="-18" delay="75"/>
+            <frame index="0" offsetX="2" offsetY="-17" delay="75"/>
+            <frame index="0" offsetX="2" offsetY="-10" delay="75"/>
+            <frame index="0" offsetX="2" offsetY="-6" delay="75"/>
+            <frame index="1" offsetX="2" offsetY="0" delay="75"/>
+            <frame index="1" offsetX="3" offsetY="10" delay="-1"/>
         </animation>
     </action>
 </sprite>
