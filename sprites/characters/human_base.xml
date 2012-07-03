@@ -21,16 +21,16 @@
         name="walk"
         imageset="walkcycle">
         <animation direction="up">
-            <sequence start="0" end="8" delay="75"/>
+            <sequence start="1" end="8" delay="75"/>
         </animation>
         <animation direction="left">
-            <sequence start="9" end="17" delay="75"/>
+            <sequence start="10" end="17" delay="75"/>
         </animation>
         <animation direction="down">
-            <sequence start="18" end="26" delay="75"/>
+            <sequence start="19" end="26" delay="75"/>
         </animation>
         <animation direction="right">
-            <sequence start="27" end="35" delay="75"/>
+            <sequence start="28" end="35" delay="75"/>
         </animation>
     </action>
 
