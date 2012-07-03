@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="3" height="3" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="dirt" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="3" height="3" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFjAyYAAAAOAAC
+  </data>
+ </layer>
+ <layer name="Input_set" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFLAyYAAAAdAAF
+  </data>
+ </layer>
+ <layer name="Output0_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output1_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output2_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output3_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output4_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output5_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output6_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output7_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output8_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output9_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output10_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output11_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output12_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gyYAAACQAAc
+  </data>
+ </layer>
+ <layer name="Output13_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFCgyYAAACpAAh
+  </data>
+ </layer>
+ <layer name="Output14_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFigyYAAACuAAi
+  </data>
+ </layer>
+ <layer name="Output15_Dirt" width="3" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFSgyYAAACzAAj
+  </data>
+ </layer>
+</map>

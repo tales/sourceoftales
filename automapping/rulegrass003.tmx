@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="9" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="grass" tilewidth="32" tileheight="32">
+  <image source="../tiles/grass.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="15" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMcEExsWxq6aUEDEU3DwQAAKYrAUE=
+  </data>
+ </layer>
+ <layer name="Input_set" width="15" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMMEMxOptYvbj4zDjUUANQYi8l/h1qAABCPAAx
+  </data>
+ </layer>
+ <layer name="Output0_Grass" width="15" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANEEfjS+JQJwSlhWnkDlxAFEqLUck8WTS+PJXMHUgAAPBcAL0=
+  </data>
+ </layer>
+</map>

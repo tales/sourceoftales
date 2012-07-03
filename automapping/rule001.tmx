@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="1" height="1" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="DeleteTiles" value="true"/>
+ </properties>
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <layer name="Input_set" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJzjYmBgAAAALAAL
+  </data>
+ </layer>
+ <layer name="Regions" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJzjYmBgAAAALAAL
+  </data>
+ </layer>
+ <layer name="Output_Dirt" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer name="Output_Water" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer name="Output_Grass" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer name="Output_Water_higherlayer" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <layer name="Output_Dirt_higherlayer" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+</map>

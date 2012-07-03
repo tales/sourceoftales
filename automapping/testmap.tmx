@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="water" tilewidth="32" tileheight="32">
+  <image source="../sprites/water.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="35" name="grass" tilewidth="32" tileheight="32">
+  <image source="../sprites/grass.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="53" name="dirt" tilewidth="32" tileheight="32">
+  <image source="../sprites/dirt.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <layer name="set" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztlEEOgDAIBAn1/2/2ookxjSwNC8T0MNfOQKtDRMYmBG12TieiZ9LEPalBlZfpR92sBq8fbUFbZ+ceF+xdfLmfsO7Bmh31z5pvVu7eO3+03/v2sv3V31/0P8DbwfCv7ILVgfZl+62OrK4u91Ld8Xah/sq345mtumGz+Qsnpg4LYQ==
+  </data>
+ </layer>
+</map>

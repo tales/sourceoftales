@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="water" tilewidth="32" tileheight="32">
+  <image source="../tiles/water.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMcCFhZDFS9OMzixaAEveiqyfVzdjU0tq/lNpLrn8pDeeRAgBmQgEZ
+  </data>
+ </layer>
+ <layer name="Input_set" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMMAIxE5SGASYS9COrxWYWLQDMHmQ+KYAJjc3EQLyfsfmP1v6l1F5y/UtpOI8UAABivAAt
+  </data>
+ </layer>
+ <layer name="Output_Error" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAccFHBDFqYRSuA7sah4GZKwEjzL70BAIoMAD0=
+  </data>
+ </layer>
+</map>
