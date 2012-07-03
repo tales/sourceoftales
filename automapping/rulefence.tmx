@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="fence" tilewidth="32" tileheight="32">
+  <image source="../tiles/fence.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC3gIlEdNvVcWOS5sIjjUkcNQG3z6AmwhRMDA6ZfuLCwccUHNj4+e7CxKQGkxgc+vxKjl1BaI9VfhNQOxXQ2CkYeAADblTwYQAYAAA==
+  </data>
+ </layer>
+ <layer name="Input_setFence" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC1gpYJ6ViRxVjzi6HLk2E+Ku4YKwBVO6H4iNvxw6cNnD654IheQGr/4/EqMXmx+wMUnxz2kyo+CUTAYAADnm1c6QAYAAA==
+  </data>
+ </layer>
+ <layer name="Output_Fence" width="20" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC0QpYIZQlCMbp4gmjphJLYYlBahgv1DHYij8SVpZI8sGl8eiS0DpaVoZDetgQQaXw6NL00vh4yCUTCIAACrqzpAQAYAAA==
+  </data>
+ </layer>
+</map>
