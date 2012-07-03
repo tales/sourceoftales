@@ -3,52 +3,68 @@
 
     <!-- Kept for now to display the player correctly. Will be moved to races.xml later -->
     <item id="-1" type="hairsprite" name="Hair long">
-        <sprite>characters/hairfemale0.xml</sprite>
+        <sprite gender="male">characters/hair00_male.xml</sprite>
+        <sprite gender="female">characters/hair00_female.xml</sprite>
     </item>
     <item id="-2" type="hairsprite" name="Hair short">
-        <sprite>characters/hairfemale1.xml</sprite>
+        <sprite gender="male">characters/hair01_male.xml</sprite>
+        <sprite gender="female">characters/hair01_female.xml</sprite>
     </item>
     <item id="-3" type="hairsprite" name="far-reaching Hair">
-        <sprite>characters/hairfemale2.xml</sprite>
+        <sprite gender="male">characters/hair02_male.xml</sprite>
+        <sprite gender="female">characters/hair02_female.xml</sprite>
     </item>
     <item id="-4" type="hairsprite" name="short knot Hair">
-        <sprite>characters/hairfemale3.xml</sprite>
+        <sprite gender="male">characters/hair03_male.xml</sprite>
+        <sprite gender="female">characters/hair03_female.xml</sprite>
     </item>
     <item id="-5" type="hairsprite" name="long left side Hair">
-        <sprite>characters/hairfemale4.xml</sprite>
+        <sprite gender="male">characters/hair04_male.xml</sprite>
+        <sprite gender="female">characters/hair04_female.xml</sprite>
     </item>
     <item id="-6" type="hairsprite" name="Hair pigtail">
-        <sprite>characters/hairfemale5.xml</sprite>
+        <sprite gender="male">characters/hair05_male.xml</sprite>
+        <sprite gender="female">characters/hair05_female.xml</sprite>
     </item>
     <item id="-7" type="hairsprite" name="long left right Hair">
-        <sprite>characters/hairfemale6.xml</sprite>
+        <sprite gender="male">characters/hair06_male.xml</sprite>
+        <sprite gender="female">characters/hair06_female.xml</sprite>
     </item>
     <item id="-8" type="hairsprite" name="short right Hair">
-        <sprite>characters/hairmale0.xml</sprite>
+        <sprite gender="male">characters/hair07_male.xml</sprite>
+        <sprite gender="female">characters/hair07_female.xml</sprite>
     </item>
     <item id="-9" type="hairsprite" name="only left Hair">
-        <sprite>characters/hairmale1.xml</sprite>
+        <sprite gender="male">characters/hair08_male.xml</sprite>
+        <sprite gender="female">characters/hair08_female.xml</sprite>
     </item>
     <item id="-10" type="hairsprite" name="short messy Hair">
-        <sprite>characters/hairmale2.xml</sprite>
+        <sprite gender="male">characters/hair09_male.xml</sprite>
+        <sprite gender="female">characters/hair09_female.xml</sprite>
     </item>
     <item id="-11" type="hairsprite" name="short close Hair">
-        <sprite>characters/hairmale3.xml</sprite>
+        <sprite gender="male">characters/hair10_male.xml</sprite>
+        <sprite gender="female">characters/hair10_female.xml</sprite>
     </item>
     <item id="-12" type="hairsprite" name="neat Hair">
-        <sprite>characters/hairmale4.xml</sprite>
+        <sprite gender="male">characters/hair11_male.xml</sprite>
+        <sprite gender="female">characters/hair11_female.xml</sprite>
     </item>
     <item id="-13" type="hairsprite" name="irokese Hair">
-        <sprite>characters/hairmale5.xml</sprite>
+        <sprite gender="male">characters/hair12_male.xml</sprite>
+        <sprite gender="female">characters/hair12_female.xml</sprite>
     </item>
     <item id="-14" type="hairsprite" name="long short Hair">
-        <sprite>characters/hairmale6.xml</sprite>
+        <sprite gender="male">characters/hair13_male.xml</sprite>
+        <sprite gender="female">characters/hair13_female.xml</sprite>
     </item>
     <item id="-15" type="hairsprite" name="irokese left Hair">
-        <sprite>characters/hairmale7.xml</sprite>
+        <sprite gender="male">characters/hair14_male.xml</sprite>
+        <sprite gender="female">characters/hair14_female.xml</sprite>
     </item>
     <item id="-16" type="hairsprite" name="long Hair">
-        <sprite>characters/hairmale8.xml</sprite>
+        <sprite gender="male">characters/hair15_male.xml</sprite>
+        <sprite gender="female">characters/hair15_female.xml</sprite>
     </item>
     <!-- Base race player sprite -->
     <item id="-100" type="racesprite" name="Human">

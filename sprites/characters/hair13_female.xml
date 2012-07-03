@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sprite>
+    <imageset
+        name="base"
+        src="sprites/characters/hair13.png|M"
+        width="40"
+        height="40"/>
+    <include file="characters/hairstyle_base_female.xml"/>
+</sprite>

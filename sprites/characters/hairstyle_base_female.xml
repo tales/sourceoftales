@@ -24,25 +24,23 @@
             <frame index="0" offsetX="0" offsetY="-20" delay="75"/>
         </animation>
         <animation direction="up">
-            <frame index="1" offsetX="0" offsetY="-20" delay="150"/>
+            <frame index="1" offsetX="0" offsetY="-20" delay="75"/>
             <frame index="1" offsetX="0" offsetY="-19" delay="75"/>
             <frame index="1" offsetX="0" offsetY="-20" delay="225"/>
             <frame index="1" offsetX="0" offsetY="-19" delay="75"/>
-            <frame index="1" offsetX="0" offsetY="-20" delay="75"/>
+            <frame index="1" offsetX="0" offsetY="-20" delay="150"/>
         </animation>
         <animation direction="right">
-            <frame index="2" offsetX="-2" offsetY="-19" delay="75"/>
-            <frame index="2" offsetX="-2" offsetY="-20" delay="225"/>
-            <frame index="2" offsetX="-2" offsetY="-19" delay="75"/>
+            <frame index="2" offsetX="-2" offsetY="-19" delay="150"/>
             <frame index="2" offsetX="-2" offsetY="-20" delay="150"/>
-            <frame index="2" offsetX="-1" offsetY="-20" delay="75"/>
+            <frame index="2" offsetX="-2" offsetY="-19" delay="150"/>
+            <frame index="2" offsetX="-2" offsetY="-20" delay="150"/>
         </animation>
         <animation direction="left">
-            <frame index="3" offsetX="2" offsetY="-19" delay="75"/>
-            <frame index="3" offsetX="2" offsetY="-20" delay="225"/>
-            <frame index="3" offsetX="2" offsetY="-19" delay="75"/>
+            <frame index="3" offsetX="2" offsetY="-19" delay="150"/>
             <frame index="3" offsetX="2" offsetY="-20" delay="150"/>
-            <frame index="3" offsetX="1" offsetY="-20" delay="75"/>
+            <frame index="3" offsetX="2" offsetY="-19" delay="150"/>
+            <frame index="3" offsetX="2" offsetY="-20" delay="150"/>
         </animation>
     </action>
 
