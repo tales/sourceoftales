@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="130" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32">
+  <image source="../tiles/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="grassalt_flowers" tilewidth="32" tileheight="32">
+  <image source="../tiles/grassalt_flowers.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="37" name="dirt" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="55" name="dirt2" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt2.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="73" name="castlewalls" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlewalls.png" width="384" height="480"/>
+ </tileset>
+ <tileset firstgid="253" name="castle_outside" tilewidth="32" tileheight="32">
+  <image source="../tiles/castle_outside.png" width="544" height="352"/>
+ </tileset>
+ <tileset firstgid="440" name="fence" tilewidth="32" tileheight="32">
+  <image source="../tiles/fence.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="458" name="house" tilewidth="32" tileheight="32">
+  <image source="../tiles/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="521" name="castle_lightsources" tilewidth="32" tileheight="32">
+  <image source="../tiles/castle_lightsources.png" width="160" height="128"/>
+ </tileset>
+ <layer name="Ground" width="100" height="130">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DQQ0AAAwDoXNU/+5mYw9IWDVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVd88ImnGiSDLAAA=
+  </data>
+ </layer>
+ <layer name="Ground" width="100" height="130">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3Ruw3CAAwE0HiqFEgpqSIxARKDIDEGYQNgStyF/JCbUL0nXXduzk0DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwX22MuWeGzCNziGW3m3WOMb2vhm1b/+hXdjv5x+5uMeZ76/PKbpdZ5xrT+2qoeeZWr8z7x2aVDgAAAEDFB/UfuuggywAA
+  </data>
+ </layer>
+ <layer name="Over" width="100" height="130">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3awUobURQG4Nws3NZuXWnfoC3VlRuVvoDt2o32Ddq+QfUN1AcUcVMqbioU2hOCZJTJ9U6Q5kC+D/7dGcicf0hyYUYjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYXTdlmrvIdVn2p+H3pIPxaLQW+VWmYYmih59FH1lMutBHHvrIRR+56CMXfeSij1z0kYs+ctFHLvrIRR+56CMXfeSij1z0kYs+ctFHLvrIRR+56CMXfeSij//nKnZ7W2bvvNXyp+hj4u8LzTzVfe7H4+l7b8/lfsX7eBX3vh55XdlBy0yfp99DQzpZVZtx71uRN5UdtMz08bsw3NvY0bvI+8quWmb66GO4vdjRfuSgsquWmT76GO4wdvQp8rmyq5aZPvoY7jh2dBL5UtlVy0wffQz3NXb0LfK9squWmT76aNM9g51HLiKXlXNay4xz3uK6//V/RE4jZ5XzQMuMc97iunvqPvvzdtky45y3uO0yS3fX83RnPpTH17eG+XbKLEP7+FgeX98a5nuuj6MyzQN9LM9GZ3e79ggAAAAArKh/NQyZ6iDLAAA=
+  </data>
+ </layer>
+ <layer name="Over" width="100" height="130">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3RLQ6AMAyA0Q0FzGAQJJyAnxtw/3NRjUIsWQjvJZ+raNqUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL6tdHVmqGN6ces3M9TV55SuRyW33uq/lrj9/Gj1j2a2uP0QjdEeHdHpHwAAAAAANHYDdN9WJiDLAAA=
+  </data>
+ </layer>
+</map>
