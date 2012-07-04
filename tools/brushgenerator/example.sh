@@ -1,0 +1,1 @@
+./brushgen.lua new dirt dirt2 grass > new.xml
