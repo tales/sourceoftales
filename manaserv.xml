@@ -208,7 +208,7 @@
  Set here the different options related to players characters.
 -->
 
- <option name="char_numHairStyles" value="17" />
+ <option name="char_numHairStyles" value="16" />
  <option name="char_numHairColors" value="11" />
  <option name="char_numGenders" value="2" />
  <option name="char_minNameLength" value="4" />
