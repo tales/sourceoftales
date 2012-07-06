@@ -63,12 +63,12 @@
  </layer>
  <layer name="Ground" width="100" height="130">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3aTW7TQBgGYCc9C38LBLQNgfK34Ais4AJIcAQkOBcIVV1YbEBC6qILJBbARfgsjLBHce2kTtIMzyN9cqeuY3ve2OOxWhQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQC6+T9rLoetYrNlXl6nfLutx0e3ldNtHQNObjPI4jnvA+0adTNq/P0nuEWOOBWN81qvI4nUGefzt709JX5R1Bh8n7faqjlbfdJC3kcW7Hc6jK4fKrF6WjfXz4l82jC/t2+srbMN4qr6d9f9ZS9kxlnBxy4wHV5K262R8x8nYcbjEtlWWH2Qyql35jn9uHOdpx885qPJIn0HT8SRtN+co510fYz7bnnW8J8ntnUk6NnfN+5oZLHo2Xrcfsc+nMa94ssNzi2WUSV+Xk/Y8fRsZVH7V+/1SL59FHi8yzuQgzu0wahZ1d9rf3qTTvaL4Gjmc7S1e/zzDXOZxTvei7kcdTfvbQ9wc8fi+1dfFzwHX57rfxWzCg+jjh1GPoh5P+9t9bkXdKMbNhOVdjdqPulb8yeT2dg/nv7Vf10HdvpO0c7iHAAD0Oe9/1NZtvsbP3uZ5AQAA5CKdRw2Za11k7rXp/QEAAAAAbNpvRXLtvCDLAAA=
+   H4sIAAAAAAAAA+3aS07CUBQA0Apr8TcwKoL4d+ASHOkGTHQJJrpATUwY4CdxoG7Ea+wAESxqS6Gck9yUl5Jy+y7wegtJAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUxfPc1+2o+xisd64mad4mNS+GO6uVnQG9Lme4HnmuBXkc6zxqcTHD9fitnYKPfxW1uJ7ietzXk+Qh4rH+fV9rwPPbhWdEr6WyE2Dg54DJN192AjOoWXYCTIWbnmvgzpDHVdF/Ddq/nvx1fcnz2rY75D6JeybleIl5P4q+4nCKe4sqeEvf/7fp9jjqcVrhmmzEuTUjWhGbtezxOHWiR72LOnQH9KofTipYl3ac01bEdsROLXs8ipUc83tKPxevI6wTRd+LGYfdmOO9iP2Ig1r2OMtqxHKSb034vYWIRsRi8lmTtXLTmVmNNDbS8XrfuArfIQAAWX76j1rRivy9t8zzAgAAqIr+PmqUXus/vde4Xw8AAAAAYNzeAaCl5ZQgywAA
   </data>
  </layer>
  <layer name="Fringe" width="100" height="130">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WwQmAMAwF0GDXdk91BQXRDczRU6GHYoX3IMdAIOSTCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgH/aS8RR2nrmqc8swLeWzII1a2vMBMZy5f5uOwQAXvx50MfpphiEnAcAAAAAAAAAAAAAAKh7AD8snbsgywAA
+   H4sIAAAAAAAAA+3XbQqCMBwH4JnX7mJFSB9GV6iuUBB1gxQSVLAXc2T4PLAPUwayn/tvCwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA/nfIQzvlnY5aLNN/yC0UWwqrRtln7ed0nrXq+d535jo8MNlm7Txp9OTTFzvuNPJIZMrfVmGtZ028f1nVeG5JHtJck881+oG6Nr3ixdzxTZbmWyaj849MyJI/mHWWs9bEvzwaHsh1nfkbo7s19975mBkPrG++LnbmOWfuePuUMLjNfU0yHOg8AAAAAAAAAAAAAAPDcHdr7lZMgywAA
   </data>
  </layer>
  <layer name="Over" width="100" height="130">
@@ -91,4 +91,18 @@
    H4sIAAAAAAAAA+3PsQ0AMAjAMMTG/w/3gc6AhH1BEgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH+V0wV9Lr0CAAAAAAAAAAAAAAAAAAAAAAAAALDfA0siPMIgywAA
   </data>
  </layer>
+ <layer name="Collision" width="100" height="130">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDJ9VAwoIMsAAA==
+  </data>
+ </layer>
+ <objectgroup name="Object" width="100" height="130">
+  <object name="training dummy spawn" type="SPAWN" x="704" y="2848" width="352" height="192">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="1"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

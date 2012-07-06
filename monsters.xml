@@ -60,7 +60,7 @@ exp<TAG>:                 Tells how much experience point a monster is giving up
         <behavior
             aggressive="true"
             cowardly="false"
-            track-range="3"
+            track-range="1"
             stroll-range="0"
             attack-distance="32"
             />

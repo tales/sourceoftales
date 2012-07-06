@@ -4,7 +4,7 @@
 
     <action name="default" imageset="base">
 		<animation direction="left">
-		    <sequence start="0" end="7" delay="75" offsetX="0" offsetY="0"/>
+		    <sequence start="0" end="7" delay="75" offsetX="0" offsetY="-7"/>
 		</animation>
 	</action>
 </sprite>
