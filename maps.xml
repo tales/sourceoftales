@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <maps>
-    <map id="1" name="terrain-test" />
+    <map id="1" name="spawn" />
+    <map id="2" name="terrain-test" />
 </maps>
