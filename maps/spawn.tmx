@@ -107,5 +107,10 @@
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
+  <object name="External Map Events" type="SCRIPT" x="320" y="2048" width="2528" height="1856">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/spawn.lua"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
