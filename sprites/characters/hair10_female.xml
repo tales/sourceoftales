@@ -2,7 +2,7 @@
 <sprite>
     <imageset
         name="base"
-        src="sprites/characters/hair10.png|M"
+        src="sprites/characters/hair10.png|W"
         width="40"
         height="40"
         offsetY="-2" />

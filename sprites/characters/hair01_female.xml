@@ -2,7 +2,7 @@
 <sprite>
     <imageset
         name="base"
-        src="sprites/characters/hair01.png|M"
+        src="sprites/characters/hair01.png|W"
         width="40"
         height="40"/>
     <include file="characters/hairstyle_base_female.xml"/>
