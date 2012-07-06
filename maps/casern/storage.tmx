@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="103" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../../tiles/farming_fishing.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="503" name="barrel" tilewidth="32" tileheight="64">
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="507" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../../tiles/victoria.png" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="562" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <layer name="Ground" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA5vLxMAwlwLMzMDAwEICZmVA6OUFsvlIwPxIesWBbAkSsCSSXm0G0vFg1EtsHA2UXmQzyE1fA6WXnhgA1+ubJoQDAAA=
+  </data>
+ </layer>
+ <layer name="Ground" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIB+wkamPHYh1yNSrO6qXaGBOgV4GCvWa4RA3p8DM4QoAsmF4V4QDAAA=
+  </data>
+ </layer>
+ <layer name="Fringe" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAWjYBQMJAAA7Ly31YQDAAA=
+  </data>
+ </layer>
+ <layer name="Over" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAVDFcxlwo9ppZdU96Gzaa2XGoCe9gEAle/6KoQDAAA=
+  </data>
+ </layer>
+ <layer name="Over" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAVDFSgRwPiALgX2EqsX5AZlKFuRgbCb0IEOifZRS68ZA8St5mToJQcAAHONA/eEAwAA
+  </data>
+ </layer>
+ <layer name="Over" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAVDFegNtAOIAPpQeii4daAAAL95dR6EAwAA
+  </data>
+ </layer>
+ <layer name="Collision" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NiYGBgGmGYHDCqF1OOnHCmh15kMyhJI/RKjwBel7G0hAMAAA==
+  </data>
+ </layer>
+</map>

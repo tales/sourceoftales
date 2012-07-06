@@ -51,6 +51,9 @@
  <tileset firstgid="1006" name="barrel" tilewidth="32" tileheight="64">
   <image source="../tiles/barrel.png" width="128" height="64"/>
  </tileset>
+ <tileset firstgid="1010" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
  <layer name="Ground" width="100" height="130">
   <data encoding="base64" compression="gzip">
    H4sIAAAAAAAAA+3RsQ2AMAxFQVNnC8QiNDAWq4MEReQFHJErTnL55N8iogEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwGSu5VXdAX+yPrYBOgAAAICI/XN2d6+6bzb5/3mX6r7Z5R1sUu8YoAEAAAAAAAAAAAAAAEZwA+zxoLggywAA
@@ -93,11 +96,11 @@
  </layer>
  <layer name="Collision" width="100" height="130">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDJ9VAwoIMsAAA==
+   H4sIAAAAAAAAA+3WUWrDMBAE0EDvf9n2Av0yOIakdixVs9J7IAgEi5ldQvx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB7P1/nj4z9Xela4VQ3en728Wz0/Ozj2ej5rbiP0TNKOSlGzyHlpBg9h5STYvQcUk6K0XNIOSlGzyHlJEntnJqrt9TeLe6aeR+vnjl7R8tcI+/q7dM5Hr9P3se7O9O0nl+yFfeR2HFTeR+fZu3Z8cr7w1//eyvto1fPlfeR4so7g328vqeHlfexz3u23+isK+zjSt9RWe88n+buPva/oRFZj77f5FhpH/+Z9fj56vP2kaFC9goZW6nQtULGVip0rZCxlQpdK2RspULXChlbqdB1hveqGTpsZugyQ4fNDF1m6LCZocsMHTYzdJmhw1XJXZKz9ZLcOTlbL8mdk7P1ktw5OVsvd/4zz8yr9/2zsY8s9pHFPrLYx1zOzMo8AQAAgFZ+AUdSvWAgywAA
   </data>
  </layer>
  <objectgroup name="Object" width="100" height="130">
-  <object name="training dummy spawn" type="SPAWN" x="704" y="2848" width="352" height="192">
+  <object name="training dummy spawn" type="SPAWN" x="640" y="2752" width="448" height="320">
    <properties>
     <property name="max_beings" value="4"/>
     <property name="monster_id" value="1"/>
