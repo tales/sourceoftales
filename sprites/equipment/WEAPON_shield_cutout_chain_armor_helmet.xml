@@ -7,7 +7,7 @@
         height="64"/>
     <imageset
         name="hurt"
-        src="sprites/equipment/hurt/WEAPON_shield_cutout_chain_armor_helmet.png"
+        src="sprites/equipment/hurt/emtpy.png"
         width="64"
         height="64"/>
     <imageset
