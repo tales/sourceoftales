@@ -1,10 +1,160 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
-Johannes Sjolund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy_death.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BODY_animation.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/WEAPON_arrow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/WEAPON_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BEHIND_quiver.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BEHIND_quiver.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/WEAPON_dagger.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BEHIND_quiver.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_shield_cutout_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BEHIND_quiver.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_staff.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_shield_cutout_body.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BODY_animation.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_spear.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/WEAPON_shield_cutout_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BEHIND_quiver.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BELT_leather.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HANDS_plate_armor_gloves.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/WEAPON_shield_cutout_body.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_robe_skirt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_chain_armor_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_leather_armor_hat.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_robe_shirt_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/FEET_plate_armor_shoes.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_plate_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_plate_armor_arms_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_chain_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BELT_rope.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_torso.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_bracers.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_shoulders.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/FEET_shoes_brown.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_robe_hood.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_plate_armor_pants.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_chain_armor_jacket_purple.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_pants_greenish.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_plate_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_shirt_white.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy_death.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_10x10_dyable.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_7x7_dyable.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_5x5_dyable.png
+Erik Schilling                     CC0                         sprites/equipment/hurt/empty.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/Sampan_boat.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/cow.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/grassalt_flowers.png
@@ -15,20 +165,22 @@ Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/metal_fence
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/sika_deer_eating_sprite_96x64.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/stairs_red_carpet.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/tent.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/tree_stump.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/victorian_house.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/water_lilies.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/wheelbarrows.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/farming_fishing.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/fence.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/fence_alt.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/plants.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/plowed_soil.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/reed.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/sand.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/sandwater.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/wheat.png
-daneeklu                           CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/farming_fishing.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/fence.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/fence_alt.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/plants.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/plowed_soil.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/reed.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sand.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sandwater.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/wheat.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
+Jurkan                             CC0                         tiles/collision.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale1.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale5.png
@@ -101,9 +253,4 @@ LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/grassalt.pn
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/brackish.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/cement.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/watergrass.png
-
-
-
-<TODO>                               <unknown, ask jurkan>        tiles/collision.png
-CasperN                             <unknown, ask jurkan>         tree_stump.png
 
