@@ -34,7 +34,7 @@
             cooldowntime="5"
             basedamage="10"
             deltadamage="2"
-            range="32"
+            range="48"
             chancetohit="200"
             animation="attack"
             />
