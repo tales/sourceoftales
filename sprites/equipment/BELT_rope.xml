@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sprite name="player" action="stand">
+    <imageset
+        name="walkcycle"
+        src="sprites/equipment/walkcycle/BELT_rope.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="hurt"
+        src="sprites/equipment/hurt/BELT_rope.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="slash"
+        src="sprites/equipment/slash/BELT_rope.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="spellcast"
+        src="sprites/equipment/spellcast/BELT_rope.png"
+        width="64"
+        height="64"/>
+
+    <include file="equipment/full_base.xml"/>
+</sprite>
