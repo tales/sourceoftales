@@ -38,7 +38,7 @@
             <end />
 		</animation>
     </action>
-    <action name="dead" imageset="death">
+    <action name="hurt" imageset="death">
         <animation direction="left">
             <sequence start="0" end="4" offsetY="-7" delay="75" />
             <frame index="5" offsetY="-7" delay="-1" />
