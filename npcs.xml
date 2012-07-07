@@ -7,10 +7,87 @@
     sprites are drawn in order of declaration.
 -->
 <npcs>
+<!-- Male soldier with chain armor, chain hood and jacket. -->
 <npc id="1">
     <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/HEAD_chain_armor_hood.xml</sprite>
+    <sprite>equipment/TORSO_chain_armor_torso.xml</sprite>
+    <sprite>equipment/TORSO_chain_armor_jacket_purple.xml</sprite>
+    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+    <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
 </npc>
+<!-- Male soldier with chain armor and open helmet. TODO: hair? -->
+<npc id="2">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/HEAD_chain_armor_helmet.xml</sprite>
+    <sprite>equipment/TORSO_chain_armor_torso.xml</sprite>
+    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+    <sprite>equipment/BELT_leather.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+</npc>
+<!-- Male knight with helmet and shield. -->
+<npc id="3">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/HEAD_plate_armor_helmet.xml</sprite>
+    <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
+    <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
+    <sprite>equipment/HANDS_plate_armor_gloves.xml</sprite>
+    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+    <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
+</npc>
+<!-- Male knight without helmet and gloves. TODO: hair-->
+<npc id="4">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
+    <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
+    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+    <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
+</npc>
+<!-- Monk -->
+<npc id="5">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+    <sprite>equipment/BELT_rope.xml</sprite>
+    <sprite>equipment/LEGS_robe_skirt.xml</sprite>
+</npc>
+<!-- Some man in leather armor with a hat. TODO: hair -->
+<npc id="6">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/HEAD_leather_armor_hat.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_torso.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_shoulders.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_bracers.xml</sprite>
+    <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+</npc>
+<!-- Some man in leather armor wearing a hood. -->
+<npc id="7">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/HEAD_robe_hood.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_torso.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_shoulders.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_bracers.xml</sprite>
+    <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+</npc>
+<!-- Some man. TODO: hair -->
+<npc id="8">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_shirt_white.xml</sprite>
+    <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+</npc>
+<!-- Some man. TODO: hair -->
+<npc id="9">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+    <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+</npc>
+<!--
+TODO
 <npc id="2">
     <sprite>characters/female_base.xml</sprite>
 </npc>
+-->
 </npcs>
