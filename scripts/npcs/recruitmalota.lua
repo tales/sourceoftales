@@ -22,6 +22,7 @@ local function recruitTalk(npc, ch)
     end
 end
 
+-- TODO: change sprite
 local recruit = npc_create("Recruit Malota", 2, GENDER_FEMALE,
                               tileToPixel(24), tileToPixel(100),
                               recruitTalk, nil)

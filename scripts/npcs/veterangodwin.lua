@@ -34,6 +34,6 @@ local function veteranTalk(npc, ch)
     say("He shoos you away.")
 end
 
-local veteran = npc_create("Veteran Godwin", 1, GENDER_MALE,
+local veteran = npc_create("Veteran Godwin", 4, GENDER_MALE,
                               tileToPixel(47), tileToPixel(97),
                               veteranTalk, nil)

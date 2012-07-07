@@ -24,6 +24,6 @@ local function guardTalk(npc, ch)
     end
 end
 
-local guard = npc_create("Guard Terric", 1, GENDER_MALE,
+local guard = npc_create("Guard Terric", 3, GENDER_MALE,
                               tileToPixel(48), tileToPixel(85),
                               guardTalk, nil)
