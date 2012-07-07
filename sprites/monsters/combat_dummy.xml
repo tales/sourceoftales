@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <sprite>
     <imageset name="base" src="sprites/monsters/combat_dummy.png" width="64" height="64"/>
+    <imageset name="death" src="sprites/monsters/combat_dummy_death.png" width="64" height="64"/>
 
     <action name="default" imageset="base">
 		<animation direction="left">
@@ -36,5 +37,11 @@
 		    <sequence start="0" end="3" delay="75" offsetX="0" offsetY="-7"/>
             <end />
 		</animation>
+    </action>
+    <action name="dead" imageset="death">
+        <animation direction="left">
+            <sequence start="0" end="4" offsetY="-7" delay="75" />
+            <frame index="5" offsetY="-7" delay="-1" />
+        </animation>
     </action>
 </sprite>

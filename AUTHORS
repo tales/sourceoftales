@@ -1,9 +1,10 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
-Erik Schilling                     BB BY_SA 3.0, GPLv3         particles/orb_10x10_dyable.png
-Erik Schilling                     BB BY_SA 3.0, GPLv3         particles/orb_7x7_dyable.png
-Erik Schilling                     BB BY_SA 3.0, GPLv3         particles/orb_5x5_dyable.png
+Johannes Sjolund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy_death.png
+Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_10x10_dyable.png
+Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_7x7_dyable.png
+Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_5x5_dyable.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/Sampan_boat.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/cow.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/grassalt_flowers.png
