@@ -7,6 +7,9 @@
  <tileset firstgid="17" name="wheat" tilewidth="32" tileheight="32">
   <image source="../tiles/wheat.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
+ <tileset firstgid="35" name="plowed_soil" tilewidth="32" tileheight="32">
+  <image source="../tiles/plowed_soil.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
  <layer name="Regions" width="13" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYCAPcEExsWxy9QwntwEA52wBQQ==
@@ -15,6 +18,11 @@
  <layer name="Input_set" width="13" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYKAu4IVidDayPAOaOC41lLqDGvYQ8g8pAACSDADR
+  </data>
+ </layer>
+ <layer name="Output_Grass" width="13" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAu0MXD10ST00Ziq0BpVSq7h1igj8Y3hNIg96tD2RoMmP4jBQAAQv8CAQ==
   </data>
  </layer>
  <layer name="Output_Wheat" width="13" height="7">
