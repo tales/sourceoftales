@@ -1,0 +1,3 @@
+-- [[
+-- Global constants that are available in all scripts.
+-- ]]

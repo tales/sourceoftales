@@ -9,3 +9,9 @@
 require "scripts/global_events"
 require "scripts/special_actions"
 require "scripts/crafting"
+
+-- Project specific constants
+require "scripts/global_constants"
+
+-- Project specific global functions
+require "scripts/functions/tiletopixel"

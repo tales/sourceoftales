@@ -5,7 +5,6 @@
 --]]
 
 atinit(function()
-    require "scripts/functions/tiletopixel"
     require "scripts/functions/walkingnpc"
 
     require "scripts/npcs/guardterric"
