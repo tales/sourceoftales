@@ -1,7 +1,6 @@
 ########################################################################
-# This file and the tmx files in this folder are licensed as CC BY
+# This file and the tmx files in this folder are licensed as CC BY-SA or GPLv3
 # Stefan Beller
-# http://creativecommons.org/licenses/by/3.0/
 ########################################################################
 
 ../automapping/rule001.tmx
@@ -68,3 +67,11 @@
 # Fences
 ########################################################################
 ../automapping/rulefence.tmx
+
+
+########################################################################
+# Wheat
+########################################################################
+../automapping/rulewheat001.tmx
+../automapping/rulewheat002.tmx
+../automapping/rulewheat003.tmx
