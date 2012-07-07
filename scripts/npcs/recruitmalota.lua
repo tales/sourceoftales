@@ -13,14 +13,13 @@ local function recruitTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("\"Oh, I just don't want to spent the rest of my life with farm work. \"")
+        say("\"Oh, I just don't want to spent the rest of my life with farm work. You know, I've got so many brothers and sisters, I think my parents won't even miss me. So I rather became I soldier. I'm going to see the world, and maybe I can find some nice place to live after my time of service.\"")
     elseif res == 2 then
-        say("\".\"")
+        say("\"Because of war, you dumbhead. Why else should they even come out here to Goldenfield to hire people? I mean, nothing ever happens here and usually there are only a handful of old soldiers here in the casern who feel bored to death.\"")
+        say("\"After the basic training we're probably going to be send to more interesting places.\"")
     elseif res ==3 then
         say("\"Oh, ok. See you later then.\"")
     end
-    -- her family owns a farm, she has many siblings
-    -- doesn't want to spend her life with farm work, wants to see the world
 end
 
 local recruit = npc_create("Recruit Malota", 2, GENDER_FEMALE,
