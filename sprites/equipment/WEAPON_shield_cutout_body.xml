@@ -12,7 +12,7 @@
         height="64"/>
     <imageset
         name="slash"
-        src="sprites/equipment/slash/WEAPON_shield_cutout_body.png"
+        src="sprites/equipment/hurt/empty.png"
         width="64"
         height="64"/>
     <imageset
