@@ -4,7 +4,37 @@
 
     <action name="default" imageset="base">
 		<animation direction="left">
-		    <sequence start="0" end="7" delay="75" offsetX="0" offsetY="-7"/>
+            <frame index="2" offsetY="-7" />
+		</animation>
+		<animation direction="right">
+            <frame index="6" offsetY="-7" />
+		</animation>
+		<animation direction="down">
+            <frame index="0" offsetY="-7" />
+		</animation>
+		<animation direction="up">
+            <frame index="4" offsetY="-7" />
 		</animation>
 	</action>
+    <action name="attack" imageset="base">
+		<animation direction="left">
+		    <sequence start="3" end="7" delay="75" offsetX="0" offsetY="-7"/>
+		    <sequence start="0" end="1" delay="75" offsetX="0" offsetY="-7"/>
+            <end />
+		</animation>
+		<animation direction="right">
+            <frame index="7" offsetY="-7" />
+		    <sequence start="0" end="5" delay="75" offsetX="0" offsetY="-7"/>
+            <end />
+		</animation>
+		<animation direction="down">
+		    <sequence start="1" end="7" delay="75" offsetX="0" offsetY="-7"/>
+            <end />
+		</animation>
+		<animation direction="up">
+		    <sequence start="5" end="7" delay="75" offsetX="0" offsetY="-7"/>
+		    <sequence start="0" end="3" delay="75" offsetX="0" offsetY="-7"/>
+            <end />
+		</animation>
+    </action>
 </sprite>
