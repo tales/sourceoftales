@@ -3,7 +3,7 @@ local function recruitTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say ("[Recruit Malota]")
+    say ("[Recruit Maurice]")
     say("\"Hello " .. being_get_name(ch) .. ". Let's talk a bit.\"")
 
     local choices = { "Why did you become a soldier?",
@@ -13,7 +13,8 @@ local function recruitTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("\"Oh, I just don't want to spent the rest of my life with farm work. You know, I've got so many brothers and sisters, I think my parents won't even miss me. So I rather became I soldier. I'm going to see the world, and maybe I can find some nice place to live after my time of service.\"")
+        say("\"Oh, I just don't want to spent the rest of my life with farm work. You know, I've got so many brothers and sisters, I didn't like the thought to drudge on a dirty farm all my life for my oldest brothers benefit. So I ran away when I was twelve.\"")
+        say("\"I tramped around the area some while, finding some work to do here and there, but that's a cumbersome life. When I met the recruiter, I decided to rather become I soldier. I'm going to see the world, and maybe I can find some nice place to live after my time of service.\"")
     elseif res == 2 then
         say("\"Because of war, you dumbhead. Why else should they even come out here to Goldenfield to hire people? I mean, nothing ever happens here and usually there are only a handful of old soldiers here in the casern who feel bored to death.\"")
         say("\"After the basic training we're probably going to be send to more interesting places.\"")
@@ -22,7 +23,6 @@ local function recruitTalk(npc, ch)
     end
 end
 
--- TODO: change sprite
-local recruit = npc_create("Recruit Malota", 2, GENDER_FEMALE,
+local recruit = npc_create("Recruit Maurice", 2, GENDER_MALE,
                               tileToPixel(24), tileToPixel(100),
                               recruitTalk, nil)

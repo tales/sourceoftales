@@ -9,7 +9,6 @@ local function instructorTalk(npc, ch)
     -- optional: explain attributes
 end
 
--- TODO: change sprite
-local instructor = npc_create("Instructor Ascilia", 1, GENDER_FEMALE,
+local instructor = npc_create("Instructor Alard", 1, GENDER_MALE,
                               tileToPixel(37), tileToPixel(92),
                               instructorTalk, nil)
