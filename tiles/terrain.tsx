@@ -2,11 +2,12 @@
 <tileset name="terrain" tilewidth="32" tileheight="32">
  <image source="terrain.png" width="512" height="672"/>
  <terraintypes>
-  <terrain name="Darkdirt" tile="0" distances=",0,1,1,1,1"/>
-  <terrain name="Dirt" tile="1" distances=",1,0,1,2,1"/>
-  <terrain name="Grass" tile="2" distances=",1,1,0,2,1"/>
-  <terrain name="Lavarock" tile="3" distances=",1,2,2,0,2"/>
-  <terrain name="Water" tile="4" distances=",1,1,1,2,0"/>
+  <terrain name="Darkdirt" tile="0" distances=",0,1,2,1,1,2"/>
+  <terrain name="Dirt" tile="1" distances=",1,0,2,2,1,3"/>
+  <terrain name="Grass" tile="2" distances=",2,2,0,2,2,3"/>
+  <terrain name="Lavarock" tile="3" distances=",1,2,2,0,2,1"/>
+  <terrain name="Water" tile="4" distances=",1,1,2,2,0,3"/>
+  <terrain name="Lava" tile="321" distances=",2,3,3,1,3,0"/>
  </terraintypes>
  <tile id="0" terrain="0,0,0,0"/>
  <tile id="1" terrain="1,1,1,1"/>
@@ -329,4 +330,19 @@
  <tile id="318" terrain="3,3,2,3"/>
  <tile id="319" terrain="3,3,3,0"/>
  <tile id="320" terrain="3,3,3,2"/>
+ <tile id="321" terrain="5,5,5,5"/>
+ <tile id="322" terrain="5,5,5,3"/>
+ <tile id="323" terrain="5,5,3,5"/>
+ <tile id="324" terrain="5,5,3,3"/>
+ <tile id="325" terrain="5,3,5,5"/>
+ <tile id="326" terrain="5,3,5,3"/>
+ <tile id="327" terrain="5,3,3,5"/>
+ <tile id="328" terrain="5,3,3,3"/>
+ <tile id="329" terrain="3,5,5,5"/>
+ <tile id="330" terrain="3,5,5,3"/>
+ <tile id="331" terrain="3,5,3,5"/>
+ <tile id="332" terrain="3,5,3,3"/>
+ <tile id="333" terrain="3,3,5,5"/>
+ <tile id="334" terrain="3,3,5,3"/>
+ <tile id="335" terrain="3,3,3,5"/>
 </tileset>
