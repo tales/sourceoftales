@@ -1,6 +1,62 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/shirt_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/pants_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/vest_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/dress_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/bowtie_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/dress_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/vest_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/ghillies_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/tie_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/ghillies_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/dress_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/dress_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/tie_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/bowtie_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/vest_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/vest_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/shirt_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/ghillies_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/shirt_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/bowtie_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/pants_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/tie_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/ghillies_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/pants_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/shirt_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/bowtie_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/tie_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/pants_spellcast.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_hurt.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_spellcast.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_walkcycle.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_hurt.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_slash.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_spellcast.png
+Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_walkcycle.png
+Stefan Beller                      CC BY_SA 3.0, GPLv3         tiles/water_anim.png
+Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_hurt_no_hat.png
+Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_walk_cycle_no_hat.png
+Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/crpyt.png
+Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/dirt_night.png
+Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/grass_night.png
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/ocarina_overture_acoustic.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/mallet_music_box_motif.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/bells_menu_theme_two.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/ trouble_loop.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/h_theme.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/brass_loop.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/torvalds_slow_theme_ambient_guitar.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/ocarina_overture_full.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/strings_theme.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/choir_loop.ogg
+Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/sea.ogg
+Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/signpost.png
+Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/signpost_shadow.png
+Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/birdbath.png
+Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/leaves.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bronzetiara_spellcast.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownrobe_spellcast.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownhair_spellcast.png
