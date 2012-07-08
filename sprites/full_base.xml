@@ -52,27 +52,19 @@
         name="attack"
         imageset="slash">
         <animation direction="up">
-            <sequence start="" end="" delay="75"/>
+            <sequence start="0" end="5" delay="75" />
             <end/>
         </animation>
         <animation direction="left">
-            <frame index="1" delay="75" />
-            <frame index="2" delay="75" />
-            <frame index="3" delay="75" />
-            <frame index="4" delay="75" />
-            <frame index="5" delay="75" />
-            <frame index="4" delay="75" />
-            <frame index="3" delay="75" />
-            <frame index="2" delay="75" />
-            <frame index="1" delay="75" />
+            <sequence start="6" end="10" delay="75" />
             <end/>
         </animation>
         <animation direction="down">
-            <sequence start="" end="" delay="75"/>
+            <sequence start="11" end="15" delay="75" />
             <end/>
         </animation>
         <animation direction="right">
-            <sequence start="" end="" delay="75"/>
+            <sequence start="16" end="20" delay="75" />
             <end/>
         </animation>
     </action>
