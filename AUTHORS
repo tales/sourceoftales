@@ -1,6 +1,66 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_dwing_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_robe_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/male_robe_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_dwing_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_robe_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/male_robe_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_dwing_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_robe_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/male_robe_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_dwing_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_robe_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/male_robe_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/mushrooms.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/campfire.png
+Leo Villeveygoux                   CC BY_SA 3.0, GPLv3         tiles/limestonewall.png
+Juan M Rodriguez                   CC BY_SA 3.0, GPLv3         sprites/npcs/maskman.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/plum.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/melon.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/pumpkin.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/radishes.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/broccoli.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/mushroom.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/cherries.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/apple.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/banana.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/fruit2.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/eggplant.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/zucchini.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/strawberry.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/fruit1.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/potato.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/cauliflower.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/pumkin-with-face-and-light.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/corn.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/melon-2.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/pea.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/kiwi.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/clementine.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/onion.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/tomato.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/pear.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/radish.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/pumpkin-with-face.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/paprika.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/lemon.png
+Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/carrot.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         tiles/pipes-rustywalls.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/lithning1.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/lithning1_reduced.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/lithning2.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/lithning2_reduced.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/flash.png
+Jonas Klinger                      CC BY_SA 3.0, GPLv3         tiles/fire.png
+Johnathan Roatch                   CC BY_SA 3.0, GPLv3         sfx/metal-bowl.ogg
+Johann Charlot                     CC BY_SA 3.0, GPLv3         tiles/outside.png
+Johann Charlot                     CC BY_SA 3.0, GPLv3         particles/effects01.png
+Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         sprites/npcs/astaea_walkcycle.png
+Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/environment_assets.png
+Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/wood_and_bronze_house.png
+Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/woodend_stairs.png
 Brandon                            CC BY_SA 3.0, GPLv3         music/calmtown.ogg
 Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/victorian_fence.png
