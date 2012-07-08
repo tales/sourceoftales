@@ -3,4 +3,5 @@
     <map id="1" name="spawn" />
     <map id="2" name="terrain-test" />
     <map id="3" name="village" />
+    <map id="4" name="sandbox" />
 </maps>

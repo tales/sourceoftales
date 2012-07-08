@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="sand" tilewidth="32" tileheight="32">
+  <image source="../tiles/sand.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Ground" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DwQkAAAwDoftn/30LnUPBVVNVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf8BfNclZUCcAAA=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="100" height="100">
+  <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/sandbox.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
