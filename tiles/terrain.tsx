@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="terrains" tilewidth="32" tileheight="32">
- <image source="terrains.png" width="512" height="672"/>
+<tileset name="terrain" tilewidth="32" tileheight="32">
+ <image source="terrain.png" width="512" height="672"/>
  <terraintypes>
   <terrain name="Darkdirt" tile="0" distances=",0,1,1,1,1"/>
   <terrain name="Dirt" tile="1" distances=",1,0,1,2,1"/>
