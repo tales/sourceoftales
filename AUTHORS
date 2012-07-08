@@ -1,6 +1,14 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/gunnerwalkcycle1.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/malesoldiernormal.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/malesoldierzombie.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/roguewalk.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/femaleelfwalk.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         tiles/whitheredtree1.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         tiles/tombstone1.png
+Barbara Rivera                     CC BY_SA 3.0, GPLv3         tiles/building11.png
 Artur Reterski                     CC BY_SA 3.0, GPLv3         items/helmet-leather.png
 Artur Reterski                     CC BY_SA 3.0, GPLv3         items/necklace-1.png
 Artur Reterski                     CC BY_SA 3.0, GPLv3         items/potion-blue.png
