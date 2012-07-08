@@ -10,9 +10,8 @@ local function veteranTalk(npc, ch)
         title = "girl"
     end
 
-    say("[Veteran Godwin]")
-    say("\"Hey, rookie. You aren't paid for standing in the landscape and looking like a sheep.\"")
-    say("\"You should better hurry to get to the basic training unless you want to do extra hours in the kitchen during the next month.\"")
+    say("Hey, rookie. You aren't paid for standing in the landscape and looking like a sheep.")
+    say("You should better hurry to get to the basic training unless you want to do extra hours in the kitchen during the next month.")
 
     local choices = { "In the kitchen? I'm a strong fighter!",
                     "Alright, thank you, where do I have to go?",
@@ -21,17 +20,16 @@ local function veteranTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("\"Don't make me laugh! I'd be surprised if you'd know at what end to hold a sword.\"")
+        say("Don't make me laugh! I'd be surprised if you'd know at what end to hold a sword.")
     elseif res == 2 then
-        say("\"Watch out, this isn't a friendly place for a wimp.\"")
+        say("Watch out, this isn't a friendly place for a wimp.")
     elseif res ==3 then
-        say("\"Hah, recruiters are liers. It's their job to tell fairytales about fame to dumbheads like you.\"")
-        say("\"The only thing that's awaiting you is a lot of hard work, " .. title .. ".\"")
+        say("Hah, recruiters are liers. It's their job to tell fairytales about fame to dumbheads like you.")
+        say("The only thing that's awaiting you is a lot of hard work, " .. title .. ".")
     end
 
-    say("\"Now go, talk to Instructor Ascilia, so she can show you how you can avoid being speared by the first enemy you'll encounter.\"")
-    say ("\"Come back to me when you're done.\"");
-    say("He shoos you away.")
+    say("Now go, talk to Instructor Ascilia, so she can show you how you can avoid being speared by the first enemy you'll encounter.")
+    say ("Come back to me when you're done.");
 end
 
 local veteran = npc_create("Veteran Godwin", 4, GENDER_MALE,

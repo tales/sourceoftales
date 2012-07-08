@@ -3,8 +3,7 @@ local function recruitTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("TODO.")
-    -- has naive ideas about being a soldier, wants to earn fame in heroic battles
+    say("I'm so exited! I'm going to be a great warrior, fighting in countless battles, until my enemies will shiver in fear as soon as they hear my name.")
     -- idea: could have a friend who later turns out to be one of the rebels
 end
 
