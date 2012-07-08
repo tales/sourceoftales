@@ -77,7 +77,7 @@ if(#arg >1 ) then
 				--print("convert "..arg[1]..".png "..arg[k]..".png +append "..arg[1]..".png");
 				os.execute("convert "..arg[1]..".png "..arg[k]..".png +append "..arg[1]..".png");
 			end
-			for line in io.lines(v..".tpl") do
+			for line in io.lines(v..".tsx") do
 				if (string.find(line,"<tileset ")) then
 					--print(string.match(line,'%s*tilewidth="(%d+)%s*'))
 					--print(string.match(line,'%s*tileheight="(%d+)%s*'))
