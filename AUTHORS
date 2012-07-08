@@ -1,6 +1,9 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+Brandon                            CC BY_SA 3.0, GPLv3         music/calmtown.ogg
+Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/victorian_fence.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/cherry_blossom_trees.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/foodog_statue.png
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/shrine.png
@@ -223,6 +226,13 @@ Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sand.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sandwater.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/wheat.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_firelion_big.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_firelion_sheet.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_iceshield_sheet.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_snakebite_sheet.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_torrentacle.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtleshell_front.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtleshell_side.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
 Jurkan                             CC0                         tiles/collision.png
 LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
