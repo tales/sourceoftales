@@ -1,6 +1,12 @@
 ## Graphics: ##
 
 AUTHOR                             LICENSE                     FILENAME
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/cherry_blossom_trees.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/foodog_statue.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/shrine.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/torii.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/toro.png
+Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/windmill.png
 Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/gunnerwalkcycle1.png
 Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/malesoldiernormal.png
 Barbara Rivera                     CC BY_SA 3.0, GPLv3         sprites/npcs/malesoldierzombie.png
