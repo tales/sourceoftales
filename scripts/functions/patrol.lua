@@ -52,3 +52,7 @@ function Patrol:logic()
         self.position_index = ((self.position_index + 1) % #self.path) +1
     end
 end
+
+function Patrol:getCurrentWaypoint()
+    return self.position_index
+end
