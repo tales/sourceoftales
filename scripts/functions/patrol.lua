@@ -16,11 +16,14 @@ end
 --- Creates a new patrol object
 -- @param x X-starting coordinate
 -- @param y Y-starting coordinate
-function Patrol:new(x, y)
+-- @param stroll When letting beings walk this stroll is randomly applied to the
+-- new coordinate
+function Patrol:new(x, y, stroll)
     return setmetatable({
         position_index = 1,
         path = { {x=x, y=y} },
-        members = {}
+        members = {},
+        stroll = stroll
     }, mt)
 end
 
@@ -62,7 +65,8 @@ function Patrol:logic()
     local all_in_range = true
     for _, member in ipairs(self.members) do
         if manhattan_distance(posX(member), posY(member), x, y) > 5 * TILESIZE then
-            being_walk(member, x, y)
+            being_walk(member, x + math.random(-self.stroll, self.stroll),
+                       y + math.random(-self.stroll, self.stroll))
             all_in_range = false
         end
     end
