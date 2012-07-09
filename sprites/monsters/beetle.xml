@@ -31,6 +31,24 @@
             <sequence start="15" end="17" delay="150" />
 		</animation>
     </action>
+    <action name="attack" imageset="base">
+		<animation direction="down">
+            <sequence start="4" end="5" delay="150" />
+            <end />
+		</animation>
+		<animation direction="up">
+            <sequence start="7" end="9" delay="150" />
+            <end />
+		</animation>
+		<animation direction="right">
+            <sequence start="12" end="14" delay="150" />
+            <end />
+		</animation>
+		<animation direction="left">
+            <sequence start="17" end="19" delay="150" />
+            <end />
+		</animation>
+    </action>
     <action name="hurt" imageset="death">
         <animation direction="left">
             <frame index="0" delay="-1" />
