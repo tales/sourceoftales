@@ -3,6 +3,8 @@
 -- anger between the monsters.
 -- ]]
 
+module("group_monster", package.seeall)
+
 -- Calling this function will make all monsters of same id attack the aggressor
 function damage_recieved(mob, aggressor, hploss)
     local beings = get_beings_in_circle(mob, 10 * TILESIZE)

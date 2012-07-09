@@ -15,3 +15,6 @@ require "scripts/global_constants"
 
 -- Project specific global functions
 require "scripts/functions/tiletopixel"
+
+-- Monster scripts
+require "scripts/monsters"

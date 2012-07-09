@@ -75,6 +75,7 @@ end
 
 --- Returns the index of the current waypoint
 -- Use patrol.path to get the path table
+-- @param x X-Coordinate of the point
 function Patrol:getCurrentWaypoint()
     return self.position_index
 end
