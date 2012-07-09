@@ -13,6 +13,9 @@ local function manhattan_distance(x1, y1, x2, y2)
     return math.abs(x1 - x2) + math.abs(y1 - y2)
 end
 
+--- Creates a new patrol object
+-- @param x X-starting coordinate
+-- @param y Y-starting coordinate
 function Patrol:new(x, y)
     return setmetatable({
         position_index = 1,
@@ -21,15 +24,26 @@ function Patrol:new(x, y)
     }, mt)
 end
 
+--- Adds a new waypoint to the patrol
+-- Make sure that the point is not too far away from the last one since the
+-- pathfinding only works over a few tiles
+-- @param x X-Coordinate of the point
+-- @param y Y-Coordinate of the point
 function Patrol:addWayPoint(x, y)
     table.insert(self.path, {x=x, y=y})
 end
 
+--- Assigns a being to the patrol
+-- NOTE: Make sure that you unassign this being manually if you remove it from
+-- the map. Only usual death unassigns it automatically
+-- @param being The being to assign
 function Patrol:assignBeing(being)
     table.insert(self.members, being)
     on_death(being, function() self:unassignBeing(being) end)
 end
 
+--- Unassign a being from the patrol
+-- @param being The being handle to unassign
 function Patrol:unassignBeing(being)
     for i, member in ipairs(self.members) do
         if member == being then
@@ -39,6 +53,9 @@ function Patrol:unassignBeing(being)
     end
 end
 
+--- Calls the logic of the patrol
+-- Will move the beings to a new point or will try to get all beings to the
+-- current point
 function Patrol:logic()
     local x = self.path[self.position_index].x
     local y = self.path[self.position_index].y
@@ -56,6 +73,8 @@ function Patrol:logic()
     end
 end
 
+--- Returns the index of the current waypoint
+-- Use patrol.path to get the path table
 function Patrol:getCurrentWaypoint()
     return self.position_index
 end
