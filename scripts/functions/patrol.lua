@@ -1,5 +1,8 @@
 -- [[
 -- Script for grouping beings together and letting them patroul
+--
+-- Authors:
+-- - Ablu
 -- ]]
 
 
