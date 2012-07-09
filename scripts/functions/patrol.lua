@@ -83,3 +83,10 @@ end
 function Patrol:getCurrentWaypoint()
     return self.position_index
 end
+
+--- Stops the walking of all beings in the patrol
+function Patrol:stop()
+    for _, member in ipairs(self.members) do
+        being_walk(member, posX(member), posY(member))
+    end
+end
