@@ -42,7 +42,7 @@
     <monster id="2" name="Beetle" targetCursor="small">
         <sprite>monsters/beetle.xml</sprite>
         <attributes
-            hp="20"
+            hp="200"
             size="4"
             speed="1.0"
             evade="1"
@@ -56,7 +56,7 @@
         <behavior
             aggressive="false"
             cowardly="false"
-            track-range="1"
+            track-range="96"
             stroll-range="32"
             attack-distance="32"
             />
@@ -65,7 +65,7 @@
             type="physical"
             element="neutral"
             warmuptime="2"
-            cooldowntime="3"
+            cooldowntime="5"
             basedamage="10"
             deltadamage="2"
             range="48"
