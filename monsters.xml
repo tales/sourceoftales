@@ -39,13 +39,13 @@
             animation="attack"
             />
     </monster>
-    <monster id="2" name="Snake" targetCursor="small">
-        <sprite>monsters/snake.xml</sprite>
+    <monster id="2" name="Beetle" targetCursor="small">
+        <sprite>monsters/beetle.xml</sprite>
         <attributes
             hp="20"
             size="4"
             speed="1.0"
-            evade="5"
+            evade="1"
             magical-evade="5"
             physical-defence="5"
             magical-defence="0"
@@ -57,7 +57,7 @@
             aggressive="false"
             cowardly="false"
             track-range="1"
-            stroll-range="0"
+            stroll-range="32"
             attack-distance="32"
             />
         <attack id="1"
