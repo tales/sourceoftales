@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <status-effects>
-    <status-effect name="Plague" id="1"
+    <!--<status-effect name="Plague" id="1"
                    icon="icons/icon-poison.xml"
                    persistent-particle-effect="true"
                    start-particle="graphics/particles/green-bubbles.particle.xml"
@@ -13,5 +13,5 @@
                    start-particle="graphics/particles/magic.white.xml"
                    script="jump.lua"
                    tick-function="tick_jump"
-                 />
+                 />-->
 </status-effects>
