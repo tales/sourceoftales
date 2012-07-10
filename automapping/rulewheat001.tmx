@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="orthogonal" width="3" height="3" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="3" height="5" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
   <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="wheat" tilewidth="32" tileheight="32">
   <image source="../tiles/wheat.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
- <layer name="Regions" width="3" height="3">
+ <tileset firstgid="35" name="plowed_soil" tilewidth="32" tileheight="32">
+  <image source="../tiles/plowed_soil.png" trans="ff00ff" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="3" height="5">
   <data encoding="base64" compression="zlib">
-   eJxjYEAF0gyYAAACQAAc
+   eJxjYEAF0gzYASMWMQAE9AAd
   </data>
  </layer>
- <layer name="Input_set" width="3" height="3">
+ <layer name="Input_set" width="3" height="5">
   <data encoding="base64" compression="zlib">
-   eJxjYEAFvAyYAAABKAAO
+   eJxjYEAFvAzYAR8WMQADkAAc
   </data>
  </layer>
- <layer name="Output_Wheat" width="3" height="3">
+ <layer name="Output_Grass" width="3" height="5">
   <data encoding="base64" compression="zlib">
-   eJxjYEAF0gyYAAACQAAc
+   eJxjYCAO6GIRAwADwAAu
+  </data>
+ </layer>
+ <layer name="Output_Wheat" width="3" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF0gzYgQIWMQAHYAA8
   </data>
  </layer>
 </map>

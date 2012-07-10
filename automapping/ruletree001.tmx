@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="7" height="7" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="NoOverlappingRules" value="1"/>
+ </properties>
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="treetop" tilewidth="32" tileheight="32">
+  <image source="../tiles/treetop.png" trans="ff00ff" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="59" name="trunk" tilewidth="96" tileheight="96">
+  <image source="../tiles/trunk.png" trans="ff00ff" width="192" height="96"/>
+ </tileset>
+ <layer name="Regionsinput" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcgIsMPQACzAAL
+  </data>
+ </layer>
+ <layer name="Regionsoutput" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPGJEwPeQYCMhhAwAGqAAP
+  </data>
+ </layer>
+ <layer name="Input_settree" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcgJUMPQAByAAG
+  </data>
+ </layer>
+ <layer name="Output0_Fringe" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcwJoMPQAMwAA8
+  </data>
+ </layer>
+ <layer name="Output1_Fringe" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcwJoMPQAMwAA8
+  </data>
+ </layer>
+ <layer name="Output2_Fringe" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcwJoMPQAMwAA8
+  </data>
+ </layer>
+ <layer name="Outputempty_Fringe" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcwJoMPQAMwAA8
+  </data>
+ </layer>
+ <layer name="Output0_Over" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAfCAKxEBALY5ETB2IJIJbEIicLxHJALE+B3cgAAFR8ANk=
+  </data>
+ </layer>
+ <layer name="Output1_Over" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPBIFYCIiFsciJA7EEEEtikZMFYjkglidgPjUAAGwcANk=
+  </data>
+ </layer>
+ <layer name="Output2_Over" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPRIBYFIjFsMhJAbE0EMtgkVMAYkUgViJgPjUAAHoIAPQ=
+  </data>
+ </layer>
+ <layer name="Outputempty_Over" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj6AAAAxAAB
+  </data>
+ </layer>
+</map>

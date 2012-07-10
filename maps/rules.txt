@@ -64,7 +64,7 @@
 ../automapping/ruledirt005.tmx
 
 ########################################################################
-# Fences
+# Fences in setFences
 ########################################################################
 ../automapping/rulefence.tmx
 
@@ -83,3 +83,9 @@
 ../automapping/rulecave002.tmx
 ../automapping/rulecave003.tmx
 ../automapping/rulecave004.tmx
+
+########################################################################
+# Trees are placed in the settree layer,
+# each automapping step increases forrest density
+########################################################################
+../automapping/ruletree001.tmx
