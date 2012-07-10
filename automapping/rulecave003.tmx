@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="5" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="125" name="dirt2" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt2.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="143" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Regions" width="15" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMcBHgE9LLhYVNjLm49HIR4FMCAFvMALU=
+  </data>
+ </layer>
+ <layer name="Input_setCave" width="15" height="5" opacity="0.55">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMMBLgE9LLA2XzoOnlQVOLjc+Dg82IZBaMja6fHAAAPiQAgQ==
+  </data>
+ </layer>
+ <layer name="Output_CaveGround" width="15" height="5" opacity="0.69">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMtBPgE9LbjoVNjLm49KKbg0uMHAAAdHgIcQ==
+  </data>
+ </layer>
+ <layer name="Output_Cavewall" width="15" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMaKPxNUnQa47GNyVBrzMa3xGJLYsmJ0+CufgAAN1sAYE=
+  </data>
+ </layer>
+ <layer name="Output_CaveOver" width="15" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYBicQBCNLzwgrkAFABTMACU=
+  </data>
+ </layer>
+ <layer name="Output_Collision" width="15" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMTCDAp5XegTAXABjKA2E=
+  </data>
+ </layer>
+</map>

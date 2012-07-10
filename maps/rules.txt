@@ -75,3 +75,11 @@
 ../automapping/rulewheat001.tmx
 ../automapping/rulewheat002.tmx
 ../automapping/rulewheat003.tmx
+
+########################################################################
+# Cave
+########################################################################
+../automapping/rulecave001.tmx
+../automapping/rulecave002.tmx
+../automapping/rulecave003.tmx
+../automapping/rulecave004.tmx
