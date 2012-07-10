@@ -123,10 +123,10 @@
  </layer>
  <layer name="Collision" width="100" height="145" opacity="0.4">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3XW0rEQBAFUD/cnfvfj1+BcfCRnnRZtzvnQIMwJtStiybz9gYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPPp4P3/MWG8k6wpndd3708dX3fvTx1fd+7tjH907SjkpuveQclJ07yHlpOjeQ8pJ0b2HlJOiew8pJ0lq5tS5qqXmnnGvnfv46Zqz95g5V+e9qr26x+fPk/v47Z5pZu8v2R37SMx4WLmPV2etzDjy/vDXc+9OfVTlvHMfKUbeGfTx830q3LmPx3nP5uue9Q59jOTtmvXK9Wmu9vH4N9Qx63e/c+X6brP6+M9Zn38evV4fGVaYfYUZZ1kh6wozzrJC1hVmnGWFrCvMOMsKWVeYcZYVsu7wXrVDhsMOWXbIcNghyw4ZDjtk2SHDYYcsO2QYlZwlebYqyZmTZ6uSnDl5tirJmZNnq3LlmXlmX9X3340+sugjiz6y6GMvZ3ZlnwAANby71hjdq+8StV7ZrT7qzNirXmrZbZbRPvzvqqWPtenjf9gtXOf7CAAjPCcAgE6fKOB+tZDiAAA=
+   H4sIAAAAAAAAA+3XUUrEQBAEUD+8nfe/j1+BVVzNbKad6sl7MCCsCV1daLJvbwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAo4/388eM9Uaydjjdrd6fPr5avT99fLV6f3fsY/WOUk6K1XtIOSlW7yHlpFi9h5STYvUeUk6K1XtIOUlSM6fOVS0194x77dzHs2vO3mPmXCvvVe3VPX7/PLmP3+6ZZvb+kt2xj8SMh859vDprZcaR94e/nnt36qMq5537SDHyzqCP5/epcOc+Huc9m2/1rHfoYyTvqlmvXJ/mah+Pf0MrZv3pd65cv9qsPv5z1u8/j16vjwwdZu8w4ywdsnaYcZYOWTvMOEuHrB1mnKVD1g4zztIh6w7vVTtkOOyQZYcMhx2y7JDhsEOWHTIcdsiyQ4ZRyVmSZ6uSnDl5tirJmZNnq5KcOXm2KleemWf2VX3/3egjiz6y6COLPvZyZlf2CQBQw7trjdG9+i5R65Xd6qPOjL3qZY5n+7PbLKN9+N9VSx+96eN/2C1c5/sIACM8JwCAlT4BPoCetpDiAAA=
   </data>
  </layer>
- <objectgroup name="Object" width="100" height="145" opacity="0">
+ <objectgroup name="Object" width="100" height="145">
   <object name="training dummy spawn" type="SPAWN" x="640" y="2752" width="448" height="320">
    <properties>
     <property name="max_beings" value="4"/>
@@ -134,7 +134,7 @@
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
-  <object name="External Map Events" type="SCRIPT" x="320" y="2048" width="2528" height="1856">
+  <object name="External Map Events" type="SCRIPT" x="0" y="0">
    <properties>
     <property name="FILENAME" value="scripts/maps/spawn.lua"/>
    </properties>
