@@ -1,8 +1,8 @@
 <effect>
     <particle
         position-x="0"
-        position-y="-16"
-        position-z="16"
+        position-y="0"
+        position-z="32"
         lifetime="1" >
         <emitter>
             <property name="horizontal-angle" min="0" max="360" />
