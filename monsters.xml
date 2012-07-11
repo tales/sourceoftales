@@ -73,5 +73,43 @@
             animation="attack"
             />
     </monster>
+    <monster id="3" name="Skeleton" targetCursor="small">
+        <sprite>monsters/skeleton.xml</sprite>
+        <sprite>equipment/HEAD_robe_hood.xml</sprite>
+        <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+        <sprite>equipment/LEGS_robe_skirt.xml</sprite>
+        <attributes
+            hp="200"
+            size="4"
+            speed="1.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="5"
+            magical-defence="0"
+            mutation="50"
+            />
+        <exp>10</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="1"
+            cooldowntime="10"
+            basedamage="10"
+            deltadamage="2"
+            range="48"
+            chancetohit="200"
+            action="spellcast"
+            effect-id="1"
+            />
+    </monster>
 </monsters>
 

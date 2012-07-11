@@ -1,0 +1,12 @@
+<effect>
+    <particle
+        position-x="0"
+        position-y="32"
+        position-z="16"
+        lifetime="75" >
+        <animation imageset="particles/quake.png" width="256" height="128">
+            <frame index="0" delay="100" />
+            <sequence start="0" end="5" delay="125" />
+        </animation>
+    </particle>
+</effect>
