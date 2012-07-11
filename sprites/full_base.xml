@@ -71,6 +71,46 @@
 
     <action
         name="attack_bow"
-        imageset="walkcycle">
+        imageset="bow">
+        <animation direction="up">
+            <sequence start="1" end="8" delay="100" />
+            <frame index="9" delay="200" />
+            <sequence start="10" end="12" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="left">
+            <sequence start="14" end="25" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="down">
+            <sequence start="27" end="38" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="right">
+            <sequence start="40" end="51" delay="100" />
+            <end/>
+        </animation>
+    </action>
+
+    <action
+        name="spellcast"
+        imageset="spellcast">
+
+        <animation direction="up">
+            <sequence start="1" end="6" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="left">
+            <sequence start="8" end="13" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="down">
+            <sequence start="15" end="20" delay="100" />
+            <end/>
+        </animation>
+        <animation direction="right">
+            <sequence start="22" end="27" delay="100" />
+            <end/>
+        </animation>
     </action>
 </sprite>

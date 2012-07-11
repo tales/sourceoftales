@@ -2,29 +2,29 @@
 <sprite name="player" action="stand">
     <imageset
         name="walkcycle"
-        src="sprites/characters/male_walkcycle.png"
+        src="sprites/equipment/walkcycle/empty.png"
         width="64"
         height="64"/>
     <imageset
         name="hurt"
-        src="sprites/characters/male_hurt.png"
+        src="sprites/equipment/hurt/empty.png"
         width="64"
         height="64"/>
     <imageset
         name="slash"
-        src="sprites/characters/male_slash.png"
-        width="64"
-        height="64"/>
-    <imageset
-        name="bow"
-        src="sprites/characters/male_bow.png"
+        src="sprites/equipment/slash/emtpy.png"
         width="64"
         height="64"/>
     <imageset
         name="spellcast"
-        src="sprites/characters/male_spellcast.png"
+        src="sprites/equipment/spellcast/emtpy.png"
         width="64"
         height="64"/>
+    <imageset
+        name="bow"
+        src="sprites/equipment/bow/WEAPON_bow.png"
+        width="64"
+        height="64" />
 
     <include file="full_base.xml"/>
 </sprite>

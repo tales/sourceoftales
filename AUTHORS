@@ -761,15 +761,19 @@ Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/environment
 Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/wood_and_bronze_house.png
 Emilio J Sanchez-Sierra            CC BY_SA 3.0, GPLv3         tiles/woodend_stairs.png
 Erik Schilling                     CC0                         sprites/equipment/hurt/empty.png
+Erik Schilling                     CC0                         sprites/equipment/slash/empty.png
+Erik Schilling                     CC0                         sprites/equipment/spellcast/empty.png
+Erik Schilling                     CC0                         sprites/equipment/walkcycle/empty.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_10x10_dyable.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_5x5_dyable.png
 Erik Schilling                     CC BY_SA 3.0, GPLv3         particles/orb_7x7_dyable.png
 Hyptosis (www.lorestrome.com)      CC0                         tiles/magecity.png
 Johann Charlot                     CC BY_SA 3.0, GPLv3         particles/effects01.png
 Johann Charlot                     CC BY_SA 3.0, GPLv3         tiles/outside.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/characters/male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/characters/male_thrust.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_leather.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BODY_animation.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_plate_armor_shoes.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_shoes_brown.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HANDS_plate_armor_gloves.png
@@ -865,7 +869,6 @@ Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipmen
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BEHIND_quiver.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_leather.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BODY_animation.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_plate_armor_shoes.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_shoes_brown.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HANDS_plate_armor_gloves.png
