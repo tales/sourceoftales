@@ -122,7 +122,7 @@
     </item>
     <item id="4" max-per-slot="1" name="Rusty chain armor"
         description="A chain armor that has its best days gone."
-        image="kiwi.png"
+        image="ArmorChainMail.png"
         value="50">
         <equip>
             <slot type="torso" required="1" />
@@ -154,7 +154,7 @@
     </item>
     <item id="6" max-per-slot="1" name="Shortsword" attack-action="attack"
         description="A notchy shortsword."
-        image="melon.png"
+        image="Sword01.png"
         value="40">
         <equip>
             <slot type="hand" required="1" />
