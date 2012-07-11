@@ -7,9 +7,9 @@
         <emitter>
             <property name="horizontal-angle" min="0" max="360" />
             <property name="vertical-angle" value="0" />
-            <property name="power" value="30" />
+            <property name="power" min="10" max="40" />
             <property name="lifetime" value="1" />
-            <property name="output" value="7" />
+            <property name="output" value="10" />
             <emitter>
                 <property name="lifetime" value="160" />
                 <animation imageset="particles/rock_spikes.png" width="64" height="64">

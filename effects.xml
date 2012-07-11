@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <effects>
     <effect id="1" audio="sfx/fire.ogg" particle="particles/quake.xml" />
-    <effect id="2" particle="particles/rock_spikes.xml" />
+    <effect id="2" audio="sfx/trap.ogg" particle="particles/rock_spikes.xml" />
 
 </effects>
