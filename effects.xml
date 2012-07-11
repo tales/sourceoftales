@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <effects>
-  <effect id="1" particle="particles/quake.xml" />
+    <effect id="1" audio="sfx/fire.ogg" particle="particles/quake.xml" />
 
 </effects>
