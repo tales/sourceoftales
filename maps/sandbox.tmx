@@ -10,7 +10,7 @@
  </layer>
  <layer name="Fringe" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+   eJzt09EJACAMQ8EU3H9m8U9wgBa5g0zwSAIAAACvuka/02FFjyn8AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBvGzJ5AA0=
   </data>
  </layer>
  <layer name="Collision" width="100" height="100">
@@ -22,6 +22,17 @@
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/sandbox.lua"/>
+   </properties>
+  </object>
+  <object name="trap" type="TRAP" x="256" y="288" width="96" height="96">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="2"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_radius" value="0"/>
    </properties>
   </object>
  </objectgroup>
