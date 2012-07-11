@@ -84,10 +84,76 @@
     <sprite>equipment/LEGS_pants_greenish.xml</sprite>
     <sprite>equipment/FEET_shoes_brown.xml</sprite>
 </npc>
-<!--
-TODO
-<npc id="2">
+<npc id="10">
     <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_darkblondehair.xml</sprite>
+    <sprite>equipment/female_mage_blackrobe.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
 </npc>
--->
+<npc id="11">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_lightblondehair.xml</sprite>
+    <sprite>equipment/female_mage_bluerobe.xml</sprite>
+    <sprite>equipment/female_mage_silverbelt.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
+</npc>
+<npc id="12">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_darkblondehair.xml</sprite>
+    <sprite>equipment/female_mage_brownrobe.xml</sprite>
+    <sprite>equipment/female_mage_brownslippers.xml</sprite>
+</npc>
+<npc id="13">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_blackhair.xml</sprite>
+    <sprite>equipment/female_mage_darkbrownrobe.xml</sprite>
+    <sprite>equipment/female_mage_brownslippers.xml</sprite>
+</npc>
+<npc id="14">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_lightblondehair.xml</sprite>
+    <sprite>equipment/female_mage_darkgrayrobe.xml</sprite>
+    <sprite>equipment/female_mage_silverbelt.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
+</npc>
+<npc id="15">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_brownhair.xml</sprite>
+    <sprite>equipment/female_mage_forestrobe.xml</sprite>
+    <sprite>equipment/female_mage_blackbelt.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
+</npc>
+<npc id="16">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_brownhair.xml</sprite>
+    <sprite>equipment/female_mage_lightgrayrobe.xml</sprite>
+    <sprite>equipment/female_mage_grayslippers.xml</sprite>
+</npc>
+<npc id="17">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_blackhair.xml</sprite>
+    <sprite>equipment/female_mage_purplerobe.xml</sprite>
+    <sprite>equipment/female_mage_goldbelt.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
+</npc>
+<npc id="18">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_blackhair.xml</sprite>
+    <sprite>equipment/female_mage_redrobe.xml</sprite>
+    <sprite>equipment/female_mage_brownbelt.xml</sprite>
+    <sprite>equipment/female_mage_blackslippers.xml</sprite>
+</npc>
+<npc id="19">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_grayhair.xml</sprite>
+    <sprite>equipment/female_mage_whiterobe.xml</sprite>
+    <sprite>equipment/female_mage_grayslippers.xml</sprite>
+</npc>
+<npc id="20">
+    <sprite>characters/female_base.xml</sprite>
+    <sprite>equipment/female_mage_whitehair.xml</sprite>
+    <sprite>equipment/female_robe.xml</sprite>
+    <sprite>equipment/female_mage_whiteslippers.xml</sprite>
+</npc>
+
 </npcs>
