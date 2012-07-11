@@ -5,7 +5,7 @@ local function smithTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local function getEquipment(npc, ch)
+    local function getEquipment()
         say("Yes?")
         local ask_equip = { "I need my equipment!",
                             "Nevermind."}
@@ -30,7 +30,7 @@ local function smithTalk(npc, ch)
 
     local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
     if tutorial_equip ~= "done" then
-        getEquipment(npc, ch)
+        getEquipment()
     else
         say("TODO: tutorial_equip done")
         -- maybe offer a shop with more equipment/weapons?

@@ -8,7 +8,7 @@ local function instructorTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
-    local function fightTrainingSoldier(npc, ch)
+    local function fightTrainingSoldier()
         say("Ah, there you are. Welcome to our unit. I'm going to teach you some basics.")
         if tutorial_equip ~= "done" then
             say("Didn't you get your equipment yet? Well, whatever, you can go to Smith Blacwin and get some armor after the training. Take this for now.")
@@ -37,7 +37,7 @@ local function instructorTalk(npc, ch)
                 say("He's a bit grumpy, so don't take it personal if he doesn't say much.")
             end
         else
-            fightTrainingSoldier(npc, ch)
+            fightTrainingSoldier()
         end
     end
     say("Do you have any further questions?")

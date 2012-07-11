@@ -2,7 +2,7 @@ local function veteranTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
-    local function send_tutorial(npc, ch)
+    local function send_tutorial()
         local title = "kid"
         if being_get_gender(ch) == GENDER_MALE then
             title = "boy"
@@ -38,7 +38,7 @@ local function veteranTalk(npc, ch)
     if (tutorial_fight == "done") and (tutorial_equip == "done") then
         say("TODO: give first real quest")
     else
-        send_tutorial(npc, ch)
+        send_tutorial()
     end
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
