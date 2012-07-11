@@ -29,12 +29,22 @@ local function smithTalk(npc, ch)
     end
 
     local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+    local tutorial_shop = chr_get_quest(ch, "tutorial_shop")
     if tutorial_equip ~= "done" then
         getEquipment()
     else
-        say("TODO: tutorial_equip done")
-        -- maybe offer a shop with more equipment/weapons?
-        -- those stuff isn't intended to be sold, but he does that to boost his pay
+        say("Hrm.")
+        if tutorial_shop == "done" then
+            local ask_shop = { "I heard you could sell me better armor?",
+                                "Nevermind."}
+            local res = npc_choice(npc, ch, ask_shop)
+            if res == 1 then
+                say("TODO: shop")
+                -- those stuff isn't intended to be sold, but he does that to boost his pay
+            else
+                say("Hmph.")
+            end
+        end
     end
 end
 
