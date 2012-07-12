@@ -23,8 +23,8 @@ local function instructorTalk(npc, ch)
     local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
     local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
     if tutorial_fight == "beat_dummies" then
-        local dummies = chr_get_kill_count(ch, 1) -- TODO: remind Ablu to make this work with monster names
-        if dummies > 5 then -- TODO: define some constant or just leave it like this?
+        local dummies = chr_get_kill_count(ch, "training dummy")
+        if dummies > 5 then
             say("Alright, that looks good. Feel free to train here whenever you want.")
             chr_set_quest(ch, "tutorial_fight", "done")
         else
