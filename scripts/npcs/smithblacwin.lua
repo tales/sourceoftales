@@ -1,5 +1,8 @@
+-- authors: Jenalya
+
 -- variable use
 -- tutorial_equip: saves if got equipment from smith
+
 local function smithTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)

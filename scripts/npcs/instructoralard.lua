@@ -1,3 +1,5 @@
+-- authors: Jenalya
+
 -- variable use
 -- tutorial_fight: save progress on task to fight against the training dummies
 --      beat_dummies: got task
