@@ -79,6 +79,7 @@
 ########################################################################
 # Cave
 ########################################################################
+../automapping/rulecave000.tmx
 ../automapping/rulecave001.tmx
 ../automapping/rulecave002.tmx
 ../automapping/rulecave003.tmx

@@ -27,7 +27,7 @@
    eJxjYMAP2vHIAQAPAACI
   </data>
  </layer>
- <layer name="Output_Cavewall" width="5" height="3">
+ <layer name="Output_CaveWall" width="5" height="3">
   <data encoding="base64" compression="zlib">
    eJxjYMAO5HCIIwMABHQAHw==
   </data>
