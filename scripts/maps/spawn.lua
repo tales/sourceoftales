@@ -7,6 +7,7 @@
 atinit(function()
     require "scripts/functions/walkingnpc"
 
+    require "scripts/npcs/guardfordwin"
     require "scripts/npcs/guardterric"
     require "scripts/npcs/instructoralard"
     require "scripts/npcs/recruithugh"
