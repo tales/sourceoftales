@@ -8,7 +8,7 @@
 require "scripts/functions/patrol"
 
 atinit(function()
-    local mob_id = 2
+    local mob_id = 4
     local patrol = Patrol:new(20 * TILESIZE, 20 * TILESIZE, 2)
     patrol:addWayPoint(25 * TILESIZE, 20 * TILESIZE)
     patrol:addWayPoint(30 * TILESIZE, 20 * TILESIZE)
