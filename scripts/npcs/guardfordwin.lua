@@ -9,6 +9,10 @@ local function guardTalk(npc, ch)
 end
 
 local function guardDenyExit(ch)
+    if not being_type(ch) == TYPE_CHARACTER then
+        return
+    end
+
     -- check for the amount of dummies, because quest variables can't be checked here, as this is threaded
     local dummies = chr_get_kill_count(ch, "training dummy")
     if dummies < tutorial_dummy_amount then
@@ -20,4 +24,4 @@ end
 
 local guard = create_npc_by_name("Guard Fordwin", guardTalk)
 
-trigger_create(tileToPixel(45), tileToPixel(118), 4*32, 1*32, guardDenyExit, 0, true)
+create_trigger_by_name("Casern south gate", guardDenyExit)

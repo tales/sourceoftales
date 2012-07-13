@@ -181,5 +181,6 @@
     <property name="sprite_id" value="8"/>
    </properties>
   </object>
+  <object name="Casern south gate" type="TRIGGER" x="1440" y="3776" width="128" height="32"/>
  </objectgroup>
 </map>
