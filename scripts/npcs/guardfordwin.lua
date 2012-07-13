@@ -9,9 +9,9 @@ local function guardTalk(npc, ch)
 end
 
 local function guardDenyExit(ch)
--- check for the amount of dummies, because quest variables can't be checked here, as this is threaded
-local dummies = chr_get_kill_count(ch, "training dummy")
-        if dummies < 6 then
+    -- check for the amount of dummies, because quest variables can't be checked here, as this is threaded
+    local dummies = chr_get_kill_count(ch, "training dummy")
+    if dummies < 6 then
         chat_message(ch, "Guard Fordwin: Hey! I can't let you pass like this. Get your equipment and finish your basic training!")
         chr_warp(ch, nil, posX(ch), tileToPixel(117))
         being_set_direction(ch, DIRECTION_UP)
