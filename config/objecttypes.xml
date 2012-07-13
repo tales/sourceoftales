@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="SCRIPT" color="#a40002"/>
+ <objecttype name="WARP" color="#0008a4"/>
+ <objecttype name="NPC_POSITION" color="#fff705"/>
+ <objecttype name="EFFECT" color="#00ff11"/>
+</objecttypes>
