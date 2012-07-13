@@ -18,8 +18,6 @@ local function guardDenyExit(ch)
     end
 end
 
-local guard = npc_create("Guard Fordwin", 3, GENDER_MALE,
-                              tileToPixel(49), tileToPixel(119),
-                              guardTalk, nil)
+local guard = create_npc_by_name("Guard Fordwin", guardTalk)
 
 trigger_create(tileToPixel(45), tileToPixel(118), 4*32, 1*32, guardDenyExit, 0, true)
