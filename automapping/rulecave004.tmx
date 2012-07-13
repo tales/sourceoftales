@@ -4,42 +4,47 @@
   <image source="ruleset.png" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="384" height="288"/>
+  <image source="../tiles/mountains.png" width="480" height="288"/>
  </tileset>
- <tileset firstgid="125" name="dirt2" tilewidth="32" tileheight="32">
+ <tileset firstgid="152" name="dirt2" tilewidth="32" tileheight="32">
   <image source="../tiles/dirt2.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="143" name="collision" tilewidth="32" tileheight="32">
+ <tileset firstgid="170" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <layer name="Regions" width="16" height="6">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAccEExOhtZnhAfl35c5uFSQ679+Pi0BAC/MADd
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoBxwQTE6mxr6sZmHTw0u9fj4AwkA7V/MPoABAAA=
   </data>
  </layer>
  <layer name="Input_setCave" width="16" height="6" opacity="0.55">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAcMEIxOhsGeAjw8elnxKGfEQcfm3p095DqPloCAFfYAG8=
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoBwwQjE6mxr6QWweNPU8aGqQ+djUo7uHVPfREgAAqnaTDoABAAA=
   </data>
  </layer>
- <layer name="Output_CaveGround" width="16" height="6" opacity="0.69">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFAwkAAYAAAQ==
+ <layer name="Output_CaveGround" width="16" height="6" opacity="0.68">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAUDCQBH0bqIgAEAAA==
   </data>
  </layer>
  <layer name="Output_CaveWall" width="16" height="6">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAOUIDSimTq14HSumjiojjUi6DxLaC0JZn2DxQAABX/ATU=
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA7QgdK6ZOq3htI2aOJyONTLIrE9gdgLyvYGYh8y3TAQAABKatOggAEAAA==
+  </data>
+ </layer>
+ <layer name="Output_CaveWall2" width="16" height="6">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoBxoo/H1SNRvhca3pcAtQw0AAO4Ce4mAAQAA
   </data>
  </layer>
  <layer name="Output_CaveOver" width="16" height="6">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFAwkAAYAAAQ==
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGPxAHo0vMyCuoA0AAFxyWIKAAQAA
   </data>
  </layer>
  <layer name="Output_Collision" width="16" height="6">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAOmIBGU0s/LvNwqSPX/oECACe8BIE=
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA5YjUZTSz8u83CpI9f+gQIAxD5WUYABAAA=
   </data>
  </layer>
 </map>

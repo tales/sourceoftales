@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="33" height="6" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="9" height="7" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
   <image source="ruleset.png" width="256" height="64"/>
  </tileset>
@@ -12,39 +12,39 @@
  <tileset firstgid="170" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
- <layer name="Regions" width="33" height="6">
+ <layer name="Regions" width="9" height="7" visible="0">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGDyAC4qJ4ZOillT70e2gFp9UdxDDp0U4IOslhk+suqEEAE9CIn4YAwAA
+   H4sIAAAAAAAAA2NgIB5wEcEnJMaFJobOJ1YNMe4hBADnrB2+/AAAAA==
   </data>
  </layer>
- <layer name="Input_setCave" width="33" height="6" opacity="0.87">
+ <layer name="Input_setCave" width="9" height="7" opacity="0.87">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGDyAEYqJ4ZOillT7Yfp4CPDR1cPYPHj4MDY+ALOHGD66maTyCbkDH5+RRHW45AcjAAAWopLUGAMAAA==
+   H4sIAAAAAAAAA2NgIB4wEsHHJ8YNxDxoYjA2DwlqkNUhA3Q+IQAAXXl3W/wAAAA=
   </data>
  </layer>
- <layer name="Output_CaveGround" width="33" height="6" opacity="0.68">
+ <layer name="Output_CaveGround" width="9" height="7" opacity="0.68">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGAWjYBSgAwA9/TNpGAMAAA==
+   H4sIAAAAAAAAA2NgGLkAAPFZY6b8AAAA
   </data>
  </layer>
- <layer name="Output_CaveWall" width="33" height="6">
+ <layer name="Output_CaveWall" width="9" height="7">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGFxAhwAfBnQJ8MkFDlCMLoZLLTHqYCCKSDf4A7E9Er8cCx9ZrQ8aPwDNvAokdiaRbgABPwJ8GEC3D50/FAEAo+tQZRgDAAA=
+   H4sIAAAAAAAAA2NgIB+ooPGtsKgxRuN7YlHjR4EbKAEAwiQRXPwAAAA=
   </data>
  </layer>
- <layer name="Output_CaveWall2" width="33" height="6">
+ <layer name="Output_CaveWall2" width="9" height="7">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGDxAG40fSYCvh8aPIsAnFhggsTOw8GHACIht0fiZaGah86kNHAnwRwF5AABDmPucGAMAAA==
+   H4sIAAAAAAAAA2NgGHhgSIQaByxivmh8fxLtBQAtWWRp/AAAAA==
   </data>
  </layer>
- <layer name="Output_CaveOver" width="33" height="6">
+ <layer name="Output_CaveOver" width="9" height="7">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGAWjYBSgAwA9/TNpGAMAAA==
+   H4sIAAAAAAAAA2NgGLkAAPFZY6b8AAAA
   </data>
  </layer>
- <layer name="Output_Collision" width="33" height="6">
+ <layer name="Output_Collision" width="9" height="7">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NgGAWjYBSgAwA9/TNpGAMAAA==
+   H4sIAAAAAAAAA2NgGLkAAPFZY6b8AAAA
   </data>
  </layer>
 </map>
