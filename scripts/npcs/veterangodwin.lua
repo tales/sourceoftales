@@ -46,6 +46,6 @@ end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
 -- idea for later quest: get taxes from the inhabitants in Goldenfield
 
-local veteran = npc_create("Veteran Godwin", 4, GENDER_MALE,
+local veteran = create_npc_by_name("Veteran Godwin", 4, GENDER_MALE,
                               tileToPixel(47), tileToPixel(97),
                               veteranTalk, nil)

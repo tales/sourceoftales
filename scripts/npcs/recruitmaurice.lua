@@ -24,6 +24,4 @@ local function recruitTalk(npc, ch)
     end
 end
 
-local recruit = npc_create("Recruit Maurice", 2, GENDER_MALE,
-                              tileToPixel(24), tileToPixel(100),
-                              recruitTalk, nil)
+local recruit = create_npc_by_name("Recruit Maurice", recruitTalk)

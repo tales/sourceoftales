@@ -145,5 +145,41 @@
     <property name="sprite_id" value="3"/>
    </properties>
   </object>
+  <object name="Instructor Alard" type="NPC_POSITION" x="1184" y="2944" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="1"/>
+   </properties>
+  </object>
+  <object name="Recruit Maurice" type="NPC_POSITION" x="768" y="3200" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="2"/>
+   </properties>
+  </object>
+  <object name="Guard Terric" type="NPC_POSITION" x="1536" y="2720" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="3"/>
+   </properties>
+  </object>
+  <object name="Veteran Godwin" type="NPC_POSITION" x="1503" y="3101" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="4"/>
+   </properties>
+  </object>
+  <object name="Recruit Hugh" type="NPC_POSITION" x="1056" y="3168" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="2"/>
+   </properties>
+  </object>
+  <object name="Smith Blacwin" type="NPC_POSITION" x="2144" y="3072" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

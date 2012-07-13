@@ -18,6 +18,4 @@ local function recruitTalk(npc, ch)
     -- idea: could have a friend who later turns out to be one of the rebels
 end
 
-local recruit = npc_create("Recruit Hugh", 2, GENDER_MALE,
-                              tileToPixel(33), tileToPixel(99),
-                              recruitTalk, nil)
+local recruit = create_npc_by_name("Recruit Hugh", recruitTalk)

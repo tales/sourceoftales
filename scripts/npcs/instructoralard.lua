@@ -46,6 +46,4 @@ local function instructorTalk(npc, ch)
     say("TODO: add some topics, e.g. attributes, skills etc")
 end
 
-local instructor = npc_create("Instructor Alard", 1, GENDER_MALE,
-                              tileToPixel(37), tileToPixel(92),
-                              instructorTalk, nil)
+local instructor = create_npc_by_name("Instructor Alard", instructorTalk)

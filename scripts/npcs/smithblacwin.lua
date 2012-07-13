@@ -61,9 +61,7 @@ local smith_way = {
         {x=tileToPixel(67), y=tileToPixel(96), wait=8},
         {x=tileToPixel(66), y=tileToPixel(96), wait=3}}
 
-local smith = npc_create("Smith Blacwin", 8, GENDER_MALE,
-                              tileToPixel(67), tileToPixel(96),
-                              smithTalk, nil)
+local smith = create_npc_by_name("Smith Blacwin", smithTalk)
 
 setWaypoints(smith, smith_way, 3, smithWaypointReached)
 gotoNextWaypoint(smith)
