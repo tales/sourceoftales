@@ -4,4 +4,5 @@
  <objecttype name="WARP" color="#0008a4"/>
  <objecttype name="NPC_POSITION" color="#fff705"/>
  <objecttype name="EFFECT" color="#00ff11"/>
+ <objecttype name="TRIGGER" color="#00ffee"/>
 </objecttypes>
