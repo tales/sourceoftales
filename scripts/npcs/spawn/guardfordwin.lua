@@ -5,7 +5,7 @@ local function guardTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("This merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak into the casern to distract the new recruits with their goods.")
+    say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak into the casern to distract the new recruits with their goods.")
 end
 
 local function guardDenyExit(ch)
