@@ -6,10 +6,10 @@
  <tileset firstgid="17" name="mountains" tilewidth="32" tileheight="32">
   <image source="../tiles/mountains.png" width="384" height="288"/>
  </tileset>
- <tileset firstgid="125" name="dirt2" tilewidth="32" tileheight="32">
+ <tileset firstgid="149" name="dirt2" tilewidth="32" tileheight="32">
   <image source="../tiles/dirt2.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="143" name="collision" tilewidth="32" tileheight="32">
+ <tileset firstgid="167" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <layer name="Regions" width="7" height="6">

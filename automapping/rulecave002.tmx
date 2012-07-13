@@ -4,12 +4,12 @@
   <image source="ruleset.png" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="384" height="288"/>
+  <image source="../tiles/mountains.png" width="480" height="288"/>
  </tileset>
- <tileset firstgid="125" name="dirt2" tilewidth="32" tileheight="32">
+ <tileset firstgid="152" name="dirt2" tilewidth="32" tileheight="32">
   <image source="../tiles/dirt2.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="143" name="collision" tilewidth="32" tileheight="32">
+ <tileset firstgid="170" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <layer name="Regions" width="7" height="7">
@@ -24,12 +24,12 @@
  </layer>
  <layer name="Output_CaveGround" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAP2qEYnU0soLV6EAAAmgsDKw==
+   eJxjYMAPFkExOptYQGv1IAAA6+MDzQ==
   </data>
  </layer>
  <layer name="Output_CaveWall" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAP5NH4sgTUw4AWHjkzKC2HRc6JSPORAQBd1AD9
+   eJxjYMAPlND4CgTUw4ABHjl7KK2IRc6PSPORAQBqHAEh
   </data>
  </layer>
  <layer name="Output_CaveOver" width="7" height="7">
@@ -39,7 +39,7 @@
  </layer>
  <layer name="Output_Collision" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAPJhDgE6sPmxyxZhECAEKTAtE=
+   eJxjYMAPVhPgE6sPmxyxZhECAH7nA1g=
   </data>
  </layer>
 </map>
