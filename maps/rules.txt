@@ -84,6 +84,9 @@
 ../automapping/rulecave002.tmx
 ../automapping/rulecave003.tmx
 ../automapping/rulecave004.tmx
+../automapping/rulecave005.tmx
+../automapping/rulecave006.tmx
+../automapping/rulecave007.tmx
 
 ########################################################################
 # Trees are placed in the settree layer,
