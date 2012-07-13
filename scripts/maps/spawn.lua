@@ -9,12 +9,12 @@ atinit(function()
     require "scripts/functions/npchelper"
     require "scripts/functions/triggerhelper"
 
-    require "scripts/npcs/guardfordwin"
-    require "scripts/npcs/guardterric"
-    require "scripts/npcs/instructoralard"
-    require "scripts/npcs/recruithugh"
-    require "scripts/npcs/recruitmaurice"
-    require "scripts/npcs/smithblacwin"
-    require "scripts/npcs/veterangodwin"
+    require "scripts/npcs/spawn/guardfordwin"
+    require "scripts/npcs/spawn/guardterric"
+    require "scripts/npcs/spawn/instructoralard"
+    require "scripts/npcs/spawn/recruithugh"
+    require "scripts/npcs/spawn/recruitmaurice"
+    require "scripts/npcs/spawn/smithblacwin"
+    require "scripts/npcs/spawn/veterangodwin"
 end)
 
