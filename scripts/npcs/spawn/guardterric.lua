@@ -20,6 +20,7 @@ local function guardTalk(npc, ch)
     elseif res == 2 then
         say("Problem, you say? Hah! This place is a big NOTHING. Endless fields and trees and more fields.")
         say("He sighs.")
+        say("And when something happens, it's trouble. Like those agitators who told the village people not to pay their taxes. Pah.")
     elseif res ==3 then
         say("Sure.")
     end

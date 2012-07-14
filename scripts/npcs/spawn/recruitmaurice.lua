@@ -19,7 +19,17 @@ local function recruitTalk(npc, ch)
     elseif res == 2 then
         say("Because of war, you dumbhead. Why else should they even come out here to Goldenfield to hire people? I mean, nothing ever happens here and usually there are only a handful of old soldiers here in the casern who feel bored to death.")
         say("After the basic training we're probably going to be send to more interesting places.")
-    elseif res ==3 then
+        say("At least I hope so. If those rebels become a more serious problem, they might need use here.")
+
+        local choices = { "Well, thanks for the information.",
+                        "Rebels? What do you mean?"}
+
+        local res = npc_choice(npc, ch, choices)
+
+        if res == 2 then
+            say("Didn't you hear? Some people got upset about the increased taxes and started rioting. So far they didn't seem very organized, but I heard rumors that they're getting more successful.")
+        end
+    elseif res == 3 then
         say("Oh, ok. See you later then.")
     end
 end
