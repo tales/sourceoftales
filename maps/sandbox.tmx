@@ -12,14 +12,22 @@
  <tileset firstgid="172" name="dungeon" tilewidth="32" tileheight="32">
   <image source="../tiles/dungeon.png" width="416" height="256"/>
  </tileset>
+ <tileset firstgid="276" name="dirt_night" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt_night.png" width="96" height="192"/>
+ </tileset>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt0UEJADAMBMH7x7+DCo2HQmkC8xgBy1aSAgAAAAAA4Mp55HfXVn7M4gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWzWbQtUy
+   eJzt0cENgDAQA8H7pw1Kp1AaIJEQQhhuHlOAvaOqBgBAqO0hb+/6Kj2y6JHl7Mt9Qg89utEjix5Z9MiiRxY9suixNvviLj30+AM9etMjix5Zrnyshx7d6AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIoDCQ0lEw==
   </data>
  </layer>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt1rENgDAQBEEXQwd0QAe0R0yhzpETW7w4oRnpAn+6iVsDAAAA4Ctb4ZinRxY9suxFY81RNNacReN91+N9D27wZ/5WWfTIokcWPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQdJGAo8Q==
+   eJzt0jEOgCAQRcHlGooi3P+QUlDYUIPJTPL7Td5GAAAAAAAwc6SIcyyn1dfw9AZ1rOnBT1z9V+/Pit9dSo+96AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADArl4e8ALK
+  </data>
+ </layer>
+ <layer name="Ground" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1rkNgDAQRUFq4aiADuiA9qiWI1mJyBZascGM9AM7svQSDwMAAAAZltd5vDb98RAeetSiR5gT10qPoEctetSyJq2HHmFLWg89wp60Hnq0ORrvvtKjFj3C33+rmx5Bj1oq9CDoAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVHACm+ktrw==
   </data>
  </layer>
  <layer name="Ground" width="100" height="100">
@@ -55,6 +63,17 @@
     <property name="damage_delta" value="5"/>
     <property name="damage_type" value="0"/>
     <property name="effect_id" value="3"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+  <object name="trap" type="TRAP" x="1952" y="416" width="128" height="64">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="4"/>
     <property name="reuse_delay" value="5"/>
     <property name="trigger_radius" value="32"/>
    </properties>
