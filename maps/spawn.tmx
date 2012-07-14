@@ -213,4 +213,10 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup name="Smith Blacwin Waypoints" width="100" height="145">
+  <object name="Smith Blacwin 1" type="WAYPOINT" x="2144" y="3072" width="32" height="32"/>
+  <object name="Smith Blacwin 2" type="WAYPOINT" x="2176" y="3072" width="32" height="32"/>
+  <object name="Smith Blacwin 3" type="WAYPOINT" x="2144" y="3072" width="32" height="32"/>
+  <object name="Smith Blacwin 4" type="WAYPOINT" x="2112" y="3072" width="32" height="32"/>
+ </objectgroup>
 </map>

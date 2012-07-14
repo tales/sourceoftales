@@ -16,7 +16,7 @@
  </layer>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt1kEJwDAQRNF4qYM4iIPqq9pICAldOpT3YA57/pdtDQAAAICvXIVjnx5Z9MjSi8aZUTTO3EXjfc/ihr/zW2XRI4seWfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASTOqxJ24=
+   eJzt1rENgDAQBEEXQwd0QAe0R0yhzpETW7w4oRnpAn+6iVsDAAAA4Ctb4ZinRxY9suxFY81RNNacReN91+N9D27wZ/5WWfTIokcWPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQdJGAo8Q==
   </data>
  </layer>
  <layer name="Fringe" width="100" height="100">
@@ -26,7 +26,7 @@
  </layer>
  <layer name="Over" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztwzENAAAMA6CKmH+tM9F+kJAAAAAAAAAA9N0oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKw93kUBuQ==
+   eJztwzENAAAMA6CamH+rM9F+kJAAAAAAAAAA9N0oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKw91MYBzw==
   </data>
  </layer>
  <layer name="Collision" width="100" height="100">
@@ -40,15 +40,15 @@
     <property name="FILENAME" value="scripts/maps/sandbox.lua"/>
    </properties>
   </object>
-  <object name="trap" type="TRAP" x="1120" y="512" width="96" height="96">
+  <object name="trap" type="TRAP" x="1120" y="512" width="128" height="96">
    <properties>
     <property name="chance_to_hit" value="999"/>
     <property name="damage" value="10"/>
     <property name="damage_delta" value="5"/>
     <property name="damage_type" value="0"/>
-    <property name="effect_id" value="2"/>
+    <property name="effect_id" value="3"/>
     <property name="reuse_delay" value="5"/>
-    <property name="trigger_radius" value="0"/>
+    <property name="trigger_radius" value="32"/>
    </properties>
   </object>
  </objectgroup>
@@ -83,7 +83,7 @@
     <property name="tolerance" value="128"/>
    </properties>
   </object>
-   <object name="Patrol test 6" type="WAYPOINT" x="960" y="640" width="32" height="32">
+  <object name="Patrol test 6" type="WAYPOINT" x="960" y="640" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
