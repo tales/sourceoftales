@@ -17,17 +17,17 @@
  </tileset>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt0cENgDAQA8H7pw1Kp1AaIJEQQhhuHlOAvaOqBgBAqO0hb+/6Kj2y6JHl7Mt9Qg89utEjix5Z9MiiRxY9suixNvviLj30+AM9etMjix5Zrnyshx7d6AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIoDCQ0lEw==
+   eJzt0bERgDAMBEHlboPSKZQGLM8wBDx4g82U6G9U1QAACHVMnI3Zbeftv75Kjyx6ZNEjix5Z9MiiRxY9suiRRY8seqx1Wzylhx5/oMfe9MiiR5Y7G+uhx270AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgxQVr/C4T
   </data>
  </layer>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt0jEOgCAQRcHlGooi3P+QUlDYUIPJTPL7Td5GAAAAAAAwc6SIcyyn1dfw9AZ1rOnBT1z9V+/Pit9dSo+96AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADArl4e8ALK
+   eJzt1TkKwDAMBED5G7md/z8yLlykTGOswAxsL9gFRQAAADDKUiLWnq3MvoardVB7bn0A8JF/not/zh/tbavHK6ftTqWPXPQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQFYPoicDwg==
   </data>
  </layer>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt1rkNgDAQRUFq4aiADuiA9qiWI1mJyBZascGM9AM7svQSDwMAAAAZltd5vDb98RAeetSiR5gT10qPoEctetSyJq2HHmFLWg89wp60Hnq0ORrvvtKjFj3C33+rmx5Bj1oq9CDoAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVHACm+ktrw==
+   eJzt1rEJwzAURVHPktgTeINs4PUyrR03H1JJBKEXOAdeIVWC22hZAAD+y/Z1flx7zngINz2y6JFFjyx6ZNGjrAPXSo+iRxY9suyD1kOP8hq0HnqUY9B66NHm3Xj3Kz2y6FFm/60+9Ch6ZEnoQdEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIcALgEC7t
   </data>
  </layer>
  <layer name="Ground" width="100" height="100">
@@ -114,6 +114,17 @@
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="trap" type="TRAP" x="1952" y="256" width="128" height="64">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="5"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_radius" value="32"/>
    </properties>
   </object>
  </objectgroup>
