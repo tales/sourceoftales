@@ -2,5 +2,6 @@
 <effects>
     <effect id="1" audio="sfx/fire.ogg" particle="particles/quake.xml" />
     <effect id="2" audio="sfx/trap.ogg" particle="particles/rock_spikes.xml" />
+    <effect id="3" audio="sfx/fire.ogg" particle="particles/firelion.trap.xml" />
 
 </effects>
