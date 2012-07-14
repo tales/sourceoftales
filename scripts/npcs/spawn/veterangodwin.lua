@@ -13,7 +13,8 @@ local function veteranTalk(npc, ch)
         end
 
         say("Hey, rookie. You aren't paid for standing in the landscape and looking like a sheep.")
-        say("You should better hurry to get to the basic training unless you want to do extra hours in the kitchen during the next month.")
+        say("You should better hurry to get to the basic training unless you want to do extra hours in the kitchen "..
+            "during the next month.")
 
         local choices = { "In the kitchen? I'm a strong fighter!",
                         "Alright, thank you, where do I have to go?",
@@ -30,7 +31,8 @@ local function veteranTalk(npc, ch)
             say("The only thing that's awaiting you is a lot of hard work, " .. title .. ".")
         end
 
-        say("Now go, talk to Instructor Ascilia, so she can show you how you can avoid being speared by the first enemy you'll encounter.")
+        say("Now go, talk to Instructor Ascilia, so she can show you how you can avoid being speared by the first "..
+            "enemy you'll encounter.")
         say("Oh, and get your equipment from Blacwin. You should at least look like a soldier.")
         say ("Come back to me when you're done.")
     end

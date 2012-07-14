@@ -13,7 +13,8 @@ local function instructorTalk(npc, ch)
     local function fightTrainingSoldier()
         say("Ah, there you are. Welcome to our unit. I'm going to teach you some basics.")
         if tutorial_equip ~= "done" then
-            say("Didn't you get your equipment yet? Well, whatever, you can go to Smith Blacwin and get some armor after the training. Take this for now.")
+            say("Didn't you get your equipment yet? Well, whatever, you can go to Smith Blacwin and get some "..
+                "armor after the training. Take this for now.")
         else
             say("Ah, I see you already got your armor. Here is your weapon.")
         end
