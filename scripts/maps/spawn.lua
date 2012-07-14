@@ -15,5 +15,12 @@ atinit(function()
     require "scripts/npcs/spawn/recruitmaurice"
     require "scripts/npcs/spawn/smithblacwin"
     require "scripts/npcs/spawn/veterangodwin"
+
+    require "scripts/npcs/spawn/emma"
+    require "scripts/npcs/spawn/merchantanabel"
+    require "scripts/npcs/spawn/merchantgilbert"
+    require "scripts/npcs/spawn/merchantwalter"
+    require "scripts/npcs/spawn/monkmartin"
+
 end)
 
