@@ -69,12 +69,19 @@ cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      sprites/monsters/
 Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
 Clint Bellanger                    CC BY_SA 3.0, GPLv2, GPLv3  particles/quake.png
 CosmicD                            CC BY_SA 3.0                sfx/trap.ogg
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_firelion_big.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_firelion_sheet.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_iceshield_sheet.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_snakebite_sheet.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/magic_torrentacle.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_down.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_left.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_right.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_up.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/iceshield.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/icetacle.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/lightningclaw.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/rock_spikes.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/snakebite_down.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/snakebite_side.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/snakebite_up.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/tornado.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/torrentacle.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtleshell_front.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtleshell_side.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/farming_fishing.png
