@@ -5,4 +5,5 @@
  <objecttype name="NPC_POSITION" color="#fff705"/>
  <objecttype name="EFFECT" color="#00ff11"/>
  <objecttype name="TRIGGER" color="#00ffee"/>
+ <objecttype name="WAYPOINT" color="#ff00f3"/>
 </objecttypes>
