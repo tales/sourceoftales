@@ -1,7 +1,12 @@
--- authors: Jenalya
-
+-- [[
+-- Authors:
+-- - Jenalya
+--
 -- variable use
 -- tutorial_equip: saves if got equipment from smith
+-- ]]
+
+require "scripts/functions/patrol"
 
 local function smithTalk(npc, ch)
     local function say(message)
@@ -55,13 +60,9 @@ local function smithWaypointReached(npc)
     gotoNextWaypoint(npc)
 end
 
-local smith_way = {
-        {x=tileToPixel(67), y=tileToPixel(96), wait=10},
-        {x=tileToPixel(68), y=tileToPixel(96), wait=2},
-        {x=tileToPixel(67), y=tileToPixel(96), wait=8},
-        {x=tileToPixel(66), y=tileToPixel(96), wait=3}}
-
 local smith = create_npc_by_name("Smith Blacwin", smithTalk)
+being_set_base_attribute(smith, 16, 1)
 
-setWaypoints(smith, smith_way, 3, smithWaypointReached)
-gotoNextWaypoint(smith)
+local patrol = Patrol:new("Smith Blacwin")
+patrol:assignBeing(smith)
+schedule_every(10, function() patrol:logic() end)

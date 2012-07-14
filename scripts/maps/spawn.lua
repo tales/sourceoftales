@@ -5,7 +5,6 @@
 --]]
 
 atinit(function()
-    require "scripts/functions/walkingnpc"
     require "scripts/functions/npchelper"
     require "scripts/functions/triggerhelper"
 

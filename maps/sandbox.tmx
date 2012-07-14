@@ -3,14 +3,30 @@
  <tileset firstgid="1" name="sand" tilewidth="32" tileheight="32">
   <image source="../tiles/sand.png" width="96" height="192"/>
  </tileset>
+ <tileset firstgid="19" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains.png" width="480" height="288"/>
+ </tileset>
+ <tileset firstgid="154" name="dirt2" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt2.png" width="96" height="192"/>
+ </tileset>
  <layer name="Ground" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztw8EJAAAMA6H7Z/99C51DwVVTVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/Af00rcA=
+   eJzt0UEJADAMBMH7x7+DCo2HQmkC8xgBy1aSAgAAAAAA4Mp55HfXVn7M4gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWzWbQtUy
+  </data>
+ </layer>
+ <layer name="Ground" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEJwDAQRNF4qYM4iIPqq9pICAldOpT3YA57/pdtDQAAAICvXIVjnx5Z9MjSi8aZUTTO3EXjfc/ihr/zW2XRI4seWfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASTOqxJ24=
   </data>
  </layer>
  <layer name="Fringe" width="100" height="100">
   <data encoding="base64" compression="zlib">
    eJzt09EJACAMQ8EU3H9m8U9wgBa5g0zwSAIAAACvuka/02FFjyn8AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBvGzJ5AA0=
+  </data>
+ </layer>
+ <layer name="Over" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6CKmH+tM9F+kJAAAAAAAAAA9N0oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKw93kUBuQ==
   </data>
  </layer>
  <layer name="Collision" width="100" height="100">
@@ -24,7 +40,7 @@
     <property name="FILENAME" value="scripts/maps/sandbox.lua"/>
    </properties>
   </object>
-  <object name="trap" type="TRAP" x="256" y="288" width="96" height="96">
+  <object name="trap" type="TRAP" x="1120" y="512" width="96" height="96">
    <properties>
     <property name="chance_to_hit" value="999"/>
     <property name="damage" value="10"/>
@@ -33,6 +49,44 @@
     <property name="effect_id" value="2"/>
     <property name="reuse_delay" value="5"/>
     <property name="trigger_radius" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Patrol test" width="100" height="100">
+  <object name="Patrol test 1" type="WAYPOINT" x="800" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol test 2" type="WAYPOINT" x="960" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol test 3" type="WAYPOINT" x="1120" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol test 4" type="WAYPOINT" x="1280" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol test 5" type="WAYPOINT" x="1120" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+   <object name="Patrol test 6" type="WAYPOINT" x="960" y="640" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
    </properties>
   </object>
  </objectgroup>

@@ -18,22 +18,29 @@ end
 -- @param y Y-starting coordinate
 -- @param stroll When letting beings walk this stroll is randomly applied to the
 -- new coordinate
-function Patrol:new(x, y, stroll)
+function Patrol:new(name)
+    local objects = map_get_objects("WAYPOINT")
+    local path = {}
+
+    for _, object in ipairs(objects) do
+        WARN("CHECKING \"" .. object:name() .. "\" vs \"" .. name .. "\"")
+        if string.starts(object:name(), name) then
+            local id = tonumber(string.sub(object:name(), string.len(name) + 2))
+            local stroll = tonumber(object:property("stroll") or 0)
+            local tolerance = tonumber(object:property("tolerance") or stroll)
+            local x, y, w, h = object:bounds()
+            path[id] = {x=x + w / 2, y=y + h / 2, tolerance=tolerance, stroll=stroll}
+            WARN("ADDED " .. id)
+        end
+    end
+    
+    assert(#path >= 1, "Path need to have at least one waypoint")
+
     return setmetatable({
         position_index = 1,
-        path = { {x=x, y=y} },
-        members = {},
-        stroll = stroll
+        path = path,
+        members = {}
     }, mt)
-end
-
---- Adds a new waypoint to the patrol
--- Make sure that the point is not too far away from the last one since the
--- pathfinding only works over a few tiles
--- @param x X-Coordinate of the point
--- @param y Y-Coordinate of the point
-function Patrol:addWayPoint(x, y)
-    table.insert(self.path, {x=x, y=y})
 end
 
 --- Assigns a being to the patrol
@@ -60,26 +67,37 @@ end
 -- Will move the beings to a new point or will try to get all beings to the
 -- current point
 function Patrol:logic()
+    WARN("LOGIC")
     local x = self.path[self.position_index].x
     local y = self.path[self.position_index].y
+    local tolerance = self.path[self.position_index].tolerance
+    local stroll = self.path[self.position_index].stroll
+    WARN("x: " .. x .. ", y: " .. y .. ", i: " .. self.position_index .. ", l: " .. #self.path)
     local all_in_range = true
     for _, member in ipairs(self.members) do
-        if manhattan_distance(posX(member), posY(member), x, y) > 5 * TILESIZE then
-            being_walk(member, x + math.random(-self.stroll, self.stroll),
-                       y + math.random(-self.stroll, self.stroll))
+        local dist = manhattan_distance(posX(member), posY(member), x, y)
+        if dist > stroll then
+            local new_x = math.random(-stroll, stroll) + x
+            local new_y = math.random(-stroll, stroll) + y
+            being_walk(member, new_x, new_y)
+        end
+        if dist > tolerance then
             all_in_range = false
         end
     end
 
     if all_in_range then
         -- Set next walkpoint as new target
-        self.position_index = ((self.position_index + 1) % #self.path) +1
+        self.position_index = self.position_index + 1
+        if self.position_index > #self.path then
+            self.position_index = 1
+        end
+        WARN("NEXT")
     end
 end
 
 --- Returns the index of the current waypoint
 -- Use patrol.path to get the path table
--- @param x X-Coordinate of the point
 function Patrol:getCurrentWaypoint()
     return self.position_index
 end
