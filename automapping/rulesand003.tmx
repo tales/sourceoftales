@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="7" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="sand" tilewidth="32" tileheight="32">
+  <image source="../tiles/sand.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="13" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIA9wQTGxbHL1DCe3AQC88O3EbAEAAA==
+  </data>
+ </layer>
+ <layer name="Input_set" width="13" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC7ghmJ0NrI8A5o4LjWUuoMa9hDyDykAANIrI7dsAQAA
+  </data>
+ </layer>
+ <layer name="Output_Sand" width="13" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC4QQuMLo/HFobQkle1FB7JQWp5Cc0TR+GIUmAUA/Xyes2wBAAA=
+  </data>
+ </layer>
+</map>

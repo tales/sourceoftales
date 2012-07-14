@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <layer name="Regions" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoAxwIWFkMVL04zOLFoAS96KrJ9XN2NTS2r+U2kuufykN55ECAEmw2uiEAwAA
+  </data>
+ </layer>
+ <layer name="Input_set" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoAwwAjE3lIYBbhL0I6vFZhYtAMweZD4pgBuNzc1AvJ+x+Y/W/qXUXnL9S2k4jxQAAIjlQ8WEAwAA
+  </data>
+ </layer>
+ <layer name="Output_Error" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoBxwUcEMWphFK4DuxqHgZkrASPMvvQEA1IrXpoQDAAA=
+  </data>
+ </layer>
+</map>

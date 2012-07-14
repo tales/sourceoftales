@@ -94,3 +94,23 @@
 # each automapping step increases forrest density
 ########################################################################
 ../automapping/ruletree001.tmx
+
+########################################################################
+# Sand tiles
+########################################################################
+# In the first rule sand tiles will be placed on the light yellow set layer tile.
+# There are so many layer to put the sand tiles randomly.
+../automapping/rulesand001.tmx
+
+# straight transition tiles.
+../automapping/rulesand002.tmx
+
+# inside and outside curve transitions.
+../automapping/rulesand003.tmx
+
+# the single spot areas.
+../automapping/rulesand004.tmx
+
+# 
+#../automapping/rulesand005.tmx
+

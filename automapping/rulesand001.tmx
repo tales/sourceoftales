@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="3" height="3" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="sand" tilewidth="32" tileheight="32">
+  <image source="../tiles/sand.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Regions" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAWMDJgAAJOJ0Q8kAAAA
+  </data>
+ </layer>
+ <layer name="Input_set" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAXcDJgAAK0pxFgkAAAA
+  </data>
+ </layer>
+ <layer name="Output0_Sand" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAXSDJgAAIiCArgkAAAA
+  </data>
+ </layer>
+ <layer name="Output1_Sand" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAUKDJgAAN7iSnAkAAAA
+  </data>
+ </layer>
+ <layer name="Output2_Sand" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAWKDJgAAJjZLRUkAAAA
+  </data>
+ </layer>
+ <layer name="Output3_Sand" width="3" height="3">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQAVKDJgAAFKUhLokAAAA
+  </data>
+ </layer>
+</map>
