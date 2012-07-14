@@ -64,10 +64,11 @@
     <property name="damage_type" value="0"/>
     <property name="effect_id" value="3"/>
     <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
     <property name="trigger_radius" value="32"/>
    </properties>
   </object>
-  <object name="trap" type="TRAP" x="1952" y="416" width="128" height="64">
+  <object name="trap3" type="TRAP" x="1952" y="400" width="128" height="96">
    <properties>
     <property name="chance_to_hit" value="999"/>
     <property name="damage" value="10"/>
@@ -75,6 +76,19 @@
     <property name="damage_type" value="0"/>
     <property name="effect_id" value="4"/>
     <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+  <object name="trap2" type="TRAP" x="1952" y="240" width="128" height="96">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="5"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
     <property name="trigger_radius" value="32"/>
    </properties>
   </object>
@@ -114,17 +128,6 @@
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
-   </properties>
-  </object>
-  <object name="trap" type="TRAP" x="1952" y="256" width="128" height="64">
-   <properties>
-    <property name="chance_to_hit" value="999"/>
-    <property name="damage" value="10"/>
-    <property name="damage_delta" value="5"/>
-    <property name="damage_type" value="0"/>
-    <property name="effect_id" value="5"/>
-    <property name="reuse_delay" value="5"/>
-    <property name="trigger_radius" value="32"/>
    </properties>
   </object>
  </objectgroup>
