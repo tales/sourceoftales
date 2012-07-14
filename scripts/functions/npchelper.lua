@@ -34,6 +34,8 @@ end
 
 function create_npc_by_name(name, talk_func, update_func)
     local npc = npcs[name]
+    assert(npc ~= nil, "NPC with name \"" .. name ..
+           "\" not defined on map " .. get_map_id())
     return npc_create(name, npc.sprite_id, npc.gender, npc.x, npc.y,
                       talk_func, update_func)
 end
