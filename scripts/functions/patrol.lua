@@ -1,6 +1,19 @@
 -- [[
 -- Script for grouping beings together and letting them patroul
 --
+-- For creating a patrol choose a name. Then add objects to the map.
+-- The name of the object has to start with the name followed by a space
+-- and then the index number of the waypoint. The type of the object has to
+-- be set to WAYPOINT.
+--
+-- Possible object parameters:
+--  + stroll    -> The radius in pixels that will allow the beings to stroll
+--                 is a being out of this radius it will walk to a random
+--                 position inside of it
+--  + tolerance -> The radius in pixels that tells whether a being reached a
+--                 waypoint. If all beings are within the tolerance radius
+--                 the next waypoint will be navigated.
+--
 -- Authors:
 -- - Ablu
 -- ]]
@@ -23,14 +36,12 @@ function Patrol:new(name)
     local path = {}
 
     for _, object in ipairs(objects) do
-        WARN("CHECKING \"" .. object:name() .. "\" vs \"" .. name .. "\"")
         if string.starts(object:name(), name) then
             local id = tonumber(string.sub(object:name(), string.len(name) + 2))
             local stroll = tonumber(object:property("stroll") or 0)
             local tolerance = tonumber(object:property("tolerance") or stroll)
             local x, y, w, h = object:bounds()
             path[id] = {x=x + w / 2, y=y + h / 2, tolerance=tolerance, stroll=stroll}
-            WARN("ADDED " .. id)
         end
     end
     
@@ -67,12 +78,10 @@ end
 -- Will move the beings to a new point or will try to get all beings to the
 -- current point
 function Patrol:logic()
-    WARN("LOGIC")
     local x = self.path[self.position_index].x
     local y = self.path[self.position_index].y
     local tolerance = self.path[self.position_index].tolerance
     local stroll = self.path[self.position_index].stroll
-    WARN("x: " .. x .. ", y: " .. y .. ", i: " .. self.position_index .. ", l: " .. #self.path)
     local all_in_range = true
     for _, member in ipairs(self.members) do
         local dist = manhattan_distance(posX(member), posY(member), x, y)
@@ -92,7 +101,6 @@ function Patrol:logic()
         if self.position_index > #self.path then
             self.position_index = 1
         end
-        WARN("NEXT")
     end
 end
 
