@@ -1,92 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="15" height="14" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
-  <image source="../../tiles/collision.png" width="64" height="32"/>
+  <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <tileset firstgid="3" name="inside" tilewidth="32" tileheight="32">
-  <image source="../../tiles/inside.png" width="320" height="320"/>
+  <image source="../tiles/inside.png" width="320" height="320"/>
  </tileset>
  <tileset firstgid="103" name="farming_fishing" tilewidth="32" tileheight="32">
-  <image source="../../tiles/farming_fishing.png" width="640" height="640"/>
+  <image source="../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
  <tileset firstgid="503" name="barrel" tilewidth="32" tileheight="64">
-  <image source="../../tiles/barrel.png" width="128" height="64"/>
+  <image source="../tiles/barrel.png" width="128" height="64"/>
  </tileset>
  <tileset firstgid="507" name="victoria" tilewidth="32" tileheight="32">
-  <image source="../../tiles/victoria.png" width="352" height="192"/>
+  <image source="../tiles/victoria.png" width="352" height="192"/>
  </tileset>
  <tileset firstgid="573" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../../tiles/mountains.png" width="480" height="288"/>
+  <image source="../tiles/mountains.png" width="480" height="288"/>
  </tileset>
  <tileset firstgid="708" name="shrine" tilewidth="32" tileheight="32">
-  <image source="../../tiles/shrine.png" width="224" height="512"/>
+  <image source="../tiles/shrine.png" width="224" height="512"/>
  </tileset>
  <tileset firstgid="820" name="buckets" tilewidth="32" tileheight="32">
-  <image source="../../tiles/buckets.png" width="96" height="64"/>
+  <image source="../tiles/buckets.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="826" name="cabinets" tilewidth="32" tileheight="32">
-  <image source="../../tiles/cabinets.png" width="192" height="416"/>
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
  <tileset firstgid="904" name="shadow" tilewidth="32" tileheight="32">
-  <image source="../../tiles/shadow.png" width="160" height="64"/>
+  <image source="../tiles/shadow.png" width="160" height="64"/>
  </tileset>
- <layer name="Ground" width="15" height="15">
+ <tileset firstgid="914" name="Sword18" tilewidth="32" tileheight="32">
+  <image source="../items/Sword18.png" width="32" height="32"/>
+ </tileset>
+ <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJw7wMTAcGCAMDmAGnq1GUjHg1EvJf6lRC+p8auNxVxa6kU2g5K0Sa98AABmKmIT
+   eJw7wMTAcGCAMDmAGnq1GUjHg1EvJf6lRC+p8auNxVxa6kU2g5K0SYp6AKbSVrU=
   </data>
  </layer>
- <layer name="Wall" width="15" height="15">
+ <layer name="Wall" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYKAMvGAiHcPAeybSMQx8YyIdj4JRMBgBALhjJLg=
+   eJxjYKAMvGAiHcPAeybSMQx8YyIdj4JRQCsAABzLJLg=
   </data>
  </layer>
- <layer name="Ground" width="15" height="15">
+ <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYKAPaGLCFJsGpacDsR8zA0MAEPswY6qbiEUvDyMDQzOUHQrUEwLEwUD8HyiuAlIP1bMASE8C0pOR9CowItgxQD1RQBwBxKJAtVZALIZk3zIgXk6kHwmB1UC8lky9+4H4IJl6LwPxVTL1Pgfil2TqHQXEAQC6KxD8
+   eJxjYKAPaGLCFJsGpacDsR8zA0MAEPswY6qbiEUvDyMDQzOUHQrUEwLEwUD8HyiuAlIP1bMASE8C0pOR9CowItgxQD1RQBwBxKJAtVZALIZk3zIgXk6kHwmB1UC8lky9+4H4IJl6LwPxVTL1Pgfil2TqHUkAAL7fEPw=
   </data>
  </layer>
- <layer name="Ground" width="15" height="15">
+ <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBheYAcQ7xxoR+AApszk67WgQO8oGNwAAMk+AeU=
+   eJxjYBheYAcQ7xxoR+AApszk67WgQO8ooD0AAFeSAeU=
   </data>
  </layer>
- <layer name="Ground" width="15" height="15">
+ <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBh+4AEQP6SR2fqMDAw8TOTpdQbq9WImT+8OIN5JnlYGTaC93xnJ1DwKaA4A9FkFJA==
+   eJxjYBh+4AEQP6SR2fqM5Ot1Bur1YiZP7w4g3kmmvZpAe79T4O5RQBgAAKLEBRY=
   </data>
  </layer>
- <layer name="Shadows" width="15" height="15">
+ <layer name="Fringe" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUDCQAAAOEAAE=
+   eJxjYBgFo2AUUAoAA0gAAQ==
   </data>
  </layer>
- <layer name="Fringe" width="15" height="15">
+ <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUDCQAAAOEAAE=
+   eJxjYBgFpAIeJuqZZcSMH+MDB5jwY2roRXYHMW7CZgc6mxS9IPtI1YtsBrmAVL0A4WoWdA==
   </data>
  </layer>
- <layer name="Over" width="15" height="15">
+ <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwmMmPFjfOAAE35MDb3I7iDGTdjsQGeTohdkH6l6kc0gF1Cil1QAAASWFmY=
+   eJxjYCAfaDKTp+81EwODAZl6Pw0zvdrM+LEhM269IHMJAUr0aiG5A9mthiSEgz4J9uGynxT7BgoAAMrEDKY=
   </data>
  </layer>
- <layer name="Over" width="15" height="15">
+ <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfaDKTp+81EwODAZl6Pw0zvdrM+LEhM269IHMJAUr0aiG5A9mthiSEgz4J9uGynxT7hiIAAMHZDKY=
+   eJxjYBgFAwleMw20CwgDTWYITY5bDZip65bBCgAQ5wI6
   </data>
  </layer>
- <layer name="Over" width="15" height="15">
+ <layer name="Collision" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwleMw20CwgDTWYITY5bDZip65bhCACWfwI6
+   eJxjYmBgYBphGBfApoZYvfgAJWbQSi8lYUUPvchmUBLP9EpTAPlHATE=
   </data>
  </layer>
- <layer name="Collision" width="15" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYmBgYBphmBwwqhdTjpxwpodeZDMoSSP0So8A9jMBHw==
-  </data>
- </layer>
- <objectgroup name="Warps" width="15" height="15">
-  <object name="Warp outside" type="WARP" x="96" y="416" width="32" height="32">
+ <objectgroup name="Warps" width="15" height="14">
+  <object name="Warp outside" type="WARP" x="96" y="384" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="spawn"/>
     <property name="DEST_X" value="1936"/>
