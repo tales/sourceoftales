@@ -170,4 +170,15 @@
         </effect>
         <sprite>equipment/female_mage_bronzenecklace.xml</sprite>    <!--TODO: change this -->
     </item>
+    <item id="7"
+        max-per-slot="255"
+        name="Bomb"
+        description="A small bomb with a timed trigger."
+        image="banana.png"
+        value="100">
+        <effect trigger="activation">
+            <scriptevent activate="use" />
+            <consumes />
+        </effect>
+    </item>
 </items>

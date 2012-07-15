@@ -19,3 +19,6 @@ require "scripts/functions/stringutils"
 
 -- Monster scripts
 require "scripts/monsters"
+
+-- Item scripts
+require "scripts/items"
