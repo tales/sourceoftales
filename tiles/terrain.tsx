@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="terrain" tilewidth="32" tileheight="32">
- <image source="terrain.png" width="512" height="864"/>
+ <image source="terrain.png" width="512" height="928"/>
  <terraintypes>
   <terrain name="Darkdirt" tile="0" distances=",0,1,2,1,1,2,2,2,2"/>
   <terrain name="Dirt" tile="1" distances=",1,0,2,2,1,3,1,2,2"/>
@@ -443,4 +443,32 @@
  <tile id="428" terrain="4,4,8,8"/>
  <tile id="429" terrain="4,4,8,4"/>
  <tile id="430" terrain="4,4,4,8"/>
+ <tile id="431" terrain="0,0,0,0" probability="0.25"/>
+ <tile id="432" terrain="0,0,0,0" probability="5"/>
+ <tile id="433" terrain="0,0,0,0" probability="5"/>
+ <tile id="434" terrain="1,1,1,1" probability="5"/>
+ <tile id="435" terrain="1,1,1,1" probability="5"/>
+ <tile id="436" terrain="2,2,2,2" probability="5"/>
+ <tile id="437" terrain="2,2,2,2" probability="5"/>
+ <tile id="438" terrain="2,2,2,2" probability="5"/>
+ <tile id="439" terrain="3,3,3,3" probability="0.25"/>
+ <tile id="440" terrain="3,3,3,3" probability="5"/>
+ <tile id="441" terrain="3,3,3,3" probability="5"/>
+ <tile id="442" terrain="4,4,4,4" probability="1"/>
+ <tile id="443" terrain="4,4,4,4" probability="1"/>
+ <tile id="444" terrain="4,4,4,4" probability="1"/>
+ <tile id="445" terrain="7,7,7,7" probability="0"/>
+ <tile id="446" terrain="7,7,7,7" probability="0"/>
+ <tile id="447" terrain="1,1,1,1" probability="0.25"/>
+ <tile id="448" terrain="8,8,8,8" probability="5"/>
+ <tile id="449" terrain="8,8,8,8" probability="5"/>
+ <tile id="450" terrain="8,8,8,8" probability="5"/>
+ <tile id="451" terrain="7,7,7,7" probability="0"/>
+ <tile id="452" terrain="5,5,5,5" probability="5"/>
+ <tile id="453" terrain="5,5,5,5" probability="5"/>
+ <tile id="454" terrain="5,5,5,5" probability="5"/>
+ <tile id="455" terrain="3,3,3,3" probability="0"/>
+ <tile id="456" terrain="3,3,3,3" probability="0"/>
+ <tile id="457" terrain="4,4,4,4" probability="0"/>
+ <tile id="458" terrain="4,4,4,4" probability="0"/>
 </tileset>
