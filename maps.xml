@@ -2,6 +2,7 @@
 <maps>
     <map id="1" name="main" />
     <map id="2" name="casern_storage" />
+    <map id="3" name="casern_storage_roof" />
 
     <map id="1000" name="sandbox" />
 </maps>
