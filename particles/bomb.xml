@@ -1,0 +1,11 @@
+<effect>
+    <particle
+        position-x="0"
+        position-y="32"
+        position-z="16"
+        lifetime="157" >
+        <animation imageset="particles/bomb_explosion.png" width="64" height="64">
+            <sequence start="0" end="20" delay="75" />
+        </animation>
+    </particle>
+</effect>
