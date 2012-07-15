@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <maps>
-    <map id="1" name="spawn" />
-    <map id="2" name="terrain-test" />
-    <map id="3" name="village" />
-    <map id="4" name="sandbox" />
-    <map id="5" name="casern_storage" />
+    <map id="1" name="main" />
+    <map id="2" name="casern_storage" />
+
+    <map id="1000" name="sandbox" />
 </maps>

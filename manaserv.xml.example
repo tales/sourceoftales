@@ -231,8 +231,8 @@
      Respawn coordinates on the respawn map:
      In pixels, not in tiles.
  -->
- <option name="char_respawnX" value="1024"/>
- <option name="char_respawnY" value="1024"/>
+ <option name="char_respawnX" value="1584"/>
+ <option name="char_respawnY" value="1456"/>
 
  <!-- Default Map id at character loading -->
  <option name="char_defaultMap" value="1" />
