@@ -5,6 +5,6 @@
         src="sprites/characters/hair01.png|W"
         width="40"
         height="40"
-        offsetY="2" />
+        offset="31" />
     <include file="characters/hairstyle_base_male.xml"/>
 </sprite>
