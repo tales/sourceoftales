@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="terrain" tilewidth="32" tileheight="32">
- <image source="terrain.png" width="512" height="672"/>
+ <image source="terrain.png" width="512" height="864"/>
  <terraintypes>
-  <terrain name="Darkdirt" tile="0" distances=",0,1,2,1,1,2"/>
-  <terrain name="Dirt" tile="1" distances=",1,0,2,2,1,3"/>
-  <terrain name="Grass" tile="2" distances=",2,2,0,2,2,3"/>
-  <terrain name="Lavarock" tile="3" distances=",1,2,2,0,2,1"/>
-  <terrain name="Water" tile="4" distances=",1,1,2,2,0,3"/>
-  <terrain name="Lava" tile="321" distances=",2,3,3,1,3,0"/>
+  <terrain name="Darkdirt" tile="0" distances=",0,1,2,1,1,2,2,2,2"/>
+  <terrain name="Dirt" tile="1" distances=",1,0,2,2,1,3,1,2,2"/>
+  <terrain name="Grass" tile="2" distances=",2,2,0,2,2,3,2,1,3"/>
+  <terrain name="Lavarock" tile="3" distances=",1,2,2,0,2,1,2,2,3"/>
+  <terrain name="Water" tile="4" distances=",1,1,2,2,0,3,2,2,1"/>
+  <terrain name="Lava" tile="321" distances=",2,3,3,1,3,0,3,3,4"/>
+  <terrain name="Hole" tile="336" distances=",2,1,2,2,2,3,0,2,3"/>
+  <terrain name="PlowedSoil" tile="337" distances=",2,2,1,2,2,3,2,0,3"/>
+  <terrain name="Sand" tile="338" distances=",2,2,3,3,1,4,3,3,0"/>
  </terraintypes>
  <tile id="0" terrain="0,0,0,0"/>
  <tile id="1" terrain="1,1,1,1"/>
@@ -345,4 +348,99 @@
  <tile id="333" terrain="3,3,5,5"/>
  <tile id="334" terrain="3,3,5,3"/>
  <tile id="335" terrain="3,3,3,5"/>
+ <tile id="336" terrain="6,6,6,6"/>
+ <tile id="337" terrain="7,7,7,7"/>
+ <tile id="338" terrain="8,8,8,8"/>
+ <tile id="339" terrain="7,7,7,2"/>
+ <tile id="340" terrain="7,7,2,7"/>
+ <tile id="341" terrain="7,7,2,2"/>
+ <tile id="342" terrain="7,2,7,7"/>
+ <tile id="343" terrain="7,2,7,2"/>
+ <tile id="344" terrain="7,2,2,7"/>
+ <tile id="345" terrain="7,2,2,2"/>
+ <tile id="346" terrain="2,7,7,7"/>
+ <tile id="347" terrain="2,7,7,2"/>
+ <tile id="348" terrain="2,7,2,7"/>
+ <tile id="349" terrain="2,7,2,2"/>
+ <tile id="350" terrain="2,2,7,7"/>
+ <tile id="351" terrain="2,2,7,2"/>
+ <tile id="352" terrain="2,2,2,7"/>
+ <tile id="353" terrain="1,1,1,6"/>
+ <tile id="354" terrain="1,1,6,1"/>
+ <tile id="355" terrain="1,1,6,6"/>
+ <tile id="356" terrain="1,1,6,2"/>
+ <tile id="357" terrain="1,1,2,6"/>
+ <tile id="358" terrain="1,6,1,1"/>
+ <tile id="359" terrain="1,6,1,6"/>
+ <tile id="360" terrain="1,6,1,2"/>
+ <tile id="361" terrain="1,6,6,1"/>
+ <tile id="362" terrain="1,6,6,6"/>
+ <tile id="363" terrain="1,6,6,2"/>
+ <tile id="364" terrain="1,6,2,1"/>
+ <tile id="365" terrain="1,6,2,6"/>
+ <tile id="366" terrain="1,6,2,2"/>
+ <tile id="367" terrain="1,2,1,6"/>
+ <tile id="368" terrain="1,2,6,1"/>
+ <tile id="369" terrain="1,2,6,6"/>
+ <tile id="370" terrain="1,2,6,2"/>
+ <tile id="371" terrain="1,2,2,6"/>
+ <tile id="372" terrain="6,1,1,1"/>
+ <tile id="373" terrain="6,1,1,6"/>
+ <tile id="374" terrain="6,1,1,2"/>
+ <tile id="375" terrain="6,1,6,1"/>
+ <tile id="376" terrain="6,1,6,6"/>
+ <tile id="377" terrain="6,1,6,2"/>
+ <tile id="378" terrain="6,1,2,1"/>
+ <tile id="379" terrain="6,1,2,6"/>
+ <tile id="380" terrain="6,1,2,2"/>
+ <tile id="381" terrain="6,6,1,1"/>
+ <tile id="382" terrain="6,6,1,6"/>
+ <tile id="383" terrain="6,6,1,2"/>
+ <tile id="384" terrain="6,6,6,1"/>
+ <tile id="385" terrain="6,6,6,2"/>
+ <tile id="386" terrain="6,6,2,1"/>
+ <tile id="387" terrain="6,6,2,6"/>
+ <tile id="388" terrain="6,6,2,2"/>
+ <tile id="389" terrain="6,2,1,1"/>
+ <tile id="390" terrain="6,2,1,6"/>
+ <tile id="391" terrain="6,2,1,2"/>
+ <tile id="392" terrain="6,2,6,1"/>
+ <tile id="393" terrain="6,2,6,6"/>
+ <tile id="394" terrain="6,2,6,2"/>
+ <tile id="395" terrain="6,2,2,1"/>
+ <tile id="396" terrain="6,2,2,6"/>
+ <tile id="397" terrain="6,2,2,2"/>
+ <tile id="398" terrain="2,1,1,6"/>
+ <tile id="399" terrain="2,1,6,1"/>
+ <tile id="400" terrain="2,1,6,6"/>
+ <tile id="401" terrain="2,1,6,2"/>
+ <tile id="402" terrain="2,1,2,6"/>
+ <tile id="403" terrain="2,6,1,1"/>
+ <tile id="404" terrain="2,6,1,6"/>
+ <tile id="405" terrain="2,6,1,2"/>
+ <tile id="406" terrain="2,6,6,1"/>
+ <tile id="407" terrain="2,6,6,6"/>
+ <tile id="408" terrain="2,6,6,2"/>
+ <tile id="409" terrain="2,6,2,1"/>
+ <tile id="410" terrain="2,6,2,6"/>
+ <tile id="411" terrain="2,6,2,2"/>
+ <tile id="412" terrain="2,2,1,6"/>
+ <tile id="413" terrain="2,2,6,1"/>
+ <tile id="414" terrain="2,2,6,6"/>
+ <tile id="415" terrain="2,2,6,2"/>
+ <tile id="416" terrain="2,2,2,6"/>
+ <tile id="417" terrain="8,8,8,4"/>
+ <tile id="418" terrain="8,8,4,8"/>
+ <tile id="419" terrain="8,8,4,4"/>
+ <tile id="420" terrain="8,4,8,8"/>
+ <tile id="421" terrain="8,4,8,4"/>
+ <tile id="422" terrain="8,4,4,8"/>
+ <tile id="423" terrain="8,4,4,4"/>
+ <tile id="424" terrain="4,8,8,8"/>
+ <tile id="425" terrain="4,8,8,4"/>
+ <tile id="426" terrain="4,8,4,8"/>
+ <tile id="427" terrain="4,8,4,4"/>
+ <tile id="428" terrain="4,4,8,8"/>
+ <tile id="429" terrain="4,4,8,4"/>
+ <tile id="430" terrain="4,4,4,8"/>
 </tileset>
