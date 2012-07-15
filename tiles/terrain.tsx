@@ -454,9 +454,9 @@
  <tile id="439" terrain="3,3,3,3" probability="0.25"/>
  <tile id="440" terrain="3,3,3,3" probability="5"/>
  <tile id="441" terrain="3,3,3,3" probability="5"/>
- <tile id="442" terrain="4,4,4,4" probability="1"/>
- <tile id="443" terrain="4,4,4,4" probability="1"/>
- <tile id="444" terrain="4,4,4,4" probability="1"/>
+ <tile id="442" terrain="4,4,4,4" probability="3"/>
+ <tile id="443" terrain="4,4,4,4" probability="3"/>
+ <tile id="444" terrain="4,4,4,4" probability="3"/>
  <tile id="445" terrain="7,7,7,7" probability="0"/>
  <tile id="446" terrain="7,7,7,7" probability="0"/>
  <tile id="447" terrain="1,1,1,1" probability="0.25"/>
