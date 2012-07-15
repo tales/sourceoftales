@@ -222,8 +222,8 @@
      Respawn coordinates on the start map:
      In pixels, not in tiles.
  -->
- <option name="char_startX" value="1024"/>
- <option name="char_startY" value="1024"/>
+ <option name="char_startX" value="1584"/>
+ <option name="char_startY" value="1456"/>
 
  <!-- Respawn options -->
  <option name="char_respawnMap" value="1"/>
