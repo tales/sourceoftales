@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="64" height="24" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="castlewalls" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlewalls.png" width="384" height="480"/>
+ </tileset>
+ <tileset firstgid="183" name="stairs_red_carpet" tilewidth="32" tileheight="32">
+  <image source="../tiles/stairs_red_carpet.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="295" name="castlefloors" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlefloors.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="395" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="473" name="castle_lightsources" tilewidth="32" tileheight="32">
+  <image source="../tiles/castle_lightsources.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="493" name="inside" tilewidth="32" tileheight="32">
+  <image source="../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="593" name="woodenbeam" tilewidth="32" tileheight="32">
+  <image source="../tiles/woodenbeam.png" width="256" height="128"/>
+ </tileset>
+ <tileset firstgid="625" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../tiles/victoria.png" width="352" height="192"/>
+ </tileset>
+ <layer name="Ground" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztlbEKwjAURRv/wX8QJ8FBBRXUwcUfEHGrjtVR3Bz6395SAuGRhCamQvQeuNCUpOkJyUtREEJIPpxU98QywtipJWNkOAiPJravpsT8l4BcI9dgiXErS9bCf4b2HFl41sXE9s6H7F9hnltA7j37b9DeIhPPOvyDv84usX8p9vC3/Jt/1M5dzuxBtUm9/yvh0LSPwvHck/9etYmpd7G1z7bfTYcHnp/CybcnPvFPFfObrntF3i8uX3kecvN31RVZX0xf8z6rkVdATcjd3+Uma0Jqf0IIIYQQ8pu8AZnbWU4=
+  </data>
+ </layer>
+ <layer name="Walls" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztl0trw0AMhHMIaY5pL31ATm1C0kuTgnvp4///rE4gomIq767Empagge/glXasIWbtzGa/dX2BeLQAa8UtuAP34AHMVQ/X1lRnrH5rjWFPj8/cmf8G7M/swCN4AhuwBSvVw7Ud1fcVrzEP3qs9LZ+xNdkbzX/iBRzAEbzSLFzjWRmr31or5ff6RPIPinfwAT7Bl5rFqg1UZ6x+a41hT49PJH9Jq0pPrR7RFJ5jyvxlZX5f/sjsPTyiuqrUl5WeU92afVBr1hlnnXeiN/DcMHsPLSp1+a4o1fWsPX5/eZfp66meCXnP8r1LWL2iHvnludDXU+b3PKtjvaIe+aM90ufRfzi7/zJ/7fzzqnZeRve0+i6d9/b+X2zx83q27Gn1jd77ksj8qVQqlUr96BtVZzeb
+  </data>
+ </layer>
+ <layer name="Stairs" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztz7ERgDAMBEERYJzg/ru15Q6UMAzMbvDRJR8B8Ky556i1Z3at2H7FlX968dOd3fjZfwAAAADesQD/ogE8
+  </data>
+ </layer>
+ <layer name="Decor" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztlF8KgkAQh1dP0FUL+l9QEBUUSSC9doG6jE9CLx6lWVphW3Z23XVAhflgUHbWz/mJKgTD4HwSIZapECtV6/S/b/bk/lBXiAPzYGttqcBx0DIfjfxmr3LcE3OFODAPttaGMTgmUJnmvRv5XT0b5v4iCXfYPLllzryhC2MD128djozg/SoJHJKnZU65JmccRTpPcP1ZeadwnLV8nl0Rm19nB9n3UA/PM/D1u4Ai/wVyXXuYrQkU+al4Qb3VeUH07fvoU34dqn9fzS39lUlf89fzYnPb0N+fpsTmD7lXyN65I+tioP8YhmEYhmEYhhkCXzIHPTs=
+  </data>
+ </layer>
+ <layer name="Decor2" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1LsKg0AQBVDNHydGq8QklY+ktEojFpJKyCfmClsMiwTdhzBwD2y1zMydFUwSInIxpP49uoN/j39CZJRk3o/VO8PdeeM+vcP+R9ScVtbZGX3JvJPVu8TdLfL3nF0w47pyjp0xpgaZ2h32rzCj3mEOUUwu/z5aluMt3+YUCt5V5g2R+47a0ZyHgv1l3hC5n6j9mvNSsL/Mqyk3EREREen2A/vIHtY=
+  </data>
+ </layer>
+ <layer name="Decor3" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzzEKACEQBEH1/5hp4mfvQAzMRVisgs5nUgIAAG7oee9F7f89Dn2vZRbF2httNwAAcX2GJwbv
+  </data>
+ </layer>
+ <layer name="Fringe" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAPBmGAAAAQ==
+  </data>
+ </layer>
+ <layer name="Over" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1bsKwkAQheEgxlrt8wBaB2ufwXhpvDyZ7+qxGBi2GHeXBFT+Dw7shskkGwbSNAAAxJ6zsvqD6gdlr3Wr9MpR+5O7FuVdfy585jdaKgtlq1x1npuy07oLMlfWyv0Pzm82yTqKd3HfIJ2ffqJ3jWbV+Dn1tWN7uPP7+bEZmUI0q8b2aS2A3/bp31ySmp459+T2rbEaMTU9c+7J7QsAAOC9ANYWEzU=
+  </data>
+ </layer>
+ <layer name="Over2" width="64" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzjERAAAIBKA/+48GtoUOQgISAIA9XdcDAAAA+GEAL90Alw==
+  </data>
+ </layer>
+ <layer name="Collision" width="64" height="24" opacity="0.62">
+  <data encoding="base64" compression="zlib">
+   eJztlEsOwCAIRE3vf+gu21AojKIkZCZxU+TzRusYX10NF6LqWclPfvLX8r99sPyxvmtxZA4vH2XK4I/0X/E8MtNpfq2/x3eCfyZ3dT/iv4xrnqD/bTW/jJM/Hp99g/9qSI+8tzejN3JOHj963p34I7Uid2Ynf6Yyzj9a19qH6AR/Rg759/F3W+SnKIqiqEc3lWAEgw==
+  </data>
+ </layer>
+</map>
