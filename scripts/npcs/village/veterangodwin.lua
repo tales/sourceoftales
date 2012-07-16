@@ -5,13 +5,6 @@ local function veteranTalk(npc, ch)
         npc_message(npc, ch, message)
     end
     local function send_tutorial()
-        local title = "kid"
-        if being_get_gender(ch) == GENDER_MALE then
-            title = "boy"
-        elseif being_get_gender(ch) == GENDER_FEMALE then
-            title = "girl"
-        end
-
         say("Hey, rookie. You aren't paid for standing in the landscape and looking like a sheep.")
         say("You should better hurry to get to the basic training unless you want to do extra hours in the kitchen "..
             "during the next month.")
@@ -28,7 +21,7 @@ local function veteranTalk(npc, ch)
             say("Watch out, this isn't a friendly place for a wimp.")
         elseif res ==3 then
             say("Hah, recruiters are liers. It's their job to tell fairytales about fame to dumbheads like you.")
-            say("The only thing that's awaiting you is a lot of hard work, " .. title .. ".")
+            say("The only thing that's awaiting you is a lot of hard work, boy.")
         end
 
         say("Now go, talk to Instructor Ascilia, so she can show you how you can avoid being speared by the first "..
@@ -37,15 +30,31 @@ local function veteranTalk(npc, ch)
         say ("Come back to me when you're done.")
     end
 
-    local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
-    local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
-    if (tutorial_fight == "done") and (tutorial_equip == "done") then
-        say("TODO: give first real quest")
-    else
-        send_tutorial()
+    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
+    if (sympathy == nil) then
+        sympathy = 0
     end
+
+    if sympathy >= SYMPATHY_NEUTRAL then
+        local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
+        local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
+            send_tutorial()
+        else
+            say("TODO: quest after tutorial and more")
+        end
+    elseif sympathy > SYMPATHY_RELUCTANT then
+        say("Why are you here? Talk to TODO to get amnesty from your crimes!")
+        sympathy = sympathy - 1
+        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
+    else -- sympathy <= SYMPATHY_RELUCTANT
+        say("I can't deny you're brave, but that won't help you now!")
+        being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+    end
+
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
+-- initialize sympathy values in on_chr_birth or here?
 -- idea for later quest: get taxes from the inhabitants in Goldenfield
 
 local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)
