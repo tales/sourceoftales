@@ -33,7 +33,7 @@ get_item_class(7):on("use", function(user)
         effect_create(effect_id, x, y)
         for _, being in ipairs(beings) do
             if being_type(being) == TYPE_MONSTER or being == user or
-               (map_get_pvp() == PVP_FREE and being_type == TYPE_CHARACTER) then
+               (map_get_pvp() == PVP_FREE and being_type(being) == TYPE_CHARACTER) then
                 WARN("DAMAGE")
                 
                 being_damage(being, damage_mod, damage_delta, accuracy,
