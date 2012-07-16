@@ -73,9 +73,9 @@
    eJzt0bEJAAAIwDDx/9HVX8UrBEkuKDQCgNV5XcCF8h0A3hnJ4gE2
   </data>
  </layer>
- <layer name="Collision" width="53" height="18" visible="0" opacity="0.62">
+ <layer name="Collision" width="53" height="18" opacity="0.62">
   <data encoding="base64" compression="zlib">
-   eJztlOEKwCAIhI+9/0Pv1yDCeZ61GKIgjcWdfZUBwFUs8YM1NFMzVUlM4/M9Bvtvzb9prGB6xWvUe9oM02rsYrI82ZpPMGX1nifzn+ctTqUXIjVZMG0z5e+/56FyZ/Y0U0t5J1kd1utfM0W8ImerMu0M7xxW+ke50yeYdmiaqVZWZLoBRywEUw==
+   eJztVNEKACEIk/7/o+/1CK9t5gXBBoNQpk6qERHDNE1zwZjOb6B4lv/SZEB6pRarrXjaRZenLI5mPuGpS6vsac5nPpU3wPRcgdHaU20eVEPxXd3pbi/0T6I+TK0/PTG11Pui7KcDaHfV98POespTh8aezBv4AFZ7BHc=
   </data>
  </layer>
 </map>
