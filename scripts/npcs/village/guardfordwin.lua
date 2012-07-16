@@ -5,19 +5,33 @@ local function guardTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak "..
-        "into the casern to distract the new recruits with their goods.")
+    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
+    if (sympathy == nil) then
+        sympathy = 0
+    end
 
-    local emma = chr_get_quest(ch, "rebels_emmas_camouflage")
-    if emma == "ask" then
-        local choices = { "That girl, Emma, could you let her enter?",
-                        "Then I won't distract you."}
-        local res = npc_choice(npc, ch, choices)
-        if res == 1 then
-            say("What, now she started to ask soldiers to beg for her? That girl drives me insane.")
-            say("Listen, this is an army. This isn't the place to fool around. No civilians in the casern.")
-            chr_set_quest(ch, "rebels_emmas_camouflage", "deny")
+    if sympathy >= SYMPATHY_NEUTRAL then
+        say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak "..
+            "into the casern to distract the new recruits with their goods.")
+
+        local emma = chr_get_quest(ch, "rebels_emmas_camouflage")
+        if emma == "ask" then
+            local choices = { "That girl, Emma, could you let her enter?",
+                            "Then I won't distract you."}
+            local res = npc_choice(npc, ch, choices)
+            if res == 1 then
+                say("What, now she started to ask soldiers to beg for her? That girl drives me insane.")
+                say("Listen, this is an army. This isn't the place to fool around. No civilians in the casern.")
+                chr_set_quest(ch, "rebels_emmas_camouflage", "deny")
+            end
         end
+    elseif sympathy > SYMPATHY_RELUCTANT then
+        say("To get amnesty for your misconducts talk to TODO.")
+        sympathy = sympathy - 1
+        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
+    else -- sympathy <= SYMPATHY_RELUCTANT
+        say("Traitor!")
+        being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 end
 
