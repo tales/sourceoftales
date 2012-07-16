@@ -27,7 +27,7 @@ local function instructorTalk(npc, ch)
     local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
     if tutorial_fight == "beat_dummies" then
         local dummies = chr_get_kill_count(ch, "training dummy")
-        if dummies >= tutorial_dummy_amount then
+        if dummies >= TUTORIAL_DUMMY_AMOUNT then
             say("Alright, that looks good. Feel free to train here whenever you want.")
             chr_set_quest(ch, "tutorial_fight", "done")
         else
