@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="64" height="24" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -41,7 +42,7 @@
  </tileset>
  <layer name="Ground" width="64" height="24">
   <data encoding="base64" compression="zlib">
-   eJztlT0OwjAMRhNOgxgLY2AERsQZgBFYOQ43xR0qjBXS/DgiqN+TviWt3by0aYwBAIBPnjOd1JxL7Fxb8tes4dfn1pilyMKW+XdUv7I6/nzsRD3Pnlzs93UIvct+3FHtWmRT6O9YD03/K/W8eXJvzH9L9fuJ+Wvt+5b8Q7X/4B/TW8u/1jrk+KfEsVq+Bqne3L/znCk5kWdILf8a/3/Zcwgn5h4fD/vO2FxC33/PgXrsRI4F/inI5w4ZI3Zvxvj/ktz5Td0/tz8AAAAAyngB2fX1Qw==
+   eJztlT0OwjAMRhNOgxgLY2AERtQzACOwchxuijtUGCuk+XFEEN+TviWt3by0aYwBAIB3HjOd1JxL7Fxb8tes4dfn1pilyMKW+XdUv7I6/nzsSD1Pnpzt53UIvcth3FHtWmRT6O9YD03/C/W8enJrzH9L9fs/89fa9y35h2p/wT+mt5Z/rXXI8U+JY7V8DVK9uX/nOVNyIs+QWv41/v+y5xhOzD0+7vaVqbmEvv+BA/XYifQF/inI546ZInZvxvh/k9z5wT/PHwAAAABlPAEuUPcs
   </data>
  </layer>
  <layer name="BackDecor" width="64" height="24">
@@ -61,7 +62,7 @@
  </layer>
  <layer name="Decor" width="64" height="24">
   <data encoding="base64" compression="zlib">
-   eJztlr8KwjAQxpt7TwcHFXRQXHwI/0BV0Do5OfkYdVGHutRJRHwRLzSlJW2pkLMheD847nKB4/tICPE8powH2FZgl6fyPxV2daTMUcdMZFlH6pSxx1ioMOGl/K+0OR3sd6FY1+2ZInUsRZJ1TRIfe2uMg8q+of+30r7R5vSxP4BiXbdnSoA6tiLJQYk3qVPGUeUd4b1t5XwMsR5Bsa7bo+QqksgT4vqkemfMF0L/bcfewgi93wj9RxWzmrz/35CeeYz5Tug/rphl6/6XMQbaM3eNCdCeOeMePciC8v13hTDn+Z/fAgm/BUyTUP85XYP6z+ka1H9OhmEY5rd8AM6/O6M=
+   eJztlr8KwjAQxpu8p4ODCjooLj6Ef6AqaJ2cnPQt6qIOdamTiPgiXmhKS9rSYs7GyP3guMsFju8jIcRxiDzu3LQCszyk/zEzqyNmCjomLMkqQqeILcRMhg5P6X+hzGlBv82zddmeLkLHnEVZ1SRwobeE2Mnsavp/Se0rZU4X+j2ercv2dPFAx5pF2cvxJnSK2Mu8Qby3jZSPPtQDnq3L9jC5sCjS+LA+yt4J8hnRf9OytzAA71dE/0HBrDrvfxXiMw8h3xD9hwWzTN3/PIYc98x/jYOMIkYc98w/1UGYo8OTwHz/bcFPef7nt6AKdbwFBBGD/ee0Dew/p21g/zkJgiCI7/IG2aE+Vw==
   </data>
  </layer>
  <layer name="Decor2" width="64" height="24">
