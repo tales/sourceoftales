@@ -5,11 +5,6 @@
 
 --]]
 
--- At the moment the event handlers are split up over the following files:
-require "scripts/global_events"
-require "scripts/specials"
-require "scripts/crafting"
-
 -- Project specific constants
 require "scripts/global_constants"
 
@@ -23,3 +18,13 @@ require "scripts/monsters"
 
 -- Item scripts
 require "scripts/items"
+
+-- Global Events
+require "scripts/global_events"
+
+-- Specials
+require "scripts/specials"
+
+-- Crafting
+require "scripts/crafting"
+
