@@ -5,30 +5,44 @@ local function guardTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Oh my, I'm bored. I wish I'd be back in Kingstown.")
+    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
+    if (sympathy == nil) then
+        sympathy = 0
+    end
 
-    local choices = { "Tell me about Kingstown!",
-                    "What's your problem with Goldenfields?",
-                    "See you later." }
+    if sympathy >= SYMPATHY_NEUTRAL then
+        say("Oh my, I'm bored. I wish I'd be back in Kingstown.")
 
-    local res = npc_choice(npc, ch, choices)
+        local choices = { "Tell me about Kingstown!",
+                        "What's your problem with Goldenfields?",
+                        "See you later." }
 
-    if res == 1 then
-        say("Well, that's a place where you can have fun! It's big, probably much bigger than a country bumpkin "..
-            "like you can imagine.")
-        say("And it's full of shops where you can anything you can dream of, taverns with the tastiest beer on "..
-            "the entire continent! Hah, and if you're looking for a little fight, you won't have a problem "..
-            "to find one there.")
-        say("Or someone to play a decent game, cards or dice, whatever you want. But you have to watch out for crooks. "..
-            "A greenhorn like you would probably get his pockets emptied faster than you can say "..
-            "'Long live King Richard!'.")
-    elseif res == 2 then
-        say("Problem, you say? Hah! This place is a big NOTHING. Endless fields and trees and more fields.")
-        say("He sighs.")
-        say("And when something happens, it's trouble. Like those agitators who told the village people not "..
-            "to pay their taxes. Pah.")
-    elseif res ==3 then
-        say("Sure.")
+        local res = npc_choice(npc, ch, choices)
+
+        if res == 1 then
+            say("Well, that's a place where you can have fun! It's big, probably much bigger than a country bumpkin "..
+                "like you can imagine.")
+            say("And it's full of shops where you can anything you can dream of, taverns with the tastiest beer on "..
+                "the entire continent! Hah, and if you're looking for a little fight, you won't have a problem "..
+                "to find one there.")
+            say("Or someone to play a decent game, cards or dice, whatever you want. But you have to watch out for crooks. "..
+                "A greenhorn like you would probably get his pockets emptied faster than you can say "..
+                "'Long live King Richard!'.")
+        elseif res == 2 then
+            say("Problem, you say? Hah! This place is a big NOTHING. Endless fields and trees and more fields.")
+            say("He sighs.")
+            say("And when something happens, it's trouble. Like those agitators who told the village people not "..
+                "to pay their taxes. Pah.")
+        elseif res ==3 then
+            say("Sure.")
+        end
+    elseif sympathy > SYMPATHY_RELUCTANT then
+        say("To get amnesty for your misconducts talk to TODO.")
+        sympathy = sympathy - 1
+        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
+    else -- sympathy <= SYMPATHY_RELUCTANT
+        say("Traitor!")
+        being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 end
 
