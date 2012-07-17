@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="57" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -39,6 +40,9 @@
  <tileset firstgid="747" name="woodenbeam" tilewidth="32" tileheight="32">
   <image source="../tiles/woodenbeam.png" width="256" height="128"/>
  </tileset>
+ <tileset firstgid="779" name="crossed_swords" tilewidth="32" tileheight="32">
+  <image source="../tiles/crossed_swords.png" width="96" height="64"/>
+ </tileset>
  <layer name="Ground" width="57" height="20">
   <data encoding="base64" compression="zlib">
    eJztlD0OwjAMRhNOUzEWxsAIjIgzQEdg5TjcFHeIsKz8OJEDEfhJ35LaVp7SxBhFUXrkuZBJy71w9/ppR8ke/H2wxqxIljbvOELN2so44rUzzLwEMtm4a+pM5nUHvRuSLcPRoTpJxyvMvAVy/4LjDmoOP+godQ97ckztpRdHzuwSx1auNY4lcagXe8bO3juOgfe4JvRtbuVY+67SPh8MpybEw76TIvevzhxhxp7klHEsgc72yZG6K7E6bo80tXtQx/h8RfkHXs999yw=
@@ -61,7 +65,7 @@
  </layer>
  <layer name="Decor" width="57" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBhZ4C7TQLuA9uA+1I/djAPrDhjoBbqjhxFBowOQO0F4ARD3QTEh8BDqx8loalOB4mlMmGxCcpQCkDsmMUJodDeBwESg2BQgXgalJxLhx8dQ901HU5sFFM9mwmQTkqMUzAS6YwYjhJ6Jxf0gd4LwGig9i8T0F4vk1nwgu4AJk01IjprgDCMEI4MjQP5RqNgpIH2aRD8mDrHy5wLQfxdJ9OMFHOrpmVaJAbC4uwakr5Pox2s41A9UWsUGiphIj7vBBtZCMS5QzkR63JFr1yigLUhnQmBSy9WhAo4g+Wuo501iALXy5igYfoCc9tNQA+S0n4YaIKf9NApoAwDziT5X
+   eJxjYBhZ4C7TQLuA9uA+1I/djNQz8zYWs4gV6wWK9TAiaHQAcicILwDiPigmBB5C/TgZTW0qUDyNCZNNSA4EHmCxl1gxkDsmMUJodDeBwESg2BQgXgalJxLhx8dQ901HU5sFFM9mwmQTkqMUzAS6YwYjhJ6Jxf0gd4LwGig9i8T0F4vk1nwgu4AJk01IjprgDCMEI4MjQP5RqNgpIH2aRD8mDrHy5wLQfxdJ9OMFHOrpmVaJAbC4uwakr5Pox2s41A9UWsUGiphIj7vBBtZCMS5QzkR63JFr1yigLUhnQmBSy9WhAo4g+Wuo501iALXy5igYfoCc9tNQA+S0n4YaIKf9NApoAwDbxEOO
   </data>
  </layer>
  <layer name="Decor2" width="57" height="20">
