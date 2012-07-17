@@ -10,5 +10,6 @@
     <effect id="8" audio="sfx/fire.ogg" particle="particles/firelion_up.spell.xml" />
     <effect id="9" audio="sfx/fire.ogg" particle="particles/firelion_left.spell.xml" />
     <effect id="10" audio="sfx/fire.ogg" particle="particles/firelion_right.spell.xml" />
+    <effect id="11" audio="sfx/fire.ogg" particle="particles/lightningclaw.spell.xml" />
 
 </effects>

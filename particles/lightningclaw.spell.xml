@@ -1,0 +1,12 @@
+<effect>
+    <particle
+        position-x="-1"
+        position-y="9"
+        position-z="48"
+        lifetime="48" >
+        <property name="output" value="1" />
+        <animation imageset="particles/lightningclaw.png" width="128" height="128">
+            <sequence start="0" end="15" delay="30" />
+        </animation>
+    </particle>
+</effect>

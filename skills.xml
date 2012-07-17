@@ -17,6 +17,7 @@
     <set name="Magic">
         <skill id="200" name="Fire Lion" />
         <skill id="201" name="Earthquake" />
+        <skill id="202" name="Lightning" />
     </set>
     <set name="Crafts">
         <skill id="300" name="Craft Example" />

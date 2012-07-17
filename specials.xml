@@ -8,5 +8,19 @@
             needed="100"
             rechargespeed="1"
         />
+        <special
+            id="2"
+            name="Earthquake"
+            rechargeable="true"
+            needed="100"
+            rechargespeed="1"
+        />
+        <special
+            id="3"
+            name="Lightning"
+            rechargeable="true"
+            needed="100"
+            rechargespeed="1"
+        />
     </set>
 </specials>
