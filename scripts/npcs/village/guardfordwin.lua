@@ -40,12 +40,12 @@ local function guardDenyExit(ch)
         return
     end
 
-    -- check for the amount of dummies, because quest variables can't be checked here, as this is threaded
-    local dummies = chr_get_kill_count(ch, "training dummy")
-    if dummies < TUTORIAL_DUMMY_AMOUNT then
+    local quest = chr_try_get_quest(ch, "tutorial_fight")
+    if quest ~= "done" then
         chat_message(ch, "Guard Fordwin: Hey! I can't let you pass like this. Get your equipment and "..
                         "finish your basic training!")
-        chr_warp(ch, nil, posX(ch), tileToPixel(117))
+        local x, y = get_named_coordinate("Gate Warp")
+        chr_warp(ch, nil, posX(ch), y)
         being_set_direction(ch, DIRECTION_UP)
     end
 end

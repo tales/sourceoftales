@@ -29,6 +29,12 @@ on_character_death_accept(function(ch)
     chr_warp(ch, 1, 815, 100)
 end)
 
+-- This function is called when a character logs into the game. This can,
+-- for example, be utilized for a message-of-the-day or for various
+-- handlings of offline processing mechanics.
+on_character_login(function(ch)
+    chr_request_quest(ch, "tutorial_fight", function(ch, var, value) end)
+end)
 
 --
 -- TODO: All of the below functions are not implemented yet!
@@ -52,13 +58,6 @@ end
 local function on_chr_birth(ch)
     -- this message is shown on first login.
     chat_message(0, ch, "And so your adventure begins...")
-end
-
--- This function is called when a character logs into the game. This can,
--- for example, be utilized for a message-of-the-day or for various
--- handlings of offline processing mechanics.
-local function on_chr_login(ch)
-    chat_message(0, ch, "Welcome to Manasource")
 end
 
 

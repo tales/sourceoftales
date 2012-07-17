@@ -305,6 +305,7 @@
  </objectgroup>
  <objectgroup name="Trigger" width="170" height="150">
   <object name="Casern south gate" type="TRIGGER" x="1600" y="2112" width="128" height="32"/>
+  <object name="Gate Warp" type="COORDINATE" x="1648" y="2048" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Warps" width="170" height="150">
   <object name="to Storage" type="WARP" x="2080" y="1472" width="32" height="32">
