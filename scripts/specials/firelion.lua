@@ -16,13 +16,9 @@ local damage_type = DAMAGE_PHYSICAL -- MAGIC does not work atm
 
 local spell = get_special_info("Magic_Fire Lion")
 spell:on_use(function(user, target, special_id)
-    WARN("USE")
     local exp = chr_get_exp(user, skill_name)
-    WARN("LEVEL: " .. chr_get_level(user, skill_name))
     local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    WARN("factor: " .. factor)
     local damage_mod = damage * factor
-    WARN("damge: " .. damage_mod)
 
     local x, y, w, h, effect_id
     local direction = being_get_direction(user)
