@@ -130,5 +130,6 @@
     <property name="tolerance" value="128"/>
    </properties>
   </object>
+  <object name="patrolspawn" type="COORDINATE" x="640" y="640" width="32" height="32"/>
  </objectgroup>
 </map>
