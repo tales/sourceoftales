@@ -1,0 +1,12 @@
+<effect>
+    <particle
+        position-x="-1"
+        position-y="9"
+        position-z="48"
+        lifetime="120" >
+        <property name="output" value="1" />
+        <animation imageset="particles/firelion_up_small.png" width="64" height="64">
+            <sequence start="0" end="15" delay="75" />
+        </animation>
+    </particle>
+</effect>

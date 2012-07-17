@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <specials>
     <set name="Magic">
-
+        <special
+            id="1"
+            name="Fire Lion"
+            rechargable="true"
+            needed="100"
+            rechargespeed="1"
+        />
     </set>
 </specials>

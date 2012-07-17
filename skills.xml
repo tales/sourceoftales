@@ -15,7 +15,7 @@
         <skill id="111" name="Bombing" icon="graphics/skills/todo.png" />
     </set>
     <set name="Magic">
-        <skill id="200" name="Magic Example" />
+        <skill id="200" name="Fire Lion" />
     </set>
     <set name="Crafts">
         <skill id="300" name="Craft Example" />

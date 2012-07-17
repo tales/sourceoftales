@@ -1,0 +1,16 @@
+<effect>
+    <particle
+        position-x="-1"
+        position-y="40"
+        position-z="48"
+        lifetime="1" >
+        <emitter>
+            <property name="gravity" value="0.02" />
+            <property name="lifetime" value="120" />
+            <property name="output" value="1" />
+            <animation imageset="particles/firelion_down_small.png" width="64" height="64">
+                <sequence start="0" end="15" delay="75" />
+            </animation>
+        </emitter>
+    </particle>
+</effect>

@@ -6,5 +6,9 @@
     <effect id="4" audio="sfx/fire.ogg" particle="particles/firelion_left.trap.xml" />
     <effect id="5" audio="sfx/fire.ogg" particle="particles/firelion_right.trap.xml" />
     <effect id="6" audio="sfx/bomb.ogg" particle="particles/bomb.xml" />
+    <effect id="7" audio="sfx/fire.ogg" particle="particles/firelion_down.spell.xml" />
+    <effect id="8" audio="sfx/fire.ogg" particle="particles/firelion_up.spell.xml" />
+    <effect id="9" audio="sfx/fire.ogg" particle="particles/firelion_left.spell.xml" />
+    <effect id="10" audio="sfx/fire.ogg" particle="particles/firelion_right.spell.xml" />
 
 </effects>
