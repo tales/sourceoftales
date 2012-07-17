@@ -17,13 +17,9 @@ local range = 3 * TILESIZE
 
 local spell = get_special_info("Magic_Earthquake")
 spell:on_use(function(user, target, special_id)
-    WARN("USE")
     local exp = chr_get_exp(user, skill_name)
-    WARN("LEVEL: " .. chr_get_level(user, skill_name))
     local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    WARN("factor: " .. factor)
     local damage_mod = damage * factor
-    WARN("damge: " .. damage_mod)
 
     effect_create(1, user)
     chr_set_special_mana(user, special_id, 0)
