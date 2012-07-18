@@ -22,5 +22,12 @@
             needed="100"
             rechargespeed="1"
         />
+        <special
+            id="4"
+            name="Heal"
+            rechargeable="true"
+            needed="10"
+            rechargespeed="1"
+        />
     </set>
 </specials>
