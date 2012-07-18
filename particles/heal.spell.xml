@@ -11,7 +11,7 @@
             <property name="follow-parent" value="true" />
             <emitter>
                 <property name="lifetime" min="100" max="150" />
-                <property name="output" value="2" />
+                <property name="output" value="1" />
                 <property name="image" value="particles/orb_5x5_dyable.png|W:#4289ff" />
                 <property name="gravity" min="-0.02" max="-0.01" />
                 <property name="randomnes" value="10" />
