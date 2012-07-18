@@ -30,7 +30,6 @@ function parse_npcs_from_map()
             sprite_id = tonumber(object:property("sprite_id")),
             gender = getGenderByString(object:property("gender"))
         }
-        WARN("PARSED NPC: " .. object:name())
     end
 end
 
