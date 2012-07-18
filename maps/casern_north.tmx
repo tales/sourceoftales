@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="89" height="68" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -102,9 +101,48 @@
    eJzt3E1OxCAUwHFSP5fq3gu4Nq57EU1c6PX0FJ5GHUeTqboS4pAS5LX0ayz0/0teMpOhpDCvLSFQpQCk6q347zPI3yd9DEEu1996xu2Iuf7udJn7Ivzd/22ISx2vuq6VjlJ/PthGjK8Z97HLzYVn/flFaKvphw8nViO170LHRtdV6bjSn8+3YeVwzYVyIdTWjVeu2lHbeeYBv572mn+/HnCtlKq+r9owz5gc7nHGupDb2MXtgP440XHqxZnK5x5nniVSG+euVHU++OMJO6awZULhHtdUNqb+rjnpuumRS9I5Su2IrcePY1Xngz+eMCohf9ywx5myUpmY+o9a+iSmjf5/Geovyz2/Q/V3bLnvlZE09U3TcSlp+i9DOYK8SfeTVOpPwdT3k5zvV7HoAwAAAAAAAAAAAABIn7+maurjlshfUzX1cQAApKZtrba0dj1l7v5LaT9ITMRqW6strV3PhbQfJCYAAADGfHcGYLx7+dT27hl/L/x3j3xc+nxu27tnxtgLH9pbC4zlQSfUI0kFZKXPXGBojnSMcUU58Dzmqs9cYMwcaZ9xRd+5yaXMUXbNq5TycC665tUS8xDYtR+2q20K
   </data>
  </layer>
- <layer name="Collision" width="89" height="68" opacity="0.62">
+ <layer name="Collision" width="89" height="68" visible="0" opacity="0.62">
   <data encoding="base64" compression="zlib">
    eJztlVuKxDAMBMPc/9D7tbAsdiTLsvWYamjIxLHUKofM53meD8YY43b+q9Ha275TObxrZ+W7w1ijW1m8znx1Hmmutxqra9pss/uaMxjde1uXnr/NeOXdsWiF8exayqnN0J2xxOsZPKfNOdor9Twl7azSPktPLWOrJMazLN6KZGxdt/aJYlxBu9/c2W/p/jfJ4/9JU9cjV8Wzms0h2VLbK1s1WRlrZo1irHl2ZTYLgx2uO4zfanhlGtVf5bbD+OQc1j43slkY775nJxnfOhsY52HcxTC+y3iFFYxhnMkwhnEHwxjGHQxjGHcwjGHcwTCGcQfDGMYdDGMYdzCMYdzBMIZxB8MYxl1s5QRfGGfxf1n3WRU9v5WZ5np3Zi9F84JxLt+e+Xa/TM4+8+1+J2eIztGRcZXsVXJWzl4lZ+XsVXJq8kdn6ci4SvYqOTUzROeAcXy+7DkrZ/fMaanj1TOa4w3GI506l+qMPRTVP5oljHsx/lXms4Wxf78OXp35GxnBGON+/gGqJCU/
   </data>
  </layer>
+ <objectgroup name="NPCS" width="89" height="68">
+  <object name="Chef Odo" type="NPC_POSITION" x="2560" y="288" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
+  <object name="Scullion John" type="NPC_POSITION" x="2752" y="288" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
+  <object name="Recruit Alan" type="NPC_POSITION" x="2144" y="320" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="2"/>
+   </properties>
+  </object>
+  <object name="Recruit Jordan" type="NPC_POSITION" x="2016" y="192" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="2"/>
+   </properties>
+  </object>
+  <object name="Guard Hamond" type="NPC_POSITION" x="1440" y="160" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Objects" width="170" height="150">
+  <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/casern_north.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
