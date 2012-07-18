@@ -26,7 +26,7 @@ local function guardTalk(npc, ch)
             end
         end
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("To get amnesty for your misconducts talk to TODO.")
+        say("To get amnesty for your misconducts talk to Magistrate Eustace in Goldenfields.")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT

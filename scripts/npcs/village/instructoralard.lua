@@ -55,7 +55,7 @@ local function instructorTalk(npc, ch)
         say("Do you have any further questions?")
         say("TODO: add some topics, e.g. attributes, skills etc")
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("You shouldn't be here until you recompensed for your misconduct.") -- TODO: tell who to talk to (some npc in the village)
+        say("You shouldn't be here until you recompensed for your misconduct. Talk to Magistrate Eustace in Goldenfields.")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT

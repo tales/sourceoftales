@@ -26,7 +26,7 @@ local function recruitTalk(npc, ch)
         end
         -- idea: could have a friend who later turns out to be one of the rebels
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("Wow, you really got into trouble, heh? Why are you here? Shouldn't you talk to TODO?")
+        say("Wow, you really got into trouble, heh? Why are you here? Shouldn't you talk to Magistrate Eustace?")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT

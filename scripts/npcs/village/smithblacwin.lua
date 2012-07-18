@@ -61,7 +61,7 @@ local function smithTalk(npc, ch)
     if sympathy >= SYMPATHY_NEUTRAL then
         chat()
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("Go away until you've talked to TODO.")
+        say("Go away until you've talked to Magistrate Eustace.")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT

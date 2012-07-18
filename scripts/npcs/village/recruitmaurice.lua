@@ -22,7 +22,7 @@ local function recruitTalk(npc, ch)
                 "life. When I met the recruiter, I decided to rather become I soldier. I'm going to see the world, and "..
                 "maybe I can find some nice place to live after my time of service.")
         elseif res == 2 then
-            say("Because of war, you dumbhead. Why else should they even come out here to Goldenfield to hire people? "..
+            say("Because of war, you dumbhead. Why else should they even come out here to Goldenfields to hire people? "..
                 "I mean, nothing ever happens here and usually there are only a handful of old soldiers here in the "..
                 "casern who feel bored to death.")
             say("After the basic training we're probably going to be send to more interesting places.")
@@ -50,7 +50,7 @@ local function recruitTalk(npc, ch)
     if sympathy >= SYMPATHY_NEUTRAL then
         chat()
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("To get amnesty for your misconducts talk to TODO.")
+        say("To get amnesty for your misconducts talk to Magistrate Eustace.")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT

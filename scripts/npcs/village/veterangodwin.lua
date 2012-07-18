@@ -44,7 +44,7 @@ local function veteranTalk(npc, ch)
             say("TODO: quest after tutorial and more")
         end
     elseif sympathy > SYMPATHY_RELUCTANT then
-        say("Why are you here? Talk to TODO to get amnesty from your crimes!")
+        say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")
         sympathy = sympathy - 1
         chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
     else -- sympathy <= SYMPATHY_RELUCTANT
@@ -55,6 +55,6 @@ local function veteranTalk(npc, ch)
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
 -- initialize sympathy values in on_chr_birth or here?
--- idea for later quest: get taxes from the inhabitants in Goldenfield
+-- idea for later quest: get taxes from the inhabitants in Goldenfields
 
 local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)
