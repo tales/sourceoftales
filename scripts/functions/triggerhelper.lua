@@ -18,11 +18,12 @@ local function getBoolByString(v)
     end
 end
 
-local function init()
+function parse_triggers_from_map()
+    triggers[get_map_id()] = {}
     local map_objects = map_get_objects("TRIGGER")
     for _, object in ipairs(map_objects) do
         local x, y, w, h = object:bounds()
-        triggers[object:name()] = {
+        triggers[get_map_id()][object:name()] = {
             x = x,
             y = y,
             w = w,
@@ -34,9 +35,7 @@ local function init()
 end
 
 function create_trigger_by_name(name, trigger_func)
-    local trigger = triggers[name]
+    local trigger = triggers[get_map_id()][name]
     trigger_create(trigger.x, trigger.y, trigger.w, trigger.h,
                    trigger_func, trigger.id, trigger.once)
 end
-
-init()
