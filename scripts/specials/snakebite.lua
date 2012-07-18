@@ -34,23 +34,18 @@ spell:on_use(function(user, target, special_id)
     -- Get direction
     local d_x = posX(target) - posX(user)
     local d_y = posY(target) - posY(user)
-    local dir
     local effect_id
 
     if math.abs(d_x) > math.abs(d_y) then
         if d_x > 0 then
-            dir = DIRECTION_RIGHT
             effect_id = 15
         else
-            dir = DIRECTION_LEFT
             effect_id = 14
         end
     else
         if d_y > 0 then
-            dir = DIRECTION_DOWN
             effect_id = 13
         else
-            dir = DIRECTION_UP
             effect_id = 16
         end
     end
