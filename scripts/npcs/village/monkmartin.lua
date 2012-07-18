@@ -6,7 +6,7 @@ local function monkTalk(npc, ch)
     end
 
     local function creation_myth()
-        say("There are three gods. The god of fire, Ignis, the goddess of water, Aquaria, and the god of earth. "..
+        say("There are three gods. The god of fire, Ignis, the goddess of water, Aquaria, and The Third God. "..
             "I won't say his name, because that might call misfortune upon myself.")
         say("It happened that Ignis and Aquaria came together and life was born from their connection. "..
             "Seeing this, the Third God felt rejected and created an empty rock where he hid to be alone with his "..
@@ -60,6 +60,8 @@ local function monkTalk(npc, ch)
             creation_myth()
         end
     end
+    say("If you wish to gain further knowledge about the gods and the power the can grant "..
+        "visit the shrine in Goldenfields.")
 end
-
+-- IDEA: run towards players and being_say() things matching to his role?
 local monk = create_npc_by_name("Martin", monkTalk)
