@@ -29,5 +29,12 @@
             needed="10"
             rechargespeed="1"
         />
+        <special
+            id="5"
+            name="Snake Bite"
+            rechargeable="true"
+            needed="10"
+            rechargespeed="1"
+        />
     </set>
 </specials>

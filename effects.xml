@@ -10,7 +10,11 @@
     <effect id="8" audio="sfx/fire.ogg" particle="particles/firelion_up.spell.xml" />
     <effect id="9" audio="sfx/fire.ogg" particle="particles/firelion_left.spell.xml" />
     <effect id="10" audio="sfx/fire.ogg" particle="particles/firelion_right.spell.xml" />
-    <effect id="11" audio="sfx/fire.ogg" particle="particles/lightningclaw.spell.xml" />
-    <effect id="12" audio="sfx/fire.ogg" particle="particles/heal.spell.xml" />
+    <effect id="11" particle="particles/lightningclaw.spell.xml" />
+    <effect id="12" particle="particles/heal.spell.xml" />
+    <effect id="13" particle="particles/snakebite_down.spell.xml" />
+    <effect id="14" particle="particles/snakebite_left.spell.xml" />
+    <effect id="15" particle="particles/snakebite_right.spell.xml" />
+    <effect id="16" particle="particles/snakebite_up.spell.xml" />
 
 </effects>

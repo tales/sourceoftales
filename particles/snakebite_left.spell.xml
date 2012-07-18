@@ -1,0 +1,13 @@
+<effect>
+    <particle
+        position-x="9"
+        position-y="35"
+        position-z="48"
+        lifetime="75" >
+        <property name="output" value="1" />
+        <animation imageset="particles/snakebite_left.png" width="128" height="128">
+            <sequence start="0" end="8" delay="25" />
+            <sequence start="9" end="15" delay="75" />
+        </animation>
+    </particle>
+</effect>

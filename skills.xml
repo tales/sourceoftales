@@ -19,6 +19,7 @@
         <skill id="201" name="Earthquake" />
         <skill id="202" name="Lightning" />
         <skill id="203" name="Heal" />
+        <skill id="204" name="Snake Bite" />
     </set>
     <set name="Crafts">
         <skill id="300" name="Craft Example" />
