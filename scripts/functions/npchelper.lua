@@ -19,25 +19,25 @@ local function getGenderByString(v)
     end
 end
 
-local function init()
+function parse_npcs_from_map()
+    npcs[get_map_id()] = {}
     local map_objects = map_get_objects("NPC_POSITION")
     for _, object in ipairs(map_objects) do
         local x, y, w, h = object:bounds()
-        npcs[object:name()] = {
+        npcs[get_map_id()][object:name()] = {
             x = x + w / 2,
             y = y + h / 2,
             sprite_id = tonumber(object:property("sprite_id")),
             gender = getGenderByString(object:property("gender"))
         }
+        WARN("PARSED NPC: " .. object:name())
     end
 end
 
 function create_npc_by_name(name, talk_func, update_func)
-    local npc = npcs[name]
+    local npc = npcs[get_map_id()][name]
     assert(npc ~= nil, "NPC with name \"" .. name ..
            "\" not defined on map " .. get_map_id())
     return npc_create(name, npc.sprite_id, npc.gender, npc.x, npc.y,
                       talk_func, update_func)
 end
-
-init()

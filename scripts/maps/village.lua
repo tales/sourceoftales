@@ -5,6 +5,7 @@
 atinit(function()
     require "scripts/functions/npchelper"
     require "scripts/functions/triggerhelper"
+    parse_npcs_from_map()
 
     require "scripts/npcs/village/guardfordwin"
     require "scripts/npcs/village/guardterric"
