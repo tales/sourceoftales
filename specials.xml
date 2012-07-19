@@ -7,6 +7,7 @@
             rechargable="true"
             needed="100"
             rechargespeed="1"
+            icon="icons/spell_firelion.png"
         />
         <special
             id="2"
@@ -14,6 +15,7 @@
             rechargeable="true"
             needed="100"
             rechargespeed="1"
+            icon="icons/spell_icetacle.png"
         />
         <special
             id="3"
@@ -21,6 +23,7 @@
             rechargeable="true"
             needed="100"
             rechargespeed="1"
+            icon="icons/spell_lightning.png"
         />
         <special
             id="4"
@@ -28,6 +31,7 @@
             rechargeable="true"
             needed="10"
             rechargespeed="1"
+            icon="icons/spell_icetacle.png"
         />
         <special
             id="5"
@@ -35,6 +39,7 @@
             rechargeable="true"
             needed="10"
             rechargespeed="1"
+            icon="icons/spell_snakebite.png"
         />
     </set>
 </specials>

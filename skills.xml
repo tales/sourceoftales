@@ -15,11 +15,16 @@
         <skill id="111" name="Bombing" icon="graphics/skills/todo.png" />
     </set>
     <set name="Magic">
-        <skill id="200" name="Fire Lion" />
-        <skill id="201" name="Earthquake" />
-        <skill id="202" name="Lightning" />
-        <skill id="203" name="Heal" />
-        <skill id="204" name="Snake Bite" />
+        <skill id="200" name="Fire Lion"
+            icon="icons/spell_firelion.png"/>
+        <skill id="201" name="Earthquake"
+            icon="icons/spell_earthquake.png"/>
+        <skill id="202" name="Lightning"
+            icon="icons/spell_lightning.png"/>
+        <skill id="203" name="Heal"
+            icon="icons/spell_heal.png"/>
+        <skill id="204" name="Snake Bite"
+            icon="icons/spell_snakebite.png"/>
     </set>
     <set name="Crafts">
         <skill id="300" name="Craft Example" />

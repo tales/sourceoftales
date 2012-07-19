@@ -69,6 +69,12 @@ cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      sprites/monsters/
 Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
 Clint Bellanger                    CC BY_SA 3.0, GPLv2, GPLv3  particles/quake.png
 CosmicD                            CC BY_SA 3.0                sfx/trap.ogg
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_firelion.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_icetacle.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_lightning.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_shield.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_snakebite.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_watertacle.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_down.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_down_small.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/firelion_left.png
@@ -1289,7 +1295,7 @@ Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Cereal.png
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Claw.png
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Dandelion.png
-Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Dry Wood.png
+Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Dry_Wood.png
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Dust.png
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Egg.png
 Tempest in the Aether, Ryzom Core  CC BY_SA 3.0                items/temptest_in_the_aether/MP_Eyes.png
