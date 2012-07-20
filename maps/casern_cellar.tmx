@@ -34,6 +34,9 @@
  <tileset firstgid="1143" name="buckets" tilewidth="32" tileheight="32">
   <image source="../tiles/buckets.png" width="96" height="64"/>
  </tileset>
+ <tileset firstgid="1149" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="../tiles/dungeon.png" width="416" height="256"/>
+ </tileset>
  <layer name="Ground" width="42" height="30">
   <data encoding="base64" compression="zlib">
    eJztlrsOgCAMRWFgU9n0//9UHYiGQLmtL8DepJOWHu0LY1SqejTaw7iaNp+lYIPgXIqRwxn4ZtC+4kTVGmepNkr1Uuv/3H38i5wuiocK5UT6GMmXlDP2y3E6Ri/H5jvgpPKE5OFKfVJzMo5HfT+Shz9wukScpzgnK9/DT3GG/cCdH7keOMdKPZNwBknmR4hxl5Bd1Qpnqm4QTsnMvnJe75zSOxrVf5x3cv32trh7WTlpIfefGjhVqpJWqXYZrA==
@@ -46,7 +49,7 @@
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwEyGKmjhlp2YQP7gfgAHvkYoLkizAwMokAcSyW3kgOOAPFRPPKJQLfJAN0oC8RJA+hOcgApcUet9EIPwM480C4gDnBjceciYDgvxhLWgy2utgHt2I5kjz+QHcBIHpueIARoZygjeWwxItIVcthTEg+RQL1RjOSxkd25BophgNj4AOlZi6QPW1qlJSAmPgYDICY+BgMgJu0iA2qUIbjMwGe2HB53EuMH9HSLDeCqH9YwYOYXXObSI31SI88NlfQ5CrADSvIhNr3UbBsQk9eobR66Gmq7YRSMglEwCkYiAAAMeC+K
+   eJxjYBgFowA72A/EB/DIxzAyMIgwMzCIAnEsI50chQUcAeKjeOQTgW6TAbpRFoiTBtCdowAB2JkH2gXEAW4s7lwETEOLh0A62gZ043Ykd+5hYWDYy0Iem57gJNDOUyzkscXomK6uAe28zkIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQXJ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZt89DVUNsNo2AUjIJRMBIBAIggRhw=
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
@@ -66,12 +69,22 @@
  </layer>
  <layer name="Over" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlk0KwjAQhSe4cO1N/ANBvYGL6gF0b29R9/bMTqCPhvEvo8EYnQ8ehJAhU/JeEyLDMIyeXYRO2brr2TzRnlVn607P1BHNWA3FnQHOYcw1E/e5Ppe814p15PGBfu8cJMNB7g7KZi68Cd/C7+F8rOd97ULkBbyah7WogW/hdzASupeBtqv1+PpzN186FX/L1j0eG+l5595FJjR3CxTuL7Pb3FjnM1HTdb41uURWNAIyf2H2ZP7kmjauPeNP0WZHq1TvanlHpVbJ77lvRfs/zkWsR4z0XAAc/z5x
+   eJztlk0KwjAQhadYcO1N/ANBvUFXHkD39hZ1b0+kd3MCfTSMfxkNxuh88CCEDBnIe0mIDMMwejYBOiTrrqd6oi2rTtadnmlBNGM1FHYGOIcx10yKz/W55L1WrD2Pd/R75yAZDlJ3kDdz4U34Fn7350M972oXIi/g1TysRQ18C7+DkdC9DLRdrcPVH7v53DmVROfy8diIzzvvLjKheVsgf3+Z3ebGOpeJmq7zrcklsqIRkPnzsyfzJ9e0Ye0Zf4o2O1rF+lfLNyq2cv7PfSva+zgVoR4x4nMB3xVBEQ==
   </data>
  </layer>
  <layer name="Collision" width="42" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJztk1EKACEIRKX7H3r/I1mdsUhzQIjQfOU0RGR0dBQITbv7RXFGc7PnVeNExc771D2ycmq8c65nzbzDqi4L52qflaWfdrfm9HGidYyPLP62ciLvuZPTM/e53sLJKBsnmncr59//tnAiHkbPe4HzBjVnrKK8x3q2Od/irBgfcRcGRQ==
+  </data>
+ </layer>
+ <layer name="Shadow" width="42" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6Hz76UeZ2MPSFg1VVVVVfXFA3LiU6o=
+  </data>
+ </layer>
+ <layer name="Lights" width="42" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt01EKABAQBUBu6/4n8CtRZAs1870ob19K3FByzEzUW7xpJzs53yWrP7R/Lwd+FbG7szv0AtacdGV0VvcA6FU3bAYo
   </data>
  </layer>
 </map>
