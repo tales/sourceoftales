@@ -138,7 +138,7 @@
     </item>
     <item id="5" max-per-slot="1" name="Kettle hat"
         description="A dented helmet."
-        image="helmet-leather.png"
+        image="chain_armor_helmet.png"
         value="30">
         <equip>
             <slot type="head" required="1" />
@@ -187,6 +187,7 @@
         description="A delicious chicken leg."
         image="FoodDrumstick.png"
         value="10">
+data/graphics/gui/
     </item>
     <item id="10"
         max-per-slot="255"
@@ -317,6 +318,51 @@
         max-per-slot="255"
         name="Leather"
         image="temptest_in_the_aether/MP_Leather.png">
+    </item>
+    <item id="36" max-per-slot="1" name="Robe Hood"
+        description="Robe Hood."
+        image="helmet-leather.png"
+        value="15">
+        <equip>
+            <slot type="head" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="1" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+        <sprite>equipment/HEAD_robe_hood.xml</sprite>
+    </item>
+    <item id="37" max-per-slot="1" name="Robe Shirt"
+        description="Robe Shrit."
+        image="helmet-leather.png"
+        value="15">
+        <equip>
+            <slot type="torso" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="1" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+        <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+    </item>
+    <item id="38" max-per-slot="1" name="Robe Skirt"
+        description="Robe Skrit."
+        image="helmet-leather.png"
+        value="15">
+        <equip>
+            <slot type="legs" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="1" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+        <sprite>equipment/LEGS_robe_skirt.xml</sprite>
     </item>
     
 
