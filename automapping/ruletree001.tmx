@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="7" height="7" tilewidth="32" tileheight="32">
  <properties>
   <property name="NoOverlappingRules" value="1"/>
@@ -13,19 +12,25 @@
  <tileset firstgid="59" name="trunk" tilewidth="96" tileheight="96">
   <image source="../tiles/trunk.png" trans="ff00ff" width="192" height="96"/>
  </tileset>
+ <tileset firstgid="61" name="treetop" tilewidth="96" tileheight="96">
+  <image source="../tiles/treetop.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="65" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
  <layer name="Regionsinput" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcgIsMPQACzAAL
+   eJxjYBgYwEVFswADvAAL
   </data>
  </layer>
  <layer name="Regionsoutput" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAPGJEwPeQYCMhhAwAGqAAP
+   eJxjYMAPGJHwQMvhAgAG3AAQ
   </data>
  </layer>
  <layer name="Input_settree" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcgJUMPQAByAAG
+   eJxjYBgYwEpFswACQAAG
   </data>
  </layer>
  <layer name="Output0_Fringe" width="7" height="7">
@@ -43,29 +48,34 @@
    eJxjYBhcwJoMPQAMwAA8
   </data>
  </layer>
- <layer name="Outputempty_Fringe" width="7" height="7">
-  <data encoding="base64" compression="zlib">
-   eJxjYBhcwJoMPQAMwAA8
-  </data>
- </layer>
  <layer name="Output0_Over" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfCAKxEBALY5ETB2IJIJbEIicLxHJALE+B3cgAAFR8ANk=
+   eJxjYKANsKWRudgAABqAAD4=
   </data>
  </layer>
  <layer name="Output1_Over" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAPBIFYCIiFsciJA7EEEEtikZMFYjkglidgPjUAAGwcANk=
+   eJxjYKANsKORudgAABrsAD8=
   </data>
  </layer>
  <layer name="Output2_Over" width="7" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYMAPRIBYFIjFsMhJAbE0EMtgkVMAYkUgViJgPjUAAHoIAPQ=
+   eJxjYKA/sKWyeQAT1AA+
   </data>
  </layer>
- <layer name="Outputempty_Over" width="7" height="7">
+ <layer name="Output1_Collision" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYBj6AAAAxAAB
+  </data>
+ </layer>
+ <layer name="Output2_Collision" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgY4ERFswAUXABD
+  </data>
+ </layer>
+ <layer name="Output3_Collision" width="7" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgY4ERFswAUXABD
   </data>
  </layer>
 </map>

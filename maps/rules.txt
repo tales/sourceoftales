@@ -91,7 +91,6 @@
 
 ########################################################################
 # Trees are placed in the settree layer,
-# each automapping step increases forrest density
 ########################################################################
 ../automapping/ruletree001.tmx
 
