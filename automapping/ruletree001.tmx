@@ -43,11 +43,6 @@
    eJxjYBhcwJoMPQAMwAA8
   </data>
  </layer>
- <layer name="Output2_Fringe" width="7" height="7">
-  <data encoding="base64" compression="zlib">
-   eJxjYBhcwJoMPQAMwAA8
-  </data>
- </layer>
  <layer name="Output0_Over" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYKANsKWRudgAABqAAD4=
@@ -58,22 +53,12 @@
    eJxjYKANsKORudgAABrsAD8=
   </data>
  </layer>
- <layer name="Output2_Over" width="7" height="7">
-  <data encoding="base64" compression="zlib">
-   eJxjYKA/sKWyeQAT1AA+
-  </data>
- </layer>
- <layer name="Output1_Collision" width="7" height="7">
+ <layer name="Output0_Collisions" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYBj6AAAAxAAB
   </data>
  </layer>
- <layer name="Output2_Collision" width="7" height="7">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgY4ERFswAUXABD
-  </data>
- </layer>
- <layer name="Output3_Collision" width="7" height="7">
+ <layer name="Output1_Collisions" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYBgY4ERFswAUXABD
   </data>
