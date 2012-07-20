@@ -37,19 +37,22 @@
  <tileset firstgid="1149" name="dungeon" tilewidth="32" tileheight="32">
   <image source="../tiles/dungeon.png" width="416" height="256"/>
  </tileset>
+ <tileset firstgid="1253" name="castle_outside" tilewidth="32" tileheight="32">
+  <image source="../tiles/castle_outside.png" width="544" height="352"/>
+ </tileset>
  <layer name="Ground" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztmE0OhDAIhW1id47u9P5H8IaOi2YMaeFBW3/GvoSVIp8FSnXtu25lzCrumZZ4Vr/GeS5nrj7uZ1rO8euzCDa4sowazsA3g1aDs6SexinVhlQvd13P3Wc6kdOTeKhQTqSPkXxZOalfitMrepna9AecXJ6QPOTUJ7dP0njc+yN5eAOnj8SpxTk6+xyuxRnmQ6pupZlO7Rgrds3CGcStc4ozxCglZFY9hTNWNwinZc9GGd7IaT2jcf2nuedYr1d+E2nmcuOUhZx/7sCpkfV/QK41zms5N7EavEo=
+   eJztmNEOgzAIRW2yvm36tn3XPtU/3PbQzJACF9pq3XoTEhNFjgWKul6maRXMK+mennhev8G5L2epbuFrVs757fNQ7BrqMlo4E98dtBacNXU2Tq02tHrpdT0/PsuOnJHEQ4VyIn2M5MvLSf04zmjoZWrLD3BKeULyUFKf0j5J40nPj+ThHzhjJk4rzjn453ArzjQfuLrVZjq1bazcOQ9nkrTOHGeKUUNP5rg3TlS5ukE4PXv24JTz7p37XP9ZrtnW65HfRJa5PDh1Ie8/PXBa5P0fUGqD81jOF9m1vGQ=
   </data>
  </layer>
  <layer name="Walls" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJzdmE0KAjEMhccTiOfyZ+sP6EZm4WwUT+AF9MymMIVamkxe2pmqDx6iZtIPk7TFppG1MNoqa74TeQn6mMHp11uR1+SNMl9HPpO3/atkH3PJ4Oz6PDvynnxQ5nPPXUG7vNZ+8evdyC35DnCiejZ4r/h+Sa03Bud8pu+TVL9wnKVn13GifRL2C8epmeepJHH6ebbWSqpXaU5rnYbqVZqzdH6pTlIdanGidajFaXkutb9wn6Py5wi3Pqc4zp8PqbgSnC73S1ifUxzH7ffcPh/OQNz/oeK5yOWU+la6C6QcivvOysl9zp3vubOFcHJzg3A+1GSf0t4LuLipfk/tvYC7R8TvNZzouT80f1K+MCaeyyHO3LM/njEkBuH8BnGcJfb+kvoHzrGN9FZNTqRmNev7S5xT/F+VK5TzDYBSlh0=
+   eJzdmEsKAjEMhscTiOfysfUBuhEXzkbxBF5Ab6F7PaEpTKCWJk3SOlV/+BG1k3yYpC02Da+R0VZZ423AY6XXGZyYbwKegmfCeC14C553r5xxzT6Ds+3iLMBL8EoYzz13UNrFtfYL5juCd+CTglOrS6PvFeyXWL5PcA4H8j6J9QvFWXp2Hae2T/x+oTgl89yXOE6cZ2utuHqV5rTWKVWv0pyl43N14upQi1Nbh1qcludi+wv1uVZ4jlD5KYXr8HyIrSvB6WJfmfyUwnXUfk/t8/4MhP3vK5yLXE6ub7m7QMy+qO+snNTn1PmeO1saTmpuNJxnMdm7pPcCal1fv6f0XkDdI8L3Ek7tuU/N3w18T8Tzc4ZzmeLMPfvRD/AzsSbMqeH8BlGcJfb+kvoHzk9b01s1OTU1q1nfX+Ls4/+qXGk5XxIamMs=
   </data>
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowA72A/EB/DIxzAyMIgwMzCIAnEsI50chQUcAeKjeOQTgW6TAbpRFoiTBtCdowAB2JkH2gXEAW4s7lwETEOLh0A62gZ043Ykd+5hYWDYy0Iem57gJNDOUyzkscXomK6uAe28zkIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQXJ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZt89DVUNsNo2AUjIJRMBIBAIggRhw=
+   eJxjYBgFowA72A/EB/DIxzAyMIgwMzCIAnEsI50chQUcAeKjeOQTgW6TAbpRFoiTBtCdowAB2JkH2gXEAW4s7lwETEOLh0A62gZ043Ykd+5hYWDYy0Iem57gJNDOUyzkscXomK6uAe28zkIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQXJ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDcMBjNavo2AUjAJkAADCE06z
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
@@ -64,22 +67,22 @@
  </layer>
  <layer name="Fringe" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAgBcDE7AAAQ==
+   eJztxjERADAIBLAf8K+oeMMBc49LpiQAAABw06ukaz/AbwYx1wSE
   </data>
  </layer>
  <layer name="Over" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlk0KwjAQhadYcO1N/ANBvUFXHkD39hZ1b0+kd3MCfTSMfxkNxuh88CCEDBnIe0mIDMMwejYBOiTrrqd6oi2rTtadnmlBNGM1FHYGOIcx10yKz/W55L1WrD2Pd/R75yAZDlJ3kDdz4U34Fn7350M972oXIi/g1TysRQ18C7+DkdC9DLRdrcPVH7v53DmVROfy8diIzzvvLjKheVsgf3+Z3ebGOpeJmq7zrcklsqIRkPnzsyfzJ9e0Ye0Zf4o2O1rF+lfLNyq2cv7PfSva+zgVoR4x4nMB3xVBEQ==
+   eJztlk0KAjEMhTM44Nqb+AeCeoNZeQDd6wVc697Z61n0bqbQx5TAaKPFOpoPHpTS0EDymhIZhmE0rCJ0zJZdQ/VEa9YuW3Z6xgXRhHWguBqgDkOOGRWfy3POdy1YW15v6PfqIOn3cmfQbaaiN9G36PdwP7bnXexM+AW86oeliEHfot/BQKjNA7WPdbj4k9/vOteS6FY+XhvpeWfuwhOa2QKF98ecc55wvpH+1vgSXtEIhHtn1qXlnAMehT/ruPSMP0XrHa1S/avljEqtLv3n9v7N+fa5pX2PcxHbI0Z67sVCRh0=
   </data>
  </layer>
- <layer name="Collision" width="42" height="30" visible="0">
+ <layer name="Collision" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztk1EKACEIRKX7H3r/I1mdsUhzQIjQfOU0RGR0dBQITbv7RXFGc7PnVeNExc771D2ycmq8c65nzbzDqi4L52qflaWfdrfm9HGidYyPLP62ciLvuZPTM/e53sLJKBsnmncr59//tnAiHkbPe4HzBjVnrKK8x3q2Od/irBgfcRcGRQ==
+   eJztlFEKACEIRKX7H3r/I9lxrFZdBwYisp5mDREZ7XYBazp93i7O3dze/apxsvLe9608snJqvPNay9hTh1VcFs7VvFfIeVpuzWnjZOM8fYT0N8rJ1PMkp+Xe53iE06NsnOy6qJxv7xvhZHqY9R84IygKJ/ovZOa82Y9oHl+zRq9nJs5qfgApFgaB
   </data>
  </layer>
  <layer name="Shadow" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzsEJACAMBMH034s92oAIhpD4mIP9HhNx30qWXfaP8w9ndZySJGmq06ZNnJycnJycXeOs3atzA4XXuC0=
+   eJztzsEJACAMBEH7r8JS/QcxEMT4mIP5HjvGebOouuqfzj86b9MJAHTZrbtJp06dOnXqfLXYkela7Mh0LXZkFplfg98=
   </data>
  </layer>
  <layer name="Lights" width="42" height="30">
