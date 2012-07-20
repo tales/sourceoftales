@@ -39,7 +39,7 @@
  </tileset>
  <layer name="Ground" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlrsOgCAMRWFgU9n0//9UHYiGQLmtL8DepJOWHu0LY1SqejTaw7iaNp+lYIPgXIqRwxn4ZtC+4kTVGmepNkr1Uuv/3H38i5wuiocK5UT6GMmXlDP2y3E6Ri/H5jvgpPKE5OFKfVJzMo5HfT+Shz9wukScpzgnK9/DT3GG/cCdH7keOMdKPZNwBknmR4hxl5Bd1Qpnqm4QTsnMvnJe75zSOxrVf5x3cv32trh7WTlpIfefGjhVqpJWqXYZrA==
+   eJztmE0OhDAIhW1id47u9P5H8IaOi2YMaeFBW3/GvoSVIp8FSnXtu25lzCrumZZ4Vr/GeS5nrj7uZ1rO8euzCDa4sowazsA3g1aDs6SexinVhlQvd13P3Wc6kdOTeKhQTqSPkXxZOalfitMrepna9AecXJ6QPOTUJ7dP0njc+yN5eAOnj8SpxTk6+xyuxRnmQ6pupZlO7Rgrds3CGcStc4ozxCglZFY9hTNWNwinZc9GGd7IaT2jcf2nuedYr1d+E2nmcuOUhZx/7sCpkfV/QK41zms5N7EavEo=
   </data>
  </layer>
  <layer name="Walls" width="42" height="30">
@@ -79,7 +79,7 @@
  </layer>
  <layer name="Shadow" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztw0ENAAAMA6Hz76UeZ2MPSFg1VVVVVfXFA3LiU6o=
+   eJztzsEJACAMBMH034s92oAIhpD4mIP9HhNx30qWXfaP8w9ndZySJGmq06ZNnJycnJycXeOs3atzA4XXuC0=
   </data>
  </layer>
  <layer name="Lights" width="42" height="30">
