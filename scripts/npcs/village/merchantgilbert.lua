@@ -13,7 +13,10 @@ local function merchantTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("TODO: shop with equipment")
+        npc_trade(npc, ch, false, {
+            { "Iron Helmet", 10, 2000 },
+            { "Iron Armor", 10, 5000 },
+            { "Iron Gloves", 10, 1000 }})
     elseif res == 2 then
         say("Come back when you change your mind!")
     end

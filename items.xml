@@ -187,7 +187,6 @@
         description="A delicious chicken leg."
         image="FoodDrumstick.png"
         value="10">
-data/graphics/gui/
     </item>
     <item id="10"
         max-per-slot="255"
@@ -363,6 +362,121 @@ data/graphics/gui/
             <modifier attribute="cap1" value="-250" />
         </effect>
         <sprite>equipment/LEGS_robe_skirt.xml</sprite>
+    </item>
+    <item id="39" max-per-slot="255" name="Food Shank"
+        description="Shank of Food"
+        image="FoodShank.png"
+        value="30">
+    </item>
+    <item id="40" max-per-slot="255" name="Pumpkin"
+        description="A Pumpkin"
+        image="pumpink.png"
+        value="15">
+    </item>
+    <item id="41" max-per-slot="255" name="Pumpkin with Face"
+        description="A usual Pumpkin with an evil face cut in."
+        image="pumpkin-with-face.png"
+        value="20">
+    </item>
+    <item id="42" max-per-slot="255" name="Pumpkinlatern"
+        description="A latern that was made out of a pumpkin"
+        image="pumkin-with-face-and-light.png"
+        value="25">
+    </item>
+    <item id="43" max-per-slot="255" name="Apple"
+        description="A clean red Apple."
+        image="apple.png"
+        value="15">
+    </item>
+    <item id="44" max-per-slot="1" name="Iron Helmet"
+        description="A heavy iron helmet."
+        image="helmet_iron.png"
+        value="100">
+        <sprite>equipment/HEAD_plate_armor_helmet.xml</sprite>
+        <equip>
+            <slot type="head" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="10" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+    </item>
+    <item id="45" max-per-slot="1" name="Iron Armor"
+        description="A heavy iron armor."
+        image="armor_iron.png"
+        value="100">
+        <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
+        <equip>
+            <slot type="torso" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="15" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+    </item>
+    <item id="46" max-per-slot="1" name="Iron Bracer"
+        description="A heavy iron bracer."
+        image="bracer_iron.png"
+        value="100">
+        <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
+        <equip>
+            <slot type="arms" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="5" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+    </item>
+    <item id="47" max-per-slot="1" name="Iron Gloves"
+        description="A pair of heavy iron gloves."
+        image="gloves_iron.png"
+        value="100">
+        <sprite>equipment/HANDS_plate_armor_gloves.xml</sprite>
+        <equip>
+            <slot type="gloves" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="5" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+    </item>
+    <item id="48" max-per-slot="1" name="Iron Pants"
+        description="A pair of heavy iron pants."
+        image="pants_iron.png"
+        value="100">
+        <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+        <equip>
+            <slot type="legs" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="10" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
+    </item>
+    <item id="49" max-per-slot="1" name="Iron Shoes"
+        description="A pair of heavy iron shoes."
+        image="shoes_iron.png"
+        value="100">
+        <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
+        <equip>
+            <slot type="feet" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="5" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-250" />
+        </effect>
     </item>
     
 

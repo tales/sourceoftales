@@ -11,7 +11,7 @@
         <box x="8" y="123" background="equip-box-hands.png" />
         <box x="129" y="123" background="equip-box-shield.png" />
     </slot>
-    <slot id="2" name="Arms" capacity="1">
+    <slot id="2" name="Arms" capacity="1" visible="true">
         <box x="8" y="78" background="equip-box-hands.png" />
     </slot>
     <slot id="3" name="Head" capacity="1" visible="true">
@@ -23,7 +23,7 @@
     <slot id="5" name="Torso" capacity="1" visible="true">
         <box x="50" y="40" background="equip-box-chest.png" />
     </slot>
-    <slot id="6" name="Ring" capacity="1">
+    <slot id="6" name="Ring" capacity="1" visible="true">
         <box x="129" y="78" background="equip-box-ring.png" />
     </slot>
     <slot id="7" name="Necklace" capacity="1">
@@ -32,7 +32,7 @@
     <slot id="8" name="Feet" capacity="1" visible="true">
         <box x="90" y="208" background="equip-box-feet.png" />
     </slot>
-    <slot id="9" name="Ammo" capacity="1" ammo="true">
+    <slot id="9" name="Gloves" capacity="1" visible="true">
         <box x="8" y="168" background="equip-box-ammo.png" />
     </slot>
 </equip-slots>

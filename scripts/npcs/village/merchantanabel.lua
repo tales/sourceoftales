@@ -13,7 +13,10 @@ local function merchantTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("TODO: shop with food")
+        npc_trade(npc, ch, false, {
+            { "Pumpkin", 10, 50 },
+            { "Food Shank", 10, 130 },
+            { "Apple", 10, 40 }})
     elseif res == 2 then
         say("As you wish.")
     end
