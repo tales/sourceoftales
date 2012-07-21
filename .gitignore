@@ -1,0 +1,18 @@
+# configuration file
+manaserv.xml
+
+# database file
+*.db
+
+# gameserver logs
+*.log
+*.stats
+
+# map screenshots
+maps/*.png
+
+# git patches
+[0-9][0-9][0-9][0-9]-*.patch
+
+# vim swp file
+*.swp
