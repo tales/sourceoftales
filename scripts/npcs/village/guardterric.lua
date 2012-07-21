@@ -5,12 +5,12 @@ local function guardTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
-    if (sympathy == nil) then
-        sympathy = 0
+    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
+    if (reputation == nil) then
+        reputation = 0
     end
 
-    if sympathy >= SYMPATHY_NEUTRAL then
+    if reputation >= REPUTATION_NEUTRAL then
         say("Oh my, I'm bored. I wish I'd be back in Kingstown.")
 
         local choices = { "Tell me about Kingstown!",
@@ -36,11 +36,11 @@ local function guardTalk(npc, ch)
         elseif res ==3 then
             say("Sure.")
         end
-    elseif sympathy > SYMPATHY_RELUCTANT then
+    elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace.")
-        sympathy = sympathy - 1
-        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
-    else -- sympathy <= SYMPATHY_RELUCTANT
+        reputation = reputation - 1
+        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+    else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end

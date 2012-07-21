@@ -53,18 +53,18 @@ local function smithTalk(npc, ch)
         end
     end
 
-    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
-    if (sympathy == nil) then
-        sympathy = 0
+    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
+    if (reputation == nil) then
+        reputation = 0
     end
 
-    if sympathy >= SYMPATHY_NEUTRAL then
+    if reputation >= REPUTATION_NEUTRAL then
         chat()
-    elseif sympathy > SYMPATHY_RELUCTANT then
+    elseif reputation > REPUTATION_RELUCTANT then
         say("Go away until you've talked to Magistrate Eustace.")
-        sympathy = sympathy - 1
-        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
-    else -- sympathy <= SYMPATHY_RELUCTANT
+        reputation = reputation - 1
+        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+    else -- reputation <= REPUTATION_RELUCTANT
         say("Argh!")
         being_damage(ch, 120, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end

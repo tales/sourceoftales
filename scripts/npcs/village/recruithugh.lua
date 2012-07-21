@@ -5,12 +5,12 @@ local function recruitTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
-    if (sympathy == nil) then
-        sympathy = 0
+    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
+    if (reputation == nil) then
+        reputation = 0
     end
 
-    if sympathy >= SYMPATHY_NEUTRAL then
+    if reputation >= REPUTATION_NEUTRAL then
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
         local tutorial_shop = chr_get_quest(ch, "tutorial_shop")
 
@@ -25,11 +25,11 @@ local function recruitTalk(npc, ch)
             chr_set_quest(ch, "tutorial_shop", "done")
         end
         -- idea: could have a friend who later turns out to be one of the rebels
-    elseif sympathy > SYMPATHY_RELUCTANT then
+    elseif reputation > REPUTATION_RELUCTANT then
         say("Wow, you really got into trouble, heh? Why are you here? Shouldn't you talk to Magistrate Eustace?")
-        sympathy = sympathy - 1
-        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
-    else -- sympathy <= SYMPATHY_RELUCTANT
+        reputation = reputation - 1
+        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+    else -- reputation <= REPUTATION_RELUCTANT
         say("Ah! Don't hurt me! Go away!")
         being_damage(ch, 50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end

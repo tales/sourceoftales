@@ -30,12 +30,12 @@ local function veteranTalk(npc, ch)
         say ("Come back to me when you're done.")
     end
 
-    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
-    if (sympathy == nil) then
-        sympathy = 0
+    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
+    if (reputation == nil) then
+        reputation = 0
     end
 
-    if sympathy >= SYMPATHY_NEUTRAL then
+    if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
@@ -43,18 +43,18 @@ local function veteranTalk(npc, ch)
         else
             say("TODO: quest after tutorial and more")
         end
-    elseif sympathy > SYMPATHY_RELUCTANT then
+    elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")
-        sympathy = sympathy - 1
-        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
-    else -- sympathy <= SYMPATHY_RELUCTANT
+        reputation = reputation - 1
+        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+    else -- reputation <= REPUTATION_RELUCTANT
         say("I can't deny you're brave, but that won't help you now!")
         being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
--- initialize sympathy values in on_chr_birth or here?
+-- initialize reputation values in on_chr_birth or here?
 -- idea for later quest: get taxes from the inhabitants in Goldenfields
 
 local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)

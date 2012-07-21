@@ -5,12 +5,12 @@ local function guardTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local sympathy = tonumber(chr_get_quest(ch, "soldier_sympathy"))
-    if (sympathy == nil) then
-        sympathy = 0
+    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
+    if (reputation == nil) then
+        reputation = 0
     end
 
-    if sympathy >= SYMPATHY_NEUTRAL then
+    if reputation >= REPUTATION_NEUTRAL then
         say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak "..
             "into the casern to distract the new recruits with their goods.")
 
@@ -25,11 +25,11 @@ local function guardTalk(npc, ch)
                 chr_set_quest(ch, "rebels_emmas_camouflage", "deny")
             end
         end
-    elseif sympathy > SYMPATHY_RELUCTANT then
+    elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace in Goldenfields.")
-        sympathy = sympathy - 1
-        chr_set_quest(ch, "soldier_sympathy", tostring(sympathy))
-    else -- sympathy <= SYMPATHY_RELUCTANT
+        reputation = reputation - 1
+        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+    else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
