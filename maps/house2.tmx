@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="14" height="12" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="115" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains.png" width="480" height="288"/>
+ </tileset>
+ <tileset firstgid="250" name="inside" tilewidth="32" tileheight="32">
+  <image source="../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="350" name="country" tilewidth="32" tileheight="32">
+  <image source="../tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="370" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="448" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../tiles/farming_fishing.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="848" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="856" name="castlefloors" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlefloors.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="956" name="buckets" tilewidth="32" tileheight="32">
+  <image source="../tiles/buckets.png" width="96" height="64"/>
+ </tileset>
+ <layer name="Ground" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg6QIkRNx4q+kA4mZmBIQWKU5mJ15cLVJsHxfkDqA/dr7QEAIU8Dks=
+  </data>
+ </layer>
+ <layer name="Black" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJz7xsDA8I1MjA8MJX24zCIV0FJfIZn6yPUfLcKFHAwAbgs/3g==
+  </data>
+ </layer>
+ <layer name="Walls" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzLYGBgUMeDtRiwg3wg1sODDfHoM8WD8enDBzJwuJ2QPnUcbiekTw+H2wnpM8UiRow+bIASfZlk6CsgQw+lAAB13Q1F
+  </data>
+ </layer>
+ <layer name="Decor" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAftDIyMLQDcSkjafq6gep7gbgCiLOBeCMQbwLiHALmTATKTwbiBiAuAOLtQLwDiAsJ6EtlQuXvBarfh6SnA4f+Sibs4jDQB/V/HBDHkxAGU6D+SAbiFCR9wkD7RAjYCQIZQD2ZSPrUgXo00PQdBsofITFeQOA6UM8NMvTRCgAAKjIUjA==
+  </data>
+ </layer>
+ <layer name="Decor2" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiaIJsRwc5hxK0OHRQA1e5hhrALSdA32MBeZgQ7EMgOAuJgZtzqYeAAkppQIDsMiMOJ0DdQAAAGigYJ
+  </data>
+ </layer>
+ <layer name="Fringe" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DwAgACoAAB
+  </data>
+ </layer>
+ <layer name="Over" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgewJBMfQVUdQXtQBaZ+vCFSyESJsQvxNDNwJBPhB2UAgBMpAZH
+  </data>
+ </layer>
+ <layer name="Over2" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZIHOgHUAkyCBTXz4euSwkTIifhaTvGxJG52PDlAAAM2kP9w==
+  </data>
+ </layer>
+ <layer name="Over3" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQwFo0dDsDCx2FBChLx9KG1LXOSgAAPtwAc0=
+  </data>
+ </layer>
+ <layer name="Over4" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowATZA60A6AAADpoAGo=
+  </data>
+ </layer>
+ <layer name="Collision" width="14" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYmBgYBoiGBlQopdYc/ABSvQRMoMQIMZufGYRow+bXmrrIybeAE9HAOc=
+  </data>
+ </layer>
+</map>
