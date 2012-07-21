@@ -22,7 +22,7 @@
         height="64"/>
     <imageset
         name="bow"
-        src="sprites/equipment/bow/emtpy.png"
+        src="sprites/equipment/bow/empty.png"
         width="64"
         height="64" />
 
