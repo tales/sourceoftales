@@ -5,6 +5,8 @@
 TUTORIAL_DUMMY_AMOUNT = 6
 
 -- Values for reputation of factions
+SOLDIER = 0
+REBEL = 1
 
 REPUTATION_ABHORRED = -5000
 REPUTATION_HATED = -1000
