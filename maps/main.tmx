@@ -97,8 +97,8 @@
  <tileset firstgid="1563" name="sand" tilewidth="32" tileheight="32">
   <image source="../tiles/sand.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="1581" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="480" height="288"/>
+ <tileset firstgid="1581" name="mountains_new" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains_new.png" width="480" height="288"/>
  </tileset>
  <tileset firstgid="1716" name="mushrooms" tilewidth="32" tileheight="32">
   <image source="../tiles/mushrooms.png" width="32" height="32"/>
