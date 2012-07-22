@@ -5,6 +5,9 @@
     <map id="3" name="casern_storage_roof" />
     <map id="4" name="casern_north" />
     <map id="5" name="casern_north_2nd_floor" />
+    <map id="6" name="house1" />
+    <map id="7" name="house2" />
+    <map id="8" name="pub" />
 
     <map id="1000" name="sandbox" />
 </maps>
