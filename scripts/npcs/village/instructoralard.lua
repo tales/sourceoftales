@@ -6,6 +6,8 @@
 --      done: finished that subquest
 -- tutorial_equip: saves if got equipment from smith
 
+require "scripts/functions/reputation"
+
 local function instructorTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -46,10 +48,7 @@ local function instructorTalk(npc, ch)
 
     tutorial()
 
-    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
-    if (reputation == nil) then
-        reputation = 0
-    end
+    reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("Do you have any further questions?")

@@ -1,14 +1,13 @@
 -- authors: Jenalya
 
+require "scripts/functions/reputation"
+
 local function guardTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
-    if (reputation == nil) then
-        reputation = 0
-    end
+    reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak "..

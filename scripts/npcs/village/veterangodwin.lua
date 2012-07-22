@@ -1,5 +1,7 @@
 -- authors: Jenalya
 
+require "scripts/functions/reputation"
+
 local function veteranTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -30,10 +32,7 @@ local function veteranTalk(npc, ch)
         say ("Come back to me when you're done.")
     end
 
-    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
-    if (reputation == nil) then
-        reputation = 0
-    end
+    reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")

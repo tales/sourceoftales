@@ -7,6 +7,7 @@
 -- ]]
 
 require "scripts/functions/patrol"
+require "scripts/functions/reputation"
 
 local function smithTalk(npc, ch)
     local function say(message)
@@ -53,10 +54,7 @@ local function smithTalk(npc, ch)
         end
     end
 
-    local reputation = tonumber(chr_get_quest(ch, "soldier_reputation"))
-    if (reputation == nil) then
-        reputation = 0
-    end
+    reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         chat()
