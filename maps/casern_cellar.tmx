@@ -20,32 +20,32 @@
   <image source="../tiles/country.png" width="160" height="128"/>
  </tileset>
  <tileset firstgid="355" name="castle_lightsources" tilewidth="32" tileheight="32">
-  <image source="../tiles/castle_lightsources.png" width="160" height="128"/>
+  <image source="../tiles/castle_lightsources.png" width="160" height="320"/>
  </tileset>
- <tileset firstgid="375" name="farming_fishing" tilewidth="32" tileheight="32">
+ <tileset firstgid="405" name="farming_fishing" tilewidth="32" tileheight="32">
   <image source="../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
- <tileset firstgid="775" name="barrel" tilewidth="32" tileheight="32">
+ <tileset firstgid="805" name="barrel" tilewidth="32" tileheight="32">
   <image source="../tiles/barrel.png" width="128" height="64"/>
  </tileset>
- <tileset firstgid="783" name="magecity" tilewidth="32" tileheight="32">
+ <tileset firstgid="813" name="magecity" tilewidth="32" tileheight="32">
   <image source="../tiles/magecity.png" width="256" height="1450"/>
  </tileset>
- <tileset firstgid="1143" name="buckets" tilewidth="32" tileheight="32">
+ <tileset firstgid="1173" name="buckets" tilewidth="32" tileheight="32">
   <image source="../tiles/buckets.png" width="96" height="64"/>
  </tileset>
- <tileset firstgid="1149" name="dungeon" tilewidth="32" tileheight="32">
+ <tileset firstgid="1179" name="dungeon" tilewidth="32" tileheight="32">
   <image source="../tiles/dungeon.png" width="416" height="256"/>
  </tileset>
- <tileset firstgid="1253" name="castle_outside" tilewidth="32" tileheight="32">
+ <tileset firstgid="1283" name="castle_outside" tilewidth="32" tileheight="32">
   <image source="../tiles/castle_outside.png" width="544" height="352"/>
  </tileset>
- <tileset firstgid="1440" name="cellar_shadow" tilewidth="32" tileheight="32">
+ <tileset firstgid="1470" name="cellar_shadow" tilewidth="32" tileheight="32">
   <image source="../tiles/cellar_shadow.png" width="192" height="128"/>
  </tileset>
  <layer name="Ground" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztmNEOgzAIRW2yvm36tn3XPtU/3PbQzJACF9pq3XoTEhNFjgWKul6maRXMK+mennhev8G5L2epbuFrVs757fNQ7BrqMlo4E98dtBacNXU2Tq02tHrpdT0/PsuOnJHEQ4VyIn2M5MvLSf04zmjoZWrLD3BKeULyUFKf0j5J40nPj+ThHzhjJk4rzjn453ArzjQfuLrVZjq1bazcOQ9nkrTOHGeKUUNP5rg3TlS5ukE4PXv24JTz7p37XP9ZrtnW65HfRJa5PDh1Ie8/PXBa5P0fUGqD81jOF9m1vGQ=
+   eJztmNEOgzAIRW2yvm36tn3Xvtxf2vbQzJACF9pq3XoTEhNFjgWKul6maRXMK+mennhev8G5L2epbuFrVs757fNQ7BrqMlo4E98dtBacNXU2Tq02tHrpdT0/PsuOnJHEQ4VyIn2M5MvLSf04zmjoZWrLD3BKeULyUFKf0j5J40nPj+ThHzhjJk4rzjn453ArzjQfuLrVZjq1bazcOQ9nkrTOHGeKUUNP5rg3TlS5ukE4PXv24JTz7p37XP9ZrtnW65HfRJa5PDh1Ie8/PXBa5P0fUGqD81jOF4r411g=
   </data>
  </layer>
  <layer name="Walls" width="42" height="30">
@@ -55,27 +55,27 @@
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowA72A/EB/DIxzAyMIgwMzCIAnEsI50chQUcAeKjeOQTgW6TAbpRFoiTBtCdowAB2JkH2gXEAW4s7lwETEOLh0A62gZ043Ykd+5hYWDYy0Iem57gJNDOUyzkscXomK6uAe28zkIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQXJ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDcMBjNavo2AUjAJkAADCE06z
+   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDcMBjNavo2AUjAJkAACOiFk/
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4Ay4MpMHXMWMTIwLGYkXV8FC2E1wYwQTA2wDWjOdjLMqibCnRGMEDwKBjfYMkTiiB1L3qwkIh3SG3BjcWfNIHTnYAacwDDkolJZTEvAC3Qj3yBx52DMC9jAUM8LxNTRgwEQU0ePglEwCkbBKBgFo2AU0BMAAFePCVA=
+   eJxjYBgFo4AykMxMHXMOMDIwHGQkXd80FsJqghkhmBrgCtCcq2SYNZMId0YwQvAoGNzg0hCJI1UseXM6EemQ3kATiztnDUJ3DmagDgxDDSqVxbQE2kA36gwSdw7GvIANDPW8QEwdPRgAMXX0KBgFo2AUjIJRMApGAT0BABkXC6g=
   </data>
  </layer>
  <layer name="Decor3" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzsENgCAQALAjfnyw/wC6A64HIxAiQUk7QSPgG85j9aBPHnxeKeJO715mKO34/OAJAAAAu6rsGgLR
+   eJztzlENgCAUAMDH7OIH/QNoB+wDERiToewuwUXAN5zH6kGfPPi8UsSd3r3MUNrx+cETAAAAdlUBVR4DhQ==
   </data>
  </layer>
  <layer name="Fringe" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztxjERADAIBLAf8K+oeMMBc49LpiQAAABw06ukaz/AbwYx1wSE
+   eJztxjERADAIBLAf8C+wmMEBc49LpiQAAABw06ukaz/AbwZ8XAU4
   </data>
  </layer>
  <layer name="Over" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlk0KAjEMhTM44Nqb+AeCeoNZeQDd6wVc697Z61n0bqbQx5TAaKPFOpoPHpTS0EDymhIZhmE0rCJ0zJZdQ/VEa9YuW3Z6xgXRhHWguBqgDkOOGRWfy3POdy1YW15v6PfqIOn3cmfQbaaiN9G36PdwP7bnXexM+AW86oeliEHfot/BQKjNA7WPdbj4k9/vOteS6FY+XhvpeWfuwhOa2QKF98ecc55wvpH+1vgSXtEIhHtn1qXlnAMehT/ruPSMP0XrHa1S/avljEqtLv3n9v7N+fa5pX2PcxHbI0Z67sVCRh0=
+   eJztlk0KAjEMhTM4F/AQ7v0DQb3BrDyA7vUWund2LvRoehlT6GNKYLTRYh3NBw9KaWggeU2JDMMwGlYROmTLrqF6ojVrly07PeOCaMLaU1wNUIchx4yKz+U557sWrC2vN/R7dZAMerkz6DZT0ZvoW/R7uB/b8y52JvwCXvXDUsSgb9HvoC/U5oHaxzpc/NHvd51rSXQrH6+N9Lwzd+EJzWyBwvtjzjlPON9If2t8Ca9oBMK9M+vScs4Bj8KfdVx6xp+i9Y5Wqf7VckalVpf+cyf/5nz73NK+x7mI7REjPXcbh0fB
   </data>
  </layer>
  <layer name="Collision" width="42" height="30" visible="0">
@@ -85,7 +85,7 @@
  </layer>
  <layer name="Shadow" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlkcKw0AMRb3x/a+Q5jTSSDtffhaBIGTVydgED7ydZvRRGalp5NO1MaIn+t7bZg4WYAlWzBszYpPVyfmy3NuALdiBPaNzTWyyOjlflntHcAJncGF0HohNtFY+cL4sOm/gDh7gybx7JTZanUj10vX4suj0otWJVC810eokWi80/p5ccbZanfTVi6aTxt+TK8m2NDT+nlxJtjT21pxZ4+/JlWRLYz9UHrx5suahNt+x9+Rh7ND/3kPfzOjafF9QMv+9NDNK90VmP5BmRum+kP57baZLM6NmX5TaPX6NpjPaK9we4NkjvDqjvcLtAZndQNMZ7RVuD/DsBl6d0V7h5k9mJv1LH42FSefvddY4k85hdb4A34Kx6A==
+   eJztlkcKw0AMRb3x/W+U5jTSSDtQfhaBIGTVydgED7ydZvRRGalp5NO1MaIn+t7bZg4WYAlWzBszYpPVyfmy3NuALdiBPaNzTWyyOjlflntHcAJncGF0HohNtFY+cL4sOm/gDh7gybx7JTZanUj10vX4suj0otWJVC810eokWi80/p5ccbZanfTVi6aTxt+TK8m2NDT+nlxJtjT21pxZ4+/JlWRLYz9UHrx5suahNt+x9+Rh7ND/3kPfzOjafF9QMv+9NDNK90VmP5BmRum+kP57baZLM6NmX5TaPX6NpjPaK9we4NkjvDqjvcLtAZndQNMZ7RVuD/DsBl6d0V7h5k9mJv1LH42FSefvddY4k85hdb4AKJ8qqw==
   </data>
  </layer>
  <layer name="Lights" width="42" height="30">
