@@ -78,6 +78,26 @@
  </tileset>
  <tileset firstgid="1037" name="castle_lightsources" tilewidth="32" tileheight="96">
   <image source="../tiles/castle_lightsources.png" width="160" height="320"/>
+  <tile id="3">
+   <properties>
+    <property name="animation-delay0" value="30"/>
+    <property name="animation-delay1" value="30"/>
+    <property name="animation-delay2" value="30"/>
+    <property name="animation-frame0" value="3"/>
+    <property name="animation-frame1" value="8"/>
+    <property name="animation-frame2" value="13"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="animation-delay0" value="20"/>
+    <property name="animation-delay1" value="40"/>
+    <property name="animation-delay2" value="20"/>
+    <property name="animation-frame0" value="4"/>
+    <property name="animation-frame1" value="9"/>
+    <property name="animation-frame2" value="14"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="1052" name="gravestones" tilewidth="32" tileheight="64">
   <image source="../tiles/gravestones.png" width="160" height="96"/>
