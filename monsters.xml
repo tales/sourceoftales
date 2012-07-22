@@ -91,7 +91,7 @@
         <exp>10</exp>
         <!-- average stroll- and track range-->
         <behavior
-            aggressive="false"
+            aggressive="true"
             cowardly="false"
             track-range="96"
             stroll-range="32"
@@ -164,7 +164,7 @@
         <exp>10</exp>
         <!-- average stroll- and track range-->
         <behavior
-            aggressive="false"
+            aggressive="true"
             cowardly="false"
             track-range="96"
             stroll-range="32"
@@ -185,8 +185,8 @@
     </monster>
     <monster id="6" name="Skeleton Soldier" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
-        <sprite>equipment/TORSO_chain_armor_jacket_purple.xml</sprite>
         <sprite>equipment/dagger.xml</sprite>
+        <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
         <attributes
             hp="200"
             size="4"
@@ -200,7 +200,7 @@
         <exp>10</exp>
         <!-- average stroll- and track range-->
         <behavior
-            aggressive="false"
+            aggressive="true"
             cowardly="false"
             track-range="96"
             stroll-range="32"
