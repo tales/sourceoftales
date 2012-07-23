@@ -40,7 +40,7 @@ function apply_amnesty(npc, ch, friendlyfaction, foefaction)
     if res == 1 then
         local money = chr_money(ch)
         if money >= cost then
-            chr_money_change(ch, cost)
+            chr_money_change(ch, -cost)
             reputation = 0
             foe_reputation = foe_reputation - cost -- TODO: formula
             say("I hope you learned from your mistakes.")
