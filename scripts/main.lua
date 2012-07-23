@@ -9,9 +9,10 @@
 require "scripts/global_constants"
 
 -- Project specific global functions
-require "scripts/functions/tiletopixel"
-require "scripts/functions/stringutils"
 require "scripts/functions/coordinatehelper"
+require "scripts/functions/reputation"
+require "scripts/functions/stringutils"
+require "scripts/functions/tiletopixel"
 
 -- Monster scripts
 require "scripts/monsters"

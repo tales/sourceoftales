@@ -1,13 +1,11 @@
 -- authors: Jenalya
 
-require "scripts/functions/reputation"
-
 local function guardTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("Oh my, I'm bored. I wish I'd be back in Kingstown.")

@@ -1,7 +1,5 @@
 -- authors: Jenalya
 
-require "scripts/functions/reputation"
-
 local function veteranTalk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
