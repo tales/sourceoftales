@@ -22,13 +22,13 @@ function read_reputation(ch, faction)
     return reputation
 end
 
-function apply_amnesty(npc, ch, friendlyfaction, foefaction)
+function apply_amnesty(npc, ch, friendly_faction, foe_faction)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    local reputation = read_reputation(ch, friendlyfaction)
-    local foe_reputation = read_reputation(ch, foefaction)
+    local reputation = read_reputation(ch, friendly_faction)
+    local foe_reputation = read_reputation(ch, foe_faction)
 
     local cost = - reputation -- TODO: formula
     say("You have to pay " .. cost .. " GP to make up for your crimes.")
@@ -51,6 +51,6 @@ function apply_amnesty(npc, ch, friendlyfaction, foefaction)
         say("Mh. Come back when you changed your mind.")
     end
 
-    chr_set_quest(ch, friendlyfaction, tostring(reputation))
-    chr_set_quest(ch, foefaction, tostring(foe_reputation))
+    chr_set_quest(ch, friendly_faction, tostring(reputation))
+    chr_set_quest(ch, foe_faction, tostring(foe_reputation))
 end
