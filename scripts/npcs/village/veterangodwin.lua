@@ -32,15 +32,49 @@ local function veteranTalk(npc, ch)
         say ("Come back to me when you're done.")
     end
 
-    reputation = read_reputation(ch, "soldier_reputation")
+    local function collect_taxes()
+        local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
+        if (taxes == nil) then
+            say("You're done with your basic training? Very well. I've got some task for you. "..
+                "The Innkeeper from Goldenfields, Norman, is late with paying his taxes. "..
+                "There was quite some moaning among the villagers because of the extra taxes due to the war. "..
+                "Hah! We're the ones keeping them safe, ungrateful wretches.")
+            say("I want you to get the outstanding ".. GOLDENFIELDSTAXES .. " GP from that innkeeper.")
+            chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotorder")
+        elseif (taxes == "gotorder") then
+            say("What are you waiting for? Go and get the outstanding taxes from Innkeeper Norman.")
+        elseif (taxes == "gotmoney") then
+            say("Did you get the money from that innkeeper? Let me see.")
+            local money = chr_money(ch)
+            if money >= GOLDENFIELDSTAXES then
+                chr_money_change(ch, -GOLDENFIELDSTAXES)
+                chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
+                local reputation = read_reputation(ch, "soldier_reputation")
+                reputation = reputation + 10
+                chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+                chr_money_change(ch, 40)
+                say("Well done, kid.")
+            else
+                say("Where is the money? Did you spend it on booze? Kid, this isn't a place to fool around. "..
+                    "Get me the ".. GOLDENFIELDSTAXES .. " GP.")
+            end
+        end
+    end
+
+
+    local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+        local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
+
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
             send_tutorial()
+        elseif (taxes ~= "done") then
+            collect_taxes()
         else
-            say("TODO: quest after tutorial and more")
+            say("I don't have anything for you to do right now.")
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")
@@ -53,7 +87,5 @@ local function veteranTalk(npc, ch)
 
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
--- initialize reputation values in on_chr_birth or here?
--- idea for later quest: get taxes from the inhabitants in Goldenfields
 
 local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)

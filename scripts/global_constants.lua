@@ -4,6 +4,8 @@
 
 TUTORIAL_DUMMY_AMOUNT = 6
 
+GOLDENFIELDSTAXES = 160
+
 -- Values for reputation of factions
 SOLDIER = 0
 REBEL = 1
