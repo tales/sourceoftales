@@ -219,5 +219,39 @@
             action="attack"
             />
     </monster>
+    <monster id="7" name="Bee" targetCursor="small">
+        <sprite>monsters/bee.xml</sprite>
+        <attributes
+            hp="30"
+            size="4"
+            speed="3.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="0"
+            magical-defence="0"
+            mutation="50"
+            />
+        <exp>10</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="false"
+            cowardly="false"
+            track-range="128"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="5"
+            cooldowntime="30"
+            basedamage="5"
+            deltadamage="2"
+            range="64"
+            chancetohit="200"
+            action="attack"
+            />
+    </monster>
 </monsters>
 
