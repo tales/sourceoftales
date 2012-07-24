@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="53" height="17" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -78,4 +77,31 @@
    eJztVNEKACEIk/7/o+/1CK9t5vUQGwxCmTqpRkQM0zTNBWM6v4HiWf5LkwHplVqstuJpF12esjia+YSnLq2ypzmf+VTeANNzBUZrT7V5UA3Fd3Wnu73QP4n6MLX+9MTUUu+Lsp8OoN1V3w876ylPHRp7uo8PzsMEDQ==
   </data>
  </layer>
+ <objectgroup name="NPCS" width="89" height="68">
+  <object name="Lieutenant Bennet" type="NPC_POSITION" x="384" y="224" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="4"/>
+   </properties>
+  </object>
+  <object name="Commander Ranulf" type="NPC_POSITION" x="1536" y="224" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="4"/>
+   </properties>
+  </object>
+  <object name="Lieutenant Giles" type="NPC_POSITION" x="1440" y="256" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Objects" width="170" height="150" visible="0">
+  <object name="External Map Events" type="SCRIPT" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/casern_north_2nd_floor.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
