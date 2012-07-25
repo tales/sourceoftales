@@ -198,7 +198,7 @@
   <object name="Smith Blacwin 3" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 1" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="NPCS" width="170" height="150" visible="0">
+ <objectgroup name="NPCS" width="170" height="150">
   <object name="Gilbert" type="NPC_POSITION" x="1472" y="2496" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
@@ -269,6 +269,12 @@
    <properties>
     <property name="gender" value="female"/>
     <property name="sprite_id" value="16"/>
+   </properties>
+  </object>
+  <object name="Priestess Linota" type="NPC_POSITION" x="4128" y="896" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="20"/>
    </properties>
   </object>
  </objectgroup>

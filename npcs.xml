@@ -152,8 +152,11 @@
 <npc id="20">
     <sprite>characters/female_base.xml</sprite>
     <sprite>equipment/female_mage_whitehair.xml</sprite>
-    <sprite>equipment/female_robe.xml</sprite>
+    <sprite>equipment/female_mage_whiterobe.xml</sprite>
     <sprite>equipment/female_mage_whiteslippers.xml</sprite>
+    <sprite>equipment/female_mage_goldbelt.xml.xml</sprite>
+    <sprite>equipment/female_mage_goldbuckle.xml</sprite>
+    <sprite>equipment/female_mage_goldtiara.xml</sprite>
+    <sprite>equipment/female_mage_goldnecklace.xml</sprite>
 </npc>
-
 </npcs>

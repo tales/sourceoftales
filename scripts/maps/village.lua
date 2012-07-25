@@ -22,5 +22,6 @@ atinit(function()
     require "scripts/npcs/village/merchantwalter"
     require "scripts/npcs/village/monkmartin"
 
+    require "scripts/npcs/village/priestesslinota"
 end)
 
