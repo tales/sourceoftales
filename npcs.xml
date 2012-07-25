@@ -159,4 +159,14 @@
     <sprite>equipment/female_mage_goldtiara.xml</sprite>
     <sprite>equipment/female_mage_goldnecklace.xml</sprite>
 </npc>
+<npc id="21">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/pants.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+    <sprite>equipment/vest.xml</sprite>
+    <sprite>equipment/TORSO_leather_armor_shoulders.xml</sprite>
+    <sprite>equipment/BELT_leather.xml</sprite>
+    <sprite>equipment/HEAD_leather_armor_hat.xml</sprite>
+</npc>
+
 </npcs>

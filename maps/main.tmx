@@ -192,7 +192,7 @@
    eJztwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAY5/AAE=
   </data>
  </layer>
- <objectgroup name="Waypoints Smith Blacwin" width="170" height="150" visible="0">
+ <objectgroup name="Waypoints Smith Blacwin" width="170" height="150">
   <object name="Smith Blacwin 4" type="WAYPOINT" x="2272" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 2" type="WAYPOINT" x="2336" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 3" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
@@ -275,10 +275,15 @@
    <properties>
     <property name="gender" value="female"/>
     <property name="sprite_id" value="20"/>
+  </object>
+  <object name="Durmark" type="NPC_POSITION" x="3991" y="2749" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="21"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="170" height="150" visible="0">
+ <objectgroup name="Spawns" width="170" height="150">
   <object name="training dummy spawn" type="SPAWN" x="800" y="1088" width="448" height="320">
    <properties>
     <property name="max_beings" value="4"/>
@@ -287,11 +292,11 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Trigger" width="170" height="150" visible="0">
+ <objectgroup name="Trigger" width="170" height="150">
   <object name="Casern south gate" type="TRIGGER" x="1600" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="1648" y="2048" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Warps" width="170" height="150" visible="0">
+ <objectgroup name="Warps" width="170" height="150">
   <object name="to Storage" type="WARP" x="2080" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
@@ -300,11 +305,14 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Objects" width="170" height="150" visible="0">
+ <objectgroup name="Objects" width="170" height="150">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/village.lua"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Bees" width="170" height="150">
+  <object name="Bee trigger" type="TRIGGER" x="3728" y="2156" width="320" height="320"/>
  </objectgroup>
 </map>
