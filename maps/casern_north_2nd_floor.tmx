@@ -74,7 +74,7 @@
  </layer>
  <layer name="Collision" width="53" height="17" visible="0" opacity="0.62">
   <data encoding="base64" compression="zlib">
-   eJztVNEKACEIk/7/o+/1CK9t5vUQGwxCmTqpRkQM0zTNBWM6v4HiWf5LkwHplVqstuJpF12esjia+YSnLq2ypzmf+VTeANNzBUZrT7V5UA3Fd3Wnu73QP4n6MLX+9MTUUu+Lsp8OoN1V3w876ylPHRp7uo8PzsMEDQ==
+   eJztk90KQCEIg6X3f+huD1K6mXVx2GAQiT+f1DCzIcuyHNjc+avsPoojynru6kf1bjGdqItpdZ/N/IKpK5fZk4+vOJk/gPSMhOSKqTZPVoPhru70tJePs0xIrZtMSC32vTD76VC2u+r/QWd9xdSRI6b/eQKoswQJ
   </data>
  </layer>
  <objectgroup name="NPCS" width="89" height="68">
@@ -101,6 +101,22 @@
   <object name="External Map Events" type="SCRIPT" x="0" y="0" width="32" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/casern_north_2nd_floor.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Warps" width="53" height="17">
+  <object name="Stairs down right" type="WARP" x="1056" y="160" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north"/>
+    <property name="DEST_X" value="1552"/>
+    <property name="DEST_Y" value="176"/>
+   </properties>
+  </object>
+  <object name="Stairs down left" type="WARP" x="672" y="160" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north"/>
+    <property name="DEST_X" value="1360"/>
+    <property name="DEST_Y" value="176"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="89" height="68" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -107,9 +106,9 @@
    eJzt0LEJACAAA0H338Ud7QU7H0TuIJD6xwAAAAAA+MM8fO6Z27hP457GPY17Gvc07mnc07incU/jnsY9jXsa9zTuadzTuKdxT+Oexj2Nexr3NO5p3NO4pzEAAAAAAAAAAACvWeXgRO8=
   </data>
  </layer>
- <layer name="Collision" width="89" height="68" visible="0" opacity="0.62">
+ <layer name="Collision" width="89" height="68" opacity="0.62">
   <data encoding="base64" compression="zlib">
-   eJztlVEKAyEMRKX3P3S/CqXoGmNMTPoGBrbrrpl5lvbVWnthjDEu52/11p7eO5XDeu9b+e4wlsgri9WZr/aZ9XraY3VNmm10X3IGvXtP67PnvRmvfHc0WmE8up7llGaoznjGq3Wek+bsvTubeUrSrrP3NDOljLWaMR5lsVYkY+26dk4U4wza/c0dfZ7d/ydZ/D9J9rXIlfGsRj1m1uxtlS2btIwlXaMYS55d6aZhsMN1h3GE28+1NJv0Wa/OXnM8Ge9+z04yjmYKYwzje/2r6DwVDWMYVzCMYVzBMIZxBcMYxhUMYxhXMIxhXMEwhnEFwxjGFQxjGFcwjGFcwTD25Rydo7K1jDmbNU6rvKwU3V/LTHK929lK0bxgfJe9O3vPu8m3d/aed7JDdI6KjLNkz5Izc/YsOTNnz5JTkj86S0XGWbJnySnpEJ0DxvH5bs+ZObtlTs0+VjOjOXow7unUuWRnbKGo+dEsYVyL8Uc3ny2M7edV8Grnf2QEY4zr+Q2n8CYT
+   eJztlVEKAyEMRKX3P3S/CqXoGmNMTPoGBrbrrpl5lvbVWnthjDEu52/11p7eO5XDeu9b+e4wlsgri9WZr/aZ9XraY3VNmm10X3IGvXtP67PnvRmvfHc0WmE8up7llGaoznjGq3Wek+bsvTubeUrSrrP3NDOljLWaMR5lsVYkY+26dk4U4wza/c0dfZ7d/ydZ/D9J9rXIlfGsRj1m1uxtlS2btIwlXaMYS55d6aZhsMN1h3GE28+1NJv0Wa/eHjO8Ge9+z04yjmYKYwzje/2r6DwVDWMYVzCMYVzBMIZxBcMYxhUMYxhXMIxhXMEwhnEFwxjGFQxjGFcwjGFcwTD25Rydo7K1jDmbNU6rvKwU3V/LTHK929lK0bxgfJe9O3vPu8m3d/aed7JDdI6KjLNkz5Izc/YsOTNnz5JTkj86S0XGWbJnySnpEJ0DxvH5bs+ZObtlTs0+VjOjOXow7unUuWRnbKGo+dEsYVyL8Uc3ny2M7edV8Grnf2QEY4zr+Q0ZICYR
   </data>
  </layer>
  <objectgroup name="NPCS" width="89" height="68">
@@ -148,6 +147,36 @@
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/casern_north.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Warps" width="89" height="68">
+  <object name="To outside" type="WARP" x="1408" y="512" width="96" height="32">
+   <properties>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="1664"/>
+    <property name="DEST_Y" value="1072"/>
+   </properties>
+  </object>
+  <object name="stairs right" type="WARP" x="1568" y="160" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north_2nd_floor"/>
+    <property name="DEST_X" value="1104"/>
+    <property name="DEST_Y" value="176"/>
+   </properties>
+  </object>
+  <object name="stairs left" type="WARP" x="1312" y="160" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north_2nd_floor"/>
+    <property name="DEST_X" value="656"/>
+    <property name="DEST_Y" value="176"/>
+   </properties>
+  </object>
+  <object name="to cellar" type="WARP" x="1856" y="512" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_cellar"/>
+    <property name="DEST_X" value="368"/>
+    <property name="DEST_Y" value="144"/>
    </properties>
   </object>
  </objectgroup>

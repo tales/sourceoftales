@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="42" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -78,9 +77,9 @@
    eJztlk0KAjEMhTM4F/AQ7v0DQb3BrDyA7vUWund2LvRoehlT6GNKYLTRYh3NBw9KaWggeU2JDMMwGlYROmTLrqF6ojVrly07PeOCaMLaU1wNUIchx4yKz+U557sWrC2vN/R7dZAMerkz6DZT0ZvoW/R7uB/b8y52JvwCXvXDUsSgb9HvoC/U5oHaxzpc/NHvd51rSXQrH6+N9Lwzd+EJzWyBwvtjzjlPON9If2t8Ca9oBMK9M+vScs4Bj8KfdVx6xp+i9Y5Wqf7VckalVpf+cyf/5nz73NK+x7mI7REjPXcbh0fB
   </data>
  </layer>
- <layer name="Collision" width="42" height="30" visible="0">
+ <layer name="Collision" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlFEKACEIRKX7H3r/I9lxrFZdBwYisp5mDREZ7XYBazp93i7O3dze/apxsvLe9608snJqvPNay9hTh1VcFs7VvFfIeVpuzWnjZOM8fYT0N8rJ1PMkp+Xe53iE06NsnOy6qJxv7xvhZHqY9R84IygKJ/ovZOa82Y9oHl+zRq9nJs5qfgApFgaB
+   eJztlNsOwCAIQ43//9F7N7qV1gs4mjQxRvSAaC2l1HQ6uN+0+syZrDO51f1u42Sl3veuPKJyjnjbtZaxUodeXBTO3rwq5LxRbslp42TjlD5C+hvlZOq5ktNy7208wqkoGie7zivn1/tGOJkeZv0HTg/ywon+C5E5d/YjmsdpVu/1jMR5mx8HRgZ/
   </data>
  </layer>
  <layer name="Shadow" width="42" height="30">
@@ -93,4 +92,13 @@
    eJzt01EKABAQBUBu6/4n8CtRZAs1870ob19K3FByzEzUW7xpJzs53yWrP7R/Lwd+FbG7szv0AtacdGV0VvcA6FU3bAYo
   </data>
  </layer>
+ <objectgroup name="Warps" width="42" height="30">
+  <object name="stairs up" type="WARP" x="320" y="128" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north"/>
+    <property name="DEST_X" value="1840"/>
+    <property name="DEST_Y" value="528"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
