@@ -11,27 +11,27 @@
   <image source="../tiles/inside.png" width="320" height="320"/>
  </tileset>
  <tileset firstgid="215" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="480" height="288"/>
+  <image source="../tiles/mountains.png" width="416" height="288"/>
  </tileset>
- <tileset firstgid="350" name="country" tilewidth="32" tileheight="32">
+ <tileset firstgid="332" name="country" tilewidth="32" tileheight="32">
   <image source="../tiles/country.png" width="160" height="128"/>
  </tileset>
- <tileset firstgid="370" name="kitchen" tilewidth="32" tileheight="32">
+ <tileset firstgid="352" name="kitchen" tilewidth="32" tileheight="32">
   <image source="../tiles/kitchen.png" width="64" height="128"/>
  </tileset>
- <tileset firstgid="378" name="farming_fishing" tilewidth="32" tileheight="32">
+ <tileset firstgid="360" name="farming_fishing" tilewidth="32" tileheight="32">
   <image source="../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
- <tileset firstgid="778" name="castlefloors" tilewidth="32" tileheight="32">
+ <tileset firstgid="760" name="castlefloors" tilewidth="32" tileheight="32">
   <image source="../tiles/castlefloors.png" width="320" height="320"/>
  </tileset>
- <tileset firstgid="878" name="magecity" tilewidth="32" tileheight="32">
+ <tileset firstgid="860" name="magecity" tilewidth="32" tileheight="32">
   <image source="../tiles/magecity.png" width="256" height="1450"/>
  </tileset>
- <tileset firstgid="1238" name="barrel" tilewidth="32" tileheight="32">
+ <tileset firstgid="1220" name="barrel" tilewidth="32" tileheight="32">
   <image source="../tiles/barrel.png" width="128" height="64"/>
  </tileset>
- <tileset firstgid="1246" name="cabinets" tilewidth="32" tileheight="32">
+ <tileset firstgid="1228" name="cabinets" tilewidth="32" tileheight="32">
   <image source="../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
  <layer name="Ground" width="10" height="12">
@@ -41,7 +41,7 @@
  </layer>
  <layer name="Black" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJyLYmRgiCISYwODXR02PcNFHTEYAFE5En0=
+   eJzzYmRg8CISYwODXR02PcNFHTEYAOv9Dz0=
   </data>
  </layer>
  <layer name="Walls" width="10" height="12">
@@ -51,12 +51,12 @@
  </layer>
  <layer name="Decor" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYKA+iGNkYIgH4s8sCDY2kAwUTwHi/ywINggUoanPAPIzGTHZJTjMRQcgdSuQ1PoxYaq5BnRDGVBNFZK6JCzqbgHVVQLV9BFpNzIoAOqpZmZgqAHiQjT92NyEDWBzEz4AAMU5D7I=
+   eJxjYKA+8GFkYPAF4ocsCDY2EAgUDwLitywINggkoKkPA/LDGTHZSTjMRQcgddOQ1NowYao5AnRDClBNBpK6ACzqTgDVpQPV1BBpNzKIA+rJZGZgyALieDT92NyEDWBzEz4AAITTDXI=
   </data>
  </layer>
  <layer name="Decor2" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFuIA3E3Hq4olUNxAAAHfsAK8=
+   eJxjYBgFuIAlE3HqfIlUNxAAAF8sAIs=
   </data>
  </layer>
  <layer name="Fringe" width="10" height="12">
@@ -66,7 +66,7 @@
  </layer>
  <layer name="Over" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFlIJsRgaGYmYGhhIgzmHErS4LB2ZAokEgihE7hsmRAgDVhwcq
+   eJxjYBgFlIJIRgaGRGYGhiQgjmLErS4LB2ZAokHAixE7hsmRAgCPlwZy
   </data>
  </layer>
  <layer name="Over2" width="10" height="12">
@@ -84,4 +84,13 @@
    eJxjYmBgYBpgzEAlddgAtdUxMGC6hRAgxr3E2IvPLFzhBACzgACl
   </data>
  </layer>
+ <objectgroup name="Wraps" width="10" height="12">
+  <object name="exit" type="WARP" x="224" y="352" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="3760"/>
+    <property name="DEST_Y" value="1744"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

@@ -314,6 +314,34 @@
     <property name="DEST_Y" value="368"/>
    </properties>
   </object>
+  <object name="to House1" type="WARP" x="3744" y="1696" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="house1"/>
+    <property name="DEST_X" value="240"/>
+    <property name="DEST_Y" value="336"/>
+   </properties>
+  </object>
+  <object name="to House1" type="WARP" x="3536" y="1584" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="house1"/>
+    <property name="DEST_X" value="240"/>
+    <property name="DEST_Y" value="336"/>
+   </properties>
+  </object>
+  <object name="to House2" type="WARP" x="4096" y="1952" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="house2"/>
+    <property name="DEST_X" value="144"/>
+    <property name="DEST_Y" value="336"/>
+   </properties>
+  </object>
+  <object name="to Pub" type="WARP" x="3136" y="2336" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="pub"/>
+    <property name="DEST_X" value="336"/>
+    <property name="DEST_Y" value="272"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Objects" width="170" height="150">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="16" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -77,9 +78,9 @@
    eJxjYBgFo4A6IBNKqwGxLRBrQvlaSGoy8IjhA7pQ2gBKGyLJ5eMRGwWjgJYAAANWA7c=
   </data>
  </layer>
- <layer name="Collision" width="21" height="16" visible="0">
+ <layer name="Collision" width="21" height="16">
   <data encoding="base64" compression="zlib">
-   eJxjYmBgYBrFYMyAQ4wBjxwTAXlyAC4zCenBpxab/0jRT4ydlPiZlmbiMx+XnfjSCC3MHOi0P4rJwwDGhAHt
+   eJxjYmBgYBrFYMyAQ4wBjxwTAXlyAC4zCenBpxab/0jRT4ydlPiZlmbiMx+XncSkB3LMJNaeUTw0MADCPAHr
   </data>
  </layer>
  <objectgroup name="NPCS" width="170" height="150">
@@ -94,6 +95,15 @@
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/pub.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Wraps" width="21" height="16">
+  <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="3152"/>
+    <property name="DEST_Y" value="2384"/>
    </properties>
   </object>
  </objectgroup>
