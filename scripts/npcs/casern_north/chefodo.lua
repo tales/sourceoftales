@@ -27,16 +27,16 @@ local function chefTalk(npc, ch)
     end
 
     local function beetleStewCheck(amount)
-        local beetle_amount = chr_inv_count(ch, true, false, "Apple") -- TODO: change item
+        local beetle_amount = chr_inv_count(ch, true, false, "Beetle Corpus")
         say("Please bring me ".. amount .. " beetles, so I can create the most delicious beetle stew.")
         if beetle_amount >= amount then
             local choices = { "Here they are.",
                             "I didn't get them yet."}
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
-                beetle_amount = chr_inv_count(ch, true, false, "Apple") -- TODO: change item
+                beetle_amount = chr_inv_count(ch, true, false, "Beetle Corpus")
                 if beetle_amount >= amount then
-                    chr_inv_change(ch, "Apple", -amount) -- TODO: change item
+                    chr_inv_change(ch, "Beetle Corpus", -amount)
                     chr_money_change(ch, 100)
                     say("Wonderful, wonderful! I'll start with the beetle stew right now.")
                     chr_set_quest(ch, "soldier_beetlestew", "done")
