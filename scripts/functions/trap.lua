@@ -1,26 +1,40 @@
--- [[
--- Logic of traps
---
--- To create a trap place a trap object on the map and require this file in your
--- atinit function.
---
--- The mapobject has to have the following properties:
---  TYPE             -> "TRAP"
---  damage           -> value of damage
---  damage_delta     -> delta of damage. default: 0
---  chance_to_hit    -> chance to hit. default: 999
---  damage_type      -> damage tpye. default: DAMAGE_PHYSICAL
---  reuse_delay      -> time until the trap can get triggered again after use. default: 0
---  trigger_radius   -> radius around the trap in which a trigger is placed. default: 0
---  trigger_delay    -> time in seconds until trap deals damage. default: 0
---  effect_id        -> effect that will be spawned in the center of the trap. default: none
---
--- As soon someone steps on the trigger surrounding the trap the trigger_delay
--- is scheduled. If the timer is up damage will be dealt to all beings in the
--- focus of the trap (boundaries of the object in tiled)
---
--- Authors:
--- - Ablu
+--[[
+
+  Logic of traps
+  
+  To create a trap place a trap object on the map and require this file in your
+  atinit function.
+  
+  The mapobject has to have the following properties:
+   TYPE             -> "TRAP"
+   damage           -> value of damage
+   damage_delta     -> delta of damage. default: 0
+   chance_to_hit    -> chance to hit. default: 999
+   damage_type      -> damage tpye. default: DAMAGE_PHYSICAL
+   reuse_delay      -> time until the trap can get triggered again after use. default: 0
+   trigger_radius   -> radius around the trap in which a trigger is placed. default: 0
+   trigger_delay    -> time in seconds until trap deals damage. default: 0
+   effect_id        -> effect that will be spawned in the center of the trap. default: none
+  
+  As soon someone steps on the trigger surrounding the trap the trigger_delay
+  is scheduled. If the timer is up damage will be dealt to all beings in the
+  focus of the trap (boundaries of the object in tiled)
+
+  Copyright (C) 2012 Erik Schilling
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  
 -- ]]
 
 module("trap", package.seeall)

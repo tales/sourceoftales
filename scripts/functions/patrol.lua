@@ -1,21 +1,35 @@
--- [[
--- Script for grouping beings together and letting them patroul
---
--- For creating a patrol choose a name. Then add objects to the map.
--- The name of the object has to start with the name followed by a space
--- and then the index number of the waypoint. The type of the object has to
--- be set to WAYPOINT.
---
--- Possible object parameters:
---  + stroll    -> The radius in pixels that will allow the beings to stroll
---                 is a being out of this radius it will walk to a random
---                 position inside of it
---  + tolerance -> The radius in pixels that tells whether a being reached a
---                 waypoint. If all beings are within the tolerance radius
---                 the next waypoint will be navigated.
---
--- Authors:
--- - Ablu
+--[[
+
+  Script for grouping beings together and letting them patroul
+  
+  For creating a patrol choose a name. Then add objects to the map.
+  The name of the object has to start with the name followed by a space
+  and then the index number of the waypoint. The type of the object has to
+  be set to WAYPOINT.
+  
+  Possible object parameters:
+   + stroll    -> The radius in pixels that will allow the beings to stroll
+                  is a being out of this radius it will walk to a random
+                  position inside of it
+   + tolerance -> The radius in pixels that tells whether a being reached a
+                  waypoint. If all beings are within the tolerance radius
+                  the next waypoint will be navigated.
+
+  Copyright (C) 2012 Erik Schilling
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 -- ]]
 
 

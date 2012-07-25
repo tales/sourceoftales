@@ -1,10 +1,27 @@
--- authors: Jenalya
+--[[
 
--- variable use
--- tutorial_fight: save progress on task to fight against the training dummies
---      beat_dummies: got task
---      done: finished that subquest
--- tutorial_equip: saves if got equipment from smith
+  variable use
+  tutorial_fight: save progress on task to fight against the training dummies
+       beat_dummies: got task
+       done: finished that subquest
+  tutorial_equip: saves if got equipment from smith
+
+  Copyright (C) 2012 Jessica Tölke
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+--]]
 
 local function instructorTalk(npc, ch)
     local function say(message)
