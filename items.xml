@@ -478,6 +478,12 @@
             <modifier attribute="cap1" value="-250" />
         </effect>
     </item>
+    <item id="50"
+        max-per-slot="255"
+        name="Beetle Corpus"
+        description="Can be used to create delicious stews."
+        image="beetle_corpus.png">
+    </item>
     
 
 </items>
