@@ -25,6 +25,9 @@
  <tileset firstgid="720" name="farming_fishing" tilewidth="32" tileheight="32">
   <image source="../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
  </tileset>
+ <tileset firstgid="1120" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
  <layer name="Ground" width="12" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYBh8QICROEwv9cj6qA0AWbACEA==
@@ -50,6 +53,11 @@
    eJxjYKAPmMbIwDCdkU6WDSEAAEqVATA=
   </data>
  </layer>
+ <layer name="Fringe" width="12" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwkAAYAAAQ==
+  </data>
+ </layer>
  <layer name="Over" width="12" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYBj64CQTaeqzoBiZjQ3TAwAAWTAEhg==
@@ -65,7 +73,7 @@
    eJxjYBiZIANKaxGpPh9KG1LZHQCDOAEz
   </data>
  </layer>
- <layer name="Collision" width="12" height="8" visible="0">
+ <layer name="Collision" width="12" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYmBgYBrkmAGJZsAhjw/gMpMUfaSqZ8Ihho4BdVgAhQ==
   </data>
