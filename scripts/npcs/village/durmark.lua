@@ -44,32 +44,32 @@ local function durmarkTalk(npc, ch)
 
     local function aboutLife()
         say("Yes. I was born here and have lived my entire life here.")
-        say("I will never leave this place. I do not like the big cities. " ..
+        say("I plan to never leave this place. I do not like the big cities. " ..
             "This small village is exactly where i want to live.")
     end
 
     local function aboutVillage()
-        say("Hm. Sure my friend.")
-        say("This village was a collection of some farmer's houses for a long time. " ..
-            "A couple of houses were built around these farms. ")
-        say("Somewhere they built a pub. You should definetly check it out! " ..
-            "Always good to keep up to date.")
-        say("It was a nice circle of people. Everbody knew each other and met and conversed.")
-        say("Then the country house up there in the north west of the village became a barrack.")
-        say("We never really had contact to the king out here. " ..
-            "But one day we had his patrols on our street.")
-        say("They suddenly started to collect taxes and recruiting people for the army.")
-        say("Well back to the village... The casern provided new ways to make money.")
+        say("Hm. Sure, my friend.")
+        say("For a long time, this village was a mere collection of farmhouses. " ..
+            "Later, a couple more houses were built around the farms. ")
+        say("They also built a pub. You should definitely check it out! " ..
+            "It's always good to keep up to date.")
+        say("It was a nice circle of people. Everbody knew each other, and they often met and socialized.")
+        say("But that changed when the country house in the northwest of the village became a barracks.")
+        say("We had never really had contact with the king out here before, " ..
+            "but one day we had his patrols on our street.")
+        say("They suddenly started to collect taxes and recruit people for the army.")
+        say("Well, back to the village... The barracks provided new ways to make money.")
         say("Merchants travel to our village quite often now. " ..
-            "With them news from everywhere out of the kingdom.")
-        say("I prefer to stay away from this hustle and bustle.")
+            "They bring news from everywhere in the kingdom, and beyond.")
+        say("Myself, I prefer to stay away from all the hustle and bustle.")
         say("Check out the market. But be aware. Those merchants will rip you off!")
-        say("Ahw the good old days...")
+        say("Ah, the good old days...")
     end
 
     local function aboutDoing()
-        say("I am only walking around the village. I enjoy the nature.")
-        say("Here I am far away from the frenzy of activity in the village.")
+        say("I'm just walking around the village. I enjoy being in nature.")
+        say("Here, I am far away from the frenzy of activity in the village.")
     end
 
     local function aboutProblems()
@@ -127,14 +127,15 @@ local function durmarkTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
     if res == 1 then
         aboutLife()
-        choices = { "Why do you not like the big cities?",
+        choices = { "Why don't you like big cities?",
                     "Can you tell me more about this village?",
-                    "Ha? Living in this village? Sound pretty pointless to me!" }
+                    "Ha? Living in this village? Sounds pretty pointless to me!" }
 
         res = npc_choice(npc, ch, choices)
         if res == 1 then
-            say("Good question my friend. I have never been in a big city so far. " ..
-                "I cannot tell you what i do not like about them. But I like it here!")
+            say("Good question, my friend. I have never actually been in a big city so far. " ..
+                "So I cannot tell you exactly what I do not like about them. But I know that I like it here!")
+
         elseif res == 2 then
             aboutVillage()
             local choices = { "Are there any other problems that bother you apart of the merchants?",
