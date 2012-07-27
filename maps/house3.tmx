@@ -28,6 +28,9 @@
  <tileset firstgid="1120" name="kitchen" tilewidth="32" tileheight="32">
   <image source="../tiles/kitchen.png" width="64" height="128"/>
  </tileset>
+ <tileset firstgid="1128" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
  <layer name="Ground" width="12" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYBh8QICROEwv9cj6qA0AWbACEA==
@@ -35,22 +38,22 @@
  </layer>
  <layer name="Black" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJx7xsDA8IxETCwYqepJwQCFmCBZ
+   eJx7xsDA8IxETCzApx6bODXNH0j1pGAActchPw==
   </data>
  </layer>
  <layer name="Walls" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJzLYGBgUCcSawFxPhDrEYkNoepNicQw9cQCctRnkqC+gAS15AIAMWYJUA==
+   eJzLYGBgUMeCn2ER0wLifCDWw4KfYREzhKo3xYLVsYjB1GMDeljE8Kk3xaE+E4d6bKCABLXkAgBZhAsc
   </data>
  </layer>
  <layer name="Decor" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYKAPSGVkYEhjxC7nAxT3RZLLB7JzgTiPEcJGB4FAsSAcZmEDYUC14UjqzzIRr5fWAABkGgVJ
+   eJxjYKAeqGPBLZfKyMCQxojgawJxC1B9FhD7AMV9keTygexcIM5jhLBBwACIu4BqS4A4ECgWxMiAF5gjscOAasOR1J9lItJDdAAARrMIVw==
   </data>
  </layer>
  <layer name="Decor2" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYKAPmMbIwDCdkU6WDSEAAEqVATA=
+   eJxjYKAPmMbIwDCdEcFXI1G/LonqTUhUP1AAALndAbc=
   </data>
  </layer>
  <layer name="Fringe" width="12" height="8">
@@ -60,12 +63,12 @@
  </layer>
  <layer name="Over" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBj64CQTaeqzoBiZjQ3TAwAAWTAEhg==
+   eJxjYMAOtHCI4wKGJKovIFE9PnCSiTT1WVCMzMaG6QEAQ4cFUQ==
   </data>
  </layer>
  <layer name="Over2" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBh5oBCKkdnYMAw8g2JkNjZMDgAAL1wMEA==
+   eJxjYMAOMnCI4wL5JKrPJFE9NUEhFCOzsWEYeAbFyGxsmBwAALU7DVA=
   </data>
  </layer>
  <layer name="Over3" width="12" height="8">
@@ -75,7 +78,7 @@
  </layer>
  <layer name="Collision" width="12" height="8" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYmBgYBrkmAGJZsAhjw/gMpMUfaSqZ8Ihho4BdVgAhQ==
+   eJxjYmBgYBrkmAGJZsAhjw7wqcelB5sZ5KpnwiGGjgF2qACH
   </data>
  </layer>
  <objectgroup name="Wraps" width="12" height="8">
