@@ -33,8 +33,8 @@ local offset = TILESIZE
 
 local spell = get_special_info("Magic_Snake Bite")
 spell:on_use(function(user, target, special_id)
-    if not target or (being_type(target) ~= TYPE_MONSTER and
-        (map_get_pvp() ~= PVP_FREE and being_type(being) == TYPE_CHARACTER))
+    if not target or not (being_type(target) == TYPE_MONSTER or
+        (map_get_pvp() == PVP_FREE and being_type(target) == TYPE_CHARACTER))
     then
         return
     end
