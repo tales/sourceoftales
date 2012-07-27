@@ -111,6 +111,7 @@
             action="spellcast"
             effect-id="1"
             />
+        <drop item="51" percent="30" />
     </monster>
     <monster id="4" name="Soldier" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
@@ -183,6 +184,7 @@
             chancetohit="200"
             action="attack"
             />
+        <drop item="51" percent="20" />
     </monster>
     <monster id="6" name="Skeleton Soldier" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -219,6 +221,7 @@
             chancetohit="200"
             action="attack"
             />
+        <drop item="51" percent="30" />
     </monster>
     <monster id="7" name="Bee" targetCursor="small">
         <sprite>monsters/bee.xml</sprite>

@@ -484,6 +484,9 @@
         description="Can be used to create delicious stews."
         image="beetle_corpus.png">
     </item>
-    
-
+    <item id="51"
+        max-per-slot="255"
+        name="Unholy Crystals"
+        image="CrystalsPurple.png">
+    </item>
 </items>
