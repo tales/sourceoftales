@@ -46,12 +46,12 @@
  </layer>
  <layer name="Walls" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJzLYGBgUMeCtRhQQT4Q62HBhljUmWLB2NRhA8SqQ3crLnXobsWlDt2tuNShu5VYdZlEqCsgQg2pAAASCwq1
+   eJzLYGBgUMeCtRhQQT4Q62HBhljUmWLB2NRhA8SqQ3crLnXobkV2HwMet+IyD92txKrLJEJdARFqSAUAztsLiQ==
   </data>
  </layer>
  <layer name="Decor" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYKA+8GFkYPAF4ocsCDY2EAgUDwLitywINggkoKkPA/LDGTHZSTjMRQcgddOQ1NowYao5AnRDClBNBpK6ACzqTgDVpQPV1BBpNzKIA+rJZGZgyALieDT92NyEDWBzEz4AAITTDXI=
+   eJxjYKA+8GFkYPAF4ocsCDY2EAgUDwLitywINggkoKkPA/LDGTHZSTjMRQcgddOQ1B5hwVQDEksBqslAUncCizqQWDpQTQ2RdiODOKCeTGYGhiwgjkfTb8NEnBkBRKqDAQBhfg52
   </data>
  </layer>
  <layer name="Decor2" width="10" height="12">
@@ -66,12 +66,12 @@
  </layer>
  <layer name="Over" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFlIJIRgaGRGYGhiQgjmLErS4LB2ZAokHAixE7hsmRAgCPlwZy
+   eJxjYBj8QB2K0dnoQA+K0dm0BpGMDAyJzAwMSUAcxYhbXRYOzIBEg4AXI3YMkyMFAAAMBQfG
   </data>
  </layer>
  <layer name="Over2" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBiaoGCgHUAGKMSBGZBoXCAfShuSaCcA5HsEKA==
+   eJxjYBgaQA2IbYFYE8ovwKFOF0obEDDPBEqbU+guUkAhDsyAROMC+VDakEQ7AU2NBXw=
   </data>
  </layer>
  <layer name="Over3" width="10" height="12">
@@ -79,9 +79,9 @@
    eJxjYBgFAwkyoLQWjcwHADdQAJM=
   </data>
  </layer>
- <layer name="Collision" width="10" height="12">
+ <layer name="Collision" width="10" height="12" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYmBgYBpgzEAlddgAtdUxMGC6hRAgxr3E2IvPLFzhBACzgACl
+   eJxjYmBgYBpgzEAlddgApfbiMpOBgBpi3IBLDTlm4fIXALwoAK8=
   </data>
  </layer>
  <objectgroup name="Wraps" width="10" height="12">
