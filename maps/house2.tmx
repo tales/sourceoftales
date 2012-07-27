@@ -38,22 +38,22 @@
  </layer>
  <layer name="Black" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJx7xsDA8IxMjA8MJX24zCIV0FJfIZn6yPUfLcKFHAwAYbE7vg==
+   eJx7xsDA8IxMjA8MJX24zCIVUKrPiRm3mkIy7SPXf7QIF3IwAKwSPAM=
   </data>
  </layer>
  <layer name="Walls" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJzLYGBgUMeDtRiwg3wg1sODDfHoM8WD8enDBzJwuJ2QPnUcbiekTw+H2wnpM8UiRow+bIASfZlk6CsgQw+lAAB13Q1F
+   eJzLYGBgUMeDtRiwg3wg1sODDfHoM8WD8enDBzJwuJ2QPnUcbiekTw+H29H9hw6wiRFjHzZAib5MMvQVkKGHUgAAQaQN5A==
   </data>
  </layer>
  <layer name="Decor" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfFDMyMJQCcTIjafoqgeqrgTgNiCOBeD4QLwDiKALm1APlG4E4D4jjgHgpEC8D4ngC+oKZUPmrgerXIOkpw6E/nQm7OAzUQP3vA8S+JIRBE9QfgUAchKSPEWgfEwE7QSAMqCccSZ8oUI8Ymr6NQPlNJMYLCBwF6jlGhj5aAQDPTxG8
+   eJxjYCAfFDMyMJQCcTIjafoqgeqrgTgNiCOBeD4QLwDiKALm1APlG4E4D4jjgHgpEC8D4ngC+oKZUPmrgerXQPWoAXEZDv3pTNjFQUAXiGug/vcBYl8kM+yYIbQJFn0gsSaoPwKBOAhJHyPQPiY8dsJAGFBPOJI+UaAeMTR9G4Hym0iMFxA4CtRzjAx9tAIAIE4SuA==
   </data>
  </layer>
  <layer name="Decor2" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBiaIJIRwY5ixK0OHcQB1a5ihrDjSdA32MBqZgTbHsh2AGJHZtzqYWAdkhpnINsFiF2J0DdQAAD8pAUf
+   eJxjYBgcoJCRNPWRSOqjSNAbB1S7ihnCjgeyNUmzFg4MyNRnTqY+dLCaGcG2B7IdgNiRGbd6GFiHpMYZyHYBYlci9A0UAACy4QYh
   </data>
  </layer>
  <layer name="Fringe" width="14" height="12">
@@ -63,12 +63,12 @@
  </layer>
  <layer name="Over" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgewJBMfQVUdQXtQBaZ+vCFSyESJsQvxNDNwJBPhB2UAgBMpAZH
+   eJxjYBgewBCHeAYQqyNhdFCAx0w9JDzQIItMfbjCBQQKkTAhfiGGbgaGfCLsoBQAAJraB64=
   </data>
  </layer>
  <layer name="Over2" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBjZIHOgHUAkyCBTXz4euSwkTIifhaTvGRJG52PDlAAA+NoPRw==
+   eJxjYBg5QA2LWCYR+nSp7RAyQAaZ+vLxyGUhYUL8LCR9z5AwOh8bpgQAAHxtD5o=
   </data>
  </layer>
  <layer name="Over3" width="14" height="12">
@@ -81,9 +81,9 @@
    eJxjYBgFowATZA60A6AAADpoAGo=
   </data>
  </layer>
- <layer name="Collision" width="14" height="12">
+ <layer name="Collision" width="14" height="12" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYmBgYBoiGBlQopdYc/ABSvQRMoMQIMZufGYRow+bXmrrIybeAE9HAOc=
+   eJxjYmBgYBoiGBlQopdYc/ABcu1lQmOTai+xbsZnFjH6cLmdmvqICT8AVvcA7Q==
   </data>
  </layer>
  <objectgroup name="Wraps" width="14" height="12">
