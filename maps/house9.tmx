@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="19" height="16" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="113" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="230" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../tiles/victoria.png" width="352" height="192"/>
+ </tileset>
+ <tileset firstgid="296" name="inside" tilewidth="32" tileheight="32">
+  <image source="../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="396" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="404" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="482" name="castlefloors" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlefloors.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="582" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="982" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="990" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Ground" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgZ4C0jA8M7JPyeESIewIgdw+TeoqkHge9A9g8k/JNIs76jqcdnFjIIYMTkMzIxMDABMTMT5WahuxWXWbj8h8/fxABy9NDSLBFgmJpgwRJMhPWiA22gHi0sWHMYmYUMFCjUTyoAALQULzc=
+  </data>
+ </layer>
+ <layer name="Black" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJx7wsDA8IREzEBAjlIwFM3CZwc2uaHox8FgFjnpjpz0PWrWwJhFKgYAnwJxHQ==
+  </data>
+ </layer>
+ <layer name="Walls" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxLY2BgUMWCn+AQxyWnAcS5QKyDBT/BIY5LTh9qljEW/ASHOC45mFnYwBMc4rjk8JmliscsbHL4zNLBYxY2OXxmoYcHuhg2s9Lx2E8KyKOSOYQAelphYMBMA6SYhQ8MB7MIxS+94o0aAABIXxpm
+  </data>
+ </layer>
+ <layer name="Decor" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAO0qB0DyNuOWLAKqB+fSi7D2rWdCC9HIhXQuVWYbEDBJYBxZ8B6ecMELUbkMyaANWzFkjPBeL1ULkNULNfANkvkczaBBT7CKQ/AfEWIHsbklmToGZtBtKLgXgrVA6kZgEQfwayv6C57Q8Q/0Xi52Fx/1mg3nOMqHL/gPg/du/SHBhBadMBsp+WYDYjBCP7cQ4jBJMKFgH1LGTEFFtEhlmjgLYAAKVfJeU=
+  </data>
+ </layer>
+ <layer name="Decor2" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAONHCIE5LDBnLJlMOl3o0Jwr7GTLlZUVCzblFoVjqZcqNgeIOvQCzFCMHfKDUMaIYqFDMyUsFxwwAAAMA6CHc=
+  </data>
+ </layer>
+ <layer name="Decor3" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF1ADqeORUSDRLD4+cNolmmeKRMyLRrFEw8ICZEYJHAQQAAEXTARQ=
+  </data>
+ </layer>
+ <layer name="Fringe" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyGAjIwPDasaBdsUoGGjAzAjBo2BwAwAaJwFn
+  </data>
+ </layer>
+ <layer name="Over" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyGAJIwNDLyN5elWRsDUSmxygg4QZ0Nj0APk4MC4/gnAGmloYeIID4/KjDha19ASvgJifEYJf09lueoEMJIyNTwpAjyd6xhsAu98cGQ==
+  </data>
+ </layer>
+ <layer name="Over2" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF1AYqUFqdCmZpQ2k9KphFCsjAgWEAmx/zcaglBLD5UZ8Ux44CkkE+EsbGHyoAAE9UCCk=
+  </data>
+ </layer>
+ <layer name="Over3" width="19" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4A4kEZAXoMEs3KBeBojA8MURlTxqVjERgHtACxOSYk7XCAXSutTwSxiAQBGhAR9
+  </data>
+ </layer>
+ <layer name="Collision" width="19" height="16" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJy7z8zAcH8EYBBAZsP4yDQyQFdHrFnoZmBTh00cl93EyBEyC5fbSTWLVEALs0iNa3LTCjXcQcjsgTSLmn6kVXgRox8AUsGt6w==
+  </data>
+ </layer>
+ <objectgroup name="Wraps" width="19" height="16">
+  <object name="exit" type="WARP" x="320" y="480" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="2544"/>
+    <property name="DEST_Y" value="3312"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
