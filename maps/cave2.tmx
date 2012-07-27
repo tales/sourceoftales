@@ -15,7 +15,7 @@
  <tileset firstgid="256" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>
- <layer name="setCave" width="101" height="100" opacity="0.45">
+ <layer name="setCave" width="101" height="100" opacity="0.43">
   <data encoding="base64" compression="zlib">
    eJztl8GOwzAIRNt7//9797RSVcU2AzOAEx8s7SoxZuZhSN+v1+t91llnbbk+X6s6lyevz2BV57XT+vz87fVwxOIw4Xno9ZER6+kcFbX9u38W6+rZuV96H0Zxr9jNauOJnJSarf6j7zxhqZl45thhYtPs6SurO4GyZdQba34qGVi8RvrObF80ZyQOcj9ncUdco74jeVpyRvcx6gqJheocxV75GM0/kicjVpQJcmcYWi26Wfd1VAvWO7LizqgpTw9AfIgy9JxtfR71z/JuNRPrXoZ/Xk+YTFgeKmKN7gMaX8EE0aWq6Qomirqy9hqmT2hNoFpY/mQzQfxB9SpZZ3GpuiuI395vilXMCi13YbLykhWnC5fqecKoIW9fU83nynkQydmb9+gbO+KXd/Zc5VHBhOVn9HsKjWWdWYhe5Z1jeIJ44+n9jHO99TY6K5vFSru3h3jejXjged/KLIuJ1X9LjhZ9qBb1vtV7kbsaZaKOE51Jyr0zn5Ga7cbEo7dDfqtzLPdnVybZLKN5Iv1YkYtaJ5OJt6+v7oBnbqjqJqsvRJhGmaxmgvfbZXcmkfuCPF/NaeQuoLOf6dVdmMxq3vq/9XwFE09PzmRhjWG5A2p9iM+WXozUCaot6gkyY7N5oDlEFlMvg4mn/qqYdOHLqPfIHcnwiq0N5RLRNHrfGyeqVc1EFZ+tf8Skg9bdmDDZXt03T7xqz6uYsPRHZ85uTNTzihWXzUSVF1vjLswjMdmaWfGYNZfJ4js2UztbryUm8/fA7kw8/nlZe/1WsunUs6x8WT2RWfuduajq2xp/9lzdh5S6WTzUM3r0/+jMrNmg0M3cq54rqK9Z85p975B41lmoqhVvvioWltyQuebJ1VqXyppD4mfxmHGx+G3ZF/GbcVfYHik5WGthVR9W31U9LpNJNg8vk2g8lR/Muq66I0wPZ3rUTBT9vmvPUp3J9ETFI5tJNotdfGGdi3rayXeLtl3OjPSdijsZ2ZuZr+c8i/eWZ9lMlN+2V9/pkaWquY6zwpuHtRdncvDUWicWDC676s3QrsjvCUw656bishOT6lwy8+3KpGteGUzYsRQ8uuSF5P8EJl1yy2Ly7UMHPR1/k1Qw6cLl9/wd2ah+s3TSshuT/5w7x2PWwy5sFEyqvrE7e43oUeio/N3D/G5Z/b0bk0jMuzJhs8vgwpjHd2HC5jHyd+U3axYdJtexUCasXCznZn97IWcpmHj8yOihmXwi8auZZNQsIy/mQnLtoF3BpGohGlV+3JHJb05Ijh386JBDJybfnox8ytJwmMT3HCZzLbszYXDpyijCpIOeO3OJ+NElj0wuHXRbvOiUi5JJB7275HaY9MuN2cNmuqzvVsy2TjwUTK78sXqY0UtHuVVzyGCi9Hf2XvYd68hkFotxLlvX1fNqBlEmmbmw41Z7vevqXL9nnXXWWU9Yf01XglY=
   </data>
@@ -67,6 +67,12 @@
   <object name="Skeleton Soldier2 Spawn" type="COORDINATE" x="1952" y="2720" width="32" height="32"/>
   <object name="Skeleton2 Spawn" type="COORDINATE" x="2080" y="2752" width="32" height="32"/>
   <object name="Skeleton Soldier3 Spawn" type="COORDINATE" x="2208" y="2560" width="32" height="32"/>
+  <object name="shrinequest spawn" type="TRIGGER" x="2016" y="640" width="32" height="32">
+   <properties>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
+  <object name="Shrinequest Skeleton Spawn" type="COORDINATE" x="2016" y="480" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="101" height="100">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">

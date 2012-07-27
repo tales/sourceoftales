@@ -49,6 +49,7 @@ end)
 -- handlings of offline processing mechanics.
 on_character_login(function(ch)
     chr_request_quest(ch, "tutorial_fight", function(ch, var, value) end)
+    chr_request_quest(ch, "goldenfields_shrine", function(ch, var, value) end)
 end)
 
 --

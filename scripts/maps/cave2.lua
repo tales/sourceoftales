@@ -4,6 +4,7 @@
   This map will contain various traps / scripted spawns
 
   Copyright (C) 2012 Erik Schilling
+  Copyright (C) 2012 Jessica Tölke
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -49,9 +50,23 @@ local function alcovesSpawn(being)
     end
 end
 
+local function shrinequestSpawn(being)
+    if not being_type(being) == TYPE_CHARACTER then
+        return
+    end
+
+    local quest = chr_try_get_quest(being, "goldenfields_shrine")
+    if quest == "started" then
+        monster_create("Skeleton", get_named_coordinate("Shrinequest Skeleton Spawn"))
+        being_say(being, "A skeleton! I should return and tell Priestess Linota about this!")
+        chr_set_quest(being, "goldenfields_shrine", "skeletonspotted")
+    end
+end
+
 atinit(function()
     require "scripts/functions/triggerhelper"
     parse_triggers_from_map()
 
     create_trigger_by_name("alcoves spawn", alcovesSpawn)
+    create_trigger_by_name("shrinequest spawn", shrinequestSpawn)
 end)
