@@ -12,6 +12,8 @@
     <map id="10" name="casern_cellar" />
     <map id="11" name="house3" />
     <map id="12" name="house4" />
+    <map id="13" name="house5" />
+    <map id="14" name="house6" />
 
     <map id="1000" name="sandbox" />
 </maps>

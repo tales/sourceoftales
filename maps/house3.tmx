@@ -45,7 +45,7 @@
  </layer>
  <layer name="Decor" width="12" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYKAPSGVkYEhjxC7nAxT3RZLLB7JzgTiPEcJGB4FAsSAcZmEDYUC14SSopycAAPLZBHo=
+   eJxjYKAPSGVkYEhjxC7nAxT3RZLLB7JzgTiPEcJGB4FAsSAcZmEDYUC14UjqzzIRr5fWAABkGgVJ
   </data>
  </layer>
  <layer name="Decor2" width="12" height="8">
@@ -73,7 +73,7 @@
    eJxjYBiZIANKaxGpPh9KG1LZHQCDOAEz
   </data>
  </layer>
- <layer name="Collision" width="12" height="8">
+ <layer name="Collision" width="12" height="8" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYmBgYBrkmAGJZsAhjw/gMpMUfaSqZ8Ihho4BdVgAhQ==
   </data>
