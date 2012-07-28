@@ -56,15 +56,15 @@ local function veteranTalk(npc, ch)
                 "The Innkeeper from Goldenfields, Norman, is late with paying his taxes. "..
                 "There was quite some moaning among the villagers because of the extra taxes due to the war. "..
                 "Hah! We're the ones keeping them safe, ungrateful wretches.")
-            say("I want you to get the outstanding ".. GOLDENFIELDSTAXES .. " GP from that innkeeper.")
+            say("I want you to get the outstanding ".. GOLDENFIELDS_TAXES .. " GP from that innkeeper.")
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotorder")
         elseif (taxes == "gotorder") then
             say("What are you waiting for? Go and get the outstanding taxes from Innkeeper Norman.")
         elseif (taxes == "gotmoney") then
             say("Did you get the money from that innkeeper? Let me see.")
             local money = chr_money(ch)
-            if money >= GOLDENFIELDSTAXES then
-                chr_money_change(ch, -GOLDENFIELDSTAXES)
+            if money >= GOLDENFIELDS_TAXES then
+                chr_money_change(ch, -GOLDENFIELDS_TAXES)
                 chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
                 local reputation = read_reputation(ch, "soldier_reputation")
                 reputation = reputation + 10
@@ -73,7 +73,7 @@ local function veteranTalk(npc, ch)
                 say("Well done, kid.")
             else
                 say("Where is the money? Did you spend it on booze? Kid, this isn't a place to fool around. "..
-                    "Get me the ".. GOLDENFIELDSTAXES .. " GP.")
+                    "Get me the ".. GOLDENFIELDS_TAXES .. " GP.")
             end
         end
     end

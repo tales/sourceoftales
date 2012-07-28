@@ -21,7 +21,7 @@
 
 TUTORIAL_DUMMY_AMOUNT = 6
 
-GOLDENFIELDSTAXES = 160
+GOLDENFIELDS_TAXES = 160
 
 -- Values for reputation of factions
 SOLDIER = 0

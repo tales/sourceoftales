@@ -82,11 +82,11 @@ local function innkeeperTalk(npc, ch)
             chr_set_quest(ch, "soldier_reputation", tostring(reputation))
         else
             say("As you wish. How much do I have to pay?")
-            local money = npc_ask_integer(npc, ch, GOLDENFIELDSTAXES - 40, GOLDENFIELDSTAXES + 40, GOLDENFIELDSTAXES)
+            local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40, GOLDENFIELDS_TAXES + 40, GOLDENFIELDS_TAXES)
             chr_money_change(ch, money)
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotmoney")
             local reputation = read_reputation(ch, "rebel_reputation")
-            reputation = reputation - 10 + (GOLDENFIELDSTAXES - money)/10
+            reputation = reputation - 10 + (GOLDENFIELDS_TAXES - money)/10
             chr_set_quest(ch, "rebel_reputation", tostring(reputation))
         end
     end
