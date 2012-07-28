@@ -51,7 +51,7 @@ local function veteranTalk(npc, ch)
 
     local function collect_taxes()
         local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
-        if (taxes == nil) then
+        if (taxes == "") then
             say("You're done with your basic training? Very well. I've got some task for you. "..
                 "The Innkeeper from Goldenfields, Norman, is late with paying his taxes. "..
                 "There was quite some moaning among the villagers because of the extra taxes due to the war. "..
@@ -91,7 +91,9 @@ local function veteranTalk(npc, ch)
         elseif (taxes ~= "done") then
             collect_taxes()
         else
-            say("I don't have anything for you to do right now.")
+            say("I don't have anything specific for you to do right now.")
+            say("But you can help by chasing some of the rebels in the forest. And better not go alone, you still "..
+                "look a bit too weakly to deal with them on your own.")
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")
