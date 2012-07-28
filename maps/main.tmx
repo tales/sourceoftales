@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="178" height="150" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
   <image source="../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
@@ -335,6 +334,24 @@
    <properties>
     <property name="gender" value="male"/>
     <property name="sprite_id" value="7"/>
+   </properties>
+  </object>
+  <object name="Basilea" type="NPC_POSITION" x="3168" y="2944" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="15"/>
+   </properties>
+  </object>
+  <object name="Eva" type="NPC_POSITION" x="3104" y="2912" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="16"/>
+   </properties>
+  </object>
+  <object name="Mary" type="NPC_POSITION" x="3072" y="3008" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="19"/>
    </properties>
   </object>
  </objectgroup>

@@ -52,7 +52,9 @@ atinit(function()
     require "scripts/npcs/village/priestesslinota"
 
     -- Village
+    require "scripts/npcs/village/basilea"
     require "scripts/npcs/village/durmark"
+    require "scripts/npcs/village/eva"
+    require "scripts/npcs/village/mary"
 
 end)
-
