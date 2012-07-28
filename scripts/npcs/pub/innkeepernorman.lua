@@ -72,7 +72,9 @@ local function innkeeperTalk(npc, ch)
             say("That's what I wanted to hear, friend! You should talk to Henry. "..
                 "He's hiding in the forest, together with some people who share our ideals.")
             say("I have some supplies they need, please take it with you when you go there.")
-            -- TODO: give item
+            chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
+                            "Food Shank", REBEL_FOOD_FOODSHANK,
+                            "Apple", REBEL_FOOD_APPLE)
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
             local reputation = read_reputation(ch, "rebel_reputation")
             reputation = reputation + 10
@@ -80,6 +82,7 @@ local function innkeeperTalk(npc, ch)
             local soldier_reputation = read_reputation(ch, "soldier_reputation")
             soldier_reputation = soldier_reputation - 10
             chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+            chr_set_quest(ch, "rebel_supplies", "started")
         else
             say("As you wish. How much do I have to pay?")
             local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40, GOLDENFIELDS_TAXES + 40, GOLDENFIELDS_TAXES)

@@ -21,7 +21,11 @@
 
 TUTORIAL_DUMMY_AMOUNT = 6
 
+-- Needed in context of Innkeeper Norman
 GOLDENFIELDS_TAXES = 160
+REBEL_FOOD_PUMPKIN = 5
+REBEL_FOOD_FOODSHANK = 2
+REBEL_FOOD_APPLE = 5
 
 -- Values for reputation of factions
 SOLDIER = 0
