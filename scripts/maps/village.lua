@@ -42,9 +42,15 @@ atinit(function()
     require "scripts/npcs/village/merchantwalter"
     require "scripts/npcs/village/monkmartin"
 
+    --Rebels in the forest
+    require "scripts/npcs/village/rebeldamien"
+    require "scripts/npcs/village/rebelhenry"
+    require "scripts/npcs/village/rebelphilip"
+    require "scripts/npcs/village/rebeltristan"
+
     -- Shrine
     require "scripts/npcs/village/priestesslinota"
- 
+
     -- Village
     require "scripts/npcs/village/durmark"
 

@@ -313,6 +313,30 @@
     <property name="sprite_id" value="21"/>
    </properties>
   </object>
+  <object name="Rebel Henry" type="NPC_POSITION" x="736" y="2752" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="6"/>
+   </properties>
+  </object>
+  <object name="Rebel Tristan" type="NPC_POSITION" x="800" y="2816" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="6"/>
+   </properties>
+  </object>
+  <object name="Rebel Philip" type="NPC_POSITION" x="704" y="2816" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="7"/>
+   </properties>
+  </object>
+  <object name="Rebel Damien" type="NPC_POSITION" x="736" y="2848" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="7"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawns" width="178" height="150">
   <object name="training dummy spawn" type="SPAWN" x="800" y="1088" width="448" height="320">
