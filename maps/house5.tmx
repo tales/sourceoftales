@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="14" height="17" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
@@ -94,6 +93,21 @@
     <property name="DEST_MAP" value="main"/>
     <property name="DEST_X" value="4208"/>
     <property name="DEST_Y" value="3376"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="NPCS" width="178" height="150">
+  <object name="Thomas" type="NPC_POSITION" x="320" y="288" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Objects" width="178" height="150">
+  <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/house5.lua"/>
    </properties>
   </object>
  </objectgroup>

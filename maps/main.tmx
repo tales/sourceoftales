@@ -425,6 +425,24 @@
     <property name="sprite_id" value="9"/>
    </properties>
   </object>
+  <object name="Francis" type="NPC_POSITION" x="4896" y="3424" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="9"/>
+   </properties>
+  </object>
+  <object name="Joseph" type="NPC_POSITION" x="4288" y="3296" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="9"/>
+   </properties>
+  </object>
+  <object name="Peter" type="NPC_POSITION" x="4608" y="3552" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="9"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawns" width="198" height="150">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1088" width="448" height="320">
