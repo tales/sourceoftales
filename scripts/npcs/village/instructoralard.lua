@@ -74,7 +74,7 @@ local function instructorTalk(npc, ch)
         chr_set_quest(ch, "soldier_reputation", tostring(reputation))
     else -- reputation <= REPUTATION_RELUCTANT
         say("You dare to come here after what you've done?! You won't have much time to regret this!")
-        being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL) -- TODO: damage
+        being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 end
 

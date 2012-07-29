@@ -42,7 +42,7 @@ local function womanTalk(npc, ch)
                 if res == 1 then
                     say("Ah...")
                 else
-                    pumpkin = chr_inv_count(ch, true, false, "Pumpkin") -- TODO: icon for pumpkin is missing
+                    pumpkin = chr_inv_count(ch, true, false, "Pumpkin")
                     if pumpkin > 0 then
                         chr_inv_change(ch, "Pumpkin", -1)
                         chr_set_quest(ch, "goldenfields_widow", "done")

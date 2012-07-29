@@ -55,7 +55,7 @@ local function girlTalk(npc, ch)
         end
     end
 
-    -- TODO: add a check if the player is rebel or soldier
+    -- LATER: add a check if the player is rebel or soldier
     -- this here is for the case the player is soldier:
     local emma = chr_get_quest(ch, "rebels_emmas_camouflage")
     if emma == "" then
@@ -69,7 +69,7 @@ local function girlTalk(npc, ch)
         say("Ah, at least you tried.")
         chr_set_quest(ch, "rebels_emmas_camouflage", "done")
     elseif emma == "done" then
-        say("TODO: ask questions about the army, depending on the quest state")
+        say("Soldiers are so exciting.") -- LATER: ask questions depending on the quest state to 'spy' on the player
     end
 end
 

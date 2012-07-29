@@ -98,8 +98,7 @@ local function innkeeperTalk(npc, ch)
         local reputation = read_reputation(ch, "rebel_reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
-            -- TODO: some more talk, maybe depending on the quest state
-            -- maybe offer a sleepover in case the player doesn't have full hp
+            -- LATER: some more talk, maybe depending on the quest state
         else
             say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation.")
             local choices = { "Ok, what do I have to pay?",

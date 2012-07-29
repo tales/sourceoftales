@@ -46,7 +46,7 @@ local function monkTalk(npc, ch)
             chr_money_change(ch, -donation)
             say("May the blessing of Aquaria grant you new power.")
             being_heal(ch, donation)
-            -- TODO: think about more possible effects
+            -- LATER: think about more possible effects
             -- idea: value of anger/please for each god
         end
     elseif res == 3 then
