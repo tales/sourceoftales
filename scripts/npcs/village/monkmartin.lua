@@ -64,3 +64,8 @@ local function monkTalk(npc, ch)
 end
 -- IDEA: run towards players and being_say() things matching to his role?
 local monk = create_npc_by_name("Martin", monkTalk)
+
+being_set_base_attribute(monk, 16, 1)
+local patrol = Patrol:new("Martin")
+patrol:assignBeing(monk)
+schedule_every(10, function() patrol:logic() end)
