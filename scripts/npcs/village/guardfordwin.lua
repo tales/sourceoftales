@@ -72,3 +72,8 @@ end
 local guard = create_npc_by_name("Guard Fordwin", guardTalk)
 
 create_trigger_by_name("Casern south gate", guardDenyExit)
+
+being_set_base_attribute(recruit, 16, 1)
+local patrol = Patrol:new("Guard Fordwin")
+patrol:assignBeing(guard)
+schedule_every(10, function() patrol:logic() end)
