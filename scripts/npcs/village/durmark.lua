@@ -168,7 +168,7 @@ local function init()
         end
     end
     assert("No \"Bee trigger\" found")
-end 
+end
 init()
 
 local function beeRemove()
@@ -204,3 +204,8 @@ end
 
 local durmark = create_npc_by_name("Durmark", durmarkTalk)
 local bee_trigger = create_trigger_by_name("Bee trigger", beeTrigger)
+
+being_set_base_attribute(durmark, 16, 1)
+local patrol = Patrol:new("Durmark")
+patrol:assignBeing(durmark)
+schedule_every(10, function() patrol:logic() end)

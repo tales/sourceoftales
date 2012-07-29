@@ -217,7 +217,33 @@
    eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgbQHwAB
   </data>
  </layer>
- <objectgroup name="Waypoints Veteran Godwin" width="198" height="150" visible="0">
+ <objectgroup name="Waypoints Rowan" width="198" height="150">
+  <object name="Rowan 1" type="WAYPOINT" x="4458" y="1647" width="32" height="32"/>
+  <object name="Rowan 2" type="WAYPOINT" x="4550" y="1693" width="32" height="32"/>
+  <object name="Rowan 3" type="WAYPOINT" x="4594" y="1570" width="32" height="32"/>
+  <object name="Rowan 4" type="WAYPOINT" x="4525" y="1513" width="32" height="32"/>
+  <object name="Rowan 5" type="WAYPOINT" x="4504" y="1551" width="32" height="32"/>
+  <object name="Rowan 6" type="WAYPOINT" x="4487" y="1511" width="32" height="32"/>
+  <object name="Rowan 7" type="WAYPOINT" x="4532" y="1589" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Waypoints Durmark" width="198" height="150">
+  <object name="Durmark 1" type="WAYPOINT" x="4648" y="2756" width="32" height="32"/>
+  <object name="Durmark 2" type="WAYPOINT" x="4647" y="2769" width="32" height="32"/>
+  <object name="Durmark 3" type="WAYPOINT" x="4642" y="2784" width="32" height="32"/>
+  <object name="Durmark 4" type="WAYPOINT" x="4608" y="2688" width="32" height="32"/>
+  <object name="Durmark 5" type="WAYPOINT" x="4616" y="2704" width="32" height="32"/>
+  <object name="Durmark 6" type="WAYPOINT" x="4631" y="2721" width="32" height="32"/>
+  <object name="Durmark 7" type="WAYPOINT" x="4627" y="2747" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Waypoints Francis" width="198" height="150">
+  <object name="Francis 1" type="WAYPOINT" x="4875" y="3449" width="32" height="32"/>
+  <object name="Francis 2" type="WAYPOINT" x="4915" y="3402" width="32" height="32"/>
+  <object name="Francis 3" type="WAYPOINT" x="4912" y="3441" width="32" height="32"/>
+  <object name="Francis 4" type="WAYPOINT" x="4906" y="3456" width="32" height="32"/>
+  <object name="Francis 5" type="WAYPOINT" x="4881" y="3426" width="32" height="32"/>
+  <object name="Francis 6" type="WAYPOINT" x="4866" y="3398" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Waypoints Veteran Godwin" width="198" height="150">
   <object name="Veteran Godwin 1" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
   <object name="Veteran Godwin 2" type="WAYPOINT" x="2176" y="1376" width="32" height="32"/>
   <object name="Veteran Godwin 3" type="WAYPOINT" x="2112" y="1472" width="32" height="32"/>
