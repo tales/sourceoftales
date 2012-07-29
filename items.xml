@@ -370,7 +370,7 @@
     </item>
     <item id="40" max-per-slot="255" name="Pumpkin"
         description="A Pumpkin"
-        image="pumpink.png"
+        image="pumpkin.png"
         value="15">
     </item>
     <item id="41" max-per-slot="255" name="Pumpkin with Face"
