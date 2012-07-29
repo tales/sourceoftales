@@ -56,5 +56,7 @@ atinit(function()
     require "scripts/npcs/village/durmark"
     require "scripts/npcs/village/eva"
     require "scripts/npcs/village/mary"
+    require "scripts/npcs/village/oliver"
+    require "scripts/npcs/village/rowan"
 
 end)
