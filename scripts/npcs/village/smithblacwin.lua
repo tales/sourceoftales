@@ -61,7 +61,11 @@ local function smithTalk(npc, ch)
                                     "Nevermind."}
                 local res = npc_choice(npc, ch, ask_shop)
                 if res == 1 then
-                    say("TODO: shop")
+                    npc_trade(npc, ch, false, {
+                        { "Iron Helmet", 10, 1800 },
+                        { "Iron Armor", 10, 6000 },
+                        { "Iron Gloves", 10, 1000 },
+                        { "Chain Hood", 10, 1600 } })
                     -- those stuff isn't intended to be sold, but he does that to boost his pay
                 else
                     say("Hmph.")

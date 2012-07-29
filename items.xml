@@ -489,4 +489,19 @@
         name="Unholy Crystals"
         image="CrystalsPurple.png">
     </item>
+    <item id="52" max-per-slot="1" name="Chain Hood"
+        description="A protective chain hood."
+        image="helmet_iron.png"
+        value="90">
+        <sprite>equipment/HEAD_chain_armor_hood.xml</sprite>
+        <equip>
+            <slot type="head" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <modifier attribute="def1" value="8" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-200" />
+        </effect>
+    </item>
 </items>
