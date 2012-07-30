@@ -51,7 +51,7 @@
  </layer>
  <layer name="Decor" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYKA+8GFkYPAF4ocsCDY2EAgUDwLitywINggkoKkPA/LDGTHZSTjMRQcgddOQ1B5hwVQDEksBqslAUncCizqQWDpQTQ2RdiODOKCeTGYGhiwgjkfTb8NEnBkBRKqDAQBhfg52
+   eJxjYKA+8GFkYPAF4ocsCDY2EAgUDwLitywINggkoKkPA/LDGTHZSTjMRQcgddOQ1B4B2mcCZZsjiaUA1WQgqTvBgmkWSCwdqKaGSLuRQRxQTyYzA0MWEMej6bdhIs6MACLVwQAAwL4O4Q==
   </data>
  </layer>
  <layer name="Decor2" width="10" height="12">
@@ -71,10 +71,10 @@
  </layer>
  <layer name="Over2" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgaQA2IbYFYE8ovwKFOF0obEDDPBEqbU+guUkAhDsyAROMC+VDakEQ7AU2NBXw=
+   eJxjYBgaQA2IbYFYE8ovwKFOF0ob0NxFpINCHJgBicYF8qG0IYl2AgDuPgUR
   </data>
  </layer>
- <layer name="Over3" width="10" height="12">
+ <layer name="Over3" width="10" height="12" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFAwkyoLQWjcwHADdQAJM=
   </data>
