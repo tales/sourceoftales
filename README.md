@@ -46,7 +46,9 @@ and a current Debian testing as operating systems.
     # get the actual lpc entry
     git clone git://github.com/mana/lpc2012.git
     cd lpc2012
+    # prepare the configuration for the servers.
     cp manaserv.xml.example manaserv.xml
+    # create a database which holds all useraccounts.
     cat ../manaserv/src/sql/sqlite/createTables.sql | sqlite3 mana.db
     cd ..
 
@@ -56,6 +58,7 @@ and a current Debian testing as operating systems.
     screen -d -m manaserv-account
     sleep 5
     screen -d -m manaserv-game
+    sleep 5
     cd ..
 
     # The client lets you actually play
@@ -65,5 +68,29 @@ and a current Debian testing as operating systems.
     # the last parameter is a path to a branding file, which can be
     # omitted, but it pre-dials the connection to the localhost server.
     src/mana -u -d ../lpc2012 docs/lpc2012.mana
+
+Now you should see the mana client started.
+
+It is ready to register an account at your local server, so click on
+'Register' and provide a username, password and an email address.
+The emailaddress is not needed for local testing, but it is intended
+to be used for password reset, but unfortunatly you need to provide an
+email address which looks reasonable.
+
+After registering, you'll be redirected to the character creation
+screen, which lets you create a character and
+then exploring the world we created as the lpc2012 entry.
+
+Once you are done playing, you can quit the client by pressing ESCape
+and confirming the quit.
+
+The game servers keep running, so you can later join again. In case you
+want to stop them as well:
+
+    killall manaserv-game
+    sleep5
+    killall manaserv-account
+
+
 
 
