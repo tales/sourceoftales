@@ -29,8 +29,11 @@
 -- first time. This can, for example, be used to give starting equipment
 -- to the character and/or initialize a tutorial quest.
 local function on_chr_birth(ch)
-    -- this message is shown on first login.
-    chat_message(ch, "And so your adventure begins...")
+    local spawn_items = { "Simple shirt", "Pants", "Boots" }
+    for _, item in ipairs(spawn_items) do
+        chr_inv_change(ch, item, 1)
+        chr_equip_item(ch, item)
+    end
 end
 
 
