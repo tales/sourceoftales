@@ -1,6 +1,6 @@
 --[[
 
-  Goldenfields Inn.
+  Arbert
 
   Copyright (C) 2012 Jessica Tölke
 
@@ -19,12 +19,14 @@
 
 --]]
 
-atinit(function()
-    require "scripts/functions/npchelper"
-    parse_npcs_from_map()
+local function manTalk(npc, ch)
+    local function say(message)
+        npc_message(npc, ch, message)
+    end
 
-    require "scripts/npcs/pub/arbert"
-    require "scripts/npcs/pub/innkeepernorman"
-    require "scripts/npcs/pub/borin"
+    say("Do you see Borin over there? He's always drunk...")
+    say("One day, he was so drunk that he fell into the pond in front of the pub's entrance when he left.")
+    say("That was funny, I tell you! Well, he nearly drowned, but Norman was able to pull him out soon enough.")
+end
 
-end)
+local man = create_npc_by_name("Arbert", manTalk)

@@ -545,6 +545,12 @@
     <property name="sprite_id" value="13"/>
    </properties>
   </object>
+  <object name="Thea" type="NPC_POSITION" x="4544" y="4032" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="10"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawns" width="198" height="150">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1088" width="448" height="320">

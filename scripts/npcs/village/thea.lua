@@ -1,6 +1,6 @@
 --[[
 
-  Goldenfields Inn.
+  Thea
 
   Copyright (C) 2012 Jessica Tölke
 
@@ -19,12 +19,15 @@
 
 --]]
 
-atinit(function()
-    require "scripts/functions/npchelper"
-    parse_npcs_from_map()
+local function womanTalk(npc, ch)
+    local function say(message)
+        npc_message(npc, ch, message)
+    end
 
-    require "scripts/npcs/pub/arbert"
-    require "scripts/npcs/pub/innkeepernorman"
-    require "scripts/npcs/pub/borin"
+    say("I'm really worried about all these boys out there in the forest.")
+    say("Fighting against the king is a rather serious thing. I wonder if they're aware what danger they put "..
+        "themselves into.")
 
-end)
+end
+
+local woman = create_npc_by_name("Thea", womanTalk)

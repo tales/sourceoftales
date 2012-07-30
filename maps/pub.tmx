@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="16" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -91,6 +90,12 @@
    </properties>
   </object>
   <object name="Borin" type="NPC_POSITION" x="224" y="128" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
+  <object name="Arbert" type="NPC_POSITION" x="448" y="160" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
     <property name="sprite_id" value="8"/>
