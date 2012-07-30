@@ -61,13 +61,57 @@ local function instructorTalk(npc, ch)
         end
     end
 
+    local function aboutAttributes()
+        say("Attributes define what you are!")
+        say("Everybody has the attributes Strenght, Agility, Vitality, " ..
+            "Intelligence, Dexterity and Willpower")
+        say("Strength affects how strong you can strike.")
+        say("Agility how fast you can move. The higher the value the higher the " ..
+            "chance to dodge an enemy attack is.")
+        say("Vitality is how good you heal and how much damage you can take.")
+        say("Intelligence affects how fast your spells regenerate.")
+        say("High values in Dexterity help you to hit enemys more often.")
+        say("And finally Willpower. It will make your spells more effective by " ..
+            "giving them a higher range or greater effects.")
+        say("As soon you raise a level you can distribute points to attributes " ..
+            "in the status window.")
+    end
+
+    local function aboutSkills()
+        say("TODO")
+    end
+
+    local function aboutSpecials()
+        say("TODO")
+    end
+
+    local function aboutQuestions()
+        say("Do you have any further questions?")
+        local choices = {
+            "What are attributes?",
+            "What are skills?",
+            "What are specials?",
+            "No that was all."
+        }
+        local res = npc_choice(npc, ch, choices)
+        if res == 1 then
+            aboutAttributes()
+            aboutQuestions()
+        elseif res == 2 then
+            aboutSkills()
+            aboutQuestions()
+        elseif res == 3 then
+            aboutSpecials()
+            aboutQuestions()
+        end
+    end
+
     tutorial()
 
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("Do you have any further questions?")
-        say("TODO: add some topics, e.g. attributes, skills etc")
+        aboutQuestions()
     elseif reputation > REPUTATION_RELUCTANT then
         say("You shouldn't be here until you recompensed for your misconduct. Talk to Magistrate Eustace in Goldenfields.")
         reputation = reputation - 1
