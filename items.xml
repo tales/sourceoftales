@@ -315,7 +315,7 @@
     </item>
     <item id="36" max-per-slot="1" name="Robe Hood"
         description="Robe Hood."
-        image="helmet-leather.png"
+        image="robehead.png"
         value="15">
         <equip>
             <slot type="head" required="1" />
@@ -330,7 +330,7 @@
     </item>
     <item id="37" max-per-slot="1" name="Robe Shirt"
         description="Robe Shirt."
-        image="helmet-leather.png"
+        image="robeshirt.png"
         value="15">
         <equip>
             <slot type="torso" required="1" />
@@ -345,7 +345,7 @@
     </item>
     <item id="38" max-per-slot="1" name="Robe Skirt"
         description="Robe Skirt."
-        image="helmet-leather.png"
+        image="robeskirt.png"
         value="15">
         <equip>
             <slot type="legs" required="1" />
