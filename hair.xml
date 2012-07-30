@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <colors>
-  <color id="0" value="#ff5555" name="red"/>
-  <color id="1" value="#55ff55" name="green"/>
-  <color id="2" value="#5555ff" name="blue"/>
+  <color id="0" value="#e43c3c,e43c3c,e4b7b7,ffffff" name="red"/>
+  <color id="1" value="#191e24,254237,31774b,3cb85f,85f57c" name="green"/>
+  <color id="2" value="#5a72dd" name="blue"/>
   <color id="3" value="#ffffff" name="white"/>
+  <color id="3" value="#cee340" name="yellowgreen"/>
 </colors>
