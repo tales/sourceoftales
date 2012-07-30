@@ -88,7 +88,7 @@
   <object name="exit" type="WARP" x="224" y="352" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="3760"/>
+    <property name="DEST_X" value="4400"/>
     <property name="DEST_Y" value="1744"/>
    </properties>
   </object>

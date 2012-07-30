@@ -661,14 +661,14 @@
   <object name="mountain ladder down" type="WARP" x="4896" y="352" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="4272"/>
+    <property name="DEST_X" value="4912"/>
     <property name="DEST_Y" value="464"/>
    </properties>
   </object>
   <object name="mountain ladder up" type="WARP" x="4896" y="416" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="4272"/>
+    <property name="DEST_X" value="4912"/>
     <property name="DEST_Y" value="336"/>
    </properties>
   </object>

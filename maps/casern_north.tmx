@@ -153,7 +153,7 @@
   <object name="To outside" type="WARP" x="1408" y="512" width="96" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="1664"/>
+    <property name="DEST_X" value="2288"/>
     <property name="DEST_Y" value="1072"/>
    </properties>
   </object>
