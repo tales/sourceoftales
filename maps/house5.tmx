@@ -80,7 +80,7 @@
    eJzzZmRg8B5iGARwieOSI0cfqYBSffjcSEgOn79w+Y9YfcTqJVcfuf7DZu9ICRcAiCkzXQ==
   </data>
  </layer>
- <objectgroup name="Wraps" width="14" height="17">
+ <objectgroup name="Warps" width="14" height="17">
   <object name="exit" type="WARP" x="288" y="512" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>

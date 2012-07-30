@@ -104,7 +104,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Wraps" width="21" height="16">
+ <objectgroup name="Warps" width="21" height="16">
   <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
