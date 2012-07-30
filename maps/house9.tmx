@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="19" height="16" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
@@ -120,5 +121,27 @@
     <property name="FILENAME" value="scripts/maps/house9.lua"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Waypoints" width="19" height="16">
+  <object name="Lady Primeveire 1" type="WAYPOINT" x="128" y="96" width="32" height="32"/>
+  <object name="Lady Primeveire 2" type="WAYPOINT" x="160" y="160" width="32" height="32"/>
+  <object name="Lady Primeveire 3" type="WAYPOINT" x="32" y="128" width="32" height="32"/>
+  <object name="Lady Primeveire 4" type="WAYPOINT" x="96" y="192" width="32" height="32"/>
+  <object name="Lady Primeveire 5" type="WAYPOINT" x="32" y="96" width="32" height="32"/>
+  <object name="Lady Primeveire 6" type="WAYPOINT" x="64" y="192" width="32" height="32"/>
+  <object name="Lady Primeveire 7" type="WAYPOINT" x="160" y="128" width="32" height="32"/>
+  <object name="Lady Primeveire 8" type="WAYPOINT" x="128" y="192" width="32" height="32"/>
+  <object name="Lady Primeveire 9" type="WAYPOINT" x="96" y="160" width="32" height="32"/>
+  <object name="Lady Primeveire 10" type="WAYPOINT" x="160" y="192" width="32" height="32"/>
+  <object name="Lady Primeveire 11" type="WAYPOINT" x="64" y="160" width="32" height="32"/>
+  <object name="Maid Golda 1" type="WAYPOINT" x="352" y="96" width="32" height="32"/>
+  <object name="Maid Golda 2" type="WAYPOINT" x="224" y="96" width="32" height="32"/>
+  <object name="Maid Golda 3" type="WAYPOINT" x="352" y="160" width="32" height="32"/>
+  <object name="Maid Golda 4" type="WAYPOINT" x="288" y="96" width="32" height="32"/>
+  <object name="Maid Golda 5" type="WAYPOINT" x="320" y="128" width="32" height="32"/>
+  <object name="Maid Golda 6" type="WAYPOINT" x="288" y="160" width="32" height="32"/>
+  <object name="Magistrate Eustace 1" type="WAYPOINT" x="416" y="320" width="32" height="32"/>
+  <object name="Magistrate Eustace 2" type="WAYPOINT" x="256" y="320" width="32" height="32"/>
+  <object name="Magistrate Eustace 3" type="WAYPOINT" x="384" y="384" width="32" height="32"/>
  </objectgroup>
 </map>

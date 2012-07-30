@@ -23,6 +23,8 @@ atinit(function()
     require "scripts/functions/npchelper"
     parse_npcs_from_map()
 
+    require "scripts/functions/guardpatrol"
+
     require "scripts/npcs/house9/ladyprimeveire"
     require "scripts/npcs/house9/magistrateeustace"
     require "scripts/npcs/house9/maidgolda"

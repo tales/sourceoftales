@@ -30,3 +30,8 @@ local function maidTalk(npc, ch)
 end
 
 local maid = create_npc_by_name("Maid Golda", maidTalk)
+
+being_set_base_attribute(maid, 16, 1)
+local patrol = Patrol:new("Maid Golda")
+patrol:assignBeing(maid)
+schedule_every(11, function() patrol:logic() end)
