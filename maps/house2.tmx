@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="14" height="12" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -108,5 +109,15 @@
     <property name="FILENAME" value="scripts/maps/house2.lua"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Waypoints" width="14" height="12">
+  <object name="Widow Isabella 1" type="WAYPOINT" x="224" y="160" width="32" height="32"/>
+  <object name="Widow Isabella 2" type="WAYPOINT" x="224" y="224" width="32" height="32"/>
+  <object name="Widow Isabella 3" type="WAYPOINT" x="128" y="224" width="32" height="32"/>
+  <object name="Widow Isabella 4" type="WAYPOINT" x="64" y="96" width="32" height="32"/>
+  <object name="Widow Isabella 5" type="WAYPOINT" x="96" y="224" width="32" height="32"/>
+  <object name="Widow Isabella 6" type="WAYPOINT" x="96" y="96" width="32" height="32"/>
+  <object name="Widow Isabella 7" type="WAYPOINT" x="160" y="160" width="32" height="32"/>
+  <object name="Widow Isabella 8" type="WAYPOINT" x="160" y="256" width="32" height="32"/>
  </objectgroup>
 </map>
