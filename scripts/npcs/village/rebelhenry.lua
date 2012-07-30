@@ -48,6 +48,8 @@ local function rebelTalk(npc, ch)
                     soldier_reputation = soldier_reputation - 5
                     chr_set_quest(ch, "soldier_reputation", tostring(reputation))
                     chr_set_quest(ch, "rebel_supplies", "done")
+                    chr_inv_change(ch, "Robe Hood", 1)
+                    chr_inv_change(ch, "Robe Shirt", 1)
                     say("Well done.")
                 else
                     say("There's something missing. Don't think you can outsmart us. Now you either go and get the "..
