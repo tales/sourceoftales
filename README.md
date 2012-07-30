@@ -27,7 +27,7 @@ The script is assuming a ubuntu/debian based system:
     cmake .
     make
     mkdir -p ~/bin
-    PATH="$HOME/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
     cp src/manaserv-account ~/bin
     cp src/manaserv-game ~/bin
     cd ..
@@ -47,8 +47,16 @@ The script is assuming a ubuntu/debian based system:
     cat ../manaserv/src/sql/sqlite/createTables.sql | sqlite3 mana.db
     cd ..
 
-    # now start the game:
+    # now start the game servers:
+    cd lpc2012
+    screen -d -m manaserv-account
+    screen -d -m manaserv-game
+    cd ..
+
+    # The client lets you actually play
     cd mana
+    # -u tell the mana client software to not download the game content,
+    # but use the content as provided in the -d directory
     src/mana -u -d ../lpc2012
 
 
