@@ -51,7 +51,7 @@ local function alcovesSpawn(being)
 end
 
 local function shrinequestSpawn(being)
-    if not being_type(being) == TYPE_CHARACTER then
+    if being_type(being) ~= TYPE_CHARACTER then
         return
     end
 

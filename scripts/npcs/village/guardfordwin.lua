@@ -55,7 +55,7 @@ local function guardTalk(npc, ch)
 end
 
 local function guardDenyExit(ch)
-    if not being_type(ch) == TYPE_CHARACTER then
+    if being_type(ch) ~= TYPE_CHARACTER then
         return
     end
 
