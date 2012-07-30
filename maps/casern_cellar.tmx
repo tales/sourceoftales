@@ -99,4 +99,48 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup name="Spawns" width="198" height="150">
+  <object name="beetle spawn" type="SPAWN" x="32" y="320" width="512" height="128">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="416" y="128" width="256" height="128">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="192" y="704" width="1120" height="128">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="736" y="384" width="256" height="224">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="1184" y="96" width="128" height="608">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="832" y="224" width="288" height="96">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
