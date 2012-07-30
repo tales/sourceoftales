@@ -15,9 +15,7 @@
  <tileset firstgid="395" name="cabinets" tilewidth="32" tileheight="32">
   <image source="../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
- <tileset firstgid="473" name="castle_lightsources" tilewidth="32" tileheight="32">
-  <image source="../tiles/castle_lightsources.png" width="160" height="320"/>
- </tileset>
+ <tileset firstgid="473" source="../tiles/castle_lightsources_small.tsx"/>
  <tileset firstgid="523" name="inside" tilewidth="32" tileheight="32">
   <image source="../tiles/inside.png" width="320" height="320"/>
  </tileset>

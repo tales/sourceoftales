@@ -18,9 +18,7 @@
  <tileset firstgid="335" name="country" tilewidth="32" tileheight="32">
   <image source="../tiles/country.png" width="160" height="128"/>
  </tileset>
- <tileset firstgid="355" name="castle_lightsources" tilewidth="32" tileheight="32">
-  <image source="../tiles/castle_lightsources.png" width="160" height="320"/>
- </tileset>
+ <tileset firstgid="355" source="../tiles/castle_lightsources_small.tsx"/>
  <tileset firstgid="405" name="farming_fishing" tilewidth="32" tileheight="32">
   <image source="../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
