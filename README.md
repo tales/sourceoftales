@@ -51,7 +51,9 @@ The script is assuming a ubuntu/debian based system:
 
     # now start the game servers:
     cd lpc2012
+    # run the servers in the background, so don't block the script here.
     screen -d -m manaserv-account
+    wait 5
     screen -d -m manaserv-game
     cd ..
 
