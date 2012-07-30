@@ -419,7 +419,7 @@
         value="100">
         <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
         <equip>
-            <slot type="arms" required="1" />
+            <slot type="necklace" required="1" />
         </equip>
         <effect trigger="equip">
             <modifier attribute="def1" value="5" />
