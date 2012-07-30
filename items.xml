@@ -74,7 +74,7 @@
 
     <item id="1" max-per-slot="1" name="Simple shirt"
         description="A scabby shirt."
-        image="tomato.png"
+        image="shirt_white.png"
         value="5">
         <equip>
             <slot type="torso" required="1" />
@@ -90,7 +90,7 @@
     </item>
     <item id="2" max-per-slot="1" name="Pants"
         description="Simple pants."
-        image="banana.png"
+        image="pants_greenish.png"
         value="10">
         <equip>
             <slot type="legs" required="1" />
