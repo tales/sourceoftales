@@ -61,19 +61,19 @@
    eJxjYBgF1ADqeORUSDRLD4+cNolmmeKRMyLRrFEw8ICZEYJHAQQAAEXTARQ=
   </data>
  </layer>
- <layer name="Fringe" width="19" height="16">
+ <layer name="Fringe" width="19" height="16" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFyGAjIwPDasaBdsUoGGjAzAjBo2BwAwAaJwFn
+   eJxjYBgFo2AUjIKhCQAEwAAB
   </data>
  </layer>
  <layer name="Over" width="19" height="16">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFyGAJIwNDLyN5elWRsDUSmxygg4QZ0Nj0APk4MC4/gnAGmloYeIID4/KjDha19ASvgJifEYJf09lueoEMJIyNTwpAjyd6xhsAu98cGQ==
+   eJxjYBgFyGAjIwPDakby9KoiYWskNjlABwkzoLHpAfJxYFx+BOEMNLUw8AQHxuVHHSxq6Q2YGSF4uIIMJIyNTwpAjyd6xhsALTEaVw==
   </data>
  </layer>
  <layer name="Over2" width="19" height="16">
   <data encoding="base64" compression="zlib">
-   eJxjYBgF1AYqUFqdCmZpQ2k9KphFCsjAgWEAmx/zcaglBLD5UZ8Ux44CkkE+EsbGHyoAAE9UCCk=
+   eJxjYBgFyGAJIwNDLyNlZqhAaXWKXcPAoA2l9ahgFikgAweGAWx+zMehlhDA5kd9UhxLZfAKiPkZIfj1ALqDliAfCWPjDxUAAPNpC1E=
   </data>
  </layer>
  <layer name="Over3" width="19" height="16">
