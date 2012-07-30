@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="42" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -52,7 +53,7 @@
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDcMBjNavo2AUjAJkAACOiFk/
+   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDfjAYGvv4AKj9esoGAWjABkAAPc0XnY=
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
@@ -67,7 +68,7 @@
  </layer>
  <layer name="Fringe" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztxjERADAIBLAf8C+wmMEBc49LpiQAAABw06ukaz/AbwZ8XAU4
+   eJztwTEBAAAAwqD1T20ND6AAAAAAgBcDE7AAAQ==
   </data>
  </layer>
  <layer name="Over" width="42" height="30">
