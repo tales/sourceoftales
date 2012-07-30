@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="198" height="150" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Music" value="h_theme.ogg"/>
+ </properties>
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
   <image source="../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
  </tileset>
