@@ -46,7 +46,7 @@ local function womanTalk(npc, ch)
                     if pumpkin > 0 then
                         chr_inv_change(ch, "Pumpkin", -1)
                         chr_set_quest(ch, "goldenfields_widow", "done")
-                        -- TODO: reward, maybe some piece of equipment?
+                        chr_money_change(ch, 100)
                         say("Oh, how kind of you! I'm going to bake pumpkin bread, just like in the old times. Thank you!")
                     else
                         say("Really? Oh, but where is it? Don't make fun of a sad old woman!")
