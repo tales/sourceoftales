@@ -716,17 +716,17 @@
   <object name="Rebel Henry 10" type="WAYPOINT" x="395" y="2739" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Waypoints Tristan" width="198" height="150">
-  <object name="Rebel Tristan 1" type="WAYPOINT" x="374" y="2537" width="32" height="32"/>
-  <object name="Rebel Tristan 2" type="WAYPOINT" x="386" y="2472" width="32" height="32"/>
-  <object name="Rebel Tristan 3" type="WAYPOINT" x="256" y="2429" width="32" height="32"/>
+  <object name="Rebel Tristan 1" type="WAYPOINT" x="385" y="2550" width="32" height="32"/>
+  <object name="Rebel Tristan 2" type="WAYPOINT" x="384" y="2464" width="32" height="32"/>
+  <object name="Rebel Tristan 3" type="WAYPOINT" x="250" y="2424" width="32" height="32"/>
   <object name="Rebel Tristan 4" type="WAYPOINT" x="319" y="2483" width="32" height="32"/>
   <object name="Rebel Tristan 5" type="WAYPOINT" x="222" y="2506" width="32" height="32"/>
   <object name="Rebel Tristan 6" type="WAYPOINT" x="318" y="2577" width="32" height="32"/>
   <object name="Rebel Tristan 7" type="WAYPOINT" x="221" y="2543" width="32" height="32"/>
   <object name="Rebel Tristan 8" type="WAYPOINT" x="332" y="2541" width="32" height="32"/>
-  <object name="Rebel Tristan 9" type="WAYPOINT" x="256" y="2481" width="32" height="32"/>
+  <object name="Rebel Tristan 9" type="WAYPOINT" x="260" y="2484" width="32" height="32"/>
   <object name="Rebel Tristan 10" type="WAYPOINT" x="381" y="2505" width="32" height="32"/>
-  <object name="Rebel Tristan 11" type="WAYPOINT" x="286" y="2444" width="32" height="32"/>
+  <object name="Rebel Tristan 11" type="WAYPOINT" x="289" y="2448" width="32" height="32"/>
   <object name="Rebel Tristan 12" type="WAYPOINT" x="386" y="2435" width="32" height="32"/>
   <object name="Rebel Tristan 13" type="WAYPOINT" x="301" y="2505" width="32" height="32"/>
  </objectgroup>
@@ -734,7 +734,7 @@
   <object name="Rebel Philip 1" type="WAYPOINT" x="385" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 2" type="WAYPOINT" x="386" y="2310" width="32" height="32"/>
   <object name="Rebel Philip 3" type="WAYPOINT" x="275" y="2277" width="32" height="32"/>
-  <object name="Rebel Philip 4" type="WAYPOINT" x="359" y="2273" width="32" height="32"/>
+  <object name="Rebel Philip 4" type="WAYPOINT" x="354" y="2280" width="32" height="32"/>
   <object name="Rebel Philip 5" type="WAYPOINT" x="297" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 6" type="WAYPOINT" x="331" y="2318" width="32" height="32"/>
  </objectgroup>

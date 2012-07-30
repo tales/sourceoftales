@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="89" height="68" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -177,5 +178,30 @@
     <property name="DEST_Y" value="144"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Waypoints" width="89" height="68">
+  <object name="Chef Odo 1" type="WAYPOINT" x="2560" y="256" width="32" height="32"/>
+  <object name="Chef Odo 2" type="WAYPOINT" x="2592" y="256" width="32" height="32"/>
+  <object name="Chef Odo 3" type="WAYPOINT" x="2560" y="320" width="32" height="32"/>
+  <object name="Chef Odo 4" type="WAYPOINT" x="2592" y="288" width="32" height="32"/>
+  <object name="Chef Odo 5" type="WAYPOINT" x="2560" y="295" width="18" height="17"/>
+  <object name="Scullion John 1" type="WAYPOINT" x="2752" y="320" width="32" height="32"/>
+  <object name="Scullion John 2" type="WAYPOINT" x="2656" y="224" width="32" height="32"/>
+  <object name="Scullion John 3" type="WAYPOINT" x="2496" y="224" width="32" height="32"/>
+  <object name="Scullion John 4" type="WAYPOINT" x="2464" y="192" width="32" height="32"/>
+  <object name="Scullion John 5" type="WAYPOINT" x="2464" y="320" width="32" height="32"/>
+  <object name="Scullion John 6" type="WAYPOINT" x="2592" y="192" width="32" height="32"/>
+  <object name="Scullion John 7" type="WAYPOINT" x="2688" y="224" width="32" height="32"/>
+  <object name="Scullion John 8" type="WAYPOINT" x="2752" y="352" width="32" height="32"/>
+  <object name="Recruit Alan 1" type="WAYPOINT" x="2199" y="227" width="32" height="32"/>
+  <object name="Recruit Alan 2" type="WAYPOINT" x="2208" y="384" width="32" height="32"/>
+  <object name="Recruit Alan 3" type="WAYPOINT" x="2080" y="320" width="32" height="32"/>
+  <object name="Recruit Alan 4" type="WAYPOINT" x="2144" y="256" width="32" height="32"/>
+  <object name="Recruit Alan 5" type="WAYPOINT" x="2176" y="320" width="32" height="32"/>
+  <object name="Recruit Jordan 1" type="WAYPOINT" x="2080" y="224" width="32" height="32"/>
+  <object name="Recruit Jordan 2" type="WAYPOINT" x="2016" y="384" width="32" height="32"/>
+  <object name="Recruit Jordan 3" type="WAYPOINT" x="1984" y="256" width="32" height="32"/>
+  <object name="Recruit Jordan 4" type="WAYPOINT" x="1984" y="160" width="32" height="32"/>
+  <object name="Recruit Jordan 5" type="WAYPOINT" x="2048" y="192" width="32" height="32"/>
  </objectgroup>
 </map>
