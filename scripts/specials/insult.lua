@@ -1,6 +1,6 @@
 --[[
 
- Special action script file
+  Script file of the insult spell
 
   Copyright (C) 2012 Erik Schilling
 
@@ -19,9 +19,23 @@
 
 --]]
 
-require "scripts/specials/firelion"
-require "scripts/specials/earthquake"
-require "scripts/specials/lightning"
-require "scripts/specials/heal"
-require "scripts/specials/snakebite"
-require "scripts/specials/insult"
+-- Constants related to the spell
+local skill_name = "Magic_Insult"
+local range = 5 * TILESIZE
+local anger = 50
+
+local spell = get_special_info("Magic_Insult")
+spell:on_use(function(user, target, special_id)
+    local exp = chr_get_exp(user, skill_name)
+    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
+    local anger_mod = anger * factor
+
+    chr_set_special_mana(user, special_id, 0)
+
+    local beings = get_beings_in_circle(user, range)
+    for _, being in ipairs(beings) do
+        if being_type(being) == TYPE_MONSTER then
+            monster_change_anger(being, user, anger_mod)
+        end
+    end
+end)

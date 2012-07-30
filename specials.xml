@@ -15,7 +15,6 @@
             rechargeable="true"
             needed="100"
             rechargespeed="1"
-            icon="icons/spell_icetacle.png"
         />
         <special
             id="3"
@@ -31,7 +30,6 @@
             rechargeable="true"
             needed="10"
             rechargespeed="1"
-            icon="icons/spell_icetacle.png"
         />
         <special
             id="5"
@@ -40,6 +38,13 @@
             needed="10"
             rechargespeed="1"
             icon="icons/spell_snakebite.png"
+        />
+        <special
+            id="6"
+            name="Insult"
+            rechargeable="true"
+            needed="10"
+            rechargespeed="1"
         />
     </set>
 </specials>

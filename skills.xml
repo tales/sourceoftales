@@ -25,6 +25,7 @@
             icon="icons/spell_heal.png"/>
         <skill id="204" name="Snake Bite"
             icon="icons/spell_snakebite.png"/>
+        <skill id="206" name="Insult" />
     </set>
     <set name="Crafts">
         <skill id="300" name="Craft Example" />
