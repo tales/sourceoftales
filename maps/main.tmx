@@ -553,7 +553,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Spawns" width="198" height="150">
-  <object name="training dummy spawn" type="SPAWN" x="1440" y="1088" width="448" height="320">
+  <object name="training dummy spawn" type="SPAWN" x="1504" y="1184" width="352" height="192">
    <properties>
     <property name="max_beings" value="4"/>
     <property name="monster_id" value="1"/>
