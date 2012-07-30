@@ -94,15 +94,32 @@ local function priestessTalk(npc, ch)
         say("As I said, there are records about a similiar thing happening a long while ago... ah, if I'd only remember "..
             "what exactly it said. I read about it during my apprenticeship for priesthood.")
         say("I think you showed that you're worth the gods blessing, so I'm going to teach you how to use some of the "..
-            "powers they can grant us.")
-        chr_give_special(ch, "Magic_Fire Lion")
-        chr_give_special(ch, "Magic_Heal")
+            "powers they can grant us. Which god do you feel closest to?")
+        local choices = { "Ignis, the god of flames and warriors!",
+                        "Aquaria, the goddess of water and healing.",
+                        "The Third God, dedicated to death and earth." }
+        local res = npc_choice(npc, ch, choices)
         chr_set_quest(ch, "goldenfields_shrine", "getartifact")
-        say("TODO: explain how to use specials")
+        if res == 1 then
+            chr_give_special(ch, "Magic_Lightning")
+            chr_set_quest(ch, "magic", "fire")
+            say("Now you can ask Ignis to strike your enemy with lightning.")
+        elseif res == 2 then
+            chr_give_special(ch, "Magic_Heal")
+            chr_set_quest(ch, "magic", "water")
+            say("You now have the ability to heal your wounds with the aid of Aquaria.")
+        else
+            chr_give_special(ch, "Magic_Snake Bite")
+            chr_set_quest(ch, "magic", "earth")
+            say("Now you can call The Third God's servants to bite your enemy.")
+        end
+        say("To access your divine powers, press the button marked with a star. To use a spell, click on it. "..
+            "After you used it, you'll have to wait a while until you can ask your god for help again.")
+            --LATER: change when client has shortcuts
         say("I see you're a brave warrior. Can I ask you to help me once again, and explore the caves for some hint "..
             "that could help us to figure out what's behind this? It could be some kind of artifact, something "..
             "related to earth.")
-        say("It might be dangerous, but the spells I taught you should help you to protect yourself.")
+        say("It might be dangerous, but the spell I taught you should help you to protect yourself.")
     end
 
     local function getFollowUp()
@@ -123,10 +140,19 @@ local function priestessTalk(npc, ch)
                         "Mountains Watch north of here.")
                         -- LATER: remove the part about closed path after we added more content
                     say("Your journey might be dangerous, so I'll grant you further knowledge in the gods powers.")
-                    chr_give_special(ch, "Magic_Earthquake")
-                    chr_give_special(ch, "Magic_Lightning")
-                    chr_give_special(ch, "Magic_Snake Bite")
+                    local magic = chr_get_quest(ch, "magic")
                     chr_set_quest(ch, "goldenfields_shrine", "done")
+                    if magic == "fire" then
+                        chr_give_special(ch, "Magic_Fire Lion")
+                        say("You now have the ability to call a fiery lion upon your opponent.")
+                    elseif magic == "water" then
+                        chr_give_special(ch, "Magic_Insult")
+                        say("Use your new ability to get your opponents attention. You can use this to protect your "..
+                            "fellows.")
+                    elseif magic == "earth" then
+                        chr_give_special(ch, "Magic_Earthquake")
+                        say("Let the earth shake around you to inflict damage on your enemies.")
+                    end
                 else
                     say("Where is this artifact you were talking about? Show it to me.")
                 end
@@ -145,11 +171,10 @@ local function priestessTalk(npc, ch)
         if res == 2 then
             legends()
         end
-    elseif quest == "gotartifact" then
-        getFollowUp()
     elseif quest == "getartifact" then
         say("For the sake of the worlds balance, please explore where the skeletons in the cave come from. "..
             "We need to stop this!")
+        getFollowUp()
     elseif quest == "skeletonspotted" then -- TODO: check trigger position once the entrance is fixed
         getMagic()
     elseif quest == "started" then
