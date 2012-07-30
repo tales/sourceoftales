@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="14" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -16,46 +17,46 @@
   <image source="../tiles/victoria.png" width="352" height="192"/>
  </tileset>
  <tileset firstgid="573" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="480" height="288"/>
+  <image source="../tiles/mountains.png" width="416" height="288"/>
  </tileset>
- <tileset firstgid="708" name="shrine" tilewidth="32" tileheight="32">
+ <tileset firstgid="690" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
  </tileset>
- <tileset firstgid="820" name="buckets" tilewidth="32" tileheight="32">
+ <tileset firstgid="802" name="buckets" tilewidth="32" tileheight="32">
   <image source="../tiles/buckets.png" width="96" height="64"/>
  </tileset>
- <tileset firstgid="826" name="cabinets" tilewidth="32" tileheight="32">
+ <tileset firstgid="808" name="cabinets" tilewidth="32" tileheight="32">
   <image source="../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
- <tileset firstgid="904" name="shadow" tilewidth="32" tileheight="32">
+ <tileset firstgid="886" name="shadow" tilewidth="32" tileheight="32">
   <image source="../tiles/shadow.png" width="160" height="64"/>
  </tileset>
- <tileset firstgid="914" name="chests" tilewidth="32" tileheight="32">
+ <tileset firstgid="896" name="chests" tilewidth="32" tileheight="32">
   <image source="../tiles/chests.png" width="64" height="96"/>
  </tileset>
  <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJw7wMTAcGCAMDmAGnq1GUjHg1EvJf6lRC+p8auNxVxa6kU2g5K0SYp6AKbSVrU=
+   eJzbwMTAsGGAMDmAGnq1GUjHg1EvJf6lRC+p8auNxVxa6kU2g5K0SYp6AEMLUFU=
   </data>
  </layer>
  <layer name="Wall" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYKAMvGAiHcPAeybSMQx8YyIdj4JRQCsAABzLJLg=
+   eJxjYKAMXGMiHcPAXSbSMQw8YSIdj4JRQCsAALK7Ifo=
   </data>
  </layer>
  <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYKAPaGLCFJsGpacDsR8zA0MAEPswY6qbiEUvDyMDQzOUHQrUEwLEwUD8HyiuAlIP1bMASE8C0pOR9CowQuhJQPUxQBwFxBFALApUawXEYkj2LQPi5ST4Ex9YDcRrydS7H4gPkqn3MhBfJVPvcyB+SabekQQAFTYRkQ==
+   eJxjYKAPqGLCFJsGpacDsQ0zA4MdEFsxY6prx6KXh5GBoRnKdgbqcQJiRyD+DxRXAamH6pkCpCcB6clIehUYIXQDUL0XEHsAsRsQiwLVWgGxGJJ9y4B4OQn+xAdWA/FaMvXuB+KDZOq9DMRXydT7HIhfkql3JAEACHgQvw==
   </data>
  </layer>
  <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBheYAcQ7xxoR+AApszk67WgQO8ooD0AAFeSAeU=
+   eJxjYBheYAcQ7xxoR+AAyszk61WjQO8ooD0AABjaAcE=
   </data>
  </layer>
  <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBh+4AEQP6SR2fqM5Ot1Bur1YiZP7w4g3kmmvZpAe79T4O5RQBgAAKLEBRY=
+   eJxjYBh+4AEQP6SR2fqM5Ot1Buq1YCZP7w4g3kmmvZpAe79T4O5RQBgAAIGUBQQ=
   </data>
  </layer>
  <layer name="Fringe" width="15" height="14">
@@ -65,17 +66,17 @@
  </layer>
  <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFpAIeJuqZZcSMH+MDB5jwY2roRXYHMW7CZgc6mxS9IPtI1YtsBrmAVL0A4WoWdA==
+   eJxjYBgFpAIeJuqZpcCMH+MDG5jwY2roRXYHMW7CZgc6mxS9IPtI1YtsBrmAVL0Avw0T6g==
   </data>
  </layer>
  <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfaDKTp+81EwODAZl6Pw0zvdrM+LEhM269IHMJAUr0aiG5A9mthiSEgz4J9uGynxT7BgoAAMrEDKY=
+   eJxjYCAfiDOTp+8mEwODHJl6HwwzvZLM+LE8M269IHMJAUr0SiC5A9mt8iSEgz4J9uGynxT7BgoAAL74CkI=
   </data>
  </layer>
  <layer name="Over" width="15" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwleMw20CwgDTWYITY5bDZip65bBCgAQ5wI6
+   eJxjYBgFAwluMg20CwgDcWYITY5b5Zip65bBCgC3+AHy
   </data>
  </layer>
  <layer name="Collision" width="15" height="14">
@@ -86,9 +87,9 @@
  <objectgroup name="Warps" width="15" height="14">
   <object name="Warp outside" type="WARP" x="96" y="384" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="spawn"/>
-    <property name="DEST_X" value="1936"/>
-    <property name="DEST_Y" value="3184"/>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="2736"/>
+    <property name="DEST_Y" value="1520"/>
    </properties>
   </object>
   <object name="Warp up" type="WARP" x="352" y="96" width="32" height="32">
