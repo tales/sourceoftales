@@ -258,11 +258,6 @@
         name="Butterfly Cocon"
         image="temptest_in_the_aether/MP_Buterfly_cocoon.png">
     </item>
-    <item id="23"
-        max-per-slot="255"
-        name="Cereal"
-        image="temptest_in_the_aether/MP_Cereal.png">
-    </item>
     <item id="24"
         max-per-slot="255"
         name="Claws"
