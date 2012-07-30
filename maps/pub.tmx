@@ -108,6 +108,7 @@
     <property name="FILENAME" value="scripts/maps/pub.lua"/>
    </properties>
   </object>
+  <object name="Goldenfields Inn" type="COORDINATE" x="320" y="192" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Warps" width="21" height="16">
   <object name="exit" type="WARP" x="320" y="288" width="32" height="32">

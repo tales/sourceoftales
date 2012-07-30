@@ -24,6 +24,12 @@ local function magistrateTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
+    local function set_respawn()
+         -- LATER: find out how this can be done without hard coded numbers
+        local position = 1 .. " " .. 2272 .. " " .. 1472
+        chr_set_quest(ch, "respawn", position)
+    end
+
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
@@ -38,6 +44,7 @@ local function magistrateTalk(npc, ch)
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
             apply_amnesty(npc, ch, "soldier_reputation", "rebel_reputation")
+            set_respawn()
         else
             say("No? Well, we don't have any business with each other then.")
         end

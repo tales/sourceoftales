@@ -53,13 +53,22 @@ on_character_death_accept(function(ch)
     -- restores 1 hp (in case you want to be less nice)
     -- being_heal(ch, 1)
     -- warp the character to the respawn location
-    chr_warp(ch, 1, 815, 100)
+    local position = chr_try_get_quest(ch, "respawn")
+    if respawn == "" then
+        position = 1 .. " " .. 2272 .. " " .. 1472 -- LATER: find out how this can be done without hard coded numbers
+        chr_set_quest(ch, "respawn", position)
+    end
+    local map = tonumber(position:split(" ")[1])
+    local x = tonumber(position:split(" ")[2])
+    local y = tonumber(position:split(" ")[3])
+    chr_warp(ch, map, x, y)
 end)
 
 -- This function is called when a character logs into the game. This can,
 -- for example, be utilized for a message-of-the-day or for various
 -- handlings of offline processing mechanics.
 on_character_login(function(ch)
+    chr_request_quest(ch, "respawn", function(ch, var, value) end)
     chr_request_quest(ch, "tutorial_fight", function(ch, var, value) end)
     chr_request_quest(ch, "goldenfields_shrine", function(ch, var, value) end)
     chr_request_quest(ch, "firstlogin", function(ch, var, value)

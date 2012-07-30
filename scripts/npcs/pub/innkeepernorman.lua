@@ -24,6 +24,13 @@ local function innkeeperTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
+    local function set_respawn()
+        local x, y = get_named_coordinate("Goldenfields Inn")
+         -- LATER: find out how this can be done without hard coded numbers
+        local position = 8 .. " " .. x .. " " .. y -- 8 is map id
+        chr_set_quest(ch, "respawn", position)
+    end
+
     local function collect_taxes()
         local persuaded = false
         say("Hello. How can I help you?")
@@ -76,18 +83,25 @@ local function innkeeperTalk(npc, ch)
                             "Food Shank", REBEL_FOOD_FOODSHANK,
                             "Apple", REBEL_FOOD_APPLE)
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
+
             local reputation = read_reputation(ch, "rebel_reputation")
             reputation = reputation + 10
             chr_set_quest(ch, "rebel_reputation", tostring(reputation))
+
             local soldier_reputation = read_reputation(ch, "soldier_reputation")
             soldier_reputation = soldier_reputation - 10
             chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+
             chr_set_quest(ch, "rebel_supplies", "started")
+
+            set_respawn()
         else
             say("As you wish. How much do I have to pay?")
             local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40, GOLDENFIELDS_TAXES + 40, GOLDENFIELDS_TAXES)
             chr_money_change(ch, money)
+
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotmoney")
+
             local reputation = read_reputation(ch, "rebel_reputation")
             reputation = reputation - 10 + (GOLDENFIELDS_TAXES - money)/10
             chr_set_quest(ch, "rebel_reputation", tostring(reputation))
@@ -106,6 +120,7 @@ local function innkeeperTalk(npc, ch)
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
                 apply_amnesty(npc, ch, "rebel_reputation", "soldier_reputation")
+                set_respawn()
             else
                 say("Hm. As you wish.")
             end
