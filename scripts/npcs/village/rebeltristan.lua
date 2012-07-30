@@ -46,3 +46,9 @@ local function rebelTalk(npc, ch)
 end
 
 local rebel = create_npc_by_name("Rebel Tristan", rebelTalk)
+
+
+being_set_base_attribute(rebel, 16, 1)
+local patrol = Patrol:new("Rebel Tristan")
+patrol:assignBeing(rebel)
+schedule_every(4, function() patrol:logic() end)

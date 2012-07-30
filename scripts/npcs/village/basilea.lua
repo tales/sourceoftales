@@ -37,4 +37,4 @@ being_set_base_attribute(woman, 16, 1)
 
 local patrol = Patrol:new("Basilea")
 patrol:assignBeing(woman)
-schedule_every(10, function() patrol:logic() end)
+schedule_every(11, function() patrol:logic() end)

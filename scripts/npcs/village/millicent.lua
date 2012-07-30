@@ -30,3 +30,8 @@ local function womanTalk(npc, ch)
 end
 
 local woman = create_npc_by_name("Millicent", womanTalk)
+
+being_set_base_attribute(woman, 16, 1)
+local patrol = Patrol:new("Millicent")
+patrol:assignBeing(woman)
+schedule_every(11, function() patrol:logic() end)
