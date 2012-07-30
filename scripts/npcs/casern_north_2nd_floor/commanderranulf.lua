@@ -28,3 +28,9 @@ local function commanderTalk(npc, ch)
 end
 
 local commander = create_npc_by_name("Commander Ranulf", commanderTalk)
+
+
+being_set_base_attribute(commander, 16, 2)
+local patrol = Patrol:new("Commander Ranulf")
+patrol:assignBeing(commander)
+schedule_every(7, function() patrol:logic() end)
