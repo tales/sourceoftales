@@ -43,17 +43,17 @@
  </layer>
  <layer name="Decor" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJztlN0KgkAQhUefwDe3m/6hICoolEC67SW8CrrxUZwlpW2Y2R/YSmk/GJAz6+kcQwEiY+ORAMxTgEU3y/R9T3fqvK+Xj4fkI2kcDeo7rceedKK7xpBH8vLxkHwkjZKjPsEptbMX0sm046Dn68Tfg/OpmJwV47VCbW34jdzyPF24B/BQ3JicSlMZM007oHZ0fG5DJhP0DXbb4lwtHW37XyB1OmHW8wDzuiB1CkWBU3bXdaB3ycanO+mE+j70FOlzKN/s1GeQsrD3wOt/dkXv5HO/z9mpIf9spO9sJPJPtN4nRLw=
+   eJztlE0KwkAMhdOeoDevG/9BQVRQLEJx6yW6Etz0KM1AF3FIZiYyaovzQaC8pK95LVOAxNh4ZgDzHGDR1zJ/7ds9M6/10nhIPpLG0aK+Izn2Via71zr2kbw0HpKPpNmUqE+wKjJ7tTK5ehz2fJPpPTifmtmzZrxWqK0dzyg97zOERwQPw53Z02hmx4JoB9SOge9tyBSCvsFsW6ybJ6Ov/wukTCfc9TzAfUOQMsXiglX1102ks+Tj05kosf4PPr6Z6R3odw6FZtLcr5mdOs7lbKRnNpH4JzqhbkCo
   </data>
  </layer>
  <layer name="Decor2" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2Bwg4WMlJuxiYlyM/ABYtyI7IblaOonAuUmkejGvWT4qR+oZwKR+tDdSMgNa9HUzwHKzaVxuIPALKAds4m0B92NpILlQHtW0MFPS4F2LKODPaNg+AJyyoeRBnYwQfBgcAM13DIPqP8wFM8fIH8hu4EablkJ1HsOilcNkJ+Q3TDQbhkFo4CWAABVJyIC
+   eJxjYBgFo2Bwg4WMlJuxiYlyM/ABYtyI7IblaOonAuUmkejGvWT4qR+oZwKR+tDdSMgNa9HUzwHKzaVxuIPALKAds4m0B92NpILlQHtW0MFPS4F2LKODPaNg+AJyyodRMLTBPGCcH4bi+QMU/8huoIZbVgL1noPiVQPkJ2Q3DLRbRsEooCUAAMTAHaY=
   </data>
  </layer>
  <layer name="Decor3" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgYBfQG0xhR8XABU4F+mU0l/6xhguCBBDA3DAa3jIJRQCsAAK83B6M=
+   eJztzrENACAMA8GE/VsqVmBICsQGQVDcSW6tjwAAgBo9I0bWfM2299Jp+KEFbln4/gVH
   </data>
  </layer>
  <layer name="Fringe" width="53" height="17">
@@ -63,17 +63,22 @@
  </layer>
  <layer name="Over" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJztlc8KgzAMh4u4ndW7DzDP4nmPNP/ssrmn0Afeb4dA6CFLRKeMfPBBW9I0oRVDcBzHcaYkhDmx7bkhvoVXjE+whh3mPVuT/MQPxjN/RQbPsIIP1PiEDcalYAoLOB60J+ISjSU5d9ZXfM+14XzpnRD8jfDYtXmxnvg9011qkd4JQfM4dg8m1rf1u9+iBmKvWpxj8e3fYXFJTs0ebV4iX9ElOTV7tHn/lTfx7Bir
+   eJxjYBgFo2AUjIJRMJmJgWEKE2l6CoDqC4HYAchmBWITIC4C8ouRxPBhkPoSEu2kFxAAYjYg1gLiKqAbq4HYDMiWxYNZgFgIiGsGqZ9gQBONjQ8jg1Ikf6HHswkJ9uNLJzCAnEaQ1VIb1CL5CTmeYXFJLMCXTmAAxkdXO1BgDRMEDySAuWEwuGUUDB5AqO4gBZNjJjF6iDUXBgSpiMkxkxg9xJo7XAEA9OQaaQ==
   </data>
  </layer>
  <layer name="Over2" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJzt0TENAAAIwDCCfzW8mCOo4KBVsGQRAKzO6wIulO8APDerGQFy
+   eJxjYBgFo2AUjIJRAAK7mQbaBaNgIMCm0XgfcWAyMM53QPGUAYp/ZDcMtFtGwSgYBaMAAHVBCCQ=
   </data>
  </layer>
- <layer name="Collision" width="53" height="17" visible="0" opacity="0.62">
+ <layer name="Over3" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJztk90KQCEIg6X3f+huD1K6mXVx2GAQiT+f1DCzIcuyHNjc+avsPoojynru6kf1bjGdqItpdZ/N/IKpK5fZk4+vOJk/gPSMhOSKqTZPVoPhru70tJePs0xIrZtMSC32vTD76VC2u+r/QWd9xdSRI6b/eQKoswQJ
+   eJztw7ENAAAIA6D6/+69zj6gCyQkAABc69oBvgzEPgJd
+  </data>
+ </layer>
+ <layer name="Collision" width="53" height="17" opacity="0.38">
+  <data encoding="base64" compression="zlib">
+   eJztk1EKwCAMQ4v3P/R+h7gmqZ0fkkBgKI2+ro6IGLZt24lj+n4LrWf7jNCZX/lZ3l9MO+piWq2jO59g6qpV+jTvrziVN8CcmYmpNVPtPihDmfFqT5l6RSpT9tZPMDFZ6rwwTJ1Cvav+W3X2OtUxezu5NzPd5gdwGwP9
   </data>
  </layer>
  <objectgroup name="NPCS" width="89" height="68">
