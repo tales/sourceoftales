@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!--
-	An example configuration file.
+    An example configuration file.
 
-	Documentation: http://doc.manasource.org/manaserv.xml
+    Documentation: http://doc.manasource.org/manaserv.xml
 
-	Developers:	If you add any new parameters read from this configuration file
-	don't forget to update the wiki documentation!
+    Developers: If you add any new parameters read from this configuration file
+    don't forget to update the wiki documentation!
 -->
 <configuration>
 <!--
@@ -22,27 +22,27 @@
 -->
 
 <!--
-	SQLite specific configuration.
+    SQLite specific configuration.
 
-	sqlite_database:	name and path to the sqlite database file
-						optional, default="mana.db"
+    sqlite_database:    name and path to the sqlite database file
+                        optional, default="mana.db"
 -->
 <!-- <option name="sqlite_database" value="mana.db"/> -->
 
 
 <!--
-	mySQL specific configuration.
+    mySQL specific configuration.
 
-	mysql_hostname:		ip or hostname of the database server
-						optional, default="localhost"
-	mysql_port:			the port where the mysql server listens to
-						optional, default=3306
-	mysql_database:		name of the installed database
-						optional, default="mana"
-	mysql_username:		name of the user to connect to the database server
-						optional, default="mana"
-	mysql_password:		password to use whith the mysql_username
-						optional, default="mana"
+    mysql_hostname:     ip or hostname of the database server
+                        optional, default="localhost"
+    mysql_port:         the port where the mysql server listens to
+                        optional, default=3306
+    mysql_database:     name of the installed database
+                        optional, default="mana"
+    mysql_username:     name of the user to connect to the database server
+                        optional, default="mana"
+    mysql_password:     password to use whith the mysql_username
+                        optional, default="mana"
 -->
 <!--
 <option name="mysql_hostname" value="localhost"/>
@@ -54,9 +54,9 @@
 
 
 <!--
-	PostgreSQL specific configuration.
+    PostgreSQL specific configuration.
 
-	TODO!
+    TODO!
 -->
 
 <!-- end of database configuration **************************************** -->
@@ -107,7 +107,7 @@
  Change the log file each day.
  -->
  <option name="log_perDay" value="false"/>
- 
+
  <!--
  Set whether both servers will log also on the standard output.
  -->
@@ -222,8 +222,8 @@
      Respawn coordinates on the start map:
      In pixels, not in tiles.
  -->
- <option name="char_startX" value="1584"/>
- <option name="char_startY" value="1456"/>
+ <option name="char_startX" value="2272"/>
+ <option name="char_startY" value="1472"/>
 
  <!-- Respawn options -->
  <option name="char_respawnMap" value="1"/>
@@ -231,8 +231,8 @@
      Respawn coordinates on the respawn map:
      In pixels, not in tiles.
  -->
- <option name="char_respawnX" value="1584"/>
- <option name="char_respawnY" value="1456"/>
+ <option name="char_respawnX" value="2272"/>
+ <option name="char_respawnY" value="1472"/>
 
  <!-- Default Map id at character loading -->
  <option name="char_defaultMap" value="1" />
