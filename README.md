@@ -22,7 +22,7 @@ The script is assuming a ubuntu/debian based system:
     cd manalpc2012
 
     # setup the server
-    git clone git@github.com:mana/manaserv.git
+    git clone git://github.com/mana/manaserv.git
     cd manaserv
     git checkout lpc2012
     cmake .
@@ -35,7 +35,7 @@ The script is assuming a ubuntu/debian based system:
 
 
     # setup client
-    git clone git@github.com:mana/mana.git
+    git clone git://github.com/mana/mana.git
     cd mana
     git checkout lpc2012
     cmake .
@@ -43,7 +43,7 @@ The script is assuming a ubuntu/debian based system:
     cd ..
 
     # get the actual lpc entry
-    git clone git@github.com:mana/lpc2012.git
+    git clone git://github.com/mana/lpc2012.git
     cd lpc2012
     cp manaserv.xml.example manaserv.xml
     cat ../manaserv/src/sql/sqlite/createTables.sql | sqlite3 mana.db
