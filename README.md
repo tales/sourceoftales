@@ -61,6 +61,8 @@ The script has been tested on a amd64 machine using Ubuntu 12.04.
     cd mana
     # -u tell the mana client software to not download the game content,
     # but use the content as provided in the -d directory
-    src/mana -u -d ../lpc2012
+    # the last parameter is a path to a branding file, which can be
+    # omitted, but it pre-dials the connection to the localhost server.
+    src/mana -u -d ../lpc2012 docs/lpc2012.mana
 
 
