@@ -225,7 +225,7 @@
     </item>
     <item id="17"
         max-per-slot="255"
-        name="Coing Bag"
+        name="Coin Bag"
         image="temptest_in_the_aether/ICO_mission_purse.png">
     </item>
     <item id="18"
@@ -329,7 +329,7 @@
         <sprite>equipment/HEAD_robe_hood.xml</sprite>
     </item>
     <item id="37" max-per-slot="1" name="Robe Shirt"
-        description="Robe Shrit."
+        description="Robe Shirt."
         image="helmet-leather.png"
         value="15">
         <equip>
@@ -344,7 +344,7 @@
         <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
     </item>
     <item id="38" max-per-slot="1" name="Robe Skirt"
-        description="Robe Skrit."
+        description="Robe Skirt."
         image="helmet-leather.png"
         value="15">
         <equip>
