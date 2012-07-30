@@ -546,11 +546,74 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="198" height="150" visible="0">
+ <objectgroup name="Spawns" width="198" height="150">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1088" width="448" height="320">
    <properties>
     <property name="max_beings" value="4"/>
     <property name="monster_id" value="1"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="3136" y="1888" width="704" height="224">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="4512" y="2240" width="256" height="352">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="5216" y="3072" width="96" height="768">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="3520" y="3904" width="832" height="320">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="3488" y="576" width="480" height="256">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="5888" y="3392" width="320" height="256">
+   <properties>
+    <property name="max_beings" value="6"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="5792" y="224" width="512" height="3136">
+   <properties>
+    <property name="max_beings" value="10"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="5408" y="1408" width="256" height="256">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="2"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="5216" y="512" width="224" height="672">
+   <properties>
+    <property name="max_beings" value="6"/>
+    <property name="monster_id" value="2"/>
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
@@ -559,7 +622,7 @@
   <object name="Casern south gate" type="TRIGGER" x="2240" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="2288" y="2048" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Warps" width="198" height="150" visible="0">
+ <objectgroup name="Warps" width="198" height="150">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
