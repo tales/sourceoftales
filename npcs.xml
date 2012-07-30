@@ -38,10 +38,11 @@
 <!-- Male knight without helmet and gloves. TODO: hair-->
 <npc id="4">
     <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
     <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
     <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
-    <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
     <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
+    <sprite>characters/hair09_male.xml|#191e24,254237,31774b,3cb85f,85f57c</sprite>
 </npc>
 <!-- Monk -->
 <npc id="5">
@@ -83,6 +84,7 @@
     <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
     <sprite>equipment/LEGS_pants_greenish.xml</sprite>
     <sprite>equipment/FEET_shoes_brown.xml</sprite>
+    <sprite>characters/hair09_male.xml|#5a72dd</sprite>
 </npc>
 <npc id="10">
     <sprite>characters/female_base.xml</sprite>
