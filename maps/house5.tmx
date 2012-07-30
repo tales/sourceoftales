@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="14" height="17" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
@@ -110,5 +111,19 @@
     <property name="FILENAME" value="scripts/maps/house5.lua"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Waypoints" width="14" height="17">
+  <object name="Thomas 1" type="WAYPOINT" x="256" y="256" width="32" height="32"/>
+  <object name="Thomas 2" type="WAYPOINT" x="352" y="288" width="32" height="32"/>
+  <object name="Thomas 3" type="WAYPOINT" x="320" y="320" width="32" height="32"/>
+  <object name="Thomas 4" type="WAYPOINT" x="256" y="320" width="32" height="32"/>
+  <object name="Thomas 5" type="WAYPOINT" x="224" y="256" width="32" height="32"/>
+  <object name="Thomas 6" type="WAYPOINT" x="352" y="320" width="32" height="32"/>
+  <object name="Thomas 7" type="WAYPOINT" x="320" y="256" width="32" height="32"/>
+  <object name="Thomas 8" type="WAYPOINT" x="320" y="96" width="32" height="32"/>
+  <object name="Thomas 9" type="WAYPOINT" x="288" y="224" width="32" height="32"/>
+  <object name="Thomas 10" type="WAYPOINT" x="224" y="320" width="32" height="32"/>
+  <object name="Thomas 11" type="WAYPOINT" x="352" y="384" width="32" height="32"/>
+  <object name="Thomas 12" type="WAYPOINT" x="256" y="288" width="32" height="32"/>
  </objectgroup>
 </map>
