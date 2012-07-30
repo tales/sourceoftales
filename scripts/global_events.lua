@@ -25,6 +25,15 @@
 
 --]]
 
+-- This function is called when a new character enters the world for the
+-- first time. This can, for example, be used to give starting equipment
+-- to the character and/or initialize a tutorial quest.
+local function on_chr_birth(ch)
+    -- this message is shown on first login.
+    chat_message(ch, "And so your adventure begins...")
+end
+
+
 -- Register the callback that is called when the hit points of a character
 -- reach zero.
 on_character_death(function(ch)
@@ -50,6 +59,12 @@ end)
 on_character_login(function(ch)
     chr_request_quest(ch, "tutorial_fight", function(ch, var, value) end)
     chr_request_quest(ch, "goldenfields_shrine", function(ch, var, value) end)
+    chr_request_quest(ch, "firstlogin", function(ch, var, value)
+        if value == "" then
+            chr_set_quest(ch, var, "false")
+            on_chr_birth(ch)
+        end
+    end)
 end)
 
 --
@@ -65,15 +80,6 @@ local function on_chr_respawn(ch)
     if local_respawn_function ~= nil then
         local_respawn_function(ch)
     end
-end
-
-
--- This function is called when a new character enters the world for the
--- first time. This can, for example, be used to give starting equipment
--- to the character and/or initialize a tutorial quest.
-local function on_chr_birth(ch)
-    -- this message is shown on first login.
-    chat_message(0, ch, "And so your adventure begins...")
 end
 
 
