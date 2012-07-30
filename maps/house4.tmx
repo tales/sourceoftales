@@ -60,25 +60,25 @@
  </layer>
  <layer name="Fringe" width="16" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgZwJWJematZmRgWMpIPfNGAX1BADDuAimIvzSg3vRBEv8AGFsDDA==
+   eJxjYBgZwJVpoF0wCkYB9QEAzaYASA==
   </data>
  </layer>
  <layer name="Over" width="16" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAw0ykGhcOB+IVYHYGkqrIul/gkTjwzpQdTpI7FFAPECPE1IBenxQAwAAiwUSEg==
+   eJxjYBgFpILVjAwMSxmpZ14GEo0L5wOxKhBbQ2lVJP1PkGh8WAeqTgeJPRJBADDuAimIvzSg3nQy9KPHBzUAAO7cEzY=
   </data>
  </layer>
  <layer name="Over2" width="16" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFpIKZjAwMjkzUMy8ficaFM4BYBapOnQw7coFYG8rWI9ulIxugx8lgAACOpAeL
+   eJxjYBgFpIKZjAwMjkzUMy8ficaFM4BYBapOnQw7coFYG8rWI9ulIxtkoOHBAAB/HAdv
   </data>
  </layer>
  <layer name="Over3" width="16" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAw3SoLQGEWqwgVworU8d54yCIQQASZ0BkQ==
+   eJxjYBgFAw3SoLQGEWqwgVworU8d54wCHCAfDQ8GAAA/9ANN
   </data>
  </layer>
- <layer name="Collision" width="16" height="15" visible="0">
+ <layer name="Collision" width="16" height="15">
   <data encoding="base64" compression="zlib">
    eJx7zsDA8HyYYmTwHI1mQFOHTy+6Pmz6SQGE7CLVHEr14woDXGFKaXwMtH5yzaCm/ZSYg4wB9saZZw==
   </data>
