@@ -43,7 +43,7 @@ local function veteranTalk(npc, ch)
             say("The only thing that's awaiting you is a lot of hard work, boy.")
         end
 
-        say("Now go, talk to Instructor Alard, so she can show you how you can avoid being speared by the first "..
+        say("Now go, talk to Instructor Alard, so he can show you how you can avoid being speared by the first "..
             "enemy you'll encounter.")
         say("Oh, and get your equipment from Blacwin. You should at least look like a soldier.")
         say ("Come back to me when you're done.")
