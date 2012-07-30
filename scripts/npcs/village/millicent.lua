@@ -1,6 +1,6 @@
 --[[
 
-  Goldenfields Inn.
+  Millicent
 
   Copyright (C) 2012 Jessica Tölke
 
@@ -19,11 +19,14 @@
 
 --]]
 
-atinit(function()
-    require "scripts/functions/npchelper"
-    parse_npcs_from_map()
+local function womanTalk(npc, ch)
+    local function say(message)
+        npc_message(npc, ch, message)
+    end
 
-    require "scripts/npcs/pub/innkeepernorman"
-    require "scripts/npcs/pub/borin"
+    say("Have you seen my husband Borin? I bet he's in the pub again...")
+    say("I work all day, and he has nothing better to do than taking our money and spend it on getting drunk.")
 
-end)
+end
+
+local woman = create_npc_by_name("Millicent", womanTalk)

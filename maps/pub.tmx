@@ -90,6 +90,12 @@
     <property name="sprite_id" value="9"/>
    </properties>
   </object>
+  <object name="Borin" type="NPC_POSITION" x="224" y="128" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Objects" width="170" height="150" visible="0">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
