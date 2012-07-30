@@ -60,12 +60,12 @@
  </layer>
  <layer name="Fringe" width="16" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFlAIJZgYGSeaBdgVtgcpAO2CYAgCuTgBc
+   eJxjYBgFo4AwUBloBwxTAAAz4AAl
   </data>
  </layer>
  <layer name="Over" width="16" height="14">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAw1UodgaiU0K0IFidPZIARk4MD65DExjBgQAABqmBsg=
+   eJxjYBgFlAIJZgYGSWby9atCsTUSmxSgA8Xo7JECMnBgfHIZmMYMCAAAlRQG/w==
   </data>
  </layer>
  <layer name="Over2" width="16" height="14">
@@ -78,9 +78,9 @@
    eJxjYBgFo2D4gTQorUGm/lworU8Ft+ADAJ1YASs=
   </data>
  </layer>
- <layer name="Collision" width="16" height="14" visible="0">
+ <layer name="Collision" width="16" height="14" opacity="0.31">
   <data encoding="base64" compression="zlib">
-   eJyLZ2ZgiB8mGAQGQj86oMR+Ssyghn5K9KHbTYhPKBzR/UOJflxmUlM/OeEJAPt5QRU=
+   eJyLZ2ZgiB8mGAQGQj86oMR+Ssyghn5Kww/ZDEJ8QuGI7h9K9OMyk5r6yQlPAHR9QXc=
   </data>
  </layer>
  <objectgroup name="Warps" width="16" height="14">
