@@ -14,7 +14,8 @@ to get a first impression, i.e. the judges of the LPC may use it.
 If you want to setup a server 'on the internet' you'd need to go through
 the config files more detailed.
 
-The script has been tested on a amd64 machine using Ubuntu 12.04.
+This script works on an amd64 machine using both Ubuntu 12.04
+and a current Debian testing as operating systems.
 
     sudo apt-get install --yes sqlite3 screen git cmake make gcc libxml2-dev liblua5.1-0-dev libphysfs-dev libsqlite3-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-net1.2-dev libsdl-pango-dev libsdl-ttf2.0-dev libsdl1.2-dev libguichan-dev libphysfs-dev libenet1a libcurl4-openssl-dev libcurl3 zlib1g-dev
 
