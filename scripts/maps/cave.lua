@@ -50,14 +50,18 @@ local function alcovesSpawn(being)
     end
 end
 
-local function shrinequestSpawn(being)
+local function shrinequestSpawn(being, id)
     if being_type(being) ~= TYPE_CHARACTER then
         return
     end
 
     local quest = chr_try_get_quest(being, "goldenfields_shrine")
     if quest == "started" then
-        monster_create("Skeleton", get_named_coordinate("Shrinequest Skeleton Spawn"))
+        if id == 1 then
+            monster_create("Skeleton", get_named_coordinate("Shrinequest Skeleton Spawn West"))
+        elseif id == 2 then
+            monster_create("Skeleton", get_named_coordinate("Shrinequest Skeleton Spawn East"))
+        end
         being_say(being, "A skeleton! I should return and tell Priestess Linota about this!")
         chr_set_quest(being, "goldenfields_shrine", "skeletonspotted")
     end
@@ -68,5 +72,6 @@ atinit(function()
     parse_triggers_from_map()
 
     create_trigger_by_name("alcoves spawn", alcovesSpawn)
-    create_trigger_by_name("shrinequest spawn", shrinequestSpawn)
+    create_trigger_by_name("shrinequest spawn west", shrinequestSpawn)
+    create_trigger_by_name("shrinequest spawn east", shrinequestSpawn)
 end)

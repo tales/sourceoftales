@@ -74,7 +74,7 @@ local function priestessTalk(npc, ch)
                         "a similiar thing happening a long time ago.")
                     say("I need to know if these rumors are true.")
                     say("Please investigate the northern caves and find out if there really are walking skeletons. "..
-                        "And be careful.")
+                        "You can find an entrance north west of the casern. And be careful.")
                     chr_set_quest(ch, "goldenfields_shrine", "started")
                 end
             end

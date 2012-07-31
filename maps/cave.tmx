@@ -70,12 +70,20 @@
   <object name="Skeleton Soldier2 Spawn" type="COORDINATE" x="1952" y="2720" width="32" height="32"/>
   <object name="Skeleton2 Spawn" type="COORDINATE" x="2080" y="2752" width="32" height="32"/>
   <object name="Skeleton Soldier3 Spawn" type="COORDINATE" x="2208" y="2560" width="32" height="32"/>
-  <object name="shrinequest spawn" type="TRIGGER" x="2016" y="640" width="32" height="32">
+  <object name="shrinequest spawn east" type="TRIGGER" x="1216" y="64" width="96" height="64">
    <properties>
+    <property name="id" value="2"/>
     <property name="once" value="true"/>
    </properties>
   </object>
-  <object name="Shrinequest Skeleton Spawn" type="COORDINATE" x="2016" y="480" width="32" height="32"/>
+  <object name="Shrinequest Skeleton Spawn East" type="COORDINATE" x="1280" y="192" width="32" height="32"/>
+  <object name="shrinequest spawn west" type="TRIGGER" x="576" y="128" width="96" height="64">
+   <properties>
+    <property name="id" value="1"/>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
+  <object name="Shrinequest Skeleton Spawn West" type="COORDINATE" x="608" y="256" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="101" height="100">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
