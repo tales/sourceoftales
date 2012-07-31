@@ -257,5 +257,107 @@
             action="attack"
             />
     </monster>
+    <monster id="8" name="Bat" targetCursor="small">
+        <sprite>monsters/bat.xml</sprite>
+        <attributes
+            hp="80"
+            size="4"
+            speed="1.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="3"
+            magical-defence="0"
+            mutation="50"
+            />
+        <exp>8</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="2"
+            cooldowntime="3"
+            basedamage="7"
+            deltadamage="2"
+            range="48"
+            chancetohit="200"
+            animation="attack"
+            />
+    </monster>
+    <monster id="9" name="Slime" targetCursor="small">
+        <sprite>monsters/slime.xml</sprite>
+        <attributes
+            hp="200"
+            size="4"
+            speed="1.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="5"
+            magical-defence="10"
+            mutation="50"
+            />
+        <exp>15</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="2"
+            cooldowntime="5"
+            basedamage="10"
+            deltadamage="2"
+            range="48"
+            chancetohit="100"
+            animation="attack"
+            />
+    </monster>
+    <monster id="10" name="Snake" targetCursor="small">
+        <sprite>monsters/snake.xml</sprite>
+        <attributes
+            hp="150"
+            size="4"
+            speed="1.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="5"
+            magical-defence="0"
+            mutation="50"
+            />
+        <exp>20</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="2"
+            cooldowntime="5"
+            basedamage="20"
+            deltadamage="2"
+            range="48"
+            chancetohit="100"
+            animation="attack"
+            />
+    </monster>
 </monsters>
 
