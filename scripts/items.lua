@@ -19,3 +19,6 @@
 --]]
 
 require "scripts/items/bomb"
+require "scripts/items/gold_less"
+require "scripts/items/gold_medium"
+require "scripts/items/gold_many"

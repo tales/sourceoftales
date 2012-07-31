@@ -549,6 +549,7 @@
         image="CoinsGoldSmall.png">
         <effect trigger="in-inventory">
             <scriptevent activate="pickup" />
+            <consumers />
         </effect>
     </item>
     <item id="58"
@@ -557,6 +558,7 @@
         image="CoinsGoldMedium.png">
         <effect trigger="in-inventory">
             <scriptevent activate="pickup" />
+            <consumers />
         </effect>
     </item>
     <item id="59"
@@ -565,6 +567,7 @@
         image="CoinsGoldLarge.png">
         <effect trigger="in-inventory">
             <scriptevent activate="pickup" />
+            <consumers />
         </effect>
     </item>
 </items>
