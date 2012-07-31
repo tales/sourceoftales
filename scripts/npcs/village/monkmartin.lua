@@ -41,7 +41,7 @@ local function monkTalk(npc, ch)
         say("Oh misguided one, Ignis and Aquaria love you nevertheless.")
     elseif res == 2 then
         say("How much do you want to give?")
-        local donation = npc_ask_integer(npc, ch, 0, 1000)
+        local donation = npc_ask_integer(npc, ch, 1, 1000)
         local money = chr_money(ch)
         if money < donation then
             say("You don't have that much.")
