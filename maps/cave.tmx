@@ -220,6 +220,237 @@
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
+  <object name="bat spawn" type="SPAWN" x="1312" y="160" width="352" height="480">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="32" y="800" width="320" height="448">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="32" y="320" width="576" height="384">
+   <properties>
+    <property name="max_beings" value="4"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="640" y="480" width="416" height="640">
+   <properties>
+    <property name="max_beings" value="5"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="64" y="960" width="192" height="544">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="352" y="1856" width="384" height="192">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="1280" y="1824" width="416" height="352">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="1376" y="2400" width="384" height="192">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="1152" y="2816" width="384" height="192">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="2720" y="2016" width="320" height="672">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="2272" y="1344" width="800" height="480">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="2848" y="256" width="352" height="480">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="bat spawn" type="SPAWN" x="1472" y="1056" width="576" height="128">
+   <properties>
+    <property name="max_beings" value="3"/>
+    <property name="monster_id" value="8"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="800" y="800" width="960" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="192" y="288" width="384" height="352">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="608" y="288" width="256" height="352">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="1312" y="96" width="928" height="352">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="1312" y="1184" width="320" height="416">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="672" y="1664" width="224" height="384">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="1984" y="2848" width="608" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="2464" y="2432" width="608" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="2688" y="992" width="448" height="480">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="snake spawn" type="SPAWN" x="2144" y="704" width="352" height="576">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="10"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="576" y="672" width="224" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="352" y="320" width="224" height="192">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="128" y="2112" width="224" height="192">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="2176" y="2912" width="608" height="128">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="1280" y="1856" width="576" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="2080" y="1280" width="192" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="1376" y="576" width="192" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="2944" y="416" width="192" height="256">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="2112" y="1056" width="576" height="192">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="slime spawn" type="SPAWN" x="2272" y="1632" width="544" height="192">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="9"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Scripted Spawn at alcoves" width="101" height="100">
   <object name="alcoves spawn" type="TRIGGER" x="1952" y="2560" width="32" height="32">
