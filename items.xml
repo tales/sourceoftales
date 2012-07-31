@@ -505,7 +505,6 @@
         effect="+15 HP"
         type="usable"
         hp="15"
-        weight="1"
         max-per-slot="10">
         <effect trigger="activation">
             <consumes />
@@ -517,7 +516,6 @@
         effect="+50 HP"
         type="usable"
         hp="50"
-        weight="2"
         max-per-slot="10">
         <effect trigger="activation">
             <consumes />
@@ -529,7 +527,6 @@
         effect="+100 HP"
         type="usable"
         hp="100"
-        weight="3"
         max-per-slot="10">
         <effect trigger="activation">
             <consumes />
@@ -541,7 +538,6 @@
         effect="+200 HP"
         type="usable"
         hp="200"
-        weight="4"
         max-per-slot="10">
         <effect trigger="activation">
             <consumes />
