@@ -150,6 +150,8 @@
             chancetohit="200"
             action="attack"
             />
+        <drop item="5" percent="20" />
+        <drop item="4" percent="10" />
     </monster>
     <monster id="5" name="Skeleton" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -222,6 +224,7 @@
             action="attack"
             />
         <drop item="51" percent="30" />
+        <drop item="45" percent="5" />
     </monster>
     <monster id="7" name="Bee" targetCursor="small">
         <sprite>monsters/bee.xml</sprite>
@@ -358,6 +361,46 @@
             chancetohit="100"
             animation="attack"
             />
+    </monster>
+    <monster id="11" name="Rebel" targetCursor="small">
+        <sprite>characters/male_base.xml</sprite>
+        <sprite>equipment/HEAD_robe_hood.xml</sprite>
+        <sprite>equipment/TORSO_leather_armor_torso.xml</sprite>
+        <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+        <sprite>equipment/BELT_leather.xml</sprite>
+        <sprite>equipment/FEET_shoes_brown.xml</sprite>
+        <attributes
+            hp="200"
+            size="4"
+            speed="2.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="5"
+            magical-defence="0"
+            mutation="25"
+            />
+        <exp>10</exp>
+        <behavior
+            agressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="1"
+            cooldowntime="10"
+            basedamage="10"
+            deltadamage="2"
+            range="48"
+            chancetohit="200"
+            action="attack"
+            />
+        <drop item="36" percent="20" />
+        <drop item="37" percent="10" />
     </monster>
 </monsters>
 
