@@ -746,6 +746,20 @@
     <property name="DEST_Y" value="464"/>
    </properties>
   </object>
+  <object name="Warp to cave" type="WARP" x="1312" y="160" width="64" height="32">
+   <properties>
+    <property name="DEST_MAP" value="cave"/>
+    <property name="DEST_X" value="1264"/>
+    <property name="DEST_Y" value="80"/>
+   </properties>
+  </object>
+  <object name="Warp to cave" type="WARP" x="576" y="32" width="64" height="32">
+   <properties>
+    <property name="DEST_MAP" value="cave"/>
+    <property name="DEST_X" value="624"/>
+    <property name="DEST_Y" value="144"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Objects" width="198" height="150">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">
