@@ -67,9 +67,24 @@ Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/wheelbarrow
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/windmill.png
 cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      items/beetle_corpus.png
 cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      sprites/monsters/beetle_death.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat_death.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee_death.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/eyeball.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime_death.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/small_worm.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake_death.png
+Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake.png
 Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
 Clint Bellanger                    CC BY_SA 3.0, GPLv2, GPLv3  particles/quake.png
 CosmicD                            CC BY_SA 3.0                sfx/trap.ogg
+Daniel Armstrong (AKA HughSpectrum)CC BY-SA 3.0, GPLv3         tiles/castlefloors_outside.png
+Daniel Armstrong (AKA HughSpectrum)CC BY-SA 3.0, GPLv3         tiles/castlefloors.png
+Daniel Armstrong (AKA HughSpectrum)CC BY-SA 3.0, GPLv3         tiles/castle_lightsources.png
+Daniel Armstrong (AKA HughSpectrum)CC BY-SA 3.0, GPLv3         tiles/castle_outside.png
+Daniel Armstrong (AKA HughSpectrum)CC BY-SA 3.0, GPLv3         tiles/castlewalls.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_firelion.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_icetacle.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         icons/spell_lightning.png
@@ -801,8 +816,10 @@ Johann Charlot                     CC BY_SA 3.0, GPLv3         tiles/outside.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/armor_iron.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/armor_leather.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/bracer_iron.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/chain_armor_helmet.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/gloves_iron.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/helmet_iron.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/leather_armor_hat.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/pants_greenish.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/pants_iron.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/robehead.png
@@ -964,8 +981,6 @@ Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_slash.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_spellcast.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_walkcycle.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/leather_armor_hat.png
 Johnathan Roatch                   CC BY_SA 3.0, GPLv3         sfx/metal-bowl.ogg
 Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/flash.png
 Jonas Klinger                      CC BY_SA 3.0, GPLv3         particles/lithning1.png
@@ -1006,6 +1021,41 @@ Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/tomato.png
 Joshua Taylor                      CC BY_SA 3.0, GPLv3         items/zucchini.png
 Juan M Rodriguez                   CC BY_SA 3.0, GPLv3         sprites/npcs/maskman.png
 Jurkan                             CC0                         tiles/collision.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/barrel.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/brackish.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/bridges.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/buckets.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/cabinets.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/cement.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/cementstair.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/chests.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/country.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/cup.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/dirt2.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/dirt.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/dungeon.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/grassalt.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/grass.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/holek.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/holemid.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/hole.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/house.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/inside.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/kitchen.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/lava.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/lavarock.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/mountains.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/rock.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/shadow.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/signs.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/stairs.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/terrains.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/treetop.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/trunk.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/victoria.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/waterfall.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/watergrass.png
+Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/water.png
 Leo Villeveygoux                   CC BY_SA 3.0, GPLv3         tiles/limestonewall.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_dwing_hurt.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_robe_hurt.png
@@ -1021,82 +1071,6 @@ Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/male_robe_walkcycle.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/campfire.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/mushrooms.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_slash.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_spellcast.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/female_walkcycle.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale0.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale1.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale2.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale3.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale4.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale5.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale6.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale0.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale1.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale2.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale3.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale4.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale5.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale6.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale7.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale8.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/hairmale.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/male_hurt.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/male_slash.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/male_spellcast.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/characters/male_walkcycle.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/bat_death.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/bat.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/bee_death.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/bee.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/eyeball.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/slime_death.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/slime.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/small_worm.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/snake_death.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         sprites/monsters/snake.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/barrel.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/brackish.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/bridges.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/buckets.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/cabinets.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/castlefloors_outside.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/castlefloors.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/castle_lightsources.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/castle_outside.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/castlewalls.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/cement.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/cementstair.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/chests.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/country.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/cup.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/dirt2.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/dirt.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/dungeon.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/grassalt.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/grass.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/holek.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/holemid.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/hole.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/house.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/inside.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/kitchen.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/lava.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/lavarock.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/mountains.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/rock.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/shadow.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/signs.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/stairs.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/terrains.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/treetop.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/trunk.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/victoria.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/waterfall.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/watergrass.png
-LPC Base Asset                     CC BY-SA 3.0, GPLv3         tiles/water.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackbelt_hurt.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackhair_hurt.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackrobe_hurt.png
@@ -1250,6 +1224,24 @@ Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_whiterobe_walkcycle.png
 Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_whiteslippers_walkcycle.png
 Luke.RUSTLTD (opengameart.org)     CC 0                        sfx/bomb.ogg
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale0.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale1.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale2.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale3.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale4.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale5.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale6.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale0.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale1.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale2.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale3.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale4.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale5.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale6.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale7.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale8.png
+Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairmale.png
 Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/birdbath.png
 Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/leaves.png
 Mark Weyer                         CC BY_SA 3.0, GPLv3         tiles/signpost.png
@@ -1265,6 +1257,7 @@ Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/sea.ogg
 Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/strings_theme.ogg
 Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/torvalds_slow_theme_ambient_guitar.ogg
 Nelson James Gatlin                CC BY_SA 3.0, GPLv3         music/ trouble_loop.ogg
+Przemysław Grzywacz                CC BY_SA 3.0, GPLv3         tiles/woodenbeam.png
 shimobayashi (blood), quodup (recolor to explosion) CC BY_SA 3.0 particles/bomb_explosion.png
 Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/crpyt.png
 Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/dirt_night.png
@@ -1272,6 +1265,14 @@ Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/grass_night
 Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_hurt_no_hat.png
 Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_walk_cycle_no_hat.png
 Stefan Beller                      CC BY_SA 3.0, GPLv3         tiles/water_anim.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_slash.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_spellcast.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_walkcycle.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_hurt.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_slash.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_spellcast.png
+Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_walkcycle.png
 Stephen Challner                   CC BY_SA 3.0, GPLv2         sprites/monsters/beetle.png
 Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_hurt.png
 Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_slash.png
@@ -1458,4 +1459,3 @@ Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/shirt_walkcycle.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/tie_walkcycle.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/vest_walkcycle.png
-Przemysław Grzywacz                CC BY_SA 3.0, GPLv3         tiles/woodenbeam.png
