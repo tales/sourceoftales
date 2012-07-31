@@ -3,7 +3,7 @@
     <imageset name="base" src="sprites/monsters/snake.png"
         width="32"
         height="32" />
-    <imageset name="death" src="sprites/monsters/bee_death.png"
+    <imageset name="death" src="sprites/monsters/snake_death.png"
         width="32"
         height="32" />
     <action name="stand" imageset="base">
