@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="21" height="16" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
  </tileset>

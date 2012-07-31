@@ -2,6 +2,7 @@
 <map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="32" tileheight="32" backgroundcolor="#1d1316">
  <properties>
   <property name="background0image" value="tiles/bg_shadown_and_black.png"/>
+  <property name="music" value="calmtown.ogg"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="16" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
  <tileset firstgid="1" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
  </tileset>
