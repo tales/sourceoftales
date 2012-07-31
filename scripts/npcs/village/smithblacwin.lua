@@ -23,9 +23,10 @@
 
 --]]
 
-require "scripts/functions/patrol"
+local patrol = NPCPatrol:new("Smith Blacwin")
 
 local function smithTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -86,15 +87,10 @@ local function smithTalk(npc, ch)
         say("Argh!")
         being_damage(ch, 120, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
-end
-
-local function smithWaypointReached(npc)
-    gotoNextWaypoint(npc)
+    patrol:unblock(ch)
 end
 
 local smith = create_npc_by_name("Smith Blacwin", smithTalk)
 being_set_base_attribute(smith, 16, 1)
-
-local patrol = Patrol:new("Smith Blacwin")
 patrol:assignBeing(smith)
 schedule_every(12, function() patrol:logic() end)

@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Basilea")
+
 local function womanTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -29,11 +32,10 @@ local function womanTalk(npc, ch)
     say("I still think it'd be easier to just build a bridge across the river. But Priestess Linota is against that.")
     say("She says she needs some distance to the mundane village life, so she can concentrate on praising the gods.")
     say("Pretty lofty, if you ask me.")
+    patrol:unblock(ch)
 end
 
 local woman = create_npc_by_name("Basilea", womanTalk)
-
 being_set_base_attribute(woman, 16, 1)
-local patrol = Patrol:new("Basilea")
 patrol:assignBeing(woman)
 schedule_every(11, function() patrol:logic() end)

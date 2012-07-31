@@ -27,6 +27,7 @@ atinit(function()
     parse_triggers_from_map()
 
     require "scripts/functions/guardpatrol"
+    require "scripts/functions/npcpatrol"
 
     -- Inside of casern
     require "scripts/npcs/village/guardfordwin"

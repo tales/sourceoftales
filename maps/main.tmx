@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="198" height="150" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="h_theme.ogg"/>
@@ -593,7 +594,7 @@
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
-  <object name="beetle spawn" type="SPAWN" x="3520" y="3904" width="832" height="320">
+  <object name="beetle spawn" type="SPAWN" x="3424" y="3968" width="672" height="320">
    <properties>
     <property name="max_beings" value="4"/>
     <property name="monster_id" value="2"/>
@@ -957,4 +958,35 @@
    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
   </data>
  </layer>
+ <objectgroup name="Waypoints Thea" width="198" height="150">
+  <object name="Thea 1" type="WAYPOINT" x="4480" y="4032" width="32" height="32"/>
+  <object name="Thea 2" type="WAYPOINT" x="4800" y="4000" width="32" height="32"/>
+  <object name="Thea 3" type="WAYPOINT" x="5024" y="3872" width="32" height="32"/>
+  <object name="Thea 4" type="WAYPOINT" x="5024" y="3712" width="32" height="32"/>
+  <object name="Thea 5" type="WAYPOINT" x="5120" y="3808" width="32" height="32"/>
+  <object name="Thea 6" type="WAYPOINT" x="4928" y="3936" width="32" height="32"/>
+  <object name="Thea 7" type="WAYPOINT" x="4640" y="4032" width="32" height="32"/>
+  <object name="Thea 8" type="WAYPOINT" x="4384" y="4032" width="32" height="32"/>
+  <object name="Thea 9" type="WAYPOINT" x="4160" y="3936" width="32" height="32"/>
+  <object name="Thea 10" type="WAYPOINT" x="3968" y="3904" width="32" height="32"/>
+  <object name="Thea 11" type="WAYPOINT" x="3744" y="3776" width="32" height="32"/>
+  <object name="Thea 12" type="WAYPOINT" x="3488" y="3744" width="32" height="32"/>
+  <object name="Thea 13" type="WAYPOINT" x="3328" y="3552" width="32" height="32"/>
+  <object name="Thea 14" type="WAYPOINT" x="3232" y="3328" width="32" height="32"/>
+  <object name="Thea 15" type="WAYPOINT" x="3424" y="3168" width="32" height="32"/>
+  <object name="Thea 16" type="WAYPOINT" x="3616" y="3136" width="32" height="32"/>
+  <object name="Thea 17" type="WAYPOINT" x="3872" y="3072" width="32" height="32"/>
+  <object name="Thea 18" type="WAYPOINT" x="3840" y="2880" width="32" height="32"/>
+  <object name="Thea 19" type="WAYPOINT" x="3552" y="2880" width="32" height="32"/>
+  <object name="Thea 20" type="WAYPOINT" x="3520" y="3168" width="32" height="32"/>
+  <object name="Thea 21" type="WAYPOINT" x="3296" y="3200" width="32" height="32"/>
+  <object name="Thea 22" type="WAYPOINT" x="3296" y="3424" width="32" height="32"/>
+  <object name="Thea 23" type="WAYPOINT" x="3392" y="3616" width="32" height="32"/>
+  <object name="Thea 24" type="WAYPOINT" x="3552" y="3776" width="32" height="32"/>
+  <object name="Thea 25" type="WAYPOINT" x="3712" y="3776" width="32" height="32"/>
+  <object name="Thea 26" type="WAYPOINT" x="3904" y="3808" width="32" height="32"/>
+  <object name="Thea 27" type="WAYPOINT" x="4096" y="3904" width="32" height="32"/>
+  <object name="Thea 28" type="WAYPOINT" x="4288" y="4000" width="32" height="32"/>
+  <object name="Thea 29" type="WAYPOINT" x="4448" y="4032" width="32" height="32"/>
+ </objectgroup>
 </map>

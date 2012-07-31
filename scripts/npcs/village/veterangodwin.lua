@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Veteran Godwin")
+
 local function veteranTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -103,13 +106,12 @@ local function veteranTalk(npc, ch)
         say("I can't deny you're brave, but that won't help you now!")
         being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
-
+    patrol:unblock(ch)
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
 
 local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)
 
 being_set_base_attribute(veteran, 16, 1)
-local patrol = Patrol:new("Veteran Godwin")
 patrol:assignBeing(veteran)
 schedule_every(10, function() patrol:logic() end)

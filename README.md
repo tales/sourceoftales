@@ -65,9 +65,9 @@ and a current Debian testing as operating systems.
     cd mana
     # -u tell the mana client software to not download the game content,
     # but use the content as provided in the -d directory
-    # the last parameter is a path to a branding file, which can be
-    # omitted, but it pre-dials the connection to the localhost server.
-    src/mana -u -d ../lpc2012 docs/lpc2012.mana
+    # The parameters --server and --port tells the mana client to directly
+    # connect to the server we just setup.
+    src/mana -u -d ../lpc2012 --server=localhost --port 9601
 
 Now you should see the mana client started.
 

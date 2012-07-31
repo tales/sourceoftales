@@ -19,18 +19,20 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Rowan")
+
 local function manTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
     say("Tight Lines! Today was a good day, I caught quite a lot of fishes.")
     say("I think I'll be over to the inn later, drink a beer and have a nice chat with Norman.")
+    patrol:unblock(ch)
 end
 
 local man = create_npc_by_name("Rowan", manTalk)
-
 being_set_base_attribute(man, 16, 1)
-local patrol = Patrol:new("Rowan")
 patrol:assignBeing(man)
 schedule_every(8, function() patrol:logic() end)

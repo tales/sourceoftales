@@ -22,9 +22,12 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Durmark")
+
 local bee_quest_doable = true
 
 local function durmarkTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -153,6 +156,7 @@ local function durmarkTalk(npc, ch)
     elseif reward and res == 3 then
         aboutReward()
     end
+    patrol:unblock(ch)
 end
 
 local bee_counter = 0
@@ -205,8 +209,6 @@ end
 
 local durmark = create_npc_by_name("Durmark", durmarkTalk)
 local bee_trigger = create_trigger_by_name("Bee trigger", beeTrigger)
-
 being_set_base_attribute(durmark, 16, 1)
-local patrol = Patrol:new("Durmark")
 patrol:assignBeing(durmark)
 schedule_every(10, function() patrol:logic() end)

@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Rebel Philip")
+
 local function rebelTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -35,12 +38,10 @@ local function rebelTalk(npc, ch)
         say("Traitor!")
         being_damage(ch, 50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
-
+    patrol:unblock(ch)
 end
 
 local rebel = create_npc_by_name("Rebel Philip", rebelTalk)
-
 being_set_base_attribute(rebel, 16, 1)
-local patrol = Patrol:new("Rebel Philip")
 patrol:assignBeing(rebel)
 schedule_every(23, function() patrol:logic() end)

@@ -22,7 +22,10 @@
 
 -- authors: Jenalya
 
+local patrol = NPCPatrol:new("Guard Fordwin")
+
 local function guardTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -52,6 +55,7 @@ local function guardTalk(npc, ch)
         say("Traitor!")
         being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
+    patrol:unblock(ch)
 end
 
 local function guardDenyExit(ch)
@@ -70,10 +74,7 @@ local function guardDenyExit(ch)
 end
 
 local guard = create_npc_by_name("Guard Fordwin", guardTalk)
-
 create_trigger_by_name("Casern south gate", guardDenyExit)
-
 being_set_base_attribute(guard, 16, 1)
-local patrol = Patrol:new("Guard Fordwin")
 patrol:assignBeing(guard)
 schedule_every(34, function() patrol:logic() end)

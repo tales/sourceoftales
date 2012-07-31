@@ -33,9 +33,12 @@ function NPCPatrol:new(name)
 end
 
 function NPCPatrol:block(ch, delay)
-    self.blocked_dialouges[ch] = delay or 20
+    self.blocked_dialouges[ch] = delay or -1
     for _, member in ipairs(self.members) do
         being_walk(member, posX(member), posY(member))
+    end
+    if ch then
+        on_remove(ch, function() unblock(ch) end)
     end
 end
 
@@ -46,7 +49,7 @@ end
 function NPCPatrol:logic()
     local free = true
     for ch, timer in pairs(self.blocked_dialouges) do
-        if timer > 1 then
+        if timer > 1 or timer < 0 then
             free = false
             self.blocked_dialouges[ch] = timer - 1
         else

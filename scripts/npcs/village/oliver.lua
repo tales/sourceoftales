@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Oliver")
+
 local function manTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -37,11 +40,10 @@ local function manTalk(npc, ch)
         say("Did you know that there are some rebels hiding in the forest? If I became a soldier, I'd have to fight them!")
         -- LATER: quest involving his father to motivate him to be interested in the shop
     end
+    patrol:unblock(ch)
 end
 
 local man = create_npc_by_name("Oliver", manTalk)
 being_set_base_attribute(man, 16, 1)
-
-local patrol = Patrol:new("Oliver")
 patrol:assignBeing(man)
 schedule_every(10, function() patrol:logic() end)

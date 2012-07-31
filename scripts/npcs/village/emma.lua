@@ -19,7 +19,14 @@
 
 --]]
 
+    -- wants into the casern, pretends to be a bit stupid and to have romantic ideas about soldiers
+    -- but actually works for the rebels and wants to gather information
+    -- could be a contact person for later rebel quests
+
+local patrol = NPCPatrol:new("Emma")
+
 local function girlTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -71,16 +78,10 @@ local function girlTalk(npc, ch)
     elseif emma == "done" then
         say("Soldiers are so exciting.") -- LATER: ask questions depending on the quest state to 'spy' on the player
     end
+    patrol:unblock(ch)
 end
 
 local girl = create_npc_by_name("Emma", girlTalk)
-
-    -- wants into the casern, pretends to be a bit stupid and to have romantic ideas about soldiers
-    -- but actually works for the rebels and wants to gather information
-    -- could be a contact person for later rebel quests
-
 being_set_base_attribute(girl, 16, 1)
-
-local patrol = Patrol:new("Emma")
 patrol:assignBeing(girl)
 schedule_every(11, function() patrol:logic() end)

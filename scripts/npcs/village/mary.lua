@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Mary")
+
 local function womanTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -30,11 +33,10 @@ local function womanTalk(npc, ch)
     say("They came together with all these soldiers, and are supposed to help with 'adjustment of differences' and "..
         "as 'official representants of our beloved King Richard'.")
     say("As if we need that! We were doing fine with our businesses without any arrogant townspeople around.")
+    patrol:unblock(ch)
 end
 
 local woman = create_npc_by_name("Mary", womanTalk)
-
 being_set_base_attribute(woman, 16, 1)
-local patrol = Patrol:new("Mary")
 patrol:assignBeing(woman)
 schedule_every(9, function() patrol:logic() end)
