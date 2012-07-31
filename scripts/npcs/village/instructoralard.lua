@@ -63,12 +63,12 @@ local function instructorTalk(npc, ch)
 
     local function aboutAttributes()
         say("Attributes define what you are!")
-        say("Everybody has the attributes Strenght, Agility, Vitality, " ..
-            "Intelligence, Dexterity and Willpower")
+        say("Everybody has the attributes Strength, Agility, Vitality, " ..
+            "Intelligence, Dexterity and Willpower.")
         say("Strength affects how strong you can strike.")
         say("Agility how fast you can move. The higher the value the higher the " ..
-            "chance to dodge an enemy attack is.")
-        say("Vitality is how good you heal and how much damage you can take.")
+            "chance to dodge an enemy's attack is.")
+        say("Vitality is fast you regenerate and how much damage you can take.")
         say("Intelligence affects how fast your spells regenerate.")
         say("High values in Dexterity help you to hit enemys more often.")
         say("And finally Willpower. It will make your spells more effective by " ..
@@ -88,19 +88,19 @@ local function instructorTalk(npc, ch)
     local function aboutQuestions()
         say("Do you have any further questions?")
         local choices = {
+            "No, that was all.",
             "What are attributes?",
             "What are skills?",
-            "What are specials?",
-            "No that was all."
+            "What are specials?"
         }
         local res = npc_choice(npc, ch, choices)
-        if res == 1 then
+        if res == 2 then
             aboutAttributes()
             aboutQuestions()
-        elseif res == 2 then
+        elseif res == 3 then
             aboutSkills()
             aboutQuestions()
-        elseif res == 3 then
+        elseif res == 4 then
             aboutSpecials()
             aboutQuestions()
         end
