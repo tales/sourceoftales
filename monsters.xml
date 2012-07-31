@@ -402,5 +402,39 @@
         <drop item="36" percent="20" />
         <drop item="37" percent="10" />
     </monster>
+    <monster id="12" name="Skeleton King" targetCursor="large">
+        <sprite>monsters/skeleton_boss.xml</sprite>
+        <attributes
+            hp="20000"
+            size="4"
+            speed="0.0"
+            evade="1"
+            magical-evade="5"
+            physical-defence="5"
+            magical-defence="0"
+            mutation="50"
+            />
+        <exp>100000</exp>
+        <!-- average stroll- and track range-->
+        <behavior
+            aggressive="true"
+            cowardly="false"
+            track-range="5"
+            stroll-range="0"
+            attack-distance="128"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="1"
+            cooldowntime="70"
+            basedamage="0"
+            deltadamage="0"
+            range="128"
+            chancetohit="20000"
+            action="spellcast"
+            />
+    </monster>
 </monsters>
 
