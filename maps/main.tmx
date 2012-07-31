@@ -755,7 +755,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Bees" width="198" height="150">
-  <object name="Bee trigger" type="TRIGGER" x="4368" y="2156" width="320" height="320"/>
+  <object name="Bee trigger" type="TRIGGER" x="2592" y="3488" width="608" height="384"/>
  </objectgroup>
  <objectgroup name="Waypoints Millicent" width="198" height="150">
   <object name="Millicent 1" type="WAYPOINT" x="3859" y="1030" width="32" height="32"/>

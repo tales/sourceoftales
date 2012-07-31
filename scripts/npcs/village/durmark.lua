@@ -74,8 +74,8 @@ local function durmarkTalk(npc, ch)
 
     local function aboutProblems()
         if bee_quest_char == nil and bee_quest_doable and not reward then
-            say("Actually Yes! I nearly got attacked by a big bee swarm. " ..
-                "TODO: hint position")
+            say("Actually Yes! I nearly got attacked by a big bee swarm when I walked around south west of the market "..
+                "place. There are some tree stumps, maybe the have their nest in one of them.")
             say("You look like a fighter. Can you clear out the bees? " ..
                 "They somehow went insane.")
             local choices = { "Sure i will!",
@@ -97,7 +97,8 @@ local function durmarkTalk(npc, ch)
                     end
                 end)
 
-                say("Good to hear my friend! I will see if i can give you a small reward later.")
+                say("Good to hear my friend! But be careful, there were quite a lot of them. If they're too many "..
+                    "take a friend with you. I will see if i can give you a small reward later.")
             else
                 say("Too bad. Maybe someone else can help me then.")
             end
