@@ -11,13 +11,13 @@
             hp="20"
             size="4"
             speed="0.0"
-            evade="5"
+            evade="1"
             magical-evade="5"
-            physical-defence="5"
+            physical-defence="2"
             magical-defence="0"
             mutation="50"
             />
-        <exp>10</exp>
+        <exp>1</exp>
         <!-- average stroll- and track range-->
         <behavior
             aggressive="true"
@@ -30,12 +30,12 @@
             priority="1"
             type="physical"
             element="neutral"
-            warmuptime="20"
-            cooldowntime="150"
-            basedamage="3"
+            warmuptime="8"
+            cooldowntime="9"
+            basedamage="4"
             deltadamage="2"
             range="48"
-            chancetohit="200"
+            chancetohit="10"
             animation="attack"
             />
     </monster>
@@ -51,7 +51,7 @@
             magical-defence="0"
             mutation="50"
             />
-        <exp>10</exp>
+        <exp>5</exp>
         <!-- average stroll- and track range-->
         <behavior
             aggressive="false"
@@ -64,12 +64,12 @@
             priority="1"
             type="physical"
             element="neutral"
-            warmuptime="2"
-            cooldowntime="5"
+            warmuptime="7"
+            cooldowntime="8"
             basedamage="5"
             deltadamage="2"
             range="48"
-            chancetohit="200"
+            chancetohit="15"
             animation="attack"
             />
         <drop item="50" percent="20" />
@@ -102,12 +102,12 @@
             priority="1"
             type="magical"
             element="neutral"
-            warmuptime="1"
-            cooldowntime="10"
+            warmuptime="2"
+            cooldowntime="12"
             basedamage="10"
             deltadamage="2"
             range="48"
-            chancetohit="200"
+            chancetohit="50"
             action="spellcast"
             effect-id="1"
             />

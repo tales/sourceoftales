@@ -160,8 +160,8 @@
             <slot type="hand" required="1" />
         </equip>
         <effect trigger="equip">
-            <autoattack skill="100" warmupspeed="10" cooldownspeed="166"
-                basedamage="50" deltadamage="10" chancetohit="5" range="34"
+            <autoattack skill="100" warmupspeed="3" cooldownspeed="3"
+                basedamage="50" deltadamage="10" chancetohit="7" range="34"
                 element="neutral" damagetype="physical" />
             <modifier attribute="acc1" value="2.5" />
         </effect>
