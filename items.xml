@@ -168,7 +168,7 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-2000" />
         </effect>
-        <sprite>equipment/female_mage_bronzenecklace.xml</sprite>    <!--TODO: change this -->
+        <sprite>equipment/dagger.xml</sprite>
     </item>
     <item id="7"
         max-per-slot="255"
