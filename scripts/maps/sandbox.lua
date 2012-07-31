@@ -20,11 +20,11 @@
 
 -- ]]
 
-require "scripts/functions/guardpatrol"
+require "scripts/functions/rebelpatrol"
 
 atinit(function()
     local mob_id = 4
-    local patrol = GuardPatrol:new("Patrol test", 5 * TILESIZE)
+    local patrol = RebelPatrol:new("Patrol test", 5 * TILESIZE, REPUTATION_ONTRIAL)
     for i=1,10 do
         patrol:assignBeing(monster_create(mob_id, get_named_coordinate("patrolspawn")))
     end
