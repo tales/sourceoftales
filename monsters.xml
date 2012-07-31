@@ -436,9 +436,9 @@
         <behavior
             aggressive="true"
             cowardly="false"
-            track-range="5"
+            track-range="1"
             stroll-range="0"
-            attack-distance="128"
+            attack-distance="32"
             />
         <attack id="1"
             priority="1"
@@ -448,7 +448,7 @@
             cooldowntime="70"
             basedamage="0"
             deltadamage="0"
-            range="128"
+            range="32"
             chancetohit="20000"
             action="spellcast"
             />
