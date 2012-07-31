@@ -36,21 +36,16 @@ end
 function RebelPatrol:isAggressiveAgainst(being)
     if not (being_type(being) == TYPE_CHARACTER and
             being_get_base_attribute(being, 13) > 0) then
-        WARN("NO CHAR!!!")
         return false
     end
 
     local reputation = tonumber(chr_try_get_quest(being, "rebel_reputation"))
     if not reputation then
-        WARN("REP NOT LOADED")
         return false
     end
-    WARN("REP: " .. reputation)
 
     if reputation < self.min_reputation then
-        WARN("KILL!!!")
         return true
     end
-    WARN("TOO HIGH")
     return false
 end
