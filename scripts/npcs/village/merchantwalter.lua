@@ -32,7 +32,12 @@ local function merchantTalk(npc, ch)
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
-        say("TODO: shop with potions")
+        npc_trade(npc, ch, false, {
+            { "Tiny Healing Potion", 40, 10 },
+            { "Small Healing Potion", 30, 20 },
+            { "Medium Healing Potion", 20, 30 },
+            { "Large Healing Potion", 10, 40 },
+            { "Bomb", 10, 100 }})
     elseif res == 2 then
         say("I hope you won't have to regret that!")
     end

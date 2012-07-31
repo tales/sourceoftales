@@ -499,4 +499,52 @@
             <modifier attribute="cap1" value="-200" />
         </effect>
     </item>
+    <item id="53" name="Tiny Healing Potion"
+        image="PotionShortRed.png"
+        description="A potion that heals 15 HP."
+        effect="+15 HP"
+        type="usable"
+        hp="15"
+        weight="1"
+        max-per-slot="10">
+        <effect trigger="activation">
+            <consumes />
+        </effect>
+    </item>
+    <item id="54" name="Small Healing Potion"
+        image="PotionRed.png"
+        description="A potion that heals 50 HP."
+        effect="+50 HP"
+        type="usable"
+        hp="50"
+        weight="2"
+        max-per-slot="10">
+        <effect trigger="activation">
+            <consumes />
+        </effect>
+    </item>
+    <item id="55" name="Medium Healing Potion"
+        image="PotionTallRed.png"
+        description="A potion that heals 100 HP."
+        effect="+100 HP"
+        type="usable"
+        hp="100"
+        weight="3"
+        max-per-slot="10">
+        <effect trigger="activation">
+            <consumes />
+        </effect>
+    </item>
+    <item id="56" name="Large Healing Potion"
+        image="PotionLargeRose.png"
+        description="A potion that heals 200 HP."
+        effect="+200 HP"
+        type="usable"
+        hp="200"
+        weight="4"
+        max-per-slot="10">
+        <effect trigger="activation">
+            <consumes />
+        </effect>
+    </item>
 </items>
