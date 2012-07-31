@@ -227,7 +227,7 @@
    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
   </data>
  </layer>
- <objectgroup name="Waypoints Rowan" width="198" height="150">
+ <objectgroup name="Waypoints Rowan" width="198" height="150" visible="0">
   <object name="Rowan 1" type="WAYPOINT" x="4458" y="1647" width="32" height="32"/>
   <object name="Rowan 2" type="WAYPOINT" x="4550" y="1693" width="32" height="32"/>
   <object name="Rowan 3" type="WAYPOINT" x="4594" y="1570" width="32" height="32"/>
@@ -236,7 +236,7 @@
   <object name="Rowan 6" type="WAYPOINT" x="4487" y="1511" width="32" height="32"/>
   <object name="Rowan 7" type="WAYPOINT" x="4532" y="1589" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Durmark" width="198" height="150">
+ <objectgroup name="Waypoints Durmark" width="198" height="150" visible="0">
   <object name="Durmark 1" type="WAYPOINT" x="4648" y="2756" width="32" height="32"/>
   <object name="Durmark 2" type="WAYPOINT" x="4647" y="2769" width="32" height="32"/>
   <object name="Durmark 3" type="WAYPOINT" x="4642" y="2784" width="32" height="32"/>
@@ -245,7 +245,7 @@
   <object name="Durmark 6" type="WAYPOINT" x="4631" y="2721" width="32" height="32"/>
   <object name="Durmark 7" type="WAYPOINT" x="4627" y="2747" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Francis" width="198" height="150">
+ <objectgroup name="Waypoints Francis" width="198" height="150" visible="0">
   <object name="Francis 1" type="WAYPOINT" x="4875" y="3449" width="32" height="32"/>
   <object name="Francis 2" type="WAYPOINT" x="4915" y="3402" width="32" height="32"/>
   <object name="Francis 3" type="WAYPOINT" x="4912" y="3441" width="32" height="32"/>
@@ -253,7 +253,7 @@
   <object name="Francis 5" type="WAYPOINT" x="4881" y="3426" width="32" height="32"/>
   <object name="Francis 6" type="WAYPOINT" x="4866" y="3398" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Veteran Godwin" width="198" height="150">
+ <objectgroup name="Waypoints Veteran Godwin" width="198" height="150" visible="0">
   <object name="Veteran Godwin 1" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
   <object name="Veteran Godwin 2" type="WAYPOINT" x="2176" y="1376" width="32" height="32"/>
   <object name="Veteran Godwin 3" type="WAYPOINT" x="2112" y="1472" width="32" height="32"/>
@@ -262,13 +262,13 @@
   <object name="Veteran Godwin 5" type="WAYPOINT" x="2336" y="1472" width="32" height="32"/>
   <object name="Veteran Godwin 7" type="WAYPOINT" x="2272" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Guard Fordwin" width="198" height="150">
+ <objectgroup name="Waypoints Guard Fordwin" width="198" height="150" visible="0">
   <object name="Guard Fordwin 1" type="WAYPOINT" x="2208" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 2" type="WAYPOINT" x="2368" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 3" type="WAYPOINT" x="2336" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 4" type="WAYPOINT" x="2240" y="2144" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Recruit Hugh" width="198" height="150">
+ <objectgroup name="Waypoints Recruit Hugh" width="198" height="150" visible="0">
   <object name="Recruit Hugh 1" type="WAYPOINT" x="1888" y="1472" width="32" height="32"/>
   <object name="Recruit Hugh 2" type="WAYPOINT" x="1824" y="1472" width="32" height="32"/>
   <object name="Recruit Hugh 3" type="WAYPOINT" x="1888" y="1536" width="32" height="32"/>
@@ -276,19 +276,19 @@
   <object name="Recruit Hugh 5" type="WAYPOINT" x="1824" y="1408" width="32" height="32"/>
   <object name="Recruit Hugh 6" type="WAYPOINT" x="1824" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Recruit Maurice" width="198" height="150">
+ <objectgroup name="Waypoints Recruit Maurice" width="198" height="150" visible="0">
   <object name="Recruit Maurice 1" type="WAYPOINT" x="1632" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 2" type="WAYPOINT" x="1472" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 3" type="WAYPOINT" x="1664" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 4" type="WAYPOINT" x="1536" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Smith Blacwin" width="198" height="150">
+ <objectgroup name="Waypoints Smith Blacwin" width="198" height="150" visible="0">
   <object name="Smith Blacwin 4" type="WAYPOINT" x="2912" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 2" type="WAYPOINT" x="2976" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 3" type="WAYPOINT" x="2944" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 1" type="WAYPOINT" x="2944" y="1408" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Basilea" width="198" height="150">
+ <objectgroup name="Waypoints Basilea" width="198" height="150" visible="0">
   <object name="Basilea 1" type="WAYPOINT" x="3776" y="2976" width="32" height="32"/>
   <object name="Basilea 2" type="WAYPOINT" x="3648" y="2912" width="32" height="32"/>
   <object name="Basilea 3" type="WAYPOINT" x="3584" y="3008" width="32" height="32"/>
@@ -299,7 +299,7 @@
   <object name="Basilea 8" type="WAYPOINT" x="3776" y="2880" width="32" height="32"/>
   <object name="Basilea 9" type="WAYPOINT" x="3680" y="3072" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Mary" width="198" height="150">
+ <objectgroup name="Waypoints Mary" width="198" height="150" visible="0">
   <object name="Mary 1" type="WAYPOINT" x="3744" y="2976" width="32" height="32"/>
   <object name="Mary 2" type="WAYPOINT" x="3648" y="2912" width="32" height="32"/>
   <object name="Mary 3" type="WAYPOINT" x="3584" y="2912" width="32" height="32"/>
@@ -312,7 +312,7 @@
   <object name="Mary 10" type="WAYPOINT" x="3808" y="3136" width="32" height="32"/>
   <object name="Mary 11" type="WAYPOINT" x="3584" y="3008" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Eva" width="198" height="150">
+ <objectgroup name="Waypoints Eva" width="198" height="150" visible="0">
   <object name="Eva 1" type="WAYPOINT" x="3776" y="2912" width="32" height="32"/>
   <object name="Eva 2" type="WAYPOINT" x="3648" y="2880" width="32" height="32"/>
   <object name="Eva 3" type="WAYPOINT" x="3776" y="2816" width="32" height="32"/>
@@ -323,7 +323,7 @@
   <object name="Eva 8" type="WAYPOINT" x="3648" y="3040" width="32" height="32"/>
   <object name="Eva 9" type="WAYPOINT" x="3616" y="2880" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Emma" width="198" height="150">
+ <objectgroup name="Waypoints Emma" width="198" height="150" visible="0">
   <object name="Emma 1" type="WAYPOINT" x="2368" y="2208" width="32" height="32"/>
   <object name="Emma 2" type="WAYPOINT" x="2208" y="2208" width="32" height="32"/>
   <object name="Emma 3" type="WAYPOINT" x="2112" y="2176" width="32" height="32"/>
@@ -331,7 +331,7 @@
   <object name="Emma 5" type="WAYPOINT" x="2400" y="2176" width="32" height="32"/>
   <object name="Emma 6" type="WAYPOINT" x="2272" y="2208" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Oliver" width="198" height="150">
+ <objectgroup name="Waypoints Oliver" width="198" height="150" visible="0">
   <object name="Oliver 1" type="WAYPOINT" x="3680" y="3776" width="32" height="32"/>
   <object name="Oliver 2" type="WAYPOINT" x="3776" y="3744" width="32" height="32"/>
   <object name="Oliver 3" type="WAYPOINT" x="3872" y="3776" width="32" height="32"/>
@@ -345,7 +345,7 @@
   <object name="Oliver 11" type="WAYPOINT" x="3776" y="3776" width="32" height="32"/>
   <object name="Oliver 12" type="WAYPOINT" x="3840" y="3744" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Peter" width="198" height="150">
+ <objectgroup name="Waypoints Peter" width="198" height="150" visible="0">
   <object name="Peter 1" type="WAYPOINT" x="4704" y="3488" width="32" height="32"/>
   <object name="Peter 2" type="WAYPOINT" x="4576" y="3392" width="32" height="32"/>
   <object name="Peter 3" type="WAYPOINT" x="4704" y="3264" width="32" height="32"/>
@@ -359,7 +359,7 @@
   <object name="Peter 11" type="WAYPOINT" x="4800" y="3744" width="32" height="32"/>
   <object name="Peter 12" type="WAYPOINT" x="4864" y="3616" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Joseph" width="198" height="150">
+ <objectgroup name="Waypoints Joseph" width="198" height="150" visible="0">
   <object name="Joseph 1" type="WAYPOINT" x="4320" y="3264" width="32" height="32"/>
   <object name="Joseph 2" type="WAYPOINT" x="4384" y="3200" width="32" height="32"/>
   <object name="Joseph 3" type="WAYPOINT" x="4480" y="3264" width="32" height="32"/>
@@ -380,7 +380,7 @@
   <object name="Joseph 18" type="WAYPOINT" x="4320" y="3424" width="32" height="32"/>
   <object name="Joseph 19" type="WAYPOINT" x="4192" y="3232" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Martin" width="198" height="150">
+ <objectgroup name="Waypoints Martin" width="198" height="150" visible="0">
   <object name="Martin 1" type="WAYPOINT" x="2368" y="2496" width="32" height="32"/>
   <object name="Martin 2" type="WAYPOINT" x="2496" y="2592" width="32" height="32"/>
   <object name="Martin 3" type="WAYPOINT" x="2432" y="2560" width="32" height="32"/>
@@ -397,7 +397,7 @@
   <object name="Martin 14" type="WAYPOINT" x="2304" y="2560" width="32" height="32"/>
   <object name="Martin 15" type="WAYPOINT" x="2368" y="2560" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="NPCS" width="198" height="150">
+ <objectgroup name="NPCS" width="198" height="150" visible="0">
   <object name="Gilbert" type="NPC_POSITION" x="2112" y="2496" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
@@ -567,7 +567,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="198" height="150">
+ <objectgroup name="Spawns" width="198" height="150" visible="0">
   <object name="training dummy spawn" type="SPAWN" x="1504" y="1184" width="352" height="192">
    <properties>
     <property name="max_beings" value="4"/>
@@ -758,11 +758,11 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Trigger" width="198" height="150">
+ <objectgroup name="Trigger" width="198" height="150" visible="0">
   <object name="Casern south gate" type="TRIGGER" x="2240" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="2288" y="2048" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Warps" width="198" height="150">
+ <objectgroup name="Warps" width="198" height="150" visible="0">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
@@ -883,17 +883,17 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Objects" width="198" height="150">
+ <objectgroup name="Objects" width="198" height="150" visible="0">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/village.lua"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Bees" width="198" height="150">
+ <objectgroup name="Bees" width="198" height="150" visible="0">
   <object name="Bee trigger" type="TRIGGER" x="2592" y="3488" width="608" height="384"/>
  </objectgroup>
- <objectgroup name="Waypoints Millicent" width="198" height="150">
+ <objectgroup name="Waypoints Millicent" width="198" height="150" visible="0">
   <object name="Millicent 1" type="WAYPOINT" x="3859" y="1030" width="32" height="32"/>
   <object name="Millicent 2" type="WAYPOINT" x="3932" y="1031" width="32" height="32"/>
   <object name="Millicent 3" type="WAYPOINT" x="3796" y="1052" width="32" height="32"/>
@@ -908,7 +908,7 @@
   <object name="Millicent 12" type="WAYPOINT" x="3821" y="990" width="32" height="32"/>
   <object name="Millicent 13" type="WAYPOINT" x="3741" y="958" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Damien" width="198" height="150">
+ <objectgroup name="Waypoints Rebel Damien" width="198" height="150" visible="0">
   <object name="Rebel Damien 1" type="WAYPOINT" x="472" y="3655" width="32" height="32"/>
   <object name="Rebel Damien 2" type="WAYPOINT" x="435" y="3567" width="32" height="32"/>
   <object name="Rebel Damien 3" type="WAYPOINT" x="323" y="3597" width="32" height="32"/>
@@ -920,7 +920,7 @@
   <object name="Rebel Damien 9" type="WAYPOINT" x="401" y="3602" width="32" height="32"/>
   <object name="Rebel Damien 10" type="WAYPOINT" x="423" y="3638" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Henry" width="198" height="150">
+ <objectgroup name="Waypoints Rebel Henry" width="198" height="150" visible="0">
   <object name="Rebel Henry 1" type="WAYPOINT" x="302" y="2761" width="32" height="32"/>
   <object name="Rebel Henry 2" type="WAYPOINT" x="292" y="2692" width="32" height="32"/>
   <object name="Rebel Henry 3" type="WAYPOINT" x="402" y="2691" width="32" height="32"/>
@@ -932,7 +932,7 @@
   <object name="Rebel Henry 9" type="WAYPOINT" x="320" y="2733" width="32" height="32"/>
   <object name="Rebel Henry 10" type="WAYPOINT" x="395" y="2739" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Tristan" width="198" height="150">
+ <objectgroup name="Waypoints Tristan" width="198" height="150" visible="0">
   <object name="Rebel Tristan 1" type="WAYPOINT" x="385" y="2550" width="32" height="32"/>
   <object name="Rebel Tristan 2" type="WAYPOINT" x="384" y="2464" width="32" height="32"/>
   <object name="Rebel Tristan 3" type="WAYPOINT" x="250" y="2424" width="32" height="32"/>
@@ -947,7 +947,7 @@
   <object name="Rebel Tristan 12" type="WAYPOINT" x="386" y="2435" width="32" height="32"/>
   <object name="Rebel Tristan 13" type="WAYPOINT" x="301" y="2505" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Philip" width="198" height="150">
+ <objectgroup name="Waypoints Philip" width="198" height="150" visible="0">
   <object name="Rebel Philip 1" type="WAYPOINT" x="385" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 2" type="WAYPOINT" x="386" y="2310" width="32" height="32"/>
   <object name="Rebel Philip 3" type="WAYPOINT" x="275" y="2277" width="32" height="32"/>
@@ -955,7 +955,7 @@
   <object name="Rebel Philip 5" type="WAYPOINT" x="297" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 6" type="WAYPOINT" x="331" y="2318" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Thea" width="198" height="150">
+ <objectgroup name="Waypoints Thea" width="198" height="150" visible="0">
   <object name="Thea 1" type="WAYPOINT" x="4480" y="4032" width="32" height="32"/>
   <object name="Thea 2" type="WAYPOINT" x="4800" y="4000" width="32" height="32"/>
   <object name="Thea 3" type="WAYPOINT" x="5024" y="3872" width="32" height="32"/>
@@ -985,5 +985,374 @@
   <object name="Thea 27" type="WAYPOINT" x="4096" y="3904" width="32" height="32"/>
   <object name="Thea 28" type="WAYPOINT" x="4288" y="4000" width="32" height="32"/>
   <object name="Thea 29" type="WAYPOINT" x="4448" y="4032" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#755219" name="Patrol1_Rebels" width="198" height="150">
+  <object name="Patrol1_Rebels 2" type="WAYPOINT" x="288" y="2656" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels_Spawn" type="COORDINATE" x="288" y="2272" width="128" height="192"/>
+  <object name="Patrol1_Rebels 1" type="WAYPOINT" x="336" y="2480" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 3" type="WAYPOINT" x="384" y="2784" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 4" type="WAYPOINT" x="368" y="2912" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 5" type="WAYPOINT" x="304" y="2976" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 6" type="WAYPOINT" x="303" y="3231" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 7" type="WAYPOINT" x="292" y="3387" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 8" type="WAYPOINT" x="303" y="3522" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 9" type="WAYPOINT" x="387" y="3619" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 10" type="WAYPOINT" x="424" y="3722" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 12" type="WAYPOINT" x="400" y="3967" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 11" type="WAYPOINT" x="400" y="3824" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 13" type="WAYPOINT" x="608" y="3968" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 14" type="WAYPOINT" x="753" y="3955" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 15" type="WAYPOINT" x="871" y="4008" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 16" type="WAYPOINT" x="1004" y="3945" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 17" type="WAYPOINT" x="1021" y="3815" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 18" type="WAYPOINT" x="1049" y="3684" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 19" type="WAYPOINT" x="1043" y="3518" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 20" type="WAYPOINT" x="940" y="3440" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 21" type="WAYPOINT" x="855" y="3338" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 22" type="WAYPOINT" x="827" y="3236" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 23" type="WAYPOINT" x="794" y="3107" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 24" type="WAYPOINT" x="787" y="2950" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 25" type="WAYPOINT" x="928" y="2842" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 27" type="WAYPOINT" x="1248" y="2781" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 26" type="WAYPOINT" x="1072" y="2768" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 28" type="WAYPOINT" x="1351" y="2702" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 30" type="WAYPOINT" x="1120" y="2454" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 29" type="WAYPOINT" x="1264" y="2576" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 31" type="WAYPOINT" x="968" y="2354" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 32" type="WAYPOINT" x="922" y="2480" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 33" type="WAYPOINT" x="936" y="2620" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 34" type="WAYPOINT" x="974" y="2751" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 35" type="WAYPOINT" x="1095" y="2785" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 36" type="WAYPOINT" x="1243" y="2783" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 37" type="WAYPOINT" x="1329" y="2848" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 38" type="WAYPOINT" x="1335" y="2975" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 39" type="WAYPOINT" x="1394" y="3050" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 40" type="WAYPOINT" x="1390" y="3146" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 41" type="WAYPOINT" x="1298" y="3217" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 42" type="WAYPOINT" x="1235" y="3322" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 43" type="WAYPOINT" x="1139" y="3405" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 44" type="WAYPOINT" x="1027" y="3465" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 45" type="WAYPOINT" x="1051" y="3608" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 46" type="WAYPOINT" x="1022" y="3751" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 47" type="WAYPOINT" x="975" y="3945" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 48" type="WAYPOINT" x="846" y="4014" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 49" type="WAYPOINT" x="726" y="3950" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 50" type="WAYPOINT" x="608" y="3968" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 51" type="WAYPOINT" x="400" y="3968" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 52" type="WAYPOINT" x="403" y="3814" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 53" type="WAYPOINT" x="431" y="3705" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 54" type="WAYPOINT" x="379" y="3600" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 55" type="WAYPOINT" x="299" y="3529" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 56" type="WAYPOINT" x="304" y="3388" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 57" type="WAYPOINT" x="304" y="3231" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 58" type="WAYPOINT" x="303" y="2976" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 59" type="WAYPOINT" x="369" y="2896" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 60" type="WAYPOINT" x="360" y="2747" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol1_Rebels 61" type="WAYPOINT" x="281" y="2624" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

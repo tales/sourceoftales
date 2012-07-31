@@ -27,6 +27,7 @@ atinit(function()
     parse_triggers_from_map()
 
     require "scripts/functions/guardpatrol"
+    require "scripts/functions/rebelpatrol"
     require "scripts/functions/npcpatrol"
 
     -- Inside of casern
@@ -67,4 +68,10 @@ atinit(function()
     require "scripts/npcs/village/rowan"
     require "scripts/npcs/village/thea"
 
+    -- Rebel patrols
+    local rebelpatrol1 = RebelPatrol:new("Patrol1_Rebels", 5 * TILESIZE, REPUTATION_ONTRIAL)
+    for i=1,10 do
+         rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
+    end
+    schedule_every(1, function() rebelpatrol1:logic() end)
 end)
