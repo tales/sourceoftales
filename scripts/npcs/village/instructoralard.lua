@@ -78,11 +78,15 @@ local function instructorTalk(npc, ch)
     end
 
     local function aboutSkills()
-        say("TODO")
+        say("Skills are the abilities everyone has. You'll get better with them by just using them.")
+        say("Getting more experienced with your skills will enable you to reach a new level and distribute points "..
+            "on your attributes.")
     end
 
     local function aboutSpecials()
-        say("TODO")
+        say("Specials are certain abilities you can learn during your adventure.")
+        say("This could be some sword attack, but also spells.")
+        say("Keep your eyes open for persons who can teach you new specials.")
     end
 
     local function aboutQuestions()
