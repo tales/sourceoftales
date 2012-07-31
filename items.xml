@@ -161,9 +161,9 @@
         </equip>
         <effect trigger="equip">
             <autoattack skill="100" warmupspeed="10" cooldownspeed="166"
-                basedamage="50" deltadamage="10" chancetohit="2" range="32"
+                basedamage="50" deltadamage="10" chancetohit="5" range="34"
                 element="neutral" damagetype="physical" />
-            <modifier attribute="acc1" value="1.5" />
+            <modifier attribute="acc1" value="2.5" />
         </effect>
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-2000" />
