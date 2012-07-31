@@ -58,6 +58,169 @@
    eJztlMlu5EAMQ9P//9ODHAJ4GrVQIrWUbQF16NglkXxyPp+fn8973gOe36rW8J7/efxVtZaTD5vfrKp9nXSueTEZ7qra5wkHKWVfT4/qjDqyYXtef6/eXWmqzqcLm6jeCLvVbjyRU6RnNH/rO0840UyQQu5W55TNBPE822krF+suMFx2vJnMIhkgWa/Kco/VbOmDFLJfo797vMxmWGvHDb3n8cDsN1OWHFn9imJ6sUws34y6or/X716oDpS7Yqc8/wMsObAMPbPR52x+yLvWnmom6F1Fft5MlExUGUb0Gr2HspyxUjGx+FIzQX1U8PX62GlgmMz2yLITVi+qfLKZWPKx+o1kncVFyZfxwnie1a5nhZe7MNllqerThUsFD0b76B7aZ1XVvqqOIofRfaTXau5Oz+zZSEcFE1Wenh6rQu56fK36e7VE8GCzsWpXzfXu22xWNoud99nfLP1ZTdY7rK4qJmj+iEbEn9VL9L3de6uKZhLdxzuD0YfeXeU8ehbNJYt5BRPFnNnsSC5ZTLJZsjqR+ZFMon0qmYzK63PGAO0ftTcZe+idoWIyenfVB51xOhOv9t2dEbPV/FlZdUfyuBOT0Rzrb3R+BBNkTypZoD3QivRnyfn7fY/m6zOrNzYTRFsVD6sGppR+0feQfbDsn0WjkkkXvop9Z76RjKzU3qxcGE+z9719WK/RTKL6q/3PmHTwehoTJdvR9+bpV515FROV/1VVacrg0ZnJigvTK0KX2uMpzJmeas+qfsqdy2Rx7a30rvaL9ETrCUw8+XlZe/OOZBPVT91ToVnBIjvHiF1UM9n1Xz2PYBG5j4o+ET5XOc9+z2ZGM5npqmC8ustq22VmzTWDiYqLV9/uXVbbTo9XbxQLRBtbyNysffFqUOyekguSN3KPyZv1rswtgwO6CysmK987Vqg/Jgs1k2weXiZsv6g8GJaRvSKYsH6imTBalTvRkYVy9yzvRfDIZpLN4pRcVHOtmXbKHfF2ykykuvhk5mXvj2cekj3yLJsJM3d37/s5W1E7p5wZwcaiA2GSzcGza51YKLic6jfDe4S+JzDprC2Ky0lMqrVk6u3KpKuuDCbqXhE8uuiy6H8Cky7asphcc+jgZ1XV+jKZdOHyPf9ENmqNlZ5ns09j8qe5cz/lPpzCJoIJ29ObXeesLX4ifFQxUcwe9VH07MCE6XlXJmp2GVxGFeW9OxM1j1m+u7wVel4m815WJiot1spgYvEWwcSTB5JRhi4VE6R/VyYezRW6lGXR2sF7BBPW0+q36luJyuNl0i+PDho6MblmMsspy8PLhL/zMrk3EwWXkxhZ86jWflcuTB5ddGRy6eAbyaKTlkgmHfyeou1l0k+buixz1HqYDKo5RDIZ5YNmGDF7lz9y5y5MVGX95pRzTmWy6qWYq/Y1el7NgGWSqUXdtzrrU0/n/X3Pe97zniecfxccPl0=
   </data>
  </layer>
+ <objectgroup name="Spawns" width="198" height="150">
+  <object name="skeleton mage" type="SPAWN" x="2304" y="256" width="544" height="288">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="3"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="832" y="320" width="352" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="64" y="704" width="352" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="736" y="1344" width="576" height="320">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="160" y="2336" width="896" height="736">
+   <properties>
+    <property name="max_beings" value="2"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="1856" y="192" width="288" height="544">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="2048" y="1056" width="224" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="1024" y="1856" width="224" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="2912" y="1568" width="224" height="416">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="2528" y="1856" width="384" height="384">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="2848" y="736" width="224" height="480">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="1536" y="2848" width="576" height="160">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="2464" y="704" width="352" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="1664" y="1536" width="640" height="320">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="352" y="960" width="448" height="320">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="64" y="1472" width="640" height="384">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="256" y="2272" width="736" height="864">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="2336" y="2272" width="384" height="608">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton mage" type="SPAWN" x="32" y="2496" width="1152" height="352">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="3"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton mage" type="SPAWN" x="1920" y="1472" width="96" height="448">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="3"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton mage" type="SPAWN" x="1056" y="640" width="480" height="480">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="3"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton soldier" type="SPAWN" x="1248" y="2176" width="480" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="6"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="skeleton" type="SPAWN" x="96" y="1920" width="224" height="192">
+   <properties>
+    <property name="max_beings" value="1"/>
+    <property name="monster_id" value="5"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Scripted Spawn at alcoves" width="101" height="100">
   <object name="alcoves spawn" type="TRIGGER" x="1952" y="2560" width="32" height="32">
    <properties>
@@ -88,7 +251,7 @@
  <objectgroup name="Objects" width="101" height="100">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
-    <property name="FILENAME" value="scripts/maps/cave2.lua"/>
+    <property name="FILENAME" value="scripts/maps/cave.lua"/>
    </properties>
   </object>
   <object name="Warp to main map" type="WARP" x="1248" y="32" width="32" height="32">
