@@ -54,7 +54,7 @@ on_character_death_accept(function(ch)
     -- being_heal(ch, 1)
     -- warp the character to the respawn location
     local position = chr_try_get_quest(ch, "respawn")
-    if respawn == "" then
+    if position == "" then
         position = 1 .. " " .. 2272 .. " " .. 1472 -- LATER: find out how this can be done without hard coded numbers
         chr_set_quest(ch, "respawn", position)
     end
