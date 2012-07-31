@@ -19,7 +19,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Innkeeper Norman")
+
 local function innkeeperTalk(npc, ch)
+    patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -134,6 +137,10 @@ local function innkeeperTalk(npc, ch)
     else
         reputationDependent()
     end
+    patrol:unblock(ch)
 end
 
 local innkeeper = create_npc_by_name("Innkeeper Norman", innkeeperTalk)
+being_set_base_attribute(innkeeper, 16, 1)
+patrol:assignBeing(innkeeper)
+schedule_every(21, function() patrol:logic() end)
