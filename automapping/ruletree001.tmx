@@ -53,12 +53,12 @@
    eJxjYKANsKORudgAABrsAD8=
   </data>
  </layer>
- <layer name="Output0_Collisions" width="7" height="7">
+ <layer name="Output0_Collision" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYBgY4ERFswAUXABD
   </data>
  </layer>
- <layer name="Output1_Collisions" width="7" height="7">
+ <layer name="Output1_Collision" width="7" height="7">
   <data encoding="base64" compression="zlib">
    eJxjYBgY4ERFswAUXABD
   </data>
