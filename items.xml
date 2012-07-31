@@ -547,4 +547,19 @@
             <consumes />
         </effect>
     </item>
+    <item id="57"
+        max-per-slot="255"
+        name="Few Gold Coins"
+        image="CoinsGoldSmall.png">
+    </item>
+    <item id="58"
+        max-per-slot="255"
+        name="Some Gold Coins"
+        image="CoinsGoldMedium.png">
+    </item>
+    <item id="59"
+        max-per-slot="255"
+        name="Many Gold Coins"
+        image="CoinsGoldLarge.png">
+    </item>
 </items>
