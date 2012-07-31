@@ -28,6 +28,7 @@ local function merchantTalk(npc, ch)
     say("Welcome to my little shop! I'm sure you're interested in the high quality armor I'm selling. Do you really want to get into a battle with those wastage you got in the casern? Have a look at what I have to offer... it might save your life!")
 
     local choices = { "Show me your goods.",
+                    "I have some things to sell.",
                     "I'm not interested." }
 
     local res = npc_choice(npc, ch, choices)
@@ -38,6 +39,9 @@ local function merchantTalk(npc, ch)
             { "Iron Armor", 10, 5000 },
             { "Iron Gloves", 10, 1000 }})
     elseif res == 2 then
+        say("Alright, let me see.")
+        npc_trade(npc, ch, true)
+    elseif res == 3 then
         say("Come back when you change your mind!")
     end
 end

@@ -28,6 +28,7 @@ local function merchantTalk(npc, ch)
     say("Would you like some fresh food? It's delicious and you might be glad about some refreshment after battle.")
 
     local choices = { "Show me your goods.",
+                    "Do you also buy something?",
                     "I don't need anything." }
 
     local res = npc_choice(npc, ch, choices)
@@ -37,7 +38,10 @@ local function merchantTalk(npc, ch)
             { "Pumpkin", 10, 50 },
             { "Food Shank", 10, 130 },
             { "Apple", 10, 40 }})
-    elseif res == 2 then
+    elseif res== 2 then
+        say("Sure. Show me what you have.")
+        npc_trade(npc, ch, true)
+    elseif res == 3 then
         say("As you wish.")
     end
 end
