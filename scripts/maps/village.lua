@@ -74,19 +74,42 @@ atinit(function()
     local rebelpatrol1 = RebelPatrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     local rebelpatrol2 = RebelPatrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     for i=1,4 do
-         rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
-         rebelpatrol2:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
+         rebelpatrol1:assignBeing(monster_create("Rebel", get_named_coordinate("Patrol1_Rebels_Spawn")))
+         rebelpatrol2:assignBeing(monster_create("Rebel", get_named_coordinate("Patrol1_Rebels_Spawn")))
     end
     schedule_every(1, function() rebelpatrol1:logic() end)
-    schedule_every(2, function() rebelpatrol1:logic() end)
+    schedule_every(2, function() rebelpatrol2:logic() end)
 
     -- Soldier patrols
     local soldierpatrol1 = SoldierPatrol:new("Patrol1_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
     local soldierpatrol2 = SoldierPatrol:new("Patrol2_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
     for i=1,5 do
-         soldierpatrol1:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
-         soldierpatrol2:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
+         soldierpatrol1:assignBeing(monster_create("Soldier", get_named_coordinate("Patrol1_Soldiers_Spawn")))
+         soldierpatrol2:assignBeing(monster_create("Soldier", get_named_coordinate("Patrol1_Soldiers_Spawn")))
     end
     schedule_every(1, function() soldierpatrol1:logic() end)
     schedule_every(2, function() soldierpatrol2:logic() end)
+
+    local function respawn(patrol, mob, amount)
+        local x = patrol.path[patrol.position_index].x
+        local y = patrol.path[patrol.position_index].y
+        for i=1, amount do
+            patrol:assignBeing(monster_create(mob, x, y))
+        end
+    end
+
+    schedule_every(60, function()
+        if #rebelpatrol1.members == 0 then
+            schedule_in(30, function() respawn(rebelpatrol1, "Rebel", 4) end)
+        end
+        if #rebelpatrol2.members == 0 then
+            schedule_in(30, function() respawn(rebelpatrol2, "Rebel", 4) end)
+        end
+        if #soldierpatrol1.members == 0 then
+            schedule_in(30, function() respawn(soldierpatrol1, "Soldier", 5) end)
+        end
+        if #soldierpatrol2.members == 0 then
+            schedule_in(30, function() respawn(soldierpatrol2, "Soldier", 5) end)
+        end
+    end)
 end)
