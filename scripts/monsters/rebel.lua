@@ -28,8 +28,8 @@ local function damaged(mob, aggressor, hploss)
 
     if being_get_base_attribute(mob, ATTR_HP) > 0 then return end
 
-    local reputation_soldier = tonumber(chr_try_get_quest(being, "soldier_reputation"))
-    local reputation_rebel = tonumber(chr_try_get_quest(being, "rebel_reputation"))
+    local reputation_soldier = tonumber(chr_try_get_quest(aggressor, "soldier_reputation"))
+    local reputation_rebel = tonumber(chr_try_get_quest(aggressor, "rebel_reputation"))
     if not reputation_soldier or not reputation_rebel then return end
 
     reputation_soldier = reputation_soldier + 2
