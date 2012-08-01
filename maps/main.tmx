@@ -762,7 +762,7 @@
   <object name="Casern south gate" type="TRIGGER" x="2240" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="2288" y="2048" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Warps" width="198" height="150" visible="0">
+ <objectgroup name="Warps" width="198" height="150">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
@@ -871,8 +871,8 @@
   <object name="Warp to cave" type="WARP" x="1312" y="160" width="64" height="32">
    <properties>
     <property name="DEST_MAP" value="cave"/>
-    <property name="DEST_X" value="1264"/>
-    <property name="DEST_Y" value="80"/>
+    <property name="DEST_X" value="2032"/>
+    <property name="DEST_Y" value="656"/>
    </properties>
   </object>
   <object name="Warp to cave" type="WARP" x="576" y="32" width="64" height="32">

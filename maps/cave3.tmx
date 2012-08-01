@@ -48,7 +48,7 @@
  </layer>
  <layer name="CaveWall" width="44" height="67">
   <data encoding="base64" compression="zlib">
-   eJztmEtOAzEQROsUw7YD2YbPNglsA/e/EFhKC2Pcdvs37sCU5A0ahZdKtV2eHYDdP1v7r/WoWA9GWE/K9WyE9b1gzfT45crwAZ2Okz1+K2B1umCexy4LTwWsrFkeuyycK3idx68TeEuz4OuAdTNRmwXW2pmozQJrrbnjc6xkD5O0hsfOV3c+tHjLGu3xHt9nVKu3rFEe87nbw1dfIzz2O0IvX3319DjFStdn7ht5e3qc6jML0vtwyfdxHp8amHP7FrOmMs28dwpe9riG2e/fMRaCLtPhmZvj9plL7iKcgZS3mt4b+41z2fCZtTOY6jGL4pnY/2bmkmxoOlxqfhbFMxpmbT5IwSv1mEXxjIY5lkspI7nOyeettM+2dJ1ULiWfc+dIztvWrsPM0tkQcufuIbEZIvz0tVeP1GZDyoQ0Qwek9+Ia+dlgbmYPeaVMSFk4on+H9Jl9brdCz6RuIe2nl86csc/33/1InoUet3asHpK8ic2dBd6UCBvvSIX7mnXecOas84YzZ53XiaDvdhZEuK2ZI2y8I0Uou5/MFuF3T7PsMeG2eVvf8Y8WQdfZrci/o6c6uwUR8vdTSyLE78hW543wN3itZoIgvzex6HG4N1jmJcisFjOR8taax4Q8qyVejbdWMqFltcBcyjqTmSpZZ2W51tsZHreyrsnci1XzHZbI36xw9vpNrHBu67bXJwptxCQ=
+   eJztmE1SwzAMhXWKsFWh2/KzbYFtywHgAHAAuP+KeKaaCmPZ8k9iBfJmtMlk2i8vT7acDQBs/lltx7pl9TrWm3fN1Y0R1oNX72N9BK7fG2E9efU51lfg+qmzxw9nhhfQad/Z4+cMVqcj9PPYZeEug5XUy2OXhccCXufxUwfe3Cxw7WDeTJRmgTR3JkqzQJqr72gfy1nDJM3hsfPV7Q813pKm9ngLlz2q1lvSVB7TvtvCV64pPOYzQitfuVp6HGPF8z3XlbwtPY7NMwPE1+Gc53EeHyqYU+sWscYyTbxXCl7yuISZz98hFgRdpv09N8XNmXPOIpSBmLeauTf0jlPZ4MzaHozNMYPintB/E3NONjQzXKx/BsU9GmZtPlDBK80xg+IeDXMol1JGUjMn7bfSOlsz68RyKfmc2kdS3tbOOsQs7Q0+d+ocEuohhJ++tpojtdmQMiH10A7ia3GJeDaIm9h9XikTUhb20H6G5Myc25XvmTRbSOvpsTFn6Pf5tx/JM9/j2hmrhSRvQn1ngTcmhJV3SvnrmnVev+es8/o9Z53XCUE/21kQwrJ6DmHlnVIIeeeT3kL4PadZ9hhh2by13/inFoJuZrcifkaPzewWhJA+n1oSQviMbLXfEP4Gr9VMIMjfTSx67K8NlnkRZFaLmYh5a81jhDSrJV6Nt1YyoWW1wJzL2pMZC1l7ZbnU2x4e17LOydyKVfMMQ+CaFc5W78QK51rLrm8cIMUR
   </data>
  </layer>
  <layer name="CaveWall2" width="44" height="67">
@@ -68,7 +68,7 @@
  </layer>
  <layer name="Collision" width="44" height="67">
   <data encoding="base64" compression="zlib">
-   eJzt1tGugzAMA1C0///oaa8TtHFspwFqqQ+7K8kh68b9HMfx2Wsv8YpktRGxdvGi2V6vd6U5m+31eleYz3pHfHf1VpmVuZvXbXakyqq8j4q5su+7vJH6rFdpzliv+jvNkZqZ3mf7WDNrHfWOpuLMon1dXmZOkd6Ml7UidTp4Z2F7I/sVQQwdvDOHwusKcybYvsjfr/ZWed3JepXfOXT/G+a7KtvrDfIMr/KM3nvCfLuakecxWnf0OlMP/f9hZZ7ozTwnlfuurr3LjH/p4kU+G6W34l4d1rPfs1EfpN9q7//+We9ojdlcWG90Tox3dH3Wq5gv2xO9dmRGzpVzNtFaSu/Mipoz96vyInUYL3IWnV71dUgqvaw50xe5BjF3sY48TD2nFT0bXWZxFWUt5RxmfRRxnLHImevo7PbZ7/Xe9QUc3gxt
+   eJzt1sGOwjAMBNCq///RiAMX1Dgez9hx24zUA0tiv5pA9zyO49zXra5fVjs8RiurjYi1ixfN9uZ6V5qj2d5c7wrzVW+P767eKrMyd/NmmzNSZVXeR8Vc2fezvJ76rFdpjlhH/TPNnpqR3lfrWDNrtXp7U3Fm0b5ZXmZOnt6Ml7UidTp4Z2F7I+sVQQwdvDOHwpsV5kywfZG/j9ZWebMT9Sq/c+j6N8x3VbY3N8gzvMpjvfeE+XY1I89jtK71OlIP/f9hZZ7ojTwnletGe+8y42+6eJHPRumtuNcM69XvmdUH6bfa+79+1ttbYzYX1uudE+O19ke9ivmyPdG9lhk5V5mz8dZSemdW1By5X5UXqcN4kbOY6VXvQ1LpZc2RvsgexNzFanmYeplW9Gx0mcUoylrKOcz6KJJxxjxnrqOz22e/r/deH2tnDGk=
   </data>
  </layer>
  <objectgroup name="lower area" width="44" height="67">
@@ -99,6 +99,15 @@
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/cave3.lua"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Warps" width="44" height="67">
+  <object name="to outside" type="WARP" x="672" y="64" width="64" height="32">
+   <properties>
+    <property name="DEST_MAP" value="cave"/>
+    <property name="DEST_X" value="1648"/>
+    <property name="DEST_Y" value="3056"/>
    </properties>
   </object>
  </objectgroup>
