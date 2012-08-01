@@ -11,7 +11,7 @@
             hp="50"
             size="4"
             speed="0.0"
-            evade="1"
+            evade="5"
             magical-evade="5"
             physical-defence="2"
             magical-defence="0"
@@ -42,12 +42,12 @@
     <monster id="2" name="Beetle" targetCursor="small">
         <sprite>monsters/beetle.xml</sprite>
         <attributes
-            hp="100"
+            hp="90"
             size="4"
             speed="1.0"
-            evade="1"
+            evade="5"
             magical-evade="5"
-            physical-defence="5"
+            physical-defence="12"
             magical-defence="0"
             mutation="50"
             />
@@ -81,7 +81,7 @@
         <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
         <sprite>equipment/LEGS_robe_skirt.xml</sprite>
         <attributes
-            hp="200"
+            hp="120"
             size="4"
             speed="1.0"
             evade="1"
@@ -125,12 +125,12 @@
         <sprite>equipment/BELT_leather.xml</sprite>
         <sprite>equipment/FEET_shoes_brown.xml</sprite>
         <attributes
-            hp="200"
+            hp="100"
             size="4"
             speed="2.0"
-            evade="1"
+            evade="5"
             magical-evade="5"
-            physical-defence="5"
+            physical-defence="20"
             magical-defence="0"
             mutation="25"
             />
@@ -151,7 +151,7 @@
             basedamage="10"
             deltadamage="2"
             range="48"
-            chancetohit="200"
+            chancetohit="10"
             action="attack"
             />
         <drop item="5" percent="20" />
@@ -163,7 +163,7 @@
     <monster id="5" name="Skeleton" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
         <attributes
-            hp="200"
+            hp="150"
             size="4"
             speed="1.0"
             evade="1"
@@ -310,7 +310,7 @@
     <monster id="9" name="Slime" targetCursor="small">
         <sprite>monsters/slime.xml</sprite>
         <attributes
-            hp="200"
+            hp="100"
             size="4"
             speed="1.0"
             evade="1"
@@ -384,7 +384,7 @@
         <sprite>equipment/BELT_leather.xml</sprite>
         <sprite>equipment/FEET_shoes_brown.xml</sprite>
         <attributes
-            hp="200"
+            hp="120"
             size="4"
             speed="2.0"
             evade="1"
