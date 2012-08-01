@@ -44,7 +44,7 @@ local function magistrateTalk(npc, ch)
                         "No!"}
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
-            apply_amnesty(npc, ch, "soldier_reputation", "rebel_reputation")
+            apply_amnesty(npc, ch, "soldier_reputation", "Army", "rebel_reputation", "Rebels")
             set_respawn()
         else
             say("No? Well, we don't have any business with each other then.")

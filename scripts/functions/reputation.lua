@@ -52,7 +52,7 @@ function change_reputation(ch, factionvar, factionname, change)
     end
 end
 
-function apply_amnesty(npc, ch, friendly_faction, foe_faction)
+function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name, foe_faction, foe_faction_name)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -71,8 +71,8 @@ function apply_amnesty(npc, ch, friendly_faction, foe_faction)
         local money = chr_money(ch)
         if money >= cost then
             chr_money_change(ch, -cost)
-            reputation = 0
-            foe_reputation = foe_reputation - cost -- TODO: formula
+            change_reputation(ch, friendly_faction, friendly_faction_name, cost)
+            change_reputation(ch, foe_faction, foe_faction_name, -cost)-- TODO: formula
             say("I hope you learned from your mistakes.")
         else
             say("Come back when you can afford it.")
@@ -80,7 +80,4 @@ function apply_amnesty(npc, ch, friendly_faction, foe_faction)
     else
         say("Mh. Come back when you changed your mind.")
     end
-
-    chr_set_quest(ch, friendly_faction, tostring(reputation))
-    chr_set_quest(ch, foe_faction, tostring(foe_reputation))
 end

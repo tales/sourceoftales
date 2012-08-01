@@ -71,6 +71,7 @@ local function rebelTalk(npc, ch)
         goldenfields_check_bounty(npc, ch, "rebel_goldenfields_killsoldiers", "Soldier")
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

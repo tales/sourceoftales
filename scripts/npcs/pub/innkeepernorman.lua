@@ -122,7 +122,7 @@ local function innkeeperTalk(npc, ch)
                             "No!"}
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
-                apply_amnesty(npc, ch, "rebel_reputation", "soldier_reputation")
+                apply_amnesty(npc, ch, "rebel_reputation", "Rebels", "soldier_reputation", "Army")
                 set_respawn()
             else
                 say("Hm. As you wish.")
