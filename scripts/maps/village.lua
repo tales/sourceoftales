@@ -4,6 +4,7 @@
 
   Copyright (C) 2012 Jessica Tölke
   Copyright (C) 2012 Erik Schilling
+  Copyright (C) 2012 Felix Stadthaus
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -28,6 +29,7 @@ atinit(function()
 
     require "scripts/functions/guardpatrol"
     require "scripts/functions/rebelpatrol"
+    require "scripts/functions/soldierpatrol"
     require "scripts/functions/npcpatrol"
 
     -- Inside of casern
@@ -73,7 +75,17 @@ atinit(function()
     local rebelpatrol2 = RebelPatrol:new("Patrol2_Rebels", 5 * TILESIZE, REPUTATION_ONTRIAL)
     for i=1,10 do
          rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
-         rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
+         rebelpatrol2:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
+    end
+    schedule_every(1, function() rebelpatrol1:logic() end)
+    schedule_every(2, function() rebelpatrol1:logic() end)
+
+    -- Soldier patrols
+    local soldierpatrol1 = SoldierPatrol:new("Patrol1_Soldiers", 5 * TILESIZE, REPUTATION_ONTRIAL)
+    local soldierpatrol2 = SoldierPatrol:new("Patrol2_Soldiers", 5 * TILESIZE, REPUTATION_ONTRIAL)
+    for i=1,10 do
+         soldierpatrol1:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
+         soldierpatrol2:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
     end
     schedule_every(1, function() rebelpatrol1:logic() end)
     schedule_every(2, function() rebelpatrol1:logic() end)
