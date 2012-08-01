@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="53" height="17" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
@@ -159,5 +158,199 @@
   <object name="Commander Ranulf 10" type="WAYPOINT" x="1472" y="224" width="32" height="32"/>
   <object name="Commander Ranulf 11" type="WAYPOINT" x="1408" y="160" width="32" height="32"/>
   <object name="Commander Ranulf 12" type="WAYPOINT" x="1536" y="192" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="SoldierPatrol" width="53" height="17">
+  <object name="SoldierPatrol 1" type="WAYPOINT" x="80" y="240" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 2" type="WAYPOINT" x="81" y="333" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 3" type="WAYPOINT" x="82" y="449" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 4" type="WAYPOINT" x="239" y="444" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 5" type="WAYPOINT" x="427" y="442" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 6" type="WAYPOINT" x="590" y="440" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 7" type="WAYPOINT" x="592" y="302" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 8" type="WAYPOINT" x="592" y="203" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 9" type="WAYPOINT" x="754" y="207" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 10" type="WAYPOINT" x="870" y="185" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 11" type="WAYPOINT" x="1040" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 12" type="WAYPOINT" x="1136" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 13" type="WAYPOINT" x="1136" y="336" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 14" type="WAYPOINT" x="1168" y="432" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 15" type="WAYPOINT" x="1264" y="368" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 16" type="WAYPOINT" x="1264" y="240" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 17" type="WAYPOINT" x="1456" y="240" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 18" type="WAYPOINT" x="1264" y="240" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 19" type="WAYPOINT" x="1264" y="368" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 20" type="WAYPOINT" x="1168" y="432" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 21" type="WAYPOINT" x="1136" y="336" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 22" type="WAYPOINT" x="1136" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 23" type="WAYPOINT" x="1040" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 24" type="WAYPOINT" x="848" y="176" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 25" type="WAYPOINT" x="752" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 26" type="WAYPOINT" x="592" y="208" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 27" type="WAYPOINT" x="592" y="304" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 28" type="WAYPOINT" x="585" y="434" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 29" type="WAYPOINT" x="432" y="432" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 30" type="WAYPOINT" x="240" y="464" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 31" type="WAYPOINT" x="80" y="432" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 32" type="WAYPOINT" x="80" y="336" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

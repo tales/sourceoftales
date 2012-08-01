@@ -3,6 +3,7 @@
   Inside the casern.
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2012 Felix Stadthaus
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -49,6 +50,5 @@ atinit(function()
             schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4) end)
         end
     end)
-
 end)
 
