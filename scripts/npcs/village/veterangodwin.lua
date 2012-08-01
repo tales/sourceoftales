@@ -19,6 +19,8 @@
 
 --]]
 
+require "scripts/functions/bounty"
+
 local patrol = NPCPatrol:new("Veteran Godwin")
 
 local function veteranTalk(npc, ch)
@@ -81,7 +83,6 @@ local function veteranTalk(npc, ch)
         end
     end
 
-
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
@@ -94,9 +95,11 @@ local function veteranTalk(npc, ch)
         elseif (taxes ~= "done") then
             collect_taxes()
         else
-            say("I don't have anything specific for you to do right now.")
-            say("But you can help by chasing some of the rebels in the forest. And better not go alone, you still "..
-                "look a bit too weakly to deal with them on your own.")
+        say("I don't have anything specific for you to do right now. "..
+            "But you can help by chasing some of the rebels in the forest. And better not go alone, you still "..
+            "look a bit too weakly to deal with them on your own.")
+        say("We give out rewards for many defeated rebels.")
+            goldenfields_check_bounty("soldier_goldenfields_killrebels", "Rebel")
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")

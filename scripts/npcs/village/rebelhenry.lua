@@ -19,6 +19,8 @@
 
 --]]
 
+require "scripts/functions/bounty"
+
 local patrol = NPCPatrol:new("Rebel Henry")
 
 local function rebelTalk(npc, ch)
@@ -64,7 +66,8 @@ local function rebelTalk(npc, ch)
                 end
             end
         end
-        say("The army is sending patrols into the forest. You can help by fighting them back.")
+        say("The army is sending out more and more patrols. You can help by fighting them back.")
+        goldenfields_check_bounty("rebel_goldenfields_killsoldiers", "Soldier")
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
     else -- reputation <= REPUTATION_RELUCTANT
