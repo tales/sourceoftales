@@ -124,6 +124,7 @@
         <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
         <sprite>equipment/BELT_leather.xml</sprite>
         <sprite>equipment/FEET_shoes_brown.xml</sprite>
+        <sprite>equipment/dagger.xml</sprite>
         <attributes
             hp="110"
             size="4"
@@ -383,6 +384,7 @@
         <sprite>equipment/LEGS_pants_greenish.xml</sprite>
         <sprite>equipment/BELT_leather.xml</sprite>
         <sprite>equipment/FEET_shoes_brown.xml</sprite>
+        <sprite>equipment/dagger.xml</sprite>
         <attributes
             hp="220"
             size="4"
