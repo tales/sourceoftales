@@ -38,7 +38,7 @@ function NPCPatrol:block(ch, delay)
         being_walk(member, posX(member), posY(member))
     end
     if ch then
-        on_remove(ch, function() unblock(ch) end)
+        on_remove(ch, function() self:unblock(ch) end)
     end
 end
 
