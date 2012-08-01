@@ -1,8 +1,8 @@
 lpc2012
 =======
 
-Our entry for the Liberated Pixel Cup.
-
+Our entry for the Liberated Pixel Cup 2012.
+(see http://lpc.opengameart.org)
 
 
 
@@ -11,8 +11,11 @@ Starting the game
 As this is relying on manasource technology, which is highly flexible,
 some things need to be wired. The following commands can be run as a script
 to get a first impression, i.e. the judges of the LPC may use it.
+(Judges, beware: modify the lines 'git checkout lpc2012' to 'git checkout <tagname>')
+
 If you want to setup a server 'on the internet' you'd need to go through
-the config files more detailed.
+the config files more detailed. (i.e. setting up the correct ip addresses
+in manaserv.xml)
 
 This script works on an amd64 machine using both Ubuntu 12.04
 and a current Debian testing as operating systems.
