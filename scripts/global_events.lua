@@ -38,6 +38,8 @@ local function on_chr_birth(ch)
     -- Set start reputation
     chr_set_quest(ch, "soldier_reputation", tostring(REPUTATION_NEUTRAL))
     chr_set_quest(ch, "rebel_reputation", tostring(REPUTATION_NEUTRAL))
+
+    being_heal(ch)
 end
 
 
