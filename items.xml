@@ -154,7 +154,7 @@
     </item>
     <item id="6" max-per-slot="1" name="Shortsword" attack-action="attack"
         description="A notchy shortsword."
-        image="temptest_in_the_aether/MW_2h_sword.png"
+        image="Sword01.png"
         value="40">
         <equip>
             <slot type="hand" required="1" />
