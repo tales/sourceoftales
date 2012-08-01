@@ -1001,6 +1001,10 @@ Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipmen
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/WEAPON_shield_cutout_chain_armor_helmet.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy_death.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_boss_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_boss_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_boss_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_boss_walkcycle.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_hurt.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_slash.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_spellcast.png
