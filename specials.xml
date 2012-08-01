@@ -6,7 +6,7 @@
             name="Fire Lion"
             rechargable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
             icon="icons/spell_firelion.png"
         />
         <special
@@ -14,14 +14,14 @@
             name="Earthquake"
             rechargeable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
         />
         <special
             id="3"
             name="Lightning"
             rechargeable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
             icon="icons/spell_lightning.png"
         />
         <special
@@ -29,7 +29,7 @@
             name="Heal"
             rechargeable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
         />
         <special
             id="5"
