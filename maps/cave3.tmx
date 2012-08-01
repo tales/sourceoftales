@@ -75,7 +75,13 @@
   <object name="spawn_trigger_lower_middle" type="TRIGGER" x="480" y="1248" width="352" height="224"/>
   <object name="boss_position" type="COORDINATE" x="640" y="1728" width="32" height="32"/>
   <object name="spawn_lower_middle" type="COORDINATE" x="640" y="1344" width="32" height="32"/>
-  <object x="868" y="1153"/>
+  <object name="skeleton mage spawn" type="SPAWN" x="512" y="1632" width="288" height="224">
+   <properties>
+    <property name="MAX_BEINGS" value="15"/>
+    <property name="MONSTER_ID" value="Skeleton Mage"/>
+    <property name="SPAWN_RATE" value="10"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="upper area" width="44" height="67">
   <object name="spawn_trigger_up_middle" type="TRIGGER" x="576" y="928" width="160" height="32"/>
