@@ -24,3 +24,4 @@
 require "scripts/monsters/bee"
 require "scripts/monsters/beetle"
 require "scripts/monsters/soldier"
+require "scripts/monsters/rebel"

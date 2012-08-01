@@ -1,10 +1,9 @@
 --[[
 
-  Script defining the behaviour of the soldier:
-  If the soldier is attacked it will call the other soldiers around to help him
+  Script defining the behaviour of the rebel:
+  If the rebel is attacked it will call the other rebel around to help him
   to defend against the aggressor
 
-  Copyright (C) 2012 jurkan
   Copyright (C) 2012 Erik Schilling
 
   This program is free software: you can redistribute it and/or modify
@@ -33,17 +32,17 @@ local function damaged(mob, aggressor, hploss)
     local reputation_rebel = tonumber(chr_try_get_quest(being, "rebel_reputation"))
     if not reputation_soldier or not reputation_rebel then return end
 
-    reputation_soldier = reputation_soldier - 4
-    reputation_rebel = reputation_rebel + 2
+    reputation_soldier = reputation_soldier + 2
+    reputation_rebel = reputation_rebel - 4
 
     chr_set_quest(ch, "soldier_reputation", tostring(reputation_soldier))
     chr_set_quest(ch, "rebel_reputation", tostring(reputation_rebel))
 end
 
-local soldiers = {
-    get_monster_class("Soldier")
+local rebels = {
+    get_monster_class("Rebel")
 }
 
-for _, soldier in ipairs(soldiers) do
-    soldier:on_damage(damaged)
+for _, rebel in ipairs(rebels) do
+    rebel:on_damage(damaged)
 end
