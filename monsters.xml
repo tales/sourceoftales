@@ -72,8 +72,8 @@
             chancetohit="15"
             animation="attack"
             />
-        <drop item="50" percent="25" />
-        <drop item="57" percent="15" />
+        <drop item="50" percent="55" />
+        <drop item="57" percent="35" />
     </monster>
     <monster id="3" name="Skeleton Mage" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -112,10 +112,10 @@
             action="spellcast"
             effect-id="1"
             />
-        <drop item="51" percent="30" />
-        <drop item="57" percent="15" />
-        <drop item="58" percent="15" />
-        <drop item="59" percent="15" />
+        <drop item="51" percent="40" />
+        <drop item="57" percent="25" />
+        <drop item="58" percent="25" />
+        <drop item="59" percent="25" />
     </monster>
     <monster id="4" name="Soldier" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
