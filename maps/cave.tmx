@@ -21,6 +21,9 @@
  <tileset firstgid="258" name="dirt" tilewidth="32" tileheight="32">
   <image source="../tiles/dirt.png" width="96" height="192"/>
  </tileset>
+ <tileset firstgid="276" name="dirt_night" tilewidth="32" tileheight="32">
+  <image source="../tiles/dirt_night.png" width="96" height="192"/>
+ </tileset>
  <layer name="setCave" width="101" height="100" opacity="0.43">
   <data encoding="base64" compression="zlib">
    eJztl8GOwzAIRNt7//9797RSVcU2AzOAEx8s7SoxZuZhSN+v1+t91llnbbk+X6s6lyevz2BV57XT+vz87fVwxOIw4Xno9ZER6+kcFbX9u38W6+rZuV96H0Zxr9jNauOJnJSarf6j7zxhqZl45thhYtPs6SurO4GyZdQba34qGVi8RvrObF80ZyQOcj9ncUdco74jeVpyRvcx6gqJheocxV75GM0/kicjVpQJcmcYWi26Wfd1VAvWO7LizqgpTw9AfIgy9JxtfR71z/JuNRPrXoZ/Xk+YTFgeKmKN7gMaX8EE0aWq6Qomirqy9hqmT2hNoFpY/mQzQfxB9SpZZ3GpuiuI395vilXMCi13YbLykhWnC5fqecKoIW9fU83nynkQydmb9+gbO+KXd/Zc5VHBhOVn9HsKjWWdWYhe5Z1jeIJ44+n9jHO99TY6K5vFSru3h3jejXjged/KLIuJ1X9LjhZ9qBb1vtV7kbsaZaKOE51Jyr0zn5Ga7cbEo7dDfqtzLPdnVybZLKN5Iv1YkYtaJ5OJt6+v7oBnbqjqJqsvRJhGmaxmgvfbZXcmkfuCPF/NaeQuoLOf6dVdmMxq3vq/9XwFE09PzmRhjWG5A2p9iM+WXozUCaot6gkyY7N5oDlEFlMvg4mn/qqYdOHLqPfIHcnwiq0N5RLRNHrfGyeqVc1EFZ+tf8Skg9bdmDDZXt03T7xqz6uYsPRHZ85uTNTzihWXzUSVF1vjLswjMdmaWfGYNZfJ4js2UztbryUm8/fA7kw8/nlZe/1WsunUs6x8WT2RWfuduajq2xp/9lzdh5S6WTzUM3r0/+jMrNmg0M3cq54rqK9Z85p975B41lmoqhVvvioWltyQuebJ1VqXyppD4mfxmHGx+G3ZF/GbcVfYHik5WGthVR9W31U9LpNJNg8vk2g8lR/Muq66I0wPZ3rUTBT9vmvPUp3J9ETFI5tJNotdfGGdi3rayXeLtl3OjPSdijsZ2ZuZr+c8i/eWZ9lMlN+2V9/pkaWquY6zwpuHtRdncvDUWicWDC676s3QrsjvCUw656bishOT6lwy8+3KpGteGUzYsRQ8uuSF5P8EJl1yy2Ly7UMHPR1/k1Qw6cLl9/wd2ah+s3TSshuT/5w7x2PWwy5sFEyqvrE7e43oUeio/N3D/G5Z/b0bk0jMuzJhs8vgwpjHd2HC5jHyd+U3axYdJtexUCasXCznZn97IWcpmHj8yOihmXwi8auZZNQsIy/mQnLtoF3BpGohGlV+3JHJb05Ijh386JBDJybfnox8ytJwmMT3HCZzLbszYXDpyijCpIOeO3OJ+NElj0wuHXRbvOiUi5JJB7275HaY9MuN2cNmuqzvVsy2TjwUTK78sXqY0UtHuVVzyGCi9Hf2XvYd68hkFotxLlvX1fNqBlEmmbmw41Z7vevqXL9nnXXWWU9Yf01XglY=
@@ -33,7 +36,7 @@
  </layer>
  <layer name="Ground" width="101" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt3cEJwCAQBMDzlZiY/tv1hFiDCjOw/4UtYCMAAAAAAAAA4Gx3iXjK6hYMY4uauTKfTbbw5g7tDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwhvkV67t3H/Mr1ncvwBodoIMAqQ==
+   eJzt3UsKwjAUBdBk5H8DSqtV97+orsQUWqg6ESd5pefApdPADZ28wEsJAAAAAAAAAJZtm1Pa59qnYDB0sSvZlJx0EsKh9HAcA//oax9gpin3+FnSllzd6RBupYduzF0nBBTpHwYAAAAAAMRwzildZqG+ZpwDD/Pgh05CmM+CO50ArJZ3F3Hppq4+6WAJdAQAAAAA69V/fCNp83vWRif8QicAAAAAAAAAAAAAAPBt2hVrd28c065Yu3sB6ngBIZINdw==
   </data>
  </layer>
  <layer name="CaveWall" width="101" height="100">
@@ -43,7 +46,12 @@
  </layer>
  <layer name="CaveWall2" width="101" height="100">
   <data encoding="base64" compression="zlib">
-   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
+   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
+  </data>
+ </layer>
+ <layer name="OverWall" width="101" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0UEJAAAIBMHrH9MkFhB8CjKTYGETAAAAAAAAAACAXV0HMPIFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDvGparAcU=
   </data>
  </layer>
  <layer name="Fringe" width="101" height="100">
@@ -58,10 +66,10 @@
  </layer>
  <layer name="Collision" width="101" height="100" opacity="0.4">
   <data encoding="base64" compression="zlib">
-   eJztlMmO5DAMQ7v+/6fnNEBQ8EKJ1OKUBfhQnVgi+ZT+fP7+Pvfcc8+R51nVWk4+bH6zqvZ10nnmxWS4q2qfJxyklH09Paoz6siG7fn8vXp3pak6ny5sonoj7Fa78YucIj2j+Vvf+YUTzQQp5G51TtlMEM+znbZyse4Cw2XHm8kskgGS9aos91jNlj5IIfs1+rvHy2yGtXbc0HseD8x+M2XJkdWvKKYXy8Tyzagr+nv97oXqQLkrdsrzP8CSA8vQMxt9zuaHvGvtqWaC3lXk581EyUSVYUSv0XsoyxkrFROLLzUT1EcFX6+PnQaGyWyPLDth9aLKJ5uJJR+r30jWWVyUfBkvjOdZ7XpWeHkLk12Wqj5duFTwYLSP7qF9VlXtq+oochjdR3qt5u70zJ6NdFQwUeXp6bEq5K7H16q/V0sEDzYbq3bVXO++zWZls9h5n/3N0p/VZL3D6qpiguaPaET8Wb1E39u9t6poJtF9vDMYfejdVc6jZ9FcsphXMFHMmc2O5JLFJJslqxOZH8kk2qeSyai8PmcM0P5Re5Oxh94ZKiajd1d90BmnM/Fq390ZMVvNn5VVdySPNzEZzbH+RudHMEH2pJIF2gOtSH+WnL/f92h+PrN6YzNBtFXxsGpgSukXfQ/ZB8v+WTQqmXThq9h35hvJyErtzcqF8TR739uH9RrNJKq/2v+MSQevpzFRsh19b55+1ZlXMVH5X1WVpgwenZmsuDC9InSpPZ7CnOmp9qzqp9y5TBbP3krvar9IT7R+gYknPy9rb96RbKL6qXsqNCtYZOcYsYtqJrv+q+cRLCL3UdEnwucq59nv2cxoJjNdFYxXd1ltu8ysuWYwUXHx6tu9y2rb6fHqjWKBaGMLmZu1L14Nit1TckHyRu4xebPelbllcEB3YcVk5XvHCvXHZKFmks3Dy4TtF5UHwzKyVwQT1k80E0arcic6slDunuW9CB7ZTLJZnJKLaq410065I95OmYlUF5/MvOz98cxDskeeZTNh5u7ufT9nK2rnlDMj2Fh0IEyyOXh2rRMLBZdT/WZ4j9D3C0w6a4vichKTai2Zersy6aorg4m6VwSPLros+n+BSRdtWUyeOXTws6pqfZlMunD5nn8iG7XGSs+z2acx+a+5cz/lPpzCJoIJ29ObXeesLX4ifFQxUcwe9VH07MCE6flWJmp2GVxGFeW9OxM1j1m+u7wVei6TeS8rE5UWa2UwsXiLYOLJA8koQ5eKCdK/KxOP5gpdyrJo7eA9ggnrafVb9a1E5XGZ9Mujg4ZOTJ6ZzHLK8nCZ8Hcuk3czUXA5iZE1j2rtb+XC5NFFRyaXDr6RLDppiWTSwe8p2i6TftrUZZmj1sNkUM0hkskoHzTDiNm7/JE7b2GiKus3p5xzKpNVL8Vcta/R82oGLJNMLeq+1Vmfejrv7z333HPPL5x/Tmo+Xw==
+   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
   </data>
  </layer>
- <objectgroup name="Spawns" width="198" height="150">
+ <objectgroup name="Spawns" width="198" height="150" visible="0">
   <object name="skeleton mage" type="SPAWN" x="2304" y="256" width="544" height="288">
    <properties>
     <property name="max_beings" value="1"/>
@@ -467,32 +475,11 @@
   <object name="Skeleton Soldier2 Spawn" type="COORDINATE" x="1952" y="2720" width="32" height="32"/>
   <object name="Skeleton2 Spawn" type="COORDINATE" x="2080" y="2752" width="32" height="32"/>
   <object name="Skeleton Soldier3 Spawn" type="COORDINATE" x="2208" y="2560" width="32" height="32"/>
-  <object name="shrinequest spawn east" type="TRIGGER" x="1984" y="576" width="96" height="64">
-   <properties>
-    <property name="id" value="2"/>
-    <property name="once" value="true"/>
-   </properties>
-  </object>
-  <object name="Shrinequest Skeleton Spawn East" type="COORDINATE" x="2016" y="448" width="32" height="32"/>
-  <object name="shrinequest spawn west" type="TRIGGER" x="576" y="128" width="96" height="64">
-   <properties>
-    <property name="id" value="1"/>
-    <property name="once" value="true"/>
-   </properties>
-  </object>
-  <object name="Shrinequest Skeleton Spawn West" type="COORDINATE" x="608" y="256" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="101" height="100">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/cave.lua"/>
-   </properties>
-  </object>
-  <object name="Warp to main map" type="WARP" x="608" y="96" width="32" height="32">
-   <properties>
-    <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="608"/>
-    <property name="DEST_Y" value="80"/>
    </properties>
   </object>
  </objectgroup>
@@ -509,6 +496,89 @@
     <property name="DEST_MAP" value="main"/>
     <property name="DEST_X" value="1344"/>
     <property name="DEST_Y" value="208"/>
+   </properties>
+  </object>
+  <object name="shrinequest spawn west" type="TRIGGER" x="576" y="128" width="96" height="64">
+   <properties>
+    <property name="id" value="1"/>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
+  <object name="Warp to main map" type="WARP" x="608" y="96" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_X" value="608"/>
+    <property name="DEST_Y" value="80"/>
+   </properties>
+  </object>
+  <object name="Shrinequest Skeleton Spawn West" type="COORDINATE" x="608" y="256" width="32" height="32"/>
+  <object name="shrinequest spawn east" type="TRIGGER" x="1984" y="576" width="96" height="64">
+   <properties>
+    <property name="id" value="2"/>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
+  <object name="Shrinequest Skeleton Spawn East" type="COORDINATE" x="2016" y="448" width="32" height="32"/>
+  <object name="trap4" type="TRAP" x="192" y="768" width="64" height="64">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="2"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Traps" width="101" height="100">
+  <object name="trap" type="TRAP" x="1296" y="736" width="128" height="64">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="3"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+  <object name="trap3" type="TRAP" x="1408" y="1312" width="128" height="96">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="4"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+  <object name="trap2" type="TRAP" x="1408" y="2016" width="128" height="96">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="5"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
+   </properties>
+  </object>
+  <object name="trap5" type="TRAP" x="896" y="1536" width="64" height="64">
+   <properties>
+    <property name="chance_to_hit" value="999"/>
+    <property name="damage" value="10"/>
+    <property name="damage_delta" value="5"/>
+    <property name="damage_type" value="0"/>
+    <property name="effect_id" value="2"/>
+    <property name="reuse_delay" value="5"/>
+    <property name="trigger_delay" value="1"/>
+    <property name="trigger_radius" value="32"/>
    </properties>
   </object>
  </objectgroup>
