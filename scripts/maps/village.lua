@@ -87,6 +87,6 @@ atinit(function()
          soldierpatrol1:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
          soldierpatrol2:assignBeing(monster_create(4, get_named_coordinate("Patrol1_Soldiers_Spawn")))
     end
-    schedule_every(1, function() rebelpatrol1:logic() end)
-    schedule_every(2, function() rebelpatrol1:logic() end)
+    schedule_every(1, function() soldierpatrol1:logic() end)
+    schedule_every(2, function() soldierpatrol1:logic() end)
 end)
