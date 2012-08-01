@@ -101,7 +101,7 @@
             />
         <attack id="1"
             priority="1"
-            type="magical"
+            type="physical"
             element="neutral"
             warmuptime="2"
             cooldowntime="12"
