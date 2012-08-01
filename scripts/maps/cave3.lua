@@ -72,6 +72,7 @@ atinit(function()
     require "scripts/monsters/skeleton_boss"
 
     parse_triggers_from_map()
+    trap.parse_traps_from_map()
 
     create_trigger_by_name("spawn_trigger_up_left_left",
         function(being) spawn(being, "spawn_up_left_left") end)

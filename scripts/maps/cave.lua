@@ -69,7 +69,9 @@ end
 
 atinit(function()
     require "scripts/functions/triggerhelper"
+    require "scripts/functions/trap"
     parse_triggers_from_map()
+    trap.parse_traps_from_map()
 
     create_trigger_by_name("alcoves spawn", alcovesSpawn)
     create_trigger_by_name("shrinequest spawn west", shrinequestSpawn)

@@ -23,6 +23,8 @@
 require "scripts/functions/rebelpatrol"
 
 atinit(function()
+    trap.parse_traps_from_map()
+
     local mob_id = 4
     local patrol = RebelPatrol:new("Patrol test", 5 * TILESIZE, REPUTATION_ONTRIAL)
     for i=1,10 do
