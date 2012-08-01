@@ -41,14 +41,13 @@ module("trap", package.seeall)
 
 local traps = {}
 
-local objects = map_get_objects("TRAP")
 
 --- Assigns a callback to the trap trigger. If the callback returns true no
 -- damage is dealt
 -- @param name The name of the trap (the name property of the object in tiled)
 -- @param func The function that will be called with the being as parameter
 function assign_callback(name, func)
-    for _, trap in ipairs(traps) do
+    for _, trap in ipairs(traps[get_map_id()]) do
         if trap.name == name then
             trap.callback = func
             break
@@ -82,25 +81,30 @@ local function triggered(trap, being)
     schedule_in(trap.trigger_delay, function() deal_damage(trap) end)
 end
 
-for _, object in ipairs(objects) do
-    local trap = {}
-    trap.name = object:name()
-    trap.damage = tonumber(object:property("damage"))
-    trap.damage_delta = tonumber(object:property("damage_delta") or 0)
-    trap.chance_to_hit = tonumber(object:property("chance_to_hit") or 999)
-    trap.damage_type = tonumber(object:property("damage_type") or DAMAGE_PHYSICAL)
-    trap.element = tonumber(object:property("element") or ELEMENT_NEUTRAL)
-    trap.effect_id = tonumber(object:property("effect_id") or -1)
-    trap.reuse_delay = tonumber(object:property("reuse_delay") or 0)
-    trap.trigger_delay = tonumber(object:property("trigger_delay") or 0)
-    trap.usable = true
-    local trigger_radius = tonumber(object:property("trigger_radius") or 0)
-    trap.x, trap.y, trap.w, trap.h = object:bounds()
-    local new_id = #traps + 1
-    trigger_create(trap.x - trigger_radius, trap.y - trigger_radius,
-                   2 * trigger_radius + trap.w, 2 * trigger_radius + trap.h,
-                   function(being, id) triggered(trap, being) end, 0, true)
+function parse_traps_from_map()
+    local objects = map_get_objects("TRAP")
+    for _, object in ipairs(objects) do
+        traps[get_map_id()] = traps[get_map_id()] or {}
 
-    traps[new_id] = trap
+        local trap = {}
+        trap.name = object:name()
+        trap.damage = tonumber(object:property("damage"))
+        trap.damage_delta = tonumber(object:property("damage_delta") or 0)
+        trap.chance_to_hit = tonumber(object:property("chance_to_hit") or 999)
+        trap.damage_type = tonumber(object:property("damage_type") or DAMAGE_PHYSICAL)
+        trap.element = tonumber(object:property("element") or ELEMENT_NEUTRAL)
+        trap.effect_id = tonumber(object:property("effect_id") or -1)
+        trap.reuse_delay = tonumber(object:property("reuse_delay") or 0)
+        trap.trigger_delay = tonumber(object:property("trigger_delay") or 0)
+        trap.usable = true
+        local trigger_radius = tonumber(object:property("trigger_radius") or 0)
+        trap.x, trap.y, trap.w, trap.h = object:bounds()
+        local new_id = #traps[get_map_id()] + 1
+        trigger_create(trap.x - trigger_radius, trap.y - trigger_radius,
+                    2 * trigger_radius + trap.w, 2 * trigger_radius + trap.h,
+                    function(being, id) triggered(trap, being) end, 0, true)
+
+        traps[get_map_id()][new_id] = trap
+    end
 end
 
