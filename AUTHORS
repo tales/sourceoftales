@@ -1,3 +1,26 @@
+This is the AUTHORS file describing all contributions made to create
+this game.
+
+The general concept, map layout, npc skripting, monsters, items and its
+balancing was composed by:
+
+    Erik Schilling <ablu.erikschilling@googlemail.com>
+    Jessica Tölke <jtoelke@mail.upb.de>
+    jurkan <jurkan@gmx.de>
+    Stefan Beller <stefanbeller@googlemail.com>
+    Przemysław Grzywacz <nexather@gmail.com>
+    Thorbjørn Lindeijer <thorbjorn@lindeijer.nl>
+
+All lua scripts(*.lua) are licensed using GPLv3.0
+(see header of each file for more information)
+
+Tiled maps (*.tmx) are licensed using GPLv3.0 or CC-BY-SA
+(see files gpl-3.0.txt or cc-by-sa-3.0.txt)
+
+The game configuration files (*.xml) are licensed using CC0 (see cc0.txt),
+which is a very permissive license, so it includes GPLv3 and CC-BY-SA.
+
+
 ## Graphics: ##
 All graphics can be found on opengameart.org.
 
