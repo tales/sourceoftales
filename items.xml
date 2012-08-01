@@ -477,12 +477,14 @@
         max-per-slot="255"
         name="Beetle Corpus"
         description="Can be used to create delicious stews."
-        image="beetle_corpus.png">
+        image="beetle_corpus.png"
+        value="30">
     </item>
     <item id="51"
         max-per-slot="255"
         name="Unholy Crystals"
-        image="CrystalsPurple.png">
+        image="CrystalsPurple.png"
+        value="80">
     </item>
     <item id="52" max-per-slot="1" name="Chain Hood"
         description="A protective chain hood."
@@ -505,7 +507,8 @@
         effect="+15 HP"
         type="usable"
         hp="15"
-        max-per-slot="10">
+        max-per-slot="10"
+        value="5">
         <effect trigger="activation">
             <consumes />
         </effect>
@@ -516,7 +519,8 @@
         effect="+50 HP"
         type="usable"
         hp="50"
-        max-per-slot="10">
+        max-per-slot="10"
+        value="10">
         <effect trigger="activation">
             <consumes />
         </effect>
@@ -527,7 +531,8 @@
         effect="+100 HP"
         type="usable"
         hp="100"
-        max-per-slot="10">
+        max-per-slot="10"
+        value="15">
         <effect trigger="activation">
             <consumes />
         </effect>
@@ -538,7 +543,8 @@
         effect="+200 HP"
         type="usable"
         hp="200"
-        max-per-slot="10">
+        max-per-slot="10"
+        value="20">
         <effect trigger="activation">
             <consumes />
         </effect>
