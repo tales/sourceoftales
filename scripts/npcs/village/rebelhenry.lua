@@ -29,10 +29,7 @@ local function rebelTalk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local reputation = read_reputation(ch, "rebel_reputation")
-
-    if reputation >= REPUTATION_NEUTRAL then
-        say("Hello.")
+    local function deliver_supplies()
         local supplies = chr_get_quest(ch, "rebel_supplies")
         if supplies == "started" then
             local choices = { "Innkeeper Norman asked me to bring you this supplies.",
@@ -47,6 +44,7 @@ local function rebelTalk(npc, ch)
                     chr_inv_change(ch, "Pumpkin", -REBEL_FOOD_PUMPKIN,
                                     "Food Shank", -REBEL_FOOD_FOODSHANK,
                                     "Apple", -REBEL_FOOD_APPLE)
+                    local reputation = read_reputation(ch, "rebel_reputation")
                     reputation = reputation + 10
                     chr_set_quest(ch, "rebel_reputation", tostring(reputation))
                     local soldier_reputation = read_reputation(ch, "soldier_reputation")
@@ -66,6 +64,13 @@ local function rebelTalk(npc, ch)
                 end
             end
         end
+    end
+
+    local reputation = read_reputation(ch, "rebel_reputation")
+
+    if reputation >= REPUTATION_NEUTRAL then
+        say("Hello.")
+        deliver_supplies()
         say("The army is sending out more and more patrols. You can help by fighting them back.")
         goldenfields_check_bounty(ch, "rebel_goldenfields_killsoldiers", "Soldier")
     elseif reputation > REPUTATION_RELUCTANT then
