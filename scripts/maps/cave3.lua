@@ -83,6 +83,9 @@ atinit(function()
         function(being) spawn(being, "spawn_up_right") end)
     create_trigger_by_name("spawn_trigger_up_right_right",
         function(being) spawn(being, "spawn_up_right_right") end)
+
+    create_trigger_by_name("spawn_trigger_lower_middle",
+        function(being) spawn(being, "spawn_lower_middle", 7) end)
     
     schedule_every(60, function() cleanup() end)
 end)
