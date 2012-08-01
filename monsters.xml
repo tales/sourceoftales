@@ -8,7 +8,7 @@
         <sound event="miss">monsters/maggot/maggot-miss1.ogg</sound>
         <sound event="die">monsters/maggot/maggot-dying1.ogg</sound>-->
         <attributes
-            hp="20"
+            hp="50"
             size="4"
             speed="0.0"
             evade="1"
