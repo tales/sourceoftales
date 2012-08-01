@@ -17,6 +17,10 @@ If you want to setup a server 'on the internet' you'd need to go through
 the config files more detailed. (i.e. setting up the correct ip addresses
 in manaserv.xml)
 
+In case you want to test the game without the need to setup a server,
+just get the modified client and the lpc repository and connect to
+server testing.manasource.org at port 9601 (manaserv).
+
 This script works on an amd64 machine using both Ubuntu 12.04
 and a current Debian testing as operating systems.
 
@@ -25,7 +29,8 @@ and a current Debian testing as operating systems.
     mkdir -p manalpc2012
     cd manalpc2012
 
-    # setup the server
+
+    # setup the server, leave out if testing on our server.
     git clone git://github.com/mana/manaserv.git
     cd manaserv
     git checkout lpc2012
@@ -46,6 +51,7 @@ and a current Debian testing as operating systems.
     make
     cd ..
 
+
     # get the actual lpc entry
     git clone git://github.com/mana/lpc2012.git
     cd lpc2012
@@ -55,7 +61,8 @@ and a current Debian testing as operating systems.
     cat ../manaserv/src/sql/sqlite/createTables.sql | sqlite3 mana.db
     cd ..
 
-    # now start the game servers:
+
+    # now start the game servers, leave out if testing on our server.:
     cd lpc2012
     # run the servers in the background, so don't block the script here.
     screen -d -m manaserv-account
@@ -64,6 +71,7 @@ and a current Debian testing as operating systems.
     sleep 5
     cd ..
 
+
     # The client lets you actually play
     cd mana
     # -u tell the mana client software to not download the game content,
@@ -71,6 +79,7 @@ and a current Debian testing as operating systems.
     # The parameters --server and --port tells the mana client to directly
     # connect to the server we just setup.
     src/mana -u -d ../lpc2012 --server=localhost --port 9601
+
 
 Now you should see the mana client started.
 
