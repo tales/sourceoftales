@@ -43,13 +43,14 @@ function parse_triggers_from_map()
             w = w,
             h = h,
             id = tonumber(object:property("id") or 0),
-            once = getBoolByString(object:property("once")) or false
+            once = getBoolByString(object:property("once")) or true
         }
     end
 end
 
 function create_trigger_by_name(name, trigger_func)
     local trigger = triggers[get_map_id()][name]
+    assert(trigger ~= nil, "The trigger \"" .. name .. "\" is not defined on map " .. get_map_id())
     trigger_create(trigger.x, trigger.y, trigger.w, trigger.h,
                    trigger_func, trigger.id, trigger.once)
 end
