@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="44" height="67" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
   <image source="../tiles/collision.png" width="64" height="32"/>
@@ -80,6 +79,13 @@
   <object name="boss_position" type="COORDINATE" x="640" y="1728" width="32" height="32"/>
   <object name="spawn_lower_middle" type="COORDINATE" x="640" y="1344" width="32" height="32"/>
   <object name="skeleton mage spawn" type="SPAWN" x="512" y="1632" width="288" height="224">
+   <properties>
+    <property name="MAX_BEINGS" value="15"/>
+    <property name="MONSTER_ID" value="Skeleton Mage"/>
+    <property name="SPAWN_RATE" value="10"/>
+   </properties>
+  </object>
+  <object name="area" type="AREA_BOSS" x="512" y="1632" width="288" height="224">
    <properties>
     <property name="MAX_BEINGS" value="15"/>
     <property name="MONSTER_ID" value="Skeleton Mage"/>

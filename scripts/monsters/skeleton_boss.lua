@@ -37,22 +37,33 @@ local mobs = {
 
 local skeleton_king = get_monster_class("Skeleton King")
 local spawned_mobs = {}
+local current_king
 
-skeleton_king:on_damage(function(boss, target, hploss)
-    local possible_directions = {}
-    for _, p in ipairs(attack_directions) do
-        local x, y = p.x + posX(target), p.y + posY(target)
-        if is_walkable(x, y) then
-            table.insert(possible_directions, p)
+schedule_every(10, function()
+    if current_king == nil then return end
+
+    local area = map_get_objects("AREA_BOSS")[1]
+    local beings = get_beings_in_rectangle(area:bounds())
+
+    for _, target in ipairs(beings) do
+        if being_type(target) == TYPE_CHARACTER then
+            local possible_directions = {}
+            for _, p in ipairs(attack_directions) do
+                local x, y = p.x + posX(target), p.y + posY(target)
+                if is_walkable(x, y) then
+                    table.insert(possible_directions, p)
+                end
+            end
+
+            for _, p in ipairs(possible_directions) do
+                local mobname = mobs[math.random(#mobs)]
+                local mob = monster_create(mobname, posX(target) + p.x, posY(target) + p.y)
+                on_death(mob, function() spawned_mobs[mob] = nil end)
+                spawned_mobs[mob] = 0
+            end
         end
     end
 
-    for _, p in ipairs(possible_directions) do
-        local mobname = mobs[math.random(#mobs)]
-        local mob = monster_create(mobname, posX(target) + p.x, posY(target) + p.y)
-        on_death(mob, function() spawned_mobs[mob] = nil end)
-        spawned_mobs[mob] = 0
-    end
 end)
 
 schedule_every(60, function()
@@ -69,11 +80,12 @@ schedule_every(60, function()
 end)
 
 local function spawn_king()
-    local current_king = monster_create(skeleton_king, get_named_coordinate("boss_position"))
+    current_king = monster_create(skeleton_king, get_named_coordinate("boss_position"))
     on_death(current_king, function()
         -- Kill all mobs on the map
         -- TODO: do this when map size is fixed
         schedule_in(3600, spawn_king)
+        current_king = nil
     end)
 end
 
