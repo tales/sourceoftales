@@ -99,7 +99,7 @@ local function veteranTalk(npc, ch)
             "But you can help by chasing some of the rebels in the forest. And better not go alone, you still "..
             "look a bit too weakly to deal with them on your own.")
         say("We give out rewards for many defeated rebels.")
-            goldenfields_check_bounty(ch, "soldier_goldenfields_killrebels", "Rebel")
+            goldenfields_check_bounty(npc, ch, "soldier_goldenfields_killrebels", "Rebel")
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")

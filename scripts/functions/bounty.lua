@@ -21,7 +21,7 @@
 --]]
 
 
-function goldenfields_check_bounty(ch, questvar, monster)
+function goldenfields_check_bounty(npc, ch, questvar, monster)
     local function say(message)
         npc_message(npc, ch, message)
     end
