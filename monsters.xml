@@ -452,6 +452,7 @@
             chancetohit="20000"
             action="spellcast"
             />
+        <drop item="50" percent="60" />
         <drop item="57" percent="40" />
         <drop item="58" percent="50" />
         <drop item="59" percent="40" />
