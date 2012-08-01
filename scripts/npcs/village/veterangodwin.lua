@@ -83,6 +83,10 @@ local function veteranTalk(npc, ch)
         end
     end
 
+    change_reputation(ch, "soldier_reputation", "Army", 10)
+    say("test")
+    change_reputation(ch, "soldier_reputation", "Army", -10)
+
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then

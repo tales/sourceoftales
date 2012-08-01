@@ -41,6 +41,17 @@ function read_reputation(ch, faction)
     return reputation
 end
 
+function change_reputation(ch, factionvar, factionname, change)
+    reputation = read_reputation(ch, factionvar)
+    reputation = reputation + change
+    chr_set_quest(ch, factionvar, tostring(reputation))
+    if change > 0 then
+        chr_create_text_particle(ch, factionname .. " reputation +".. change)
+    else
+        chr_create_text_particle(ch, factionname .. " reputation ".. change)
+    end
+end
+
 function apply_amnesty(npc, ch, friendly_faction, foe_faction)
     local function say(message)
         npc_message(npc, ch, message)
