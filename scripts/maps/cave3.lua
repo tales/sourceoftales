@@ -19,10 +19,71 @@
 
 -- ]]
 
+local mobs = {
+    "Skeleton",
+    "Skeleton",
+    "Skeleton Soldier",
+    "Skeleton Soldier",
+    "Skeleton Mage"
+}
+
+local current_skeletons = {}
+
+local function spawn(being, name, amount)
+    if being_type(being) ~= TYPE_CHARACTER then return end
+
+    current_skeletons[name] = current_skeletons[name] or {}
+    local list = current_skeletons[name]
+
+    if next(list) ~= nil then return end
+
+    local x, y = get_named_coordinate(name)
+
+    amount = amount or 4
+
+    for i = 1, amount do
+        local mob = monster_create(mobs[math.random(#mobs)],
+                       x + math.random(-2 * TILESIZE, 2 * TILESIZE),
+                       y + math.random(-2 * TILESIZE, 2 * TILESIZE))
+        list[mob] = 0
+        on_death(mob, function() list[mob] = nil end)
+    end
+end
+
+local function cleanup()
+    for _, list in pairs(current_skeletons) do
+        for mob, lifetime in pairs(list) do
+            if #monster_get_angerlist(mob) == 0 then
+                if lifetime == 1 then
+                    being_set_base_attribute(mob, 13, 0)
+                    list[mob] = nil
+                else
+                    list[mob] = 1
+                end
+            end
+        end
+    end
+end
 
 atinit(function()
+    require "scripts/functions/triggerhelper"
     require "scripts/functions/trap"
     
     require "scripts/monsters/skeleton_boss"
+
+    parse_triggers_from_map()
+
+    create_trigger_by_name("spawn_trigger_up_left_left",
+        function(being) spawn(being, "spawn_up_left_left") end)
+    create_trigger_by_name("spawn_trigger_up_left",
+        function(being) spawn(being, "spawn_up_left") end)
+    create_trigger_by_name("spawn_trigger_up_middle",
+        function(being) spawn(being, "spawn_up_middle") end)
+    create_trigger_by_name("spawn_trigger_up_right",
+        function(being) spawn(being, "spawn_up_right") end)
+    create_trigger_by_name("spawn_trigger_up_right_right",
+        function(being) spawn(being, "spawn_up_right_right") end)
+    
+    schedule_every(60, function() cleanup() end)
 end)
 

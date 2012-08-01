@@ -66,21 +66,28 @@
    eJzt2VEKxCAMRVH3oN3/VutPQURo1ZhEew/4MzDwmr5JKRMCAAAAoC/mk/K5rIMI8XQ90TpAh5GsXubcSzvz6T1oSWF9P1bNdUXunTqgRWrO2rPdcecBAPBnPLuxOzoMyDvlHZ39gBqdmHPKbih56cSJs/Wid7aWnRjtgUXm2c56+e15JLUPNGYsvbtSdcprmPlv+/muhid767O37Jo5v6rvSXkACTchfQUV
   </data>
  </layer>
- <layer name="Collision" width="44" height="67" visible="0">
+ <layer name="Collision" width="44" height="67">
   <data encoding="base64" compression="zlib">
    eJzt1tGugzAMA1C0///oaa8TtHFspwFqqQ+7K8kh68b9HMfx2Wsv8YpktRGxdvGi2V6vd6U5m+31eleYz3pHfHf1VpmVuZvXbXakyqq8j4q5su+7vJH6rFdpzliv+jvNkZqZ3mf7WDNrHfWOpuLMon1dXmZOkd6Ml7UidTp4Z2F7I/sVQQwdvDOHwusKcybYvsjfr/ZWed3JepXfOXT/G+a7KtvrDfIMr/KM3nvCfLuakecxWnf0OlMP/f9hZZ7ozTwnlfuurr3LjH/p4kU+G6W34l4d1rPfs1EfpN9q7//+We9ojdlcWG90Tox3dH3Wq5gv2xO9dmRGzpVzNtFaSu/Mipoz96vyInUYL3IWnV71dUgqvaw50xe5BjF3sY48TD2nFT0bXWZxFWUt5RxmfRRxnLHImevo7PbZ7/Xe9QUc3gxt
   </data>
  </layer>
- <objectgroup name="upper area" width="44" height="67">
-  <object name="spawn_trigger_up_middle" type="TRIGGER" x="576" y="928" width="160" height="32"/>
-  <object name="spawn_trigger_up_left" type="TRIGGER" x="384" y="960" width="160" height="32"/>
-  <object name="spawn_trigger_up_left left" type="TRIGGER" x="256" y="1024" width="96" height="128"/>
-  <object name="spawn_trigger_up_right" type="TRIGGER" x="768" y="960" width="160" height="32"/>
-  <object name="spawn_trigger_up_right_right" type="TRIGGER" x="960" y="1024" width="96" height="128"/>
- </objectgroup>
  <objectgroup name="lower area" width="44" height="67">
   <object name="spawn_trigger_lower_middle" type="TRIGGER" x="480" y="1248" width="352" height="224"/>
   <object name="boss_position" type="COORDINATE" x="640" y="1728" width="32" height="32"/>
+  <object name="spawn_lower_middle" type="COORDINATE" x="640" y="1344" width="32" height="32"/>
+  <object x="868" y="1153"/>
+ </objectgroup>
+ <objectgroup name="upper area" width="44" height="67">
+  <object name="spawn_trigger_up_middle" type="TRIGGER" x="576" y="928" width="160" height="32"/>
+  <object name="spawn_trigger_up_left" type="TRIGGER" x="384" y="960" width="160" height="32"/>
+  <object name="spawn_trigger_up_left_left" type="TRIGGER" x="256" y="1024" width="96" height="128"/>
+  <object name="spawn_trigger_up_right" type="TRIGGER" x="768" y="960" width="160" height="32"/>
+  <object name="spawn_trigger_up_right_right" type="TRIGGER" x="960" y="1024" width="96" height="128"/>
+  <object name="spawn_up_left_left" type="COORDINATE" x="384" y="1120" width="32" height="32"/>
+  <object name="spawn_up_left" type="COORDINATE" x="480" y="1024" width="32" height="32"/>
+  <object name="spawn_up_middle" type="COORDINATE" x="640" y="992" width="32" height="32"/>
+  <object name="spawn_up_right" type="COORDINATE" x="800" y="1024" width="32" height="32"/>
+  <object name="spawn_up_right_right" type="COORDINATE" x="896" y="1120" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="44" height="67">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
