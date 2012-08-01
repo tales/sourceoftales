@@ -174,7 +174,7 @@
         max-per-slot="255"
         name="Bomb"
         description="A small bomb with a timed trigger."
-        image="banana.png"
+        image="PotionSmallRounededBrown.png"
         value="100">
         <effect trigger="activation">
             <scriptevent activate="use" />
