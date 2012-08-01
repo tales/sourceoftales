@@ -24,12 +24,31 @@ atinit(function()
     parse_npcs_from_map()
 
     require "scripts/functions/guardpatrol"
+    require "scripts/functions/soldierpatrol"
 
     require "scripts/npcs/casern_north/chefodo"
     require "scripts/npcs/casern_north/guardhamond"
     require "scripts/npcs/casern_north/recruitalan"
     require "scripts/npcs/casern_north/recruitjordan"
     require "scripts/npcs/casern_north/scullionjohn"
+
+    -- Soldier patrols
+    local soldierpatrol = SoldierPatrol:new("SoldierPatrol", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    schedule_every(1, function() soldierpatrol:logic() end)
+
+    local function respawn(patrol, mob, amount)
+        local x = patrol.path[patrol.position_index].x
+        local y = patrol.path[patrol.position_index].y
+        for i=1, amount do
+            patrol:assignBeing(monster_create(mob, x, y))
+        end
+    end
+
+    schedule_every(60, function()
+        if #soldierpatrol.members == 0 then
+            schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4) end)
+        end
+    end)
 
 end)
 
