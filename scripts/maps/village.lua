@@ -70,8 +70,11 @@ atinit(function()
 
     -- Rebel patrols
     local rebelpatrol1 = RebelPatrol:new("Patrol1_Rebels", 5 * TILESIZE, REPUTATION_ONTRIAL)
+    local rebelpatrol2 = RebelPatrol:new("Patrol2_Rebels", 5 * TILESIZE, REPUTATION_ONTRIAL)
     for i=1,10 do
+         rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
          rebelpatrol1:assignBeing(monster_create(11, get_named_coordinate("Patrol1_Rebels_Spawn")))
     end
     schedule_every(1, function() rebelpatrol1:logic() end)
+    schedule_every(2, function() rebelpatrol1:logic() end)
 end)
