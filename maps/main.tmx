@@ -230,12 +230,12 @@
    eJzt3CEOgDAQBMAaUvgxBAuvgschkCcwhaZlRlXuilVNLiUAAAAAAAAAAAAAAAAAAAAAAAAo76wd4EN/6goAAADQkr12gAKeOsw5pSXf7zW/HocObLUDFNBDBwAAAAAAoC2TvzgIBruAwC4gsguI7AIAAAAAAAAAAAAAAAAAAAAAgD87agcAAAC6NLr5CYFbuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMsuibQGIg==
   </data>
  </layer>
- <layer name="Collision" width="198" height="150">
+ <layer name="Collision" width="198" height="150" visible="0">
   <data encoding="base64" compression="zlib">
    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
   </data>
  </layer>
- <objectgroup name="Waypoints Rowan" width="198" height="150">
+ <objectgroup name="Waypoints Rowan" width="198" height="150" visible="0">
   <object name="Rowan 1" type="WAYPOINT" x="4458" y="1647" width="32" height="32"/>
   <object name="Rowan 2" type="WAYPOINT" x="4550" y="1693" width="32" height="32"/>
   <object name="Rowan 3" type="WAYPOINT" x="4594" y="1570" width="32" height="32"/>
@@ -244,14 +244,14 @@
   <object name="Rowan 6" type="WAYPOINT" x="4487" y="1511" width="32" height="32"/>
   <object name="Rowan 7" type="WAYPOINT" x="4532" y="1589" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Durmark" width="198" height="150">
+ <objectgroup name="Waypoints Durmark" width="198" height="150" visible="0">
   <object name="Durmark 1" type="WAYPOINT" x="4717" y="2743" width="32" height="32"/>
   <object name="Durmark 2" type="WAYPOINT" x="4621" y="2777" width="32" height="32"/>
   <object name="Durmark 3" type="WAYPOINT" x="4593" y="2673" width="32" height="32"/>
   <object name="Durmark 4" type="WAYPOINT" x="4635" y="2695" width="32" height="32"/>
   <object name="Durmark 5" type="WAYPOINT" x="4633" y="2735" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Francis" width="198" height="150">
+ <objectgroup name="Waypoints Francis" width="198" height="150" visible="0">
   <object name="Francis 1" type="WAYPOINT" x="4875" y="3449" width="32" height="32"/>
   <object name="Francis 2" type="WAYPOINT" x="4915" y="3402" width="32" height="32"/>
   <object name="Francis 3" type="WAYPOINT" x="4912" y="3441" width="32" height="32"/>
@@ -259,7 +259,7 @@
   <object name="Francis 5" type="WAYPOINT" x="4881" y="3426" width="32" height="32"/>
   <object name="Francis 6" type="WAYPOINT" x="4866" y="3398" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Veteran Godwin" width="198" height="150">
+ <objectgroup name="Waypoints Veteran Godwin" width="198" height="150" visible="0">
   <object name="Veteran Godwin 1" type="WAYPOINT" x="2304" y="1408" width="32" height="32"/>
   <object name="Veteran Godwin 2" type="WAYPOINT" x="2176" y="1376" width="32" height="32"/>
   <object name="Veteran Godwin 3" type="WAYPOINT" x="2112" y="1472" width="32" height="32"/>
@@ -268,13 +268,13 @@
   <object name="Veteran Godwin 5" type="WAYPOINT" x="2336" y="1472" width="32" height="32"/>
   <object name="Veteran Godwin 7" type="WAYPOINT" x="2272" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Guard Fordwin" width="198" height="150">
+ <objectgroup name="Waypoints Guard Fordwin" width="198" height="150" visible="0">
   <object name="Guard Fordwin 1" type="WAYPOINT" x="2208" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 2" type="WAYPOINT" x="2368" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 3" type="WAYPOINT" x="2336" y="2144" width="32" height="32"/>
   <object name="Guard Fordwin 4" type="WAYPOINT" x="2240" y="2144" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Recruit Hugh" width="198" height="150">
+ <objectgroup name="Waypoints Recruit Hugh" width="198" height="150" visible="0">
   <object name="Recruit Hugh 1" type="WAYPOINT" x="1888" y="1472" width="32" height="32"/>
   <object name="Recruit Hugh 2" type="WAYPOINT" x="1824" y="1472" width="32" height="32"/>
   <object name="Recruit Hugh 3" type="WAYPOINT" x="1888" y="1536" width="32" height="32"/>
@@ -282,19 +282,19 @@
   <object name="Recruit Hugh 5" type="WAYPOINT" x="1824" y="1408" width="32" height="32"/>
   <object name="Recruit Hugh 6" type="WAYPOINT" x="1824" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Recruit Maurice" width="198" height="150">
+ <objectgroup name="Waypoints Recruit Maurice" width="198" height="150" visible="0">
   <object name="Recruit Maurice 1" type="WAYPOINT" x="1632" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 2" type="WAYPOINT" x="1472" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 3" type="WAYPOINT" x="1664" y="1536" width="32" height="32"/>
   <object name="Recruit Maurice 4" type="WAYPOINT" x="1536" y="1536" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Smith Blacwin" width="198" height="150">
+ <objectgroup name="Waypoints Smith Blacwin" width="198" height="150" visible="0">
   <object name="Smith Blacwin 4" type="WAYPOINT" x="2912" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 2" type="WAYPOINT" x="2976" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 3" type="WAYPOINT" x="2944" y="1408" width="32" height="32"/>
   <object name="Smith Blacwin 1" type="WAYPOINT" x="2944" y="1408" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Basilea" width="198" height="150">
+ <objectgroup name="Waypoints Basilea" width="198" height="150" visible="0">
   <object name="Basilea 1" type="WAYPOINT" x="3776" y="2976" width="32" height="32"/>
   <object name="Basilea 2" type="WAYPOINT" x="3648" y="2912" width="32" height="32"/>
   <object name="Basilea 3" type="WAYPOINT" x="3584" y="3008" width="32" height="32"/>
@@ -305,7 +305,7 @@
   <object name="Basilea 8" type="WAYPOINT" x="3776" y="2880" width="32" height="32"/>
   <object name="Basilea 9" type="WAYPOINT" x="3680" y="3072" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Mary" width="198" height="150">
+ <objectgroup name="Waypoints Mary" width="198" height="150" visible="0">
   <object name="Mary 1" type="WAYPOINT" x="3744" y="2976" width="32" height="32"/>
   <object name="Mary 2" type="WAYPOINT" x="3648" y="2912" width="32" height="32"/>
   <object name="Mary 3" type="WAYPOINT" x="3584" y="2912" width="32" height="32"/>
@@ -318,7 +318,7 @@
   <object name="Mary 10" type="WAYPOINT" x="3808" y="3136" width="32" height="32"/>
   <object name="Mary 11" type="WAYPOINT" x="3584" y="3008" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Eva" width="198" height="150">
+ <objectgroup name="Waypoints Eva" width="198" height="150" visible="0">
   <object name="Eva 1" type="WAYPOINT" x="3776" y="2912" width="32" height="32"/>
   <object name="Eva 2" type="WAYPOINT" x="3648" y="2880" width="32" height="32"/>
   <object name="Eva 3" type="WAYPOINT" x="3776" y="2816" width="32" height="32"/>
@@ -329,7 +329,7 @@
   <object name="Eva 8" type="WAYPOINT" x="3648" y="3040" width="32" height="32"/>
   <object name="Eva 9" type="WAYPOINT" x="3616" y="2880" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Emma" width="198" height="150">
+ <objectgroup name="Waypoints Emma" width="198" height="150" visible="0">
   <object name="Emma 1" type="WAYPOINT" x="2368" y="2208" width="32" height="32"/>
   <object name="Emma 2" type="WAYPOINT" x="2208" y="2208" width="32" height="32"/>
   <object name="Emma 3" type="WAYPOINT" x="2112" y="2176" width="32" height="32"/>
@@ -337,7 +337,7 @@
   <object name="Emma 5" type="WAYPOINT" x="2400" y="2176" width="32" height="32"/>
   <object name="Emma 6" type="WAYPOINT" x="2272" y="2208" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Oliver" width="198" height="150">
+ <objectgroup name="Waypoints Oliver" width="198" height="150" visible="0">
   <object name="Oliver 1" type="WAYPOINT" x="3680" y="3776" width="32" height="32"/>
   <object name="Oliver 2" type="WAYPOINT" x="3776" y="3744" width="32" height="32"/>
   <object name="Oliver 3" type="WAYPOINT" x="3872" y="3776" width="32" height="32"/>
@@ -351,7 +351,7 @@
   <object name="Oliver 11" type="WAYPOINT" x="3776" y="3776" width="32" height="32"/>
   <object name="Oliver 12" type="WAYPOINT" x="3840" y="3744" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Peter" width="198" height="150">
+ <objectgroup name="Waypoints Peter" width="198" height="150" visible="0">
   <object name="Peter 1" type="WAYPOINT" x="4704" y="3488" width="32" height="32"/>
   <object name="Peter 2" type="WAYPOINT" x="4576" y="3392" width="32" height="32"/>
   <object name="Peter 3" type="WAYPOINT" x="4704" y="3264" width="32" height="32"/>
@@ -365,7 +365,7 @@
   <object name="Peter 11" type="WAYPOINT" x="4800" y="3744" width="32" height="32"/>
   <object name="Peter 12" type="WAYPOINT" x="4864" y="3616" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Joseph" width="198" height="150">
+ <objectgroup name="Waypoints Joseph" width="198" height="150" visible="0">
   <object name="Joseph 1" type="WAYPOINT" x="4320" y="3264" width="32" height="32"/>
   <object name="Joseph 2" type="WAYPOINT" x="4384" y="3200" width="32" height="32"/>
   <object name="Joseph 3" type="WAYPOINT" x="4480" y="3264" width="32" height="32"/>
@@ -386,7 +386,7 @@
   <object name="Joseph 18" type="WAYPOINT" x="4320" y="3424" width="32" height="32"/>
   <object name="Joseph 19" type="WAYPOINT" x="4192" y="3232" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Martin" width="198" height="150">
+ <objectgroup name="Waypoints Martin" width="198" height="150" visible="0">
   <object name="Martin 1" type="WAYPOINT" x="2368" y="2496" width="32" height="32"/>
   <object name="Martin 2" type="WAYPOINT" x="2496" y="2592" width="32" height="32"/>
   <object name="Martin 3" type="WAYPOINT" x="2432" y="2560" width="32" height="32"/>
@@ -545,7 +545,7 @@
   <object name="Francis" type="NPC_POSITION" x="4896" y="3424" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
-    <property name="sprite_id" value="9"/>
+    <property name="sprite_id" value="23"/>
    </properties>
   </object>
   <object name="Joseph" type="NPC_POSITION" x="4288" y="3296" width="32" height="32">
@@ -557,7 +557,7 @@
   <object name="Peter" type="NPC_POSITION" x="4608" y="3552" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
-    <property name="sprite_id" value="9"/>
+    <property name="sprite_id" value="22"/>
    </properties>
   </object>
   <object name="Millicent" type="NPC_POSITION" x="3808" y="1024" width="32" height="32">
@@ -573,7 +573,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="198" height="150">
+ <objectgroup name="Spawns" width="198" height="150" visible="0">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1120" width="448" height="288">
    <properties>
     <property name="max_beings" value="4"/>
@@ -764,11 +764,11 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Trigger" width="198" height="150">
+ <objectgroup name="Trigger" width="198" height="150" visible="0">
   <object name="Casern south gate" type="TRIGGER" x="2240" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="2288" y="2048" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Warps" width="198" height="150">
+ <objectgroup name="Warps" width="198" height="150" visible="0">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
@@ -889,17 +889,17 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Objects" width="198" height="150">
+ <objectgroup name="Objects" width="198" height="150" visible="0">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/village.lua"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Bees" width="198" height="150">
+ <objectgroup name="Bees" width="198" height="150" visible="0">
   <object name="Bee trigger" type="TRIGGER" x="2592" y="3488" width="608" height="384"/>
  </objectgroup>
- <objectgroup name="Waypoints Millicent" width="198" height="150">
+ <objectgroup name="Waypoints Millicent" width="198" height="150" visible="0">
   <object name="Millicent 1" type="WAYPOINT" x="3859" y="1030" width="32" height="32"/>
   <object name="Millicent 2" type="WAYPOINT" x="3932" y="1031" width="32" height="32"/>
   <object name="Millicent 3" type="WAYPOINT" x="3796" y="1052" width="32" height="32"/>
@@ -914,7 +914,7 @@
   <object name="Millicent 12" type="WAYPOINT" x="3821" y="990" width="32" height="32"/>
   <object name="Millicent 13" type="WAYPOINT" x="3741" y="958" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Damien" width="198" height="150">
+ <objectgroup name="Waypoints Rebel Damien" width="198" height="150" visible="0">
   <object name="Rebel Damien 1" type="WAYPOINT" x="472" y="3655" width="32" height="32"/>
   <object name="Rebel Damien 2" type="WAYPOINT" x="435" y="3567" width="32" height="32"/>
   <object name="Rebel Damien 3" type="WAYPOINT" x="323" y="3597" width="32" height="32"/>
@@ -926,7 +926,7 @@
   <object name="Rebel Damien 9" type="WAYPOINT" x="401" y="3602" width="32" height="32"/>
   <object name="Rebel Damien 10" type="WAYPOINT" x="423" y="3638" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Henry" width="198" height="150">
+ <objectgroup name="Waypoints Rebel Henry" width="198" height="150" visible="0">
   <object name="Rebel Henry 1" type="WAYPOINT" x="302" y="2761" width="32" height="32"/>
   <object name="Rebel Henry 2" type="WAYPOINT" x="292" y="2692" width="32" height="32"/>
   <object name="Rebel Henry 3" type="WAYPOINT" x="402" y="2691" width="32" height="32"/>
@@ -938,7 +938,7 @@
   <object name="Rebel Henry 9" type="WAYPOINT" x="320" y="2733" width="32" height="32"/>
   <object name="Rebel Henry 10" type="WAYPOINT" x="395" y="2739" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Tristan" width="198" height="150">
+ <objectgroup name="Waypoints Tristan" width="198" height="150" visible="0">
   <object name="Rebel Tristan 1" type="WAYPOINT" x="385" y="2550" width="32" height="32"/>
   <object name="Rebel Tristan 2" type="WAYPOINT" x="384" y="2464" width="32" height="32"/>
   <object name="Rebel Tristan 3" type="WAYPOINT" x="250" y="2424" width="32" height="32"/>
@@ -953,7 +953,7 @@
   <object name="Rebel Tristan 12" type="WAYPOINT" x="386" y="2435" width="32" height="32"/>
   <object name="Rebel Tristan 13" type="WAYPOINT" x="301" y="2505" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Philip" width="198" height="150">
+ <objectgroup name="Waypoints Philip" width="198" height="150" visible="0">
   <object name="Rebel Philip 1" type="WAYPOINT" x="385" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 2" type="WAYPOINT" x="386" y="2310" width="32" height="32"/>
   <object name="Rebel Philip 3" type="WAYPOINT" x="275" y="2277" width="32" height="32"/>
@@ -961,7 +961,7 @@
   <object name="Rebel Philip 5" type="WAYPOINT" x="297" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 6" type="WAYPOINT" x="331" y="2318" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Thea" width="198" height="150">
+ <objectgroup name="Waypoints Thea" width="198" height="150" visible="0">
   <object name="Thea 1" type="WAYPOINT" x="4480" y="4032" width="32" height="32"/>
   <object name="Thea 2" type="WAYPOINT" x="4800" y="4000" width="32" height="32"/>
   <object name="Thea 3" type="WAYPOINT" x="5024" y="3872" width="32" height="32"/>
@@ -992,13 +992,14 @@
   <object name="Thea 28" type="WAYPOINT" x="4288" y="4000" width="32" height="32"/>
   <object name="Thea 29" type="WAYPOINT" x="4448" y="4032" width="32" height="32"/>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol1_Rebels" width="198" height="150">
+ <objectgroup color="#755219" name="Patrol1_Rebels" width="198" height="150" visible="0">
   <object name="Patrol1_Rebels 2" type="WAYPOINT" x="288" y="2656" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
    </properties>
   </object>
+  <object name="Patrol1_Rebels_Spawn" type="COORDINATE" x="288" y="2272" width="128" height="192"/>
   <object name="Patrol1_Rebels 1" type="WAYPOINT" x="336" y="2480" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1360,13 +1361,14 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol2_Rebels" width="198" height="150">
+ <objectgroup color="#755219" name="Patrol2_Rebels" width="198" height="150" visible="0">
   <object name="Patrol2_Rebels 1" type="WAYPOINT" x="312" y="2480" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
    </properties>
   </object>
+  <object name="Patrol2_Rebels_Spawn" type="COORDINATE" x="288" y="2272" width="128" height="192"/>
   <object name="Patrol2_Rebels 2" type="WAYPOINT" x="295" y="2623" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1506,13 +1508,14 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="198" height="150">
+ <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="198" height="150" visible="0">
   <object name="Patrol1_Soldiers 1" type="WAYPOINT" x="2272" y="1248" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>
    </properties>
   </object>
+  <object name="Patrol1_Soldiers_Spawn" type="COORDINATE" x="2112" y="1056" width="384" height="128"/>
   <object name="Patrol1_Soldiers 2" type="WAYPOINT" x="2208" y="1408" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1982,7 +1985,8 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="198" height="150">
+ <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="198" height="150" visible="0">
+  <object name="Patrol2_Soldiers_Spawn" type="COORDINATE" x="2112" y="1056" width="384" height="128"/>
   <object name="Patrol2_Soldiers 1" type="WAYPOINT" x="2400" y="1248" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>

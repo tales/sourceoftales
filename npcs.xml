@@ -170,5 +170,19 @@
     <sprite>equipment/BELT_leather.xml</sprite>
     <sprite>equipment/HEAD_leather_armor_hat.xml</sprite>
 </npc>
+<npc id="22">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/vest.xml</sprite>
+    <sprite>equipment/LEGS_pants_greenish.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+    <sprite>characters/hair09_male.xml|#191e24,254237,31774b,3cb85f,85f57c</sprite>
+</npc>
+<npc id="23">
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+    <sprite>equipment/pants.xml</sprite>
+    <sprite>equipment/FEET_shoes_brown.xml</sprite>
+    <sprite>characters/hair09_male.xml|#5a72dd</sprite>
+</npc>
 
 </npcs>
