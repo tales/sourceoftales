@@ -31,12 +31,11 @@ local range = 3 * TILESIZE
 
 local spell = get_special_info("Magic_Earthquake")
 spell:on_use(function(user, target, special_id)
-    local exp = chr_get_exp(user, skill_name)
-    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    local damage_mod = damage * factor
+    local damage_mod = damage * get_special_factor(user, skill_name)
 
     effect_create(1, user)
     chr_set_special_mana(user, special_id, 0)
+    recalculate_special_rechargespeed(user, special_id)
 
     local beings = get_beings_in_circle(user, range)
     for _, being in ipairs(beings) do

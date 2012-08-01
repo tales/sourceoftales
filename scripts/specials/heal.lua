@@ -30,12 +30,11 @@ spell:on_use(function(user, target, special_id)
         return
     end
 
-    local exp = chr_get_exp(user, skill_name)
-    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    local heal_mod = heal * factor
+    local heal_mod = heal * get_special_factor(user, skill_name)
 
-    --effect_create(11, target)
+    effect_create(11, target)
     chr_set_special_mana(user, special_id, 0)
+    recalculate_special_rechargespeed(user, special_id)
     
     local current_hp = being_get_modified_attribute(target, ATTR_HP)
     local max_hp = being_get_modified_attribute(target, ATTR_MAX_HP)

@@ -19,6 +19,17 @@
 
 --]]
 
+function recalculate_special_rechargespeed(user, special)
+    local speed = 175 + being_get_base_attribute(user, ATTR_INT)
+    chr_set_special_recharge_speed(user, special, speed)
+end
+
+function get_special_factor(user, skill_name)
+    local exp = chr_get_exp(user, skill_name)
+    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
+    return factor * (being_get_base_attribute(user, ATTR_WIL) / 128 + 1)
+end
+
 require "scripts/specials/firelion"
 require "scripts/specials/earthquake"
 require "scripts/specials/lightning"

@@ -36,12 +36,11 @@ spell:on_use(function(user, target, special_id)
         return
     end
 
-    local exp = chr_get_exp(user, skill_name)
-    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    local damage_mod = damage * factor
+    local damage_mod = damage * get_special_factor(user, skill_name)
 
     effect_create(11, target)
     chr_set_special_mana(user, special_id, 0)
+    recalculate_special_rechargespeed(user, special_id)
 
     being_damage(target, damage_mod, damage_delta, damage_cth,
                  damage_type, damage_element, user, skill_name)

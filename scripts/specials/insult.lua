@@ -26,11 +26,10 @@ local anger = 50
 
 local spell = get_special_info("Magic_Insult")
 spell:on_use(function(user, target, special_id)
-    local exp = chr_get_exp(user, skill_name)
-    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    local anger_mod = anger * factor
+    local anger_mod = anger * get_special_factor(user, skill_name)
 
     chr_set_special_mana(user, special_id, 0)
+    recalculate_special_rechargespeed(user, special_id)
 
     local beings = get_beings_in_circle(user, range)
     for _, being in ipairs(beings) do

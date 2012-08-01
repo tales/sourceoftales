@@ -5,7 +5,7 @@
             id="1"
             name="Fire Lion"
             rechargable="true"
-            needed="100"
+            needed="17500"
             rechargespeed="1"
             icon="icons/spell_firelion.png"
         />
@@ -13,14 +13,14 @@
             id="2"
             name="Earthquake"
             rechargeable="true"
-            needed="100"
+            needed="17500"
             rechargespeed="1"
         />
         <special
             id="3"
             name="Lightning"
             rechargeable="true"
-            needed="100"
+            needed="17500"
             rechargespeed="1"
             icon="icons/spell_lightning.png"
         />
@@ -28,14 +28,14 @@
             id="4"
             name="Heal"
             rechargeable="true"
-            needed="10"
+            needed="17500"
             rechargespeed="1"
         />
         <special
             id="5"
             name="Snake Bite"
             rechargeable="true"
-            needed="10"
+            needed="17500"
             rechargespeed="1"
             icon="icons/spell_snakebite.png"
         />
@@ -43,7 +43,7 @@
             id="6"
             name="Insult"
             rechargeable="true"
-            needed="10"
+            needed="17500"
             rechargespeed="1"
         />
     </set>
