@@ -21,7 +21,7 @@
 --]]
 
 
-function goldenfields_check_bounty(questvar, monster)
+function goldenfields_check_bounty(ch, questvar, monster)
     local killcount = chr_get_kill_count(ch, monster)
     local killcountold = tonumber(chr_get_quest(ch, questvar))
     if killcountold == nil then
