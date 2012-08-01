@@ -56,6 +56,7 @@ local function instructorTalk(npc, ch)
                 end
                 chr_inv_change(ch, "Shortsword", 1)
                 say ("Alright, now equip it and try it out on some of the training dummies.")
+                say("Target them either by mouse or by hitting \"A\". Use \"Ctrl\" to hit them then!")
                 chr_set_quest(ch, "tutorial_fight", "beat_dummies")
             end
         end
