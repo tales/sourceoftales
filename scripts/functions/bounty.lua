@@ -27,12 +27,12 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
     end
 
     local killcount = chr_get_kill_count(ch, monster)
-    local killcountold = tonumber(chr_get_quest(ch, questvar))
-    if killcountold == nil then
-        killcountold = 0
+    local killcount_old = tonumber(chr_get_quest(ch, questvar))
+    if killcount_old == nil then
+        killcount_old = 0
     end
 
-    local d = killcount - killcountold
+    local d = killcount - killcount_old
     local r = 0
     local bombvalue = 10
     local largepotionvalue = 4
@@ -82,17 +82,20 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
     end
     chr_money_change(ch, d*(5+math.random(10)))
 
-    if killcount >= GOLDENFIELDS_BOUNTY_LOW and killcountold < GOLDENFIELDS_BOUNTY_LOW then
+    if killcount >= GOLDENFIELDS_BOUNTY_LOW and killcount_old < GOLDENFIELDS_BOUNTY_LOW then
         chr_inv_change(ch, "Iron Gloves", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_MEDIUM and killcountold < GOLDENFIELDS_BOUNTY_MEDIUM then
+    if killcount >= GOLDENFIELDS_BOUNTY_MEDIUM and killcount_old < GOLDENFIELDS_BOUNTY_MEDIUM then
         chr_inv_change(ch, "Iron Boots", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_HIGH and killcountold < GOLDENFIELDS_BOUNTY_HIGH then
+    if killcount >= GOLDENFIELDS_BOUNTY_HIGH and killcount_old < GOLDENFIELDS_BOUNTY_HIGH then
         chr_inv_change(ch, "Iron Pants", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_VERY_HIGH and killcountold < GOLDENFIELDS_BOUNTY_VERY_HIGH then
+    if killcount >= GOLDENFIELDS_BOUNTY_VERY_HIGH and killcount_old < GOLDENFIELDS_BOUNTY_VERY_HIGH then
         chr_inv_change(ch, "Iron Armor", 1)
     end
-    say("Good job! Enjoy your reward.")
+    chr_set_quest(ch, questvar, tostring(killcount))
+    if killcount ~= killcount_old then
+        say("Good job! Enjoy your reward.")
+    end
 end
