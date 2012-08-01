@@ -36,7 +36,7 @@
  </layer>
  <layer name="Ground" width="101" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt3UsKwjAUBdBk5H8DSqtV97+orsQUWqg6ESd5pefApdPADZ28wEsJAAAAAAAAAJZtm1Pa59qnYDB0sSvZlJx0EsKh9HAcA//oax9gpin3+FnSllzd6RBupYduzF0nBBTpHwYAAAAAAMRwzildZqG+ZpwDD/Pgh05CmM+CO50ArJZ3F3Hppq4+6WAJdAQAAAAA69V/fCNp83vWRif8QicAAAAAAAAAAAAAAPBt2hVrd28c065Yu3sB6ngBIZINdw==
+   eJzt2z0OgkAYBNCl8r+x1ICi3v9QnMQlgQS1MRbsZ3gvmdBuMoRmmZQAAAAAAAAA4L+tq5S2VelT0Ou72OSscg46CWGXe9gPgV90pQ8wUef3+JHT5Fy80yFccw/tkJtOCCjSNwwAAAAAAIjhVKV0noTy6uEeuL8PvuskhOldcKsTgMXy30VcuimrSzr4BzoCgPnZ+MVh4xfPuPE76gQAYBbd2zOSpnrN0uiEb+gEAAAAAAAAAAAAAAA+jTtyu/44xh25DTlAGU8lnA3u
   </data>
  </layer>
  <layer name="CaveWall" width="101" height="100">
@@ -69,7 +69,7 @@
    eJztlFmO5DAMQ7vuf+n5GiAIvFAitbjKAoxBTWKJ5FP68/n7+9xzzz1HnmdVazn5sPnNqtrXSeeZF5Phrqp9nnCQUvb19KjOqCMbtufz9+rdlabqfLqwieqNsFvtxi9yivSM5m995xdONBOkkLvVOWUzQTzPdtrKxboLDJcdbyazSAZI1quy3GM1W/oghezX6P89XmYzrLXjht7zeGD2mylLjqx+RTG9WCaWb0Zd0d/ruxeqA+Wu2CnP3wBLDixDz2z0OZsf8q61p5oJeleRnzcTJRNVhhG9Ru+hLGesVEwsvtRMUB8VfL0+dhoYJrM9suyE1Ysqn2wmlnysfiNZZ3FR8mW8MJ5ntetZ4eVbmOyyVPXpwqWCB6N9dA/ts6pqX1VHkYOXyWruTs/s2fteFRNFnt4eo/tor907Hl6zquCxKkuP7LnefZvNymax8z77P0t/rybLfWtmq/eqmKD5IxoRf1Yv0fd2760qmkl0H+8MRh96d5Xz6Fk0lyzmFUwUc2azI7lkMclmyepE5kcyifapZDIqr88ZA7R/1N5k7KF3horJ6N1VH3TG6Uy82nd3RsxW82dl1R3J45uYjOZYf6PzI5gge1LJAu2BVqQ/S87v9z2an8+s3thMEG1VPKwamFL6Rd9D9sGyfxaNSiZd+Cr2nflGMrJSe7NyYTzN3vf2Yb1GM4nqr/Y/Y9LB62lMlGxH35unX3XmVUxU/ldVpSmDR2cmKy5Mrwhdao+nMGd6qj2r+il3LpPFs7fSu9ov0hOtX2Diyc/L2pt3JJuofuqeCs1vbR4W2TlG7KKaya7/6vkse5XeSN8qHip9s36z37uZq1LupdK38i6rbZeZNdfRu2omKi7endm9y2rb6fHq9XhVaWcLmZu1L14Nit1TckHyRu4xebPelbllcEB3YcVk5XvHCvXHZKFmks3Dy4TtF5UHwzKyVwQT1k80E0arcic6slDunuW9CB7ZTLJZnJKLaq410065I95OmYlUF5/MvOz98cxDskeeZTNh5u7uvZ+zFbVzypkRbCw6ECbZHDy71omFggvK7f1vp9ORx0xfRL9unrvziODS9e9ChNeT9HZl0lVXBhN1rwgeXXRZ9P8Cky7aspg8c+jgZ1XV+jKZdOHynn8iG7XGSs+z2acx+a+5cz/lPpzCJoIJ29ObXeesLX4ifFQxUcwe9VH07MCE6fmtTNTsMriMKsp7dyZqHrN8d3kr9Fwm815WJiot1spgYvEWwcSTB5JRhi4VE6R/VyYezRW6lGXR2sF7BBPW0+q36luJyuMy6ZdHBw2dmDwzmeWU5eEy4e9cJt/NRMHlJEbWPKq1fysXJo8uOjK5dPCNZNFJSySTDn5P0XaZ9NOmLssctR4mg2oOkUxG+aAZRsze5Y/c+RYmqrJ+c8o5pzJZ9VLMVfsaPa9mwDLJ1KLuW531qafz/t5zzz33/ML5B5voPnU=
   </data>
  </layer>
- <objectgroup name="Spawns" width="198" height="150" visible="0">
+ <objectgroup name="Spawns" width="198" height="150">
   <object name="skeleton mage" type="SPAWN" x="2304" y="256" width="544" height="288">
    <properties>
     <property name="max_beings" value="1"/>
@@ -169,13 +169,6 @@
    </properties>
   </object>
   <object name="skeleton soldier" type="SPAWN" x="352" y="960" width="448" height="320">
-   <properties>
-    <property name="max_beings" value="1"/>
-    <property name="monster_id" value="6"/>
-    <property name="spawn_rate" value="5"/>
-   </properties>
-  </object>
-  <object name="skeleton soldier" type="SPAWN" x="64" y="1472" width="640" height="384">
    <properties>
     <property name="max_beings" value="1"/>
     <property name="monster_id" value="6"/>
@@ -487,7 +480,7 @@
   <object name="to boss cave" type="WARP" x="1603" y="3073" width="96" height="32">
    <properties>
     <property name="DEST_MAP" value="cave3"/>
-    <property name="DEST_X" value="704"/>
+    <property name="DEST_X" value="688"/>
     <property name="DEST_Y" value="144"/>
    </properties>
   </object>
@@ -498,20 +491,20 @@
     <property name="DEST_Y" value="208"/>
    </properties>
   </object>
-  <object name="shrinequest spawn west" type="TRIGGER" x="576" y="128" width="96" height="64">
+  <object name="shrinequest spawn west" type="TRIGGER" x="160" y="1728" width="96" height="64">
    <properties>
     <property name="id" value="1"/>
     <property name="once" value="true"/>
    </properties>
   </object>
-  <object name="Warp to main map" type="WARP" x="608" y="96" width="32" height="32">
+  <object name="Warp to main map" type="WARP" x="96" y="1824" width="96" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
     <property name="DEST_X" value="608"/>
     <property name="DEST_Y" value="80"/>
    </properties>
   </object>
-  <object name="Shrinequest Skeleton Spawn West" type="COORDINATE" x="608" y="256" width="32" height="32"/>
+  <object name="Shrinequest Skeleton Spawn West" type="COORDINATE" x="256" y="1632" width="32" height="32"/>
   <object name="shrinequest spawn east" type="TRIGGER" x="1984" y="576" width="96" height="64">
    <properties>
     <property name="id" value="2"/>

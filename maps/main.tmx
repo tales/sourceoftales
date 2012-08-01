@@ -876,8 +876,8 @@
   <object name="Warp to cave" type="WARP" x="576" y="32" width="64" height="32">
    <properties>
     <property name="DEST_MAP" value="cave"/>
-    <property name="DEST_X" value="624"/>
-    <property name="DEST_Y" value="144"/>
+    <property name="DEST_X" value="176"/>
+    <property name="DEST_Y" value="1808"/>
    </properties>
   </object>
  </objectgroup>
