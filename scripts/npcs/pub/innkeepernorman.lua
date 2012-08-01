@@ -106,7 +106,7 @@ local function innkeeperTalk(npc, ch)
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotmoney")
 
             local reputation = read_reputation(ch, "rebel_reputation")
-            reputation = reputation - 10 + (GOLDENFIELDS_TAXES - money)/10
+            reputation = reputation - 10 + math.floor((GOLDENFIELDS_TAXES - money)/10)
             chr_set_quest(ch, "rebel_reputation", tostring(reputation))
         end
     end
