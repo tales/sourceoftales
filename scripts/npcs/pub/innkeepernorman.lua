@@ -115,6 +115,13 @@ local function innkeeperTalk(npc, ch)
         local reputation = read_reputation(ch, "rebel_reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
+            say("Do you need any supplies or clothes? I can sell you something.")
+            npc_trade(npc, ch, false, {
+                { "Pumpkin", 10, 50 },
+                { "Food Shank", 10, 130 },
+                { "Apple", 10, 40 },
+                { "Robe Hood", 10, 400},
+                { "Robe Shirt", 10, 800}})
             -- LATER: some more talk, maybe depending on the quest state
         else
             say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation.")
