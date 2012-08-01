@@ -22,6 +22,10 @@
 
 
 function goldenfields_check_bounty(ch, questvar, monster)
+    local function say(message)
+        npc_message(npc, ch, message)
+    end
+
     local killcount = chr_get_kill_count(ch, monster)
     local killcountold = tonumber(chr_get_quest(ch, questvar))
     if killcountold == nil then
@@ -31,10 +35,10 @@ function goldenfields_check_bounty(ch, questvar, monster)
     local d = killcount - killcountold
     local r = 0
     local bombvalue = 10
-    local largehpotionvalue = 4
-    local mediumhpotionvalue = 3
+    local largepotionvalue = 4
+    local mediumpotionvalue = 3
     local smallpotionvalue = 2
-    local tinyhpotionvalue = 1
+    local tinypotionvalue = 1
 
     local finished = false
     while not finished do
@@ -47,16 +51,16 @@ function goldenfields_check_bounty(ch, questvar, monster)
                 finished = true
             end
         elseif r == 2 then
-            if d > largehpotionvalue then
+            if d > largepotionvalue then
                 chr_inv_change(ch, "Large Healing Potion", 1)
-                d = d - largehpotionvalue
+                d = d - largepotionvalue
             else
                 finished = true
             end
         elseif r == 3 then
-            if d > mediumhpotionvalue then
+            if d > mediumpotionvalue then
                 chr_inv_change(ch, "Medium Healing Potion", 1)
-                d = d - mediumhpotionvalue
+                d = d - mediumpotionvalue
             else
                 finished = true
             end
