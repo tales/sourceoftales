@@ -237,13 +237,11 @@
   <object name="Rowan 7" type="WAYPOINT" x="4532" y="1589" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Waypoints Durmark" width="198" height="150" visible="0">
-  <object name="Durmark 1" type="WAYPOINT" x="4648" y="2756" width="32" height="32"/>
-  <object name="Durmark 2" type="WAYPOINT" x="4647" y="2769" width="32" height="32"/>
-  <object name="Durmark 3" type="WAYPOINT" x="4642" y="2784" width="32" height="32"/>
-  <object name="Durmark 4" type="WAYPOINT" x="4608" y="2688" width="32" height="32"/>
-  <object name="Durmark 5" type="WAYPOINT" x="4616" y="2704" width="32" height="32"/>
-  <object name="Durmark 6" type="WAYPOINT" x="4631" y="2721" width="32" height="32"/>
-  <object name="Durmark 7" type="WAYPOINT" x="4627" y="2747" width="32" height="32"/>
+  <object name="Durmark 1" type="WAYPOINT" x="4717" y="2743" width="32" height="32"/>
+  <object name="Durmark 2" type="WAYPOINT" x="4621" y="2777" width="32" height="32"/>
+  <object name="Durmark 3" type="WAYPOINT" x="4593" y="2673" width="32" height="32"/>
+  <object name="Durmark 4" type="WAYPOINT" x="4635" y="2695" width="32" height="32"/>
+  <object name="Durmark 5" type="WAYPOINT" x="4633" y="2735" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Waypoints Francis" width="198" height="150" visible="0">
   <object name="Francis 1" type="WAYPOINT" x="4875" y="3449" width="32" height="32"/>
@@ -476,7 +474,7 @@
     <property name="sprite_id" value="20"/>
    </properties>
   </object>
-  <object name="Durmark" type="NPC_POSITION" x="4631" y="2749" width="32" height="32">
+  <object name="Durmark" type="NPC_POSITION" x="4671" y="2733" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
     <property name="sprite_id" value="21"/>

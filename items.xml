@@ -161,7 +161,7 @@
         </equip>
         <effect trigger="equip">
             <attack skill="Weapons_Sword" warmuptime="3" cooldowntime="3"
-                basedamage="50" deltadamage="10" chancetohit="7" range="34"
+                basedamage="25" deltadamage="10" chancetohit="7" range="34"
                 element="neutral" type="physical" />
             <modifier attribute="acc1" value="2.5" />
         </effect>
