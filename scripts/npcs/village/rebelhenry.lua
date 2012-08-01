@@ -44,12 +44,9 @@ local function rebelTalk(npc, ch)
                     chr_inv_change(ch, "Pumpkin", -REBEL_FOOD_PUMPKIN,
                                     "Food Shank", -REBEL_FOOD_FOODSHANK,
                                     "Apple", -REBEL_FOOD_APPLE)
-                    local reputation = read_reputation(ch, "rebel_reputation")
-                    reputation = reputation + 10
-                    chr_set_quest(ch, "rebel_reputation", tostring(reputation))
-                    local soldier_reputation = read_reputation(ch, "soldier_reputation")
-                    soldier_reputation = soldier_reputation - 5
-                    chr_set_quest(ch, "soldier_reputation", tostring(soldier_reputation))
+
+                    change_reputation(ch, "rebel_reputation", "Rebels", 10)
+                    change_reputation(ch, "soldier_reputation", "Army", -5)
                     chr_set_quest(ch, "rebel_supplies", "done")
                     chr_inv_change(ch, "Robe Hood", 1)
                     chr_inv_change(ch, "Robe Shirt", 1)
@@ -59,8 +56,7 @@ local function rebelTalk(npc, ch)
                         "missing items, or you better not come back.")
                     say("Norman wanted to send us ".. REBEL_FOOD_PUMPKIN .." pumpkins, ".. REBEL_FOOD_FOODSHANK ..
                         " food shanks and ".. REBEL_FOOD_APPLE .. " apples.")
-                    reputation = reputation - 1
-                    chr_set_quest(ch, "rebel_reputation", tostring(reputation))
+                    change_reputation(ch, "rebel_reputation", "Rebels", -1)
                 end
             end
         end

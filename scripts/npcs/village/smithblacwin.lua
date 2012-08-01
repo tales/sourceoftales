@@ -81,8 +81,7 @@ local function smithTalk(npc, ch)
         chat()
     elseif reputation > REPUTATION_RELUCTANT then
         say("Go away until you've talked to Magistrate Eustace.")
-        reputation = reputation - 1
-        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+        change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Argh!")
         being_damage(ch, 120, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

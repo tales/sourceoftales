@@ -41,6 +41,7 @@ local function rebelTalk(npc, ch)
         say("I think those experiences are a main reason why Henry is fighting against the kingdom.")
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

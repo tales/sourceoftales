@@ -119,8 +119,7 @@ local function instructorTalk(npc, ch)
         aboutQuestions()
     elseif reputation > REPUTATION_RELUCTANT then
         say("You shouldn't be here until you recompensed for your misconduct. Talk to Magistrate Eustace in Goldenfields.")
-        reputation = reputation - 1
-        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+        change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("You dare to come here after what you've done?! You won't have much time to regret this!")
         being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

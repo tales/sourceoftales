@@ -46,8 +46,7 @@ local function recruitTalk(npc, ch)
         -- idea: could have a friend who later turns out to be one of the rebels
     elseif reputation > REPUTATION_RELUCTANT then
         say("Wow, you really got into trouble, heh? Why are you here? Shouldn't you talk to Magistrate Eustace?")
-        reputation = reputation - 1
-        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+        change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Ah! Don't hurt me! Go away!")
         being_damage(ch, 50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

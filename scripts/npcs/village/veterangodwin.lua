@@ -71,9 +71,7 @@ local function veteranTalk(npc, ch)
             if money >= GOLDENFIELDS_TAXES then
                 chr_money_change(ch, -GOLDENFIELDS_TAXES)
                 chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
-                local reputation = read_reputation(ch, "soldier_reputation")
-                reputation = reputation + 10
-                chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+                change_reputation(ch, "soldier_reputation", "Army", 10)
                 chr_money_change(ch, 40)
                 say("Well done, kid.")
             else
@@ -83,9 +81,6 @@ local function veteranTalk(npc, ch)
         end
     end
 
-    change_reputation(ch, "soldier_reputation", "Army", 10)
-    say("test")
-    change_reputation(ch, "soldier_reputation", "Army", -10)
 
     local reputation = read_reputation(ch, "soldier_reputation")
 
@@ -107,8 +102,7 @@ local function veteranTalk(npc, ch)
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("Why are you here? Talk to Magistrate Eustace to get amnesty from your crimes!")
-        reputation = reputation - 1
-        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+        change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("I can't deny you're brave, but that won't help you now!")
         being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

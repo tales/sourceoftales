@@ -70,8 +70,7 @@ local function recruitTalk(npc, ch)
         chat()
     elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace.")
-        reputation = reputation - 1
-        chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+        change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

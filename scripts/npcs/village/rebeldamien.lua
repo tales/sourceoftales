@@ -34,6 +34,7 @@ local function rebelTalk(npc, ch)
         say("But of course we're glad about every new member! So, welcome, I guess.")
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         being_damage(ch, 60, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

@@ -85,16 +85,11 @@ local function innkeeperTalk(npc, ch)
             chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
                             "Food Shank", REBEL_FOOD_FOODSHANK,
                             "Apple", REBEL_FOOD_APPLE)
+
+            change_reputation(ch, "rebel_reputation", "Rebels", 10)
+            change_reputation(ch, "soldier_reputation", "Army", -10)
+
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
-
-            local reputation = read_reputation(ch, "rebel_reputation")
-            reputation = reputation + 10
-            chr_set_quest(ch, "rebel_reputation", tostring(reputation))
-
-            local soldier_reputation = read_reputation(ch, "soldier_reputation")
-            soldier_reputation = soldier_reputation - 10
-            chr_set_quest(ch, "soldier_reputation", tostring(soldier_reputation))
-
             chr_set_quest(ch, "rebel_supplies", "started")
 
             set_respawn()
@@ -104,10 +99,7 @@ local function innkeeperTalk(npc, ch)
             chr_money_change(ch, money)
 
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotmoney")
-
-            local reputation = read_reputation(ch, "rebel_reputation")
-            reputation = reputation - 10 + math.floor((GOLDENFIELDS_TAXES - money)/10)
-            chr_set_quest(ch, "rebel_reputation", tostring(reputation))
+            change_reputation(ch, "rebel_reputation", "Rebels", (-10 + math.floor((GOLDENFIELDS_TAXES - money)/10)))
         end
     end
 
