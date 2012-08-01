@@ -73,20 +73,12 @@ atinit(function()
     -- Rebel patrols
     local rebelpatrol1 = RebelPatrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     local rebelpatrol2 = RebelPatrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    for i=1,4 do
-         rebelpatrol1:assignBeing(monster_create("Rebel", get_named_coordinate("Patrol1_Rebels_Spawn")))
-         rebelpatrol2:assignBeing(monster_create("Rebel", get_named_coordinate("Patrol1_Rebels_Spawn")))
-    end
     schedule_every(1, function() rebelpatrol1:logic() end)
     schedule_every(2, function() rebelpatrol2:logic() end)
 
     -- Soldier patrols
     local soldierpatrol1 = SoldierPatrol:new("Patrol1_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
     local soldierpatrol2 = SoldierPatrol:new("Patrol2_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    for i=1,5 do
-         soldierpatrol1:assignBeing(monster_create("Soldier", get_named_coordinate("Patrol1_Soldiers_Spawn")))
-         soldierpatrol2:assignBeing(monster_create("Soldier", get_named_coordinate("Patrol1_Soldiers_Spawn")))
-    end
     schedule_every(1, function() soldierpatrol1:logic() end)
     schedule_every(2, function() soldierpatrol2:logic() end)
 
