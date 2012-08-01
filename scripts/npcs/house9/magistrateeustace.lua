@@ -38,7 +38,8 @@ local function magistrateTalk(npc, ch)
             "What a nonsense! But the priestess seemed to be rather worried about it. Pah.")
         -- LATER: some more talk, maybe depending on the quest state
     else
-        say("Ah. I already heard about your misconducts. Did you come here to recompense for them?")
+        say("Ah. I already heard about your misconducts. Did you come here to recompense for them? "..
+            "Those rebel scum you collaborated with won't like that of course.")
         local choices = { "Yes, what do I have to pay?",
                         "No!"}
         local res = npc_choice(npc, ch, choices)

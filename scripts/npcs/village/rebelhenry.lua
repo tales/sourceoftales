@@ -49,7 +49,7 @@ local function rebelTalk(npc, ch)
                     chr_set_quest(ch, "rebel_reputation", tostring(reputation))
                     local soldier_reputation = read_reputation(ch, "soldier_reputation")
                     soldier_reputation = soldier_reputation - 5
-                    chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+                    chr_set_quest(ch, "soldier_reputation", tostring(soldier_reputation))
                     chr_set_quest(ch, "rebel_supplies", "done")
                     chr_inv_change(ch, "Robe Hood", 1)
                     chr_inv_change(ch, "Robe Shirt", 1)

@@ -93,7 +93,7 @@ local function innkeeperTalk(npc, ch)
 
             local soldier_reputation = read_reputation(ch, "soldier_reputation")
             soldier_reputation = soldier_reputation - 10
-            chr_set_quest(ch, "soldier_reputation", tostring(reputation))
+            chr_set_quest(ch, "soldier_reputation", tostring(soldier_reputation))
 
             chr_set_quest(ch, "rebel_supplies", "started")
 
@@ -124,7 +124,8 @@ local function innkeeperTalk(npc, ch)
                 { "Robe Shirt", 10, 800}})
             -- LATER: some more talk, maybe depending on the quest state
         else
-            say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation.")
+            say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation. "..
+                "The army people won't like that of course.")
             local choices = { "Ok, what do I have to pay?",
                             "No!"}
             local res = npc_choice(npc, ch, choices)
