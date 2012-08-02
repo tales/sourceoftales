@@ -11,7 +11,7 @@ Starting the game
 As this is relying on manasource technology, which is highly flexible,
 some things need to be wired. The following commands can be run as a script
 to get a first impression, i.e. the judges of the LPC may use it.
-(Judges, beware: modify the lines 'git checkout lpc2012' to 'git checkout "tagname"')
+(Judges, beware: modify the lines 'git checkout lpc2012' to 'git checkout lpc2012submission')
 
 If you want to setup a server 'on the internet' you'd need to go through
 the config files more detailed. (i.e. setting up the correct ip addresses
