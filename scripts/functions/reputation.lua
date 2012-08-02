@@ -32,7 +32,7 @@ end
 function read_reputation(ch, faction)
     local reputation = 0
     if is_valid_faction(faction) then
-        reputation = tonumber(chr_get_quest(ch, faction))
+        reputation = tonumber(chr_try_get_quest(ch, faction))
         if (reputation == nil) then
             reputation = 0
             chr_set_quest(ch, faction, tostring(reputation))
