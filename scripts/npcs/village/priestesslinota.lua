@@ -70,7 +70,7 @@ local function priestessTalk(npc, ch)
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
                     say("Very well. I heard alarming rumors about ... walking skeletons in the caves north of here. "..
-                        "This sounds indeed very strange, but there are old records which tell about"..
+                        "This sounds indeed very strange, but there are old records which tell about "..
                         "a similiar thing happening a long time ago.")
                     say("I need to know if these rumors are true.")
                     say("Please investigate the northern caves and find out if there really are walking skeletons. "..
