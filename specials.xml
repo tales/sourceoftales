@@ -36,7 +36,7 @@
             name="Snake Bite"
             rechargeable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
             icon="icons/spell_snakebite.png"
         />
         <special
@@ -44,7 +44,7 @@
             name="Insult"
             rechargeable="true"
             needed="17500"
-            rechargespeed="1"
+            rechargespeed="175"
         />
     </set>
 </specials>
