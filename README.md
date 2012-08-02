@@ -4,7 +4,11 @@ lpc2012
 Our entry for the Liberated Pixel Cup 2012.
 (see http://lpc.opengameart.org)
 
+Existing client packages for playing on our server
+======
+Arch Linux: https://aur.archlinux.org/packages.php?ID=61388
 
+Everyone else has to build the client from source! (see "setup client" below)
 
 Starting the game
 ======
