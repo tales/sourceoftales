@@ -90,7 +90,7 @@ local function innkeeperTalk(npc, ch)
             change_reputation(ch, "rebel_reputation", "Rebels", 10)
             change_reputation(ch, "soldier_reputation", "Army", -10)
 
-            chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
+            chr_set_quest(ch, "soldier_goldenfieldstaxes", "befriended")
             chr_set_quest(ch, "rebel_supplies", "started")
 
             set_respawn()
