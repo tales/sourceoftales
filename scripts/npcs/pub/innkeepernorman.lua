@@ -34,6 +34,15 @@ local function innkeeperTalk(npc, ch)
         chr_set_quest(ch, "respawn", position)
     end
 
+    local function start_supply()
+        say("I have some supplies for our hideout in the forest, please take it with you when you go there. "..
+            "Just leave the village to the west and go south once you entered the forest.")
+        chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
+                        "Food Shank", REBEL_FOOD_FOODSHANK,
+                        "Apple", REBEL_FOOD_APPLE)
+        chr_set_quest(ch, "rebel_supplies", "started")
+    end
+
     local function collect_taxes()
         local persuaded = false
         say("Hello. How can I help you?")
@@ -81,17 +90,13 @@ local function innkeeperTalk(npc, ch)
         if persuaded then
             say("That's what I wanted to hear, friend! You should talk to Henry. "..
                 "He's hiding in the forest west of Goldenfields, together with some people who share our ideals.")
-            say("I have some supplies they need, please take it with you when you go there. Just leave the village "..
-                "to the west and go south once you entered the forest.")
-            chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
-                            "Food Shank", REBEL_FOOD_FOODSHANK,
-                            "Apple", REBEL_FOOD_APPLE)
+
+            start_supply()
 
             change_reputation(ch, "rebel_reputation", "Rebels", 10)
             change_reputation(ch, "soldier_reputation", "Army", -10)
 
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "befriended")
-            chr_set_quest(ch, "rebel_supplies", "started")
 
             set_respawn()
         else
@@ -108,14 +113,25 @@ local function innkeeperTalk(npc, ch)
         local reputation = read_reputation(ch, "rebel_reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
-            say("Do you need any supplies or clothes? I can sell you something.")
-            npc_trade(npc, ch, false, {
-                { "Pumpkin", 10, 50 },
-                { "Food Shank", 10, 130 },
-                { "Apple", 10, 40 },
-                { "Robe Hood", 10, 400},
-                { "Robe Shirt", 10, 800}})
-            -- LATER: some more talk, maybe depending on the quest state
+            local supplies = chr_get_quest(ch, "rebel_supplies")
+            if supplies == "" then
+                local choices = { "Thanks.",
+                                "Can I help the rebels in any way?"}
+                local res = npc_choice(npc, ch, choices)
+                if res == 2 then
+                    say("I'm glad you made up your mind. There's indeed something you could do.")
+                    start_supply()
+                end
+            else
+                say("Do you need any supplies or clothes? I can sell you something.")
+                npc_trade(npc, ch, false, {
+                    { "Pumpkin", 10, 50 },
+                    { "Food Shank", 10, 130 },
+                    { "Apple", 10, 40 },
+                    { "Robe Hood", 10, 400},
+                    { "Robe Shirt", 10, 800}})
+                -- LATER: some more talk, maybe depending on the quest state
+            end
         else
             say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation. "..
                 "The army people won't like that of course.")
