@@ -80,8 +80,9 @@ local function innkeeperTalk(npc, ch)
 
         if persuaded then
             say("That's what I wanted to hear, friend! You should talk to Henry. "..
-                "He's hiding in the forest, together with some people who share our ideals.")
-            say("I have some supplies they need, please take it with you when you go there.")
+                "He's hiding in the forest west of Goldenfields, together with some people who share our ideals.")
+            say("I have some supplies they need, please take it with you when you go there. Just leave the village "..
+                "to the west and go south once you entered the forest.")
             chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
                             "Food Shank", REBEL_FOOD_FOODSHANK,
                             "Apple", REBEL_FOOD_APPLE)
