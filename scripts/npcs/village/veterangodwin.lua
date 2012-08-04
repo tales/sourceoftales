@@ -63,8 +63,20 @@ local function veteranTalk(npc, ch)
                 "Hah! We're the ones keeping them safe, ungrateful wretches.")
             say("I want you to get the outstanding ".. GOLDENFIELDS_TAXES .. " GP from that innkeeper.")
             chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotorder")
+            say("You can find the Inn in Goldenfields south east of the casern.")
         elseif (taxes == "gotorder") then
             say("What are you waiting for? Go and get the outstanding taxes from Innkeeper Norman.")
+            local choices = { "I'm on my way.",
+                            "I can't find it, where do I have to go." }
+            local res = npc_choice(npc, ch, choices)
+            if res == 2 then
+                say("You're not very clever, are you? Alright, listen.")
+                say("When you leave the casern, go south east over the Goldenfields market. Don't let those "..
+                    "brash merchants distract you. Further into the village there are also some food stands.")
+                say("If you follow the way to the east, you'll get to some small bridge over a stream. Cross it and "..
+                    "follow the stream to the west again and you'll find the entrance to what they call a pub in this "..
+                    "place.")
+            end
         elseif (taxes == "gotmoney") then
             say("Did you get the money from that innkeeper? Let me see.")
             local money = chr_money(ch)
