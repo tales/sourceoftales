@@ -133,14 +133,28 @@ local function innkeeperTalk(npc, ch)
                 -- LATER: some more talk, maybe depending on the quest state
             end
         else
-            say("Are you here to make up for the damage you caused? We accept you back if you pay recompensation. "..
-                "The army people won't like that of course.")
+            say("With your actions you caused quite some damage to our organization. But we will forget about "..
+                "that if you pay recompensation.")
             local choices = { "Ok, what do I have to pay?",
-                            "No!"}
+                            "No!",
+                            "What effect would this have?"}
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
                 apply_amnesty(npc, ch, "rebel_reputation", "Rebels", "soldier_reputation", "Army")
                 set_respawn()
+            elseif res == 3 then
+                say("If you pay recompensation for all your actions that damaged our group, our patrols will stop "..
+                    "attacking you on sight, and members of the revolution will be willing to talk to you.")
+                say("But this would be a clear signal that you support our case, and the army won't like that, so "..
+                    "they'll see you as their enemy.")
+                say("So, what's your decision?")
+                local choices = { "Ok, how much do I have to pay?",
+                                "I don't want to support you."}
+                local res = npc_choice(npc, ch, choices)
+                if res == 1 then
+                    apply_amnesty(npc, ch, "rebel_reputation", "Rebels", "soldier_reputation", "Army")
+                    set_respawn()
+                end
             else
                 say("Hm. As you wish.")
             end
