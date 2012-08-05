@@ -32,7 +32,7 @@ spell:on_use(function(user, target, special_id)
 
     local heal_mod = heal * get_special_factor(user, skill_name)
 
-    effect_create(11, target)
+    effect_create(12, target)
     chr_set_special_mana(user, special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
     
