@@ -9,7 +9,8 @@ Starting the game
 ======
 We are using manasource technology as our engine, so you need to install
 the mana client.
-This is found in your distribution or at http://manasource.org/
+
+Currently, playing the game is only possible with our modded client. See the wiki for install instructions.
 
 Once you have the mana client installed,
 connect to server testing.manasource.org with server type ManaServ at Port
@@ -17,7 +18,7 @@ connect to server testing.manasource.org with server type ManaServ at Port
 
 There you go.
 
-Joint the devopment
+Join the devopment
 ======
 Join us at Freenode in channels #sourceoftales and #sourceoftales-dev
 to chat or discuss.
