@@ -72,8 +72,8 @@
             chancetohit="15"
             animation="attack"
             />
-        <drop item="50" percent="55" />
-        <drop item="57" percent="35" />
+        <drop item="Beetle Corpus" percent="55" />
+        <drop item="Few Gold Coins" percent="35" />
     </monster>
     <monster id="3" name="Skeleton Mage" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -112,10 +112,10 @@
             action="spellcast"
             effect-id="1"
             />
-        <drop item="51" percent="40" />
-        <drop item="57" percent="25" />
-        <drop item="58" percent="25" />
-        <drop item="59" percent="25" />
+        <drop item="Unholy Crystals" percent="40" />
+        <drop item="Few Gold Coins" percent="25" />
+        <drop item="Some Gold Coins" percent="25" />
+        <drop item="Many Gold Coins" percent="25" />
     </monster>
     <monster id="4" name="Soldier" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
@@ -155,11 +155,11 @@
             chancetohit="10"
             action="attack"
             />
-        <drop item="5" percent="20" />
-        <drop item="4" percent="10" />
-        <drop item="57" percent="20" />
-        <drop item="58" percent="25" />
-        <drop item="59" percent="20" />
+        <drop item="Kettle hat" percent="20" />
+        <drop item="Rusty chain armor" percent="10" />
+        <drop item="Few Gold Coins" percent="20" />
+        <drop item="Some Gold Coins" percent="25" />
+        <drop item="Many Gold Coins" percent="20" />
     </monster>
     <monster id="5" name="Skeleton" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -194,10 +194,10 @@
             chancetohit="200"
             action="attack"
             />
-        <drop item="51" percent="20" />
-        <drop item="57" percent="10" />
-        <drop item="58" percent="7" />
-        <drop item="59" percent="3" />
+        <drop item="Unholy Crystals" percent="20" />
+        <drop item="Few Gold Coins" percent="10" />
+        <drop item="Some Gold Coins" percent="7" />
+        <drop item="Many Gold Coins" percent="3" />
     </monster>
     <monster id="6" name="Skeleton Soldier" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
@@ -234,11 +234,11 @@
             chancetohit="200"
             action="attack"
             />
-        <drop item="51" percent="30" />
-        <drop item="45" percent="5" />
-        <drop item="57" percent="11" />
-        <drop item="58" percent="9" />
-        <drop item="59" percent="5" />
+        <drop item="Unholy Crystals" percent="30" />
+        <drop item="Iron Armor" percent="5" />
+        <drop item="Few Gold Coins" percent="11" />
+        <drop item="Some Gold Coins" percent="9" />
+        <drop item="Many Gold Coins" percent="5" />
     </monster>
     <monster id="7" name="Bee" targetCursor="small">
         <sprite>monsters/bee.xml</sprite>
@@ -341,7 +341,7 @@
             chancetohit="100"
             animation="attack"
             />
-        <drop item="57" percent="7" />
+        <drop item="Few Gold Coins" percent="7" />
     </monster>
     <monster id="10" name="Snake" targetCursor="small">
         <sprite>monsters/snake.xml</sprite>
@@ -415,11 +415,11 @@
             chancetohit="200"
             action="attack"
             />
-        <drop item="36" percent="20" />
-        <drop item="37" percent="10" />
-        <drop item="57" percent="6" />
-        <drop item="58" percent="4" />
-        <drop item="59" percent="2" />
+        <drop item="Robe Hood" percent="20" />
+        <drop item="Robe Shirt" percent="10" />
+        <drop item="Few Gold Coins" percent="6" />
+        <drop item="Some Gold Coins" percent="4" />
+        <drop item="Many Gold Coins" percent="2" />
     </monster>
     <monster id="12" name="Skeleton King" targetCursor="large">
         <sprite>monsters/skeleton_boss.xml</sprite>
@@ -454,10 +454,9 @@
             chancetohit="20000"
             action="spellcast"
             />
-        <drop item="50" percent="60" />
-        <drop item="57" percent="40" />
-        <drop item="58" percent="50" />
-        <drop item="59" percent="40" />
+        <drop item="Few Gold Coins" percent="40" />
+        <drop item="Some Gold Coins" percent="50" />
+        <drop item="Many Gold Coins" percent="40" />
     </monster>
 </monsters>
 
