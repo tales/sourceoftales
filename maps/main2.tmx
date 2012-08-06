@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="200" height="200" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="minimap" value="minimaps/main.png"/>
+  <property name="music" value="h_theme.ogg"/>
+  <property name="name" value="Goldenfields"/>
+ </properties>
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="house" tilewidth="32" tileheight="32">
+  <image source="../tiles/house.png" trans="ff00ff" width="352" height="500"/>
+ </tileset>
+ <tileset firstgid="182" name="signs" tilewidth="32" tileheight="32">
+  <image source="../tiles/signs.png" trans="ff00ff" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="188" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="588" name="bridges" tilewidth="32" tileheight="32">
+  <image source="../tiles/bridges.png" trans="ff00ff" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="630" name="barrel" tilewidth="32" tileheight="64">
+  <image source="../tiles/barrel.png" trans="ff00ff" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="634" source="../tiles/castle_lightsources.tsx"/>
+ <tileset firstgid="649" source="../tiles/terrain.tsx"/>
+ <tileset firstgid="1113" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="1115" name="mountains_new" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains_new.png" width="480" height="288"/>
+ </tileset>
+ <tileset firstgid="1250" name="waterfall" tilewidth="32" tileheight="32">
+  <image source="../tiles/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="1265" name="shadow" tilewidth="32" tileheight="32">
+  <image source="../tiles/shadow.png" width="160" height="64"/>
+ </tileset>
+ <tileset firstgid="1275" name="magecity" tilewidth="32" tileheight="32">
+  <image source="../tiles/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <tileset firstgid="1635" name="gravestones" tilewidth="32" tileheight="32">
+  <image source="../tiles/gravestones.png" width="160" height="96"/>
+ </tileset>
+ <tileset firstgid="1650" name="plants" tilewidth="32" tileheight="64">
+  <image source="../tiles/plants.png" width="288" height="384"/>
+ </tileset>
+ <tileset firstgid="1704" name="tree_stump" tilewidth="32" tileheight="32">
+  <image source="../tiles/tree_stump.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="1705" name="buckets" tilewidth="32" tileheight="32">
+  <image source="../tiles/buckets.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="1711" name="flowers" tilewidth="32" tileheight="32">
+  <image source="../tiles/flowers.png" width="640" height="320"/>
+ </tileset>
+ <tileset firstgid="1911" name="signpost" tilewidth="32" tileheight="32">
+  <image source="../tiles/signpost.png" width="160" height="64"/>
+ </tileset>
+ <tileset firstgid="1921" name="signpost_shadow" tilewidth="32" tileheight="32">
+  <image source="../tiles/signpost_shadow.png" width="256" height="256"/>
+ </tileset>
+ <layer name="set_fence" width="200" height="200" opacity="0.37">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="settree" width="200" height="200" opacity="0.4">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Terrain" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJzt3UFuFEcUBmBrepYsUcQhLFZWpGRMssAmUnKAKLlGlIUTiW0ULAQbhJC4AoJNlFUUDsChqBJ+ck25u6fHxtjT9S0+IcD2DHb/vHpd9WaeLPb2ngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwU54lL8+8uAXPB26DyMW/ydMzd7ubf17wpZU1IpS5yA5SNu7IB43J2aiz8HApG9CXjTIjORf7skGDIhtlrYg87MsFjXu7sIaCPvW6SjbgE9mAfmU29N6w7k1yv7PXB0OiL5cPuCjy8VXnPBWE+jxV3veQETjvy6Mnjx7EOovWldnI96rq+7vyQatyFv5ZrN/HrffN5YNW5SzU13/kI85d6UFoUayjynwMndeVEVqT60R5dqTvXEnZq1tn0ZJ6bVX2HQc9/UiuIWbMacVQPurziOWZE2stWpHzUF7rY+dKckastWhJ1IVYN0XvMXTtR39yvJQP2pBrRj0/O3SePfr5nCn5oAVDPXmpPJeVa019Txjmaqgn7/sYM1O0ZtOsRz1PKBe0orz2h/JhnpBWTVlbTckQzNGUOdopGYI5ij2/seveLDoMkw9aVL9fwdB5qik1BuZmyr4gtCrn43jDfODUGgNzE/saR8v12Y7IQd8coR6ElsQa66h6L6g4Y1XOoFuD0Zr6dUpqx7JBw94l33TD+XCWnRY9T14nH5KTkXzkXPS9/g/M2fvku7R2Ol2M58OsB3N3mHKwWq7/Wc7H6WJzPvQezEmdgyH/JY+7TzUk8hH3sMp7WV+nv7snGzQo15C/07X/+0D9yNn4IflJPmhQzsdJd3HvQzZgb+//xXrtyJn49oxsMDevtvjY8uxI3gPM2fgx+Sv5UzaYoV+7zRk5POvf67O7q55cHE7s9WEX5Hu1dUbKa7y8t1XmY2xvQ0aYi9jPyBnJe+NjtWRKPmSDOYn98DonfVmJmUBzgbTidMSUmrKpXkzde4TbKOcgakj8+n1VU37p1ucBy3moVc85lGCtxa6LXDwoMpHzERnJe+W/devvc7Pp/W7KvMgIu6xeU9W146S7OBd4vNyuT5cRdlWdj3KtlbPyR3c+CxVnSiIf9TnE1cB9YdhVdT4e9PQgZUamnrX6HPm4qYxFvfvcj3/VOpo//zrvh5SfW7/+/jbzoFOfw9Tvx2X+TastfoZjz2Ps/lW9zirz8Sj9/uee71ffY32p9dVq4Pq57sfv+/pXzdaUHu66/v+oX4PmNsy7XeVnGN+ny3yNj1p4MNU=
+  </data>
+ </layer>
+ <layer name="Shadow" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Ground" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJzt3EFu01AQANAsfFIEW1QK2wCBbaCFbeAinAAuUDgONvoWX6Pxd1KJOCbvSV5EddQuZjwz9ribDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACX4LbbbF5Xx4tu6b8ILsOQGx/C8VZ+wB+7Phe+hOOu5EesK2oM1+a+j/NPIda3JQdiXWnVmFYuySfW5luJ2zdJ3O5LDsS6ktWYQdaj6dlYq+99rP4ocfsxidtDyYGW59XPhx7t/oR8gkv10Mfpz/74VeL26yPjts6PrEdrnQ//u3FGmerRsvPNIFyLcUaZ6tGy880gXItDNVsc06MdzCDQ9ER+AJB4pj7ApFfuUbECS+12vHePihVYarfjs3tUrMCSux1zzwFvQ10bPr+UUyxo252v55p7DrgLdW34/E5+sKD6Wfe/7rnmngPWe4x33d/drWw/3qzPOdTPus/Rc2XPAbN9+mFn8Wn5vDtjDsOcrOeqr9un7NvezJw7tU8//I7xu9l+vFmfpWQ9V33d3nbH9zit/Gjt04/1Y2pGtxPPUrKeq75u77u8x8nmhMfaln5rakZv1ThzCksZrtuHLu9xsjkh3rONpv5/0L70W1PvV7VqnDmFpdR9Texxsjkh3rONYk6N5xxKvzXVn7VqnDmFpdQ5EXucbE6IORP7n7l4npvv59iL5Jzq/Ig9TjYnxPiO/U98vzDWJPnBmtTxG3ucbE64aZyfvV94bH7M3b8avyc/OMVvFhbWQA==
+  </data>
+ </layer>
+ <layer name="Ground1" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJzt3DsOgkAUBdAp2LH2JtqbaO/m/BZ+l+BrJuggSCfBc5LbU8zNqy4pAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAU2yqlXWRf/fpLYFgm0YlD5Bg56Qe8mUcnzpFL5NrRDzeGf7SK936L3COPl7c/K3rgxkBtWfSg68aUXYKx2xRv/tONycouAbWySwAAAAAAAAAAAABAU94E2gVCU94E2gVCU94Eftued7EdZKzyJrBtF9iH7SC0sx2Efqb+3QCtFroArdb6wcA9AazfLdU=
+  </data>
+ </layer>
+ <layer name="Ground2" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Fringe" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Over" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJzt2jkOgDAMBEAX/JOrD/y/4igRBCFBg2ck/yDbbDYCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgX9omoqscZFbWDEyVAwAAAIAvHfvbXidFUmd/GcMhD6OckFR58OZn+QAAAIBUWp0Z7K465m0LPMoIyd3t5We7eYBXLXyKFlw=
+  </data>
+ </layer>
+ <layer name="Over1" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Over2" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Over3" width="200" height="200">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+ </layer>
+ <layer name="Collision" width="200" height="200" visible="0" opacity="0.25">
+  <data encoding="base64" compression="zlib">
+   eJzt07ENwCAAA0EKpmT/QVKSAmiCIrDuJG/gLwUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgXK32QbL3178O0ugDxna2oQ+S7G5DHyTRB8zpA9Zu7UOX/OGGPk7qkhwPVDZA/w==
+  </data>
+ </layer>
+ <objectgroup name="NPCS" width="200" height="200"/>
+ <objectgroup name="Spawns" width="200" height="200"/>
+ <objectgroup name="Trigger" width="200" height="200"/>
+ <objectgroup name="Warps" width="200" height="200"/>
+ <objectgroup name="Objects" width="200" height="200"/>
+</map>
