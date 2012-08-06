@@ -1,4 +1,4 @@
-lpc2012
+Source of Tales (previously: Lurking Patrol Comrades)
 =======
 
 Our entry for the Liberated Pixel Cup 2012.
