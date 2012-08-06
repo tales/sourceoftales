@@ -90,6 +90,7 @@ local function durmarkTalk(npc, ch)
                 on_remove(ch, function()
                     if bee_quest_char == ch then
                         chr_create_text_particle(bee_quest_char, "You failed the Bee Quest.")
+                        bee_quest_char = nil
                     end
                 end)
                 schedule_in(30 * 60, function()
@@ -179,15 +180,17 @@ init()
 local function beeRemove()
     bee_counter = bee_counter - 1
     if bee_counter == 0 then
-        if get_distance(posX(bee_quest_char), posY(bee_quest_char),
-                        bee_spawn_trigger_position.x, bee_spawn_trigger_position.y) < 20 * TILESIZE then
+        if (bee_quest_char ~= nil) and (get_distance(posX(bee_quest_char), posY(bee_quest_char),
+                        bee_spawn_trigger_position.x, bee_spawn_trigger_position.y) < 20 * TILESIZE) then
             chr_set_quest(bee_quest_char, "goldenfields_durmark_bees", "reward")
             chr_create_text_particle(bee_quest_char, "Finished bee quest! Talk to Durmark for a reward.")
-            bee_quest_char = nil
-            bee_quest_doable = false -- start delay
-            bess_got_spawned = false
-            schedule_in(30 * 60, function() bee_quest_doable = true end)
         end
+        
+        -- Reset so quest can be done again in 30 minutes
+        bee_quest_char = nil
+        bee_quest_doable = false -- start delay
+        bees_got_spawned = false
+        schedule_in(30 * 60, function() bee_quest_doable = true end)
     end
 end
 
