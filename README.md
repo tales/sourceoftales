@@ -1,112 +1,28 @@
-Source of Tales (previously: Lurking Patrol Comrades)
+Source of Tales
 =======
-
-Our entry for the Liberated Pixel Cup 2012.
+This game initially started as our entry for the Liberated Pixel Cup 2012.
 (see http://lpc.opengameart.org)
-
-Existing client packages for playing on our server
-======
-Arch Linux: https://aur.archlinux.org/packages.php?ID=61388
-
-Everyone else has to build the client from source! (see "setup client" below)
+Back then it was called 'Lurking Patrol Comrades'
+It is a massive multiplayer online roleplay game.
 
 Starting the game
 ======
-As this is relying on manasource technology, which is highly flexible,
-some things need to be wired. The following commands can be run as a script
-to get a first impression, i.e. the judges of the LPC may use it.
-(Judges, beware: modify the lines 'git checkout lpc2012' to 'git checkout lpc2012submission')
+We are using manasource technology as our engine, so you need to install
+the mana client.
+This is found in your distribution or at http://manasource.org/
 
-If you want to setup a server 'on the internet' you'd need to go through
-the config files more detailed. (i.e. setting up the correct ip addresses
-in manaserv.xml)
+Once you have the mana client installed,
+connect to server testing.manasource.org with server type ManaServ at Port
+9601.
 
-In case you want to test the game without the need to setup a server,
-just get the modified client and the lpc repository and connect to
-server testing.manasource.org at port 9601 (manaserv).
+There you go.
 
-This script works on an amd64 machine using both Ubuntu 12.04
-and a current Debian testing as operating systems.
-
-    sudo apt-get install --yes sqlite3 screen git cmake make gcc libxml2-dev liblua5.1-0-dev libphysfs-dev libsqlite3-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-net1.2-dev libsdl-pango-dev libsdl-ttf2.0-dev libsdl1.2-dev libguichan-dev libphysfs-dev libenet1a libcurl4-openssl-dev libcurl3 zlib1g-dev
-
-    mkdir -p manalpc2012
-    cd manalpc2012
-
-
-    # setup the server, leave out if testing on our server.
-    git clone git://github.com/mana/manaserv.git
-    cd manaserv
-    git checkout lpc2012
-    cmake .
-    make
-    mkdir -p ~/bin
-    export PATH="$HOME/bin:$PATH"
-    cp src/manaserv-account ~/bin
-    cp src/manaserv-game ~/bin
-    cd ..
-
-
-    # setup client
-    git clone git://github.com/mana/mana.git
-    cd mana
-    git checkout lpc2012
-    cmake .
-    make
-    cd ..
-
-
-    # get the actual lpc entry
-    git clone git://github.com/mana/lpc2012.git
-    cd lpc2012
-    # prepare the configuration for the servers.
-    cp manaserv.xml.example manaserv.xml
-    # create a database which holds all useraccounts.
-    cat ../manaserv/src/sql/sqlite/createTables.sql | sqlite3 mana.db
-    cd ..
-
-
-    # now start the game servers, leave out if testing on our server.:
-    cd lpc2012
-    # run the servers in the background, so don't block the script here.
-    screen -d -m manaserv-account
-    sleep 5
-    screen -d -m manaserv-game
-    sleep 5
-    cd ..
-
-
-    # The client lets you actually play
-    cd mana
-    # -u tell the mana client software to not download the game content,
-    # but use the content as provided in the -d directory
-    # The parameters --server and --port tells the mana client to directly
-    # connect to the server we just setup.
-    src/mana -u -d ../lpc2012 --server=localhost --port 9601
-
-
-Now you should see the mana client started.
-
-It is ready to register an account at your local server, so click on
-'Register' and provide a username, password and an email address.
-The emailaddress is not needed for local testing, but it is intended
-to be used for password reset, but unfortunatly you need to provide an
-email address which looks reasonable.
-
-After registering, you'll be redirected to the character creation
-screen, which lets you create a character and
-then exploring the world we created as the lpc2012 entry.
-
-Once you are done playing, you can quit the client by pressing ESCape
-and confirming the quit.
-
-The game servers keep running, so you can later join again. In case you
-want to stop them as well:
-
-    killall manaserv-game
-    sleep5
-    killall manaserv-account
-
-
+Joint the devopment
+======
+Join us at Freenode in channels #sourceoftales and #sourceoftales-dev
+to chat or discuss.
+If you want to start directly producing new game content, create a fork
+and see [How-to-setup-a-local-server] to start developing.
+It is recommended to get in contact first rather than creating content first.
 
 
