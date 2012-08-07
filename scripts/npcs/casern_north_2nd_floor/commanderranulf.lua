@@ -19,7 +19,7 @@
 
 --]]
 
-local function commanderTalk(npc, ch)
+local function commander_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -27,8 +27,7 @@ local function commanderTalk(npc, ch)
     say("If this is not the case, go back to your duties.")
 end
 
-local commander = create_npc_by_name("Commander Ranulf", commanderTalk)
-
+local commander = create_npc_by_name("Commander Ranulf", commander_talk)
 
 being_set_base_attribute(commander, 16, 2)
 local patrol = Patrol:new("Commander Ranulf")

@@ -19,14 +19,14 @@
 
 --]]
 
-local function lieutnantTalk(npc, ch)
+local function lieutnant_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
     say("Oh? What are you doing here? This area is only for the higher ranks.")
 end
 
-local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnantTalk)
+local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnant_talk)
 
 being_set_base_attribute(lieutnant, 16, 1)
 local patrol = Patrol:new("Lieutenant Bennet")
