@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="5" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
+  <image source="ruleset.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="mountains_new" tilewidth="32" tileheight="32">
+  <image source="../tiles/mountains_new.png" width="480" height="288"/>
+ </tileset>
+ <tileset firstgid="152" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Regionsinput" width="9" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOcBGgiQXk6kMGABm0AD0=
+  </data>
+ </layer>
+ <layer name="Regionsoutput" width="9" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOcBGgiQXk6kMGABm0AD0=
+  </data>
+ </layer>
+ <layer name="Input_Mountains3" width="9" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOSEFpaSitCaW1iNQPA2pQWoVEfcgAAFZEANM=
+  </data>
+ </layer>
+ <layer name="Output_Mountains3" width="9" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOqEFpFShtCqWNidRPTQAAWNQAsw==
+  </data>
+ </layer>
+ <layer name="Output_Collision" width="9" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOzESjyQXUMAcA78QCZQ==
+  </data>
+ </layer>
+</map>

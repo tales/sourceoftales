@@ -94,6 +94,12 @@
 ../automapping/ruletree001.tmx
 
 ########################################################################
+# Mountain rules (description on how to use still to come)
+########################################################################
+../automapping/rulemountains001.tmx
+../automapping/rulemountains002.tmx
+
+########################################################################
 # Sand tiles
 ########################################################################
 # In the first rule sand tiles will be placed on the light yellow set layer tile.
