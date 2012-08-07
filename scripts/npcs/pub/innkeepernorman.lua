@@ -163,7 +163,6 @@ local function innkeeper_talk(npc, ch)
                 -- LATER: some more talk, maybe depending on the quest state
             end
         else
-<<<<<<< HEAD
             say("With your actions you caused quite some damage to our "
                 .. "organization. But we will forget about that id you pay "
                 .. "recompensation.")
