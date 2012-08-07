@@ -3,6 +3,7 @@
   Goldenfields Inn.
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2012 Philippe Groarke
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,14 +20,55 @@
 
 --]]
 
+local patrol = Patrol:new("Scullion John")
+schedule_every(3, function() patrol:logic() end)
+
+local function create_scullion()
+			local function scullionTalk(npc, ch)
+			    local function say(message)
+			        npc_message(npc, ch, message)
+			    end
+
+			    say("Sorry for being so rude earlier, but you shouldn't be venturing inside the casern. "..
+			    	"It is way to dangerous, even for someone as sneaky as you. "..
+			    	"All this has really stressed me out, how about you get me a drink and we'll call it quits?")
+
+			    local choices = {"Well of course, let us talk.",
+							"I don't see why I would spend a dime for you."}
+				local res = npc_choice(ch, npc, choices)
+
+			end
+
+		local scullion = create_npc_by_name("Scullion John", scullionTalk)
+
+		being_set_base_attribute(scullion, 16, 2)
+		patrol:assignBeing(scullion)
+		
+end
+
+local function rebelphilip_mole(being,id)
+    if being_type(being) ~= TYPE_CHARACTER then
+        return
+    end
+
+    local quest_mole = chr_try_get_quest(being, "rebelphilip_mole")
+    if (quest_mole == "step1") and (#patrol.members < 1) then
+    	create_scullion()
+	end
+end
+
 atinit(function()
     require "scripts/functions/npchelper"
     parse_npcs_from_map()
 
     require "scripts/functions/npcpatrol"
 
+    require "scripts/functions/triggerhelper"
     require "scripts/npcs/pub/arbert"
     require "scripts/npcs/pub/innkeepernorman"
     require "scripts/npcs/pub/borin"
+
+	parse_triggers_from_map()
+    create_trigger_by_name("rebelphilip mole quest", rebelphilip_mole)
 
 end)

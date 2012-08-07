@@ -188,6 +188,131 @@
         image="FoodDrumstick.png"
         value="10">
     </item>
+    <item id="10"
+        max-per-slot="255"
+        name="Key"
+        image="temptest_in_the_aether/clef.png">
+    </item>
+    <item id="11"
+        max-per-slot="1"
+        name="Barrel"
+        image="temptest_in_the_aether/ICO_mission_barrel.png">
+    </item>
+    <item id="12"
+        max-per-slot="255"
+        name="Bottle"
+        image="temptest_in_the_aether/ICO_mission_bottle.png">
+    </item>
+    <item id="13"
+        max-per-slot="255"
+        name="Chest"
+        image="temptest_in_the_aether/ICO_mission_casket.png">
+    </item>
+    <item id="14"
+        max-per-slot="255"
+        name="Scroll"
+        image="temptest_in_the_aether/ICO_mission_message.png">
+    </item>
+    <item id="15"
+        max-per-slot="255"
+        name="Package"
+        image="temptest_in_the_aether/ICO_mission_package.png">
+    </item>
+    <item id="16"
+        max-per-slot="255"
+        name="Pot"
+        image="temptest_in_the_aether/ICO_mission_pot.png">
+    </item>
+    <item id="17"
+        max-per-slot="255"
+        name="Coin Bag"
+        image="temptest_in_the_aether/ICO_mission_purse.png">
+    </item>
+    <item id="18"
+        max-per-slot="1"
+        name="Golden Glove"
+        image="temptest_in_the_aether/MG_Glove.png">
+    </item>
+    <item id="19"
+        max-per-slot="255"
+        name="Wooden Planks"
+        image="temptest_in_the_aether/MP_Bark.png">
+    </item>
+    <item id="20"
+        max-per-slot="255"
+        name="Bricks"
+        image="temptest_in_the_aether/MP_Batiment_Brique.png">
+    </item>
+    <item id="21"
+        max-per-slot="255"
+        name="Bone"
+        image="temptest_in_the_aether/MP_Bone.png">
+    </item>
+    <item id="22"
+        max-per-slot="255"
+        name="Butterfly Wing"
+        image="temptest_in_the_aether/MP_Buterfly_blue.png">
+    </item>
+    <item id="23"
+        max-per-slot="255"
+        name="Butterfly Cocon"
+        image="temptest_in_the_aether/MP_Buterfly_cocoon.png">
+    </item>
+    <item id="24"
+        max-per-slot="255"
+        name="Claws"
+        image="temptest_in_the_aether/MP_Claw.png">
+    </item>
+    <item id="25"
+        max-per-slot="255"
+        name="Dry Wood"
+        image="temptest_in_the_aether/MP_Dry_Wood.png">
+    </item>
+    <item id="27"
+        max-per-slot="255"
+        name="Dust"
+        image="temptest_in_the_aether/MP_Dust.png">
+    </item>
+    <item id="28"
+        max-per-slot="255"
+        name="Egg"
+        image="temptest_in_the_aether/MP_Egg.png">
+    </item>
+    <item id="29"
+        max-per-slot="255"
+        name="Eye"
+        image="temptest_in_the_aether/MP_Eyes.png">
+    </item>
+    <item id="30"
+        max-per-slot="255"
+        name="Fang"
+        image="temptest_in_the_aether/MP_Fang.png">
+    </item>
+    <item id="31"
+        max-per-slot="255"
+        name="Fiber"
+        image="temptest_in_the_aether/MP_Fiber.png">
+    </item>
+    <item id="32"
+        max-per-slot="255"
+        name="Horn"
+        image="temptest_in_the_aether/MP_Horn.png">
+    </item>
+    <item id="33"
+        max-per-slot="255"
+        name="Larva"
+        image="temptest_in_the_aether/MP_Larva.png">
+    </item>
+    <item id="34"
+        max-per-slot="255"
+        name="Leaf"
+        image="temptest_in_the_aether/MP_Leaf.png">
+    </item>
+    <item id="35"
+        max-per-slot="255"
+        name="Leather"
+        image="temptest_in_the_aether/MP_Leather.png">
+    </item>
     <item id="36" max-per-slot="1" name="Robe Hood"
         description="Robe Hood."
         image="robehead.png"
@@ -451,4 +576,35 @@
             <consumes />
         </effect>
     </item>
+    <item id="60" max-per-slot="2" name="Dagger" attack-action="attack"
+        description="A pointy dagger."
+        image="Dagger05.png"
+        value="30">
+        <equip>
+            <slot type="hand" required="1" />
+        </equip>
+        <effect trigger="equip">
+            <attack skill="Weapons_Sword" warmuptime="3" cooldowntime="3"
+            basedamage="12" deltadamage="10" chancetohit="10" range="32"
+            element="neutral" type="physical" />
+            <modifier attribute="acc1" value="10" />
+        </effect>
+        <effect trigger="in-inventory">
+            <modifier attribute="cap1" value="-2000" />
+        </effect>
+        <sprite>equipment/dagger.xml</sprite>
+    </item>
+    <item id="61"
+        max-per-slot="1"
+        name="Cellar Key"
+        image="KeyIron.png">
+    </item>
+    <item id="62" name="Pint of beer"
+        image="FoodAle.png"
+        description="A tasty beverage."
+        type="usable"
+        max-per-slot="10"
+        value="5">
+    </item>
+
 </items>

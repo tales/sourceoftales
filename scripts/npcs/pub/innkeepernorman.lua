@@ -156,12 +156,14 @@ local function innkeeper_talk(npc, ch)
                     { "Pumpkin", 10, 50 },
                     { "Food Shank", 10, 130 },
                     { "Apple", 10, 40 },
+                    { "Pint of beer", 10, 5},
                     { "Robe Hood", 10, 400},
                     { "Robe Shirt", 10, 800}
                 })
                 -- LATER: some more talk, maybe depending on the quest state
             end
         else
+<<<<<<< HEAD
             say("With your actions you caused quite some damage to our "
                 .. "organization. But we will forget about that id you pay "
                 .. "recompensation.")

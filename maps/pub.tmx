@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="16" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="h_theme.ogg"/>
@@ -105,14 +104,25 @@
     <property name="sprite_id" value="8"/>
    </properties>
   </object>
+  <object name="Scullion John" type="NPC_POSITION" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Objects" width="170" height="150" visible="0">
+ <objectgroup name="Objects" width="170" height="150">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/pub.lua"/>
    </properties>
   </object>
   <object name="Goldenfields Inn" type="COORDINATE" x="320" y="192" width="32" height="32"/>
+  <object name="rebelphilip mole quest" type="TRIGGER" x="320" y="192" width="32" height="96">
+   <properties>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Warps" width="21" height="16">
   <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
@@ -123,7 +133,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Waypoints Borin" width="21" height="16">
+ <objectgroup name="Waypoints Borin" width="21" height="16" visible="0">
   <object name="Borin 1" type="WAYPOINT" x="512" y="96" width="32" height="32"/>
   <object name="Borin 2" type="WAYPOINT" x="512" y="128" width="32" height="32"/>
   <object name="Borin 3" type="WAYPOINT" x="512" y="192" width="32" height="32"/>
@@ -134,7 +144,7 @@
   <object name="Borin 8" type="WAYPOINT" x="512" y="224" width="32" height="32"/>
   <object name="Borin 9" type="WAYPOINT" x="480" y="160" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Arbert" width="21" height="16">
+ <objectgroup name="Waypoints Arbert" width="21" height="16" visible="0">
   <object name="Arbert 1" type="WAYPOINT" x="128" y="128" width="32" height="32"/>
   <object name="Arbert 2" type="WAYPOINT" x="224" y="128" width="32" height="32"/>
   <object name="Arbert 3" type="WAYPOINT" x="256" y="160" width="32" height="32"/>
@@ -142,10 +152,14 @@
   <object name="Arbert 5" type="WAYPOINT" x="192" y="224" width="32" height="32"/>
   <object name="Arbert 6" type="WAYPOINT" x="96" y="256" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoint Innkeeper Norman" width="21" height="16">
+ <objectgroup name="Waypoint Innkeeper Norman" width="21" height="16" visible="0">
   <object name="Innkeeper Norman 1" type="WAYPOINT" x="576" y="160" width="32" height="32"/>
   <object name="Innkeeper Norman 2" type="WAYPOINT" x="608" y="128" width="32" height="32"/>
   <object name="Innkeeper Norman 3" type="WAYPOINT" x="576" y="96" width="32" height="32"/>
   <object name="Innkeeper Norman 4" type="WAYPOINT" x="576" y="128" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Waypoints Scullion" width="21" height="16">
+  <object name="Scullion John 2" type="WAYPOINT" x="352" y="96" width="32" height="32"/>
+  <object name="Scullion John 1" type="WAYPOINT" x="288" y="96" width="32" height="32"/>
  </objectgroup>
 </map>
