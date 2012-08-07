@@ -19,16 +19,17 @@
 
 --]]
 
-local function manTalk(npc, ch)
+local function man_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    say("Hello. Here are the farmworker's quarters. Most of us live here for the summer to help out with the "..
-        "field work, and then travel to other place where we can find other work.")
+    say("Hello. Here are the farmworker's quarters. Most of us live here "..
+        "for the summer to help out with the field work, and then "..
+        "travel to other place where we can find other work.")
 end
 
-local man = create_npc_by_name("Thomas", manTalk)
+local man = create_npc_by_name("Thomas", man_talk)
 
 being_set_base_attribute(man, 16, 1)
 local patrol = Patrol:new("Thomas")

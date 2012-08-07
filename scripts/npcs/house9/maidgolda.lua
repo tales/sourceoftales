@@ -19,17 +19,17 @@
 
 --]]
 
-local function maidTalk(npc, ch)
+local function maid_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    say("Oh, hello. What are you doing here? Do you want to talk to Magistrate Eustace? He should be in the "..
-        "entrance room.")
+    say("Oh, hello. What are you doing here? Do you want to talk to "..
+        "Magistrate Eustace? He should be in the entrance room.")
     say("I need to work, otherwise Lady Primeveire will get angry with me.")
 end
 
-local maid = create_npc_by_name("Maid Golda", maidTalk)
+local maid = create_npc_by_name("Maid Golda", maid_talk)
 
 being_set_base_attribute(maid, 16, 1)
 local patrol = Patrol:new("Maid Golda")
