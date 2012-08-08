@@ -576,7 +576,7 @@
             <consumes />
         </effect>
     </item>
-    <item id="60" max-per-slot="2" name="Dagger" attack-action="attack"
+    <item id="60" max-per-slot="2" name="Daggers" attack-action="attack"
         description="A pointy dagger."
         image="Dagger05.png"
         value="30">

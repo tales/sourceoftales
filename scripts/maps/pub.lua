@@ -47,7 +47,7 @@ local function create_scullion()
                     "If it's available, you should try his "..
                     "wonderfull Scotch Ale, or even his "..
                     "Imperial Stout. Even though it would never "..
-                    "beat the 'Devil's Hole'!")
+                    "beat 'Le trou du diable'!")
 
             elseif check_for_beer >= 1 then
                 chr_inv_change(ch, "Pint of beer", -1)

@@ -42,7 +42,8 @@ atinit(function()
 
     schedule_every(60, function()
         if #soldierpatrol.members == 0 then
-            schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4) end)
+            schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4)
+                end)
         end
     end)
 end)
