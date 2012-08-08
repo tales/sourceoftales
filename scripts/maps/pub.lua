@@ -24,26 +24,46 @@ local patrol = Patrol:new("Scullion John")
 schedule_every(3, function() patrol:logic() end)
 
 local function create_scullion()
-			local function scullionTalk(npc, ch)
-			    local function say(message)
-			        npc_message(npc, ch, message)
-			    end
+    local function scullionTalk(npc, ch)
+        local function say(message)
+            npc_message(npc, ch, message)
+        end
 
-			    say("Sorry for being so rude earlier, but you shouldn't be venturing inside the casern. "..
-			    	"It is way to dangerous, even for someone as sneaky as you. "..
-			    	"All this has really stressed me out, how about you get me a drink and we'll call it quits?")
+        say("Sorry for being so rude earlier, but you shouldn't "..
+        "be venturing inside the casern. It is way to dangerous, "..
+        "even for someone as sneaky as you. All this has really "..
+        "stressed me out, how about you get me a drink and we'll "..
+        "call it quits?")
 
-			    local choices = {"Well of course, let us talk.",
-							"I don't see why I would spend a dime for you."}
-				local res = npc_choice(ch, npc, choices)
+        local choices = {"Well of course, let us talk.",
+                    "I don't see why I would spend a dime for you."}
+        local res = npc_choice(ch, npc, choices)
 
-			end
+        if res == 1 then
+            local check_for_beer = chr_inv_count(ch, true, true,
+                "Pint of beer")
+            if check_for_beer < 1 then
+                say("I think Norman sells some great homebrews. "..
+                    "If it's available, you should try his "..
+                    "wonderfull Scotch Ale, or even his "..
+                    "Imperial Stout. Even though it would never "..
+                    "beat the 'Devil's Hole'!")
 
-		local scullion = create_npc_by_name("Scullion John", scullionTalk)
+            elseif check_for_beer >= 1 then
+                chr_inv_change(ch, "Pint of beer", -1)
+                say("Ahhh, this feels much better. So what do you "..
+                    "want from me exactly?")
+                local choices_beer = {""}
+            end
+        end
 
-		being_set_base_attribute(scullion, 16, 2)
-		patrol:assignBeing(scullion)
-		
+    end
+
+    local scullion = create_npc_by_name("Scullion John", scullionTalk)
+
+    being_set_base_attribute(scullion, 16, 2)
+    patrol:assignBeing(scullion)
+
 end
 
 local function rebelphilip_mole(being,id)
@@ -53,8 +73,8 @@ local function rebelphilip_mole(being,id)
 
     local quest_mole = chr_try_get_quest(being, "rebelphilip_mole")
     if (quest_mole == "step1") and (#patrol.members < 1) then
-    	create_scullion()
-	end
+        create_scullion()
+    end
 end
 
 atinit(function()
@@ -68,7 +88,7 @@ atinit(function()
     require "scripts/npcs/pub/innkeepernorman"
     require "scripts/npcs/pub/borin"
 
-	parse_triggers_from_map()
+    parse_triggers_from_map()
     create_trigger_by_name("rebelphilip mole quest", rebelphilip_mole)
 
 end)

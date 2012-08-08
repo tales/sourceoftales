@@ -26,7 +26,10 @@ atinit(function()
     require "scripts/functions/guardpatrol"
     require "scripts/functions/soldierpatrol"
 -- Soldier patrols
-    local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 10 * TILESIZE, REPUTATION_RELUCTANT)
+
+    local soldierpatrol = SoldierPatrol:new("SoldierPatrol", 10 * TILESIZE,
+        REPUTATION_RELUCTANT)
+
     schedule_every(1, function() soldierpatrol:logic() end)
 
     local function respawn(patrol, mob, amount)

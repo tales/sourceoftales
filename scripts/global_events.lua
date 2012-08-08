@@ -74,8 +74,8 @@ end)
 -- for example, be utilized for a message-of-the-day or for various
 -- handlings of offline processing mechanics.
 on_character_login(function(ch)
-	chr_request_quest(ch, "rebelphilip_mole", function(ch, var, value) end)
-	chr_request_quest(ch, "rebelphilip_daggers", function(ch, var, value) end)
+    chr_request_quest(ch, "rebelphilip_mole", function(ch, var, value) end)
+    chr_request_quest(ch, "rebelphilip_daggers", function(ch, var, value) end)
     chr_request_quest(ch, "soldier_reputation", function(ch, var, value) end)
     chr_request_quest(ch, "rebel_reputation", function(ch, var, value) end)
     chr_request_quest(ch, "respawn", function(ch, var, value) end)
