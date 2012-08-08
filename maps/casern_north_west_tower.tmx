@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="12" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castlefloors" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlefloors.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="inside" tilewidth="32" tileheight="32">
+  <image source="../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="201" name="castlewalls" tilewidth="32" tileheight="32">
+  <image source="../tiles/castlewalls.png" width="384" height="480"/>
+ </tileset>
+ <tileset firstgid="381" name="stairs" tilewidth="32" tileheight="32">
+  <image source="../tiles/stairs.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="493" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="501" name="buckets" tilewidth="32" tileheight="32">
+  <image source="../tiles/buckets.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="507" name="castle_lightsources" tilewidth="32" tileheight="32">
+  <image source="../tiles/castle_lightsources.png" width="160" height="320"/>
+ </tileset>
+ <tileset firstgid="557" name="woodenbeam" tilewidth="32" tileheight="32">
+  <image source="../tiles/woodenbeam.png" width="256" height="128"/>
+ </tileset>
+ <tileset firstgid="589" name="collision" tilewidth="32" tileheight="32">
+  <image source="../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="591" name="victorian_house" tilewidth="32" tileheight="32">
+  <image source="../tiles/victorian_house.png" width="288" height="416"/>
+ </tileset>
+ <tileset firstgid="708" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="786" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="794" name="inside" tilewidth="32" tileheight="32">
+  <image source="../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="894" name="country" tilewidth="32" tileheight="32">
+  <image source="../tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="914" name="victorian_house" tilewidth="32" tileheight="32">
+  <image source="../tiles/victorian_house.png" width="288" height="416"/>
+ </tileset>
+ <tileset firstgid="1031" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../tiles/victoria.png" width="352" height="192"/>
+ </tileset>
+ <tileset firstgid="1097" name="magecity" tilewidth="32" tileheight="32">
+  <image source="../tiles/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <layer name="Ground" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzrZWBg6B3FRGMnZlRMbfVDDQMAv2FNEQ==
+  </data>
+ </layer>
+ <layer name="Walls" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzN0rkKgDAQRdGJ+v8fJmppbFzAygWsXMDGCxKIQSHpHDjVu12iRUQHyNBbajRo0TlbigqLZcCICbOzlS/9ig07jo/+tCglEiFGop6b6X3vj30e0Bdyv5nvhfwD4wIs9UY+
+  </data>
+ </layer>
+ <layer name="Stairs" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh54DAjA8MRxoF2xfAAAPzlAYo=
+  </data>
+ </layer>
+ <layer name="Decor" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh64CgT8WqPANWeAeLvjMSpfwRUexGIfyGpfw9kf0DiNzDjN+MzUO0XJPWKLAwMSizEu7mdGYJxgWagXAsBNyCDDqDaThLUkwIAGKkN1g==
+  </data>
+ </layer>
+ <layer name="Decor2" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFpAJuFtLUNzFD8HAEAPRuARo=
+  </data>
+ </layer>
+ <layer name="Fringe" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B8AAACQAAB
+  </data>
+ </layer>
+ <layer name="Over" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZ4Awj+XqvMjEw8LBQzy11zAwM9czEqz9NJIaB60RicgAA6/sTDA==
+  </data>
+ </layer>
+ <layer name="Collision" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzzY2Jg8BuBmBiASw8u/fjUY9NDilvwmU8r9cRgAN0JHgE=
+  </data>
+ </layer>
+ <objectgroup name="Warps" width="12" height="12">
+  <object name="back to castle" type="WARP" x="64" y="160" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="casern_north"/>
+    <property name="DEST_X" value="304"/>
+    <property name="DEST_Y" value="208"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
