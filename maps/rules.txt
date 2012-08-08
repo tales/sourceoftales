@@ -92,6 +92,7 @@
 # Trees are placed in the settree layer,
 ########################################################################
 ../automapping/ruletree001.tmx
+../automapping/ruletree002.tmx
 
 ########################################################################
 # Mountain rules (description on how to use still to come)
