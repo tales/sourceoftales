@@ -20,16 +20,16 @@
 --]]
 
 
-local soldierpatrol = SoldierPatrol:new("SoldierPatrol", 4 * TILESIZE, REPUTATION_RELUCTANT)
+local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE, REPUTATION_RELUCTANT)
 schedule_every(1, function() soldierpatrol:logic() end)
 
-local soldierspawned = false
+local soldier_spawned = false
 
-local function respawn(patrol, mob, amount)
+local function spawn(patrol, mob, amount)
     local x = patrol.path[patrol.position_index].x
     local y = patrol.path[patrol.position_index].y
     for i=1, amount do
-        patrol:assignBeing(monster_create(mob, x, y))
+        patrol:assign_being(monster_create(mob, x, y))
     end
 end
 
@@ -43,13 +43,13 @@ local function rebelphilip_daggers(being, id)
 
     if quest == "started" then
 
-        if soldierspawned == false then
+        if soldier_spawned == false then
 
             if #soldierpatrol.members == 0 then
-                respawn(soldierpatrol, "Soldier", 1)
+                spawn(soldierpatrol, "Soldier", 1)
 
-                soldierspawned = true
-                --item_drop(160, 288, 61)
+                soldier_spawned = true
+                item_drop(160, 288, "Cellar Key")
 
             end
         end
@@ -69,6 +69,6 @@ atinit(function()
 
     create_trigger_by_name("rebelphilip daggers quest", rebelphilip_daggers)
 
-    --item_drop(160, 288, 61)
+    --item_drop(160, 288, "Cellar Key")
 
     end)
