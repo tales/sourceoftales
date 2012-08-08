@@ -23,18 +23,18 @@
 require "scripts/functions/guardpatrol"
 require "scripts/functions/reputation"
 
-SoldierPatrol = {}
-setmetatable(SoldierPatrol, {__index=GuardPatrol})
-local mt = {__index=SoldierPatrol}
+Soldier_patrol = {}
+setmetatable(Soldier_patrol, {__index=Guard_patrol})
+local mt = {__index=Soldier_patrol}
 
-function SoldierPatrol:new(name, track_range, min_reputation)
-    local patrol = GuardPatrol:new(name, track_range)
+function Soldier_patrol:new(name, track_range, min_reputation)
+    local patrol = Guard_patrol:new(name, track_range)
     setmetatable(patrol, mt)
     patrol.min_reputation = min_reputation
     return patrol
 end
 
-function SoldierPatrol:isAggressiveAgainst(being)
+function Soldier_patrol:is_aggressiveAgainst(being)
     if not (being_type(being) == TYPE_CHARACTER and
             being_get_base_attribute(being, 13) > 0) then
         return false

@@ -21,7 +21,7 @@
 
 local patrol = NPCPatrol:new("Innkeeper Norman")
 
-local function innkeeperTalk(npc, ch)
+local function innkeeper_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -109,7 +109,7 @@ local function innkeeperTalk(npc, ch)
         end
     end
 
-    local function reputationDependent()
+    local function reputation_dependent()
         local reputation = read_reputation(ch, "rebel_reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
@@ -166,12 +166,12 @@ local function innkeeperTalk(npc, ch)
     if (taxes == "gotorder") then
         collect_taxes()
     else
-        reputationDependent()
+        reputation_dependent()
     end
     patrol:unblock(ch)
 end
 
-local innkeeper = create_npc_by_name("Innkeeper Norman", innkeeperTalk)
+local innkeeper = create_npc_by_name("Innkeeper Norman", innkeeper_talk)
 being_set_base_attribute(innkeeper, 16, 1)
-patrol:assignBeing(innkeeper)
+patrol:assign_being(innkeeper)
 schedule_every(21, function() patrol:logic() end)

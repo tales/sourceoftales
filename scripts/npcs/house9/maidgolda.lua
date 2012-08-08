@@ -33,5 +33,5 @@ local maid = create_npc_by_name("Maid Golda", maid_talk)
 
 being_set_base_attribute(maid, 16, 1)
 local patrol = Patrol:new("Maid Golda")
-patrol:assignBeing(maid)
+patrol:assign_being(maid)
 schedule_every(11, function() patrol:logic() end)

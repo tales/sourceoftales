@@ -90,6 +90,6 @@ local chef = create_npc_by_name("Chef Odo", chef_talk)
 
 being_set_base_attribute(chef, 16, 1)
 local patrol = Patrol:new("Chef Odo")
-patrol:assignBeing(chef)
+patrol:assign_being(chef)
 schedule_every(11, function() patrol:logic() end)
 

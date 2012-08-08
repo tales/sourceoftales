@@ -22,7 +22,7 @@
 
 local triggers = {}
 
-local function getBoolByString(v)
+local function get_boolBy_string(v)
     if v == "true" then
         return true
     elseif v == "false" then
@@ -43,7 +43,7 @@ function parse_triggers_from_map()
             w = w,
             h = h,
             id = tonumber(object:property("id") or 0),
-            once = getBoolByString(object:property("once")) or true
+            once = get_boolBy_string(object:property("once")) or true
         }
     end
 end

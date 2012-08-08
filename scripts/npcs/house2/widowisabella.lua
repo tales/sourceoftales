@@ -77,5 +77,5 @@ local woman = create_npc_by_name("Widow Isabella", woman_talk)
 
 being_set_base_attribute(woman, 16, 1)
 local patrol = Patrol:new("Widow Isabella")
-patrol:assignBeing(woman)
+patrol:assign_being(woman)
 schedule_every(42, function() patrol:logic() end)

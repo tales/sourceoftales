@@ -23,7 +23,7 @@ require "scripts/functions/religion"
 
 -- LATER: eventually change which spells are given when once we add more content
 
-local function priestessTalk(npc, ch)
+local function priestess_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -46,7 +46,7 @@ local function priestessTalk(npc, ch)
         end
     end
 
-    local function initialTalk()
+    local function initial_talk()
         say("Welcome to the Goldenfields shrine. Do you seek the gods?")
         local choices = { "Yes, please tell me about them.",
                         "I'd like to learn magic.",
@@ -81,7 +81,7 @@ local function priestessTalk(npc, ch)
         end
     end
 
-    local function getMagic()
+    local function get_magic()
         say("Welcome back. Did you see any skeletons?")
         local choices = { "Yes! In the caves! They attacked me!",
                         "The rumors were true, I found skeletons on the cave." }
@@ -122,7 +122,7 @@ local function priestessTalk(npc, ch)
         say("It might be dangerous, but the spell I taught you should help you to protect yourself.")
     end
 
-    local function getFollowUp()
+    local function get_followUp()
         say("Did you find anything that can help us to get more information about the undeads?")
         local artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
         if artifact > 0 then
@@ -174,14 +174,14 @@ local function priestessTalk(npc, ch)
     elseif quest == "getartifact" then
         say("For the sake of the worlds balance, please explore where the skeletons in the cave come from. "..
             "We need to stop this!")
-        getFollowUp()
+        get_followUp()
     elseif quest == "skeletonspotted" then -- TODO: check trigger position once the entrance is fixed
-        getMagic()
+        get_magic()
     elseif quest == "started" then
         say("Please investigate the northern caves and find out if the rumors about walking skeletons are true.")
     else
-        initialTalk()
+        initial_talk()
     end
 end
 
-local priestess = create_npc_by_name("Priestess Linota", priestessTalk)
+local priestess = create_npc_by_name("Priestess Linota", priestess_talk)

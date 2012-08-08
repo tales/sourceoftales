@@ -23,7 +23,7 @@
 
 local npcs = {}
 
-local function getGenderByString(v)
+local function get_genderBy_string(v)
     if v == "male" then
         return GENDER_MALE
     elseif v == "female" then
@@ -42,7 +42,7 @@ function parse_npcs_from_map()
             x = x + w / 2,
             y = y + h / 2,
             sprite_id = tonumber(object:property("sprite_id")),
-            gender = getGenderByString(object:property("gender"))
+            gender = get_genderBy_string(object:property("gender"))
         }
     end
 end

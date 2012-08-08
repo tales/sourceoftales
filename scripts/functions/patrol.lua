@@ -59,7 +59,7 @@ function Patrol:new(name)
         end
     end
     
-    assert(#path >= 1, "Path need to have at least one waypoint")
+    assert(#path >= 1, "Path \"" .. name .. "\" need to have at least one waypoint")
 
     return setmetatable({
         position_index = 1,
@@ -72,14 +72,14 @@ end
 -- NOTE: Make sure that you unassign this being manually if you remove it from
 -- the map. Only usual death unassigns it automatically
 -- @param being The being to assign
-function Patrol:assignBeing(being)
+function Patrol:assign_being(being)
     table.insert(self.members, being)
-    on_death(being, function() self:unassignBeing(being) end)
+    on_death(being, function() self:unassign_being(being) end)
 end
 
 --- Unassign a being from the patrol
 -- @param being The being handle to unassign
-function Patrol:unassignBeing(being)
+function Patrol:unassign_being(being)
     for i, member in ipairs(self.members) do
         if member == being then
             table.remove(self.members, i)
@@ -120,7 +120,7 @@ end
 
 --- Returns the index of the current waypoint
 -- Use patrol.path to get the path table
-function Patrol:getCurrentWaypoint()
+function Patrol:get_currentWaypoint()
     return self.position_index
 end
 

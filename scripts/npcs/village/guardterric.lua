@@ -19,7 +19,7 @@
 
 --]]
 
-local function guardTalk(npc, ch)
+local function guard_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -61,4 +61,4 @@ local function guardTalk(npc, ch)
     end
 end
 
-local guard = create_npc_by_name("Guard Terric", guardTalk)
+local guard = create_npc_by_name("Guard Terric", guard_talk)

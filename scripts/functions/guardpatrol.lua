@@ -21,22 +21,22 @@
 
 require "scripts/functions/patrol"
 
-GuardPatrol = {}
-setmetatable(GuardPatrol, {__index=Patrol})
-local mt = {__index=GuardPatrol}
+Guard_patrol = {}
+setmetatable(Guard_patrol, {__index=Patrol})
+local mt = {__index=Guard_patrol}
 
-function GuardPatrol:new(name, track_range)
+function Guard_patrol:new(name, track_range)
     local patrol = Patrol:new(name)
     setmetatable(patrol, mt)
     patrol.track_range = track_range
     return patrol
 end
 
-function GuardPatrol:setTrackRange(radius)
+function Guard_patrol:set_trackRange(radius)
     self.track_range = radius
 end
 
-function GuardPatrol:logic()
+function Guard_patrol:logic()
     local x = self.path[self.position_index].x
     local y = self.path[self.position_index].y
     local all_in_range = true
@@ -48,7 +48,7 @@ function GuardPatrol:logic()
                                            self.track_range * 2)
 
     for _, being in ipairs(beings) do
-        if self:isAggressiveAgainst(being) then
+        if self:is_aggressiveAgainst(being) then
             table.insert(enemys, being)
         end
     end
@@ -78,7 +78,7 @@ function GuardPatrol:logic()
     end
 end
 
-function GuardPatrol:isAggressiveAgainst(being)
+function Guard_patrol:is_aggressiveAgainst(being)
     return being_type(being) == TYPE_CHARACTER and
            being_get_base_attribute(being, 13) > 0
 end

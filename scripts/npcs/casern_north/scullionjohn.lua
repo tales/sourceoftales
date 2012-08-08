@@ -32,5 +32,5 @@ local scullion = create_npc_by_name("Scullion John", scullion_talk)
 
 being_set_base_attribute(scullion, 16, 2)
 local patrol = Patrol:new("Scullion John")
-patrol:assignBeing(scullion)
+patrol:assign_being(scullion)
 schedule_every(3, function() patrol:logic() end)

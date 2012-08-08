@@ -30,5 +30,5 @@ local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnant_talk)
 
 being_set_base_attribute(lieutnant, 16, 1)
 local patrol = Patrol:new("Lieutenant Bennet")
-patrol:assignBeing(lieutnant)
+patrol:assign_being(lieutnant)
 schedule_every(13, function() patrol:logic() end)

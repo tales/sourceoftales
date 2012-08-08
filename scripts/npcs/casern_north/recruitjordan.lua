@@ -13,5 +13,5 @@ local recruit = create_npc_by_name("Recruit Jordan", recruit_talk)
 
 being_set_base_attribute(recruit, 16, 1)
 local patrol = Patrol:new("Recruit Jordan")
-patrol:assignBeing(recruit)
+patrol:assign_being(recruit)
 schedule_every(27, function() patrol:logic() end)

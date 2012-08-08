@@ -23,7 +23,7 @@ require "scripts/functions/bounty"
 
 local patrol = NPCPatrol:new("Veteran Godwin")
 
-local function veteranTalk(npc, ch)
+local function veteran_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -123,8 +123,8 @@ local function veteranTalk(npc, ch)
 end
 -- TODO: add start equipment in global_events.lua, on_chr_birth
 
-local veteran = create_npc_by_name("Veteran Godwin", veteranTalk)
+local veteran = create_npc_by_name("Veteran Godwin", veteran_talk)
 
 being_set_base_attribute(veteran, 16, 1)
-patrol:assignBeing(veteran)
+patrol:assign_being(veteran)
 schedule_every(10, function() patrol:logic() end)

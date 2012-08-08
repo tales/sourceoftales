@@ -25,13 +25,13 @@
 
 local patrol = NPCPatrol:new("Emma")
 
-local function girlTalk(npc, ch)
+local function girl_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
-    local function persuadeSoldier()
+    local function persuade_soldier()
         say("Ouh, that guard over there is sooo mean to me.")
 
         local choices = { "What did he do?",
@@ -66,7 +66,7 @@ local function girlTalk(npc, ch)
     -- this here is for the case the player is soldier:
     local emma = chr_get_quest(ch, "rebels_emmas_camouflage")
     if emma == "" then
-        persuadeSoldier()
+        persuade_soldier()
     elseif emma == "ask" then
         say("Did you talk to the guard? Can I see the casern? That'd be soooo sweet.")
     elseif emma == "deny" then
@@ -81,7 +81,7 @@ local function girlTalk(npc, ch)
     patrol:unblock(ch)
 end
 
-local girl = create_npc_by_name("Emma", girlTalk)
+local girl = create_npc_by_name("Emma", girl_talk)
 being_set_base_attribute(girl, 16, 1)
-patrol:assignBeing(girl)
+patrol:assign_being(girl)
 schedule_every(11, function() patrol:logic() end)

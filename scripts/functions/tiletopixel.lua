@@ -19,6 +19,6 @@
 
 --]]
 
-function tileToPixel(v)
+function tile_toPixel(v)
     return v * TILESIZE + TILESIZE / 2
 end

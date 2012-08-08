@@ -25,7 +25,7 @@
 
 local patrol = NPCPatrol:new("Smith Blacwin")
 
-local function smithTalk(npc, ch)
+local function smith_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -89,7 +89,7 @@ local function smithTalk(npc, ch)
     patrol:unblock(ch)
 end
 
-local smith = create_npc_by_name("Smith Blacwin", smithTalk)
+local smith = create_npc_by_name("Smith Blacwin", smith_talk)
 being_set_base_attribute(smith, 16, 1)
-patrol:assignBeing(smith)
+patrol:assign_being(smith)
 schedule_every(12, function() patrol:logic() end)

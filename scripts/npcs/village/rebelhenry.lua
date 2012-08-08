@@ -23,7 +23,7 @@ require "scripts/functions/bounty"
 
 local patrol = NPCPatrol:new("Rebel Henry")
 
-local function rebelTalk(npc, ch)
+local function rebel_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -79,7 +79,7 @@ local function rebelTalk(npc, ch)
     patrol:unblock(ch)
 end
 
-local rebel = create_npc_by_name("Rebel Henry", rebelTalk)
+local rebel = create_npc_by_name("Rebel Henry", rebel_talk)
 being_set_base_attribute(rebel, 16, 1)
-patrol:assignBeing(rebel)
+patrol:assign_being(rebel)
 schedule_every(8, function() patrol:logic() end)

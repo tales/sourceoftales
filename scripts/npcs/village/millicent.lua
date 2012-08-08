@@ -21,7 +21,7 @@
 
 local patrol = NPCPatrol:new("Millicent")
 
-local function womanTalk(npc, ch)
+local function woman_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -32,7 +32,7 @@ local function womanTalk(npc, ch)
     patrol:unblock(ch)
 end
 
-local woman = create_npc_by_name("Millicent", womanTalk)
+local woman = create_npc_by_name("Millicent", woman_talk)
 being_set_base_attribute(woman, 16, 1)
-patrol:assignBeing(woman)
+patrol:assign_being(woman)
 schedule_every(11, function() patrol:logic() end)

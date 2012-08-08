@@ -71,14 +71,14 @@ atinit(function()
     require "scripts/npcs/village/thea"
 
     -- Rebel patrols
-    local rebelpatrol1 = RebelPatrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    local rebelpatrol2 = RebelPatrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local rebelpatrol1 = Rebel_patrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local rebelpatrol2 = Rebel_patrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     schedule_every(1, function() rebelpatrol1:logic() end)
     schedule_every(2, function() rebelpatrol2:logic() end)
 
     -- Soldier patrols
-    local soldierpatrol1 = SoldierPatrol:new("Patrol1_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    local soldierpatrol2 = SoldierPatrol:new("Patrol2_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local soldierpatrol1 = Soldier_patrol:new("Patrol1_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local soldierpatrol2 = Soldier_patrol:new("Patrol2_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
     schedule_every(1, function() soldierpatrol1:logic() end)
     schedule_every(2, function() soldierpatrol2:logic() end)
 
@@ -86,7 +86,7 @@ atinit(function()
         local x = patrol.path[patrol.position_index].x
         local y = patrol.path[patrol.position_index].y
         for i=1, amount do
-            patrol:assignBeing(monster_create(mob, x, y))
+            patrol:assign_being(monster_create(mob, x, y))
         end
     end
 

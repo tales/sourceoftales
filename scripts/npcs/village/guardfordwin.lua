@@ -24,7 +24,7 @@
 
 local patrol = NPCPatrol:new("Guard Fordwin")
 
-local function guardTalk(npc, ch)
+local function guard_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -57,7 +57,7 @@ local function guardTalk(npc, ch)
     patrol:unblock(ch)
 end
 
-local function guardDenyExit(ch)
+local function guard_denyExit(ch)
     if being_type(ch) ~= TYPE_CHARACTER then
         return
     end
@@ -72,8 +72,8 @@ local function guardDenyExit(ch)
     end
 end
 
-local guard = create_npc_by_name("Guard Fordwin", guardTalk)
-create_trigger_by_name("Casern south gate", guardDenyExit)
+local guard = create_npc_by_name("Guard Fordwin", guard_talk)
+create_trigger_by_name("Casern south gate", guard_denyExit)
 being_set_base_attribute(guard, 16, 1)
-patrol:assignBeing(guard)
+patrol:assign_being(guard)
 schedule_every(34, function() patrol:logic() end)

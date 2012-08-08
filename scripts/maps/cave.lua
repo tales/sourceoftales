@@ -23,11 +23,11 @@
 
 local alcoves_monster_number = 0
 
-local function alcovesOnRemove()
+local function alcoves_onRemove()
     alcoves_monster_number = alcoves_monster_number - 1
 end
 
-local function alcovesSpawn(being)
+local function alcoves_spawn(being)
     if being_type(being) == TYPE_CHARACTER and alcoves_monster_number == 0 then
         local mobs = {}
         alcoves_monster_number = 6
@@ -45,12 +45,12 @@ local function alcovesSpawn(being)
                      get_named_coordinate("Skeleton Soldier4 Spawn")))
 
         for _, mob in ipairs(mobs) do
-            on_remove(mob, alcovesOnRemove)
+            on_remove(mob, alcoves_onRemove)
         end
     end
 end
 
-local function shrinequestSpawn(being, id)
+local function shrinequest_spawn(being, id)
     if being_type(being) ~= TYPE_CHARACTER then
         return
     end
@@ -73,7 +73,7 @@ atinit(function()
     parse_triggers_from_map()
     trap.parse_traps_from_map()
 
-    create_trigger_by_name("alcoves spawn", alcovesSpawn)
-    create_trigger_by_name("shrinequest spawn west", shrinequestSpawn)
-    create_trigger_by_name("shrinequest spawn east", shrinequestSpawn)
+    create_trigger_by_name("alcoves spawn", alcoves_spawn)
+    create_trigger_by_name("shrinequest spawn west", shrinequest_spawn)
+    create_trigger_by_name("shrinequest spawn east", shrinequest_spawn)
 end)

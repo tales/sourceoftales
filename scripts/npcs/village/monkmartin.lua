@@ -23,7 +23,7 @@ require "scripts/functions/religion"
 
 local patrol = NPCPatrol:new("Martin")
 
-local function monkTalk(npc, ch)
+local function monk_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -67,7 +67,7 @@ local function monkTalk(npc, ch)
     patrol:unblock(ch)
 end
 -- IDEA: run towards players and being_say() things matching to his role?
-local monk = create_npc_by_name("Martin", monkTalk)
+local monk = create_npc_by_name("Martin", monk_talk)
 being_set_base_attribute(monk, 16, 1)
-patrol:assignBeing(monk)
+patrol:assign_being(monk)
 schedule_every(18, function() patrol:logic() end)

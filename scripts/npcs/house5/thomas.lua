@@ -33,6 +33,6 @@ local man = create_npc_by_name("Thomas", man_talk)
 
 being_set_base_attribute(man, 16, 1)
 local patrol = Patrol:new("Thomas")
-patrol:assignBeing(man)
+patrol:assign_being(man)
 schedule_every(14, function() patrol:logic() end)
 

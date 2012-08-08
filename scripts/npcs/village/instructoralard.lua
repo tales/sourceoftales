@@ -23,7 +23,7 @@
 
 --]]
 
-local function instructorTalk(npc, ch)
+local function instructor_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -62,7 +62,7 @@ local function instructorTalk(npc, ch)
         end
     end
 
-    local function aboutAttributes()
+    local function about_attributes()
         say("Attributes define what you are!")
         say("Everybody has the attributes Strength, Agility, Vitality, " ..
             "Intelligence, Dexterity and Willpower.")
@@ -78,19 +78,19 @@ local function instructorTalk(npc, ch)
             "in the status window.")
     end
 
-    local function aboutSkills()
+    local function about_skills()
         say("Skills are the abilities everyone has. You'll get better with them by just using them.")
         say("Getting more experienced with your skills will enable you to reach a new level and distribute points "..
             "on your attributes.")
     end
 
-    local function aboutSpecials()
+    local function about_specials()
         say("Specials are certain abilities you can learn during your adventure.")
         say("This could be some sword attack, but also spells.")
         say("Keep your eyes open for persons who can teach you new specials.")
     end
 
-    local function aboutQuestions()
+    local function about_questions()
         say("Do you have any further questions?")
         local choices = {
             "No, that was all.",
@@ -100,14 +100,14 @@ local function instructorTalk(npc, ch)
         }
         local res = npc_choice(npc, ch, choices)
         if res == 2 then
-            aboutAttributes()
-            aboutQuestions()
+            about_attributes()
+            about_questions()
         elseif res == 3 then
-            aboutSkills()
-            aboutQuestions()
+            about_skills()
+            about_questions()
         elseif res == 4 then
-            aboutSpecials()
-            aboutQuestions()
+            about_specials()
+            about_questions()
         end
     end
 
@@ -116,7 +116,7 @@ local function instructorTalk(npc, ch)
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        aboutQuestions()
+        about_questions()
     elseif reputation > REPUTATION_RELUCTANT then
         say("You shouldn't be here until you recompensed for your misconduct. Talk to Magistrate Eustace in Goldenfields.")
         change_reputation(ch, "soldier_reputation", "Army", -1)
@@ -126,4 +126,4 @@ local function instructorTalk(npc, ch)
     end
 end
 
-local instructor = create_npc_by_name("Instructor Alard", instructorTalk)
+local instructor = create_npc_by_name("Instructor Alard", instructor_talk)

@@ -26,7 +26,7 @@ local patrol = NPCPatrol:new("Durmark")
 
 local bee_quest_doable = true
 
-local function durmarkTalk(npc, ch)
+local function durmark_talk(npc, ch)
     patrol:block(ch)
     local function say(message)
         npc_message(npc, ch, message)
@@ -45,13 +45,13 @@ local function durmarkTalk(npc, ch)
         reward = true
     end
 
-    local function aboutLife()
+    local function about_life()
         say("Yes. I was born here and have lived my entire life here.")
         say("I plan to never leave this place. I do not like the big cities. " ..
             "This small village is exactly where i want to live.")
     end
 
-    local function aboutVillage()
+    local function about_village()
         say("Hm. Sure, my friend.")
         say("For a long time, this village was a mere collection of farmhouses. " ..
             "Later, a couple more houses were built around the farms. ")
@@ -70,12 +70,12 @@ local function durmarkTalk(npc, ch)
         say("Ah, the good old days...")
     end
 
-    local function aboutDoing()
+    local function about_doing()
         say("I'm just walking around the village. I enjoy being in nature.")
         say("Here, I am far away from the frenzy of activity in the village.")
     end
 
-    local function aboutProblems()
+    local function about_problems()
         if bee_quest_char == nil and bee_quest_doable and not reward then
             say("Actually Yes! I nearly got attacked by a big bee swarm when I walked around south west of the market "..
                 "place. There are some tree stumps, maybe they have their nest in one of them.")
@@ -111,7 +111,7 @@ local function durmarkTalk(npc, ch)
         end
     end
 
-    local function aboutReward()
+    local function about_reward()
         say("Ah! Thank you a lot!")
         set_quest("goldenfields_durmark_bees", "")
         set_quest("goldenfields_durmark_bees_counter",
@@ -131,7 +131,7 @@ local function durmarkTalk(npc, ch)
 
     local res = npc_choice(npc, ch, choices)
     if res == 1 then
-        aboutLife()
+        about_life()
         choices = { "Why don't you like big cities?",
                     "Can you tell me more about this village?",
                     "Ha? Living in this village? Sounds pretty pointless to me!" }
@@ -142,20 +142,20 @@ local function durmarkTalk(npc, ch)
                 "So I cannot tell you exactly what I do not like about them. But I know that I like it here!")
 
         elseif res == 2 then
-            aboutVillage()
+            about_village()
             local choices = { "Are there any other problems that bother you apart of the merchants?",
                               "Thanks for the information! Good bye." }
             res = npc_choice(npc, ch, choices)
             if res == 1 then
-                aboutProblems()
+                about_problems()
             end
         else
             say("Do not bother me then!")
         end
     elseif res == 2 then
-        aboutDoing()
+        about_doing()
     elseif reward and res == 3 then
-        aboutReward()
+        about_reward()
     end
     patrol:unblock(ch)
 end
@@ -177,7 +177,7 @@ local function init()
 end
 init()
 
-local function beeRemove()
+local function bee_remove()
     bee_counter = bee_counter - 1
     if bee_counter == 0 then
         if (bee_quest_char ~= nil) and (get_distance(posX(bee_quest_char), posY(bee_quest_char),
@@ -196,13 +196,13 @@ end
 
 local bees_got_spawned = false
 
-local function beeTrigger(being)
+local function bee_trigger(being)
     if being == bee_quest_char and not bees_got_spawned then
         local x, y = posX(being), posY(being)
         for i=1,10 do
             local bee = monster_create("Bee", x + math.random(-4 * TILESIZE, 4 * TILESIZE),
                                        y + math.random(-4 * TILESIZE, 4 * TILESIZE))
-            on_remove(bee, beeRemove)
+            on_remove(bee, bee_remove)
             monster_change_anger(bee, bee_quest_char, 1)
             bee_counter = bee_counter + 1
         end
@@ -210,8 +210,8 @@ local function beeTrigger(being)
     end
 end
 
-local durmark = create_npc_by_name("Durmark", durmarkTalk)
-local bee_trigger = create_trigger_by_name("Bee trigger", beeTrigger)
+local durmark = create_npc_by_name("Durmark", durmark_talk)
+local bee_trigger = create_trigger_by_name("Bee trigger", bee_trigger)
 being_set_base_attribute(durmark, 16, 1)
-patrol:assignBeing(durmark)
+patrol:assign_being(durmark)
 schedule_every(10, function() patrol:logic() end)
