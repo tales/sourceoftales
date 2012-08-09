@@ -49,7 +49,7 @@ local function rebelphilip_daggers(being, id)
                 spawn(soldierpatrol, "Soldier", 1)
 
                 soldier_spawned = true
-                item_drop(160, 288, "Cellar Key")
+                --item_drop(160, 288, "Cellar Key")
 
             end
         end

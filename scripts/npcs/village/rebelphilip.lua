@@ -138,7 +138,8 @@ local function rebel_talk(npc, ch)
         local quest_mole = chr_get_quest(ch, "rebelphilip_mole")
 
         --debuging purpose
-        chr_set_quest(ch, "rebelphilip_daggers", "started")
+        --chr_set_quest(ch, "rebelphilip_daggers", "started")
+        chr_set_quest(ch, "rebelphilip_mole", "step1")
 
         if (quest_daggers ~= "started") and (quest_daggers ~= "finished") then
             start_quest_daggers()
@@ -151,7 +152,7 @@ local function rebel_talk(npc, ch)
                 finish_quest_daggers()
             end
 
-        elseif quest_mole == "step1" then
+        elseif (quest_mole == "step1") or (quest_mole == "step2") then
             say("I see you've made first contact. The Inn will be a "..
                 "secure place to talk. Please continue your mission, "..
                 "it is of the utmost importance.")
