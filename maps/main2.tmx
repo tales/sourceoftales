@@ -68,7 +68,7 @@
   <image source="../tiles/treetop.png" width="192" height="224"/>
  </tileset>
  <tileset firstgid="1976" name="fence_alt" tilewidth="32" tileheight="32">
-  <image source="../../manadata-lpc2012/tiles/fence_alt.png" width="96" height="192"/>
+  <image source="../tiles/fence_alt.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="1994" name="wheat" tilewidth="32" tileheight="32">
   <image source="../tiles/wheat.png" trans="ff00ff" width="96" height="192"/>
