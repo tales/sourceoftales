@@ -10,6 +10,7 @@ balancing was composed by:
     Stefan Beller <stefanbeller@googlemail.com>
     Przemysław Grzywacz <nexather@gmail.com>
     Thorbjørn Lindeijer <thorbjorn@lindeijer.nl>
+    Tom Leese <leese.thomas81@gmail.com>
 
 All lua scripts(*.lua) are licensed using GPLv3.0
 (see header of each file for more information)
