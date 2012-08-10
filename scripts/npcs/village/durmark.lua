@@ -189,15 +189,12 @@ local function bee_remove()
         -- Reset so quest can be done again in 30 minutes
         bee_quest_char = nil
         bee_quest_doable = false -- start delay
-        bees_got_spawned = false
         schedule_in(30 * 60, function() bee_quest_doable = true end)
     end
 end
 
-local bees_got_spawned = false
-
 local function bee_trigger(being)
-    if being == bee_quest_char and not bees_got_spawned then
+    if being == bee_quest_char and bee_quest_doable then
         local x, y = posX(being), posY(being)
         for i=1,10 do
             local bee = monster_create("Bee", x + math.random(-4 * TILESIZE, 4 * TILESIZE),
@@ -206,7 +203,7 @@ local function bee_trigger(being)
             monster_change_anger(bee, bee_quest_char, 1)
             bee_counter = bee_counter + 1
         end
-        bees_got_spawned = true
+        bee_quest_doable = false
     end
 end
 
