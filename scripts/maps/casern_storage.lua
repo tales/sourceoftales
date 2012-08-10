@@ -19,10 +19,8 @@
 
 --]]
 
-
 local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE, REPUTATION_RELUCTANT)
 schedule_every(1, function() soldierpatrol:logic() end)
-
 local soldier_spawned = false
 
 local function spawn(patrol, mob, amount)
@@ -34,41 +32,29 @@ local function spawn(patrol, mob, amount)
 end
 
 local function rebelphilip_daggers(being, id)
-
     if being_type(being) ~= TYPE_CHARACTER then
         return
     end
 
     local quest = chr_try_get_quest(being, "rebelphilip_daggers")
-
     if quest == "started" then
 
         if soldier_spawned == false then
 
             if #soldierpatrol.members == 0 then
                 spawn(soldierpatrol, "Soldier", 1)
-
                 soldier_spawned = true
                 --item_drop(160, 288, "Cellar Key")
-
             end
         end
     end
 end
 
-
-
-
 atinit(function()
-    --require "scripts/items"
     require "scripts/functions/triggerhelper"
     require "scripts/functions/guardpatrol"
     require "scripts/functions/soldierpatrol"
 
     parse_triggers_from_map()
-
     create_trigger_by_name("rebelphilip daggers quest", rebelphilip_daggers)
-
-    --item_drop(160, 288, "Cellar Key")
-
     end)
