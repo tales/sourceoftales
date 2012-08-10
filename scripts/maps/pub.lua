@@ -185,6 +185,7 @@ local function create_scullion()
 
 end
 
+--TODO: use world variable to check if already created
 local function rebelphilip_mole(being,id)
     if being_type(being) ~= TYPE_CHARACTER then
         return
