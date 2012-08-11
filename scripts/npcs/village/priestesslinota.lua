@@ -23,16 +23,27 @@ require "scripts/functions/religion"
 
 -- LATER: eventually change which spells are given when once we add more content
 
+
 local function priestess_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
 
     local legends_choices = { "Where do we come from?",
-                    "Please tell me about Ignis.",
-                    "Can you tell me about Aquaria?",
-                    "I'd like to know more about the Third God." }
+        "Please tell me about Ignis.",
+        "Can you tell me about Aquaria?",
+        "I'd like to know more about the Third God.",
+        "Thank you." }
+    local legends_answers = {1, 2, 3, 4, 5}
 
+
+    local function remove_answer(answers, num)
+        for i,v in ipairs(answers) do
+            if num == v then
+                table.remove(answers, i)
+            end
+        end
+    end
 
     local function legends()
 
@@ -41,39 +52,82 @@ local function priestess_talk(npc, ch)
                 for i,v in ipairs(creation_text) do
                     say(v)
                 end
-            table.remove(legends_choices,1)
+            legends_choices[1] = nil
+            remove_answer(legends_answers, 1)
             legends()
         end
 
+        function dialogue_ignis()
+            local ignis_text = ignis_myth()
+            for i,v in ipairs(ignis_text) do
+                say(v)
+            end
+            legends_choices[2] = nil
+            remove_answer(legends_answers, 2)
+            legends()
+        end
+
+        function dialogue_aquaria()
+            local aquaria_text = aquaria_myth()
+            for i,v in ipairs(aquaria_text) do
+                say(v)
+            end
+            legends_choices[3] = nil
+            remove_answer(legends_answers, 3)
+            legends()
+        end
+
+        function dialogue_thirdgod()
+            local thirdgod_text = thirdgod_myth()
+            for i,v in ipairs(thirdgod_text) do
+                say(v)
+            end
+            legends_choices[4] = nil
+            remove_answer(legends_answers, 4)
+            legends()
+        end
 
         say("Is there something specific you'd like to know about them?")
 
         local res = npc_choice(npc, ch, legends_choices)
+
+        res = legends_answers[res]
+
+        log(2, tostring(res))
+
         if res == 1 then
             dialogue_creation()
         elseif res == 2 then
-            ignis_myth(npc, ch)
+            dialogue_ignis()
         elseif res == 3 then
-            aquaria_myth(npc, ch)
-        else
-            thirdgod_myth(npc, ch)
+            dialogue_aquaria()
+        elseif res == 4 then
+            dialogue_thirdgod()
+        elseif res == 5 then
+            local quest = chr_get_quest(ch, "goldenfields_shrine")
+            if quest ~= "done" then
+                priestess_talk(npc, ch)
+            end
         end
-        --TODO: Exit this dialogue tree.
-
-
-
-
     end
 
+
+
+
     local function initial_talk()
+
         say("Welcome to the Goldenfields shrine. Do you seek the gods?")
+
         local choices = { "Yes, please tell me about them.",
-                        "I'd like to learn magic.",
-                        "I have to go." }
+            "I'd like to learn magic.",
+            "I have to go." }
+
         local res = npc_choice(npc, ch, choices)
+
         if res == 1 then
             legends()
         elseif res == 2 then
+
             say("Magic is a blessing from our gods. As a priestess, I "..
                 "could asks the gods to recognize you and "..
                 "aid you with their powers.")
@@ -104,7 +158,12 @@ local function priestess_talk(npc, ch)
                         "You can find an entrance north west of the "..
                         "casern. And be careful.")
                     chr_set_quest(ch, "goldenfields_shrine", "started")
+                    priestess_talk(npc, ch)
+                elseif res == 2 then
+                    priestess_talk(npc, ch)
                 end
+            elseif res == 2 then
+                priestess_talk(npc, ch)
             end
         end
     end
@@ -208,6 +267,7 @@ local function priestess_talk(npc, ch)
             end
         end
     end
+
 
     local quest = chr_get_quest(ch, "goldenfields_shrine")
 
