@@ -29,11 +29,13 @@ local function priestess_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    local legends_choices = { "Where do we come from?",
+    local legends_choices = {
+        "Where do we come from?",
         "Please tell me about Ignis.",
         "Can you tell me about Aquaria?",
         "I'd like to know more about the Third God.",
-        "Thank you." }
+        "Thank you."
+    }
     local legends_answers = {1, 2, 3, 4, 5}
 
 
@@ -118,9 +120,11 @@ local function priestess_talk(npc, ch)
 
         say("Welcome to the Goldenfields shrine. Do you seek the gods?")
 
-        local choices = { "Yes, please tell me about them.",
+        local choices = {
+            "Yes, please tell me about them.",
             "I'd like to learn magic.",
-            "I have to go." }
+            "I have to go."
+        }
 
         local res = npc_choice(npc, ch, choices)
 
@@ -143,8 +147,10 @@ local function priestess_talk(npc, ch)
                     "instead. But I warn you, it could be dangerous.")
                 say("If this doesn't discourage you, I'll explain you "..
                     "the issue.")
-                local choices = { "I'm not afraid!",
-                                "Dangerous? I changed my mind." }
+                local choices = {
+                    "I'm not afraid!",
+                    "Dangerous? I changed my mind."
+                    }
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
                     say("Very well. I heard alarming rumors about ... "..
@@ -158,21 +164,23 @@ local function priestess_talk(npc, ch)
                         "You can find an entrance north west of the "..
                         "casern. And be careful.")
                     chr_set_quest(ch, "goldenfields_shrine", "started")
-                    priestess_talk(npc, ch)
+                    return priestess_talk(npc, ch)
                 elseif res == 2 then
-                    priestess_talk(npc, ch)
+                    return priestess_talk(npc, ch)
                 end
             elseif res == 2 then
-                priestess_talk(npc, ch)
+                return priestess_talk(npc, ch)
             end
         end
     end
 
     local function get_magic()
         say("Welcome back. Did you see any skeletons?")
-        local choices = { "Yes! In the caves! They attacked me!",
-                        "The rumors were true, I found skeletons in "..
-                        "the cave." }
+        local choices = {
+            "Yes! In the caves! They attacked me!",
+            "The rumors were true, I found skeletons in "..
+            "the cave."
+        }
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
             say("I thank the gods you're save! It was irresponsible from "..
@@ -188,9 +196,11 @@ local function priestess_talk(npc, ch)
         say("I think you showed that you're worth the gods blessing, so "..
             "I'm going to teach you how to use some of the "..
             "powers they can grant us. Which god do you feel closest to?")
-        local choices = { "Ignis, the god of flames and warriors!",
-                        "Aquaria, the goddess of water and healing.",
-                        "The Third God, dedicated to death and earth." }
+        local choices = {
+            "Ignis, the god of flames and warriors!",
+            "Aquaria, the goddess of water and healing.",
+            "The Third God, dedicated to death and earth."
+        }
         local res = npc_choice(npc, ch, choices)
         chr_set_quest(ch, "goldenfields_shrine", "getartifact")
         if res == 1 then
@@ -226,8 +236,10 @@ local function priestess_talk(npc, ch)
             "information about the undeads?")
         local artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
         if artifact > 0 then
-            local choices = { "Yes, I found this strange artifact.",
-                            "Not yet."}
+            local choices = {
+                "Yes, I found this strange artifact.",
+                "Not yet."
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
                 artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
@@ -275,8 +287,10 @@ local function priestess_talk(npc, ch)
         say("Welcome back. I'm sure the priests in Mountains Watch will "..
             "know what to do about the skeletons.")
         say("Would you like to hear about our gods?")
-        local choices = { "Not at the moment.",
-                        "Sure!"}
+        local choices = {
+            "Not at the moment.",
+            "Sure!"
+        }
         local res = npc_choice(npc, ch, choices)
         if res == 2 then
             return legends()
