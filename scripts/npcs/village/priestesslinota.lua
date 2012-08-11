@@ -41,12 +41,12 @@ local function priestess_talk(npc, ch)
         for i,v in ipairs(answers) do
             if num == v then
                 table.remove(answers, i)
+                break
             end
         end
     end
 
     local function legends()
-
         function dialogue_creation()
             local creation_text = creation_myth()
                 for i,v in ipairs(creation_text) do
@@ -54,7 +54,7 @@ local function priestess_talk(npc, ch)
                 end
             legends_choices[1] = nil
             remove_answer(legends_answers, 1)
-            legends()
+            return legends()
         end
 
         function dialogue_ignis()
@@ -64,7 +64,7 @@ local function priestess_talk(npc, ch)
             end
             legends_choices[2] = nil
             remove_answer(legends_answers, 2)
-            legends()
+            return legends()
         end
 
         function dialogue_aquaria()
@@ -74,7 +74,7 @@ local function priestess_talk(npc, ch)
             end
             legends_choices[3] = nil
             remove_answer(legends_answers, 3)
-            legends()
+            return legends()
         end
 
         function dialogue_thirdgod()
@@ -84,7 +84,7 @@ local function priestess_talk(npc, ch)
             end
             legends_choices[4] = nil
             remove_answer(legends_answers, 4)
-            legends()
+            return legends()
         end
 
         say("Is there something specific you'd like to know about them?")
@@ -96,17 +96,17 @@ local function priestess_talk(npc, ch)
         log(2, tostring(res))
 
         if res == 1 then
-            dialogue_creation()
+            return dialogue_creation()
         elseif res == 2 then
-            dialogue_ignis()
+            return dialogue_ignis()
         elseif res == 3 then
-            dialogue_aquaria()
+            return dialogue_aquaria()
         elseif res == 4 then
-            dialogue_thirdgod()
+            return dialogue_thirdgod()
         elseif res == 5 then
             local quest = chr_get_quest(ch, "goldenfields_shrine")
             if quest ~= "done" then
-                priestess_talk(npc, ch)
+                return priestess_talk(npc, ch)
             end
         end
     end
@@ -279,21 +279,21 @@ local function priestess_talk(npc, ch)
                         "Sure!"}
         local res = npc_choice(npc, ch, choices)
         if res == 2 then
-            legends()
+            return legends()
         end
     elseif quest == "getartifact" then
         say("For the sake of the worlds balance, please explore where "..
             "the skeletons in the cave come from. "..
             "We need to stop this!")
-        get_followUp()
+        return get_followUp()
     elseif quest == "skeletonspotted" then -- TODO: check trigger position
         --once the entrance is fixed
-        get_magic()
+        return get_magic()
     elseif quest == "started" then
         say("Please investigate the northern caves and find out if the "..
             "rumors about walking skeletons are true.")
     else
-        initial_talk()
+        return initial_talk()
     end
 end
 
