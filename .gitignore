@@ -16,3 +16,6 @@ maps/*.png
 
 # vim swp file
 *.swp
+
+# OS X leftovers
+.DS_Store
