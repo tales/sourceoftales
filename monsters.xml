@@ -458,5 +458,50 @@
         <drop item="Some Gold Coins" percent="50" />
         <drop item="Many Gold Coins" percent="40" />
     </monster>
+    <monster id="4" name="Soldier Messenger" targetCursor="small">
+        <sprite>characters/male_base.xml</sprite>
+        <sprite>equipment/HEAD_leather_armor_hat.xml</sprite>
+        <sprite>equipment/TORSO_chain_armor_torso.xml</sprite>
+        <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+        <sprite>equipment/BELT_leather.xml</sprite>
+        <sprite>equipment/FEET_shoes_brown.xml</sprite>
+        <sprite>equipment/dagger.xml</sprite>
+        <attributes
+            hp="110"
+            size="4"
+            speed="2.0"
+            evade="5"
+            magical-evade="10"
+            physical-defence="20"
+            magical-defence="0"
+            mutation="25"
+            />
+        <exp>10</exp>
+        <behavior
+            agressive="false"
+            cowardly="false"
+            track-range="96"
+            stroll-range="32"
+            attack-distance="32"
+            />
+        <attack id="1"
+            priority="1"
+            type="physical"
+            element="neutral"
+            warmuptime="1"
+            cooldowntime="10"
+            basedamage="15"
+            deltadamage="2"
+            range="48"
+            chancetohit="10"
+            action="attack"
+            />
+        <drop item="Councellor letter" percent="100" />
+        <drop item="Kettle hat" percent="20" />
+        <drop item="Rusty chain armor" percent="10" />
+        <drop item="Few Gold Coins" percent="20" />
+        <drop item="Some Gold Coins" percent="25" />
+        <drop item="Many Gold Coins" percent="20" />
+    </monster>
 </monsters>
 

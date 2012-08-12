@@ -606,5 +606,10 @@
         max-per-slot="10"
         value="5">
     </item>
+    <item id="63"
+        max-per-slot="1"
+        name="Councellor Letter"
+        image="Letter.png">
+    </item>
 
 </items>

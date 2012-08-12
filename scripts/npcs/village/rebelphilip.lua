@@ -31,9 +31,9 @@ local function rebel_talk(npc, ch)
     local function start_quest_daggers()
 
         function dialogue_tell_me_more(new_choices)
-            say("The Rebels cannot trust any new recruit, you have to "..
-                "prove your allegiance... and there may be a little "..
-                "reward for you.")
+            say("The Rebels cannot trust any new recruit, you have to "
+                .. "prove your allegiance... and there may be a little "
+                .. "reward for you.")
             table.remove(new_choices, 1)
 
             local new_res = npc_choice(npc, ch, new_choices)
@@ -54,11 +54,11 @@ local function rebel_talk(npc, ch)
             say("Come back when you feel ready.")
         end
 
-        say("I see you have chosen the path of righteousness!" ..
-            "Our forces are getting stronger, but we need to take "..
-            "action. I have devised a wonderful plan and I need your "..
-            "help. You need to steal the cellar key Smith Blackwin "..
-            "keeps in his workshop. What do you say?")
+        say("I see you have chosen the path of righteousness!"
+            .. "Our forces are getting stronger, but we need to take "
+            .. "action. I have devised a wonderful plan and I need your "
+            .. "help. You need to steal the cellar key Smith Blackwin "
+            .. "keeps in his workshop. What do you say?")
 
         local choices = { "What's in it for me?",
                         "Consider it done, I'll be as sneaky as a beetle.",
@@ -76,10 +76,10 @@ local function rebel_talk(npc, ch)
 
     local function finish_quest_daggers()
 
-        say("Ah Ha! You have brought back the key. I never doubted "..
-            "your courage young Rebel. I feel like this is just the "..
-            "beginning of our endeavors. Here are some blades "..
-            "that will make you as quick as a hawk. ")
+        say("Ah Ha! You have brought back the key. I never doubted "
+            .. "your courage young Rebel. I feel like this is just the "
+            .. "beginning of our endeavors. Here are some blades "
+            .. "that will make you as quick as a hawk. ")
         chr_inv_change(ch, "Cellar Key", -1, "Daggers", 2)
         change_reputation(ch, "rebel_reputation", "Rebels", 20)
         change_reputation(ch, "soldier_reputation", "Army", -10)
@@ -90,8 +90,8 @@ local function rebel_talk(npc, ch)
     local function start_quest_mole()
 
         function dialogue_tell_me_more(new_choices)
-            say("Tell him I sent you, and by all means, make sure "..
-                "he pledges his allegiance.")
+            say("Tell him I sent you, and by all means, make sure "
+                .. "he pledges his allegiance.")
             table.remove(new_choices, 1)
 
             local new_res = npc_choice(npc, ch, new_choices)
@@ -112,11 +112,11 @@ local function rebel_talk(npc, ch)
             say("You disappoint me...")
         end
 
-        say("I have been informed that we may have an accomplice "..
-            "inside the army's very own casern. You can never trust "..
-            "leaked information, that is why I need you to make "..
-            "contact. He is working as Chef Odo's assistant in the "..
-            "kitchens. Any questions?")
+        say("I have been informed that we may have an accomplice "
+            .. "inside the army's very own casern. You can never trust "
+            .. "leaked information, that is why I need you to make "
+            .. "contact. He is working as Chef Odo's assistant in the "
+            .. "kitchens. Any questions?")
 
         local choices = { "What will I tell him?",
                         "I will make contact.",
@@ -138,8 +138,8 @@ local function rebel_talk(npc, ch)
         local quest_mole = chr_get_quest(ch, "rebelphilip_mole")
 
         --debuging purpose
-        --chr_set_quest(ch, "rebelphilip_daggers", "started")
-        chr_set_quest(ch, "rebelphilip_mole", "step1")
+        chr_set_quest(ch, "rebelphilip_daggers", "started")
+        --chr_set_quest(ch, "rebelphilip_mole", "step1")
 
         if (quest_daggers ~= "started") and (quest_daggers ~= "finished") then
             start_quest_daggers()
@@ -153,9 +153,9 @@ local function rebel_talk(npc, ch)
             end
 
         elseif (quest_mole == "step1") or (quest_mole == "step2") then
-            say("I see you've made first contact. The Inn will be a "..
-                "secure place to talk. Please continue your mission, "..
-                "it is of the utmost importance.")
+            say("I see you've made first contact. The Inn will be a "
+                .. "secure place to talk. Please continue your mission, "
+                .. "it is of the utmost importance.")
 
         elseif quest_mole == "started" then
             say("I cannot wait to hear more about this assistant chef.")
@@ -175,13 +175,13 @@ local function rebel_talk(npc, ch)
     if reputation >= REPUTATION_ONTRIAL then
         rebelphilip_quests()
     elseif reputation >= REPUTATION_NEUTRAL then
-        say("Henry is really inspiring. I was frustrated with the "..
-            "situation since a long while, but now Henry finally "..
-            "shows me a way to do something against the unjustice of "..
-            "the king and his followers.")
+        say("Henry is really inspiring. I was frustrated with the "
+            .. "situation since a long while, but now Henry finally "
+            .. "shows me a way to do something against the unjustice of "
+            .. "the king and his followers.")
     elseif reputation > REPUTATION_RELUCTANT then
-        say("You worked against us. Talk to Innkeeper Norman to settle "..
-            "this conflict.")
+        say("You worked against us. Talk to Innkeeper Norman to settle "
+            .. "this conflict.")
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
