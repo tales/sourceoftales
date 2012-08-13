@@ -37,8 +37,8 @@ local function monk_talk(npc, ch)
         return monk_talk(npc, ch)
     end
 
-    say("Oh, dear child. Do you have some coins for a mendicant? It'll "
-        .. "please the gods.")
+    say("Oh, dear child. Do you have some coins for a mendicant? "
+        "It'll please the gods.")
 
     local choices = {
         "Leave me alone.",
