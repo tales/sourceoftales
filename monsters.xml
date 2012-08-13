@@ -458,7 +458,7 @@
         <drop item="Some Gold Coins" percent="50" />
         <drop item="Many Gold Coins" percent="40" />
     </monster>
-    <monster id="4" name="Soldier Messenger" targetCursor="small">
+    <monster id="13" name="Soldier Messenger" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
         <sprite>equipment/HEAD_leather_armor_hat.xml</sprite>
         <sprite>equipment/TORSO_chain_armor_torso.xml</sprite>
@@ -497,8 +497,6 @@
             action="attack"
             />
         <drop item="Councellor letter" percent="100" />
-        <drop item="Kettle hat" percent="20" />
-        <drop item="Rusty chain armor" percent="10" />
         <drop item="Few Gold Coins" percent="20" />
         <drop item="Some Gold Coins" percent="25" />
         <drop item="Many Gold Coins" percent="20" />

@@ -24,4 +24,5 @@
 require "scripts/monsters/bee"
 require "scripts/monsters/beetle"
 require "scripts/monsters/soldier"
+require "scripts/monsters/soldier_messenger"
 require "scripts/monsters/rebel"

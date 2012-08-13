@@ -597,6 +597,7 @@
     <item id="61"
         max-per-slot="1"
         name="Cellar Key"
+        description="Provides access to restricted Casern area."
         image="KeyIron.png">
     </item>
     <item id="62" name="Pint of beer"
@@ -609,6 +610,8 @@
     <item id="63"
         max-per-slot="1"
         name="Councellor Letter"
+        description="This should provide us with secret information on the King's
+            plans."
         image="Letter.png">
     </item>
 

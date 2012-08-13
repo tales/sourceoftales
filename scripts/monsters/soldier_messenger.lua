@@ -24,6 +24,13 @@
 
 require "scripts/monsters/group_monster"
 
+-- local function drop_letter(mob, aggressor)
+--     local quest = chr_try_get_quest(aggressor, "rebelphilip_mole")
+--     if quest == "step2"
+--         item_drop(posX(mob), posY(mob), "Councellor Letter")
+--     end
+-- end
+
 local function damaged(mob, aggressor, hploss)
     group_monster.damage_recieved(mob, aggressor, hploss)
 
@@ -41,6 +48,9 @@ local soldiers = {
     get_monster_class("Soldier Messenger")
 }
 
+
+
 for _, soldier in ipairs(soldiers) do
     soldier:on_damage(damaged)
+    -- soldier:on_death(mob, function() self:drop_letter(mob) end)
 end

@@ -69,8 +69,8 @@ local function create_scullion()
             being_say(ch, "I will do just that! No time to "
                 .. "alert my superior. He will be happy I've "
                 .. "taken an initiative... I think?")
-            say("The patrol was heading into the mountains. Good "
-                .. "luck! And be sure to mention my help to your "
+            say("The patrol was heading into the mountains. In the north-"
+                .. "west. Good luck! And be sure to mention my help to your "
                 .. "leader.")
             chr_set_quest(ch, "rebelphilip_mole", "step2")
 

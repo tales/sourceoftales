@@ -19,7 +19,8 @@
 
 --]]
 
-local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE, REPUTATION_RELUCTANT)
+local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE,
+    REPUTATION_RELUCTANT)
 schedule_every(1, function() soldierpatrol:logic() end)
 local soldier_spawned = false
 
@@ -42,7 +43,7 @@ local function rebelphilip_daggers(being, id)
         if soldier_spawned == false then
 
             if #soldierpatrol.members == 0 then
-                spawn(soldierpatrol, "Soldier", 1)
+                spawn(soldierpatrol, "Soldier Messenger", 1)
                 soldier_spawned = true
                 item_drop(80, 144, "Cellar Key")
             end
