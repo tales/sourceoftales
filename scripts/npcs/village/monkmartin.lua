@@ -38,7 +38,7 @@ local function monk_talk(npc, ch)
     end
 
     say("Oh, dear child. Do you have some coins for a mendicant? "
-        "It'll please the gods.")
+        .. "It'll please the gods.")
 
     local choices = {
         "Leave me alone.",
@@ -77,7 +77,7 @@ local function monk_talk(npc, ch)
         end
     end
     say("If you wish to gain further knowledge about the gods and "
-        .. "the power the can grant visit the shrine in Goldenfields.")
+        .. "the power they can grant, visit the shrine in Goldenfields.")
     patrol:unblock(ch)
 end
 -- IDEA: run towards players and being_say() things matching to his role?

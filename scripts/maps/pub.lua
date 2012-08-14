@@ -25,6 +25,7 @@ schedule_every(3, function() patrol:logic() end)
 
 
 local function create_scullion()
+    map["scullion_talking"] = 0
     local refused_beer = false
         local scullion_choices = {
             "Let us talk.",
@@ -33,6 +34,10 @@ local function create_scullion()
         }
 
     local function scullionTalk(npc, ch)
+        map["scullion_talking"] = map["scullion_talking"] + 1
+        WARN(map["scullion_talking"])
+        --local players_talking = map["scullion_talking"]
+
         local function say(message)
             npc_message(npc, ch, message)
         end
@@ -74,7 +79,6 @@ local function create_scullion()
                 .. "leader.")
             chr_set_quest(ch, "rebelphilip_mole", "step2")
 
-            --TODO: make him walk away
             patrol:unassign_being(npc)
             being_walk(npc, 336, 144)
             being_walk(npc, 272, 144)
@@ -84,13 +88,23 @@ local function create_scullion()
             schedule_every(2, function()
                 local x = posX(npc)
                 local y = posY(npc)
-                --debug stuff
-                local xstring = tostring(x)
-                local ystring = tostring(y)
-                being_say(npc, xstring..ystring)
-
+                --TODO: Check if other player is taking to npc.
                 if (x == 336) and (y == 272) then
-                    --npc_disable(npc)
+                    WARN(map["scullion_talking"])
+                    local test = map["scullion_talking"]
+                    if test == "1" then
+                        map["scullion_talking"] = 0
+                        npc_disable(npc)
+                        return
+                    else
+                        map["scullion_talking"] = map["scullion_talking"] - 1
+                        being_walk(npc, 336, 272)
+                        being_walk(npc, 336, 240)
+                        being_walk(npc, 272, 144)
+                        being_walk(npc, 336, 144)
+                        being_walk(npc, 336, 112)
+
+                    end
                 end
             end)
         end
@@ -101,15 +115,17 @@ local function create_scullion()
             local res = npc_choice(npc, ch, more_beer_choices)
                 if check_for_beer < 2 then
                     say("I'm waiting.")
+                    map["scullion_talking"] = map["scullion_talking"] - 1
+                    return
 
                 elseif check_for_beer >= 2 then
                     chr_inv_change(ch, "Pint of beer", -2)
-                    dialogue_give_quest()
+                    return dialogue_give_quest()
                 end
         end
 
         if refused_beer then
-            dialogue_refused_beer()
+            return dialogue_refused_beer()
 
         else
             say("Sorry for being so rude earlier, but you shouldn't "
@@ -130,9 +146,12 @@ local function create_scullion()
                         .. "Imperial Stout. Even though it would never "
                         .. "beat 'Le trou du diable'!")
 
+                        map["scullion_talking"] = map["scullion_talking"] - 1
+                        return
+
                 elseif check_for_beer >= 1 then
                     chr_inv_change(ch, "Pint of beer", -1)
-                    dialogue_give_quest()
+                    return dialogue_give_quest()
                 end
 
             elseif res == 2 then
@@ -149,7 +168,7 @@ local function create_scullion()
                 if res == 1 then
                     say("I understand, I'll skip the beer then.")
                     table.remove(scullion_choices, 2)
-                    dialogue_give_quest()
+                    return dialogue_give_quest()
                 elseif res == 2 then
                     say("There is no way I will work "
                         .. "with someone like you! I'm out of here!")
@@ -170,6 +189,15 @@ local function create_scullion()
                         .. "Innkeeper Norman.")
                     table.remove(scullion_choices, 2)
                     refused_beer = true
+                    being_walk(npc, 336, 272)
+                    being_walk(npc, 336, 240)
+                    being_walk(npc, 272, 144)
+                    being_walk(npc, 336, 144)
+                    being_walk(npc, 336, 112)
+
+                    map["scullion_talking"] = map["scullion_talking"] - 1
+                    return
+
                 end
 
             end

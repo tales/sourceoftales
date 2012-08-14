@@ -124,10 +124,10 @@ atinit(function()
                 respawn(molequestpatrol, "Soldier Messenger", 1)
                 respawn(molequestpatrol, "Soldier", 1)
             elseif #molequestpatrol.members == 1 then
-                for i,v in ipairs(molequestpatrol.members) do
-                    WARN(tostring(i).. v)
-                    if v == "Soldier Messenger" then
-                        WARN("test")
+                for i,monster in ipairs(molequestpatrol.members) do
+                    local id = monster_get_id(monster)
+                    if id == 4 then
+                        return respawn(molequestpatrol, "Soldier Messenger", 1)
                     end
                 end
 

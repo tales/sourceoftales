@@ -38,9 +38,9 @@ local function rebel_talk(npc, ch)
 
             local new_res = npc_choice(npc, ch, new_choices)
             if new_res == 1 then
-                dialogue_accept_quest()
+                return dialogue_accept_quest()
             elseif new_res == 2 then
-                dialogue_refuse_quest()
+                return dialogue_refuse_quest()
             end
         end
 
@@ -66,11 +66,11 @@ local function rebel_talk(npc, ch)
 
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
-            dialogue_tell_me_more(choices)
+            return dialogue_tell_me_more(choices)
         elseif res == 2 then
-            dialogue_accept_quest()
+            return dialogue_accept_quest()
         elseif res == 3 then
-            dialogue_refuse_quest()
+            return dialogue_refuse_quest()
         end
     end
 
@@ -96,9 +96,9 @@ local function rebel_talk(npc, ch)
 
             local new_res = npc_choice(npc, ch, new_choices)
             if new_res == 1 then
-                dialogue_accept_quest()
+                return dialogue_accept_quest()
             elseif newres == 2 then
-                dialogue_refuse_quest()
+                return dialogue_refuse_quest()
             end
         end
 
@@ -124,11 +124,11 @@ local function rebel_talk(npc, ch)
 
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
-            dialogue_tell_me_more(choices)
+            return dialogue_tell_me_more(choices)
         elseif res == 2 then
-            dialogue_accept_quest()
+            return dialogue_accept_quest()
         elseif res == 3 then
-            dialogue_refuse_quest()
+            return dialogue_refuse_quest()
         end
 
     end
@@ -149,7 +149,7 @@ local function rebel_talk(npc, ch)
             if inventory_check < 1 then
                 say("I see you have chosen the path of righteousness!")
             elseif inventory_check >= 1 then
-                finish_quest_daggers()
+                return finish_quest_daggers()
             end
 
         elseif (quest_mole == "step1") or (quest_mole == "step2") then
@@ -162,7 +162,7 @@ local function rebel_talk(npc, ch)
 
         elseif (quest_mole ~= "started") and (quest_daggers == "finished")
             then
-            start_quest_mole()
+            return start_quest_mole()
         else
             say("BLEEBLAABLOUBLEE")
 
