@@ -55,14 +55,14 @@ local function veteran_talk(npc, ch)
     end
 
     local function collect_taxes()
-        local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
+        local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
         if (taxes == "") then
             say("You're done with your basic training? Very well. I've got some task for you. "..
                 "The Innkeeper from Goldenfields, Norman, is late with paying his taxes. "..
                 "There was quite some moaning among the villagers because of the extra taxes due to the war. "..
                 "Hah! We're the ones keeping them safe, ungrateful wretches.")
             say("I want you to get the outstanding ".. GOLDENFIELDS_TAXES .. " GP from that innkeeper.")
-            chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotorder")
+            chr_set_quest(ch, "soldier_goldenfields_taxes", "gotorder")
             say("You can find the Inn in Goldenfields south east of the casern.")
         else
             say("Did you get the money from that innkeeper?")
@@ -74,7 +74,7 @@ local function veteran_talk(npc, ch)
                 local money = chr_money(ch)
                 if money >= GOLDENFIELDS_TAXES then
                     chr_money_change(ch, -GOLDENFIELDS_TAXES)
-                    chr_set_quest(ch, "soldier_goldenfieldstaxes", "done")
+                    chr_set_quest(ch, "soldier_goldenfields_taxes", "done")
                     change_reputation(ch, "soldier_reputation", "Army", 10)
                     chr_money_change(ch, 40)
                     say("Well done, kid.")
@@ -99,7 +99,7 @@ local function veteran_talk(npc, ch)
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
-        local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
+        local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
             send_tutorial()

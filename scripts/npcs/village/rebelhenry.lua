@@ -30,7 +30,7 @@ local function rebel_talk(npc, ch)
     end
 
     local function deliver_supplies()
-        local supplies = chr_get_quest(ch, "rebel_supplies")
+        local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
         if supplies == "started" then
             local choices = { "Innkeeper Norman asked me to bring you this supplies.",
                             "What can I do to help?"}
@@ -47,7 +47,7 @@ local function rebel_talk(npc, ch)
 
                     change_reputation(ch, "rebel_reputation", "Rebels", 10)
                     change_reputation(ch, "soldier_reputation", "Army", -5)
-                    chr_set_quest(ch, "rebel_supplies", "done")
+                    chr_set_quest(ch, "rebel_goldenfields_supplies", "done")
                     chr_inv_change(ch, "Robe Hood", 1)
                     chr_inv_change(ch, "Robe Shirt", 1)
                     say("Well done.")

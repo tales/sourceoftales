@@ -40,7 +40,7 @@ local function innkeeper_talk(npc, ch)
         chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
                         "Food Shank", REBEL_FOOD_FOODSHANK,
                         "Apple", REBEL_FOOD_APPLE)
-        chr_set_quest(ch, "rebel_supplies", "started")
+        chr_set_quest(ch, "rebel_goldenfields_supplies", "started")
     end
 
     local function collect_taxes()
@@ -96,7 +96,7 @@ local function innkeeper_talk(npc, ch)
             change_reputation(ch, "rebel_reputation", "Rebels", 10)
             change_reputation(ch, "soldier_reputation", "Army", -10)
 
-            chr_set_quest(ch, "soldier_goldenfieldstaxes", "befriended")
+            chr_set_quest(ch, "soldier_goldenfields_taxes", "befriended")
 
             set_respawn()
         else
@@ -104,7 +104,7 @@ local function innkeeper_talk(npc, ch)
             local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40, GOLDENFIELDS_TAXES + 40, GOLDENFIELDS_TAXES)
             chr_money_change(ch, money)
 
-            chr_set_quest(ch, "soldier_goldenfieldstaxes", "gotmoney")
+            chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
             change_reputation(ch, "rebel_reputation", "Rebels", (-10 + math.floor((GOLDENFIELDS_TAXES - money)/10)))
         end
     end
@@ -113,7 +113,7 @@ local function innkeeper_talk(npc, ch)
         local reputation = read_reputation(ch, "rebel_reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
-            local supplies = chr_get_quest(ch, "rebel_supplies")
+            local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
             if supplies == "" then
                 local choices = { "Thanks.",
                                 "Can I help the rebels in any way?"}
@@ -161,7 +161,7 @@ local function innkeeper_talk(npc, ch)
         end
     end
 
-    local taxes = chr_get_quest(ch, "soldier_goldenfieldstaxes")
+    local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
     if (taxes == "gotorder") then
         collect_taxes()

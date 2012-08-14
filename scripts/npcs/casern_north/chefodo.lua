@@ -43,7 +43,7 @@ local function chef_talk(npc, ch)
             say("Listen, bring me ".. amount .. " of those beetles, and "..
                 "I'm going to show you the most delicous meal you "..
                 "ever tasted.")
-            chr_set_quest(ch, "soldier_beetlestew", "gotorder")
+            chr_set_quest(ch, "soldier_goldenfields_beetlestew", "gotorder")
         else
             say("Pah. Then don't waste my time.")
         end
@@ -64,7 +64,7 @@ local function chef_talk(npc, ch)
                     chr_money_change(ch, 100)
                     say("Wonderful, wonderful! I'll start with the beetle "..
                         "stew right now.")
-                    chr_set_quest(ch, "soldier_beetlestew", "done")
+                    chr_set_quest(ch, "soldier_goldenfields_beetlestew", "done")
                 else
                     say("Eh? Don't talk nonsense.")
                 end
@@ -73,7 +73,7 @@ local function chef_talk(npc, ch)
     end
 
     local BEETLE_AMOUNT = 10
-    local beetle_quest = chr_get_quest(ch, "soldier_beetlestew")
+    local beetle_quest = chr_get_quest(ch, "soldier_goldenfields_beetlestew")
 
     if beetle_quest == "done" then
         say("Ah, my friend. Thanks again for bringing me those beetles. "..
