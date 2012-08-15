@@ -32,8 +32,8 @@ local function damaged(mob, aggressor, hploss)
     local reputation_rebel = tonumber(chr_try_get_quest(aggressor, "rebel_reputation"))
     if not reputation_soldier or not reputation_rebel then return end
 
-    change_reputation(ch, "soldier_reputation", "Army", 2)
-    change_reputation(ch, "rebel_reputation", "Rebels", -4)
+    change_reputation(aggressor, "soldier_reputation", "Army", 2)
+    change_reputation(aggressor, "rebel_reputation", "Rebels", -4)
 end
 
 local rebels = {
