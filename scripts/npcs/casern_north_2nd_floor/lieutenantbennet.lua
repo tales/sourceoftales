@@ -23,7 +23,30 @@ local function lieutnant_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
-    say("Oh? What are you doing here? This area is only for the higher ranks.")
+
+    local reputation = read_reputation(ch, "soldier_reputation")
+
+    if reputation >= REPUTATION_NEUTRAL then
+        local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
+        local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+
+        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
+            say("Oh? What are you doing here? This area is only for the "
+                .. "higher ranks.")
+        else
+            say("Are you here to receive the reward for the rebel bounty?")
+            goldenfields_check_bounty(npc, ch,
+                                      "soldier_goldenfields_killrebels",
+                                      "Rebel")
+        end
+    elseif reputation > REPUTATION_RELUCTANT then
+        say("You dare to come here after what you've done? "
+            .. "Talk to Magistrate Eustace to get amnesty from your crimes!")
+        change_reputation(ch, "soldier_reputation", "Army", -1)
+    else -- reputation <= REPUTATION_RELUCTANT
+        say("I can't deny you're brave, but that won't help you now!")
+        being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+    end
 end
 
 local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnant_talk)
