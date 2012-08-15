@@ -19,6 +19,8 @@
     <map id="17" name="house9" />
     <map id="18" name="cave3" />
     <map id="19" name="casern_north_west_tower" />
+    
+    <map id="30" name="main2" />
 
     <map id="1000" name="sandbox" />
 </maps>
