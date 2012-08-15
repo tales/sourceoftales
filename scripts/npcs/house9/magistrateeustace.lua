@@ -33,37 +33,41 @@ local function magistrate_talk(npc, ch)
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("These rebels are really annoying. I mean as if there aren't "..
-            "already enough problems with the war.")
-        say("And you won't believe it, there are even people swearing "..
-            "they've seen skeletons walking around! "..
-            "What a nonsense! But the priestess seemed to be rather "..
-            "worried about it. Pah.")
+        say("These rebels are really annoying. I mean as if there aren't "
+            .. "already enough problems with the war.")
+        say("And you won't believe it, there are even people swearing "
+            .. "they've seen skeletons walking around! "
+            .. "What a nonsense! But the priestess seemed to be rather "
+            .. "worried about it. Pah.")
         -- LATER: some more talk, maybe depending on the quest state
     else
-        say("Ah. I already heard about your misconducts against the kingdom. "..
-            "Did you come here to recompense for them?")
-        local choices = { "Yes, what do I have to pay?",
-                        "No!",
-                        "What would be the consequences?"}
+        say("Ah. I already heard about your misconducts against the kingdom. "
+            .. "Did you come here to recompense for them?")
+        local choices = {
+            "Yes, what do I have to pay?",
+            "No!",
+            "What would be the consequences?"
+        }
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
             apply_amnesty(npc, ch, "soldier_reputation", "Army",
-                        "rebel_reputation", "Rebels")
+                          "rebel_reputation", "Rebels")
             set_respawn()
         elseif res == 3 then
-                say("You'd be granted amnesty for your crimes, the army's "..
-                    "patrols would stop attacking you and "..
-                    "members of the army will be willing to talk to you again.")
-                say("Those rebel scum you collaborated with won't like that "..
-                    "of course and they'll turn hostile against you.")
+                say("You'd be granted amnesty for your crimes, the army's "
+                    .. "patrols would stop attacking you and members "
+                    .. "of the army will be willing to talk to you again.")
+                say("Those rebel scum you collaborated with won't like that "
+                    .. "of course and they'll turn hostile against you.")
                 say("So, what's your decision?")
-                local choices = { "I accept, what do I have to pay?",
-                                "I don't want to pay."}
+                local choices = {
+                    "I accept, what do I have to pay?",
+                    "I don't want to pay."
+                }
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
                     apply_amnesty(npc, ch, "soldier_reputation", "Army",
-                                "rebel_reputation", "Rebels")
+                                  "rebel_reputation", "Rebels")
                     set_respawn()
                 end
         else

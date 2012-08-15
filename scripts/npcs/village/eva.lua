@@ -28,10 +28,13 @@ local function woman_talk(npc, ch)
     end
 
     say("Did you see Anabel in front of the casern? And her husband Walter?")
-    say("Since so many soldiers arrived and the casern is so lively, they spend most of their time fawning around the "..
-        "soldiers, trying to earn some money by selling their mediocre goods.")
-    say("It's really a shame, this village used to be such a lovely place to live, and with these soldiers around "..
-        "everyone behaves different. Instead of doing honest and decent farm work, they think they can be merchants now!")
+    say("Since so many soldiers arrived and the casern is so lively, they "
+        .. "spend most of their time fawning around the soldiers, "
+        .. "trying to earn some money by selling their mediocre goods.")
+    say("It's really a shame, this village used to be such a lovely place "
+        .. "to live, and with these soldiers around everyone behaves "
+        .. "differently. Instead of doing honest and decent farm work, "
+        .. "they think they can be merchants now!")
     patrol:unblock(ch)
 end
 

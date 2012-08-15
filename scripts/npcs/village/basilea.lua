@@ -27,10 +27,12 @@ local function woman_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Did you already see Aquaria's shrine? You have to enter the mountains north of there, then go east and "..
-        "south again.")
-    say("I still think it'd be easier to just build a bridge across the river. But Priestess Linota is against that.")
-    say("She says she needs some distance to the mundane village life, so she can concentrate on praising the gods.")
+    say("Did you already see Aquaria's shrine? You have to enter the "
+        .. "mountains north west of there, then go east and south again.")
+    say("I still think it'd be easier to just build a bridge across the "
+        .. "river. But Priestess Linota is against that.")
+    say("She says she needs some distance to the mundane village life, "
+        .. "so she can concentrate on praising the gods.")
     say("Pretty lofty, if you ask me.")
     patrol:unblock(ch)
 end

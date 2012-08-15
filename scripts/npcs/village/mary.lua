@@ -27,12 +27,16 @@ local function woman_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Magistrate Eustace lives in that house over there. Together with his wife. She's called Lady Primeveire.")
-    say("Alone that name shows that those people don't belong here. Snobbish townspeople, I tell you. "..
-        "They even have a maid with them, the lady seems to be to dignified to do homework...")
-    say("They came together with all these soldiers, and are supposed to help with 'adjustment of differences' and "..
-        "as 'official representants of our beloved King Richard'.")
-    say("As if we need that! We were doing fine with our businesses without any arrogant townspeople around.")
+    say("Magistrate Eustace lives in that house over there. Together with "
+        .. "his wife. She's called Lady Primeveire.")
+    say("Alone that name shows that those people don't belong here. Snobbish "
+        .. "townspeople, I tell you. They even have a maid with them, "..
+        "the lady seems to be to dignified to do homework...")
+    say("They came together with all these soldiers, and are supposed to "
+        .. "help with 'adjustment of differences' and as "..
+        "'official representants of our beloved King Richard'.")
+    say("As if we need that! We were doing fine with our businesses without "
+        .. "any arrogant townspeople around.")
     patrol:unblock(ch)
 end
 

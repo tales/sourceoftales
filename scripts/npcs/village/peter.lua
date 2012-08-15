@@ -27,7 +27,8 @@ local function man_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Working on the fields is really hard. And with all the new taxes, we'll probably get even less pay.")
+    say("Working on the fields is really hard. And with all the new taxes, "
+        .. "we'll probably get even less pay.")
     patrol:unblock(ch)
 end
 

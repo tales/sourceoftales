@@ -28,8 +28,8 @@ local function woman_talk(npc, ch)
     end
 
     say("I'm really worried about all these boys out there in the forest.")
-    say("Fighting against the king is a rather serious thing. I wonder if they're aware what danger they put "..
-        "themselves into.")
+    say("Fighting against the king is a rather serious thing. "
+        .. "I wonder if they're aware what danger they put themselves into.")
     patrol:unblock(ch)
 end
 

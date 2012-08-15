@@ -28,7 +28,8 @@ local function man_talk(npc, ch)
     end
 
     say("Tight Lines! Today was a good day, I caught quite a lot of fishes.")
-    say("I think I'll be over to the inn later, drink a beer and have a nice chat with Norman.")
+    say("I think I'll be over to the inn later, drink a beer and have a nice "
+        .. "chat with Norman.")
     patrol:unblock(ch)
 end
 

@@ -28,17 +28,23 @@ local function man_talk(npc, ch)
     end
 
     say("Hello.")
-    local choices = { "I don't have time to chat.",
-                    "What are you doing here?" }
+    local choices = {
+        "I don't have time to chat.",
+        "What are you doing here?"
+    }
     local res = npc_choice(npc, ch, choices)
     if res == 2 then
-        say("Oh, I'm just hanging around. I helped my father to bring his goods in front of the casern this morning and "..
-            "now I feel tired.")
-        say("I don't like all this work. My father wants me to take over his shop when I'm a bit older, but all this "..
-            "merchant stuff is so terribly boring.")
-        say("Being a soldier is probably much more exciting. But probably a lot of work as well. And dangerous.")
-        say("Did you know that there are some rebels hiding in the forest? If I became a soldier, I'd have to fight them!")
-        -- LATER: quest involving his father to motivate him to be interested in the shop
+        say("Oh, I'm just hanging around. I helped my father to bring his "
+            .. " goods in front of the casern and now I feel tired.")
+        say("I don't like all this work. My father wants me to take over "
+            .. "his shop when I'm a bit older, but all this "
+            .. "merchant stuff is so terribly boring.")
+        say("Being a soldier is probably much more exciting. But probably a "
+            .. "lot of work as well. And dangerous.")
+        say("Did you know that there are some rebels hiding in the forest? "
+            .. "If I became a soldier, I'd have to fight them!")
+        -- LATER: quest involving his father to motivate him to be
+        -- interested in the shop
     end
     patrol:unblock(ch)
 end

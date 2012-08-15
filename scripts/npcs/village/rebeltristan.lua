@@ -30,17 +30,23 @@ local function rebel_talk(npc, ch)
     local reputation = read_reputation(ch, "rebel_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("Norman sent you, right? Did you know that he and Henry are very close to each other? Norman is like a "..
-            "father to him.")
-        say("His real father was a soldier and spent most of his time far far away, while Henry's family lived here "..
-            "in Goldenfields in poverty from the small pay his father got.")
-        say("Henry spent a lot of time helping out at the inn, to earn some money. Norman always supported them.")
-        say("Then his father went missing on a campaign, and the kingdom stopped to pay. Technically Henry's family "..
-            "had a right for compensation money. The families of dead soldiers get that.")
-        say("But the officials refused, because it's not proven that Henry's father is dead, he just got missing.")
-        say("I think those experiences are a main reason why Henry is fighting against the kingdom.")
+        say("Norman sent you, right? Did you know that he and Henry are very "
+            .. "close to each other? Norman is like a father to him.")
+        say("His real father was a soldier and spent most of his time far far "
+            .. "away, while Henry's family lived here in Goldenfields "..
+            "in poverty from the small pay his father got.")
+        say("Henry spent a lot of time helping out at the inn, to earn some "
+            .. "money. Norman always supported them.")
+        say("Then his father went missing on a campaign, and the kingdom "
+            .. "stopped to pay. Technically Henry's family had a right "..
+            "for compensation money. The families of dead soldiers get that.")
+        say("But the officials refused, because it's not proven that Henry's "
+            .. "father is dead, he just got missing.")
+        say("I think those experiences are a main reason why Henry is "
+            .. "fighting against the kingdom.")
     elseif reputation > REPUTATION_RELUCTANT then
-        say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        say("You worked against us. Talk to Innkeeper Norman to settle "
+            .. "this conflict.")
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")

@@ -24,11 +24,11 @@ local function lady_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("What are you doing in my bedroom? As if it isn't bad enough to "..
-        "be stuck in this stinking farmer village.")
-    say("No, now people start to molest me in my own bedroom. I pray to "..
-        "Aquaria that they might order us back to "..
-        "a more civilized place soon.")
+    say("What are you doing in my bedroom? As if it isn't bad enough to "
+        .. "be stuck in this stinking farmer village.")
+    say("No, now people start to molest me in my own bedroom. I pray to "
+        .. "Aquaria that they might order us back to "
+        .. "a more civilized place soon.")
     say("Leave my bedroom!")
 end
 

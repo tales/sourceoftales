@@ -24,9 +24,9 @@ local function man_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Hello. Here are the farmworker's quarters. Most of us live here "..
-        "for the summer to help out with the field work, and then "..
-        "travel to other place where we can find other work.")
+    say("Hello. Here are the farmworker's quarters. Most of us live here "
+        .. "for the summer to help out with the field work, and then "
+        .. "travel to other place where we can find other work.")
 end
 
 local man = create_npc_by_name("Thomas", man_talk)

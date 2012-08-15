@@ -27,7 +27,8 @@ local function man_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Ouh, my back hurts. We're collecting stones from the field, before plowing.")
+    say("Ouh, my back hurts. We're collecting stones from the field, "
+        .. "before plowing.")
     patrol:unblock(ch)
 end
 

@@ -24,8 +24,8 @@ local function maid_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Oh, hello. What are you doing here? Do you want to talk to "..
-        "Magistrate Eustace? He should be in the entrance room.")
+    say("Oh, hello. What are you doing here? Do you want to talk to "
+        .. "Magistrate Eustace? He should be in the entrance room.")
     say("I need to work, otherwise Lady Primeveire will get angry with me.")
 end
 

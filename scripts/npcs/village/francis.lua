@@ -27,8 +27,10 @@ local function man_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Mh, I wonder if I should go to visit Isabella. She's an old woman living in the big house near the dock.")
-    say("She lives alone there, and reminds me of my mom. So I visit her sometimes.")
+    say("Mh, I wonder if I should go to visit Isabella. She's an old woman "
+        .. "living in the big house near the dock.")
+    say("She lives alone there, and reminds me of my mom. "
+        .. "So I visit her sometimes.")
     patrol:unblock(ch)
 end
 

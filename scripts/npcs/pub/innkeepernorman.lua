@@ -35,8 +35,9 @@ local function innkeeper_talk(npc, ch)
     end
 
     local function start_supply()
-        say("I have some supplies for our hideout in the forest, please take it with you when you go there. "..
-            "Just leave the village to the west and go south once you entered the forest.")
+        say("I have some supplies for our hideout in the forest, please take "
+            .. "it with you when you go there. Just leave the village to the "
+            .. "west and go south once you entered the forest.")
         chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
                         "Food Shank", REBEL_FOOD_FOODSHANK,
                         "Apple", REBEL_FOOD_APPLE)
@@ -46,40 +47,59 @@ local function innkeeper_talk(npc, ch)
     local function collect_taxes()
         local persuaded = false
         say("Hello. How can I help you?")
-        local choices = { "I'm here to get the outstanding taxes!"}
+        local choices = {
+            "I'm here to get the outstanding taxes!"
+        }
         local res = npc_choice(npc, ch, choices)
         say("Oh, I see. I wonder, do you think those taxes are fair?")
-        local choices = { "That doesn't matter!",
-                        "I.. uh.. what do you mean?"}
+        local choices = {
+            "That doesn't matter!",
+            "I.. uh.. what do you mean?"
+        }
         local res = npc_choice(npc, ch, choices)
         if res == 1 then
-            say("I see you're completely brainwashed. Don't you want to think for yourself?")
-            local choices = { "Are you trying to distract? The taxes!",
-                            "Yeah, I want to. What's your point?"}
+            say("I see you're completely brainwashed. Don't you want to "
+                .. "think for yourself?")
+            local choices = {
+                "Are you trying to distract? The taxes!",
+                "Yeah, I want to. What's your point?"
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 2 then
-                say("My point? Well, you don't have to be a brainless obeying soldier. I can show you something else. "..
-                    "Are you interested?")
-                local choices = { "Yes, tell me more.",
-                                "I signed a contract when joining the army! Stop that blabber and give me the taxes."}
+                say("My point? Well, you don't have to be a brainless "
+                    .. "obeying soldier. I can show you something else. "
+                    .. "Are you interested?")
+                local choices = {
+                    "Yes, tell me more.",
+                    "I signed a contract when joining the army! "
+                    .. "Stop that blabber and give me the taxes."
+                }
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
                     persuaded = true
                 end
             end
         else
-            say("The army squeezes the last money out of the upright citizens, to pay for a war that happens far away, "..
-                "for a king we don't know and who probably never heard that Goldenfields even exists.")
-            say("Do you think this is right? Do you really want to support this?")
-            local choices = { "You're right! I don't want to be part of this. What can I do?",
-                            "I.. I never looked at it this way.."}
+            say("The army squeezes the last money out of the upright citizens, "
+                .. "to pay for a war that happens far away, for a king we "
+                .. "don't know and who probably never heard that Goldenfields "
+                .. "even exists.")
+            say("Do you think this is right? "
+                .. "Do you really want to support this?")
+            local choices = {
+                "You're right! I don't want to be part of this. What can I do?",
+                "I.. I never looked at it this way.."
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
                 persuaded = true
             else
                 say("You don't have to stay part of this injustice.")
-                local choices = { "And I don't want to!",
-                                "But I signed a contract! No, I'll stay loyal. The taxes, now."}
+                local choices = {
+                    "And I don't want to!",
+                    "But I signed a contract! No, I'll stay loyal. "
+                    .. "The taxes, now."
+                }
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
                     persuaded = true
@@ -88,8 +108,9 @@ local function innkeeper_talk(npc, ch)
         end
 
         if persuaded then
-            say("That's what I wanted to hear, friend! You should talk to Henry. "..
-                "He's hiding in the forest west of Goldenfields, together with some people who share our ideals.")
+            say("That's what I wanted to hear, friend! You should talk to "
+                .. "Henry. He's hiding in the forest west of Goldenfields, "
+                .. "together with some people who share our ideals.")
 
             start_supply()
 
@@ -101,11 +122,14 @@ local function innkeeper_talk(npc, ch)
             set_respawn()
         else
             say("As you wish. How much do I have to pay?")
-            local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40, GOLDENFIELDS_TAXES + 40, GOLDENFIELDS_TAXES)
+            local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40,
+                                           GOLDENFIELDS_TAXES + 40,
+                                           GOLDENFIELDS_TAXES)
             chr_money_change(ch, money)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
-            change_reputation(ch, "rebel_reputation", "Rebels", (-10 + math.floor((GOLDENFIELDS_TAXES - money)/10)))
+            change_reputation(ch, "rebel_reputation", "Rebels",
+                             -10 + math.floor((GOLDENFIELDS_TAXES - money)/10) )
         end
     end
 
@@ -115,44 +139,59 @@ local function innkeeper_talk(npc, ch)
             say("Hello. Make yourself at home.")
             local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
             if supplies == "" then
-                local choices = { "Thanks.",
-                                "Can I help the rebels in any way?"}
+                local choices = {
+                    "Thanks.",
+                    "Can I help the rebels in any way?"
+                }
                 local res = npc_choice(npc, ch, choices)
                 if res == 2 then
-                    say("I'm glad you made up your mind. There's indeed something you could do.")
+                    say("I'm glad you made up your mind. "
+                        .. "There's indeed something you could do.")
                     start_supply()
                 end
             else
-                say("Do you need any supplies or clothes? I can sell you something.")
+                say("Do you need any supplies or clothes? "
+                    .. "I can sell you something.")
                 npc_trade(npc, ch, false, {
                     { "Pumpkin", 10, 50 },
                     { "Food Shank", 10, 130 },
                     { "Apple", 10, 40 },
                     { "Robe Hood", 10, 400},
-                    { "Robe Shirt", 10, 800}})
+                    { "Robe Shirt", 10, 800}
+                })
                 -- LATER: some more talk, maybe depending on the quest state
             end
         else
-            say("With your actions you caused quite some damage to our organization. But we will forget about "..
-                "that if you pay recompensation.")
-            local choices = { "Ok, what do I have to pay?",
-                            "No!",
-                            "What effect would this have?"}
+            say("With your actions you caused quite some damage to our "
+                .. "organization. But we will forget about that id you pay "
+                .. "recompensation.")
+            local choices = {
+                "Ok, what do I have to pay?",
+                "No!",
+                "What effect would this have?"
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
-                apply_amnesty(npc, ch, "rebel_reputation", "Rebels", "soldier_reputation", "Army")
+                apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
+                              "soldier_reputation", "Army")
                 set_respawn()
             elseif res == 3 then
-                say("If you pay recompensation for all your actions that damaged our group, our patrols will stop "..
-                    "attacking you on sight, and members of the revolution will be willing to talk to you.")
-                say("But this would be a clear signal that you support our case, and the army won't like that, so "..
-                    "they'll see you as their enemy.")
+                say("If you pay recompensation for all your actions that "
+                    .. "damaged our group, our patrols will stop attacking you "
+                    .."on sight, and members of the revolution will be willing "
+                    .. "to talk to you.")
+                say("But this would be a clear signal that you support our "
+                    .. "case, and the army won't like that, "
+                    .. "so they'll see you as their enemy.")
                 say("So, what's your decision?")
-                local choices = { "Ok, how much do I have to pay?",
-                                "I don't want to support you."}
+                local choices = {
+                    "Ok, how much do I have to pay?",
+                    "I don't want to support you."
+                }
                 local res = npc_choice(npc, ch, choices)
                 if res == 1 then
-                    apply_amnesty(npc, ch, "rebel_reputation", "Rebels", "soldier_reputation", "Army")
+                    apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
+                                  "soldier_reputation", "Army")
                     set_respawn()
                 end
             else

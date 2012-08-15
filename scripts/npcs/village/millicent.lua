@@ -28,7 +28,8 @@ local function woman_talk(npc, ch)
     end
 
     say("Have you seen my husband Borin? I bet he's in the pub again...")
-    say("I work all day, and he has nothing better to do than taking our money and spend it on getting drunk.")
+    say("I work all day, and he has nothing better to do than taking our "
+        .. "money and spend it on getting drunk.")
     patrol:unblock(ch)
 end
 

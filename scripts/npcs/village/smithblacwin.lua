@@ -36,16 +36,20 @@ local function smith_talk(npc, ch)
         local tutorial_shop = chr_get_quest(ch, "tutorial_shop")
         if tutorial_equip ~= "done" then
             say("Yes?")
-            local ask_equip = { "I need my equipment!",
-                                "Nevermind."}
+            local ask_equip = {
+                "I need my equipment!",
+                "Nevermind."
+            }
             local res = npc_choice(npc, ch, ask_equip)
             if res == 1 then
                 say("Here.")
                 chr_inv_change(ch, "Kettle hat", 1)
                 chr_inv_change(ch, "Rusty chain armor", 1)
                 chr_set_quest(ch, "tutorial_equip", "done")
-                local reply_equip = { "You're not very talkative, are you?",
-                                    "Thanks."}
+                local reply_equip = {
+                    "You're not very talkative, are you?",
+                    "Thanks."
+                }
                 local res = npc_choice(npc, ch, reply_equip)
                 if res == 1 then
                     say("No.")
@@ -58,16 +62,18 @@ local function smith_talk(npc, ch)
         else
             say("Hrm.")
             if tutorial_shop == "done" then
-                local ask_shop = { "I heard you could sell me better armor?",
-                                    "Nevermind."}
+                local ask_shop = {
+                    "I heard you could sell me better armor?",
+                    "Nevermind."
+                }
                 local res = npc_choice(npc, ch, ask_shop)
                 if res == 1 then
                     npc_trade(npc, ch, false, {
                         { "Iron Helmet", 10, 1800 },
                         { "Iron Armor", 10, 6000 },
                         { "Iron Gloves", 10, 1000 },
-                        { "Chain Hood", 10, 1600 } })
-                    -- those stuff isn't intended to be sold, but he does that to boost his pay
+                        { "Chain Hood", 10, 1600 }
+                    })
                 else
                     say("Hmph.")
                 end

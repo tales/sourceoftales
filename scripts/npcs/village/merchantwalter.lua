@@ -24,12 +24,15 @@ local function merchant_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("Potions! Do you feel ill? Do you need some explosives to protect yourself? Or do you want to boost your abilities for battle? I have everything you can imagine, and even more! Have a look!")
+    say("Potions! Do you feel ill? Do you need some explosives to protect "
+        .. "yourself? Or do you want to boost your abilities for battle? "
+        .. "I have everything you can imagine, and even more! Have a look!")
 
-    local choices = { "Show me your goods.",
-                    "Actually I'd like to sell something.",
-                    "I'm fine." }
-
+    local choices = {
+        "Show me your goods.",
+        "Actually I'd like to sell something.",
+        "I'm fine."
+    }
     local res = npc_choice(npc, ch, choices)
 
     if res == 1 then
@@ -38,7 +41,8 @@ local function merchant_talk(npc, ch)
             { "Small Healing Potion", 30, 20 },
             { "Medium Healing Potion", 20, 30 },
             { "Large Healing Potion", 10, 40 },
-            { "Bomb", 10, 100 }})
+            { "Bomb", 10, 100 }
+        })
     elseif res== 2 then
         say("Of course!")
         npc_trade(npc, ch, true)

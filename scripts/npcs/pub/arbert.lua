@@ -28,8 +28,10 @@ local function man_talk(npc, ch)
     end
 
     say("Do you see Borin over there? He's always drunk...")
-    say("One day, he was so drunk that he fell into the pond in front of the pub's entrance when he left.")
-    say("That was funny, I tell you! Well, he nearly drowned, but Norman was able to pull him out soon enough.")
+    say("One day, he was so drunk that he fell into the pond "
+        .. "in front of the pub's entrance when he left.")
+    say("That was funny, I tell you! Well, he nearly drowned, "
+        .. "but Norman was able to pull him out soon enough.")
     patrol:unblock(ch)
 end
 

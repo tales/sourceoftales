@@ -27,10 +27,13 @@ local function man_talk(npc, ch)
         npc_message(npc, ch, message)
     end
 
-    say("He-hello ma friend. Have ya - would ya, would ya give me some coins for another drink?")
+    say("He-hello ma friend. Have ya - would ya, would ya give me "
+        .. "some coins for another drink?")
     say("Feeling so sh-sh-shirsty.")
-    local res = { "No! You definetly had enough!",
-                "Ok, have some."}
+    local res = {
+        "No! You definetly had enough!",
+        "Ok, have some."
+    }
     local res = npc_choice(npc, ch, res)
     if res == 2 then
         local donation = npc_ask_integer(npc, ch, 1, 10, 5)

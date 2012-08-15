@@ -33,22 +33,28 @@ local function guard_talk(npc, ch)
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("These merchants are worse than blowflies! If I don't pay attention for a moment, they'll sneak "..
-            "into the casern to distract the new recruits with their goods.")
+        say("These merchants are worse than blowflies! If I don't pay "
+            .. "attention for a moment, they'll sneak into the casern "
+            .. "to distract the new recruits with their goods.")
 
         local emma = chr_get_quest(ch, "rebels_emmas_camouflage")
         if emma == "ask" then
-            local choices = { "That girl, Emma, could you let her enter?",
-                            "Then I won't distract you."}
+            local choices = {
+                "That girl, Emma, could you let her enter?",
+                "Then I won't distract you."
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
-                say("What, now she started to ask soldiers to beg for her? That girl drives me insane.")
-                say("Listen, this is an army. This isn't the place to fool around. No civilians in the casern.")
+                say("What, now she started to ask soldiers to beg for her? "
+                    .. "That girl drives me insane.")
+                say("Listen, this is an army. This isn't the place to fool "
+                    .. "around. No civilians in the casern.")
                 chr_set_quest(ch, "rebels_emmas_camouflage", "deny")
             end
         end
     elseif reputation > REPUTATION_RELUCTANT then
-        say("To get amnesty for your misconducts talk to Magistrate Eustace in Goldenfields.")
+        say("To get amnesty for your misconducts talk to Magistrate Eustace "
+            .. "in Goldenfields.")
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
@@ -64,8 +70,8 @@ local function guard_denyExit(ch)
 
     local quest = chr_try_get_quest(ch, "tutorial_fight")
     if quest ~= "done" then
-        chat_message(ch, "Guard Fordwin: Hey! I can't let you pass like this. Get your equipment and "..
-                        "finish your basic training!")
+        chat_message(ch, "Guard Fordwin: Hey! I can't let you pass like this. "
+                    .. "Get your equipment and finish your basic training!")
         local x, y = get_named_coordinate("Gate Warp")
         chr_warp(ch, nil, posX(ch), y)
         being_set_direction(ch, DIRECTION_UP)

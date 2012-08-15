@@ -32,15 +32,20 @@ local function rebel_talk(npc, ch)
     local function deliver_supplies()
         local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
         if supplies == "started" then
-            local choices = { "Innkeeper Norman asked me to bring you this supplies.",
-                            "What can I do to help?"}
+            local choices = {
+                "Innkeeper Norman asked me to bring you this supplies.",
+                "What can I do to help?"
+            }
             local res = npc_choice(npc, ch, choices)
             if res == 1 then
                 say("Great, we were waiting on those.")
                 local pumpkin = chr_inv_count(ch, true, false, "Pumpkin")
                 local foodshank = chr_inv_count(ch, true, false, "Food Shank")
                 local apple = chr_inv_count(ch, true, false, "Apple")
-                if (pumpkin >= REBEL_FOOD_PUMPKIN) and (foodshank >= REBEL_FOOD_FOODSHANK) and (apple >= REBEL_FOOD_APPLE) then
+                if (pumpkin >= REBEL_FOOD_PUMPKIN
+                    and foodshank >= REBEL_FOOD_FOODSHANK
+                    and apple >= REBEL_FOOD_APPLE)
+                then
                     chr_inv_change(ch, "Pumpkin", -REBEL_FOOD_PUMPKIN,
                                     "Food Shank", -REBEL_FOOD_FOODSHANK,
                                     "Apple", -REBEL_FOOD_APPLE)
@@ -52,10 +57,13 @@ local function rebel_talk(npc, ch)
                     chr_inv_change(ch, "Robe Shirt", 1)
                     say("Well done.")
                 else
-                    say("There's something missing. Don't think you can outsmart us. Now you either go and get the "..
-                        "missing items, or you better not come back.")
-                    say("Norman wanted to send us ".. REBEL_FOOD_PUMPKIN .." pumpkins, ".. REBEL_FOOD_FOODSHANK ..
-                        " food shanks and ".. REBEL_FOOD_APPLE .. " apples.")
+                    say("There's something missing. Don't think you can "
+                        .. "outsmart us. Now you either go and get the "
+                        .. "missing items, or you better not come back.")
+                    say("Norman wanted to send us ".. REBEL_FOOD_PUMPKIN
+                        .." pumpkins, ".. REBEL_FOOD_FOODSHANK
+                        .. " food shanks and ".. REBEL_FOOD_APPLE
+                        .. " apples.")
                     change_reputation(ch, "rebel_reputation", "Rebels", -1)
                 end
             end
@@ -67,10 +75,13 @@ local function rebel_talk(npc, ch)
     if reputation >= REPUTATION_NEUTRAL then
         say("Hello.")
         deliver_supplies()
-        say("The army is sending out more and more patrols. You can help by fighting them back.")
-        goldenfields_check_bounty(npc, ch, "rebel_goldenfields_killsoldiers", "Soldier")
+        say("The army is sending out more and more patrols. You can help by "
+            .. "fighting them back.")
+        goldenfields_check_bounty(npc, ch,
+                                  "rebel_goldenfields_killsoldiers", "Soldier")
     elseif reputation > REPUTATION_RELUCTANT then
-        say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        say("You worked against us. Talk to Innkeeper Norman to settle "
+            .. "this conflict.")
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
