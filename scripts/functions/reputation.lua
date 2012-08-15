@@ -20,7 +20,8 @@
 --]]
 
 function is_valid_faction(faction)
-    -- TODO: make this more flexible, probably with something like this: http://www.lua.org/pil/13.1.html
+    -- TODO: make this more flexible, probably with something like this:
+    -- http://www.lua.org/pil/13.1.html
     -- factions = {"soldier_reputation", "rebel_reputation"}
     if faction == "soldier_reputation" or faction == "rebel_reputation" then
         return true
@@ -52,7 +53,8 @@ function change_reputation(ch, factionvar, factionname, change)
     end
 end
 
-function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name, foe_faction, foe_faction_name)
+function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
+                        foe_faction, foe_faction_name)
     local function say(message)
         npc_message(npc, ch, message)
     end
@@ -72,7 +74,8 @@ function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name, foe_fac
         if money >= cost then
             chr_money_change(ch, -cost)
             change_reputation(ch, friendly_faction, friendly_faction_name, cost)
-            change_reputation(ch, foe_faction, foe_faction_name, -cost)-- TODO: formula
+            -- TODO: formula
+            change_reputation(ch, foe_faction, foe_faction_name, -cost)
             say("I hope you learned from your mistakes.")
         else
             say("Come back when you can afford it.")

@@ -82,16 +82,24 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
     end
     chr_money_change(ch, d*(5+math.random(10)))
 
-    if killcount >= GOLDENFIELDS_BOUNTY_LOW and killcount_old < GOLDENFIELDS_BOUNTY_LOW then
+    if (killcount >= GOLDENFIELDS_BOUNTY_LOW
+        and killcount_old < GOLDENFIELDS_BOUNTY_LOW)
+    then
         chr_inv_change(ch, "Iron Gloves", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_MEDIUM and killcount_old < GOLDENFIELDS_BOUNTY_MEDIUM then
+    if (killcount >= GOLDENFIELDS_BOUNTY_MEDIUM
+        and killcount_old < GOLDENFIELDS_BOUNTY_MEDIUM)
+    then
         chr_inv_change(ch, "Iron Boots", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_HIGH and killcount_old < GOLDENFIELDS_BOUNTY_HIGH then
+    if (killcount >= GOLDENFIELDS_BOUNTY_HIGH
+        and killcount_old < GOLDENFIELDS_BOUNTY_HIGH)
+    then
         chr_inv_change(ch, "Iron Pants", 1)
     end
-    if killcount >= GOLDENFIELDS_BOUNTY_VERY_HIGH and killcount_old < GOLDENFIELDS_BOUNTY_VERY_HIGH then
+    if (killcount >= GOLDENFIELDS_BOUNTY_VERY_HIGH
+        and killcount_old < GOLDENFIELDS_BOUNTY_VERY_HIGH)
+    then
         chr_inv_change(ch, "Iron Armor", 1)
     end
     chr_set_quest(ch, questvar, tostring(killcount))
