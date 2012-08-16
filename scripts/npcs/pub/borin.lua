@@ -26,6 +26,8 @@ local function man_talk(npc, ch)
     local function say(message)
         npc_message(npc, ch, message)
     end
+    --debug
+    --chr_set_quest(ch, "rebelphilip_mole", "step1")
 
     say("He-hello ma friend. Have ya - would ya, would ya give me "
         .. "some coins for another drink?")
