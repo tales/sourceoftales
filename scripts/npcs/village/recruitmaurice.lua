@@ -50,7 +50,7 @@ local function recruit_talk(npc, ch)
                 .. "find some nice place to live after my time of service.")
         elseif res == 2 then
             say("Because of war, you dumbhead. Why else should they even come "
-                .. "out here to Goldenfields to hire people? I mean, nothing "..
+                .. "out here to Goldenfields to hire people? I mean, nothing "
                 .. "ever happens here and usually there are only a handful of "
                 .. "old soldiers here in the casern who feel bored to death.")
             say("After the basic training we're probably going to be send to "
