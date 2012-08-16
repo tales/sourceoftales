@@ -71,7 +71,7 @@ atinit(function()
     require "scripts/npcs/village/rowan"
     require "scripts/npcs/village/thea"
 
-     -- Rebel patrols
+    -- Rebel patrols
     local rebelpatrol1 = Rebel_patrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     local rebelpatrol2 = Rebel_patrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
     schedule_every(1, function() rebelpatrol1:logic() end)
