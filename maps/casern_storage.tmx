@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="14" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
@@ -100,6 +99,32 @@
     <property name="DEST_MAP" value="casern_storage_roof"/>
     <property name="DEST_X" value="304"/>
     <property name="DEST_Y" value="80"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SoldierPatrol" width="15" height="14">
+  <object name="SoldierPatrol 1" type="WAYPOINT" x="384" y="160" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="SoldierPatrol 2" type="WAYPOINT" x="32" y="160" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Objects" width="15" height="14">
+  <object name="External Map Events" type="SCRIPT" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="FILENAME" value="scripts/maps/casern_storage.lua"/>
+   </properties>
+  </object>
+  <object name="rebelphilip daggers quest" type="TRIGGER" x="96" y="320" width="32" height="64">
+   <properties>
+    <property name="once" value="true"/>
    </properties>
   </object>
  </objectgroup>

@@ -230,7 +230,7 @@
    eJzt3DEOgzAQBEA3kcmPg2jhVeRxKdIhnZAQcMKeqVzuFltZulIAAAAAAAAAAAAAAAAAAAAAAACArW92gBv11BUAAACgZUt2gBPsdfjUUsb6f0/18jg0ZM4OcIIWOgAAAAAAAH15+9OD0Ms+IGQfELMPiNkHAAAAAAAAAAAAAAAAAAAAAAA8z5odAAAA6NLglimE3PoFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgqB84HwYi
   </data>
  </layer>
- <layer name="Collision" width="200" height="200" visible="0">
+ <layer name="Collision" width="200" height="200">
   <data encoding="base64" compression="zlib">
    eJztVFmuAzcM61cP1vsfqh9F0Klry1qoZRIKIPLeZCxTFJm//vzjj78acSvtmUwO2rtQs1jf9XCNamXVc31e7bFOj2t1y/QUgru2NH202kTn9nLN3POJQyavG5/K+zRaWLlqemT5QNql1xsRDXfnI+XVO7onr0es3kHvAw3LbjQ703ri1nN9puF10/L2nnUXu14S70h5dyadkzTw9Pd4TFPefGVkw6uvppf0HKGnZV4tN2s+NHed5tZq6dFAetdyV2U+ND2qM4Ka9+Sh3R3WivjR0jtyn4YP2k+3uzw9nv9r+0czt/vu1Ds7H7v7tPdqeO7m9HohwsV6j5eXlXc0F6hcnXrf7szIh2aWilxo+WjOaT1ruUd653TO+tyrg7UsO9D2X8+i82fxtKZHFrfObFhn9O47opl1Lq8u2uxaPBWd1zOf5571nKZnti9R93g5WLJw86On7+59C1/LnVadPe9LnDUz7N6/aRD1Hqoie7H0rsoIUl+tD5/fS1wyNIuet/pce4+ltPxQOYlmzqulJWMZ+fBmyqLD7vnz/RsP752n772zaM9oOe50kM7eenn3uO5Jy//Wz+Jt7T2V2dDe93xXUxZfofOJLG8+bnuXzkn9Tneg8qHx7Y5TlJ+Gi4UzShftPdnVfT+yonvw9NXuUPL+6Z6VA4rPLYfeHKEzgsgXorLzcdMgo6xzZPvPqnG1Ry0+rMiHVdtoWXL6pqr4jUD7AJGP6jmy7ojOwKoprZfRXsieY3o+or2f56qL+ZyXC03Pikxn9o+c1+hNX5/Lq012PpDZys4Hsv/J4x2/PRPqG2ZC+gL9+4j0K8K/2fmY7KcOblP0QHsElRPkPVX5+OaMfGtJmldnw+KDihxWzFSRjzfkD82xYpap+UD3l55lz4XgPnmP1d6oKivf9VPqu35KGqA8ZdV3aj481e3nCfnQ+FJzXxVf6T7vHEi+lXtlPnI0iHpz12NSPk69Efqi/PqGjHT7uSsfiFr9iN75esfuHev8mfp27RehNfGvFqs2Gk9V6KipzPNazRB9kRpF9e325RRodjxt9xYu0gzeOW7aTNDIc3adjZD3q6kJ/CI9svSasEftud35bl9OwVOf0+cUH0TuRfHXVNcePTwmzTARkh5aL0jnu/ePOq/VpHuPVi7T5tD4sppHxA9Vfon2RXHLnrNao4rdRThM4aV5r3sWb18Ut+59WflFfdnFO8IL0WPnexT3lYOWi1XHqP7IHXZkAaEPam+ne6M8PHprz2t7ZfC3zJO5/xP36N2aXsi5PfwQe41qEu3j4eUtqZdXg9Mzr5e1O83ytLXX7d035MOjk7Wi3q2oiNdufaX+0v1Rn+/6erWIZO35KX03MR8enawVOVtV0pwob556395FeeDGVcMb4QeJw5R8rJpY+Xrnz6qoZpJGHn8g7s+YJ1vHZx9rTcqGZpaMfGRlJNNPXh0sHJA+sPDM8J+3pubDyndKRf219tp9n5kN7T3RPlqeEg9Jc0RVZUN7V4RzdPaMysrHrXeUS3SGG9e1v/UureaI+pZ8PHtod51dWflAeMfrbYQXPPx272r6eAo5v3YW6040s2fvK1pRDl7fWrgg9+fJnfaO53tWzTwZQ8+NzIc0A4pfRVaiO5K4WzSU+lm0yfCGldtJtx33bD4T8pHBu6p2nvac33HPyIiHD0L7rJ1lc2I+euvEPSMb2v6IPXvPnmaKzuudoTofGu++2e/WkmbNyIjmHY1fq3zl0W+ds3oG5gNXp1kj3l3PP59L91p0r/CV5n+kx5iPeSXNGtFwPf/5X9Nbe0+Vt7z6VXJmPnLqNqtn/7tPzb3oPXfkw/o+8yHf013SrGgdbr2n5EM7p+VcFW+Jh+Vs1ixTCjWDRi+Jg5ffercnW1U50WoxgTdi3gl6RqtqBmt+vDlbszLBa1b+EzgzH/9U5gzdc07y20SuzMe9vmGGU3V57m058XD5fJ81y5T6hhlO1ZmPiHaT+FTsfbK3JnNby/K79fmcioncT3yYjznc1gxIftH0moxp/LUcTjs7nffMOaW8e6vi4vWWtd+0fHy+n8Ar27/flg9rfy+PaEZ279/6dXsRpc3b85HNP3tnGRXliuLenY3Pd8/PafnQ7kCzk27+b8nHZ5b1M4PvqU9nLixcJ+VDOtMxX3V/aa6KqvSc5c5vzYfHY56ZsubL1q+rpLs/3+0+n7xv/HfnqvNh0bgjG16P3TSvmrG6//Q6Zed2Rpq/w4MerlPyoZ0ho7QZzeAwKS9ILpp9T8nIhHxoNWPdK9s3iF1o75+QkY587HghZ+qsbn6o3Xjn0ORrUj5unpqSj6e2b81GV6E9lclzaj4kT3b0iui4vrv7W3r2zVXx2/X8zOCGnCXbix35ePY69ZXOaZ59a2X4JbJHDzfkLFE/VukY0Rexm4ry8kPuVHNG+46W23p/dNaoLhPykd3L0htd1v5RXlU70L7v4YWcFaHNN+UjmpHTu97y8JueDyvvjGxo7kVpMy0bGf0s/ZEl+cXTw3pfRj5OZ63fZeu/9npjPtA9bxpp+2s1l+rmO3SdcpidD+k+a7/M+vVsnPKBzki0rP2R2c3Mh2eWiN5Wbtn5QOho0QSZD29OMqozH7t+qL1657H4IcKvIx8ZeYv2vvWw3nnaT1W9JR/RjFirOwuZOmblTZOPKRmJ9jrNuv6P8jUyH0/+6yeKC/Phz4clI90V9eGnR7QfMmsanlouFm7V2ThxzvBzRuZue7r1rKiIn7O5nJ51lccDlfmwcnmeQ8500syTj6zq9pJUN26Sps+zE2asyIYlK+jMIfKx67n77pfK62Pt71lmWfkyH3W7YZ2rahfaezqycZsb7eVfzUb3LN77b3vZ9V2fnd7R7L4zExoPIvuiuSFKm+m3V0RPy27W7Ez0+8R8oHNh3dk3eBxRXg9IZ3d9Tt9Z3p8Ei5bZ+fDuWHvnlJrExVLo3zpt7ygPZDaQWlTkwqrhqb+nTvci+iDK61HLuxF/WSvy24vOCKpXFQfkvScubytvPjz6eO+MVFc2vPd7zyPm9vTIrDfm6VNVGkWrIhsnDaI9K3KVlc+uQu101xfJEVmRflm5uHF6vvemfGRmTdIJVW/Ix7TKyEfW3dFzqJmffVAaavWKVNdu31wd+UD4ckI+MnXM8NU0PtOqYrfSPdG7Ij0QPLQaMx/3+zPK2/d2rmqnqN4d+ZDmydYzy083rqx/qmqHnfmInNfMgp610qPfnI+MXWfsD+kVBNfIjNH3ohqjvct85OXjpiPC1535sOolaZClcbR2d1XmI+sulM6onWX6w+vvaA+vVsidVXo1UtN4dufDujvkHZn5+HwXvRPV59ljmgcn17qHib9r6247s6HJh0bvjhlY9jrp5tEYufsb1yn5ePbK0gY1B6J2vw/RHllnECVpp9X48zy699P+tdw6MyIVKhvROabXxBlOd3v4Tfbb5xyCq4UzOhvfnJFs30S5afjeeiC8q+Ub0TLLp8jeGRmZVk9Ob8lHhE/2jM88TcjHWzMyNStTM2LJB9JrEb7I+6L9MvNnmanCS6c+0f4Ts4Hgg95xBm/NPRPyFpkLqXOF93Z3TsuHla/l3axZs+7p7lWZpQ/HSZXtmyy+69+799YzmTNmZhHJuzsHntk762358FbmnJkeyeCtOTspI8iy3jN5lkih9m29a0o+JO5SJnbvImes8BXSnzeev56Pm38QvSVdK7Lm0bQjI2/w3VvKknXEb1uGN9BcpdxX8UJorSlmyVbIvXn81Z0PT4ae/6Pn9Objbb7X6Fzxe3Hj+BageGt0WL9b3+nW89vqOdMULbr97tUhw1de7ZHcJA6/kJFPRXaK1KXb79n5OL1v0ULSLkvT233PzHxjIfSq5jABEnfNvB4t1ndOfZ+fGfmQeH9rVebj5q83IKus93qzduvtmVGrzxtzpNEOOVe3v6syZNVM419tTjqy/kbvT6luv3ZnJapNltaaXs/P9W+Wv7p9OQ1RXXb6ovS3nmf5q9uH3wrPHm77eL5n3aHmbtb/q9tH34qT1tZnWu9aOHn6/2J1e+ib8YbdseTq9tAvYPq+Pn1Z/61u3/wKtLvo3BXr/9Xtm1+DZS9v3dM3VLeGv4znDr59F5m+zahuvYjfRKZnmQlC8kY3BwvXTN8yE8S3IcO3zAVB3MFMEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEDf8Dbwkpqw=
   </data>
@@ -767,6 +767,11 @@
  <objectgroup name="Trigger" width="200" height="200">
   <object name="Casern south gate" type="TRIGGER" x="2240" y="2112" width="128" height="32"/>
   <object name="Gate Warp" type="COORDINATE" x="2288" y="2048" width="32" height="32"/>
+  <object name="rebelphilip mole quest" type="TRIGGER" x="1664" y="160" width="64" height="64">
+   <properties>
+    <property name="once" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Warps" width="200" height="200">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
@@ -2168,6 +2173,20 @@
    </properties>
   </object>
   <object name="Patrol2_Soldiers 31" type="WAYPOINT" x="2128" y="1264" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Patrol_RebelPhilip_Quest" width="200" height="200">
+  <object name="Patrol_RebelPhilip_Quest 1" type="WAYPOINT" x="960" y="160" width="32" height="32">
+   <properties>
+    <property name="stroll" value="32"/>
+    <property name="tolerance" value="128"/>
+   </properties>
+  </object>
+  <object name="Patrol_RebelPhilip_Quest 2" type="WAYPOINT" x="1120" y="32" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
     <property name="tolerance" value="128"/>

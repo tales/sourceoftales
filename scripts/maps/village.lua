@@ -21,6 +21,7 @@
 
 --]]
 
+
 atinit(function()
     require "scripts/functions/npchelper"
     require "scripts/functions/triggerhelper"
@@ -82,6 +83,12 @@ atinit(function()
     schedule_every(1, function() soldierpatrol1:logic() end)
     schedule_every(2, function() soldierpatrol2:logic() end)
 
+    -- RebelPhilip mole quest patrol
+    local molequestpatrol = Soldier_patrol:new("Patrol_RebelPhilip_Quest",
+                                               1 * TILESIZE,
+                                               REPUTATION_RELUCTANT)
+    schedule_every(3, function () molequestpatrol:logic() end)
+
     local function respawn(patrol, mob, amount)
         local x = patrol.path[patrol.position_index].x
         local y = patrol.path[patrol.position_index].y
@@ -104,4 +111,32 @@ atinit(function()
             schedule_in(30, function() respawn(soldierpatrol2, "Soldier", 5) end)
         end
     end)
+
+
+    local function rebelphilip_mole(being, id)
+        if being_type(being) ~= TYPE_CHARACTER then
+            return
+        end
+
+        local quest = chr_try_get_quest(being, "rebelphilip_mole")
+        --WARN(quest)
+        if quest == "step2" then
+            if #molequestpatrol.members == 0 then
+                respawn(molequestpatrol, "Soldier Messenger", 1)
+                respawn(molequestpatrol, "Soldier", 1)
+                chr_try_set_quest(being, "rebelphilip_mole", "step3")
+            elseif #molequestpatrol.members == 1 then
+                for i,monster in ipairs(molequestpatrol.members) do
+                    local id = monster_get_id(monster)
+                    if id == 4 then
+                        return respawn(molequestpatrol, "Soldier Messenger", 1)
+                    end
+                end
+
+            end
+        end
+    end
+
+    create_trigger_by_name("rebelphilip mole quest", rebelphilip_mole)
+
 end)

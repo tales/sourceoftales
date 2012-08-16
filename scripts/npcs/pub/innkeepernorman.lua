@@ -156,6 +156,7 @@ local function innkeeper_talk(npc, ch)
                     { "Pumpkin", 10, 50 },
                     { "Food Shank", 10, 130 },
                     { "Apple", 10, 40 },
+                    { "Pint of beer", 10, 5},
                     { "Robe Hood", 10, 400},
                     { "Robe Shirt", 10, 800}
                 })

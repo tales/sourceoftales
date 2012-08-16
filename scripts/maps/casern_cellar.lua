@@ -26,7 +26,10 @@ atinit(function()
     require "scripts/functions/guardpatrol"
     require "scripts/functions/soldierpatrol"
 -- Soldier patrols
-    local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 10 * TILESIZE, REPUTATION_RELUCTANT)
+
+    local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 10 * TILESIZE,
+                                             REPUTATION_RELUCTANT)
+
     schedule_every(1, function() soldierpatrol:logic() end)
 
     local function respawn(patrol, mob, amount)
@@ -39,7 +42,8 @@ atinit(function()
 
     schedule_every(60, function()
         if #soldierpatrol.members == 0 then
-            schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4) end)
+            schedule_in(30, function() respawn(soldierpatrol, "Soldier", 4)
+                end)
         end
     end)
 end)
