@@ -399,6 +399,7 @@ David E. Gervais                   CC BY_SA 3.0                items/KeyTroll.pn
 David E. Gervais                   CC BY_SA 3.0                items/Lance.png
 David E. Gervais                   CC BY_SA 3.0                items/LanternBronze.png
 David E. Gervais                   CC BY_SA 3.0                items/Lantern.png
+David E. Gervais, Philippe Groarke CC BY_SA 3.0                items/Letter.png
 David E. Gervais                   CC BY_SA 3.0                items/LightChalice.png
 David E. Gervais                   CC BY_SA 3.0                items/LightOrb.png
 David E. Gervais                   CC BY_SA 3.0                items/LightStar.png
