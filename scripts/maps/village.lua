@@ -123,6 +123,7 @@ atinit(function()
             if #molequestpatrol.members == 0 then
                 respawn(molequestpatrol, "Soldier Messenger", 1)
                 respawn(molequestpatrol, "Soldier", 1)
+                chr_try_set_quest(being, "rebelphilip_mole", "step3")
             elseif #molequestpatrol.members == 1 then
                 for i,monster in ipairs(molequestpatrol.members) do
                     local id = monster_get_id(monster)

@@ -74,8 +74,11 @@ local function rebel_talk(npc, ch)
         end
     end
 
-    local function finish_quest_daggers()
-
+    local function finish_quest_daggers(ch)
+        local inventory_check = chr_inv_count(ch, true, true, "Cellar Key")
+        if inventory_check < 1 then
+            say("I see you have chosen the path of righteousness!")
+        elseif inventory_check >= 1 then
         say("Ah Ha! You have brought back the key. I never doubted "
             .. "your courage young Rebel. I feel like this is just the "
             .. "beginning of our endeavors. Here are some blades "
@@ -84,7 +87,7 @@ local function rebel_talk(npc, ch)
         change_reputation(ch, "rebel_reputation", "Rebels", 20)
         change_reputation(ch, "soldier_reputation", "Army", -10)
         chr_set_quest(ch, "rebelphilip_daggers", "finished")
-
+        end
     end
 
     local function start_quest_mole()
@@ -133,26 +136,51 @@ local function rebel_talk(npc, ch)
 
     end
 
+    local function finish_quest_mole(ch)
+
+        local inventory_check = chr_inv_count(ch, true, true,
+            "Councellor Letter")
+        if inventory_check < 1 then
+            say("I see you have chosen the path of righteousness!")
+        elseif inventory_check >= 1 then
+            say("You have brought back the councellor's letter... "
+                .. "What have you done!? I knew about this rendez-vous "
+                .. "and it was part of my plan! Do you think I would "
+                .. "only rely on this assistant chef?")
+            say("There are many who work for us and you are not ready "
+                .. "to know every spy we employ... Oh well, I'll have "
+                .. "to find a way and fix this. We need this letter to "
+                .. "be delivered, but you have done enough for now.")
+            --TODO: Next quest, Tristan asks player to smuggle food
+            -- into the inn (taxes werent paid).
+            -- say("Go talk to Tristan, he has some work for you. I have "
+            --     .. "to figure out how to fix this rendez-vous...")
+            chr_set_quest(ch, "rebelphilip_mole", "finished")
+        end
+    end
+
     local function rebelphilip_quests()
         local quest_daggers = chr_get_quest(ch, "rebelphilip_daggers")
         local quest_mole = chr_get_quest(ch, "rebelphilip_mole")
 
         --debuging purpose
-        chr_set_quest(ch, "rebelphilip_daggers", "started")
-        --chr_set_quest(ch, "rebelphilip_mole", "step1")
+        --chr_set_quest(ch, "rebelphilip_daggers", "finished")
+        --chr_set_quest(ch, "rebelphilip_mole", "step2")
 
         if (quest_daggers ~= "started") and (quest_daggers ~= "finished") then
-            start_quest_daggers()
+            return start_quest_daggers()
 
         elseif quest_daggers == "started" then
-            local inventory_check = chr_inv_count(ch, true, true, "Cellar Key")
-            if inventory_check < 1 then
-                say("I see you have chosen the path of righteousness!")
-            elseif inventory_check >= 1 then
-                return finish_quest_daggers()
-            end
+            return finish_quest_daggers(ch)
 
-        elseif (quest_mole == "step1") or (quest_mole == "step2") then
+        elseif quest_mole == "finished" then
+            say("I need to figure out a way to fix what you've done...")
+            --say("Talk to Tristan, he has some work for you.")
+
+        elseif (quest_mole == "step2") or (quest_mole == "step3") then
+            return finish_quest_mole(ch)
+
+        elseif quest_mole == "step1" then
             say("I see you've made first contact. The Inn will be a "
                 .. "secure place to talk. Please continue your mission, "
                 .. "it is of the utmost importance.")

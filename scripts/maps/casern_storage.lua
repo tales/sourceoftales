@@ -40,6 +40,7 @@ local function rebelphilip_daggers(being, id)
     local quest = chr_try_get_quest(being, "rebelphilip_daggers")
     if quest == "started" then
 
+        --TODO: Check if the soldier is already created using map variable
         if soldier_spawned == false then
 
             if #soldierpatrol.members == 0 then
