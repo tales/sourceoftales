@@ -85,7 +85,8 @@ atinit(function()
 
     -- RebelPhilip mole quest patrol
     local molequestpatrol = Soldier_patrol:new("Patrol_RebelPhilip_Quest",
-        1*TILESIZE, REPUTATION_RELUCTANT)
+                                               1 * TILESIZE,
+                                               REPUTATION_RELUCTANT)
     schedule_every(3, function () molequestpatrol:logic() end)
 
     local function respawn(patrol, mob, amount)

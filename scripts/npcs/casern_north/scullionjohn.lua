@@ -27,15 +27,16 @@ local function scullion_talk(npc, ch)
     local rebelphilip_mole = chr_get_quest(ch, "rebelphilip_mole")
 
     if (rebelphilip_mole == "started") then
-        say("Oh! It's you. What are you doing here! Are you nuts? "..
-            "You have to leave before the guards see you. You weren't "..
-            "followed I hope. Anyways, meet me at the Inn. We can talk "..
-            "safely there.")
+        say("Oh! It's you. What are you doing here! Are you nuts? "
+            .. "You have to leave before the guards see you. You weren't "
+            .. "followed I hope. Anyways, meet me at the Inn. We can talk "
+            .. "safely there.")
         chr_set_quest(ch, "rebelphilip_mole", "step1")
     elseif (rebelphilip_mole == "step1") then
         say("I already told you it wasn't safe to talk here. Go away!")
     else
-        say("Psh, don't distract me! I need to wash the carrots and peel the potatoes. Then I have to cut the mushrooms.")
+        say("Psh, don't distract me! I need to wash the carrots and peel the "
+            .. "potatoes. Then I have to cut the mushrooms.")
         say("Chef Odo will get angry if I'm not fast enough!")
     end
 end

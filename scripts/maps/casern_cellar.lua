@@ -28,7 +28,7 @@ atinit(function()
 -- Soldier patrols
 
     local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 10 * TILESIZE,
-        REPUTATION_RELUCTANT)
+                                             REPUTATION_RELUCTANT)
 
     schedule_every(1, function() soldierpatrol:logic() end)
 
