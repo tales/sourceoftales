@@ -30,10 +30,13 @@ local function rebel_talk(npc, ch)
     local reputation = read_reputation(ch, "rebel_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("Henry is really inspiring. I was frustrated with the situation since a long while, but now Henry finally "..
-            "shows me a way to do something against the unjustice of the king and his followers.")
+        say("Henry is really inspiring. I was frustrated with the situation "
+            .. "since a long while, but now Henry finally shows me a way to "
+            .. "do something against the unjustice of the king and his "
+            .. "followers.")
     elseif reputation > REPUTATION_RELUCTANT then
-        say("You worked against us. Talk to Innkeeper Norman to settle this conflict.")
+        say("You worked against us. Talk to Innkeeper Norman to settle "
+            .. "this conflict.")
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
