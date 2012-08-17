@@ -191,9 +191,9 @@ local function priestess_talk(npc, ch)
         local res = npc_choice(npc, ch, choices)
 
         if res == 1 then
-            legends()
+            return legends()
         elseif res == 2 then
-            start_quest()
+            return start_quest()
         end
     end
 

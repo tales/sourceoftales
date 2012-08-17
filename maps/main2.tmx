@@ -10,7 +10,7 @@
   <image source="../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="house" tilewidth="32" tileheight="32">
-  <image source="../tiles/house.png" trans="ff00ff" width="352" height="500"/>
+  <image source="../tiles/house.png" width="352" height="500"/>
  </tileset>
  <tileset firstgid="182" name="signs" tilewidth="32" tileheight="32">
   <image source="../tiles/signs.png" trans="ff00ff" width="96" height="64"/>
@@ -19,7 +19,7 @@
   <image source="../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
  </tileset>
  <tileset firstgid="588" name="bridges" tilewidth="32" tileheight="32">
-  <image source="../tiles/bridges.png" trans="ff00ff" width="192" height="224"/>
+  <image source="../tiles/bridges.png" trans="000000" width="192" height="224"/>
  </tileset>
  <tileset firstgid="630" name="barrel" tilewidth="32" tileheight="64">
   <image source="../tiles/barrel.png" trans="ff00ff" width="128" height="64"/>
@@ -62,7 +62,7 @@
   <image source="../tiles/signpost_shadow.png" width="256" height="256"/>
  </tileset>
  <tileset firstgid="1970" name="trunk" tilewidth="96" tileheight="96">
-  <image source="../tiles/trunk.png" trans="ff00ff" width="192" height="96"/>
+  <image source="../tiles/trunk.png" trans="000000" width="192" height="96"/>
  </tileset>
  <tileset firstgid="1972" name="treetop" tilewidth="96" tileheight="96">
   <image source="../tiles/treetop.png" width="192" height="224"/>

@@ -72,22 +72,34 @@ atinit(function()
     require "scripts/npcs/village/thea"
 
     -- Rebel patrols
-    local rebelpatrol1 = Rebel_patrol:new("Patrol1_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    local rebelpatrol2 = Rebel_patrol:new("Patrol2_Rebels", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local rebelpatrol1 = Rebel_patrol:new("Patrol1_Rebels", 10 * TILESIZE,
+                                          REPUTATION_RELUCTANT)
+    local rebelpatrol2 = Rebel_patrol:new("Patrol2_Rebels", 10 * TILESIZE,
+                                          REPUTATION_RELUCTANT)
     schedule_every(1, function() rebelpatrol1:logic() end)
     schedule_every(2, function() rebelpatrol2:logic() end)
 
     -- Soldier patrols
-    local soldierpatrol1 = Soldier_patrol:new("Patrol1_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
-    local soldierpatrol2 = Soldier_patrol:new("Patrol2_Soldiers", 10 * TILESIZE, REPUTATION_RELUCTANT)
+    local soldierpatrol1 = Soldier_patrol:new("Patrol1_Soldiers", 10 * TILESIZE,
+                                              REPUTATION_RELUCTANT)
+    local soldierpatrol2 = Soldier_patrol:new("Patrol2_Soldiers", 10 * TILESIZE,
+                                              REPUTATION_RELUCTANT)
     schedule_every(1, function() soldierpatrol1:logic() end)
     schedule_every(2, function() soldierpatrol2:logic() end)
 
     -- RebelPhilip mole quest patrol
     local molequestpatrol = Soldier_patrol:new("Patrol_RebelPhilip_Quest",
-                                               1 * TILESIZE,
+                                               2 * TILESIZE,
                                                REPUTATION_RELUCTANT)
     schedule_every(3, function () molequestpatrol:logic() end)
+
+    local function messenger_die()
+        map["village_mole_soldier_messenger"] = "0"
+    end
+
+    local function soldier_die()
+        map["village_mole_soldier"] = "0"
+    end
 
     local function respawn(patrol, mob, amount)
         local x = patrol.path[patrol.position_index].x
@@ -95,6 +107,22 @@ atinit(function()
         for i=1, amount do
             patrol:assign_being(monster_create(mob, x, y))
         end
+    end
+
+    local function spawn_messenger(patrol, mob)
+        local x = patrol.path[patrol.position_index].x
+        local y = patrol.path[patrol.position_index].y
+        local soldier_messenger = monster_create(mob, x, y)
+        on_death(soldier_messenger, messenger_die())
+        patrol:assign_being(soldier_messenger)
+    end
+
+    local function spawn_soldier(patrol, mob)
+        local x = patrol.path[patrol.position_index].x
+        local y = patrol.path[patrol.position_index].y
+        local quest_soldier = monster_create(mob, x, y)
+        on_death(quest_soldier, soldier_die())
+        patrol:assign_being(quest_soldier)
     end
 
     schedule_every(60, function()
@@ -121,18 +149,20 @@ atinit(function()
         local quest = chr_try_get_quest(being, "rebelphilip_mole")
         --WARN(quest)
         if quest == "step2" then
-            if #molequestpatrol.members == 0 then
-                respawn(molequestpatrol, "Soldier Messenger", 1)
-                respawn(molequestpatrol, "Soldier", 1)
-                chr_try_set_quest(being, "rebelphilip_mole", "step3")
-            elseif #molequestpatrol.members == 1 then
-                for i,monster in ipairs(molequestpatrol.members) do
-                    local id = monster_get_id(monster)
-                    if id == 4 then
-                        return respawn(molequestpatrol, "Soldier Messenger", 1)
-                    end
-                end
+            chr_try_set_quest(being, "rebelphilip_mole", "step3")
 
+            if map["village_mole_soldier_messenger"] == "0"
+               or map["village_mole_soldier_messenger"] == ""
+            then
+                map["village_mole_soldier_messenger"] = "1"
+                spawn_messenger(molequestpatrol, "Soldier Messenger")
+            end
+
+            if map["village_mole_soldier"] == "0"
+               or map["village_mole_soldier"] == ""
+            then
+                map["village_mole_soldier"] = "1"
+                spawn_soldier(molequestpatrol, "Soldier")
             end
         end
     end

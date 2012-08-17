@@ -19,17 +19,23 @@
 
 --]]
 
-local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE,
-    REPUTATION_RELUCTANT)
-schedule_every(1, function() soldierpatrol:logic() end)
+local soldier_guy_patrol = Soldier_patrol:new("SoldierPatrol", 4 * TILESIZE,
+                                              REPUTATION_RELUCTANT)
+schedule_every(1, function() soldier_guy_patrol:logic() end)
+local key_spawned = false
 local soldier_spawned = false
 
-local function spawn(patrol, mob, amount)
+local function die()
+    map["storage_daggers_soldier_guy"] = "0"
+end
+
+local function spawn(patrol, mob)
     local x = patrol.path[patrol.position_index].x
     local y = patrol.path[patrol.position_index].y
-    for i=1, amount do
-        patrol:assign_being(monster_create(mob, x, y))
-    end
+    local soldier_guy = monster_create(mob, x, y)
+    on_death(soldier_guy, die())
+    patrol:assign_being(soldier_guy)
+
 end
 
 local function rebelphilip_daggers(being, id)
@@ -39,15 +45,24 @@ local function rebelphilip_daggers(being, id)
 
     local quest = chr_try_get_quest(being, "rebelphilip_daggers")
     if quest == "started" then
+        if key_spawned == false then
+            item_drop(80, 144, "Cellar Key")
+            key_spawned = true
+        end
 
-        --TODO: Check if the soldier is already created using map variable
-        if soldier_spawned == false then
+        if (map["storage_daggers_soldier_guy"] == "0"
+            or map["storage_daggers_soldier_guy"] == "")
+           and soldier_spawned == false
+        then
+            map["storage_daggers_soldier_guy"] = "1"
+            soldier_spawned = true
+            spawn(soldier_guy_patrol, "Soldier")
 
-            if #soldierpatrol.members == 0 then
-                spawn(soldierpatrol, "Soldier Messenger", 1)
-                soldier_spawned = true
-                item_drop(80, 144, "Cellar Key")
-            end
+        elseif map["storage_daggers_soldier_guy"] == "1" then
+            spawn(soldier_guy_patrol, "Soldier")
+
+        --elseif soldier_spawned == true and map["storage_daggers_soldier_guy"] == "0" then
+            --return
         end
     end
 end

@@ -32,24 +32,16 @@ local function rebelphilip_mole(being,id)
     local quest_mole = chr_try_get_quest(being, "rebelphilip_mole")
     local scullion_created = map["scullion_created"]
 
-    if map["scullion_created"] == "" then
-        map["scullion_created"] = 0
-    end
-
+    --debug
     WARN(map["scullion_created"])
-    if (quest_mole == "step1") and (tonumber(map["scullion_created"]) < 1)
+
+    if quest_mole == "step1"
+       and (map["scullion_created"] == "0" or map["scullion_created"] == "")
     then
-        map["scullion_created"] = tonumber(map["scullion_created"]) + 1
+        map["scullion_created"] = "1"
         WARN(map["scullion_created"])
         create_scullion()
-
-
     end
-
-    --debug
-    -- elseif (quest_mole == "step2") and (#scullion_patrol.members < 1) then
-    -- create_scullion()
-    -- end
 end
 
 atinit(function()
