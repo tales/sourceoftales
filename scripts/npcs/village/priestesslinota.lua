@@ -134,122 +134,6 @@ local function priestess_talk(npc, ch)
         end
     end
 
-    local function start_quest()
-        say("Magic is a blessing from our gods. As a priestess, I "
-            .. "could asks the gods to recognize you and "
-            .. "aid you with their powers.")
-        say("But this shouldn't be done frivolously, so I won't do "
-            .. "that until I know you're worthy this blessing.")
-        local choices = {
-            "How can I prove that I'm worthy?",
-            "Nevermind then."
-        }
-        local res = npc_choice(npc, ch, choices)
-        if res == 1 then
-            say("There's something important I need to find out, but "
-                .. "I shouldn't leave the shrine unless there's "
-                .. "an emergency. You could prove yourself by going "
-                .. "instead. But I warn you, it could be dangerous.")
-            say("If this doesn't discourage you, I'll explain you "
-                .. "the issue.")
-            local choices = {
-                "I'm not afraid!",
-                "Dangerous? I changed my mind."
-            }
-            local res = npc_choice(npc, ch, choices)
-            if res == 1 then
-                say("Very well. I heard alarming rumors about ... "
-                    .. "walking skeletons in the caves north of here. "
-                    .. "This sounds indeed very strange, but there are "
-                    .. "old records which tell about a similiar thing "
-                    .. "happening a long time ago.")
-                say("I need to know if these rumors are true.")
-                say("Please investigate the northern caves and find "
-                    .. "out if there really are walking skeletons. "
-                    .. "You can find an entrance north west of the "
-                    .. "casern. And be careful.")
-                chr_set_quest(ch, "goldenfields_shrine", "started")
-                return priestess_talk(npc, ch)
-            elseif res == 2 then
-                return priestess_talk(npc, ch)
-            end
-        elseif res == 2 then
-            return priestess_talk(npc, ch)
-        end
-    end
-
-    local function initial_talk()
-
-        say("Welcome to the Goldenfields shrine. Do you seek the gods?")
-
-        local choices = {
-            "Yes, please tell me about them.",
-            "I'd like to learn magic.",
-            "I have to go."
-        }
-
-        local res = npc_choice(npc, ch, choices)
-
-        if res == 1 then
-            legends()
-        elseif res == 2 then
-            start_quest()
-        end
-    end
-
-    local function get_magic()
-        say("Welcome back. Did you see any skeletons?")
-        local choices = {
-            "Yes! In the caves! They attacked me!",
-            "The rumors were true, I found skeletons in "
-            .. "the cave."
-        }
-        local res = npc_choice(npc, ch, choices)
-        if res == 1 then
-            say("I thank the gods you're save! It was irresponsible from "
-                .. "me to send you there without proper protection.")
-        end
-        say("Oh, this are terrible news you're bringing. Listen, this "
-            .. "means someone found a way to prevent the soul's power to be "
-            .. "taken by The Third God. This is a sacrilege against the gods!")
-        say("As I said, there are records about a similiar thing happening "
-            .. "a long while ago... ah, if I'd only remember what exactly "
-            .. "it said. I read about it during my apprenticeship for "
-            .. "priesthood.")
-        say("I think you showed that you're worth the gods blessing, so "
-            .. "I'm going to teach you how to use some of the "
-            .. "powers they can grant us. Which god do you feel closest to?")
-        local choices = {
-            "Ignis, the god of flames and warriors!",
-            "Aquaria, the goddess of water and healing.",
-            "The Third God, dedicated to death and earth."
-        }
-        local res = npc_choice(npc, ch, choices)
-        chr_set_quest(ch, "goldenfields_shrine", "getartifact")
-        if res == 1 then
-            chr_give_special(ch, "Magic_Lightning")
-            chr_set_quest(ch, "magic", "fire")
-            say("Now you can ask Ignis to strike your enemy with lightning.")
-        elseif res == 2 then
-            chr_give_special(ch, "Magic_Heal")
-            chr_set_quest(ch, "magic", "water")
-            say("You now have the ability to heal your wounds with the "
-                .. "aid of Aquaria.")
-        else
-            chr_give_special(ch, "Magic_Snake Bite")
-            chr_set_quest(ch, "magic", "earth")
-            say("Now you can call The Third God's servants to bite your "
-                .. "enemy.")
-        end
-
-        explain_specials()
-        say("I see you're a brave warrior. Can I ask you to help me "
-            .. "once again, and explore the caves for some hint "
-            .. "that could help us to figure out what's behind this? It "
-            .. "could be some kind of artifact, something related to earth.")
-        say("It might be dangerous, but the spell I taught you should "
-            .. "help you to protect yourself.")
-    end
 
     local function get_followUp()
         say("For the sake of the worlds balance, please explore where "
@@ -302,6 +186,138 @@ local function priestess_talk(npc, ch)
             elseif res == 2 then
                 return questions()
             end
+        end
+    end
+
+    local function get_magic()
+        local quest = chr_get_quest(ch, "goldenfields_shrine")
+        -- this is to check if the function was called from the main
+        -- talk function, or from get_quest because of the skeleton
+        -- killcount
+        if quest == "skeletonspotted" then
+            say("Welcome back. Did you see any skeletons?")
+            local choices = {
+                "Yes! In the caves! They attacked me!",
+                "The rumors were true, I found skeletons in "
+                .. "the cave."
+            }
+            local res = npc_choice(npc, ch, choices)
+            if res == 1 then
+                say("I thank the gods you're save! It was irresponsible from "
+                    .. "me to send you there without proper protection.")
+            end
+        end
+        say("Oh, this are terrible news you're bringing. Listen, this "
+            .. "means someone found a way to prevent the soul's power to be "
+            .. "taken by The Third God. This is a sacrilege against the gods!")
+        say("As I said, there are records about a similiar thing happening "
+            .. "a long while ago... ah, if I'd only remember what exactly "
+            .. "it said. I read about it during my apprenticeship for "
+            .. "priesthood.")
+        say("I think you showed that you're worth the gods blessing, so "
+            .. "I'm going to teach you how to use some of the "
+            .. "powers they can grant us. Which god do you feel closest to?")
+        local choices = {
+            "Ignis, the god of flames and warriors!",
+            "Aquaria, the goddess of water and healing.",
+            "The Third God, dedicated to death and earth."
+        }
+        local res = npc_choice(npc, ch, choices)
+        chr_set_quest(ch, "goldenfields_shrine", "getartifact")
+        if res == 1 then
+            chr_give_special(ch, "Magic_Lightning")
+            chr_set_quest(ch, "magic", "fire")
+            say("Now you can ask Ignis to strike your enemy with lightning.")
+        elseif res == 2 then
+            chr_give_special(ch, "Magic_Heal")
+            chr_set_quest(ch, "magic", "water")
+            say("You now have the ability to heal your wounds with the "
+                .. "aid of Aquaria.")
+        else
+            chr_give_special(ch, "Magic_Snake Bite")
+            chr_set_quest(ch, "magic", "earth")
+            say("Now you can call The Third God's servants to bite your "
+                .. "enemy.")
+        end
+
+        explain_specials()
+        say("I see you're a brave warrior. Can I ask you to help me "
+            .. "once again, and explore the caves for some hint "
+            .. "that could help us to figure out what's behind this? It "
+            .. "could be some kind of artifact, something related to earth.")
+        say("It might be dangerous, but the spell I taught you should "
+            .. "help you to protect yourself.")
+    end
+
+    local function start_quest()
+        say("Magic is a blessing from our gods. As a priestess, I "
+            .. "could asks the gods to recognize you and "
+            .. "aid you with their powers.")
+        say("But this shouldn't be done frivolously, so I won't do "
+            .. "that until I know you're worthy this blessing.")
+        local choices = {
+            "How can I prove that I'm worthy?",
+            "Nevermind then."
+        }
+        local res = npc_choice(npc, ch, choices)
+        if res == 1 then
+            say("There's something important I need to find out, but "
+                .. "I shouldn't leave the shrine unless there's "
+                .. "an emergency. You could prove yourself by going "
+                .. "instead. But I warn you, it could be dangerous.")
+            say("If this doesn't discourage you, I'll explain you "
+                .. "the issue.")
+            local choices = {
+                "I'm not afraid!",
+                "Dangerous? I changed my mind."
+            }
+            local res = npc_choice(npc, ch, choices)
+            if res == 1 then
+                say("Very well. I heard alarming rumors about ... "
+                    .. "walking skeletons in the caves north of here. "
+                    .. "This sounds indeed very strange, but there are "
+                    .. "old records which tell about a similiar thing "
+                    .. "happening a long time ago.")
+                say("I need to know if these rumors are true.")
+                say("Please investigate the northern caves and find "
+                    .. "out if there really are walking skeletons. "
+                    .. "You can find an entrance north west of the "
+                    .. "casern. And be careful.")
+                chr_set_quest(ch, "goldenfields_shrine", "started")
+                local skeleton_killcount =
+                    chr_get_kill_count(ch, "Skeleton Mage")
+                    + chr_get_kill_count(ch, "Skeleton")
+                    + chr_get_kill_count(ch, "Skeleton Soldier")
+                if skeleton_killcount > 0 then
+                    local choices = {
+                        "I already visited the caves. "
+                        .. "The rumors are true."
+                    }
+                    local res = npc_choice(npc, ch, choices)
+                    return get_magic()
+                else
+                    return priestess_talk(npc, ch)
+                end
+            elseif res == 2 then
+                return priestess_talk(npc, ch)
+            end
+        elseif res == 2 then
+            return priestess_talk(npc, ch)
+        end
+    end
+
+    local function initial_talk()
+        say("Welcome to the Goldenfields shrine. Do you seek the gods?")
+        local choices = {
+            "Yes, please tell me about them.",
+            "I'd like to learn magic.",
+            "I have to go."
+        }
+        local res = npc_choice(npc, ch, choices)
+        if res == 1 then
+            legends()
+        elseif res == 2 then
+            start_quest()
         end
     end
 
