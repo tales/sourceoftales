@@ -22,11 +22,6 @@
 --]]
 
 atinit(function()
-    require "scripts/functions/npchelper"
-    require "scripts/functions/triggerhelper"
-    parse_npcs_from_map()
-    parse_triggers_from_map()
-
     require "scripts/functions/guardpatrol"
     require "scripts/functions/rebelpatrol"
     require "scripts/functions/soldierpatrol"

@@ -21,6 +21,9 @@
 
 --]]
 
+-- atinit override
+require "scripts/atinit"
+
 -- Project specific constants
 require "scripts/global_constants"
 
