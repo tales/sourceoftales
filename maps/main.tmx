@@ -351,7 +351,7 @@
   <object name="Oliver 11" type="WAYPOINT" x="3776" y="3776" width="32" height="32"/>
   <object name="Oliver 12" type="WAYPOINT" x="3840" y="3744" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Peter" width="200" height="200">
+ <objectgroup name="Waypoints Peter" width="200" height="200" visible="0">
   <object name="Peter 1" type="WAYPOINT" x="4704" y="3488" width="32" height="32"/>
   <object name="Peter 2" type="WAYPOINT" x="4576" y="3392" width="32" height="32"/>
   <object name="Peter 3" type="WAYPOINT" x="4704" y="3264" width="32" height="32"/>
@@ -365,7 +365,7 @@
   <object name="Peter 11" type="WAYPOINT" x="4800" y="3744" width="32" height="32"/>
   <object name="Peter 12" type="WAYPOINT" x="4864" y="3616" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Joseph" width="200" height="200">
+ <objectgroup name="Waypoints Joseph" width="200" height="200" visible="0">
   <object name="Joseph 1" type="WAYPOINT" x="4320" y="3264" width="32" height="32"/>
   <object name="Joseph 2" type="WAYPOINT" x="4384" y="3200" width="32" height="32"/>
   <object name="Joseph 3" type="WAYPOINT" x="4480" y="3264" width="32" height="32"/>
@@ -386,7 +386,7 @@
   <object name="Joseph 18" type="WAYPOINT" x="4320" y="3424" width="32" height="32"/>
   <object name="Joseph 19" type="WAYPOINT" x="4192" y="3232" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Martin" width="200" height="200">
+ <objectgroup name="Waypoints Martin" width="200" height="200" visible="0">
   <object name="Martin 1" type="WAYPOINT" x="2368" y="2496" width="32" height="32"/>
   <object name="Martin 2" type="WAYPOINT" x="2496" y="2592" width="32" height="32"/>
   <object name="Martin 3" type="WAYPOINT" x="2432" y="2560" width="32" height="32"/>
@@ -403,7 +403,7 @@
   <object name="Martin 14" type="WAYPOINT" x="2304" y="2560" width="32" height="32"/>
   <object name="Martin 15" type="WAYPOINT" x="2368" y="2560" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="NPCS" width="200" height="200">
+ <objectgroup name="NPCS" width="200" height="200" visible="0">
   <object name="Gilbert" type="NPC_POSITION" x="2112" y="2496" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
@@ -573,7 +573,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="200" height="200">
+ <objectgroup name="Spawns" width="200" height="200" visible="0">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1120" width="448" height="288">
    <properties>
     <property name="max_beings" value="4"/>
@@ -772,122 +772,122 @@
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
-    <property name="DEST_X" value="112"/>
-    <property name="DEST_Y" value="368"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House1" type="WARP" x="4384" y="1696" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house1"/>
-    <property name="DEST_X" value="240"/>
-    <property name="DEST_Y" value="336"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House2" type="WARP" x="4736" y="1952" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house2"/>
-    <property name="DEST_X" value="144"/>
-    <property name="DEST_Y" value="336"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to Pub" type="WARP" x="3776" y="2336" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="pub"/>
-    <property name="DEST_X" value="336"/>
-    <property name="DEST_Y" value="272"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="Warp to casern interiour" type="WARP" x="2272" y="1024" width="64" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_north"/>
-    <property name="DEST_X" value="1456"/>
-    <property name="DEST_Y" value="496"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="mountain ladder down" type="WARP" x="4896" y="352" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="4912"/>
-    <property name="DEST_Y" value="464"/>
+    <property name="DEST_NAME" value="Exit mountainladder2"/>
    </properties>
   </object>
   <object name="mountain ladder up" type="WARP" x="4896" y="416" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="4912"/>
-    <property name="DEST_Y" value="336"/>
+    <property name="DEST_NAME" value="Exit mountainladder1"/>
    </properties>
   </object>
   <object name="to House3" type="WARP" x="4864" y="2624" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house3"/>
-    <property name="DEST_X" value="112"/>
-    <property name="DEST_Y" value="208"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House4" type="WARP" x="2976" y="2464" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house4"/>
-    <property name="DEST_X" value="80"/>
-    <property name="DEST_Y" value="240"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
-  <object name="to House5" type="WARP" x="4832" y="3328" width="32" height="32">
+  <object name="to House5 1" type="WARP" x="4832" y="3328" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house5"/>
-    <property name="DEST_X" value="80"/>
-    <property name="DEST_Y" value="208"/>
+    <property name="DEST_NAME" value="Exit1 main"/>
    </properties>
   </object>
-  <object name="to House5" type="WARP" x="5056" y="3616" width="32" height="32">
+  <object name="to House5 2" type="WARP" x="5056" y="3616" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house5"/>
-    <property name="DEST_X" value="304"/>
-    <property name="DEST_Y" value="496"/>
+    <property name="DEST_NAME" value="Exit2 main"/>
    </properties>
   </object>
   <object name="to House6" type="WARP" x="3904" y="992" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house6"/>
-    <property name="DEST_X" value="80"/>
-    <property name="DEST_Y" value="208"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House7" type="WARP" x="4608" y="3968" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house7"/>
-    <property name="DEST_X" value="304"/>
-    <property name="DEST_Y" value="240"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House8" type="WARP" x="3808" y="3712" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house8"/>
-    <property name="DEST_X" value="240"/>
-    <property name="DEST_Y" value="400"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House9" type="WARP" x="3168" y="3264" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="house9"/>
-    <property name="DEST_X" value="336"/>
-    <property name="DEST_Y" value="464"/>
+    <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
-  <object name="Warp to cave" type="WARP" x="1312" y="160" width="64" height="32">
+  <object name="Warp to cave2" type="WARP" x="1312" y="160" width="64" height="32">
    <properties>
     <property name="DEST_MAP" value="cave"/>
-    <property name="DEST_X" value="2032"/>
-    <property name="DEST_Y" value="656"/>
+    <property name="DEST_NAME" value="Exit2 main"/>
    </properties>
   </object>
-  <object name="Warp to cave" type="WARP" x="576" y="32" width="64" height="32">
+  <object name="Warp to cave1" type="WARP" x="576" y="32" width="64" height="32">
    <properties>
     <property name="DEST_MAP" value="cave"/>
-    <property name="DEST_X" value="176"/>
-    <property name="DEST_Y" value="1808"/>
+    <property name="DEST_NAME" value="Exit1 main"/>
    </properties>
   </object>
+  <object name="Exit inn" type="WARP_DEST" x="3776" y="2368" width="32" height="32"/>
+  <object name="Exit house9" type="WARP_DEST" x="3168" y="3296" width="32" height="32"/>
+  <object name="Exit house8" type="WARP_DEST" x="3808" y="3744" width="32" height="32"/>
+  <object name="Exit house1" type="WARP_DEST" x="4384" y="1728" width="32" height="32"/>
+  <object name="Exit house2" type="WARP_DEST" x="4736" y="1984" width="32" height="32"/>
+  <object name="Exit house3" type="WARP_DEST" x="4864" y="2656" width="32" height="32"/>
+  <object name="Exit house4" type="WARP_DEST" x="2976" y="2496" width="32" height="32"/>
+  <object name="Exit1 house5" type="WARP_DEST" x="4832" y="3360" width="32" height="32"/>
+  <object name="Exit2 house5" type="WARP_DEST" x="5056" y="3648" width="32" height="32"/>
+  <object name="Exit house6" type="WARP_DEST" x="3904" y="1024" width="32" height="32"/>
+  <object name="Exit house7" type="WARP_DEST" x="4608" y="4000" width="32" height="32"/>
+  <object name="Exit mountainladder1" type="WARP_DEST" x="4896" y="320" width="32" height="32"/>
+  <object name="Exit mountainladder2" type="WARP_DEST" x="4896" y="448" width="32" height="32"/>
+  <object name="Exit storage" type="WARP_DEST" x="2720" y="1504" width="32" height="32"/>
+  <object name="Exit casern" type="WARP_DEST" x="2272" y="1056" width="64" height="32"/>
+  <object name="Exit1 cave" type="WARP_DEST" x="576" y="64" width="64" height="32"/>
+  <object name="Exit2 cave" type="WARP_DEST" x="1312" y="192" width="64" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="200" height="200">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">
@@ -899,7 +899,7 @@
  <objectgroup name="Bees" width="200" height="200">
   <object name="Bee trigger" type="TRIGGER" x="2592" y="3488" width="608" height="384"/>
  </objectgroup>
- <objectgroup name="Waypoints Millicent" width="200" height="200">
+ <objectgroup name="Waypoints Millicent" width="200" height="200" visible="0">
   <object name="Millicent 1" type="WAYPOINT" x="3859" y="1030" width="32" height="32"/>
   <object name="Millicent 2" type="WAYPOINT" x="3932" y="1031" width="32" height="32"/>
   <object name="Millicent 3" type="WAYPOINT" x="3796" y="1052" width="32" height="32"/>
@@ -914,7 +914,7 @@
   <object name="Millicent 12" type="WAYPOINT" x="3821" y="990" width="32" height="32"/>
   <object name="Millicent 13" type="WAYPOINT" x="3741" y="958" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Damien" width="200" height="200">
+ <objectgroup name="Waypoints Rebel Damien" width="200" height="200" visible="0">
   <object name="Rebel Damien 1" type="WAYPOINT" x="472" y="3655" width="32" height="32"/>
   <object name="Rebel Damien 2" type="WAYPOINT" x="435" y="3567" width="32" height="32"/>
   <object name="Rebel Damien 3" type="WAYPOINT" x="323" y="3597" width="32" height="32"/>
@@ -926,7 +926,7 @@
   <object name="Rebel Damien 9" type="WAYPOINT" x="401" y="3602" width="32" height="32"/>
   <object name="Rebel Damien 10" type="WAYPOINT" x="423" y="3638" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Henry" width="200" height="200">
+ <objectgroup name="Waypoints Rebel Henry" width="200" height="200" visible="0">
   <object name="Rebel Henry 1" type="WAYPOINT" x="302" y="2761" width="32" height="32"/>
   <object name="Rebel Henry 2" type="WAYPOINT" x="292" y="2692" width="32" height="32"/>
   <object name="Rebel Henry 3" type="WAYPOINT" x="402" y="2691" width="32" height="32"/>
@@ -938,7 +938,7 @@
   <object name="Rebel Henry 9" type="WAYPOINT" x="320" y="2733" width="32" height="32"/>
   <object name="Rebel Henry 10" type="WAYPOINT" x="395" y="2739" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Tristan" width="200" height="200">
+ <objectgroup name="Waypoints Tristan" width="200" height="200" visible="0">
   <object name="Rebel Tristan 1" type="WAYPOINT" x="385" y="2550" width="32" height="32"/>
   <object name="Rebel Tristan 2" type="WAYPOINT" x="384" y="2464" width="32" height="32"/>
   <object name="Rebel Tristan 3" type="WAYPOINT" x="250" y="2424" width="32" height="32"/>
@@ -953,7 +953,7 @@
   <object name="Rebel Tristan 12" type="WAYPOINT" x="386" y="2435" width="32" height="32"/>
   <object name="Rebel Tristan 13" type="WAYPOINT" x="301" y="2505" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Philip" width="200" height="200">
+ <objectgroup name="Waypoints Philip" width="200" height="200" visible="0">
   <object name="Rebel Philip 1" type="WAYPOINT" x="385" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 2" type="WAYPOINT" x="386" y="2310" width="32" height="32"/>
   <object name="Rebel Philip 3" type="WAYPOINT" x="275" y="2277" width="32" height="32"/>
@@ -961,7 +961,7 @@
   <object name="Rebel Philip 5" type="WAYPOINT" x="297" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 6" type="WAYPOINT" x="331" y="2318" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Thea" width="200" height="200">
+ <objectgroup name="Waypoints Thea" width="200" height="200" visible="0">
   <object name="Thea 1" type="WAYPOINT" x="4480" y="4032" width="32" height="32"/>
   <object name="Thea 2" type="WAYPOINT" x="4800" y="4000" width="32" height="32"/>
   <object name="Thea 3" type="WAYPOINT" x="5024" y="3872" width="32" height="32"/>
@@ -992,7 +992,7 @@
   <object name="Thea 28" type="WAYPOINT" x="4288" y="4000" width="32" height="32"/>
   <object name="Thea 29" type="WAYPOINT" x="4448" y="4032" width="32" height="32"/>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol1_Rebels" width="200" height="200">
+ <objectgroup color="#755219" name="Patrol1_Rebels" width="200" height="200" visible="0">
   <object name="Patrol1_Rebels 2" type="WAYPOINT" x="288" y="2656" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1361,7 +1361,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol2_Rebels" width="200" height="200">
+ <objectgroup color="#755219" name="Patrol2_Rebels" width="200" height="200" visible="0">
   <object name="Patrol2_Rebels 1" type="WAYPOINT" x="312" y="2480" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1508,7 +1508,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="200" height="200">
+ <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="200" height="200" visible="0">
   <object name="Patrol1_Soldiers 1" type="WAYPOINT" x="2272" y="1248" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1985,7 +1985,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="200" height="200">
+ <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="200" height="200" visible="0">
   <object name="Patrol2_Soldiers_Spawn" type="COORDINATE" x="2112" y="1056" width="384" height="128"/>
   <object name="Patrol2_Soldiers 1" type="WAYPOINT" x="2400" y="1248" width="32" height="32">
    <properties>

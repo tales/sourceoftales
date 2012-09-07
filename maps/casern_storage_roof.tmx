@@ -20,36 +20,36 @@
   <image source="../tiles/victoria.png" width="352" height="192"/>
  </tileset>
  <tileset firstgid="573" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="480" height="288"/>
+  <image source="../tiles/mountains.png" width="416" height="288"/>
  </tileset>
- <tileset firstgid="708" name="shrine" tilewidth="32" tileheight="32">
+ <tileset firstgid="690" name="shrine" tilewidth="32" tileheight="32">
   <image source="../tiles/shrine.png" width="224" height="512"/>
  </tileset>
- <tileset firstgid="820" name="buckets" tilewidth="32" tileheight="32">
+ <tileset firstgid="802" name="buckets" tilewidth="32" tileheight="32">
   <image source="../tiles/buckets.png" width="96" height="64"/>
  </tileset>
- <tileset firstgid="826" name="cabinets" tilewidth="32" tileheight="32">
+ <tileset firstgid="808" name="cabinets" tilewidth="32" tileheight="32">
   <image source="../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
- <tileset firstgid="904" name="shadow" tilewidth="32" tileheight="32">
+ <tileset firstgid="886" name="shadow" tilewidth="32" tileheight="32">
   <image source="../tiles/shadow.png" width="160" height="64"/>
  </tileset>
- <tileset firstgid="914" name="chests" tilewidth="32" tileheight="32">
+ <tileset firstgid="896" name="chests" tilewidth="32" tileheight="32">
   <image source="../tiles/chests.png" width="64" height="96"/>
  </tileset>
  <layer name="Ground" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJw7wMTAcGCAsDYDYYyujhS92MwabHopCSt66CUXAwD1e0q/
+   eJzbwMTAsGGAsDYDYYyujhS92MwabHopCSt66CUXAwAAcEV/
   </data>
  </layer>
  <layer name="Ground" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYKA9aGKC0P7MDAwBzAjxSUA8GYh/MjIw/ALiScyYeidC9YYC5cKQ5JcB8XIi7Y8G6ovBYjYyuEakWdjAKyLV/Qf6kYGJPDu4gPq4ydQrCtQnRqZecgEAdYULMQ==
+   eJxjYKA9qGKC0LbMDAx2zAjxSUA8GYh/MjIw/ALiBmZMve1Qvc5AORck+WVAvJxI+z2B+rywmI0MrhFpFjbwikh1/4F+ZGAizw4uoD5uMvWKAvWJkamXXAAAfuYKoQ==
   </data>
  </layer>
  <layer name="Ground" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBjcQB6H+HYktjkzaWaeBuIzaGLTSTOCbMDPSJ4+bSbquoPWAADjKgN8
+   eJxjYBjcQB6H+HYktiozaWaeBuIzaGLTSTOCbMDPSJ4+bSbquoPWAADGwgNq
   </data>
  </layer>
  <layer name="Fringe" width="15" height="10">
@@ -59,7 +59,7 @@
  </layer>
  <layer name="Shadows" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJzrYWZg6BnFo5jKGADeoFPL
+   eJyrYmZgqBrFo5jKGABsxEk/
   </data>
  </layer>
  <layer name="Collision" width="15" height="10">
@@ -71,9 +71,9 @@
   <object name="Warp down" type="WARP" x="320" y="64" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage"/>
-    <property name="DEST_X" value="336"/>
-    <property name="DEST_Y" value="144"/>
+    <property name="DEST_NAME" value="Exit 2nd level"/>
    </properties>
   </object>
+  <object name="Exit 1st level" type="WARP_DEST" x="288" y="64" width="32" height="32"/>
  </objectgroup>
 </map>

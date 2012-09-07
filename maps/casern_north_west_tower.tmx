@@ -95,9 +95,9 @@
   <object name="back to castle" type="WARP" x="64" y="160" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_north"/>
-    <property name="DEST_X" value="304"/>
-    <property name="DEST_Y" value="208"/>
+    <property name="DEST_NAME" value="Exit west tower"/>
    </properties>
   </object>
+  <object name="Exit 1st level" type="WARP_DEST" x="96" y="192" width="32" height="32"/>
  </objectgroup>
 </map>

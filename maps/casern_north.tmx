@@ -155,38 +155,38 @@
   <object name="To outside" type="WARP" x="1408" y="512" width="96" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="2288"/>
-    <property name="DEST_Y" value="1072"/>
+    <property name="DEST_NAME" value="Exit casern"/>
    </properties>
   </object>
   <object name="stairs right" type="WARP" x="1568" y="160" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_north_2nd_floor"/>
-    <property name="DEST_X" value="1104"/>
-    <property name="DEST_Y" value="176"/>
+    <property name="DEST_NAME" value="Exit2 1st level"/>
    </properties>
   </object>
   <object name="stairs left" type="WARP" x="1312" y="160" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_north_2nd_floor"/>
-    <property name="DEST_X" value="656"/>
-    <property name="DEST_Y" value="176"/>
+    <property name="DEST_NAME" value="Exit1 1st level"/>
    </properties>
   </object>
   <object name="to cellar" type="WARP" x="1856" y="512" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_cellar"/>
-    <property name="DEST_X" value="368"/>
-    <property name="DEST_Y" value="144"/>
+    <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
   <object name="stairs tower" type="WARP" x="256" y="192" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_north_west_tower"/>
-    <property name="DEST_X" value="112"/>
-    <property name="DEST_Y" value="176"/>
+    <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
+  <object name="Exit main" type="WARP_DEST" x="1440" y="480" width="32" height="32"/>
+  <object name="Exit2 2nd level" type="WARP_DEST" x="1536" y="160" width="32" height="32"/>
+  <object name="Exit1 2nd level" type="WARP_DEST" x="1344" y="160" width="32" height="32"/>
+  <object name="Exit cellar" type="WARP_DEST" x="1824" y="512" width="32" height="32"/>
+  <object name="Exit west tower" type="WARP_DEST" x="288" y="192" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Waypoints" width="89" height="68">
   <object name="Chef Odo 1" type="WAYPOINT" x="2560" y="256" width="32" height="32"/>

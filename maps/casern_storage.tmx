@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="14" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
@@ -91,16 +90,16 @@
   <object name="Warp outside" type="WARP" x="96" y="384" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="2736"/>
-    <property name="DEST_Y" value="1520"/>
+    <property name="DEST_NAME" value="Exit storage"/>
    </properties>
   </object>
   <object name="Warp up" type="WARP" x="352" y="96" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="casern_storage_roof"/>
-    <property name="DEST_X" value="304"/>
-    <property name="DEST_Y" value="80"/>
+    <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
+  <object name="Exit main" type="WARP_DEST" x="96" y="352" width="32" height="32"/>
+  <object name="Exit 2nd level" type="WARP_DEST" x="320" y="128" width="32" height="32"/>
  </objectgroup>
 </map>
