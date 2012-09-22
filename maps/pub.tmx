@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="21" height="16" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="h_theme.ogg"/>
@@ -118,10 +117,10 @@
   <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="main"/>
-    <property name="DEST_X" value="3792"/>
-    <property name="DEST_Y" value="2384"/>
+    <property name="DEST_NAME" value="Exit inn"/>
    </properties>
   </object>
+  <object name="Exit main" type="WARP_DEST" x="320" y="256" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Waypoints Borin" width="21" height="16">
   <object name="Borin 1" type="WAYPOINT" x="512" y="96" width="32" height="32"/>
