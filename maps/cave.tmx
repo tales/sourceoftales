@@ -518,9 +518,9 @@
    </properties>
   </object>
   <object name="Shrinequest Skeleton Spawn East" type="COORDINATE" x="2016" y="448" width="32" height="32"/>
-  <object name="Exit bosscave" type="WARP_DEST" x="1632" y="3040" width="32" height="32"/>
-  <object name="Exit2 main" type="WARP_DEST" x="2016" y="640" width="32" height="32"/>
-  <object name="Exit1 main" type="WARP_DEST" x="160" y="1792" width="32" height="32"/>
+  <object name="Exit bosscave" type="WARP" x="1632" y="3040" width="32" height="32"/>
+  <object name="Exit2 main" type="WARP" x="2016" y="640" width="32" height="32"/>
+  <object name="Exit1 main" type="WARP" x="160" y="1792" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Traps" width="101" height="100" visible="0">
   <object name="trap" type="TRAP" x="1296" y="736" width="128" height="64">

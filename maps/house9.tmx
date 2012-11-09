@@ -95,7 +95,7 @@
     <property name="DEST_NAME" value="Exit house9"/>
    </properties>
   </object>
-  <object name="Exit main" type="WARP_DEST" x="320" y="448" width="32" height="32"/>
+  <object name="Exit main" type="WARP" x="320" y="448" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="NPCS" width="178" height="150">
   <object name="Magistrate Eustace" type="NPC_POSITION" x="384" y="352" width="32" height="32">

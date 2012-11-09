@@ -871,23 +871,23 @@
     <property name="DEST_NAME" value="Exit1 main"/>
    </properties>
   </object>
-  <object name="Exit inn" type="WARP_DEST" x="3776" y="2368" width="32" height="32"/>
-  <object name="Exit house9" type="WARP_DEST" x="3168" y="3296" width="32" height="32"/>
-  <object name="Exit house8" type="WARP_DEST" x="3808" y="3744" width="32" height="32"/>
-  <object name="Exit house1" type="WARP_DEST" x="4384" y="1728" width="32" height="32"/>
-  <object name="Exit house2" type="WARP_DEST" x="4736" y="1984" width="32" height="32"/>
-  <object name="Exit house3" type="WARP_DEST" x="4864" y="2656" width="32" height="32"/>
-  <object name="Exit house4" type="WARP_DEST" x="2976" y="2496" width="32" height="32"/>
-  <object name="Exit1 house5" type="WARP_DEST" x="4832" y="3360" width="32" height="32"/>
-  <object name="Exit2 house5" type="WARP_DEST" x="5056" y="3648" width="32" height="32"/>
-  <object name="Exit house6" type="WARP_DEST" x="3904" y="1024" width="32" height="32"/>
-  <object name="Exit house7" type="WARP_DEST" x="4608" y="4000" width="32" height="32"/>
-  <object name="Exit mountainladder1" type="WARP_DEST" x="4896" y="320" width="32" height="32"/>
-  <object name="Exit mountainladder2" type="WARP_DEST" x="4896" y="448" width="32" height="32"/>
-  <object name="Exit storage" type="WARP_DEST" x="2720" y="1504" width="32" height="32"/>
-  <object name="Exit casern" type="WARP_DEST" x="2272" y="1056" width="64" height="32"/>
-  <object name="Exit1 cave" type="WARP_DEST" x="576" y="64" width="64" height="32"/>
-  <object name="Exit2 cave" type="WARP_DEST" x="1312" y="192" width="64" height="32"/>
+  <object name="Exit inn" type="WARP" x="3776" y="2368" width="32" height="32"/>
+  <object name="Exit house9" type="WARP" x="3168" y="3296" width="32" height="32"/>
+  <object name="Exit house8" type="WARP" x="3808" y="3744" width="32" height="32"/>
+  <object name="Exit house1" type="WARP" x="4384" y="1728" width="32" height="32"/>
+  <object name="Exit house2" type="WARP" x="4736" y="1984" width="32" height="32"/>
+  <object name="Exit house3" type="WARP" x="4864" y="2656" width="32" height="32"/>
+  <object name="Exit house4" type="WARP" x="2976" y="2496" width="32" height="32"/>
+  <object name="Exit1 house5" type="WARP" x="4832" y="3360" width="32" height="32"/>
+  <object name="Exit2 house5" type="WARP" x="5056" y="3648" width="32" height="32"/>
+  <object name="Exit house6" type="WARP" x="3904" y="1024" width="32" height="32"/>
+  <object name="Exit house7" type="WARP" x="4608" y="4000" width="32" height="32"/>
+  <object name="Exit mountainladder1" type="WARP" x="4896" y="320" width="32" height="32"/>
+  <object name="Exit mountainladder2" type="WARP" x="4896" y="448" width="32" height="32"/>
+  <object name="Exit storage" type="WARP" x="2720" y="1504" width="32" height="32"/>
+  <object name="Exit casern" type="WARP" x="2272" y="1056" width="64" height="32"/>
+  <object name="Exit1 cave" type="WARP" x="576" y="64" width="64" height="32"/>
+  <object name="Exit2 cave" type="WARP" x="1312" y="192" width="64" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="200" height="200">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">

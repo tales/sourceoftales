@@ -74,6 +74,6 @@
     <property name="DEST_NAME" value="Exit 2nd level"/>
    </properties>
   </object>
-  <object name="Exit 1st level" type="WARP_DEST" x="288" y="64" width="32" height="32"/>
+  <object name="Exit 1st level" type="WARP" x="288" y="64" width="32" height="32"/>
  </objectgroup>
 </map>

@@ -95,7 +95,7 @@
     <property name="DEST_NAME" value="Exit house2"/>
    </properties>
   </object>
-  <object name="Exit main" type="WARP_DEST" x="128" y="320" width="32" height="32"/>
+  <object name="Exit main" type="WARP" x="128" y="320" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="NPCS" width="178" height="150">
   <object name="Widow Isabella" type="NPC_POSITION" x="192" y="192" width="32" height="32">

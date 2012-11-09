@@ -119,6 +119,6 @@
     <property name="DEST_NAME" value="Exit bosscave"/>
    </properties>
   </object>
-  <object name="Exit cave" type="WARP_DEST" x="672" y="96" width="32" height="32"/>
+  <object name="Exit cave" type="WARP" x="672" y="96" width="32" height="32"/>
  </objectgroup>
 </map>

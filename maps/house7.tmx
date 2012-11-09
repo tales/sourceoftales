@@ -87,6 +87,6 @@
     <property name="DEST_NAME" value="Exit house7"/>
    </properties>
   </object>
-  <object name="Exit main" type="WARP_DEST" x="288" y="224" width="32" height="32"/>
+  <object name="Exit main" type="WARP" x="288" y="224" width="32" height="32"/>
  </objectgroup>
 </map>

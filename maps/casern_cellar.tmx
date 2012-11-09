@@ -100,7 +100,7 @@
     <property name="DEST_NAME" value="Exit cellar"/>
    </properties>
   </object>
-  <object name="Exit 1st level" type="WARP_DEST" x="352" y="128" width="32" height="32"/>
+  <object name="Exit 1st level" type="WARP" x="352" y="128" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawns" width="198" height="150">
   <object name="beetle spawn" type="SPAWN" x="32" y="320" width="512" height="128">
