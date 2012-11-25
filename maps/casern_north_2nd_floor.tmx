@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="53" height="17" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
@@ -28,6 +29,9 @@
  <tileset firstgid="655" name="victoria" tilewidth="32" tileheight="32">
   <image source="../tiles/victoria.png" width="352" height="192"/>
  </tileset>
+ <tileset firstgid="721" name="fireplace" tilewidth="32" tileheight="32">
+  <image source="../tiles/fireplace.png" width="128" height="128"/>
+ </tileset>
  <layer name="Ground" width="53" height="17">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjBQQzUg8RgYaQL4xFqwFoplIxzBArloYSAHan0oCTkPylw2QbYsF26H5yRzItwBiSzx+RQbYxPABdPV5QHvyScAFZPjJEch3AmIDPH4bqn6CYWcq+ykFLf1Q4ieQvTB/EJMHfBghmNppLw/NXSB+JJq7Y0nwkzsjBJNTJpBbPmBLa8juqgCyq9DKM3xxh+4namFkM3GVp+jlKi4/oKfFweAnXPkUPb8i+wG5bG4F4kYS8thg9BMu96LnMWL8NApGwUAAAC/ObMI=
@@ -45,12 +49,12 @@
  </layer>
  <layer name="Decor" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJztlE0KwkAMhdOeoDevG/9BQVRQLEJx6yW6Etz0KM1AF3FIZiYyaovzQaC8pK95LVOAxNh4ZgDzHGDR1zJ/7ds9M6/10nhIPpLG0aK+Izn2Via71zr2kbw0HpKPpNmUqE+wKjJ7tTK5ehz2fJPpPTifmtmzZrxWqK0dzyg97zOERwQPw53Z02hmx4JoB9SOge9tyBSCvsFsW6ybJ6Ov/wukTCfc9TzAfUOQMsXiglX1102ks+Tj05kosf4PPr6Z6R3odw6FZtLcr5mdOs7lbKRnNpH4JzqhbkCo
+   eJztlN0KgkAQhUefwDe3m/6hICookkC67SW6ipLyUZoBL6ZlZn9CScsPBuTMepyziwvQ0zXuEcA4BphUNY3f+2aP1od6hXhoPpomUaK+YjnWRiazV1rm0bxCPDQfTTNJUR9gZWzt0chk60mY6y9RuIfkkwtz5oLXDLW55RupYz99uNbgQZyFOUmjGROmbVDbeu5bm0kUfYHZllgnR0ZX/xtomXY4676F8/qgZaqLA1ZWPdP9cKM7F6tocL+azsSh++GBWZ507/5Ipk/g5+wLzxTyfsjaoeVMRh39Z3t6/okXyvhF4g==
   </data>
  </layer>
  <layer name="Decor2" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2Bwg4WMlJuxiYlyM/ABYtyI7IblaOonAuUmkejGvWT4qR+oZwKR+tDdSMgNa9HUzwHKzaVxuIPALKAds4m0B92NpILlQHtW0MFPS4F2LKODPaNg+AJyyodRMLTBPGCcH4bi+QMU/8huoIZbVgL1noPiVQPkJ2Q3DLRbRsEooCUAAMTAHaY=
+   eJxjYBgFo2Bwg4WMlJuxiYlyM/ABYtyI7IblaOonAuUmkejGvWT4qR+oZwKR+tDdSMgNa9HUzwHKzaVxuIPALKAds4m0B92NpILlQHtW0MFPS4F2LKODPaNg+AJY3rw6mo5GDJgHjOvDUDx/gOId2Q3UcMtKoN5zULxqgPyE7IaBdssoGAW0BAD3WR59
   </data>
  </layer>
  <layer name="Decor3" width="53" height="17">
@@ -75,7 +79,7 @@
  </layer>
  <layer name="Over3" width="53" height="17">
   <data encoding="base64" compression="zlib">
-   eJztw7ENAAAIA6D6/+69zj6gCyQkAABc69oBvgzEPgJd
+   eJztzrENACAMwLDS/2dOA86BlQs61JayJwIAelsZsV8nq0/oZI4/gCoXnGoE6A==
   </data>
  </layer>
  <layer name="Collision" width="53" height="17" opacity="0.38">
