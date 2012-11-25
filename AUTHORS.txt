@@ -1338,3 +1338,4 @@ Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/shirt_walkcycle.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/tie_walkcycle.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/vest_walkcycle.png
+Lanea Zimmerman                    CC BY 3.0                   tiles/fireplace.png
