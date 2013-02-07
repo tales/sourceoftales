@@ -45,3 +45,5 @@ require "scripts/specials"
 -- Crafting
 require "scripts/crafting"
 
+-- Attributes
+require "scripts/attributes"
