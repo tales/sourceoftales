@@ -23,6 +23,14 @@ items.xml
 monsters.xml
 AUTHORS
 equipment/*
+
+
+
+
+
+head/leathercap_male_hurt.png
+head/leathercap_male.xml
+
 """
 
 import shutil
@@ -67,13 +75,14 @@ def movePNG_Johannes(fname):
     # sprites/equipment/walkcycle/HEAD_plate_armor_helmet.png
     # output example:
     # sprites/equipment/male/head/plate_armor_helmet/walkcycle.png
+    # sprites/equipment/head/plate_armor_helmet_male_walkcycle.png
     dirs = fname.split(r"/")
     animtype = dirs[2]
     basenames = dirs[-1].split("_")
     slot = basenames[0]
     itemname = "_".join(basenames[1:]).split('.')[0]
-    newdir = r"sprites/equipment/male/"+slot.lower()+r"/"+itemname+r"/"
-    newbasename = animtype+'.png'
+    newdir = r"sprites/equipment/"+slot.lower()+r"/"
+    newbasename = itemname+"_male_" + animtype+'.png'
     newpath = newdir + newbasename
 
     movePNG(fname, newdir, newbasename)
@@ -81,14 +90,13 @@ def movePNG_Johannes(fname):
 def movePNG_Luke(fname):
     # in sprites/equipment/spellcast/female_mage_blackbelt_spellcast.png
     # out sprites/equipment/female/belt/mage_blackbelt/spellcast.png
+    # out sprites/equipment/unknown/blackbelt_female_spellcast.png
     dirs = fname.split(r"/")
-    newbasename = dirs[2] + '.png'
     basenames = dirs[-1].split("_")
-    gender = basenames[0]
     itemname = "_".join(basenames[2:3]).lower()
-    slot="unknown"
+    newbasename = itemname + "_female_" + dirs[2] + '.png'
 
-    newbasedir = r"sprites/equipment/female/"+slot.lower()+r"/"+itemname+r"/"
+    newbasedir = r"sprites/equipment/unknown/"
     movePNG(fname, newbasedir, newbasename)
 
 namesJohannes = """sprites/equipment/bow/BELT_leather.png
