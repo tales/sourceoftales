@@ -77,9 +77,9 @@
     </monster>
     <monster id="3" name="Skeleton Mage" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
-        <sprite>equipment/HEAD_robe_hood.xml</sprite>
-        <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
-        <sprite>equipment/LEGS_robe_skirt.xml</sprite>
+        <sprite>equipment/head/leather_hood_male.xml</sprite>
+        <sprite>equipment/torso/brown_shirt_male.xml</sprite>
+        <sprite>equipment/legs/robe_skirt_male.xml</sprite>
         <attributes
             hp="120"
             size="4"
@@ -119,12 +119,12 @@
     </monster>
     <monster id="4" name="Soldier" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
-        <sprite>equipment/HEAD_chain_armor_helmet.xml</sprite>
-        <sprite>equipment/TORSO_chain_armor_torso.xml</sprite>
-        <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
-        <sprite>equipment/BELT_leather.xml</sprite>
-        <sprite>equipment/FEET_shoes_brown.xml</sprite>
-        <sprite>equipment/dagger.xml</sprite>
+        <sprite>equipment/head/kettle_hat_male.xml</sprite>
+        <sprite>equipment/torso/chain_armor_male.xml</sprite>
+        <sprite>equipment/legs/plate_trousers_male.xml</sprite>
+        <sprite>equipment/misc/leather_belt_male.xml</sprite>
+        <sprite>equipment/feet/brown_shoes_male.xml</sprite>
+        <sprite>equipment/hand/dagger_male.xml</sprite>
         <attributes
             hp="110"
             size="4"
@@ -201,8 +201,8 @@
     </monster>
     <monster id="6" name="Skeleton Soldier" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
-        <sprite>equipment/dagger.xml</sprite>
-        <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
+        <sprite>equipment/hand/dagger_male.xml</sprite>
+        <sprite>equipment/torso/plate_armor_male.xml</sprite>
         <attributes
             hp="200"
             size="4"
@@ -379,12 +379,12 @@
     </monster>
     <monster id="11" name="Rebel" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
-        <sprite>equipment/HEAD_robe_hood.xml</sprite>
-        <sprite>equipment/TORSO_leather_armor_torso.xml</sprite>
-        <sprite>equipment/LEGS_pants_greenish.xml</sprite>
-        <sprite>equipment/BELT_leather.xml</sprite>
-        <sprite>equipment/FEET_shoes_brown.xml</sprite>
-        <sprite>equipment/dagger.xml</sprite>
+        <sprite>equipment/head/leather_hood_male.xml</sprite>
+        <sprite>equipment/torso/leather_armor_male.xml</sprite>
+        <sprite>equipment/legs/light_blue_trousers_male.xml</sprite>
+        <sprite>equipment/misc/leather_belt_male.xml</sprite>
+        <sprite>equipment/feet/brown_shoes_male.xml</sprite>
+        <sprite>equipment/hand/dagger_male.xml</sprite>
         <attributes
             hp="220"
             size="4"

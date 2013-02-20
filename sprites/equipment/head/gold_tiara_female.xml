@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sprite name="player" action="stand">
+    <imageset
+        name="walkcycle"
+        src="sprites/equipment/head/gold_tiara_female_walkcycle.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="hurt"
+        src="sprites/equipment/head/gold_tiara_female_hurt.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="slash"
+        src="sprites/equipment/head/gold_tiara_female_slash.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="spellcast"
+        src="sprites/equipment/head/gold_tiara_female_spellcast.png"
+        width="64"
+        height="64"/>
+
+    <include file="full_base.xml"/>
+</sprite>
