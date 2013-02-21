@@ -163,7 +163,7 @@ local function innkeeper_talk(npc, ch)
             end
         else
             say("With your actions you caused quite some damage to our "
-                .. "organization. But we will forget about that id you pay "
+                .. "organization. But we will forget about that if you pay "
                 .. "recompensation.")
             local choices = {
                 "Ok, what do I have to pay?",

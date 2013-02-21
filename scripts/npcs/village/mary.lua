@@ -31,7 +31,7 @@ local function woman_talk(npc, ch)
         .. "his wife. She's called Lady Primeveire.")
     say("Alone that name shows that those people don't belong here. Snobbish "
         .. "townspeople, I tell you. They even have a maid with them, "..
-        "the lady seems to be to dignified to do homework...")
+        "the lady seems to be too dignified to do homework...")
     say("They came together with all these soldiers, and are supposed to "
         .. "help with 'adjustment of differences' and as "..
         "'official representants of our beloved King Richard'.")
