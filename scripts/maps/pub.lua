@@ -20,9 +20,6 @@
 --]]
 
 atinit(function()
-    require "scripts/functions/npchelper"
-    parse_npcs_from_map()
-
     require "scripts/functions/npcpatrol"
 
     require "scripts/npcs/pub/arbert"

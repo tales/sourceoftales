@@ -1,9 +1,9 @@
 --[[
 
-  A map for testing features. This map is not accessible in game
+  Provides override for the manaserv atinit function in order to load project
+  specific initialization stuff.
 
   Copyright (C) 2012 Erik Schilling
-  Copyright (C) 2012 jurkan
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,18 +18,25 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
--- ]]
+--]]
 
-require "scripts/functions/rebelpatrol"
 
-atinit(function()
-    local mob_id = 4
-    local patrol = Rebel_patrol:new("Patrol test", 5 * TILESIZE, REPUTATION_ONTRIAL)
-    for i=1,10 do
-        patrol:assign_being(monster_create(mob_id, get_named_coordinate("patrolspawn")))
-    end
-    schedule_every(1, function() patrol:logic() end)
+require "scripts/functions/npchelper"
+require "scripts/functions/trap"
+require "scripts/functions/triggerhelper"
 
-    trap.assign_callback("trap", function(being) being_say(being, "I stepped on a TRAP!") end)
-end)
+local server_atinit = atinit
 
+local function init_map()
+    parse_npcs_from_map()
+    parse_triggers_from_map()
+    trap.parse_traps_from_map()
+end
+
+-- Override old atinit
+function atinit(callback)
+    server_atinit(function()
+        init_map()
+        callback()
+    end)
+end
