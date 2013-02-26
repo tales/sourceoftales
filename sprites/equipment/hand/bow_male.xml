@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sprite name="player" action="stand">
+    <imageset
+        name="walkcycle"
+        src="sprites/equipment/empty.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="hurt"
+        src="sprites/equipment/empty.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="slash"
+        src="sprites/equipment/empty.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="spellcast"
+        src="sprites/equipment/hand/dagger_male_spellcast.png"
+        width="64"
+        height="64"/>
+    <imageset
+        name="bow"
+        src="sprites/equipment/hand/bow_male_bow.png"
+        width="64"
+        height="64" />
+
+    <include file="full_base.xml"/>
+</sprite>

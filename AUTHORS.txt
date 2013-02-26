@@ -146,7 +146,7 @@ Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sandwater.p
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/wheat.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         sprites/equipment/slash/sword_sheet_128.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         sprites/equipment/hand/sword_sheet_128.png
 David E. Gervais                   CC BY_SA 3.0                items/Ahammer1.png
 David E. Gervais                   CC BY_SA 3.0                items/ArmorChainMailAugmented.png
 David E. Gervais                   CC BY_SA 3.0                items/ArmorChainMailBar.png
@@ -854,152 +854,152 @@ Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/shirt_whit
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         items/shoes_iron.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/characters/male_bow.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/characters/male_thrust.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/WEAPON_arrow.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/bow/WEAPON_bow.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BEHIND_quiver.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BEHIND_quiver.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/slash/WEAPON_dagger.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BEHIND_quiver.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BEHIND_quiver.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_shield_cutout_body.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_shield_cutout_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_spear.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/thrust/WEAPON_staff.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BEHIND_quiver.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BELT_leather.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/BELT_rope.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/FEET_plate_armor_shoes.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/FEET_shoes_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HANDS_plate_armor_gloves.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_chain_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_chain_armor_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_leather_armor_hat.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_plate_armor_helmet.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/HEAD_robe_hood.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_pants_greenish.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_plate_armor_pants.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/LEGS_robe_skirt.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_chain_armor_jacket_purple.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_chain_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_bracers.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_shirt_white.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_leather_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_plate_armor_arms_shoulders.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_plate_armor_torso.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/TORSO_robe_shirt_brown.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/WEAPON_shield_cutout_body.png
-Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/WEAPON_shield_cutout_chain_armor_helmet.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/arrow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/bow_male_bow.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/quiver_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_hurt.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/quiver_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/dagger_male_slash.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/quiver_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_spellcast.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/quiver_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/wooden_buckler_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/wooden_buckler_cutouts_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/spear_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/staff_male_thrust.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/quiver_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_belt_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/rope_belt_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/plate_boots_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_shoes_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/gloves/plate_gloves_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/kettle_hat_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/chain_hood_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hat_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/plate_armor_helmet_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/head/leather_hood_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/light_blue_trousers_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/plate_trousers_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/legs/robe_skirt_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/purple_cape_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/chain_armor_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_bracers_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_shirt_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/leather_shoulder_pad_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/leather_armor_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/plate_shoulder_pad_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/plate_armor_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_shirt_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/hand/wooden_buckler_male_walkcycle.png
+Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/equipment/misc/wooden_buckler_cutouts_male_walkcycle.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy_death.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/combat_dummy.png
 Johannes Sjölund                   CC BY_SA 3.0, GPLv3         sprites/monsters/skeleton_boss_hurt.png
@@ -1086,172 +1086,172 @@ Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/waterfall.p
 Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/watergrass.png
 Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/water.png
 Leo Villeveygoux                   CC BY_SA 3.0, GPLv3         tiles/limestonewall.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_dwing_hurt.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_robe_hurt.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/male_robe_hurt.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_dwing_slash.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_robe_slash.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/slash/male_robe_slash.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_dwing_spellcast.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_robe_spellcast.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/male_robe_spellcast.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_dwing_walkcycle.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_robe_walkcycle.png
-Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/male_robe_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_female_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_male_hurt.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_female_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_male_slash.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_female_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_male_spellcast.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_female_walkcycle.png
+Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/torso/robe_male_walkcycle.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/campfire.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         tiles/mushrooms.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackbelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackhair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_blackslippers_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_bluerobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_bronzebelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_bronzebuckle_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_bronzenecklace_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_bronzetiara_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_brownbelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_brownhair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_brownrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_brownslippers_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_darkblondehair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_darkbrownrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_darkgrayrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_forestrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_goldbelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_goldbuckle_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_goldnecklace_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_goldtiara_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_grayhair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_grayslippers_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_ironbelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_ironbuckle_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_ironnecklace_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_irontiara_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_lightblondehair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_lightgrayrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_purplerobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_redrobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_silverbelt_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_silverbuckle_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_silvernecklace_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_silvertiara_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_whitehair_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_whiterobe_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/female_mage_whiteslippers_hurt.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_blackbelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_blackhair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_blackrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_blackslippers_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_bluerobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_bronzebelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_bronzebuckle_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_bronzenecklace_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_bronzetiara_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_brownbelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_brownhair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_brownrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_brownslippers_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_darkblondehair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_darkbrownrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_darkgrayrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_forestrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_goldbelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_goldbuckle_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_goldnecklace_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_goldtiara_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_grayhair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_grayslippers_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_ironbelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_ironbuckle_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_ironnecklace_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_irontiara_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_lightblondehair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_lightgrayrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_purplerobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_redrobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_silverbelt_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_silverbuckle_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_silvernecklace_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_silvertiara_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_whitehair_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_whiterobe_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/slash/female_mage_whiteslippers_slash.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_blackbelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_blackhair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_blackrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_blackslippers_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bluerobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bronzebelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bronzebuckle_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bronzenecklace_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_bronzetiara_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownbelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownhair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_brownslippers_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_darkblondehair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_darkbrownrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_darkgrayrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_forestrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_goldbelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_goldbuckle_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_goldnecklace_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_goldtiara_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_grayhair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_grayslippers_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_ironbelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_ironbuckle_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_ironnecklace_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_irontiara_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_lightblondehair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_lightgrayrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_purplerobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_redrobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_silverbelt_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_silverbuckle_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_silvernecklace_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_silvertiara_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_whitehair_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_whiterobe_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/female_mage_whiteslippers_spellcast.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_blackbelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_blackhair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_blackrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_blackslippers_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_bluerobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_bronzebelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_bronzebuckle_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_bronzenecklace_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_bronzetiara_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_brownbelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_brownhair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_brownrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_brownslippers_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_darkblondehair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_darkbrownrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_darkgrayrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_forestrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_goldbelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_goldbuckle_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_goldnecklace_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_goldtiara_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_grayhair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_grayslippers_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_ironbelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_ironbuckle_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_ironnecklace_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_irontiara_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_lightblondehair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_lightgrayrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_purplerobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_redrobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_silverbelt_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_silverbuckle_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_silvernecklace_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_silvertiara_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_whitehair_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_whiterobe_walkcycle.png
-Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/female_mage_whiteslippers_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/black_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/black_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/black_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/black_slippers_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/blue_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_buckle_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/bronze_necklace_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/bronze_tiara_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/brown_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/brown_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_slippers_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/darkblonde_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkbrown_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkgray_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_buckle_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/gold_necklace_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/gold_tiara_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/gray_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/gray_slippers_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_buckle_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/iron_necklace_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/iron_tiara_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/lightblonde_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/lightgray_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/purple_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/red_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_belt_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_buckle_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/silver_necklace_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/silver_tiara_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/white_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_robe_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/white_slippers_female_hurt.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/black_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/black_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/black_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/black_slippers_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/blue_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_buckle_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/bronze_necklace_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/bronze_tiara_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/brown_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/brown_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_slippers_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/darkblonde_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkbrown_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkgray_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_buckle_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/gold_necklace_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/gold_tiara_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/gray_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/gray_slippers_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_buckle_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/iron_necklace_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/iron_tiara_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/lightblonde_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/lightgray_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/purple_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/red_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_belt_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_buckle_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/silver_necklace_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/silver_tiara_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/white_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_robe_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/white_slippers_female_slash.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/black_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/black_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/black_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/black_slippers_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/blue_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_buckle_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/bronze_necklace_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/bronze_tiara_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/brown_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/brown_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_slippers_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/darkblonde_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkbrown_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkgray_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_buckle_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/gold_necklace_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/gold_tiara_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/gray_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/gray_slippers_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_buckle_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/iron_necklace_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/iron_tiara_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/lightblonde_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/lightgray_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/purple_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/red_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_belt_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_buckle_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/silver_necklace_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/silver_tiara_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/white_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_robe_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/white_slippers_female_spellcast.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/black_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/black_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/black_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/black_slippers_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/blue_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/bronze_buckle_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/bronze_necklace_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/bronze_tiara_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/brown_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/brown_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/brown_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/brown_slippers_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/darkblonde_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkbrown_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/darkgray_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/gold_buckle_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/gold_necklace_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/gold_tiara_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/gray_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/gray_slippers_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/iron_buckle_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/iron_necklace_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/iron_tiara_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/lightblonde_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/lightgray_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/purple_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/red_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_belt_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/misc/silver_buckle_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/silver_necklace_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/head/silver_tiara_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/hair/white_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_robe_female_walkcycle.png
+Luke Mehl                          CC BY_SA 3.0, GPLv3         sprites/equipment/feet/white_slippers_female_walkcycle.png
 Luke.RUSTLTD (opengameart.org)     CC 0                        sfx/bomb.ogg
 Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale0.png
 Manuel Riecke (AKA MrBeast)        CC BY-SA 3.0, GPLv3         sprites/characters/hairfemale1.png
@@ -1310,32 +1310,32 @@ Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/bald
 Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_hurt.png
 Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_spellcast.png
 Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/bowtie_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/dress_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/ghillies_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/pants_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/shirt_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/tie_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/hurt/vest_hurt.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/bowtie_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/dress_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/ghillies_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/pants_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/shirt_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/tie_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/slash/vest_slash.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/bowtie_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/dress_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/ghillies_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/pants_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/shirt_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/tie_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/spellcast/vest_spellcast.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/bowtie_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/dress_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/ghillies_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/pants_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/shirt_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/tie_walkcycle.png
-Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/walkcycle/vest_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_bowtie_male_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_dress_female_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/misc/ghillies_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_tie_male_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_vest_male_hurt.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_bowtie_male_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_dress_female_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/misc/ghillies_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_tie_male_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_vest_male_slash.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_bowtie_male_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_dress_female_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/misc/ghillies_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_tie_male_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_vest_male_spellcast.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_bowtie_male_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_dress_female_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/misc/ghillies_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/necklace/orange_tie_male_walkcycle.png
+Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/green_vest_male_walkcycle.png
 Lanea Zimmerman                    CC BY 3.0                   tiles/fireplace.png

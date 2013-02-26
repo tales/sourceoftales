@@ -85,8 +85,8 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite gender="male">equipment/TORSO_leather_armor_shirt_white.xml</sprite>
-        <sprite gender="female">equipment/TORSO_leather_armor_shirt_white.xml</sprite>
+        <sprite gender="male">equipment/torso/white_shirt_male.xml</sprite>
+        <sprite gender="female">equipment/torso/white_shirt_male.xml</sprite>
     </item>
     <item id="2" max-per-slot="1" name="Pants"
         description="Simple pants."
@@ -101,8 +101,8 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite gender="male">equipment/LEGS_pants_greenish.xml</sprite>
-        <sprite gender="female">equipment/LEGS_pants_greenish.xml</sprite>
+        <sprite gender="male">equipment/legs/light_blue_trousers_male.xml</sprite>
+        <sprite gender="female">equipment/legs/light_blue_trousers_male.xml</sprite>
     </item>
     <item id="3" max-per-slot="1" name="Boots"
         description="Old boots."
@@ -117,8 +117,8 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite gender="male">equipment/FEET_shoes_brown.xml</sprite>
-        <sprite gender="female">equipment/FEET_shoes_brown.xml</sprite>
+        <sprite gender="male">equipment/feet/brown_shoes_male.xml</sprite>
+        <sprite gender="female">equipment/feet/brown_shoes_male.xml</sprite>
     </item>
     <item id="4" max-per-slot="1" name="Rusty chain armor"
         description="A chain armor that has its best days gone."
@@ -133,8 +133,8 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite gender="male">equipment/TORSO_chain_armor_torso.xml</sprite>
-        <sprite gender="female">equipment/TORSO_chain_armor_torso.xml</sprite>
+        <sprite gender="male">equipment/torso/chain_armor_male.xml</sprite>
+        <sprite gender="female">equipment/torso/chain_armor_male.xml</sprite>
     </item>
     <item id="5" max-per-slot="1" name="Kettle hat"
         description="A dented helmet."
@@ -149,8 +149,8 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite gender="male">equipment/HEAD_chain_armor_helmet.xml</sprite>
-        <sprite gender="female">equipment/HEAD_chain_armor_helmet.xml</sprite>
+        <sprite gender="male">equipment/head/kettle_hat_male.xml</sprite>
+        <sprite gender="female">equipment/head/kettle_hat_male.xml</sprite>
     </item>
     <item id="6" max-per-slot="1" name="Shortsword" attack-action="attack"
         description="A notchy shortsword."
@@ -168,7 +168,7 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-2000" />
         </effect>
-        <sprite>equipment/dagger.xml</sprite>
+        <sprite>equipment/hand/dagger_male.xml</sprite>
     </item>
     <item id="7"
         max-per-slot="255"
@@ -201,7 +201,7 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite>equipment/HEAD_robe_hood.xml</sprite>
+        <sprite>equipment/head/leather_hood_male.xml</sprite>
     </item>
     <item id="37" max-per-slot="1" name="Robe Shirt"
         description="Robe Shirt."
@@ -216,7 +216,7 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite>equipment/TORSO_robe_shirt_brown.xml</sprite>
+        <sprite>equipment/torso/brown_shirt_male.xml</sprite>
     </item>
     <item id="38" max-per-slot="1" name="Robe Skirt"
         description="Robe Skirt."
@@ -231,7 +231,7 @@
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-250" />
         </effect>
-        <sprite>equipment/LEGS_robe_skirt.xml</sprite>
+        <sprite>equipment/legs/robe_skirt_male.xml</sprite>
     </item>
     <item id="39" max-per-slot="255" name="Food Shank"
         description="Shank of Food"
@@ -262,7 +262,7 @@
         description="A heavy iron helmet."
         image="helmet_iron.png"
         value="100">
-        <sprite>equipment/HEAD_plate_armor_helmet.xml</sprite>
+        <sprite>equipment/head/plate_armor_helmet_male.xml</sprite>
         <equip>
             <slot type="head" required="1" />
         </equip>
@@ -277,7 +277,7 @@
         description="A heavy iron armor."
         image="armor_iron.png"
         value="100">
-        <sprite>equipment/TORSO_plate_armor_torso.xml</sprite>
+        <sprite>equipment/torso/plate_armor_male.xml</sprite>
         <equip>
             <slot type="torso" required="1" />
         </equip>
@@ -292,7 +292,7 @@
         description="A heavy iron bracer."
         image="bracer_iron.png"
         value="100">
-        <sprite>equipment/TORSO_plate_armor_arms_shoulders.xml</sprite>
+        <sprite>equipment/misc/plate_shoulder_pad_male.xml</sprite>
         <equip>
             <slot type="necklace" required="1" />
         </equip>
@@ -307,7 +307,7 @@
         description="A pair of heavy iron gloves."
         image="gloves_iron.png"
         value="100">
-        <sprite>equipment/HANDS_plate_armor_gloves.xml</sprite>
+        <sprite>equipment/gloves/plate_gloves_male.xml</sprite>
         <equip>
             <slot type="gloves" required="1" />
         </equip>
@@ -322,7 +322,7 @@
         description="A pair of heavy iron pants."
         image="pants_iron.png"
         value="100">
-        <sprite>equipment/LEGS_plate_armor_pants.xml</sprite>
+        <sprite>equipment/legs/plate_trousers_male.xml</sprite>
         <equip>
             <slot type="legs" required="1" />
         </equip>
@@ -337,7 +337,7 @@
         description="A pair of heavy iron shoes."
         image="shoes_iron.png"
         value="100">
-        <sprite>equipment/FEET_plate_armor_shoes.xml</sprite>
+        <sprite>equipment/feet/plate_boots_male.xml</sprite>
         <equip>
             <slot type="feet" required="1" />
         </equip>
@@ -365,7 +365,7 @@
         description="A protective chain hood."
         image="helmet_iron.png"
         value="90">
-        <sprite>equipment/HEAD_chain_armor_hood.xml</sprite>
+        <sprite>equipment/head/chain_hood_male.xml</sprite>
         <equip>
             <slot type="head" required="1" />
         </equip>
