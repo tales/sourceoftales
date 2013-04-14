@@ -21,10 +21,6 @@
 --]]
 
 local function merchant_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     say("Welcome to my little shop! I'm sure you're interested in the high "
         .. "quality armor I'm selling. Do you really want to get into a "
         .. "battle with those wastage you got in the casern? Have a look at "
@@ -35,17 +31,17 @@ local function merchant_talk(npc, ch)
         "I have some things to sell.",
         "I'm not interested."
     }
-    local res = npc_choice(npc, ch, choices)
+    local res = ask(choices)
 
     if res == 1 then
-        npc_trade(npc, ch, false, {
+        trade(false, {
             { "Iron Helmet", 10, 2000 },
             { "Iron Armor", 10, 5000 },
             { "Iron Gloves", 10, 1000 }
         })
     elseif res == 2 then
         say("Alright, let me see.")
-        npc_trade(npc, ch, true)
+        trade(true)
     elseif res == 3 then
         say("Come back when you change your mind!")
     end

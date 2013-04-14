@@ -22,10 +22,6 @@
 
 
 function goldenfields_check_bounty(npc, ch, questvar, monster)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local killcount = chr_get_kill_count(ch, monster)
     local killcount_old = tonumber(chr_get_quest(ch, questvar))
     if killcount_old == nil then

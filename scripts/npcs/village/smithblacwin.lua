@@ -27,9 +27,6 @@ local patrol = NPCPatrol:new("Smith Blacwin")
 
 local function smith_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function chat()
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
@@ -40,7 +37,7 @@ local function smith_talk(npc, ch)
                 "I need my equipment!",
                 "Nevermind."
             }
-            local res = npc_choice(npc, ch, ask_equip)
+            local res = ask(ask_equip)
             if res == 1 then
                 say("Here.")
                 chr_inv_change(ch, "Kettle hat", 1)
@@ -50,7 +47,7 @@ local function smith_talk(npc, ch)
                     "You're not very talkative, are you?",
                     "Thanks."
                 }
-                local res = npc_choice(npc, ch, reply_equip)
+                local res = ask(reply_equip)
                 if res == 1 then
                     say("No.")
                 else
@@ -66,9 +63,9 @@ local function smith_talk(npc, ch)
                     "I heard you could sell me better armor?",
                     "Nevermind."
                 }
-                local res = npc_choice(npc, ch, ask_shop)
+                local res = ask(ask_shop)
                 if res == 1 then
-                    npc_trade(npc, ch, false, {
+                    trade(false, {
                         { "Iron Helmet", 10, 1800 },
                         { "Iron Armor", 10, 6000 },
                         { "Iron Gloves", 10, 1000 },

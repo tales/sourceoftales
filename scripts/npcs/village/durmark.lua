@@ -28,9 +28,6 @@ local bee_quest_doable = true
 
 local function durmark_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function quest(key)
         return chr_get_quest(ch, key)
@@ -83,7 +80,7 @@ local function durmark_talk(npc, ch)
                 "They somehow went insane.")
             local choices = { "Sure I will!",
                               "Not at the moment. Sorry!" }
-            res = npc_choice(npc, ch, choices)
+            res = ask(choices)
             if res == 1 then
                 bee_quest_char = ch
                 -- Reset quest at map change or logout
@@ -129,14 +126,14 @@ local function durmark_talk(npc, ch)
         table.insert(choices, 3, "I killed the bees.")
     end
 
-    local res = npc_choice(npc, ch, choices)
+    local res = ask(choices)
     if res == 1 then
         about_life()
         choices = { "Why don't you like big cities?",
                     "Can you tell me more about this village?",
                     "Ha? Living in this village? Sounds pretty pointless to me!" }
 
-        res = npc_choice(npc, ch, choices)
+        res = ask(choices)
         if res == 1 then
             say("Good question, my friend. I have never actually been in a big city so far. " ..
                 "So I cannot tell you exactly what I do not like about them. But I know that I like it here!")
@@ -145,7 +142,7 @@ local function durmark_talk(npc, ch)
             about_village()
             local choices = { "Are there any other problems that bother you apart of the merchants?",
                               "Thanks for the information! Good bye." }
-            res = npc_choice(npc, ch, choices)
+            res = ask(choices)
             if res == 1 then
                 about_problems()
             end

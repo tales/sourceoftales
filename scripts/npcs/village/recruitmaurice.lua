@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Recruit Maurice")
 
 local function recruit_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function chat()
         say("Hello " .. being_get_name(ch) .. ". Let's talk a bit.")
@@ -35,7 +32,7 @@ local function recruit_talk(npc, ch)
             "Do you know why they're hiring so many recruits?",
             "I need to go."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
 
         if res == 1 then
             say("Oh, I just don't want to spent the rest of my life with "
@@ -62,7 +59,7 @@ local function recruit_talk(npc, ch)
                 "Well, thanks for the information.",
                 "Rebels? What do you mean?"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
 
             if res == 2 then
                 say("Didn't you hear? Some people got upset about the "

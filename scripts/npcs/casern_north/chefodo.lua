@@ -20,10 +20,6 @@
 --]]
 
 local function chef_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local function beetle_stew_start(amount)
         say("What are you doing in my kitchen? Don't stand in the way! "
             .. "Unless you're here to help?")
@@ -31,7 +27,7 @@ local function chef_talk(npc, ch)
             "What do you need help with?",
             "No, I'm just looking around."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             say("We need new supplies. I want to cook delicious beetle stew. "
                 .. "Those beetles doesn't live further north, but in this area "
@@ -40,7 +36,7 @@ local function chef_talk(npc, ch)
                 "Eew!",
                 "I never got the idea to eat beetles..."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             say("I can't believe it! In other parts of the kingdom, this "
                 .. "is an expensive delicacy and here people "
                 .. "feel disgusted! No culture...")
@@ -62,7 +58,7 @@ local function chef_talk(npc, ch)
                 "Here they are.",
                 "I didn't get them yet."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 beetle_amount = chr_inv_count(ch, true, false, "Beetle Corpus")
                 if beetle_amount >= amount then

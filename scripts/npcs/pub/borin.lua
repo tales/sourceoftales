@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Borin")
 
 local function man_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("He-hello ma friend. Have ya - would ya, would ya give me "
         .. "some coins for another drink?")
@@ -34,9 +31,9 @@ local function man_talk(npc, ch)
         "No! You definetly had enough!",
         "Ok, have some."
     }
-    local res = npc_choice(npc, ch, res)
+    local res = ask(res)
     if res == 2 then
-        local donation = npc_ask_integer(npc, ch, 1, 10, 5)
+        local donation = ask_number(1, 10, 5)
         local money = chr_money(ch)
         if money >= donation then
             chr_money_change(ch, -donation)

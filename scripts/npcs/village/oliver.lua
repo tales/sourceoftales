@@ -23,16 +23,13 @@ local patrol = NPCPatrol:new("Oliver")
 
 local function man_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Hello.")
     local choices = {
         "I don't have time to chat.",
         "What are you doing here?"
     }
-    local res = npc_choice(npc, ch, choices)
+    local res = ask(choices)
     if res == 2 then
         say("Oh, I'm just hanging around. I helped my father to bring his "
             .. " goods in front of the casern and now I feel tired.")

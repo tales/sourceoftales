@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Rebel Philip")
 
 local function rebel_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local reputation = read_reputation(ch, "rebel_reputation")
 

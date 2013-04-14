@@ -20,10 +20,6 @@
 --]]
 
 local function guard_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local reputation = read_reputation(ch, "soldier_reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
@@ -34,7 +30,7 @@ local function guard_talk(npc, ch)
             "What's your problem with Goldenfields?",
             "See you later."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
 
         if res == 1 then
             say("Well, that's a place where you can have fun! It's big, "

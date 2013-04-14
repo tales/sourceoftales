@@ -25,9 +25,6 @@ local patrol = NPCPatrol:new("Veteran Godwin")
 
 local function veteran_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function send_tutorial()
         say("Hey, rookie. You aren't paid for standing in the landscape "
@@ -40,7 +37,7 @@ local function veteran_talk(npc, ch)
             "Alright, thank you, where do I have to go?",
             "I was promised fame and gold for joining the army!"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
 
         if res == 1 then
             say("Don't make me laugh! I'd be surprised if you'd know at what "
@@ -82,7 +79,7 @@ local function veteran_talk(npc, ch)
                 "Here it is.",
                 "I can't find it, where do I have to go?"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 2 then
                 local money = chr_money(ch)
                 if money >= GOLDENFIELDS_TAXES then

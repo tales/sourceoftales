@@ -20,10 +20,6 @@
 --]]
 
 local function woman_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local function pumpkin_quest()
         say("Welcome to my house. Did you come here to cheer up an old "
             .. "and lonely woman?")
@@ -31,7 +27,7 @@ local function woman_talk(npc, ch)
             "Sorry, I don't have time to chat.",
             "You are lonely?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 2 then
             say("Yes, my beloved husband Lief died three years and four "
                 .. "months ago.")
@@ -47,7 +43,7 @@ local function woman_talk(npc, ch)
                     "I'm very sorry for you.",
                     "I have a pumpkin with me... would you like it?"
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 1 then
                     say("Ah...")
                 else

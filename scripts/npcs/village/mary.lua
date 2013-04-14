@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Mary")
 
 local function woman_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Magistrate Eustace lives in that house over there. Together with "
         .. "his wife. She's called Lady Primeveire.")

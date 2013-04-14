@@ -20,10 +20,6 @@
 --]]
 
 local function magistrate_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local function set_respawn()
          -- LATER: find out how this can be done without hard coded numbers
         local position = 1 .. " " .. 2272 .. " " .. 1472
@@ -48,7 +44,7 @@ local function magistrate_talk(npc, ch)
             "No!",
             "What would be the consequences?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             apply_amnesty(npc, ch, "soldier_reputation", "Army",
                           "rebel_reputation", "Rebels")
@@ -64,7 +60,7 @@ local function magistrate_talk(npc, ch)
                     "I accept, what do I have to pay?",
                     "I don't want to pay."
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 1 then
                     apply_amnesty(npc, ch, "soldier_reputation", "Army",
                                   "rebel_reputation", "Rebels")
