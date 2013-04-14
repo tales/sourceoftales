@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Millicent")
 
 local function woman_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Have you seen my husband Borin? I bet he's in the pub again...")
     say("I work all day, and he has nothing better to do than taking our "

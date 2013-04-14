@@ -24,10 +24,6 @@
 --]]
 
 local function instructor_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local function tutorial()
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
@@ -108,7 +104,7 @@ local function instructor_talk(npc, ch)
             "What are skills?",
             "What are specials?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 2 then
             about_attributes()
             about_questions()

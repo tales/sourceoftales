@@ -27,9 +27,6 @@ local patrol = NPCPatrol:new("Emma")
 
 local function girl_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function persuade_soldier()
         say("Ouh, that guard over there is sooo mean to me.")
@@ -38,14 +35,14 @@ local function girl_talk(npc, ch)
             "What did he do?",
             "I don't have time for this nonsense."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             say("He won't let me enter the casern! That's not nice!")
             local choices = {
                 "Why do you want to go into the casern?",
                 "That's not mean, that's correct!"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("I just want to see it! And I want to visit the soldiers. "
                     .. "You're all sooo brave and strong!")
@@ -58,7 +55,7 @@ local function girl_talk(npc, ch)
                 "I don't think he'll listen to me.",
                 "You can't enter the casern!"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("Oh, please try. Pleeease.")
                 chr_set_quest(ch, "rebels_emmas_camouflage", "ask")
@@ -83,7 +80,7 @@ local function girl_talk(npc, ch)
         local choices = {
             "No, he's stubborn on that."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         say("Ah, at least you tried.")
         chr_set_quest(ch, "rebels_emmas_camouflage", "done")
     elseif emma == "done" then

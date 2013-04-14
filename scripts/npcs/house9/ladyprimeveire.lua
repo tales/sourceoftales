@@ -20,10 +20,6 @@
 --]]
 
 local function lady_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     say("What are you doing in my bedroom? As if it isn't bad enough to "
         .. "be stuck in this stinking farmer village.")
     say("No, now people start to molest me in my own bedroom. I pray to "

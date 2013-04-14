@@ -55,9 +55,6 @@ end
 
 function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
                         foe_faction, foe_faction_name)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local reputation = read_reputation(ch, friendly_faction)
     local foe_reputation = read_reputation(ch, foe_faction)
@@ -68,7 +65,7 @@ function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
     say("Do you accept?")
     local choices = { "Yes, here it is.",
                     "That's too much."}
-    local res = npc_choice(npc, ch, choices)
+    local res = ask(choices)
     if res == 1 then
         local money = chr_money(ch)
         if money >= cost then

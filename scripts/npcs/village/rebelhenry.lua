@@ -25,9 +25,6 @@ local patrol = NPCPatrol:new("Rebel Henry")
 
 local function rebel_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function deliver_supplies()
         local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
@@ -36,7 +33,7 @@ local function rebel_talk(npc, ch)
                 "Innkeeper Norman asked me to bring you this supplies.",
                 "What can I do to help?"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("Great, we were waiting on those.")
                 local pumpkin = chr_inv_count(ch, true, false, "Pumpkin")

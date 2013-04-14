@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Eva")
 
 local function woman_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Did you see Anabel in front of the casern? And her husband Walter?")
     say("Since so many soldiers arrived and the casern is so lively, they "

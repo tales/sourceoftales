@@ -26,9 +26,6 @@ local patrol = NPCPatrol:new("Guard Fordwin")
 
 local function guard_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local reputation = read_reputation(ch, "soldier_reputation")
 
@@ -43,7 +40,7 @@ local function guard_talk(npc, ch)
                 "That girl, Emma, could you let her enter?",
                 "Then I won't distract you."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("What, now she started to ask soldiers to beg for her? "
                     .. "That girl drives me insane.")

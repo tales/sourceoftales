@@ -25,10 +25,6 @@ require "scripts/functions/religion"
 
 
 local function priestess_talk(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local legends_choices = {
         "Where do we come from?",
         "Please tell me about Ignis.",
@@ -90,7 +86,7 @@ local function priestess_talk(npc, ch)
 
         say("Is there something specific you'd like to know about them?")
 
-        local res = npc_choice(npc, ch, legends_choices)
+        local res = ask(legends_choices)
 
         res = legends_answers[res]
 
@@ -125,7 +121,7 @@ local function priestess_talk(npc, ch)
             "I have some question about the gods.",
             "Can you explain me how to use specials?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
 
         if res == 2 then
             legends()
@@ -147,7 +143,7 @@ local function priestess_talk(npc, ch)
                 "Yes, I found this strange artifact.",
                 "Not yet."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
                 if artifact > 0 then
@@ -201,7 +197,7 @@ local function priestess_talk(npc, ch)
                 "The rumors were true, I found skeletons in "
                 .. "the cave."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("I thank the gods you're save! It was irresponsible from "
                     .. "me to send you there without proper protection.")
@@ -222,7 +218,7 @@ local function priestess_talk(npc, ch)
             "Aquaria, the goddess of water and healing.",
             "The Third God, dedicated to death and earth."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         chr_set_quest(ch, "goldenfields_shrine", "getartifact")
         if res == 1 then
             chr_give_special(ch, "Magic_Lightning")
@@ -259,7 +255,7 @@ local function priestess_talk(npc, ch)
             "How can I prove that I'm worthy?",
             "Nevermind then."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             say("There's something important I need to find out, but "
                 .. "I shouldn't leave the shrine unless there's "
@@ -271,7 +267,7 @@ local function priestess_talk(npc, ch)
                 "I'm not afraid!",
                 "Dangerous? I changed my mind."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 say("Very well. I heard alarming rumors about ... "
                     .. "walking skeletons in the caves north of here. "
@@ -293,7 +289,7 @@ local function priestess_talk(npc, ch)
                         "I already visited the caves. "
                         .. "The rumors are true."
                     }
-                    local res = npc_choice(npc, ch, choices)
+                    local res = ask(choices)
                     return get_magic()
                 else
                     return priestess_talk(npc, ch)
@@ -313,7 +309,7 @@ local function priestess_talk(npc, ch)
             "I'd like to learn magic.",
             "I have to go."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             legends()
         elseif res == 2 then
@@ -333,7 +329,7 @@ local function priestess_talk(npc, ch)
             "Sure!",
             "Can you explain again how to use specials?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 2 then
             return legends()
         elseif res == 3 then

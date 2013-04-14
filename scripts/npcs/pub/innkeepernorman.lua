@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Innkeeper Norman")
 
 local function innkeeper_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function set_respawn()
         local x, y = get_named_coordinate("Goldenfields Inn")
@@ -50,13 +47,13 @@ local function innkeeper_talk(npc, ch)
         local choices = {
             "I'm here to get the outstanding taxes!"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         say("Oh, I see. I wonder, do you think those taxes are fair?")
         local choices = {
             "That doesn't matter!",
             "I.. uh.. what do you mean?"
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 1 then
             say("I see you're completely brainwashed. Don't you want to "
                 .. "think for yourself?")
@@ -64,7 +61,7 @@ local function innkeeper_talk(npc, ch)
                 "Are you trying to distract? The taxes!",
                 "Yeah, I want to. What's your point?"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 2 then
                 say("My point? Well, you don't have to be a brainless "
                     .. "obeying soldier. I can show you something else. "
@@ -74,7 +71,7 @@ local function innkeeper_talk(npc, ch)
                     "I signed a contract when joining the army! "
                     .. "Stop that blabber and give me the taxes."
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 1 then
                     persuaded = true
                 end
@@ -90,7 +87,7 @@ local function innkeeper_talk(npc, ch)
                 "You're right! I don't want to be part of this. What can I do?",
                 "I.. I never looked at it this way.."
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 persuaded = true
             else
@@ -100,7 +97,7 @@ local function innkeeper_talk(npc, ch)
                     "But I signed a contract! No, I'll stay loyal. "
                     .. "The taxes, now."
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 1 then
                     persuaded = true
                 end
@@ -122,9 +119,9 @@ local function innkeeper_talk(npc, ch)
             set_respawn()
         else
             say("As you wish. How much do I have to pay?")
-            local money = npc_ask_integer(npc, ch, GOLDENFIELDS_TAXES - 40,
-                                           GOLDENFIELDS_TAXES + 40,
-                                           GOLDENFIELDS_TAXES)
+            local money = ask_number(GOLDENFIELDS_TAXES - 40,
+                                     GOLDENFIELDS_TAXES + 40,
+                                     GOLDENFIELDS_TAXES)
             chr_money_change(ch, money)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
@@ -143,7 +140,7 @@ local function innkeeper_talk(npc, ch)
                     "Thanks.",
                     "Can I help the rebels in any way?"
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 2 then
                     say("I'm glad you made up your mind. "
                         .. "There's indeed something you could do.")
@@ -152,7 +149,7 @@ local function innkeeper_talk(npc, ch)
             else
                 say("Do you need any supplies or clothes? "
                     .. "I can sell you something.")
-                npc_trade(npc, ch, false, {
+                trade(false, {
                     { "Pumpkin", 10, 50 },
                     { "Food Shank", 10, 130 },
                     { "Apple", 10, 40 },
@@ -170,7 +167,7 @@ local function innkeeper_talk(npc, ch)
                 "No!",
                 "What effect would this have?"
             }
-            local res = npc_choice(npc, ch, choices)
+            local res = ask(choices)
             if res == 1 then
                 apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
                               "soldier_reputation", "Army")
@@ -188,7 +185,7 @@ local function innkeeper_talk(npc, ch)
                     "Ok, how much do I have to pay?",
                     "I don't want to support you."
                 }
-                local res = npc_choice(npc, ch, choices)
+                local res = ask(choices)
                 if res == 1 then
                     apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
                                   "soldier_reputation", "Army")

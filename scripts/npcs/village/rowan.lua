@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Rowan")
 
 local function man_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Tight Lines! Today was a good day, I caught quite a lot of fishes.")
     say("I think I'll be over to the inn later, drink a beer and have a nice "

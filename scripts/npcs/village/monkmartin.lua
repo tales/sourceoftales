@@ -25,9 +25,6 @@ local patrol = NPCPatrol:new("Martin")
 
 local function monk_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     local function dialogue_creation()
         local creation_text = creation_myth()
@@ -46,7 +43,7 @@ local function monk_talk(npc, ch)
         "What gods?"
     }
 
-    local res = npc_choice(npc, ch, choices)
+    local res = ask(choices)
 
     if res == 1 then
         say("Oh misguided one, Ignis and Aquaria love you nevertheless.")
@@ -71,7 +68,7 @@ local function monk_talk(npc, ch)
             "Nah, I don't have time.",
             "Ok, tell me."
         }
-        local res = npc_choice(npc, ch, choices)
+        local res = ask(choices)
         if res == 2 then
             return dialogue_creation()
         end

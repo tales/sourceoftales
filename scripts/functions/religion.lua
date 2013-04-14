@@ -20,10 +20,6 @@
 --]]
 
 function creation_myth(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local creation_myth_array = {
         "There are three gods. The god of fire, "
         .. "Ignis, the goddess of water, Aquaria, and The Third God. I won't "
@@ -63,10 +59,6 @@ function creation_myth(npc, ch)
 end
 
 function ignis_myth(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local ignis_myth_array = {
         "Ignis is known as the god of fire and is "
         .. "often represented by a sun symbol.",
@@ -79,10 +71,6 @@ function ignis_myth(npc, ch)
 end
 
 function aquaria_myth(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local aquaria_myth_array = {
         "Aquaria is the goddess of water, the "
         .. "moon is often used to represent her. She's known to be calm "
@@ -97,10 +85,6 @@ function aquaria_myth(npc, ch)
 end
 
 function thirdgod_myth(npc, ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
-
     local thirdgod_myth_array = {
         "Ah, the Third God. He's often feared "
         .. "and missunderstood, since after we die he takes the divine power "

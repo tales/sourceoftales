@@ -23,9 +23,6 @@ local patrol = NPCPatrol:new("Basilea")
 
 local function woman_talk(npc, ch)
     patrol:block(ch)
-    local function say(message)
-        npc_message(npc, ch, message)
-    end
 
     say("Did you already see Aquaria's shrine? You have to enter the "
         .. "mountains north west of there, then go east and south again.")
