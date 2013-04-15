@@ -41,13 +41,13 @@ local function lieutnant_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("I can't deny you're brave, but that won't help you now!")
-        being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 end
 
 local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnant_talk)
 
-being_set_base_attribute(lieutnant, 16, 1)
+lieutnant:set_base_attribute(16, 1)
 local patrol = Patrol:new("Lieutenant Bennet")
 patrol:assign_being(lieutnant)
 schedule_every(13, function() patrol:logic() end)

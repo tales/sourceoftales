@@ -92,6 +92,6 @@ local function girl_talk(npc, ch)
 end
 
 local girl = create_npc_by_name("Emma", girl_talk)
-being_set_base_attribute(girl, 16, 1)
+girl:set_base_attribute(16, 1)
 patrol:assign_being(girl)
 schedule_every(11, function() patrol:logic() end)

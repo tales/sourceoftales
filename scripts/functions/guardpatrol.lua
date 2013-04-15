@@ -57,17 +57,17 @@ function Guard_patrol:logic()
 
     for _, member in ipairs(self.members) do
         -- Check for out of range enemys
-        local anger_list = monster_get_angerlist(member)
+        local anger_list = member:angerlist()
         enemy_count = enemy_count + #anger_list
         for ch, anger in pairs(anger_list) do
-            if get_distance(posX(ch), posY(ch), x, y) > self.track_range * 2 then
-                monster_drop_anger(member, ch)
+            if get_distance(ch:x(), ch:y(), x, y) > self.track_range * 2 then
+                member:drop_anger(ch)
                 enemy_count = enemy_count - 1
             end
         end
 
         for _, enemy in ipairs(enemys) do
-            monster_change_anger(member, enemy, 1)
+            member:change_anger(enemy, 1)
         end
     end
 
@@ -79,6 +79,6 @@ function Guard_patrol:logic()
 end
 
 function Guard_patrol:is_aggressiveAgainst(being)
-    return being_type(being) == TYPE_CHARACTER and
-           being_get_base_attribute(being, 13) > 0
+    return being:type() == TYPE_CHARACTER and
+           being:base_attribute(13) > 0
 end

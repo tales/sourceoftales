@@ -49,12 +49,12 @@ local function recruit_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Ah! Don't hurt me! Go away!")
-        being_damage(ch, 50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local recruit = create_npc_by_name("Recruit Hugh", recruit_talk)
-being_set_base_attribute(recruit, 16, 1)
+recruit:set_base_attribute(16, 1)
 patrol:assign_being(recruit)
 schedule_every(10, function() patrol:logic() end)

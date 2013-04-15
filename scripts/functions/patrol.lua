@@ -98,11 +98,11 @@ function Patrol:logic()
     local stroll = self.path[self.position_index].stroll
     local all_in_range = true
     for _, member in ipairs(self.members) do
-        local dist = manhattan_distance(posX(member), posY(member), x, y)
+        local dist = manhattan_distance(member:x(), member:y(), x, y)
         if dist > stroll then
             local new_x = math.random(-stroll, stroll) + x
             local new_y = math.random(-stroll, stroll) + y
-            being_walk(member, new_x, new_y)
+            member:walk(new_x, new_y)
         end
         if dist > tolerance then
             all_in_range = false
@@ -127,6 +127,6 @@ end
 --- Stops the walking of all beings in the patrol
 function Patrol:stop()
     for _, member in ipairs(self.members) do
-        being_walk(member, posX(member), posY(member))
+        member:walk(member:position())
     end
 end

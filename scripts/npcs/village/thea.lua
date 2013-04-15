@@ -32,7 +32,7 @@ end
 
 local woman = create_npc_by_name("Thea", woman_talk)
 
-being_set_base_attribute(woman, 16, 2)
+woman:set_base_attribute(16, 2)
 patrol:assign_being(woman)
 schedule_every(3, function() patrol:logic() end)
 

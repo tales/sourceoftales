@@ -33,6 +33,6 @@ atinit(function()
     schedule_every(1, function() patrol:logic() end)
 
     require "scripts/functions/trap"
-    trap.assign_callback("trap", function(being) being_say(being, "I stepped on a TRAP!") end)
+    trap.assign_callback("trap", function(being) being:say("I stepped on a TRAP!") end)
 end)
 

@@ -29,7 +29,7 @@ local function instructor_talk(npc, ch)
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
 
         if tutorial_fight == "beat_dummies" then
-            local dummies = chr_get_kill_count(ch, "training dummy")
+            local dummies = ch:kill_count("training dummy")
             if dummies >= TUTORIAL_DUMMY_AMOUNT then
                 say("Alright, that looks good. Feel free to train here "
                     .. "whenever you want.")
@@ -56,7 +56,7 @@ local function instructor_talk(npc, ch)
                     say("Ah, I see you already got your armor. "
                     .. "Here is your weapon.")
                 end
-                chr_inv_change(ch, "Shortsword", 1)
+                ch:inv_change("Shortsword", 1)
                 say ("Alright, now equip it and try it out on some of the "
                     .. "training dummies.")
                 say("Target them either by mouse or by hitting \"A\". "
@@ -130,7 +130,7 @@ local function instructor_talk(npc, ch)
     else -- reputation <= REPUTATION_RELUCTANT
         say("You dare to come here after what you've done?! "
             .. "You won't have much time to regret this!")
-        being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
 end
 

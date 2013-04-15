@@ -56,7 +56,7 @@ local function monk_talk(npc, ch)
         else
             chr_money_change(ch, -donation)
             say("May the blessing of Aquaria grant you new power.")
-            being_heal(ch, donation)
+            ch:heal(donation)
             -- LATER: think about more possible effects
             -- idea: value of anger/please for each god
         end
@@ -77,8 +77,8 @@ local function monk_talk(npc, ch)
         .. "the power the can grant visit the shrine in Goldenfields.")
     patrol:unblock(ch)
 end
--- IDEA: run towards players and being_say() things matching to his role?
+-- IDEA: run towards players and say() things matching to his role?
 local monk = create_npc_by_name("Martin", monk_talk)
-being_set_base_attribute(monk, 16, 1)
+monk:set_base_attribute(16, 1)
 patrol:assign_being(monk)
 schedule_every(18, function() patrol:logic() end)

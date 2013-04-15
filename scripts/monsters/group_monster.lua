@@ -25,10 +25,10 @@ module("group_monster", package.seeall)
 -- Calling this function will make all monsters of same id attack the aggressor
 function damage_recieved(mob, aggressor, hploss)
     local beings = get_beings_in_circle(mob, 10 * TILESIZE)
-    local id = monster_get_id(mob)
+    local id = mob:monster_id()
     for _, being in ipairs(beings) do
-        if (being_type(being) == TYPE_MONSTER and monster_get_id(being) == id) then
-            monster_change_anger(being, aggressor, hploss)
+        if (being:type() == TYPE_MONSTER and being:monster_id() == id) then
+            being:change_anger(aggressor, hploss)
         end
     end
 end

@@ -133,13 +133,13 @@ local function veteran_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("I can't deny you're brave, but that won't help you now!")
-        being_damage(ch, 90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local veteran = create_npc_by_name("Veteran Godwin", veteran_talk)
 
-being_set_base_attribute(veteran, 16, 1)
+veteran:set_base_attribute(16, 1)
 patrol:assign_being(veteran)
 schedule_every(10, function() patrol:logic() end)

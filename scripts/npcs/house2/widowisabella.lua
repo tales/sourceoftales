@@ -37,7 +37,7 @@ local function woman_talk(npc, ch)
                 .. "that I made the pumpkin bread they loved so much. "
                 .. "Dear, when was the last time that I ate pumpkin bread? "
                 .. "I don't remember...")
-            local pumpkin = chr_inv_count(ch, true, false, "Pumpkin")
+            local pumpkin = ch:inv_count(true, false, "Pumpkin")
             if pumpkin > 0 then
                 local choices = {
                     "I'm very sorry for you.",
@@ -47,9 +47,9 @@ local function woman_talk(npc, ch)
                 if res == 1 then
                     say("Ah...")
                 else
-                    pumpkin = chr_inv_count(ch, true, false, "Pumpkin")
+                    pumpkin = ch:inv_count(true, false, "Pumpkin")
                     if pumpkin > 0 then
-                        chr_inv_change(ch, "Pumpkin", -1)
+                        ch:inv_change("Pumpkin", -1)
                         chr_set_quest(ch, "goldenfields_widow", "done")
                         chr_money_change(ch, 100)
                         say("Oh, how kind of you! I'm going to bake pumpkin "
@@ -75,7 +75,7 @@ end
 
 local woman = create_npc_by_name("Widow Isabella", woman_talk)
 
-being_set_base_attribute(woman, 16, 1)
+woman:set_base_attribute(16, 1)
 local patrol = Patrol:new("Widow Isabella")
 patrol:assign_being(woman)
 schedule_every(42, function() patrol:logic() end)

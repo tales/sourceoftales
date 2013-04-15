@@ -35,7 +35,7 @@ end
 function NPCPatrol:block(ch, delay)
     self.blocked_dialouges[ch] = delay or -1
     for _, member in ipairs(self.members) do
-        being_walk(member, posX(member), posY(member))
+        member:walk(member:position())
     end
     if ch then
         on_remove(ch, function() self:unblock(ch) end)

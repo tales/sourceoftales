@@ -47,12 +47,12 @@ local function rebel_talk(npc, ch)
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        being_damage(ch, 70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local rebel = create_npc_by_name("Rebel Tristan", rebel_talk)
-being_set_base_attribute(rebel, 16, 3)
+rebel:set_base_attribute(16, 3)
 patrol:assign_being(rebel)
 schedule_every(4, function() patrol:logic() end)

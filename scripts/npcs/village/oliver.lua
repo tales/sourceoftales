@@ -32,7 +32,7 @@ local function man_talk(npc, ch)
     local res = ask(choices)
     if res == 2 then
         say("Oh, I'm just hanging around. I helped my father to bring his "
-            .. " goods in front of the casern and now I feel tired.")
+            .. "goods in front of the casern and now I feel tired.")
         say("I don't like all this work. My father wants me to take over "
             .. "his shop when I'm a bit older, but all this "
             .. "merchant stuff is so terribly boring.")
@@ -47,6 +47,6 @@ local function man_talk(npc, ch)
 end
 
 local man = create_npc_by_name("Oliver", man_talk)
-being_set_base_attribute(man, 16, 1)
+man:set_base_attribute(16, 1)
 patrol:assign_being(man)
 schedule_every(10, function() patrol:logic() end)

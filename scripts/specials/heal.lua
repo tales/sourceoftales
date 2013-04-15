@@ -27,7 +27,7 @@ local range = 6 * TILESIZE
 local spell = get_special_info("Magic_Heal")
 spell:on_use(function(user, target, special_id)
     target = target or user
-    if being_type(target) ~= TYPE_CHARACTER and target ~= user then
+    if target:type() ~= TYPE_CHARACTER and target ~= user then
         return
     end
 
@@ -35,8 +35,8 @@ spell:on_use(function(user, target, special_id)
 
     effect_create(12, target)
     
-    local current_hp = being_get_modified_attribute(target, ATTR_HP)
-    local max_hp = being_get_modified_attribute(target, ATTR_MAX_HP)
+    local current_hp = target:modified_attribute(ATTR_HP)
+    local max_hp = target:modified_attribute(ATTR_MAX_HP)
 
     heal_mod = math.min(heal_mod, max_hp - current_hp)
     local gained_exp = math.floor(heal_mod / 10)
@@ -45,14 +45,14 @@ spell:on_use(function(user, target, special_id)
         return
     end
     
-    being_set_base_attribute(target, ATTR_HP, current_hp + heal_mod)
+    target:set_base_attribute(ATTR_HP, current_hp + heal_mod)
 
 
     -- No exp for self heal
     if target ~= user then
-        chr_give_exp(user, skill_name, gained_exp)
+        user:give_xp(skill_name, gained_exp)
     end
     
-    chr_set_special_mana(user, special_id, 0)
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 end)

@@ -36,22 +36,22 @@ local function rebel_talk(npc, ch)
             local res = ask(choices)
             if res == 1 then
                 say("Great, we were waiting on those.")
-                local pumpkin = chr_inv_count(ch, true, false, "Pumpkin")
-                local foodshank = chr_inv_count(ch, true, false, "Food Shank")
-                local apple = chr_inv_count(ch, true, false, "Apple")
+                local pumpkin = ch:inv_count(true, false, "Pumpkin")
+                local foodshank = ch:inv_count(true, false, "Food Shank")
+                local apple = ch:inv_count(true, false, "Apple")
                 if (pumpkin >= REBEL_FOOD_PUMPKIN
                     and foodshank >= REBEL_FOOD_FOODSHANK
                     and apple >= REBEL_FOOD_APPLE)
                 then
-                    chr_inv_change(ch, "Pumpkin", -REBEL_FOOD_PUMPKIN,
+                    ch:inv_change("Pumpkin", -REBEL_FOOD_PUMPKIN,
                                     "Food Shank", -REBEL_FOOD_FOODSHANK,
                                     "Apple", -REBEL_FOOD_APPLE)
 
                     change_reputation(ch, "rebel_reputation", "Rebels", 10)
                     change_reputation(ch, "soldier_reputation", "Army", -5)
                     chr_set_quest(ch, "rebel_goldenfields_supplies", "done")
-                    chr_inv_change(ch, "Robe Hood", 1)
-                    chr_inv_change(ch, "Robe Shirt", 1)
+                    ch:inv_change("Robe Hood", 1)
+                    ch:inv_change("Robe Shirt", 1)
                     say("Well done.")
                 else
                     say("There's something missing. Don't think you can "
@@ -82,12 +82,12 @@ local function rebel_talk(npc, ch)
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local rebel = create_npc_by_name("Rebel Henry", rebel_talk)
-being_set_base_attribute(rebel, 16, 1)
+rebel:set_base_attribute(16, 1)
 patrol:assign_being(rebel)
 schedule_every(8, function() patrol:logic() end)

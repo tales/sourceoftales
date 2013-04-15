@@ -34,15 +34,15 @@ spell:on_use(function(user, target, special_id)
     local damage_mod = damage * get_special_factor(user, skill_name)
 
     effect_create(1, user)
-    chr_set_special_mana(user, special_id, 0)
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 
     local beings = get_beings_in_circle(user, range)
     for _, being in ipairs(beings) do
-        if being ~= user and (being_type(being) == TYPE_MONSTER or 
-           (map_get_pvp() == PVP_FREE and being_type(being) == TYPE_CHARACTER))
+        if being ~= user and (being:type() == TYPE_MONSTER or 
+           (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER))
         then
-            being_damage(being, damage_mod, damage_delta, damage_cth,
+            being:damage(damage_mod, damage_delta, damage_cth,
                          damage_type, damage_element, user, skill_name)
         end
     end

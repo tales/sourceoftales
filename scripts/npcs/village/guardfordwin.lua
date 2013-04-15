@@ -55,28 +55,28 @@ local function guard_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local function guard_denyExit(ch)
-    if being_type(ch) ~= TYPE_CHARACTER then
+    if ch:type() ~= TYPE_CHARACTER then
         return
     end
 
     local quest = chr_try_get_quest(ch, "tutorial_fight")
     if quest ~= "done" then
-        chat_message(ch, "Guard Fordwin: Hey! I can't let you pass like this. "
+        ch:message("Guard Fordwin: Hey! I can't let you pass like this. "
                     .. "Get your equipment and finish your basic training!")
         local x, y = get_named_coordinate("Gate Warp")
-        chr_warp(ch, nil, posX(ch), y)
-        being_set_direction(ch, DIRECTION_UP)
+        ch:warp(nil, ch:x(), y)
+        ch:set_direction(DIRECTION_UP)
     end
 end
 
 local guard = create_npc_by_name("Guard Fordwin", guard_talk)
 create_trigger_by_name("Casern south gate", guard_denyExit)
-being_set_base_attribute(guard, 16, 1)
+guard:set_base_attribute(16, 1)
 patrol:assign_being(guard)
 schedule_every(34, function() patrol:logic() end)

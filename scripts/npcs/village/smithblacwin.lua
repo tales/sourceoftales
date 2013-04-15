@@ -40,8 +40,8 @@ local function smith_talk(npc, ch)
             local res = ask(ask_equip)
             if res == 1 then
                 say("Here.")
-                chr_inv_change(ch, "Kettle hat", 1)
-                chr_inv_change(ch, "Rusty chain armor", 1)
+                ch:inv_change("Kettle hat", 1)
+                ch:inv_change("Rusty chain armor", 1)
                 chr_set_quest(ch, "tutorial_equip", "done")
                 local reply_equip = {
                     "You're not very talkative, are you?",
@@ -87,12 +87,12 @@ local function smith_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Argh!")
-        being_damage(ch, 120, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(120, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local smith = create_npc_by_name("Smith Blacwin", smith_talk)
-being_set_base_attribute(smith, 16, 1)
+smith:set_base_attribute(16, 1)
 patrol:assign_being(smith)
 schedule_every(12, function() patrol:logic() end)

@@ -20,14 +20,14 @@
 --]]
 
 function recalculate_special_rechargespeed(user, special)
-    local speed = 175 + being_get_base_attribute(user, ATTR_INT)
-    chr_set_special_recharge_speed(user, special, speed)
+    local speed = 175 + user:base_attribute(ATTR_INT)
+    user:set_special_recharge_speed(special, speed)
 end
 
 function get_special_factor(user, skill_name)
-    local exp = chr_get_exp(user, skill_name)
-    local factor = math.max(chr_get_level(user, skill_name) / 10, 1)
-    return factor * (being_get_base_attribute(user, ATTR_WIL) / 128 + 1)
+    local exp = user:xp(skill_name)
+    local factor = math.max(user:level(skill_name) / 10, 1)
+    return factor * (user:base_attribute(ATTR_WIL) / 128 + 1)
 end
 
 require "scripts/specials/firelion"

@@ -50,7 +50,7 @@ local function chef_talk(npc, ch)
     end
 
     local function beetle_stew_check(amount)
-        local beetle_amount = chr_inv_count(ch, true, false, "Beetle Corpus")
+        local beetle_amount = ch:inv_count(true, false, "Beetle Corpus")
         say("Please bring me " .. amount .. " beetles, so I can create the "
             .. "most delicious beetle stew.")
         if beetle_amount >= amount then
@@ -60,9 +60,9 @@ local function chef_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                beetle_amount = chr_inv_count(ch, true, false, "Beetle Corpus")
+                beetle_amount = ch:inv_count(true, false, "Beetle Corpus")
                 if beetle_amount >= amount then
-                    chr_inv_change(ch, "Beetle Corpus", -amount)
+                    ch:inv_change("Beetle Corpus", -amount)
                     chr_money_change(ch, 100)
                     say("Wonderful, wonderful! I'll start with the beetle "
                         .. "stew right now.")
@@ -80,7 +80,7 @@ local function chef_talk(npc, ch)
     if beetle_quest == "done" then
         say("Ah, my friend. Thanks again for bringing me those beetles. "
             .. "Here, have a bowl of beetle stew!")
-        being_heal(ch, 150)
+        ch:heal(150)
     elseif beetle_quest == "gotorder" then
         beetle_stew_check(BEETLE_AMOUNT)
     else
@@ -90,7 +90,7 @@ end
 
 local chef = create_npc_by_name("Chef Odo", chef_talk)
 
-being_set_base_attribute(chef, 16, 1)
+chef:set_base_attribute(16, 1)
 local patrol = Patrol:new("Chef Odo")
 patrol:assign_being(chef)
 schedule_every(11, function() patrol:logic() end)

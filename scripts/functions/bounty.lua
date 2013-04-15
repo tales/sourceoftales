@@ -22,7 +22,7 @@
 
 
 function goldenfields_check_bounty(npc, ch, questvar, monster)
-    local killcount = chr_get_kill_count(ch, monster)
+    local killcount = ch:kill_count(monster)
     local killcount_old = tonumber(chr_get_quest(ch, questvar))
     if killcount_old == nil then
         killcount_old = 0
@@ -41,35 +41,35 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
         r = math.random(5)
         if r == 1 then
             if d > bombvalue then
-                chr_inv_change(ch, "Bomb", 1)
+                ch:inv_change("Bomb", 1)
                 d = d - bombvalue
             else
                 finished = true
             end
         elseif r == 2 then
             if d > largepotionvalue then
-                chr_inv_change(ch, "Large Healing Potion", 1)
+                ch:inv_change("Large Healing Potion", 1)
                 d = d - largepotionvalue
             else
                 finished = true
             end
         elseif r == 3 then
             if d > mediumpotionvalue then
-                chr_inv_change(ch, "Medium Healing Potion", 1)
+                ch:inv_change("Medium Healing Potion", 1)
                 d = d - mediumpotionvalue
             else
                 finished = true
             end
         elseif r == 4 then
             if d > smallpotionvalue then
-                chr_inv_change(ch, "Small Healing Potion", 1)
+                ch:inv_change("Small Healing Potion", 1)
                 d = d - smallpotionvalue
             else
                 finished = true
             end
         elseif r == 5 then
             if d > tinypotionvalue then
-                chr_inv_change(ch, "Tiny Healing Potion", 1)
+                ch:inv_change("Tiny Healing Potion", 1)
                 d = d - tinypotionvalue
             else
                 finished = true
@@ -81,22 +81,22 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
     if (killcount >= GOLDENFIELDS_BOUNTY_LOW
         and killcount_old < GOLDENFIELDS_BOUNTY_LOW)
     then
-        chr_inv_change(ch, "Iron Gloves", 1)
+        ch:inv_change("Iron Gloves", 1)
     end
     if (killcount >= GOLDENFIELDS_BOUNTY_MEDIUM
         and killcount_old < GOLDENFIELDS_BOUNTY_MEDIUM)
     then
-        chr_inv_change(ch, "Iron Boots", 1)
+        ch:inv_change("Iron Boots", 1)
     end
     if (killcount >= GOLDENFIELDS_BOUNTY_HIGH
         and killcount_old < GOLDENFIELDS_BOUNTY_HIGH)
     then
-        chr_inv_change(ch, "Iron Pants", 1)
+        ch:inv_change("Iron Pants", 1)
     end
     if (killcount >= GOLDENFIELDS_BOUNTY_VERY_HIGH
         and killcount_old < GOLDENFIELDS_BOUNTY_VERY_HIGH)
     then
-        chr_inv_change(ch, "Iron Armor", 1)
+        ch:inv_change("Iron Armor", 1)
     end
     chr_set_quest(ch, questvar, tostring(killcount))
     if killcount ~= killcount_old then
