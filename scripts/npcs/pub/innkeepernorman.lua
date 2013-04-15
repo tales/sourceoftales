@@ -35,7 +35,7 @@ local function innkeeper_talk(npc, ch)
         say("I have some supplies for our hideout in the forest, please take "
             .. "it with you when you go there. Just leave the village to the "
             .. "west and go south once you entered the forest.")
-        chr_inv_change(ch, "Pumpkin", REBEL_FOOD_PUMPKIN,
+        ch:inv_change("Pumpkin", REBEL_FOOD_PUMPKIN,
                         "Food Shank", REBEL_FOOD_FOODSHANK,
                         "Apple", REBEL_FOOD_APPLE)
         chr_set_quest(ch, "rebel_goldenfields_supplies", "started")
@@ -208,6 +208,6 @@ local function innkeeper_talk(npc, ch)
 end
 
 local innkeeper = create_npc_by_name("Innkeeper Norman", innkeeper_talk)
-being_set_base_attribute(innkeeper, 16, 1)
+innkeeper:set_base_attribute(16, 1)
 patrol:assign_being(innkeeper)
 schedule_every(21, function() patrol:logic() end)

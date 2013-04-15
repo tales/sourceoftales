@@ -47,9 +47,9 @@ function change_reputation(ch, factionvar, factionname, change)
     reputation = reputation + change
     chr_set_quest(ch, factionvar, tostring(reputation))
     if change > 0 then
-        chr_create_text_particle(ch, factionname .. " reputation +".. change)
+        ch:show_text_particle(factionname .. " reputation +".. change)
     else
-        chr_create_text_particle(ch, factionname .. " reputation ".. change)
+        ch:show_text_particle(factionname .. " reputation ".. change)
     end
 end
 

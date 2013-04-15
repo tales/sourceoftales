@@ -28,13 +28,13 @@ local spell = get_special_info("Magic_Insult")
 spell:on_use(function(user, target, special_id)
     local anger_mod = anger * get_special_factor(user, skill_name)
 
-    chr_set_special_mana(user, special_id, 0)
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 
     local beings = get_beings_in_circle(user, range)
     for _, being in ipairs(beings) do
-        if being_type(being) == TYPE_MONSTER then
-            monster_change_anger(being, user, anger_mod)
+        if being:type() == TYPE_MONSTER then
+            being:change_anger(user, anger_mod)
         end
     end
 end)

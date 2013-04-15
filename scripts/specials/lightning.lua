@@ -30,8 +30,8 @@ local range = 6 * TILESIZE
 
 local spell = get_special_info("Magic_Lightning")
 spell:on_use(function(user, target, special_id)
-    if not target or not (being_type(target) == TYPE_MONSTER or
-        (map_get_pvp() == PVP_FREE and being_type(target) == TYPE_CHARACTER))
+    if not target or not (target:type() == TYPE_MONSTER or
+        (map_get_pvp() == PVP_FREE and target:type() == TYPE_CHARACTER))
     then
         return
     end
@@ -39,9 +39,9 @@ spell:on_use(function(user, target, special_id)
     local damage_mod = damage * get_special_factor(user, skill_name)
 
     effect_create(11, target)
-    chr_set_special_mana(user, special_id, 0)
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 
-    being_damage(target, damage_mod, damage_delta, damage_cth,
+    target:damage(damage_mod, damage_delta, damage_cth,
                  damage_type, damage_element, user, skill_name)
 end)

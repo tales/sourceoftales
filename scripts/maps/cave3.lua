@@ -30,7 +30,7 @@ local mobs = {
 local current_skeletons = {}
 
 local function spawn(being, name, amount)
-    if being_type(being) ~= TYPE_CHARACTER then return end
+    if being:type() ~= TYPE_CHARACTER then return end
 
     current_skeletons[name] = current_skeletons[name] or {}
     local list = current_skeletons[name]
@@ -53,9 +53,9 @@ end
 local function cleanup()
     for _, list in pairs(current_skeletons) do
         for mob, lifetime in pairs(list) do
-            if #monster_get_angerlist(mob) == 0 then
+            if #mob:angerlist() == 0 then
                 if lifetime == 1 then
-                    being_set_base_attribute(mob, 13, 0)
+                    mob:set_base_attribute(13, 0)
                     list[mob] = nil
                 else
                     list[mob] = 1

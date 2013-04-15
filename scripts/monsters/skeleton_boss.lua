@@ -46,10 +46,10 @@ schedule_every(10, function()
     local beings = get_beings_in_rectangle(area:bounds())
 
     for _, target in ipairs(beings) do
-        if being_type(target) == TYPE_CHARACTER then
+        if target:type() == TYPE_CHARACTER then
             local possible_directions = {}
             for _, p in ipairs(attack_directions) do
-                local x, y = p.x + posX(target), p.y + posY(target)
+                local x, y = p.x + target:x(), p.y + target:y()
                 if is_walkable(x, y) then
                     table.insert(possible_directions, p)
                 end
@@ -57,7 +57,7 @@ schedule_every(10, function()
 
             for _, p in ipairs(possible_directions) do
                 local mobname = mobs[math.random(#mobs)]
-                local mob = monster_create(mobname, posX(target) + p.x, posY(target) + p.y)
+                local mob = monster_create(mobname, target:x() + p.x, target:y() + p.y)
                 on_death(mob, function() spawned_mobs[mob] = nil end)
                 spawned_mobs[mob] = 0
             end
@@ -68,9 +68,9 @@ end)
 
 schedule_every(60, function()
     for mob, lifetime in pairs(spawned_mobs) do
-        if #monster_get_angerlist(mob) == 0 then
+        if #mob:angerlist() == 0 then
             if lifetime == 1 then
-                being_set_base_attribute(mob, 13, 0)
+                mob:set_base_attribute(13, 0)
                 spawned_mobs[mob] = nil
             else
                 spawned_mobs[mob] = 1

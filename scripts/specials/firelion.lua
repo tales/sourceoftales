@@ -33,43 +33,42 @@ spell:on_use(function(user, target, special_id)
     local damage_mod = damage * get_special_factor(user, skill_name)
 
     local x, y, w, h, effect_id
-    local direction = being_get_direction(user)
+    local direction = user:direction()
     if direction == DIRECTION_UP then
-        x = posX(user) - 1.5 * TILESIZE
-        y = posY(user) - 2 * TILESIZE
+        x = user:x() - 1.5 * TILESIZE
+        y = user:y() - 2 * TILESIZE
         w = 3 * TILESIZE
         h = 2 * TILESIZE
         effect_id = 8
     elseif direction == DIRECTION_DOWN then
-        x = posX(user) - 1.5 * TILESIZE
-        y = posY(user)
+        x = user:x() - 1.5 * TILESIZE
+        y = user:y()
         w = 3 * TILESIZE
         h = 2 * TILESIZE
         effect_id = 7
     elseif direction == DIRECTION_LEFT then
-        x = posX(user) - 2 * TILESIZE
-        y = posY(user) - 1.5 * TILESIZE
+        x = user:x() - 2 * TILESIZE
+        y = user:y() - 1.5 * TILESIZE
         w = 2 * TILESIZE
         h = 3 * TILESIZE
         effect_id = 9
     elseif direction == DIRECTION_RIGHT then
-        x = posX(user)
-        y = posY(user) - 1.5 * TILESIZE
+        x = user:x()
+        y = user:y() - 1.5 * TILESIZE
         w = 2 * TILESIZE
         h = 3 * TILESIZE
         effect_id = 10
     end
 
-    effect_create(effect_id, posX(user), posY(user))
-    chr_set_special_mana(user, special_id, 0)
+    effect_create(effect_id, user:position())
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 
-    local beings = get_beings_in_rectangle(x, y, w ,h)
-    for _, being in ipairs(beings) do
-        if being ~= user and (being_type(being) == TYPE_MONSTER or 
-           (map_get_pvp() == PVP_FREE and being_type(being) == TYPE_CHARACTER))
+    for _, being in ipairs(get_beings_in_rectangle(x, y, w ,h)) do
+        if being ~= user and (being:type() == TYPE_MONSTER or 
+           (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER))
         then
-            being_damage(being, damage_mod, damage_delta, damage_cth,
+            being:damage(damage_mod, damage_delta, damage_cth,
                          damage_type, damage_element, user, skill_name)
         end
     end

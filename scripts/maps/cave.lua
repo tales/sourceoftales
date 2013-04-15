@@ -28,7 +28,7 @@ local function alcoves_onRemove()
 end
 
 local function alcoves_spawn(being)
-    if being_type(being) == TYPE_CHARACTER and alcoves_monster_number == 0 then
+    if being:type() == TYPE_CHARACTER and alcoves_monster_number == 0 then
         local mobs = {}
         alcoves_monster_number = 6
         table.insert(mobs, monster_create("Skeleton",
@@ -51,7 +51,7 @@ local function alcoves_spawn(being)
 end
 
 local function shrinequest_spawn(being, id)
-    if being_type(being) ~= TYPE_CHARACTER then
+    if being:type() ~= TYPE_CHARACTER then
         return
     end
 
@@ -62,7 +62,7 @@ local function shrinequest_spawn(being, id)
         elseif id == 2 then
             monster_create("Skeleton", get_named_coordinate("Shrinequest Skeleton Spawn East"))
         end
-        being_say(being, "A skeleton! I should return and tell Priestess Linota about this!")
+        being:say("A skeleton! I should return and tell Priestess Linota about this!")
         chr_set_quest(being, "goldenfields_shrine", "skeletonspotted")
     end
 end

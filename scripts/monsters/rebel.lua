@@ -26,7 +26,7 @@ require "scripts/monsters/group_monster"
 local function damaged(mob, aggressor, hploss)
     group_monster.damage_recieved(mob, aggressor, hploss)
 
-    if being_get_base_attribute(mob, ATTR_HP) > 0 then return end
+    if mob:base_attribute(ATTR_HP) > 0 then return end
 
     local reputation_soldier = tonumber(chr_try_get_quest(aggressor, "soldier_reputation"))
     local reputation_rebel = tonumber(chr_try_get_quest(aggressor, "rebel_reputation"))

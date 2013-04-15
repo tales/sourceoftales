@@ -74,7 +74,7 @@ end
 
 local magistrate = create_npc_by_name("Magistrate Eustace", magistrate_talk)
 
-being_set_base_attribute(magistrate, 16, 1)
+magistrate:set_base_attribute(16, 1)
 local patrol = Patrol:new("Magistrate Eustace")
 patrol:assign_being(magistrate)
 schedule_every(15, function() patrol:logic() end)

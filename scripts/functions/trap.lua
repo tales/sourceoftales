@@ -58,7 +58,7 @@ end
 local function deal_damage(trap)
     local beings = get_beings_in_rectangle(trap.x, trap.y, trap.w, trap.h)
     for _, being in ipairs(beings) do
-        being_damage(being, trap.damage, trap.damage_delta, trap.chance_to_hit,
+        being:damage(trap.damage, trap.damage_delta, trap.chance_to_hit,
                      trap.damage_type, trap.element)
     end
     trap.usable = false

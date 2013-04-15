@@ -34,8 +34,8 @@ function Rebel_patrol:new(name, track_range, min_reputation)
 end
 
 function Rebel_patrol:is_aggressiveAgainst(being)
-    if not (being_type(being) == TYPE_CHARACTER and
-            being_get_base_attribute(being, 13) > 0) then
+    if not (being:type() == TYPE_CHARACTER and
+            being:base_attribute(13) > 0) then
         return false
     end
 

@@ -86,14 +86,13 @@ local function durmark_talk(npc, ch)
                 -- Reset quest at map change or logout
                 on_remove(ch, function()
                     if bee_quest_char == ch then
-                        chr_create_text_particle(bee_quest_char, "You failed the Bee Quest.")
+                        bee_quest_char:show_text_particle("You failed the Bee Quest.")
                         bee_quest_char = nil
                     end
                 end)
                 schedule_in(30 * 60, function()
                     if bee_quest_char == ch then
-                        chr_create_text_particle(bee_quest_char,
-                                                 "You took to long for the Bee Quest")
+                        bee_quest_char:show_text_particle("You took to long for the Bee Quest")
                         bee_quest_char = nil
                     end
                 end)
@@ -177,10 +176,10 @@ init()
 local function bee_remove()
     bee_counter = bee_counter - 1
     if bee_counter == 0 then
-        if (bee_quest_char ~= nil) and (get_distance(posX(bee_quest_char), posY(bee_quest_char),
+        if (bee_quest_char ~= nil) and (get_distance(bee_quest_char:x(), bee_quest_char:y(),
                         bee_spawn_trigger_position.x, bee_spawn_trigger_position.y) < 20 * TILESIZE) then
             chr_set_quest(bee_quest_char, "goldenfields_durmark_bees", "reward")
-            chr_create_text_particle(bee_quest_char, "Finished bee quest! Talk to Durmark for a reward.")
+            bee_quest_char:show_text_particle("Finished bee quest! Talk to Durmark for a reward.")
         end
         
         -- Reset so quest can be done again in 30 minutes
@@ -192,12 +191,12 @@ end
 
 local function bee_trigger(being)
     if being == bee_quest_char and bee_quest_doable then
-        local x, y = posX(being), posY(being)
+        local x, y = being:position()
         for i=1,10 do
             local bee = monster_create("Bee", x + math.random(-4 * TILESIZE, 4 * TILESIZE),
                                        y + math.random(-4 * TILESIZE, 4 * TILESIZE))
             on_remove(bee, bee_remove)
-            monster_change_anger(bee, bee_quest_char, 1)
+            bee:change_anger(bee_quest_char, 1)
             bee_counter = bee_counter + 1
         end
         bee_quest_doable = false
@@ -206,6 +205,6 @@ end
 
 local durmark = create_npc_by_name("Durmark", durmark_talk)
 local bee_trigger = create_trigger_by_name("Bee trigger", bee_trigger)
-being_set_base_attribute(durmark, 16, 1)
+durmark:set_base_attribute(16, 1)
 patrol:assign_being(durmark)
 schedule_every(10, function() patrol:logic() end)

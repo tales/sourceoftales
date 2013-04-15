@@ -25,7 +25,7 @@ local function recruit_talk(npc, ch)
     patrol:block(ch)
 
     local function chat()
-        say("Hello " .. being_get_name(ch) .. ". Let's talk a bit.")
+        say("Hello " .. ch:name() .. ". Let's talk a bit.")
 
         local choices = {
             "Why did you become a soldier?",
@@ -81,12 +81,12 @@ local function recruit_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        being_damage(ch, 80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
     patrol:unblock(ch)
 end
 
 local recruit = create_npc_by_name("Recruit Maurice", recruit_talk)
-being_set_base_attribute(recruit, 16, 1)
+recruit:set_base_attribute(16, 1)
 patrol:assign_being(recruit)
 schedule_every(16, function() patrol:logic() end)

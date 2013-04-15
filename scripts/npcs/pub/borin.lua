@@ -46,6 +46,6 @@ local function man_talk(npc, ch)
 end
 
 local man = create_npc_by_name("Borin", man_talk)
-being_set_base_attribute(man, 16, 1)
+man:set_base_attribute(16, 1)
 patrol:assign_being(man)
 schedule_every(43, function() patrol:logic() end)

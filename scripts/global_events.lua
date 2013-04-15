@@ -31,22 +31,22 @@
 local function on_chr_birth(ch)
     local spawn_items = { "Simple shirt", "Pants", "Boots" }
     for _, item in ipairs(spawn_items) do
-        chr_inv_change(ch, item, 1)
-        chr_equip_item(ch, item)
+        ch:inv_change(item, 1)
+        ch:equip_item(item)
     end
 
     -- Set start reputation
     chr_set_quest(ch, "soldier_reputation", tostring(REPUTATION_NEUTRAL))
     chr_set_quest(ch, "rebel_reputation", tostring(REPUTATION_NEUTRAL))
 
-    being_heal(ch)
+    ch:heal()
 end
 
 
 -- Register the callback that is called when the hit points of a character
 -- reach zero.
 on_character_death(function(ch)
-    being_say(ch, "Noooooo!!!")
+    ch:say("Noooooo!!!")
 end)
 
 -- This function is called when the player clicks on the OK button after the
@@ -55,9 +55,9 @@ end)
 -- bring HP above zero in some way)
 on_character_death_accept(function(ch)
     -- restores to full hp
-    being_heal(ch)
+    ch:heal()
     -- restores 1 hp (in case you want to be less nice)
-    -- being_heal(ch, 1)
+    -- ch:heal(1)
     -- warp the character to the respawn location
     local position = chr_try_get_quest(ch, "respawn")
     if position == "" then
@@ -67,7 +67,7 @@ on_character_death_accept(function(ch)
     local map = tonumber(position:split(" ")[1])
     local x = tonumber(position:split(" ")[2])
     local y = tonumber(position:split(" ")[3])
-    chr_warp(ch, map, x, y)
+    ch:warp(map, x, y)
 end)
 
 -- This function is called when a character logs into the game. This can,
@@ -107,11 +107,11 @@ end
 -- be useful for various handling of offline processing mechanics.
 local function on_chr_logout(ch)
     -- notifies nearby players of logout
-    local around = get_beings_in_circle(posX(ch), posY(ch), 1000)
-    local msg = being_get_name(ch).." left the game."
+    local around = get_beings_in_circle(ch, 1000)
+    local msg = ch:name().." left the game."
     for b in pairs(around) do
-        if being_type(b) == TYPE_CHARACTER then
-            chat_message(0, b, msg)
+        if b:type() == TYPE_CHARACTER then
+            b:message(msg)
         end
     end
 end

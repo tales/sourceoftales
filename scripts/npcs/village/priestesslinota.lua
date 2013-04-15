@@ -137,7 +137,7 @@ local function priestess_talk(npc, ch)
             .. "We need to stop this!")
         say("Did you find anything that can help us to get more "
             .. "information about the undeads?")
-        local artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
+        local artifact = ch:inv_count(true, false, "Unholy Crystals")
         if artifact > 0 then
             local choices = {
                 "Yes, I found this strange artifact.",
@@ -145,9 +145,9 @@ local function priestess_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                artifact = chr_inv_count(ch, true, false, "Unholy Crystals")
+                artifact = ch:inv_count(true, false, "Unholy Crystals")
                 if artifact > 0 then
-                    chr_inv_change(ch, "Unholy Crystals", -1)
+                    ch:inv_change("Unholy Crystals", -1)
                     say("Let me see...")
                     say("This is... very alarming. The order needs to be "
                         .. "informed about that. I'll write a letter "
@@ -162,16 +162,16 @@ local function priestess_talk(npc, ch)
                     local magic = chr_get_quest(ch, "magic")
                     chr_set_quest(ch, "goldenfields_shrine", "done")
                     if magic == "fire" then
-                        chr_give_special(ch, "Magic_Fire Lion")
+                        ch:give_special("Magic_Fire Lion")
                         say("You now have the ability to call a fiery lion "
                             .. "upon your opponent.")
                     elseif magic == "water" then
-                        chr_give_special(ch, "Magic_Insult")
+                        ch:give_special("Magic_Insult")
                         say("Use your new ability to get your opponents "
                             .. "attention. You can use this to protect your "
                             .. "fellows.")
                     elseif magic == "earth" then
-                        chr_give_special(ch, "Magic_Earthquake")
+                        ch:give_special("Magic_Earthquake")
                         say("Let the earth shake around you to inflict "
                             .. "damage on your enemies.")
                     end
@@ -221,16 +221,16 @@ local function priestess_talk(npc, ch)
         local res = ask(choices)
         chr_set_quest(ch, "goldenfields_shrine", "getartifact")
         if res == 1 then
-            chr_give_special(ch, "Magic_Lightning")
+            ch:give_special("Magic_Lightning")
             chr_set_quest(ch, "magic", "fire")
             say("Now you can ask Ignis to strike your enemy with lightning.")
         elseif res == 2 then
-            chr_give_special(ch, "Magic_Heal")
+            ch:give_special("Magic_Heal")
             chr_set_quest(ch, "magic", "water")
             say("You now have the ability to heal your wounds with the "
                 .. "aid of Aquaria.")
         else
-            chr_give_special(ch, "Magic_Snake Bite")
+            ch:give_special("Magic_Snake Bite")
             chr_set_quest(ch, "magic", "earth")
             say("Now you can call The Third God's servants to bite your "
                 .. "enemy.")
@@ -281,9 +281,9 @@ local function priestess_talk(npc, ch)
                     .. "casern. And be careful.")
                 chr_set_quest(ch, "goldenfields_shrine", "started")
                 local skeleton_killcount =
-                    chr_get_kill_count(ch, "Skeleton Mage")
-                    + chr_get_kill_count(ch, "Skeleton")
-                    + chr_get_kill_count(ch, "Skeleton Soldier")
+                    ch:kill_count("Skeleton Mage")
+                    + ch:kill_count("Skeleton")
+                    + ch:kill_count("Skeleton Soldier")
                 if skeleton_killcount > 0 then
                     local choices = {
                         "I already visited the caves. "

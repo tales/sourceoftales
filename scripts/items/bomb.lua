@@ -34,8 +34,8 @@ get_item_class(7):on("use", function(user)
     -- Assign on remove callback to prevent server crashs
     on_remove(user, function() user = nil end)
     
-    local x, y = posX(user), posY(user)
-    local exp = chr_get_exp(user, skillname)
+    local x, y = user:position()
+    local exp = user:xp(skillname)
     local damage_mod = get_skill_factor(exp) * damage
 
 
@@ -46,11 +46,11 @@ get_item_class(7):on("use", function(user)
                                                2 * range, 2 * range)
         effect_create(effect_id, x, y)
         for _, being in ipairs(beings) do
-            if being_type(being) == TYPE_MONSTER or being == user or
-               (map_get_pvp() == PVP_FREE and being_type(being) == TYPE_CHARACTER) then
+            if being:type() == TYPE_MONSTER or being == user or
+               (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER) then
                 WARN("DAMAGE")
                 
-                being_damage(being, damage_mod, damage_delta, accuracy,
+                being:damage(damage_mod, damage_delta, accuracy,
                              DAMAGE_PHYSICAL, ELEMENT_EARTH, user, skillname)
             end
         end

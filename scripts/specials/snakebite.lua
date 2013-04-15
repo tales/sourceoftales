@@ -33,20 +33,20 @@ local offset = TILESIZE
 
 local spell = get_special_info("Magic_Snake Bite")
 spell:on_use(function(user, target, special_id)
-    if not target or not (being_type(target) == TYPE_MONSTER or
-        (map_get_pvp() == PVP_FREE and being_type(target) == TYPE_CHARACTER))
+    if not target or not (target:type() == TYPE_MONSTER or
+        (map_get_pvp() == PVP_FREE and target:type() == TYPE_CHARACTER))
     then
         return
     end
 
     local damage_mod = damage * get_special_factor(user, skill_name)
 
-    chr_set_special_mana(user, special_id, 0)
+    user:set_special_mana(special_id, 0)
     recalculate_special_rechargespeed(user, special_id)
 
     -- Get direction
-    local d_x = posX(target) - posX(user)
-    local d_y = posY(target) - posY(user)
+    local d_x = target:x() - user:x()
+    local d_y = target:y() - user:y()
     local effect_id
 
     if math.abs(d_x) > math.abs(d_y) then
@@ -63,9 +63,9 @@ spell:on_use(function(user, target, special_id)
         end
     end
 
-    effect_create(effect_id, posX(target), posY(target))
+    effect_create(effect_id, target:position())
 
 
-    being_damage(target, damage_mod, damage_delta, damage_cth,
-                 damage_type, damage_element, user, skill_name)
+    target:damage(damage_mod, damage_delta, damage_cth,
+                  damage_type, damage_element, user, skill_name)
 end)
