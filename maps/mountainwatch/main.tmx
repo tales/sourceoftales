@@ -212,6 +212,20 @@
    </properties>
   </object>
   <object name="ladder3godownexit" type="WARP" x="5120" y="640" width="32" height="32"/>
+  <object name="cave1entrance1" type="WARP" x="928" y="5120" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/cave1"/>
+    <property name="DEST_NAME" value="entrance1"/>
+   </properties>
+  </object>
+  <object name="cave1exit1" type="WARP" x="928" y="5152" width="32" height="32"/>
+  <object name="cave1entrance2" type="WARP" x="1760" y="5088" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/cave1"/>
+    <property name="DEST_NAME" value="entrance2"/>
+   </properties>
+  </object>
+  <object name="cave1exit2" type="WARP" x="1760" y="5120" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Objects" width="200" height="200" visible="0"/>
  <layer name="Tile Layer 18" width="200" height="200" visible="0">
