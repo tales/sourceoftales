@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="89" height="68" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
-  <image source="../tiles/collision.png" width="64" height="32"/>
+  <image source="../../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <tileset firstgid="3" name="castlewalls" tilewidth="32" tileheight="32">
-  <image source="../tiles/castlewalls.png" width="384" height="480"/>
+  <image source="../../tiles/castlewalls.png" width="384" height="480"/>
  </tileset>
  <tileset firstgid="183" name="stairs_red_carpet" tilewidth="32" tileheight="32">
-  <image source="../tiles/stairs_red_carpet.png" width="256" height="448"/>
+  <image source="../../tiles/stairs_red_carpet.png" width="256" height="448"/>
  </tileset>
  <tileset firstgid="295" name="castlefloors" tilewidth="32" tileheight="32">
-  <image source="../tiles/castlefloors.png" width="320" height="320"/>
+  <image source="../../tiles/castlefloors.png" width="320" height="320"/>
  </tileset>
  <tileset firstgid="395" name="cabinets" tilewidth="32" tileheight="32">
-  <image source="../tiles/cabinets.png" width="192" height="416"/>
+  <image source="../../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
- <tileset firstgid="473" source="../tiles/castle_lightsources_small.tsx"/>
+ <tileset firstgid="473" source="../../tiles/castle_lightsources_small.tsx"/>
  <tileset firstgid="523" name="stairs" tilewidth="32" tileheight="32">
-  <image source="../tiles/stairs.png" width="256" height="448"/>
+  <image source="../../tiles/stairs.png" width="256" height="448"/>
  </tileset>
  <tileset firstgid="635" name="barrel" tilewidth="32" tileheight="32">
-  <image source="../tiles/barrel.png" width="128" height="64"/>
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
  </tileset>
  <tileset firstgid="643" name="country" tilewidth="32" tileheight="32">
-  <image source="../tiles/country.png" width="160" height="128"/>
+  <image source="../../tiles/country.png" width="160" height="128"/>
  </tileset>
  <tileset firstgid="663" name="inside" tilewidth="32" tileheight="32">
-  <image source="../tiles/inside.png" width="320" height="320"/>
+  <image source="../../tiles/inside.png" width="320" height="320"/>
  </tileset>
  <tileset firstgid="763" name="kitchen" tilewidth="32" tileheight="32">
-  <image source="../tiles/kitchen.png" width="64" height="128"/>
+  <image source="../../tiles/kitchen.png" width="64" height="128"/>
  </tileset>
  <tileset firstgid="771" name="buckets" tilewidth="32" tileheight="32">
-  <image source="../tiles/buckets.png" width="96" height="64"/>
+  <image source="../../tiles/buckets.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="777" name="woodenbeam" tilewidth="32" tileheight="32">
-  <image source="../tiles/woodenbeam.png" width="256" height="128"/>
+  <image source="../../tiles/woodenbeam.png" width="256" height="128"/>
  </tileset>
  <tileset firstgid="809" name="miscellaneous" tilewidth="32" tileheight="32">
-  <image source="../tiles/miscellaneous.png" width="224" height="64"/>
+  <image source="../../tiles/miscellaneous.png" width="224" height="64"/>
  </tileset>
  <tileset firstgid="823" name="farming_fishing" tilewidth="32" tileheight="32">
-  <image source="../tiles/farming_fishing.png" width="640" height="640"/>
+  <image source="../../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
  <tileset firstgid="1223" name="cementstair" tilewidth="32" tileheight="32">
-  <image source="../tiles/cementstair.png" width="160" height="128"/>
+  <image source="../../tiles/cementstair.png" width="160" height="128"/>
  </tileset>
  <tileset firstgid="1243" name="bg_shadow_and_black" tilewidth="32" tileheight="32">
-  <image source="../tiles/bg_shadow_and_black.png" width="256" height="256"/>
+  <image source="../../tiles/bg_shadow_and_black.png" width="256" height="256"/>
  </tileset>
  <layer name="Background" width="89" height="68">
   <data encoding="base64" compression="zlib">
@@ -154,31 +155,31 @@
  <objectgroup name="Warps" width="89" height="68">
   <object name="To outside" type="WARP" x="1408" y="512" width="96" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit casern"/>
    </properties>
   </object>
   <object name="stairs right" type="WARP" x="1568" y="160" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_north_2nd_floor"/>
+    <property name="DEST_MAP" value="goldenfields/casern_north_2nd_floor"/>
     <property name="DEST_NAME" value="Exit2 1st level"/>
    </properties>
   </object>
   <object name="stairs left" type="WARP" x="1312" y="160" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_north_2nd_floor"/>
+    <property name="DEST_MAP" value="goldenfields/casern_north_2nd_floor"/>
     <property name="DEST_NAME" value="Exit1 1st level"/>
    </properties>
   </object>
   <object name="to cellar" type="WARP" x="1856" y="512" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_cellar"/>
+    <property name="DEST_MAP" value="goldenfields/casern_cellar"/>
     <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
   <object name="stairs tower" type="WARP" x="256" y="192" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_north_west_tower"/>
+    <property name="DEST_MAP" value="goldenfields/casern_north_west_tower"/>
     <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>

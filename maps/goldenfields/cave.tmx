@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="101" height="100" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="strings_theme.ogg"/>
  </properties>
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
-  <image source="../automapping/ruleset.png" width="256" height="64"/>
+  <image source="../../automapping/ruleset.png" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="dungeon" tilewidth="32" tileheight="32">
-  <image source="../tiles/dungeon.png" width="416" height="256"/>
+  <image source="../../tiles/dungeon.png" width="416" height="256"/>
  </tileset>
  <tileset firstgid="121" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="416" height="288"/>
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
  </tileset>
  <tileset firstgid="238" name="dirt2" tilewidth="32" tileheight="32">
-  <image source="../tiles/dirt2.png" width="96" height="192"/>
+  <image source="../../tiles/dirt2.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="256" name="collision" tilewidth="32" tileheight="32">
-  <image source="../tiles/collision.png" width="64" height="32"/>
+  <image source="../../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <tileset firstgid="258" name="dirt" tilewidth="32" tileheight="32">
-  <image source="../tiles/dirt.png" width="96" height="192"/>
+  <image source="../../tiles/dirt.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="276" name="dirt_night" tilewidth="32" tileheight="32">
-  <image source="../tiles/dirt_night.png" width="96" height="192"/>
+  <image source="../../tiles/dirt_night.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="294" source="../tiles/terrain.tsx"/>
+ <tileset firstgid="294" source="../../tiles/terrain.tsx"/>
  <tileset firstgid="758" name="magecity" tilewidth="32" tileheight="32">
-  <image source="../tiles/magecity.png" width="256" height="1450"/>
+  <image source="../../tiles/magecity.png" width="256" height="1450"/>
  </tileset>
  <layer name="setCave" width="101" height="100" opacity="0.43">
   <data encoding="base64" compression="zlib">
@@ -488,13 +489,13 @@
  <objectgroup name="Warps" width="101" height="100">
   <object name="to boss cave" type="WARP" x="1603" y="3073" width="96" height="32">
    <properties>
-    <property name="DEST_MAP" value="cave3"/>
+    <property name="DEST_MAP" value="goldenfields/cave3"/>
     <property name="DEST_NAME" value="Exit cave"/>
    </properties>
   </object>
   <object name="Warp to main map" type="WARP" x="2016" y="672" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit2 cave"/>
    </properties>
   </object>
@@ -506,7 +507,7 @@
   </object>
   <object name="Warp to main map" type="WARP" x="96" y="1824" width="96" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit1 cave"/>
    </properties>
   </object>

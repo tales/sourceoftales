@@ -2,174 +2,174 @@
 <!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="200" height="200" tilewidth="32" tileheight="32">
  <properties>
-  <property name="minimap" value="minimaps/main.png"/>
+  <property name="minimap" value="minimaps/goldenfields.png"/>
   <property name="music" value="h_theme.ogg"/>
   <property name="name" value="Goldenfields"/>
  </properties>
  <tileset firstgid="1" name="ruleset" tilewidth="32" tileheight="32">
-  <image source="../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
+  <image source="../../automapping/ruleset.png" trans="ff00ff" width="256" height="64"/>
  </tileset>
  <tileset firstgid="17" name="water" tilewidth="32" tileheight="32">
-  <image source="../tiles/water.png" trans="ff00ff" width="96" height="192"/>
+  <image source="../../tiles/water.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
  <tileset firstgid="35" name="grass" tilewidth="32" tileheight="32">
-  <image source="../tiles/grass.png" trans="ff00ff" width="96" height="192"/>
+  <image source="../../tiles/grass.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
  <tileset firstgid="53" name="dirt" tilewidth="32" tileheight="32">
-  <image source="../tiles/dirt.png" trans="ff00ff" width="96" height="192"/>
+  <image source="../../tiles/dirt.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
  <tileset firstgid="71" name="fence" tilewidth="32" tileheight="32">
-  <image source="../tiles/fence.png" width="96" height="192"/>
+  <image source="../../tiles/fence.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="89" name="wheat" tilewidth="32" tileheight="32">
-  <image source="../tiles/wheat.png" trans="ff00ff" width="96" height="192"/>
+  <image source="../../tiles/wheat.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
  <tileset firstgid="107" name="plowed_soil" tilewidth="32" tileheight="32">
-  <image source="../tiles/plowed_soil.png" trans="ff00ff" width="96" height="192"/>
+  <image source="../../tiles/plowed_soil.png" trans="ff00ff" width="96" height="192"/>
  </tileset>
  <tileset firstgid="125" name="house" tilewidth="32" tileheight="32">
-  <image source="../tiles/house.png" trans="ff00ff" width="352" height="500"/>
+  <image source="../../tiles/house.png" trans="ff00ff" width="352" height="500"/>
  </tileset>
  <tileset firstgid="290" name="signs" tilewidth="32" tileheight="32">
-  <image source="../tiles/signs.png" trans="ff00ff" width="96" height="64"/>
+  <image source="../../tiles/signs.png" trans="ff00ff" width="96" height="64"/>
  </tileset>
  <tileset firstgid="296" name="farming_fishing" tilewidth="32" tileheight="32">
-  <image source="../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
+  <image source="../../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
  </tileset>
  <tileset firstgid="696" name="bridges" tilewidth="32" tileheight="32">
-  <image source="../tiles/bridges.png" trans="ff00ff" width="192" height="224"/>
+  <image source="../../tiles/bridges.png" trans="ff00ff" width="192" height="224"/>
  </tileset>
  <tileset firstgid="738" name="trunk" tilewidth="96" tileheight="96">
-  <image source="../tiles/trunk.png" trans="ff00ff" width="192" height="96"/>
+  <image source="../../tiles/trunk.png" trans="ff00ff" width="192" height="96"/>
  </tileset>
  <tileset firstgid="740" name="treetop" tilewidth="96" tileheight="32">
-  <image source="../tiles/treetop.png" trans="ff00ff" width="192" height="224"/>
+  <image source="../../tiles/treetop.png" trans="ff00ff" width="192" height="224"/>
  </tileset>
  <tileset firstgid="754" name="barrel" tilewidth="32" tileheight="64">
-  <image source="../tiles/barrel.png" trans="ff00ff" width="128" height="64"/>
+  <image source="../../tiles/barrel.png" trans="ff00ff" width="128" height="64"/>
  </tileset>
  <tileset firstgid="758" name="treetop" tilewidth="32" tileheight="32">
-  <image source="../tiles/treetop.png" trans="ff00ff" width="192" height="224"/>
+  <image source="../../tiles/treetop.png" trans="ff00ff" width="192" height="224"/>
  </tileset>
  <tileset firstgid="800" name="castle_outside" tilewidth="32" tileheight="32">
-  <image source="../tiles/castle_outside.png" width="544" height="352"/>
+  <image source="../../tiles/castle_outside.png" width="544" height="352"/>
  </tileset>
  <tileset firstgid="987" name="potion-blue" tilewidth="32" tileheight="32">
-  <image source="../items/potion-blue.png" width="32" height="32"/>
+  <image source="../../items/potion-blue.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="988" name="shoes-iron" tilewidth="32" tileheight="32">
-  <image source="../items/shoes-iron.png" width="32" height="32"/>
+  <image source="../../items/shoes-iron.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="989" name="potion-yellow" tilewidth="32" tileheight="32">
-  <image source="../items/potion-yellow.png" width="32" height="32"/>
+  <image source="../../items/potion-yellow.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="990" name="shoes-gold" tilewidth="32" tileheight="32">
-  <image source="../items/shoes-gold.png" width="32" height="32"/>
+  <image source="../../items/shoes-gold.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="991" name="shoes-leather" tilewidth="32" tileheight="32">
-  <image source="../items/shoes-leather.png" width="32" height="32"/>
+  <image source="../../items/shoes-leather.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="992" name="potion-red" tilewidth="32" tileheight="32">
-  <image source="../items/potion-red.png" width="32" height="32"/>
+  <image source="../../items/potion-red.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="993" name="trunk" tilewidth="32" tileheight="96">
-  <image source="../tiles/trunk.png" width="192" height="96"/>
+  <image source="../../tiles/trunk.png" width="192" height="96"/>
  </tileset>
  <tileset firstgid="999" name="tent" tilewidth="32" tileheight="32">
-  <image source="../tiles/tent.png" width="128" height="160"/>
+  <image source="../../tiles/tent.png" width="128" height="160"/>
  </tileset>
  <tileset firstgid="1019" name="dirt2" tilewidth="32" tileheight="32">
-  <image source="../tiles/dirt2.png" width="96" height="192"/>
+  <image source="../../tiles/dirt2.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="1037" source="../tiles/castle_lightsources.tsx"/>
+ <tileset firstgid="1037" source="../../tiles/castle_lightsources.tsx"/>
  <tileset firstgid="1052" name="gravestones" tilewidth="32" tileheight="64">
-  <image source="../tiles/gravestones.png" width="160" height="96"/>
+  <image source="../../tiles/gravestones.png" width="160" height="96"/>
  </tileset>
  <tileset firstgid="1057" name="treetop" tilewidth="32" tileheight="96">
-  <image source="../tiles/treetop.png" width="192" height="224"/>
+  <image source="../../tiles/treetop.png" width="192" height="224"/>
  </tileset>
- <tileset firstgid="1069" source="../tiles/castle_lightsources_small.tsx"/>
+ <tileset firstgid="1069" source="../../tiles/castle_lightsources_small.tsx"/>
  <tileset firstgid="1119" name="grassalt_flowers" tilewidth="32" tileheight="32">
-  <image source="../tiles/grassalt_flowers.png" width="96" height="192"/>
+  <image source="../../tiles/grassalt_flowers.png" width="96" height="192"/>
  </tileset>
- <tileset firstgid="1137" source="../tiles/terrain.tsx"/>
+ <tileset firstgid="1137" source="../../tiles/terrain.tsx"/>
  <tileset firstgid="1601" name="collision" tilewidth="32" tileheight="32">
-  <image source="../tiles/collision.png" width="64" height="32"/>
+  <image source="../../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <tileset firstgid="1603" name="sand" tilewidth="32" tileheight="32">
-  <image source="../tiles/sand.png" width="96" height="192"/>
+  <image source="../../tiles/sand.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="1621" name="mountains_new" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains_new.png" width="480" height="288"/>
+  <image source="../../tiles/mountains_new.png" width="480" height="288"/>
  </tileset>
  <tileset firstgid="1756" name="mushrooms" tilewidth="32" tileheight="32">
-  <image source="../tiles/mushrooms.png" width="32" height="32"/>
+  <image source="../../tiles/mushrooms.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="1757" name="waterfall" tilewidth="32" tileheight="32">
-  <image source="../tiles/waterfall.png" width="96" height="160"/>
+  <image source="../../tiles/waterfall.png" width="96" height="160"/>
  </tileset>
  <tileset firstgid="1772" name="hole" tilewidth="32" tileheight="32">
-  <image source="../tiles/hole.png" width="96" height="192"/>
+  <image source="../../tiles/hole.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="1790" name="treetop" tilewidth="96" tileheight="96">
-  <image source="../tiles/treetop.png" width="192" height="224"/>
+  <image source="../../tiles/treetop.png" width="192" height="224"/>
  </tileset>
  <tileset firstgid="1794" name="shadow" tilewidth="32" tileheight="32">
-  <image source="../tiles/shadow.png" width="160" height="64"/>
+  <image source="../../tiles/shadow.png" width="160" height="64"/>
  </tileset>
  <tileset firstgid="1804" name="magecity" tilewidth="32" tileheight="32">
-  <image source="../tiles/magecity.png" width="256" height="1450"/>
+  <image source="../../tiles/magecity.png" width="256" height="1450"/>
  </tileset>
  <tileset firstgid="2164" name="crpyt" tilewidth="32" tileheight="32">
-  <image source="../tiles/crpyt.png" width="224" height="224"/>
+  <image source="../../tiles/crpyt.png" width="224" height="224"/>
  </tileset>
  <tileset firstgid="2213" name="gravestones" tilewidth="32" tileheight="32">
-  <image source="../tiles/gravestones.png" width="160" height="96"/>
+  <image source="../../tiles/gravestones.png" width="160" height="96"/>
  </tileset>
  <tileset firstgid="2228" name="victorian_fence" tilewidth="32" tileheight="32">
-  <image source="../tiles/victorian_fence.png" width="224" height="128"/>
+  <image source="../../tiles/victorian_fence.png" width="224" height="128"/>
  </tileset>
  <tileset firstgid="2256" name="victorian_house" tilewidth="32" tileheight="32">
-  <image source="../tiles/victorian_house.png" width="288" height="416"/>
+  <image source="../../tiles/victorian_house.png" width="288" height="416"/>
  </tileset>
  <tileset firstgid="2373" name="torii" tilewidth="32" tileheight="32">
-  <image source="../tiles/torii.png" width="320" height="256"/>
+  <image source="../../tiles/torii.png" width="320" height="256"/>
  </tileset>
  <tileset firstgid="2453" name="shrine" tilewidth="32" tileheight="32">
-  <image source="../tiles/shrine.png" width="224" height="512"/>
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
  </tileset>
  <tileset firstgid="2565" name="plants" tilewidth="32" tileheight="64">
-  <image source="../tiles/plants.png" width="288" height="384"/>
+  <image source="../../tiles/plants.png" width="288" height="384"/>
  </tileset>
  <tileset firstgid="2619" name="reed" tilewidth="32" tileheight="32">
-  <image source="../tiles/reed.png" width="96" height="320"/>
+  <image source="../../tiles/reed.png" width="96" height="320"/>
  </tileset>
  <tileset firstgid="2649" name="tree_stump" tilewidth="32" tileheight="32">
-  <image source="../tiles/tree_stump.png" width="32" height="32"/>
+  <image source="../../tiles/tree_stump.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="2650" name="water_lilies" tilewidth="32" tileheight="32">
-  <image source="../tiles/water_lilies.png" width="96" height="64"/>
+  <image source="../../tiles/water_lilies.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="2656" name="wheelbarrows" tilewidth="32" tileheight="64">
-  <image source="../tiles/wheelbarrows.png" width="160" height="128"/>
+  <image source="../../tiles/wheelbarrows.png" width="160" height="128"/>
  </tileset>
  <tileset firstgid="2666" name="buckets" tilewidth="32" tileheight="32">
-  <image source="../tiles/buckets.png" width="96" height="64"/>
+  <image source="../../tiles/buckets.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="2672" name="country" tilewidth="32" tileheight="32">
-  <image source="../tiles/country.png" width="160" height="128"/>
+  <image source="../../tiles/country.png" width="160" height="128"/>
  </tileset>
  <tileset firstgid="2692" name="flowers" tilewidth="32" tileheight="32">
-  <image source="../tiles/flowers.png" width="640" height="320"/>
+  <image source="../../tiles/flowers.png" width="640" height="320"/>
  </tileset>
  <tileset firstgid="2892" name="whitheredtree1" tilewidth="76" tileheight="92">
-  <image source="../tiles/whitheredtree1.png" width="76" height="92"/>
+  <image source="../../tiles/whitheredtree1.png" width="76" height="92"/>
  </tileset>
  <tileset firstgid="2893" name="signpost" tilewidth="32" tileheight="32">
-  <image source="../tiles/signpost.png" width="160" height="64"/>
+  <image source="../../tiles/signpost.png" width="160" height="64"/>
  </tileset>
  <tileset firstgid="2903" name="signpost_shadow" tilewidth="32" tileheight="32">
-  <image source="../tiles/signpost_shadow.png" width="256" height="256"/>
+  <image source="../../tiles/signpost_shadow.png" width="256" height="256"/>
  </tileset>
  <layer name="set_fence" width="200" height="200" opacity="0.37">
   <data encoding="base64" compression="zlib">
@@ -231,7 +231,7 @@
    eJzt3DEOgzAQBEA3kcmPg2jhVeRxKdIhnZAQcMKeqVzuFltZulIAAAAAAAAAAAAAAAAAAAAAAACArW92gBv11BUAAACgZUt2gBPsdfjUUsb6f0/18jg0ZM4OcIIWOgAAAAAAAH15+9OD0Ms+IGQfELMPiNkHAAAAAAAAAAAAAAAAAAAAAAA8z5odAAAA6NLglimE3PoFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgqB84HwYi
   </data>
  </layer>
- <layer name="Collision" width="200" height="200" visible="0">
+ <layer name="Collision" width="200" height="200" visible="0" opacity="0.57">
   <data encoding="base64" compression="zlib">
    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
   </data>
@@ -352,7 +352,7 @@
   <object name="Oliver 11" type="WAYPOINT" x="3776" y="3776" width="32" height="32"/>
   <object name="Oliver 12" type="WAYPOINT" x="3840" y="3744" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Peter" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Peter" width="200" height="200">
   <object name="Peter 1" type="WAYPOINT" x="4704" y="3488" width="32" height="32"/>
   <object name="Peter 2" type="WAYPOINT" x="4576" y="3392" width="32" height="32"/>
   <object name="Peter 3" type="WAYPOINT" x="4704" y="3264" width="32" height="32"/>
@@ -366,7 +366,7 @@
   <object name="Peter 11" type="WAYPOINT" x="4800" y="3744" width="32" height="32"/>
   <object name="Peter 12" type="WAYPOINT" x="4864" y="3616" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Joseph" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Joseph" width="200" height="200">
   <object name="Joseph 1" type="WAYPOINT" x="4320" y="3264" width="32" height="32"/>
   <object name="Joseph 2" type="WAYPOINT" x="4384" y="3200" width="32" height="32"/>
   <object name="Joseph 3" type="WAYPOINT" x="4480" y="3264" width="32" height="32"/>
@@ -387,7 +387,7 @@
   <object name="Joseph 18" type="WAYPOINT" x="4320" y="3424" width="32" height="32"/>
   <object name="Joseph 19" type="WAYPOINT" x="4192" y="3232" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Martin" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Martin" width="200" height="200">
   <object name="Martin 1" type="WAYPOINT" x="2368" y="2496" width="32" height="32"/>
   <object name="Martin 2" type="WAYPOINT" x="2496" y="2592" width="32" height="32"/>
   <object name="Martin 3" type="WAYPOINT" x="2432" y="2560" width="32" height="32"/>
@@ -404,7 +404,7 @@
   <object name="Martin 14" type="WAYPOINT" x="2304" y="2560" width="32" height="32"/>
   <object name="Martin 15" type="WAYPOINT" x="2368" y="2560" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="NPCS" width="200" height="200" visible="0">
+ <objectgroup name="NPCS" width="200" height="200">
   <object name="Gilbert" type="NPC_POSITION" x="2112" y="2496" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
@@ -574,7 +574,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawns" width="200" height="200" visible="0">
+ <objectgroup name="Spawns" width="200" height="200">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1120" width="448" height="288">
    <properties>
     <property name="max_beings" value="4"/>
@@ -772,103 +772,103 @@
  <objectgroup name="Warps" width="200" height="200">
   <object name="to Storage" type="WARP" x="2720" y="1472" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_storage"/>
+    <property name="DEST_MAP" value="goldenfields/casern_storage"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House1" type="WARP" x="4384" y="1696" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house1"/>
+    <property name="DEST_MAP" value="goldenfields/house1"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House2" type="WARP" x="4736" y="1952" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house2"/>
+    <property name="DEST_MAP" value="goldenfields/house2"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to Pub" type="WARP" x="3776" y="2336" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="pub"/>
+    <property name="DEST_MAP" value="goldenfields/pub"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="Warp to casern interiour" type="WARP" x="2272" y="1024" width="64" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_north"/>
+    <property name="DEST_MAP" value="goldenfields/casern_north"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="mountain ladder down" type="WARP" x="4896" y="352" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit mountainladder2"/>
    </properties>
   </object>
   <object name="mountain ladder up" type="WARP" x="4896" y="416" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit mountainladder1"/>
    </properties>
   </object>
   <object name="to House3" type="WARP" x="4864" y="2624" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house3"/>
+    <property name="DEST_MAP" value="goldenfields/house3"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House4" type="WARP" x="2976" y="2464" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house4"/>
+    <property name="DEST_MAP" value="goldenfields/house4"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House5 1" type="WARP" x="4832" y="3328" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house5"/>
+    <property name="DEST_MAP" value="goldenfields/house5"/>
     <property name="DEST_NAME" value="Exit1 main"/>
    </properties>
   </object>
   <object name="to House5 2" type="WARP" x="5056" y="3616" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house5"/>
+    <property name="DEST_MAP" value="goldenfields/house5"/>
     <property name="DEST_NAME" value="Exit2 main"/>
    </properties>
   </object>
   <object name="to House6" type="WARP" x="3904" y="992" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house6"/>
+    <property name="DEST_MAP" value="goldenfields/house6"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House7" type="WARP" x="4608" y="3968" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house7"/>
+    <property name="DEST_MAP" value="goldenfields/house7"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House8" type="WARP" x="3808" y="3712" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house8"/>
+    <property name="DEST_MAP" value="goldenfields/house8"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="to House9" type="WARP" x="3168" y="3264" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="house9"/>
+    <property name="DEST_MAP" value="goldenfields/house9"/>
     <property name="DEST_NAME" value="Exit main"/>
    </properties>
   </object>
   <object name="Warp to cave2" type="WARP" x="1312" y="160" width="64" height="32">
    <properties>
-    <property name="DEST_MAP" value="cave"/>
+    <property name="DEST_MAP" value="goldenfields/cave"/>
     <property name="DEST_NAME" value="Exit2 main"/>
    </properties>
   </object>
   <object name="Warp to cave1" type="WARP" x="576" y="32" width="64" height="32">
    <properties>
-    <property name="DEST_MAP" value="cave"/>
+    <property name="DEST_MAP" value="goldenfields/cave"/>
     <property name="DEST_NAME" value="Exit1 main"/>
    </properties>
   </object>
@@ -900,7 +900,7 @@
  <objectgroup name="Bees" width="200" height="200">
   <object name="Bee trigger" type="TRIGGER" x="2592" y="3488" width="608" height="384"/>
  </objectgroup>
- <objectgroup name="Waypoints Millicent" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Millicent" width="200" height="200">
   <object name="Millicent 1" type="WAYPOINT" x="3859" y="1030" width="32" height="32"/>
   <object name="Millicent 2" type="WAYPOINT" x="3932" y="1031" width="32" height="32"/>
   <object name="Millicent 3" type="WAYPOINT" x="3796" y="1052" width="32" height="32"/>
@@ -915,7 +915,7 @@
   <object name="Millicent 12" type="WAYPOINT" x="3821" y="990" width="32" height="32"/>
   <object name="Millicent 13" type="WAYPOINT" x="3741" y="958" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Damien" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Rebel Damien" width="200" height="200">
   <object name="Rebel Damien 1" type="WAYPOINT" x="472" y="3655" width="32" height="32"/>
   <object name="Rebel Damien 2" type="WAYPOINT" x="435" y="3567" width="32" height="32"/>
   <object name="Rebel Damien 3" type="WAYPOINT" x="323" y="3597" width="32" height="32"/>
@@ -927,7 +927,7 @@
   <object name="Rebel Damien 9" type="WAYPOINT" x="401" y="3602" width="32" height="32"/>
   <object name="Rebel Damien 10" type="WAYPOINT" x="423" y="3638" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Rebel Henry" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Rebel Henry" width="200" height="200">
   <object name="Rebel Henry 1" type="WAYPOINT" x="302" y="2761" width="32" height="32"/>
   <object name="Rebel Henry 2" type="WAYPOINT" x="292" y="2692" width="32" height="32"/>
   <object name="Rebel Henry 3" type="WAYPOINT" x="402" y="2691" width="32" height="32"/>
@@ -939,7 +939,7 @@
   <object name="Rebel Henry 9" type="WAYPOINT" x="320" y="2733" width="32" height="32"/>
   <object name="Rebel Henry 10" type="WAYPOINT" x="395" y="2739" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Tristan" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Tristan" width="200" height="200">
   <object name="Rebel Tristan 1" type="WAYPOINT" x="385" y="2550" width="32" height="32"/>
   <object name="Rebel Tristan 2" type="WAYPOINT" x="384" y="2464" width="32" height="32"/>
   <object name="Rebel Tristan 3" type="WAYPOINT" x="250" y="2424" width="32" height="32"/>
@@ -954,7 +954,7 @@
   <object name="Rebel Tristan 12" type="WAYPOINT" x="386" y="2435" width="32" height="32"/>
   <object name="Rebel Tristan 13" type="WAYPOINT" x="301" y="2505" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Philip" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Philip" width="200" height="200">
   <object name="Rebel Philip 1" type="WAYPOINT" x="385" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 2" type="WAYPOINT" x="386" y="2310" width="32" height="32"/>
   <object name="Rebel Philip 3" type="WAYPOINT" x="275" y="2277" width="32" height="32"/>
@@ -962,7 +962,7 @@
   <object name="Rebel Philip 5" type="WAYPOINT" x="297" y="2368" width="32" height="32"/>
   <object name="Rebel Philip 6" type="WAYPOINT" x="331" y="2318" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints Thea" width="200" height="200" visible="0">
+ <objectgroup name="Waypoints Thea" width="200" height="200">
   <object name="Thea 1" type="WAYPOINT" x="4480" y="4032" width="32" height="32"/>
   <object name="Thea 2" type="WAYPOINT" x="4800" y="4000" width="32" height="32"/>
   <object name="Thea 3" type="WAYPOINT" x="5024" y="3872" width="32" height="32"/>
@@ -993,7 +993,7 @@
   <object name="Thea 28" type="WAYPOINT" x="4288" y="4000" width="32" height="32"/>
   <object name="Thea 29" type="WAYPOINT" x="4448" y="4032" width="32" height="32"/>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol1_Rebels" width="200" height="200" visible="0">
+ <objectgroup color="#755219" name="Patrol1_Rebels" width="200" height="200">
   <object name="Patrol1_Rebels 2" type="WAYPOINT" x="288" y="2656" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1362,7 +1362,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#755219" name="Patrol2_Rebels" width="200" height="200" visible="0">
+ <objectgroup color="#755219" name="Patrol2_Rebels" width="200" height="200">
   <object name="Patrol2_Rebels 1" type="WAYPOINT" x="312" y="2480" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1509,7 +1509,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="200" height="200" visible="0">
+ <objectgroup color="#0a5a08" name="Patrol1_Soldiers" width="200" height="200">
   <object name="Patrol1_Soldiers 1" type="WAYPOINT" x="2272" y="1248" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
@@ -1986,7 +1986,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="200" height="200" visible="0">
+ <objectgroup color="#0a5a08" name="Patrol2_Soldiers" width="200" height="200">
   <object name="Patrol2_Soldiers_Spawn" type="COORDINATE" x="2112" y="1056" width="384" height="128"/>
   <object name="Patrol2_Soldiers 1" type="WAYPOINT" x="2400" y="1248" width="32" height="32">
    <properties>

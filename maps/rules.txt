@@ -1,5 +1,6 @@
 ########################################################################
-# This file and the tmx files in this folder are licensed as CC BY-SA or GPLv3
+# This file and the tmx files in this folder and it's subfolders
+# are licensed as CC BY-SA or GPLv3
 # Stefan Beller
 ########################################################################
 

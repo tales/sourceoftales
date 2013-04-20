@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <maps>
-    <map id="1" name="main" />
-    <map id="2" name="casern_storage" />
-    <map id="3" name="casern_storage_roof" />
-    <map id="4" name="casern_north" />
-    <map id="5" name="casern_north_2nd_floor" />
-    <map id="6" name="house1" />
-    <map id="7" name="house2" />
-    <map id="8" name="pub" />
-    <map id="9" name="cave" />
-    <map id="10" name="casern_cellar" />
-    <map id="11" name="house3" />
-    <map id="12" name="house4" />
-    <map id="13" name="house5" />
-    <map id="14" name="house6" />
-    <map id="15" name="house7" />
-    <map id="16" name="house8" />
-    <map id="17" name="house9" />
-    <map id="18" name="cave3" />
-    <map id="19" name="casern_north_west_tower" />
+    <map id="1" name="goldenfields/main" />
+    <map id="2" name="goldenfields/casern_storage" />
+    <map id="3" name="goldenfields/casern_storage_roof" />
+    <map id="4" name="goldenfields/casern_north" />
+    <map id="5" name="goldenfields/casern_north_2nd_floor" />
+    <map id="6" name="goldenfields/house1" />
+    <map id="7" name="goldenfields/house2" />
+    <map id="8" name="goldenfields/pub" />
+    <map id="9" name="goldenfields/cave" />
+    <map id="10" name="goldenfields/casern_cellar" />
+    <map id="11" name="goldenfields/house3" />
+    <map id="12" name="goldenfields/house4" />
+    <map id="13" name="goldenfields/house5" />
+    <map id="14" name="goldenfields/house6" />
+    <map id="15" name="goldenfields/house7" />
+    <map id="16" name="goldenfields/house8" />
+    <map id="17" name="goldenfields/house9" />
+    <map id="18" name="goldenfields/cave3" />
+    <map id="19" name="goldenfields/casern_north_west_tower" />
     
-    <map id="30" name="main2" />
+    <map id="30" name="mountainwatch/main" />
 
     <map id="1000" name="sandbox" />
 </maps>

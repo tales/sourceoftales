@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="15" height="14" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32">
-  <image source="../tiles/collision.png" width="64" height="32"/>
+  <image source="../../tiles/collision.png" width="64" height="32"/>
  </tileset>
  <tileset firstgid="3" name="inside" tilewidth="32" tileheight="32">
-  <image source="../tiles/inside.png" width="320" height="320"/>
+  <image source="../../tiles/inside.png" width="320" height="320"/>
  </tileset>
  <tileset firstgid="103" name="farming_fishing" tilewidth="32" tileheight="32">
-  <image source="../tiles/farming_fishing.png" width="640" height="640"/>
+  <image source="../../tiles/farming_fishing.png" width="640" height="640"/>
  </tileset>
  <tileset firstgid="503" name="barrel" tilewidth="32" tileheight="64">
-  <image source="../tiles/barrel.png" width="128" height="64"/>
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
  </tileset>
  <tileset firstgid="507" name="victoria" tilewidth="32" tileheight="32">
-  <image source="../tiles/victoria.png" width="352" height="192"/>
+  <image source="../../tiles/victoria.png" width="352" height="192"/>
  </tileset>
  <tileset firstgid="573" name="mountains" tilewidth="32" tileheight="32">
-  <image source="../tiles/mountains.png" width="416" height="288"/>
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
  </tileset>
  <tileset firstgid="690" name="shrine" tilewidth="32" tileheight="32">
-  <image source="../tiles/shrine.png" width="224" height="512"/>
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
  </tileset>
  <tileset firstgid="802" name="buckets" tilewidth="32" tileheight="32">
-  <image source="../tiles/buckets.png" width="96" height="64"/>
+  <image source="../../tiles/buckets.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="808" name="cabinets" tilewidth="32" tileheight="32">
-  <image source="../tiles/cabinets.png" width="192" height="416"/>
+  <image source="../../tiles/cabinets.png" width="192" height="416"/>
  </tileset>
  <tileset firstgid="886" name="shadow" tilewidth="32" tileheight="32">
-  <image source="../tiles/shadow.png" width="160" height="64"/>
+  <image source="../../tiles/shadow.png" width="160" height="64"/>
  </tileset>
  <tileset firstgid="896" name="chests" tilewidth="32" tileheight="32">
-  <image source="../tiles/chests.png" width="64" height="96"/>
+  <image source="../../tiles/chests.png" width="64" height="96"/>
  </tileset>
  <layer name="Ground" width="15" height="14">
   <data encoding="base64" compression="zlib">
@@ -89,13 +90,13 @@
  <objectgroup name="Warps" width="15" height="14">
   <object name="Warp outside" type="WARP" x="96" y="384" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="main"/>
+    <property name="DEST_MAP" value="goldenfields/main"/>
     <property name="DEST_NAME" value="Exit storage"/>
    </properties>
   </object>
   <object name="Warp up" type="WARP" x="352" y="96" width="32" height="32">
    <properties>
-    <property name="DEST_MAP" value="casern_storage_roof"/>
+    <property name="DEST_MAP" value="goldenfields/casern_storage_roof"/>
     <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
