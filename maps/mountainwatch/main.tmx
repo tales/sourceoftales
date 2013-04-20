@@ -167,6 +167,13 @@
   </data>
  </layer>
  <objectgroup name="NPCS" width="200" height="200" visible="0"/>
+ <objectgroup name="Signs" width="200" height="200">
+  <object name="signpostMine" type="SIGN" x="736" y="2368" width="32" height="32">
+   <properties>
+    <property name="text" value="To Mine"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Spawns" width="200" height="200" visible="0"/>
  <objectgroup name="Trigger" width="200" height="200" visible="0"/>
  <objectgroup name="Warps" width="200" height="200">

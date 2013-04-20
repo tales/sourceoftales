@@ -8,4 +8,5 @@
  <objecttype name="WAYPOINT" color="#ff00f3"/>
  <objecttype name="TRAP" color="#000000"/>
  <objecttype name="COORDINATE" color="#ffc258"/>
+ <objecttype name="SIGN" color="#ef8c61"/>
 </objecttypes>
