@@ -280,6 +280,13 @@
    </properties>
   </object>
   <object name="farmhouse3exit" type="WARP" x="2368" y="4448" width="32" height="32"/>
+  <object name="farmhouse4exit" type="WARP" x="2656" y="4384" width="32" height="32"/>
+  <object name="farmhouse4entrance" type="WARP" x="2656" y="4352" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/farmhouse4"/>
+    <property name="DEST_NAME" value="entrance"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Objects" width="200" height="200" visible="0"/>
  <layer name="Tile Layer 18" width="200" height="200" visible="0">

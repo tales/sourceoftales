@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
+ <tileset firstgid="1" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="218" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="220" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="332" name="country" tilewidth="32" tileheight="32">
+  <image source="../../tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="352" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="360" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="438" name="magecity" tilewidth="32" tileheight="32">
+  <image source="../../tiles/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <tileset firstgid="798" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="806" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiaQJMMPFL1EgNIVU8IAAAfXQqT
+  </data>
+ </layer>
+ <layer name="Black" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJy7wcDAcIMCjAzQ+fjEyLWLGvbSUi82gE0vsWCg9ZKLAeQwNtk=
+  </data>
+ </layer>
+ <layer name="Walls" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxzZGRgYEDCjmh8XGLMQOwBxOxIGJ2PS4wLKs6HhNH5uMRgepEBOh+XGDa9DFjUYRPDppcdizpsYtj0wvyDzObDodcJmxuJAJ5k6qMGAABYxAZr
+  </data>
+ </layer>
+ <layer name="Walls2" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFzIwMGAAkloBFHB1wYVEDEksC4mwgzgLiVBzmoOv1Z4SIpQBxIxAXAPFyIvWGQPWmA3EbEJcB8VocepmwiP9H42/GoZcTizgbkpgfIwRjAwJAcV5GBBsEeIkI46ECAPgRCag=
+  </data>
+ </layer>
+ <layer name="Decor" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANqGNE5fcyYqrxAYr5MmLyW7CoBYFKJPFAIDsIiNsYUfldOPQWI4mHAdnhePj4gA8R6pSYIfRuoNo9WNxMDDgMVHeETDcOBgAAVq0MOQ==
+  </data>
+ </layer>
+ <layer name="Decor2" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh4UM1IX/siKbAvjgi91szkmw8DAYwQTA4IZYTggQQA3qgCwg==
+  </data>
+ </layer>
+ <layer name="Fringe" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4D6AAACWAAB
+  </data>
+ </layer>
+ <layer name="Over" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZwJMRSDBCOVA2SEyOGbceX0YEm50RQbMzYldPDeDMSBijqyMX3KCCewGEVQUn
+  </data>
+ </layer>
+ <layer name="Over2" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZwImRgeE/kBYD0kyMCDFiARtULScJesgBXoyEMbo6GLhBBGZAY1MKAMavDn0=
+  </data>
+ </layer>
+ <layer name="Over3" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwwE4MkJoZkbS9XpA9XCRoRcXAABEzACb
+  </data>
+ </layer>
+ <layer name="Collision" width="15" height="10" opacity="0.31">
+  <data encoding="base64" compression="zlib">
+   eJy7zcDAcHsIYwYsfAY8fGL1ogNS1eGyE12OkPux6SUWUFMvKXEAwgBf0Vj5
+  </data>
+ </layer>
+ <objectgroup name="Warps" width="15" height="10">
+  <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="farmhouse4exit"/>
+   </properties>
+  </object>
+  <object name="entrance" type="WARP" x="320" y="256" width="32" height="32"/>
+ </objectgroup>
+</map>
