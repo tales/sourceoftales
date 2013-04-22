@@ -20,7 +20,8 @@
     <map id="18" name="goldenfields/cave3" />
     <map id="19" name="goldenfields/casern_north_west_tower" />
     
-    <map id="30" name="mountainwatch/main" />
+    <map id="100" name="mountainwatch/main" />
+    <map id="101" name="mountainwatch/cave1" />
 
     <map id="1000" name="sandbox" />
 </maps>
