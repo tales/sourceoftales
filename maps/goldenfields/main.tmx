@@ -889,6 +889,13 @@
   <object name="Exit casern" type="WARP" x="2272" y="1056" width="64" height="32"/>
   <object name="Exit1 cave" type="WARP" x="576" y="64" width="64" height="32"/>
   <object name="Exit2 cave" type="WARP" x="1312" y="192" width="64" height="32"/>
+  <object name="fromMountainWatch1" type="WARP" x="4128" y="32" width="32" height="32"/>
+  <object name="toMountainWatch1" type="WARP" x="4064" y="0" width="192" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="fromGoldenfields1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Objects" width="200" height="200" visible="0">
   <object name="External Map Events" type="SCRIPT" x="672" y="32" width="320" height="32">
