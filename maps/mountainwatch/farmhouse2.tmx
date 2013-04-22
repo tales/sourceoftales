@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="10" height="8" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
+ <tileset firstgid="1" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="218" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="220" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <layer name="Ground" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg4oEkA00odPveQCgArggQC
+  </data>
+ </layer>
+ <layer name="Black" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJy7wcDAcINITAgMN3XEYAAYPxsB
+  </data>
+ </layer>
+ <layer name="Walls" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxzZGRgYCCAmYHYA4jZCWAuqDo+AhikjhhAbXWeRKojBQAA104CDw==
+  </data>
+ </layer>
+ <layer name="Fringe" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlAAAAUAAAQ==
+  </data>
+ </layer>
+ <layer name="Over" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgY4MFIXXVOQHXOODAIOBNpDqkAAEelArI=
+  </data>
+ </layer>
+ <layer name="Over2" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg+wIsRO4bJwcANHJgBiSYWAABMEwf2
+  </data>
+ </layer>
+ <layer name="Over3" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjewJERQjMz4lfnAZXnIqAOHQAALWQAmw==
+  </data>
+ </layer>
+ <layer name="Collision" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJy7zcDAcHuAMCEw0OrwuRvGBgA73ig2
+  </data>
+ </layer>
+ <objectgroup name="Warps" width="10" height="8">
+  <object name="exit" type="WARP" x="224" y="224" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="farmhouse2exit"/>
+   </properties>
+  </object>
+  <object name="entrance" type="WARP" x="224" y="192" width="32" height="32"/>
+ </objectgroup>
+</map>
