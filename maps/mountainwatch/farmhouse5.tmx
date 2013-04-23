@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="11" height="8" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
+ <tileset firstgid="1" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="218" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="220" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="332" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="../../tiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="436" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="444" name="magecity" tilewidth="32" tileheight="32">
+  <image source="../../tiles/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <tileset firstgid="804" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../../tiles/farming_fishing.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="1204" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="1212" name="country" tilewidth="32" tileheight="32">
+  <image source="../../tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <layer name="Ground" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgcQJMITGu12NxEKQAArvYEfQ==
+  </data>
+ </layer>
+ <layer name="Black" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJy7wcDAcIMETAwYCWqJxQD03Ryx
+  </data>
+ </layer>
+ <layer name="Walls" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxzZGRgYCACMwOxBxCzE4G5oGr5iMAwtcQAUtU6EanWk0h15AAAsjMC/A==
+  </data>
+ </layer>
+ <layer name="Decor" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAOtjDikMACtgHV7sSivhso1sOIoFWYGRh2AOktLAwM/kB2ADNC7Qyg+ExGBG0BlNsNpHcA1SYD2SlIapcCxZcxImhksI8FggcLAAAdDA+a
+  </data>
+ </layer>
+ <layer name="Decor2" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhe4CAjA8MhRuLUngSqO0WkWnIBAHQ3Axs=
+  </data>
+ </layer>
+ <layer name="Fringe" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAQAAWAAAQ==
+  </data>
+ </layer>
+ <layer name="Over" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjewJkRFeMSoxUAAO9YAiE=
+  </data>
+ </layer>
+ <layer name="Over2" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjewIsRFeMSA4EbaBiXGCkAANL2CRk=
+  </data>
+ </layer>
+ <layer name="Over3" width="11" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg5wJERQjMzElbrAVXDRYRafAAAODwAmw==
+  </data>
+ </layer>
+ <layer name="Collision" width="11" height="8" opacity="0.3">
+  <data encoding="base64" compression="zlib">
+   eJy7zcDAcHsQYgYkmoEItbjU4QOUqMXlXnQMAGtsOVI=
+  </data>
+ </layer>
+ <objectgroup name="Warps" width="11" height="8">
+  <object name="exit" type="WARP" x="160" y="224" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="farmhouse5exit"/>
+   </properties>
+  </object>
+  <object name="entrance" type="WARP" x="160" y="192" width="32" height="32"/>
+ </objectgroup>
+</map>
