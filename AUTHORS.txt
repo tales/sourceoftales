@@ -1087,6 +1087,8 @@ Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/watergrass.
 Lanea Zimmerman (AKA Sharm)        CC BY-SA 3.0, GPLv3         tiles/water.png
 Lanea Zimmerman                    CC BY 3.0                   tiles/fireplace.png
 Leo Villeveygoux                   CC BY_SA 3.0, GPLv3         tiles/limestonewall.png
+Leo Villeveygoux, modified by Przemysław Grzywacz
+                                   CC BY_SA 3.0, GPLv3         tiles/limestonewall2.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_hurt.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_slash.png
 Lori Angela Nagel                  CC BY_SA 3.0, GPLv3         sprites/equipment/misc/darkwing_female_spellcast.png
