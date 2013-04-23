@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="13" height="10" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="h_theme.ogg"/>
+ </properties>
+ <tileset firstgid="1" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="218" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="220" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="332" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="../../tiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="436" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../../tiles/victoria.png" width="352" height="192"/>
+ </tileset>
+ <tileset firstgid="502" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../../tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="580" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="588" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <layer name="Ground" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjcQJMEPFj08DFCMDKbEnsYsPCpDQDqwQiR
+  </data>
+ </layer>
+ <layer name="Black" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJy7wcDAcIMMjAtgkxvKenCZM9j1kIoBDs8m0Q==
+  </data>
+ </layer>
+ <layer name="Walls" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxzZGRgYMCBmXGIeQAxOw7MhUMMpIcPB+bCIQbSgwtwYZEjpIeBDD3s5NiDBYD0OJGox5NE9ZQAACrrA+o=
+  </data>
+ </layer>
+ <layer name="Wall2" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAELkwQ2pERiyQWwAlU7wbV4wHU8xBJHzJbGKhGEoh5gfg/UNwDSPswQfSAwBYgvRXNTn2gvDkQGwCxKBB7A3EAkp79QPoAke5kgqo7BaRPo+nZhcbfDeVzEmk2MhAA6uFlRLCvk2HGIzL0UAIAxegOlg==
+  </data>
+ </layer>
+ <layer name="Decor" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAe8GTCL88GlP/NyMDAjkUdJ5IYBwFzYIAJSZ0IkXrwgcNAt70A4iOMxOs5B1T7GYjPk6BnMAIAx8EGjQ==
+  </data>
+ </layer>
+ <layer name="Decor2" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4CBAQACCAAB
+  </data>
+ </layer>
+ <layer name="Fringe" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4CBAQACCAAB
+  </data>
+ </layer>
+ <layer name="Over" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBieYAcjA8NdIN7JiBBzArGBWAxKMzDi0IwG2BkRNDuRenABZ0YETQjTEwAAjosFbw==
+  </data>
+ </layer>
+ <layer name="Over2" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg5wJORgeE/lM3ESLw+NqhaThL04AJejAiaEIaBG0g0IUwuAACQ0Qy8
+  </data>
+ </layer>
+ <layer name="Over3" width="13" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF9ASOjBCamZF4PR5QtVwk6CEVAABL7ACb
+  </data>
+ </layer>
+ <layer name="Collision" width="13" height="10" opacity="0.37">
+  <data encoding="base64" compression="zlib">
+   eJy7zcDAcHuIYQY0GhsbG8Cnh5A96OZg009IHp/bcNlBrh5i/IeMARqfTCQ=
+  </data>
+ </layer>
+ <objectgroup name="Warps" width="13" height="10">
+  <object name="exit" type="WARP" x="64" y="288" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="farmhouse6exit"/>
+   </properties>
+  </object>
+  <object name="entrance" type="WARP" x="64" y="256" width="32" height="32"/>
+ </objectgroup>
+</map>
