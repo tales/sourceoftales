@@ -16,6 +16,9 @@
  <tileset firstgid="220" name="shrine" tilewidth="32" tileheight="32">
   <image source="../../tiles/shrine.png" width="224" height="512"/>
  </tileset>
+ <tileset firstgid="332" name="dungeon" tilewidth="32" tileheight="32">
+  <image source="../../tiles/dungeon.png" width="416" height="256"/>
+ </tileset>
  <layer name="Ground" width="13" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYBjcQJMETG89xLqfEgAA2IUFcw==
@@ -28,7 +31,7 @@
  </layer>
  <layer name="Walls" width="13" height="8">
   <data encoding="base64" compression="zlib">
-   eJxzZGRgYCABMwOxBxCzk4C5oHr4SMAgPaQCeunxJEMPuQAAutACVw==
+   eJxzZGRgYCABMwOxBxCzk4C5oHr4SMAwPaQAcvU4kajHk0T1lAAAaSQDLA==
   </data>
  </layer>
  <layer name="Fringe" width="13" height="8">
@@ -38,7 +41,7 @@
  </layer>
  <layer name="Over" width="13" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBi8wIORPnqcgHqcicAg4EyG+ZQAABLZA34=
+   eJxjYBgFIODMSBjD1NETAABkhQKp
   </data>
  </layer>
  <layer name="Over2" width="13" height="8">
