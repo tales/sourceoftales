@@ -2,7 +2,7 @@
 
 <attributes>
     <!-- Character starting points definition -->
-    <points start="100" minimum="1" maximum="20" />
+    <points start="30" minimum="5" maximum="5" />
 
     <!-- First Candidate for TMW attributes definitions -->
     <!-- The id are linked to the engine core. Do not change them. -->
