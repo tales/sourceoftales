@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<chars>
+  <!-- Starting equipment displayed in character creation dialog -->
+  <item id="1"/>
+  <item id="2"/>
+  <item id="3"/>
+</chars>
