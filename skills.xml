@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skills>
-    <set name="Weapons">
+    <skill-set name="Weapons">
         <skill id="100" name="Unarmed" icon="graphics/skills/unarmed.png" default="true" />
         <skill id="101" name="Knife" icon="graphics/skills/knife.png" />
         <skill id="102" name="Sword" icon="graphics/skills/sword.png" />
@@ -13,8 +13,8 @@
         <skill id="109" name="Axe" icon="graphics/skills/axe.png" />
         <skill id="110" name="Thrown" icon="graphics/skills/thrown.png" />
         <skill id="111" name="Bombing" icon="graphics/skills/todo.png" />
-    </set>
-    <set name="Magic">
+    </skill-set>
+    <skill-set name="Magic">
         <skill id="200" name="Fire Lion"
             icon="icons/spell_firelion.png"/>
         <skill id="201" name="Earthquake"
@@ -26,8 +26,8 @@
         <skill id="204" name="Snake Bite"
             icon="icons/spell_snakebite.png"/>
         <skill id="206" name="Insult" />
-    </set>
-    <set name="Crafts">
+    </skill-set>
+    <skill-set name="Crafts">
         <skill id="300" name="Craft Example" />
-    </set>
+    </skill-set>
 </skills>

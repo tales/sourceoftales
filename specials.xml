@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <specials>
-    <set name="Magic">
+    <special-set name="Magic">
         <special
             id="1"
             name="Fire Lion"
@@ -46,5 +46,5 @@
             needed="17500"
             rechargespeed="175"
         />
-    </set>
+    </special-set>
 </specials>
