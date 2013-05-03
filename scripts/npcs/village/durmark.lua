@@ -113,7 +113,7 @@ local function durmark_talk(npc, ch)
         set_quest("goldenfields_durmark_bees_counter",
             (tonumber(quest("goldenfields_durmark_bees_counter")) or 0) + 1)
         say("Hm. Here take this. It is not much but it might be useful for you!")
-        chr_money_change(ch, 100)
+        ch:change_money(100)
         say("Thanks a lot for your help.")
     end
 

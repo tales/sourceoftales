@@ -63,7 +63,7 @@ local function chef_talk(npc, ch)
                 beetle_amount = ch:inv_count(true, false, "Beetle Corpus")
                 if beetle_amount >= amount then
                     ch:inv_change("Beetle Corpus", -amount)
-                    chr_money_change(ch, 100)
+                    ch:change_money(100)
                     say("Wonderful, wonderful! I'll start with the beetle "
                         .. "stew right now.")
                     chr_set_quest(ch, "soldier_goldenfields_beetlestew", "done")

@@ -67,9 +67,9 @@ function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
                     "That's too much."}
     local res = ask(choices)
     if res == 1 then
-        local money = chr_money(ch)
+        local money = ch:money()
         if money >= cost then
-            chr_money_change(ch, -cost)
+            ch:change_money(-cost)
             change_reputation(ch, friendly_faction, friendly_faction_name, cost)
             -- TODO: formula
             change_reputation(ch, foe_faction, foe_faction_name, -cost)

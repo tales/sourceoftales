@@ -76,7 +76,7 @@ function goldenfields_check_bounty(npc, ch, questvar, monster)
             end
         end
     end
-    chr_money_change(ch, d*(5+math.random(10)))
+    ch:change_money(d*(5+math.random(10)))
 
     if (killcount >= GOLDENFIELDS_BOUNTY_LOW
         and killcount_old < GOLDENFIELDS_BOUNTY_LOW)

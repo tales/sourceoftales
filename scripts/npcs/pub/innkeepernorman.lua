@@ -122,7 +122,7 @@ local function innkeeper_talk(npc, ch)
             local money = ask_number(GOLDENFIELDS_TAXES - 40,
                                      GOLDENFIELDS_TAXES + 40,
                                      GOLDENFIELDS_TAXES)
-            chr_money_change(ch, money)
+            ch:change_money(money)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
             change_reputation(ch, "rebel_reputation", "Rebels",

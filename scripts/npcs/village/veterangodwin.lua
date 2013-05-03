@@ -81,12 +81,12 @@ local function veteran_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 2 then
-                local money = chr_money(ch)
+                local money = ch:money()
                 if money >= GOLDENFIELDS_TAXES then
-                    chr_money_change(ch, -GOLDENFIELDS_TAXES)
+                    ch:change_money(-GOLDENFIELDS_TAXES)
                     chr_set_quest(ch, "soldier_goldenfields_taxes", "done")
                     change_reputation(ch, "soldier_reputation", "Army", 10)
-                    chr_money_change(ch, 40)
+                    ch:change_money(40)
                     say("Well done, kid.")
                 else
                     say("Where is the money? Did you spend it on booze? Kid, "

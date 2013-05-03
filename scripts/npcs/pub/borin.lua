@@ -34,9 +34,9 @@ local function man_talk(npc, ch)
     local res = ask(res)
     if res == 2 then
         local donation = ask_number(1, 10, 5)
-        local money = chr_money(ch)
+        local money = ch:money()
         if money >= donation then
-            chr_money_change(ch, -donation)
+            ch:change_money(-donation)
             say("B-b-bless ya.")
         else
             say("Eh? Ya as broke as I am...")

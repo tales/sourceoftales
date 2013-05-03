@@ -50,11 +50,11 @@ local function monk_talk(npc, ch)
     elseif res == 2 then
         say("How much do you want to give?")
         local donation = npc_ask_integer(npc, ch, 1, 1000)
-        local money = chr_money(ch)
+        local money = ch:money()
         if money < donation then
             say("You don't have that much.")
         else
-            chr_money_change(ch, -donation)
+            ch:change_money(-donation)
             say("May the blessing of Aquaria grant you new power.")
             ch:heal(donation)
             -- LATER: think about more possible effects
