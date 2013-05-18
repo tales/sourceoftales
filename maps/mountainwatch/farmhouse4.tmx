@@ -90,12 +90,12 @@
   </data>
  </layer>
  <objectgroup name="Warps" width="15" height="10">
-  <object name="exit" type="WARP" x="320" y="288" width="32" height="32">
+  <object name="entrance" type="WARP" x="320" y="288" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="farmhouse4exit"/>
+    <property name="DEST_NAME" value="warpFarmhouse4"/>
+    <property name="EXIT_DIRECTION" value="north"/>
    </properties>
   </object>
-  <object name="entrance" type="WARP" x="320" y="256" width="32" height="32"/>
  </objectgroup>
 </map>

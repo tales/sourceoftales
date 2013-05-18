@@ -199,62 +199,62 @@
  <objectgroup name="Spawns" width="200" height="200" visible="0"/>
  <objectgroup name="Trigger" width="200" height="200" visible="0"/>
  <objectgroup name="Warps" width="200" height="200">
-  <object name="ladder1godown" type="WARP" x="5344" y="5600" width="32" height="32">
+  <object name="ladder1up" type="WARP" x="5344" y="5600" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder1godownexit"/>
+    <property name="DEST_NAME" value="ladder1down"/>
+    <property name="EXIT_DIRECTION" value="north"/>
    </properties>
   </object>
-  <object name="ladder1goup" type="WARP" x="5344" y="5664" width="32" height="32">
+  <object name="ladder1down" type="WARP" x="5344" y="5664" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder1goupexit"/>
+    <property name="DEST_NAME" value="ladder1up"/>
+    <property name="EXIT_DIRECTION" value="north"/>
    </properties>
   </object>
-  <object name="ladder1goupexit" type="WARP" x="5344" y="5568" width="32" height="32"/>
-  <object name="ladder1godownexit" type="WARP" x="5344" y="5696" width="32" height="32"/>
-  <object name="ladder2goupexit" type="WARP" x="1024" y="5248" width="32" height="32"/>
-  <object name="ladder2godown" type="WARP" x="1024" y="5280" width="32" height="32">
+  <object name="ladder2up" type="WARP" x="1024" y="5280" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder2godownexit"/>
+    <property name="DEST_NAME" value="ladder2down"/>
+    <property name="EXIT_DIRECTION" value="north"/>
    </properties>
   </object>
-  <object name="ladder2goup" type="WARP" x="1024" y="5344" width="32" height="32">
+  <object name="ladder2down" type="WARP" x="1024" y="5344" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder2goupexit"/>
+    <property name="DEST_NAME" value="ladder2up"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="ladder2godownexit" type="WARP" x="1024" y="5376" width="32" height="32"/>
-  <object name="ladder3godown" type="WARP" x="5152" y="576" width="32" height="32">
+  <object name="ladder3up" type="WARP" x="5152" y="576" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder3godownexit"/>
+    <property name="DEST_NAME" value="ladder3down"/>
+    <property name="EXIT_DIRECTION" value="east"/>
    </properties>
   </object>
-  <object name="ladder3goupexit" type="WARP" x="5184" y="576" width="32" height="32"/>
-  <object name="ladder3goup" type="WARP" x="5152" y="640" width="32" height="32">
+  <object name="ladder3down" type="WARP" x="5152" y="640" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/main"/>
-    <property name="DEST_NAME" value="ladder3goupexit"/>
+    <property name="DEST_NAME" value="ladder3up"/>
+    <property name="EXIT_DIRECTION" value="west"/>
    </properties>
   </object>
-  <object name="ladder3godownexit" type="WARP" x="5120" y="640" width="32" height="32"/>
-  <object name="cave1entrance1" type="WARP" x="928" y="5120" width="32" height="32">
-   <properties>
-    <property name="DEST_MAP" value="mountainwatch/cave1"/>
-    <property name="DEST_NAME" value="entrance1"/>
-   </properties>
-  </object>
-  <object name="cave1exit1" type="WARP" x="928" y="5152" width="32" height="32"/>
-  <object name="cave1entrance2" type="WARP" x="1760" y="5088" width="32" height="32">
+  <object name="warpCave1Entrance2" type="WARP" x="928" y="5120" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/cave1"/>
     <property name="DEST_NAME" value="entrance2"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="cave1exit2" type="WARP" x="1760" y="5120" width="32" height="32"/>
+  <object name="warpCave1Entrance1" type="WARP" x="1760" y="5088" width="32" height="32">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/cave1"/>
+    <property name="DEST_NAME" value="entrance1"/>
+    <property name="EXIT_DIRECTION" value="south"/>
+   </properties>
+  </object>
   <object name="GoldenfieldsWarp1" type="WARP" x="4064" y="6368" width="192" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/main"/>
@@ -262,46 +262,46 @@
     <property name="EXIT_DIRECTION" value="north"/>
    </properties>
   </object>
-  <object name="farmhouse2entrance" type="WARP" x="2080" y="4352" width="32" height="32">
+  <object name="warpFarmhouse2" type="WARP" x="2080" y="4352" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse2"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="farmhouse2exit" type="WARP" x="2080" y="4384" width="32" height="32"/>
-  <object name="farmhouse1entrance" type="WARP" x="1824" y="4416" width="32" height="32">
+  <object name="warpFarmhouse1" type="WARP" x="1824" y="4416" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse1"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="farmhouse1exit" type="WARP" x="1824" y="4448" width="32" height="32"/>
-  <object name="farmhouse3entrance" type="WARP" x="2368" y="4416" width="32" height="32">
+  <object name="warpFarmhouse3" type="WARP" x="2368" y="4416" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse3"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="farmhouse3exit" type="WARP" x="2368" y="4448" width="32" height="32"/>
-  <object name="farmhouse4exit" type="WARP" x="2656" y="4384" width="32" height="32"/>
-  <object name="farmhouse4entrance" type="WARP" x="2656" y="4352" width="32" height="32">
+  <object name="warpFarmhouse4" type="WARP" x="2656" y="4352" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse4"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="farmhouse5entrance" type="WARP" x="3392" y="4256" width="32" height="32">
+  <object name="warpFarmhouse5" type="WARP" x="3392" y="4256" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse5"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
-  <object name="farmhouse5exit" type="WARP" x="3392" y="4288" width="32" height="32"/>
-  <object name="farmhouse6exit" type="WARP" x="2560" y="3552" width="32" height="32"/>
-  <object name="farmhouse6entrance" type="WARP" x="2560" y="3520" width="32" height="32">
+  <object name="warpFarmhouse6" type="WARP" x="2560" y="3520" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="mountainwatch/farmhouse6"/>
     <property name="DEST_NAME" value="entrance"/>
+    <property name="EXIT_DIRECTION" value="south"/>
    </properties>
   </object>
  </objectgroup>
