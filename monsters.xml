@@ -8,70 +8,38 @@
         <sound event="miss">monsters/maggot/maggot-miss1.ogg</sound>
         <sound event="die">monsters/maggot/maggot-dying1.ogg</sound>-->
         <attributes
-            hp="50"
             size="4"
-            speed="0.0"
-            evade="5"
-            magical-evade="5"
-            physical-defence="2"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>1</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="true"
-            cowardly="false"
-            track-range="1"
-            stroll-range="0"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="8"
-            cooldowntime="9"
-            basedamage="4"
-            deltadamage="2"
-            range="48"
-            chancetohit="10"
-            animation="attack"
-            />
+        <attribute id="HP" value="50" />
+        <attribute id="Max HP" value="50" />
+        <attribute id="Movement speed" value="0" />
+        <attribute id="Defense" value="2" />
+        <attribute id="Attackspeed" value="17" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="4" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="10" />
+        <attribute id="Dodge" value="5" />
+        <ability id="Monster Attacks/Strike" />
     </monster>
     <monster id="2" name="Beetle" targetCursor="small">
         <sprite>monsters/beetle.xml</sprite>
         <attributes
-            hp="90"
             size="4"
-            speed="1.0"
-            evade="5"
-            magical-evade="5"
-            physical-defence="12"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>5</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="7"
-            cooldowntime="8"
-            basedamage="5"
-            deltadamage="2"
-            range="48"
-            chancetohit="15"
-            animation="attack"
-            />
+        <attribute id="HP" value="90" />
+        <attribute id="Max HP" value="90" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="12" />
+        <attribute id="Attackspeed" value="15" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="5" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="15" />
+        <attribute id="Dodge" value="5" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Beetle Corpus" percent="55" />
         <drop item="Few Gold Coins" percent="35" />
     </monster>
@@ -81,37 +49,21 @@
         <sprite>equipment/torso/brown_shirt_male.xml</sprite>
         <sprite>equipment/legs/robe_skirt_male.xml</sprite>
         <attributes
-            hp="120"
             size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>10</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="true"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="2"
-            cooldowntime="12"
-            basedamage="10"
-            deltadamage="2"
-            range="48"
-            chancetohit="50"
-            action="spellcast"
-            effect-id="1"
-            />
+        <!-- TODO: play effect id 1 on spell -->
+        <attribute id="HP" value="120" />
+        <attribute id="Max HP" value="120" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="14" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="10" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="50" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Spellcast" />
         <drop item="Unholy Crystals" percent="40" />
         <drop item="Few Gold Coins" percent="25" />
         <drop item="Some Gold Coins" percent="25" />
@@ -126,35 +78,20 @@
         <sprite>equipment/feet/brown_shoes_male.xml</sprite>
         <sprite>equipment/hand/dagger_male.xml</sprite>
         <attributes
-            hp="110"
             size="4"
-            speed="2.0"
-            evade="5"
-            magical-evade="10"
-            physical-defence="20"
-            magical-defence="0"
             mutation="25"
             />
-        <exp>10</exp>
-        <behavior
-            agressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="1"
-            cooldowntime="10"
-            basedamage="25"
-            deltadamage="2"
-            range="48"
-            chancetohit="10"
-            action="attack"
-            />
+        <attribute id="HP" value="110" />
+        <attribute id="Max HP" value="110" />
+        <attribute id="Movement speed" value="2" />
+        <attribute id="Defense" value="20" />
+        <attribute id="Attackspeed" value="11" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="25" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="10" />
+        <attribute id="Dodge" value="5" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Kettle hat" percent="20" />
         <drop item="Rusty chain armor" percent="10" />
         <drop item="Few Gold Coins" percent="20" />
@@ -164,36 +101,20 @@
     <monster id="5" name="Skeleton" targetCursor="small">
         <sprite>monsters/skeleton.xml</sprite>
         <attributes
-            hp="150"
             size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>10</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="true"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="1"
-            cooldowntime="10"
-            basedamage="10"
-            deltadamage="2"
-            range="48"
-            chancetohit="200"
-            action="attack"
-            />
+        <attribute id="HP" value="150" />
+        <attribute id="Max HP" value="150" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="11" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="10" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="200" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Unholy Crystals" percent="20" />
         <drop item="Few Gold Coins" percent="10" />
         <drop item="Some Gold Coins" percent="7" />
@@ -203,37 +124,17 @@
         <sprite>monsters/skeleton.xml</sprite>
         <sprite>equipment/hand/dagger_male.xml</sprite>
         <sprite>equipment/torso/plate_armor_male.xml</sprite>
-        <attributes
-            hp="200"
-            size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="0"
-            mutation="50"
-            />
-        <exp>10</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="true"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="1"
-            cooldowntime="10"
-            basedamage="10"
-            deltadamage="2"
-            range="48"
-            chancetohit="200"
-            action="attack"
-            />
+        <attribute id="HP" value="200" />
+        <attribute id="Max HP" value="200" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="11" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="10" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="200" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Unholy Crystals" percent="30" />
         <drop item="Iron Armor" percent="5" />
         <drop item="Few Gold Coins" percent="11" />
@@ -243,139 +144,75 @@
     <monster id="7" name="Bee" targetCursor="small">
         <sprite>monsters/bee.xml</sprite>
         <attributes
-            hp="30"
             size="4"
-            speed="3.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="0"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>10</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="false"
-            cowardly="false"
-            track-range="128"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="5"
-            cooldowntime="30"
-            basedamage="5"
-            deltadamage="2"
-            range="64"
-            chancetohit="200"
-            action="attack"
-            />
+        <attribute id="HP" value="30" />
+        <attribute id="Max HP" value="30" />
+        <attribute id="Movement speed" value="3" />
+        <attribute id="Defense" value="0" />
+        <attribute id="Attackspeed" value="35" />
+        <attribute id="Range" value="64" />
+        <attribute id="Damage" value="5" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="200" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
     </monster>
     <monster id="8" name="Bat" targetCursor="small">
         <sprite>monsters/bat.xml</sprite>
         <attributes
-            hp="80"
             size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="3"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>8</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="2"
-            cooldowntime="3"
-            basedamage="7"
-            deltadamage="2"
-            range="48"
-            chancetohit="200"
-            animation="attack"
-            />
+        <attribute id="HP" value="80" />
+        <attribute id="Max HP" value="80" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="3" />
+        <attribute id="Attackspeed" value="5" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="7" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="200" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
     </monster>
     <monster id="9" name="Slime" targetCursor="small">
         <sprite>monsters/slime.xml</sprite>
         <attributes
-            hp="100"
             size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="10"
             mutation="50"
             />
-        <exp>15</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="2"
-            cooldowntime="5"
-            basedamage="10"
-            deltadamage="2"
-            range="48"
-            chancetohit="100"
-            animation="attack"
-            />
+        <attribute id="HP" value="100" />
+        <attribute id="Max HP" value="100" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="7" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="10" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="100" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Few Gold Coins" percent="7" />
     </monster>
     <monster id="10" name="Snake" targetCursor="small">
         <sprite>monsters/snake.xml</sprite>
         <attributes
-            hp="150"
             size="4"
-            speed="1.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>20</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="2"
-            cooldowntime="5"
-            basedamage="20"
-            deltadamage="2"
-            range="48"
-            chancetohit="100"
-            animation="attack"
-            />
+        <attribute id="HP" value="150" />
+        <attribute id="Max HP" value="150" />
+        <attribute id="Movement speed" value="1" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="7" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="20" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="100" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
     </monster>
     <monster id="11" name="Rebel" targetCursor="small">
         <sprite>characters/male_base.xml</sprite>
@@ -386,35 +223,22 @@
         <sprite>equipment/feet/brown_shoes_male.xml</sprite>
         <sprite>equipment/hand/dagger_male.xml</sprite>
         <attributes
-            hp="220"
             size="4"
-            speed="2.0"
-            evade="10"
-            magical-evade="5"
-            physical-defence="10"
-            magical-defence="0"
             mutation="25"
             />
         <exp>10</exp>
-        <behavior
-            agressive="false"
-            cowardly="false"
-            track-range="96"
-            stroll-range="32"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="1"
-            cooldowntime="10"
-            basedamage="25"
-            deltadamage="2"
-            range="48"
-            chancetohit="200"
-            action="attack"
-            />
+        <attribute id="HP" value="220" />
+        <attribute id="Max HP" value="220" />
+        <attribute id="Movement speed" value="2" />
+        <attribute id="Dodge" value="10" />
+        <attribute id="Defense" value="10" />
+        <attribute id="Attackspeed" value="11" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="25" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="200" />
+        <attribute id="Dodge" value="10" />
+        <ability id="Monster Attacks/Strike" />
         <drop item="Robe Hood" percent="20" />
         <drop item="Robe Shirt" percent="10" />
         <drop item="Few Gold Coins" percent="6" />
@@ -424,36 +248,15 @@
     <monster id="12" name="Skeleton King" targetCursor="large">
         <sprite>monsters/skeleton_boss.xml</sprite>
         <attributes
-            hp="20000"
             size="4"
-            speed="0.0"
-            evade="1"
-            magical-evade="5"
-            physical-defence="5"
-            magical-defence="0"
             mutation="50"
             />
-        <exp>100000</exp>
-        <!-- average stroll- and track range-->
-        <behavior
-            aggressive="true"
-            cowardly="false"
-            track-range="1"
-            stroll-range="0"
-            attack-distance="32"
-            />
-        <attack id="1"
-            priority="1"
-            type="physical"
-            element="neutral"
-            warmuptime="1"
-            cooldowntime="70"
-            basedamage="0"
-            deltadamage="0"
-            range="32"
-            chancetohit="20000"
-            action="spellcast"
-            />
+        <attribute id="HP" value="20000" />
+        <attribute id="Max HP" value="20000" />
+        <attribute id="Movement speed" value="0" />
+        <attribute id="Dodge" value="1" />
+        <attribute id="Defense" value="5" />
+        <ability id="Monster Attacks/Skeletonking monsterspawn" />
         <drop item="Few Gold Coins" percent="40" />
         <drop item="Some Gold Coins" percent="50" />
         <drop item="Many Gold Coins" percent="40" />

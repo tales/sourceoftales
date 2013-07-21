@@ -24,4 +24,4 @@
 require "scripts/monsters/group_monster"
 
 local beetle = get_monster_class("Beetle")
-beetle:on_damage(group_monster.damage_recieved)
+beetle:on_damaged(group_monster.damage_recieved)

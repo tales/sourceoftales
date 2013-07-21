@@ -135,7 +135,7 @@
         effect="hp regen %+f"
         desc="The rate at which hitpoints are automatically replenished."
         modifiable="false"
-        scope="character"
+        scope="being"
         minimum="0"
         maximum="100">
         <modifier stacktype="non stackable bonus" modtype="multiplicative" tag="hpr1" effect="You shouldn't be seeing this. Items shouldn't be affecting this layer." />                                                 <!-- Reserved for map effects -->
@@ -172,5 +172,76 @@
         player-info="max-weight" >
          <modifier stacktype="stackable" modtype="additive" tag="cap1" effect="Capacity %+.2f" />
     </attribute>
-    <!-- End of core-attributes definition -->
+    <attribute id="20" name="XP"
+        desc="The experience of this character."
+        modifiable="false"
+        scope="character"
+        minimum="0" />
+    <attribute id="21" name="Level"
+        desc="The level of this character."
+        modifiable="false"
+        scope="character"
+        minimum="0"
+        maximum="100" />
+    <attribute id="22" name="Attackspeed"
+        desc="The time in ticks which has to pass between two attack uses"
+        modifiable="false"
+        scope="being"
+        minimum="1">
+    </attribute>
+    <attribute id="23" name="Range"
+        desc="The range of the attack ability in pixels"
+        modifiable="false"
+        scope="character,monster"
+        minimum="0">
+        <modifier
+            stacktype="stackable"
+            modtype="additive"
+            tag="range"
+            effect="Range %+.1f" />
+    </attribute>
+    <attribute id="24" name="Damage"
+        desc="The damage an attack deals"
+        modifiable="false"
+        scope="character,monster"
+        minimum="0">
+        <modifier
+            stacktype="stackable"
+            modtype="additive"
+            tag="damage"
+            effect="Attack damage %+.1f" />
+    </attribute>
+    <attribute id="25" name="Damage Delta"
+        desc="The damage delta an attack can deal"
+        modifiable="false"
+        scope="character,monster"
+        minimum="0">
+        <modifier
+            stacktype="stackable"
+            modtype="additive"
+            tag="damage delta"
+            effect="Attack damage delta %+.1f" />
+    </attribute>
+    <attribute id="26" name="Hit chance"
+        desc="The raw hitchance"
+        modifiable="false"
+        scope="character,monster"
+        minimum="0">
+        <modifier
+            stacktype="stackable"
+            modtype="additive"
+            tag="range"
+            effect="Attack range %+.1f" />
+    </attribute>
+    <attribute id="27" name="Attackspeed"
+        desc="The attackspeed"
+        modifiable="false"
+        scope="character,monster"
+        minimum="0">
+        <modifier
+            stacktype="stackable"
+            modtype="additive"
+            tag="attackspeed"
+            effect="Attack speed %+.1f" />
+    </attribute>
 </attributes>

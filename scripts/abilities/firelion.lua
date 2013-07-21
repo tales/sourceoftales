@@ -21,17 +21,15 @@
 --]]
 
 -- Constants related to the spell
-local skill_name = "Magic_Fire Lion"
+local attribute_name = "Magic/Fire Lion"
 local damage = 30
 local damage_delta = 5
 local damage_cth = 20
 local damage_element = ELEMENT_FIRE
 local damage_type = DAMAGE_PHYSICAL -- MAGIC does not work atm
 
-local spell = get_special_info("Magic_Fire Lion")
-spell:on_use(function(user, target, special_id)
-    local damage_mod = damage * get_special_factor(user, skill_name)
-
+local spell = get_ability_info("Magic/Fire Lion")
+spell:on_use(function(user, target, ability_id)
     local x, y, w, h, effect_id
     local direction = user:direction()
     if direction == DIRECTION_UP then
@@ -61,15 +59,19 @@ spell:on_use(function(user, target, special_id)
     end
 
     effect_create(effect_id, user:position())
-    user:set_special_mana(special_id, 0)
-    recalculate_special_rechargespeed(user, special_id)
+    user:consume_ability(ability_id)
+
+    local modded_damage = {
+        base = damage.base * get_ability_factor(user, attribute_name),
+        delta = damage.delta,
+        chance_to_hit = damage.chance_to_hit,
+    }
 
     for _, being in ipairs(get_beings_in_rectangle(x, y, w ,h)) do
-        if being ~= user and (being:type() == TYPE_MONSTER or 
+        if being ~= user and (being:type() == TYPE_MONSTER or
            (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER))
         then
-            being:damage(damage_mod, damage_delta, damage_cth,
-                         damage_type, damage_element, user, skill_name)
+            being:damage(modded_damage, user, attribute_name)
         end
     end
 end)

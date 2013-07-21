@@ -1,0 +1,82 @@
+return {
+    ["training dummy"] = {
+        aggressive = true,
+        experience = 1,
+        trackrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Beetle"] = {
+        aggressive="false",
+        experience = 5,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Skeleton Mage"] = {
+        aggressive = true,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Spellcast",
+    },
+    ["Soldier"] = {
+        aggressive = false,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Skeleton"] = {
+        aggressive = true,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Skeleton Soldier"] = {
+        aggressive = true,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Bee"] = {
+        aggressive = false,
+        experience = 10,
+        trackrange = 4 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Bat"] = {
+        aggressive = false,
+        experience = 8,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Slime"] = {
+        aggressive = false,
+        experience = 15,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Snake"] = {
+        aggressive = false,
+        experience = 20,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Rebel"] = {
+        aggressive = false,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+        ability_id = "Monster Attacks/Strike",
+    },
+    ["Skeleton King"] = {
+        experience = 100000,
+        noai = true,
+    }
+}

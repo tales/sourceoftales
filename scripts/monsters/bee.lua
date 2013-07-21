@@ -24,4 +24,4 @@
 require "scripts/monsters/group_monster"
 
 local bee = get_monster_class("Bee")
-bee:on_damage(group_monster.damage_recieved)
+bee:on_damaged(group_monster.damage_recieved)

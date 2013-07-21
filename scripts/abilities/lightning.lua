@@ -20,28 +20,30 @@
 --]]
 
 -- Constants related to the spell
-local skill_name = "Magic_Lightning"
-local damage = 40
-local damage_delta = 5
-local damage_cth = 20
-local damage_element = ELEMENT_LIGHTNING
-local damage_type = DAMAGE_PHYSICAL -- MAGIC does not work atm
+local attribute_name = "Magic/Lightning"
+local damage = {
+    base = 40,
+    delta = 5,
+    chance_to_hit = 20
+}
 local range = 6 * TILESIZE
 
-local spell = get_special_info("Magic_Lightning")
-spell:on_use(function(user, target, special_id)
+local spell = get_ability_info("Magic/Lightning")
+spell:on_use(function(user, target, ability_id)
     if not target or not (target:type() == TYPE_MONSTER or
         (map_get_pvp() == PVP_FREE and target:type() == TYPE_CHARACTER))
     then
         return
     end
 
-    local damage_mod = damage * get_special_factor(user, skill_name)
-
     effect_create(11, target)
-    user:set_special_mana(special_id, 0)
-    recalculate_special_rechargespeed(user, special_id)
+    user:consume_ability(ability_id)
 
-    target:damage(damage_mod, damage_delta, damage_cth,
-                 damage_type, damage_element, user, skill_name)
+    local modded_damage = {
+        base = damage.base * get_ability_factor(user, attribute_name),
+        delta = damage.delta,
+        chance_to_hit = damage.chance_to_hit,
+    }
+
+    target:damage(modded_damage, user, attribute_name)
 end)

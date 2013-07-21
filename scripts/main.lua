@@ -25,6 +25,7 @@
 require "scripts/global_constants"
 
 -- Project specific global functions
+require "scripts/damage"
 require "scripts/functions/coordinatehelper"
 require "scripts/functions/reputation"
 require "scripts/functions/stringutils"
@@ -39,8 +40,8 @@ require "scripts/items"
 -- Global Events
 require "scripts/global_events"
 
--- Specials
-require "scripts/specials"
+-- Abilities
+require "scripts/abilities"
 
 -- Crafting
 require "scripts/crafting"

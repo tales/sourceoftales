@@ -19,9 +19,11 @@
 
 --]]
 
-local damage = 30
-local damage_delta = 10
-local accuracy = 200
+local damage = {
+    base = 30,
+    delta = 10,
+    chance_to_hit = 200,
+}
 local skillname = "Weapons_Bombing"
 local effect_id = 6
 local delay = 2
@@ -33,7 +35,7 @@ end
 get_item_class(7):on("use", function(user)
     -- Assign on remove callback to prevent server crashs
     on_remove(user, function() user = nil end)
-    
+
     local x, y = user:position()
     local exp = user:xp(skillname)
     local damage_mod = get_skill_factor(exp) * damage
@@ -49,7 +51,7 @@ get_item_class(7):on("use", function(user)
             if being:type() == TYPE_MONSTER or being == user or
                (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER) then
                 WARN("DAMAGE")
-                
+
                 being:damage(damage_mod, damage_delta, accuracy,
                              DAMAGE_PHYSICAL, ELEMENT_EARTH, user, skillname)
             end

@@ -2,7 +2,7 @@
 
  Special action script file
 
-  Copyright (C) 2012 Erik Schilling
+  Copyright (C) 2012-2013 Erik Schilling
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,20 +19,21 @@
 
 --]]
 
-function recalculate_special_rechargespeed(user, special)
-    local speed = 175 + user:base_attribute(ATTR_INT)
-    user:set_special_recharge_speed(special, speed)
+function Entity:consume_ability(ability)
+    local speed = 175 + self:base_attribute("Intelligence")
+    self:set_ability_cooldown(ability, 17500 / speed)
 end
 
-function get_special_factor(user, skill_name)
-    local exp = user:xp(skill_name)
-    local factor = math.max(user:level(skill_name) / 10, 1)
-    return factor * (user:base_attribute(ATTR_WIL) / 128 + 1)
+function get_ability_factor(user, attribute_name)
+    local exp = user:xp(attribute_name)
+    local factor = math.max(user:base_attribute(attribute_name) / 10, 1)
+    return factor * (user:base_attribute("Willpower") / 128 + 1)
 end
 
-require "scripts/specials/firelion"
-require "scripts/specials/earthquake"
-require "scripts/specials/lightning"
-require "scripts/specials/heal"
-require "scripts/specials/snakebite"
-require "scripts/specials/insult"
+require "scripts/abilities/firelion"
+require "scripts/abilities/earthquake"
+require "scripts/abilities/lightning"
+require "scripts/abilities/heal"
+require "scripts/abilities/snakebite"
+require "scripts/abilities/strike"
+require "scripts/abilities/insult"

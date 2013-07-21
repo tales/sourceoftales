@@ -130,7 +130,11 @@ local function instructor_talk(npc, ch)
     else -- reputation <= REPUTATION_RELUCTANT
         say("You dare to come here after what you've done?! "
             .. "You won't have much time to regret this!")
-        ch:damage(70, 20, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage({
+            base = 70,
+            delta = 20,
+            chance_to_hit = 9999
+        })
     end
 end
 

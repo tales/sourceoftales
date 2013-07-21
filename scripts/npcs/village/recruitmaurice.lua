@@ -81,7 +81,11 @@ local function recruit_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage({
+            base = 80,
+            delta = 10,
+            chance_to_hit = 9999
+        })
     end
     patrol:unblock(ch)
 end

@@ -21,6 +21,9 @@
 
 --]]
 
+
+require "scripts/monsters/basic_ai"
+
 require "scripts/monsters/bee"
 require "scripts/monsters/beetle"
 require "scripts/monsters/soldier"

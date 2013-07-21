@@ -37,7 +37,11 @@ local function rebel_talk(npc, ch)
         change_reputation(ch, "rebel_reputation", "Rebels", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
-        ch:damage(50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage({
+            base = 50,
+            delta = 10,
+            chance_to_hit = 9999
+        })
     end
     patrol:unblock(ch)
 end

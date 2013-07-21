@@ -20,16 +20,15 @@
 --]]
 
 -- Constants related to the spell
-local skill_name = "Magic_Insult"
+local attribute_name = "Magic/Insult"
 local range = 5 * TILESIZE
 local anger = 50
 
-local spell = get_special_info("Magic_Insult")
-spell:on_use(function(user, target, special_id)
-    local anger_mod = anger * get_special_factor(user, skill_name)
+local spell = get_ability_info("Magic/Insult")
+spell:on_use(function(user, target, ability_id)
+    local anger_mod = anger * get_ability_factor(user, attribute_name)
 
-    user:set_special_mana(special_id, 0)
-    recalculate_special_rechargespeed(user, special_id)
+    user:consume_ability(ability_id)
 
     local beings = get_beings_in_circle(user, range)
     for _, being in ipairs(beings) do

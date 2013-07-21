@@ -49,7 +49,11 @@ local function recruit_talk(npc, ch)
         change_reputation(ch, "soldier_reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Ah! Don't hurt me! Go away!")
-        ch:damage(50, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
+        ch:damage({
+            base = 50,
+            delta = 10,
+            chance_to_hit = 9999
+        })
     end
     patrol:unblock(ch)
 end

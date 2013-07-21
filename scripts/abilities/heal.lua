@@ -20,23 +20,23 @@
 --]]
 
 -- Constants related to the spell
-local skill_name = "Magic_Heal"
+local attribute_name = "Magic/Heal"
 local heal = 20
 local range = 6 * TILESIZE
 
-local spell = get_special_info("Magic_Heal")
-spell:on_use(function(user, target, special_id)
+local spell = get_ability_info("Magic/Heal")
+spell:on_use(function(user, target, ability_id)
     target = target or user
     if target:type() ~= TYPE_CHARACTER and target ~= user then
         return
     end
 
-    local heal_mod = heal * get_special_factor(user, skill_name)
+    local heal_mod = heal * get_ability_factor(user, attribute_name)
 
     effect_create(12, target)
-    
-    local current_hp = target:modified_attribute(ATTR_HP)
-    local max_hp = target:modified_attribute(ATTR_MAX_HP)
+
+    local current_hp = target:modified_attribute("HP")
+    local max_hp = target:modified_attribute("Max HP")
 
     heal_mod = math.min(heal_mod, max_hp - current_hp)
     local gained_exp = math.floor(heal_mod / 10)
@@ -44,15 +44,14 @@ spell:on_use(function(user, target, special_id)
     if heal_mod == 0 then
         return
     end
-    
-    target:set_base_attribute(ATTR_HP, current_hp + heal_mod)
+
+    target:set_base_attribute("HP", current_hp + heal_mod)
 
 
     -- No exp for self heal
     if target ~= user then
-        user:give_xp(skill_name, gained_exp)
+        user:give_xp(attribute_name, gained_exp)
     end
-    
-    user:set_special_mana(special_id, 0)
-    recalculate_special_rechargespeed(user, special_id)
+
+    user:consume_ability(ability_id)
 end)
