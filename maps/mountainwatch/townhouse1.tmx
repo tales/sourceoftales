@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="9" height="8" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="inside" tilewidth="32" tileheight="32">
+  <image source="../../tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="101" name="shrine" tilewidth="32" tileheight="32">
+  <image source="../../tiles/shrine.png" width="224" height="512"/>
+ </tileset>
+ <tileset firstgid="213" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../tiles/mountains.png" width="416" height="288"/>
+ </tileset>
+ <tileset firstgid="330" name="country" tilewidth="32" tileheight="32">
+  <image source="../../tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="350" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../../tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="358" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../../tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="366" name="farming_fishing" tilewidth="32" tileheight="32">
+  <image source="../../tiles/farming_fishing.png" trans="ff00ff" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="766" name="magecity" tilewidth="32" tileheight="32">
+  <image source="../../tiles/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <tileset firstgid="1126" name="collision" tilewidth="32" tileheight="32">
+  <image source="../../tiles/collision.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Ground" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAv0MSDqa2GGgAAr68DXg==
+  </data>
+ </layer>
+ <layer name="Black" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJzzYGRg8CAC4wODVQ01MABSCgqO
+  </data>
+ </layer>
+ <layer name="Walls" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJw7xcDA0IkH9wDxRSCegAdPBuJ+IJ6OB8PU4APEqjlNQM0lAvKkAABT7BOO
+  </data>
+ </layer>
+ <layer name="Decor" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAO4hhxSCCBBCxqvIBi3kjiSUB2Gpo6fyA/AEksBcjOQlMTAuSHIon5MEIwvQEAUXcE2A==
+  </data>
+ </layer>
+ <layer name="Decor2" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgcoJkRvzwzMwMDCzN+NdxAeR4CakgFAF63AK8=
+  </data>
+ </layer>
+ <layer name="Fringe" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF+AAAASAAAQ==
+  </data>
+ </layer>
+ <layer name="Over" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOOE0lc04Rqe4MHkxNAAAfZQcq
+  </data>
+ </layer>
+ <layer name="Over2" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBia4DIeTE0AABQKBcY=
+  </data>
+ </layer>
+ <layer name="Collision" width="9" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxLZ2FgSKcjBgFkNjKfWDW4AKlqiMEAJLYWkw==
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="Warps" width="9" height="8">
+  <object name="entrance" type="WARP" x="0" y="160" width="32" height="64">
+   <properties>
+    <property name="DEST_MAP" value="mountainwatch/main"/>
+    <property name="DEST_NAME" value="warpTownhouse1"/>
+    <property name="EXIT_DIRECTION" value="east"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
