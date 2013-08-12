@@ -1407,3 +1407,4 @@ Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_spellcast.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/torso/white_longshirt_male_walkcycle.png
 Xenodora                           CC BY_SA 3.0, GPLv3, GPLv2  tiles/lpc-mine-cart-tracks-angles.png
+Xenodora                           CC BY_SA 3.0, GPLv3         tiles/lpc-well.png
