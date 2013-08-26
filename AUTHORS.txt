@@ -91,16 +91,16 @@ Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/wheelbarrow
 Casper Nilsson                     CC BY_SA 3.0, GPLv3         tiles/windmill.png
 cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      items/beetle_corpus.png
 cemkalyoncu (OpenGameArt.org)      CC-BY, CC-BY-SA, GPL2+      sprites/monsters/beetle_death.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat_death.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee_death.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/eyeball.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime_death.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/small_worm.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake_death.png
-Charles Sanchez(AKA CharlesGarbiel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat_death.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/bat.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee_death.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/bee.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/eyeball.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime_death.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/slime.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/small_worm.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake_death.png
+Charles Sanchez(AKA CharlesGabriel)CC BY-SA 3.0, GPLv3         sprites/monsters/snake.png
 Chris Phillips/Team River Fox      CC BY_SA 3.0, GPLv3         tiles/evilchurch.png
 Clint Bellanger                    CC BY_SA 3.0, GPLv2, GPLv3  particles/quake.png
 CosmicD                            CC BY_SA 3.0                sfx/trap.ogg
