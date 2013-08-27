@@ -61,6 +61,6 @@
         id="10"
         name="Strike"
         target="point"
-        useaction="spellcast"
+        useaction="attack"
     />
 </abilities>
