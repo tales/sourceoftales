@@ -184,5 +184,12 @@
     <sprite>equipment/feet/brown_shoes_male.xml</sprite>
     <sprite>characters/hair09_male.xml|#5a72dd</sprite>
 </npc>
-
+<npc id="100">
+    <!-- old trader -->
+    <sprite>characters/male_base.xml</sprite>
+    <sprite>equipment/torso/brown_shirt_male.xml</sprite>
+    <sprite>equipment/legs/green_trousers_male.xml</sprite>
+    <sprite>equipment/feet/brown_shoes_male.xml</sprite>
+    <sprite>characters/hair03_male.xml|#c0c0c0</sprite>
+</npc>
 </npcs>
