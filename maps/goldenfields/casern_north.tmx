@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="89" height="68" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="calmtown.ogg"/>
@@ -80,7 +79,7 @@
  </layer>
  <layer name="Decor" width="89" height="68">
   <data encoding="base64" compression="zlib">
-   eJzt3ElOwzAUBmDiAkIcgj1ILEBICDgCEtwB7gAL5lEg5kkMK1asQByCsgEWZQMLhMQVWCNUnpVYDa7bvDRD6+T/JMvBaYPz4jij29YGNvkRza5B9v16Md5x4lvmh2FZ3LI9Ktt1KrlO1lOma0r7XuKq156SbGtlb9knWl3XqHxdVE8HzZO+DOvNLZP1OHbcXK+TdERlp5RuvPwoRIx/68Sx3jy/XvpcX8jt4RTc/Fyr6xYtZ1tUTwfNi+qS6nHhuPmlIX6ynjLdevlVyjEeoM8NRljfOd9392h6X1RPB82L04vjJr8i/f3olT1R/syI8Se1o+GCu8+OUj5G6b7w/zNy3hSVTWvleh8yIpcRYX2XLDv+lSi+r4wYf1PcxikJShOUJik9UCr64innzVCa1WLMbd9h6mySZl/BodruG+XvjBh3tDf+v8oxr9tbjfo2q68wORS8tmui9y2mvqZb2x5Ca9dZcOelWs4Er+2acGLcE6HNhxW0rjbS+++g/lwdn+S2OLXsWBXVhqgkznmFovff3P68lMMYF31xabRvNtHP3RYoroui9nEqLzjtcI7ZBvVztxX63mrO2m+jZL+6jFhZw3QtGDfu9WtWma4F48a9frVFfwteY3DPd2zRijHOmqEQMVb37CA56p4dAAAAAAAAAAAAAIAf7tEnD/fo0zOPdzUSJ9+HQZ+RDPX+CvqM5KTx/goAxE+Nv9wUvGmlE/s7mxpTtSN40xBerfFVzRx3BRBWM8Zf5g36AQCA1nCAvhgyAOdu6cjTuZsav61wxyhLeBbJo4/fDvptIv+YWDxXSEbUZwod2vYJs98AT1fh/75g22962QLP1wAAAMAGf+PxmaM=
+   eJzt3ElOwzAUBmDiAkIcgj1ILEBICDgCEtwB7gAL5lEg5kkMK1asQByCsgEWZQMLhMQVWCNUnpVYDa7bvDRD6+T/JMvBaYPz4jij29YGNvkRza5B9v16Md5x4lvmh2FZ3LI9Ktt1KrlO1lOma0r7XuKq156SbGtlb9knWl3XqHxdVE8HzZO+DOvNLZP1OHbcXK+TdERlp5RuvPwoRIx/68Sx3jy/XvpcX8jt4RTc/Fyr6xYtZ1tUTwfNi+qS6nHhuPmlIX6ynjLdevlVyjEeoM8NRljfOd9392h6X1RPB82L04vjJr8i/f3olT1R/syI8Se1o+GCu8+OUj5G6b7w/zNy3hSVTWvleh8yIpcRYX2XLDv+lSi+r4wYf1PcxikJShOUJik9UCr64innzVCa1WLMbd9h6mySZl/BodruG+XvjBh3tDf+v8oxr9tbjfo2q68wORS8tmui9y2mvqZb2x5Ca9dZcOelWs4Er+2acGLcE6HNhxW0rjbS+29Tf+4/7qvjk9wWp5Ydq6LaEJXEOa9Q9P7b1J+bjvulHMa46ItLo32ziX7utkBxXRS1j1N5wemb55htUD93W6Hvreas/TZK7v/LiJU1TNeCceNev2aV6VowbtzrV1v0t+A1Bvf61RatGOOsGQoRY3XPDpKj7tkBAAAAAAAAAAAAAPjhHn3ycI8+PfN4VyNx8n0Y9BnJUO+voM9IThrvrwBA/NT4y03Bm1Y6sb+zqTFVO4I3DeHVGl/VzHFXAGE1Y/xl3qAfAABoDQfoiyEDcO6Wjjydu6nx2wp3jLKEZ5E8+vjtoN8m8o+JxXOFZER9ptChbZ8w+w3wdBX+7wu2/aaXLfB8DQAAAGzwB+KDmqE=
   </data>
  </layer>
  <layer name="Decor2" width="89" height="68">
@@ -100,7 +99,7 @@
  </layer>
  <layer name="Over" width="89" height="68">
   <data encoding="base64" compression="zlib">
-   eJzt3ElOwzAUgGGrZRK0tEUtsOECrBEL2OQscAdYMInhenAKDsKz1KiWsRtnamPn/6QnBZFE8euLY1lxlAIQq+Phtq8gfafkGB6p3H+TDrcj5P77HCj1NXD/bf+vjiuJkVzPWCKT7d1lhDjrcI5NZi0cyvaRp606DzMjxg2171JiLudaSFzL9sUycincc65acLV1bu232FDbeeal56mhPrBvfgvuhTp5zdSqX81DP2NS6OO0ydDfxjLeauR4KjGz4kSl08fpZ4mvjV2XqVU92OOJmWOc5aqjUcC+IecvW5Om5wr16btGXztCz2PHgVrVgz2e0Bae+jEjP07v69sn5Pz7BTkJaaP9W7rylTOvb0/9H1vuWPv4rMvNuuNisu63dNUItudF+pvXlsdzvv4klvPX9S75/Wg5x233Jyn3V6HIAQAAAAAAAAAAAADEz36nqu3j+sh+p6rt4wAAiE3Ru9q+d9djZq6/9K0HCYlQRe9q+95dT4VvPUhIAAAANPntDECbWmtEi749Y6+FP6+wbrvv87lF355pYi28a20tmncj+b1N5NsFZXxLQf1QVMm4kxq+72Edb9KD5Pex4zmuMhfomiNtYlyR1byOrqoyFxgyR1plXFF1brIvc5Rl6yqmOuyKsnXVxzoENu0PznQp0g==
+   eJzt3EtOwzAQgGGr5SVoaYtaYMMFWCMWsMlZ4A5lwUPicT04BQdhLDVqZDyNm1cT5/+kkYJIong6cSwrjjEAuup0uOsriN85OYYilvtv0uJ2hNx/nwNjvgb+v93/lXEjMZLrGUsksr2/ihAXLc5xVrYWjmX7RGmrzcMsE+OK2nctMZdzLSRuZftqFakY7jlfLfjaOnf2WzTUdp558XmuqA/sm98a74XErPvVNOwzJoY+zpoM9TY2ZSoxc+LMxNPH2WeJ1sa2S8y6HtzxxMwzzvLV0Shg35Dzl6nJlwJ9q3aNWjtCz+PGkVnXgzuesBZK/WQjPc7uq+0Tcv7DnJyEtNH9LX35SmWv78D8H1vuOftoNuVm03Fdsum39NUIdudV+pu3msdzWn/SlfOX9S75/ag5x3X3JzH3V6HIAQAAAAAAAAAAAAB0n/tOVd3H9ZH7TlXdxwEA0DV572pr7653WXb9pbYeJCRC5b2rrb27HgttPUhIAAAAVPntDMCaOmtE8749466Fvyywbrvv87l5356pYi28b20tqncn+b2P5NsF2/iWgvqhqKLxIDX82MM6btJS8vvU8hwXmQv0zZFWMa5ISl5HWxWZCwyZIy0yrig6N9mXOcpt66pLddgW29ZVH+sQaNofz+Io1A==
   </data>
  </layer>
  <layer name="Over2" width="89" height="68">
@@ -113,7 +112,7 @@
    eJztlFsOwyAMBFHuf+j+VihgYx4Oq1lppFQJsJ6mfUopDwAAyPGft3u9dbt6rN77q35nHHtyqstub73Ovbl6e4zes+J9j617lpMV34lnjojjkXcnkhHHrWurp7eDumPLV3l5ztvzba11ZinxmXrxzmqti5zpdRyN5bjVZXUyHUfvR8/x/GZXnn9TZv9zW59Hn1NO1HFk35G9Z9d/Ja05LGb2nu12W6KOPbNmOfY8OzJbxMGM1xWOT1Kqa28377On5j5xxmnHs+/ZTsfZTnEMOP4udbL7KIJjHCuAYxwrgGMcK4BjHCuAYxwrgGMcK4BjHCuAYxwrgGMcK4BjHCuA47Oes3sog+MzfvE85sxz3Up2/xvA8V63K5I9xw3MJrv/DeBqv1sc4/hmcHzec3YXRepk91EGxzi+mTrZfVTBLwAAAAAAKPADSZkoyw==
   </data>
  </layer>
- <objectgroup name="NPCS" width="89" height="68">
+ <objectgroup draworder="topdown" name="NPCS" width="89" height="68">
   <object name="Chef Odo" type="NPC_POSITION" x="2560" y="288" width="32" height="32">
    <properties>
     <property name="gender" value="male"/>
@@ -145,14 +144,14 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Objects" width="170" height="150">
+ <objectgroup draworder="topdown" name="Objects" width="170" height="150">
   <object name="External Map Events" type="SCRIPT" x="32" y="32" width="320" height="32">
    <properties>
     <property name="FILENAME" value="scripts/maps/casern_north.lua"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Warps" width="89" height="68">
+ <objectgroup draworder="topdown" name="Warps" width="89" height="68">
   <object name="To outside" type="WARP" x="1408" y="512" width="96" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/main"/>
@@ -177,19 +176,19 @@
     <property name="DEST_NAME" value="Exit 1st level"/>
    </properties>
   </object>
-  <object name="stairs tower" type="WARP" x="256" y="192" width="32" height="32">
+  <object name="warpWestTower" type="WARP" x="256" y="192" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/casern_north_west_tower"/>
-    <property name="DEST_NAME" value="Exit 1st level"/>
+    <property name="DEST_NAME" value="warpStairs"/>
+    <property name="EXIT_DIRECTION" value="east"/>
    </properties>
   </object>
   <object name="Exit main" type="WARP" x="1440" y="480" width="32" height="32"/>
   <object name="Exit2 2nd level" type="WARP" x="1536" y="160" width="32" height="32"/>
   <object name="Exit1 2nd level" type="WARP" x="1344" y="160" width="32" height="32"/>
   <object name="Exit cellar" type="WARP" x="1824" y="512" width="32" height="32"/>
-  <object name="Exit west tower" type="WARP" x="288" y="192" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Waypoints" width="89" height="68">
+ <objectgroup draworder="topdown" name="Waypoints" width="89" height="68">
   <object name="Chef Odo 1" type="WAYPOINT" x="2560" y="256" width="32" height="32"/>
   <object name="Chef Odo 2" type="WAYPOINT" x="2592" y="256" width="32" height="32"/>
   <object name="Chef Odo 3" type="WAYPOINT" x="2560" y="320" width="32" height="32"/>
@@ -214,7 +213,7 @@
   <object name="Recruit Jordan 4" type="WAYPOINT" x="1984" y="160" width="32" height="32"/>
   <object name="Recruit Jordan 5" type="WAYPOINT" x="2048" y="192" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="SoldierPatrol" width="89" height="68">
+ <objectgroup draworder="topdown" name="SoldierPatrol" width="89" height="68">
   <object name="SoldierPatrol 1" type="WAYPOINT" x="199" y="311" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>

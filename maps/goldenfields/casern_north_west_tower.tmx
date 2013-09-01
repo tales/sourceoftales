@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="12" height="12" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="castlefloors" tilewidth="32" tileheight="32">
   <image source="../../tiles/castlefloors.png" width="320" height="320"/>
@@ -92,13 +91,13 @@
    eJzzY2Jg8BuBmBiASw8u/fjUY9NDilvwmU8r9cRgAN0JHgE=
   </data>
  </layer>
- <objectgroup name="Warps" width="12" height="12">
-  <object name="back to castle" type="WARP" x="64" y="160" width="32" height="32">
+ <objectgroup draworder="topdown" name="Warps" width="12" height="12">
+  <object name="warpStairs" type="WARP" x="64" y="160" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/casern_north"/>
-    <property name="DEST_NAME" value="Exit west tower"/>
+    <property name="DEST_NAME" value="warpWestTower"/>
+    <property name="EXIT_DIRECTION" value="east"/>
    </properties>
   </object>
-  <object name="Exit 1st level" type="WARP" x="96" y="192" width="32" height="32"/>
  </objectgroup>
 </map>
