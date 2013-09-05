@@ -53,7 +53,7 @@ local function recruit_talk(npc, ch)
             say("After the basic training we're probably going to be send to "
                 .. "more interesting places.")
             say("At least I hope so. If those rebels become a more serious "
-                .. "problem, they might need use here.")
+                .. "problem, they might need us here.")
 
             local choices = {
                 "Well, thanks for the information.",
