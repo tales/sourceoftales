@@ -36,7 +36,7 @@ local function guard_talk(npc, ch)
             say("Well, that's a place where you can have fun! It's big, "
                 .. "probably much bigger than a country bumpkin "
                 .. "like you can imagine.")
-            say("And it's full of shops where you can anything you can "
+            say("And it's full of shops where you can buy anything you can "
                 .. "dream of, taverns with the tastiest beer on the entire "
                 .. "continent! Hah, and if you're looking for a little fight, "
                 .. "you won't have a problem to find one there.")

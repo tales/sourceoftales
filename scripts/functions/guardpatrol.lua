@@ -41,7 +41,7 @@ function Guard_patrol:logic()
     local y = self.path[self.position_index].y
     local all_in_range = true
 
-    local enemys = {}
+    local enemies = {}
     local beings = get_beings_in_rectangle(x - self.track_range,
                                            y - self.track_range,
                                            self.track_range * 2,
@@ -49,14 +49,14 @@ function Guard_patrol:logic()
 
     for _, being in ipairs(beings) do
         if self:is_aggressiveAgainst(being) then
-            table.insert(enemys, being)
+            table.insert(enemies, being)
         end
     end
 
     local enemy_count = 0
 
     for _, member in ipairs(self.members) do
-        -- Check for out of range enemys
+        -- Check for out of range enemies
         local anger_list = member:angerlist()
         enemy_count = enemy_count + #anger_list
         for ch, anger in pairs(anger_list) do
@@ -66,12 +66,12 @@ function Guard_patrol:logic()
             end
         end
 
-        for _, enemy in ipairs(enemys) do
+        for _, enemy in ipairs(enemies) do
             member:change_anger(enemy, 1)
         end
     end
 
-    -- No enemys, handle walkcycle
+    -- No enemies, handle walkcycle
     if enemy_count == 0 then
         Patrol.logic(self)
         return

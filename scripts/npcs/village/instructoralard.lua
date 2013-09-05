@@ -71,11 +71,12 @@ local function instructor_talk(npc, ch)
         say("Everybody has the attributes Strength, Agility, Vitality, "
             .. "Intelligence, Dexterity and Willpower.")
         say("Strength affects how strong you can strike.")
-        say("Agility how fast you can move. The higher the value the higher "
-            .. "the chance to dodge an enemy's attack is.")
-        say("Vitality is fast you regenerate and how much damage you can take.")
+        say("Agility makes you move faster. The higher the value the "
+            .. "higher the chance to dodge an enemy's attack.")
+        say("Vitality determines how fast you regenerate and how much damage "
+            .. "you can take.")
         say("Intelligence affects how fast your spells regenerate.")
-        say("High values in Dexterity help you to hit enemys more often.")
+        say("High values in Dexterity help you to hit enemies more often.")
         say("And finally Willpower. It will make your spells more effective by "
             .. "giving them a higher range or greater effects.")
         say("As soon you raise a level you can distribute points to attributes "

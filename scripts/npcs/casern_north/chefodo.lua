@@ -30,7 +30,7 @@ local function chef_talk(npc, ch)
         local res = ask(choices)
         if res == 1 then
             say("We need new supplies. I want to cook delicious beetle stew. "
-                .. "Those beetles doesn't live further north, but in this area "
+                .. "Those beetles don't live further north, but in this area "
                 .. "the wilderness is full of them!")
             local choices = {
                 "Eew!",
@@ -41,7 +41,7 @@ local function chef_talk(npc, ch)
                 .. "is an expensive delicacy and here people "
                 .. "feel disgusted! No culture...")
             say("Listen, bring me ".. amount .. " of those beetles, and "
-                .. "I'm going to show you the most delicous meal you "
+                .. "I'm going to show you the most delicious meal you "
                 .. "ever tasted.")
             chr_set_quest(ch, "soldier_goldenfields_beetlestew", "gotorder")
         else
