@@ -23,10 +23,38 @@
 local range = 20 * TILESIZE
 
 local ability = get_ability_info("Strike")
-ability:on_use(function(user, x, y, ability_id)
+ability:on_use(function(user, direction, ability_id)
     user:set_ability_cooldown(ability_id, 5)
 
-    local beings = get_beings_in_circle(x, y, range)
+    local range = user:modified_attribute("Range")
+
+    local rx, ry, rw, rh
+
+    if direction == DIRECTION_UP then
+        rx = user:x() - TILESIZE / 2
+        ry = user:y() - range
+        rw = TILESIZE
+        rh = range
+    elseif direction == DIRECTION_RIGHT then
+        rx = user:x()
+        ry = user:y() - TILESIZE / 2
+        rw = range
+        rh = TILESIZE
+    elseif direction == DIRECTION_DOWN then
+        rx = user:x() - TILESIZE / 2
+        ry = user:y()
+        rw = TILESIZE
+        rh = range
+    elseif direction == DIRECTION_LEFT then
+        rx = user:x() - range
+        ry = user:y() - TILESIZE / 2
+        rw = range
+        rh = TILESIZE
+    else
+        return -- Client could send non sense
+    end
+
+    local beings = get_beings_in_rectangle(rx, ry, rw, rh)
     for _, being in ipairs(beings) do
         if being ~= user and (being:type() == TYPE_MONSTER or
            (map_get_pvp() == PVP_FREE and being:type() == TYPE_CHARACTER))

@@ -60,7 +60,7 @@
     <ability
         id="10"
         name="Strike"
-        target="point"
+        target="direction"
         useaction="attack"
     />
 </abilities>
