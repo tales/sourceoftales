@@ -28,7 +28,7 @@ local function man_talk(npc, ch)
         .. "some coins for another drink?")
     say("Feeling so sh-sh-shirsty.")
     local res = {
-        "No! You definetly had enough!",
+        "No! You definitely had enough!",
         "Ok, have some."
     }
     local res = ask(res)
