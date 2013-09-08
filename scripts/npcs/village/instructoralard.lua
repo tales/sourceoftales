@@ -7,6 +7,7 @@
   tutorial_equip: saves if got equipment from smith
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Przemysław Grzywacz
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -27,6 +28,7 @@ local function instructor_talk(npc, ch)
     local function tutorial()
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+        local tutorial_goldwin_talk = chr_get_quest(ch, "tutorial_goldwin_talk")
 
         if tutorial_fight == "beat_dummies" then
             local dummies = ch:kill_count("training dummy")
@@ -34,11 +36,16 @@ local function instructor_talk(npc, ch)
                 say("Alright, that looks good. Feel free to train here "
                     .. "whenever you want.")
                 chr_set_quest(ch, "tutorial_fight", "done")
+                set_questlog_status(ch, QUESTID_TUTORIAL_FIGHT, QUEST_DONE, true)
             else
                 say("Come on, smash some more of the training dummies.")
             end
         else
-            if tutorial_fight == "done" then
+            if tutorial_goldwin_talk ~= "done" then
+                -- player should first talk to godwin!
+                say("Please report to Veteran Godwin to get your first assignment.")
+                return false
+            elseif tutorial_fight == "done" then
                 if tutorial_equip ~= "done" then
                     say("You really should get your equipment now. "
                         .. "Talk to Blacwin, the smith.")
@@ -62,8 +69,11 @@ local function instructor_talk(npc, ch)
                 say("Target them either by mouse or by hitting \"A\". "
                     .. "Use \"Ctrl\" to hit them then!")
                 chr_set_quest(ch, "tutorial_fight", "beat_dummies")
+                set_questlog_description(ch, QUESTID_TUTORIAL_FIGHT,
+                    "Enter the training area and kill some dummies.")
             end
         end
+        return true
     end
 
     local function about_attributes()
@@ -118,7 +128,10 @@ local function instructor_talk(npc, ch)
         end
     end
 
-    tutorial()
+    if tutorial() == false then
+        -- tutorial was interrupted, don't offer other talk options now
+        return
+    end
 
     local reputation = read_reputation(ch, "soldier_reputation")
 
@@ -140,3 +153,4 @@ local function instructor_talk(npc, ch)
 end
 
 local instructor = create_npc_by_name("Instructor Alard", instructor_talk)
+
