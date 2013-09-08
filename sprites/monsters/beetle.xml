@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <sprite>
-    <imageset name="base" src="sprites/monsters/beetle.png" width="48" height="48" />
-    <imageset name="death" src="sprites/monsters/beetle_death.png" width="48" height="48" />
+    <imageset name="base" src="sprites/monsters/beetle.png" width="48" height="48" offsetY="16" />
+    <imageset name="death" src="sprites/monsters/beetle_death.png" width="48" height="48" offsetY="16" />
 
     <action name="stand" imageset="base">
         <animation direction="down">

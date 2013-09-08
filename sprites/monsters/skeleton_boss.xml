@@ -4,22 +4,26 @@
         name="walkcycle"
         src="sprites/monsters/skeleton_boss_walkcycle.png"
         width="128"
-        height="128"/>
+        height="128"
+        offsetY="8"/>
     <imageset
         name="hurt"
         src="sprites/monsters/skeleton_boss_hurt.png"
         width="128"
-        height="128"/>
+        height="128"
+        offsetY="8"/>
     <imageset
         name="slash"
         src="sprites/monsters/skeleton_boss_slash.png"
         width="128"
-        height="128"/>
+        height="128"
+        offsetY="8"/>
     <imageset
         name="spellcast"
         src="sprites/monsters/skeleton_boss_spellcast.png"
         width="128"
-        height="128"/>
+        height="128"
+        offsetY="8"/>
 
     <include file="full_base.xml"/>
 </sprite>

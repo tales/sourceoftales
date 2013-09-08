@@ -2,10 +2,12 @@
 <sprite>
     <imageset name="base" src="sprites/monsters/slime.png"
         width="32"
-        height="32" />
+        height="32"
+        offsetY="8" />
     <imageset name="death" src="sprites/monsters/slime_death.png"
         width="32"
-        height="32" />
+        height="32"
+        offsetY="8" />
     <action name="stand" imageset="base">
         <animation direction="up">
             <frame index="0" delay="150" />
