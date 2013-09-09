@@ -3,6 +3,7 @@
   Veteran Godwin
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Przemysław Grzywacz
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -26,7 +27,7 @@ local patrol = NPCPatrol:new("Veteran Godwin")
 local function veteran_talk(npc, ch)
     patrol:block(ch)
 
-    local function send_tutorial()
+    local function send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
         say("Hey, rookie. You aren't paid for standing in the landscape "
             .. "and looking like a sheep.")
         say("You should better hurry to get to the basic training unless you "
@@ -44,18 +45,43 @@ local function veteran_talk(npc, ch)
                 .. "end to hold a sword.")
         elseif res == 2 then
             say("Watch out, this isn't a friendly place for a wimp.")
-        elseif res ==3 then
+        elseif res == 3 then
             say("Hah, recruiters are liers. It's their job to tell fairytales "
                 .. "about fame to dumbheads like you.")
             say("The only thing that's awaiting you is a lot of hard work, "
                 .. "boy.")
         end
 
-        say("Now go, talk to Instructor Alard, so he can show you how you can "
-            .. "avoid being speared by the first enemy you'll encounter.")
-        say("Oh, and get your equipment from Blacwin. "
-            .. "You should at least look like a soldier.")
+        -- check if tutorial quests were already assigned
+        
+        if tutorial_godwin_talk ~= "done" then
+            -- end the quest
+            chr_set_quest(ch, "tutorial_godwin_talk", "done")
+            set_questlog_status(ch, QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
+        end
+        
+        
+        if tutorial_fight == "" then
+            say("Now go, talk to Instructor Alard, so he can show you how you can "
+                .. "avoid being speared by the first enemy you'll encounter.")
+            create_questlog(ch, QUESTID_TUTORIAL_FIGHT, QUEST_OPEN, true, "Learn to fight",
+                "Instructor Alard will teach you how to fight.\nTalk to him.")
+        elseif tutorial_fight ~= "done" then
+            say("I see you didn't finish Instructor Alard's task. You should look into it now.")
+        end
+            
+        if tutorial_equip == "" then
+            say("Oh, and get your equipment from Blacwin. "
+                .. "You should at least look like a soldier.")
+            create_questlog(ch, QUESTID_TUTORIAL_EQUIP, QUEST_OPEN, true, "Look like a soldier!",
+                "Go to Blacwin and get an armor.")
+            chr_set_quest(ch, "tutorial_armor", "todo")
+        elseif tutorial_equip ~= "done" then
+            say("Don't forget about your armor. Talk to Blacwin.")
+        end
+        
         say ("Come back to me when you're done.")
+        
     end
 
     local function collect_taxes()
@@ -113,10 +139,15 @@ local function veteran_talk(npc, ch)
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
+        local tutorial_goldwin_talk = chr_get_quest(ch, "tutorial_goldwin_talk")
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
-        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") then
-            send_tutorial()
+        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_goldwin_talk ~= "done") then
+            -- show tutorial talk if any of the blow is true
+            -- * first talk to Godwin
+            -- * quest tutorial fight is not completed
+            -- * quest tutorial armor is not completed
+            send_tutorial(tutorial_goldwin_talk, tutorial_fight, tutorial_equip)
         elseif (taxes ~= "done") then
             collect_taxes()
         else
@@ -143,3 +174,4 @@ local veteran = create_npc_by_name("Veteran Godwin", veteran_talk)
 veteran:set_base_attribute(16, 1)
 patrol:assign_being(veteran)
 schedule_every(10, function() patrol:logic() end)
+

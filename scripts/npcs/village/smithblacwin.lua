@@ -7,6 +7,7 @@
 
   Copyright (C) 2012 Erik Schilling
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Przemysław Grzywacz
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -43,6 +44,7 @@ local function smith_talk(npc, ch)
                 ch:inv_change("Kettle hat", 1)
                 ch:inv_change("Rusty chain armor", 1)
                 chr_set_quest(ch, "tutorial_equip", "done")
+                set_questlog_status(ch, QUESTID_TUTORIAL_EQUIP, QUEST_FINISHED, true)
                 local reply_equip = {
                     "You're not very talkative, are you?",
                     "Thanks."
@@ -100,3 +102,4 @@ local smith = create_npc_by_name("Smith Blacwin", smith_talk)
 smith:set_base_attribute(16, 1)
 patrol:assign_being(smith)
 schedule_every(12, function() patrol:logic() end)
+

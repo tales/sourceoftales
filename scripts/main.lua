@@ -5,6 +5,7 @@
 
   Copyright (C) 2012 Erik Schilling
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Przemysław Grzywacz 
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -31,6 +32,9 @@ require "scripts/functions/reputation"
 require "scripts/functions/stringutils"
 require "scripts/functions/tiletopixel"
 
+-- Temporary questlog mockup
+require "scripts/functions/questlog"
+
 -- Monster scripts
 require "scripts/monsters"
 
@@ -48,3 +52,4 @@ require "scripts/crafting"
 
 -- Attributes
 require "scripts/attributes"
+

@@ -3,6 +3,7 @@
   Global constants that are available in all scripts.
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Przemysław Grzywacz
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -47,3 +48,11 @@ REPUTATION_LIKED = 100
 REPUTATION_TRUSTED = 500
 REPUTATION_VALUED = 1000
 REPUTATION_HONORED = 5000
+
+-- Quests IDs for questlog
+QUESTID_TUTORIAL_GODWIN_TALK = 1
+QUESTID_TUTORIAL_FIGHT = 2
+QUESTID_TUTORIAL_EQUIP = 3
+
+
+

@@ -9,6 +9,7 @@
  the event happens on.
 
   Copyright (C) 2012 Erik Schilling
+  Copyright (C) 2013 Przemysław Grzywacz
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -40,6 +41,11 @@ local function on_chr_birth(ch)
     chr_set_quest(ch, "rebel_reputation", tostring(REPUTATION_NEUTRAL))
 
     ch:heal()
+
+    -- create initial quest
+    create_questlog(ch, QUESTID_TUTORIAL_GODWIN_TALK, QUEST_OPEN, true, "Get your first orders",
+        "You just arrived to the Caserns.\nAs a fresh recruit, you should get your orders.\n" ..
+        "Talk to veteran Godwin to get your first assignment")
 end
 
 
