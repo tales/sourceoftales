@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="14" height="12" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="h_theme.ogg"/>
@@ -41,7 +40,7 @@
  </layer>
  <layer name="Black" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJx7xsDA8IxMjA8MJX24zCIVUKrPiRm3mkIy7SPXf7QIF3IwAKwSPAM=
+   eJx7xsDA8IxMjA8MJX24zCIVUKrPiZm+9hFSQ237yMEAkgs6rA==
   </data>
  </layer>
  <layer name="Walls" width="14" height="12">
@@ -59,32 +58,32 @@
    eJxjYBgcoJCRNPWRSOqjSNAbB1S7ihnCjgeyNUmzFg4MyNRnTqY+dLCaGcG2B7IdgNiRGbd6GFiHpMYZyHYBYlci9A0UAACy4QYh
   </data>
  </layer>
- <layer name="Fringe" width="14" height="12">
+ <layer name="Fringe" width="14" height="12" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2DwAgACoAAB
   </data>
  </layer>
  <layer name="Over" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgewBCHeAYQqyNhdFCAx0w9JDzQIItMfbjCBQQKkTAhfiGGbgaGfCLsoBQAAJraB64=
+   eJxjYBgewBCHeAYQqyNhdFCAx0w9JDzQoJBMfc8ImAnDhPjY7M+H0rjCnhoAAClxCGo=
   </data>
  </layer>
  <layer name="Over2" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5QA2LWCYR+nSp7RAyQAaZ+vLxyGUhYUL8LCR9z5AwOh8bpgQAAHxtD5o=
+   eJxjYBg5QA2LWCYR+nSp7RAyQBaZ+gwJmAnDhPjI9j9Dwuh8bJgSAABP3Q9e
   </data>
  </layer>
  <layer name="Over3" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFQwFo0dDsDCx2FBChLx9KG1LXOSgAAPtwAc0=
+   eJxjYBgFQwFokakvnwg1GVjsKCDBbEOSXEQaAABOvwI8
   </data>
  </layer>
  <layer name="Over4" width="14" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowATZA60A6AAADpoAGo=
+   eJxjYBgFQwFk0Nm+TDrbhwsAAJ8oANI=
   </data>
  </layer>
- <layer name="Collision" width="14" height="12" visible="0">
+ <layer name="Collision" width="14" height="12">
   <data encoding="base64" compression="zlib">
    eJxjYmBgYBoiGBlQopdYc/ABcu1lQmOTai+xbsZnFjH6cLmdmvqICT8AVvcA7Q==
   </data>
