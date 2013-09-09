@@ -28,7 +28,7 @@ local function instructor_talk(npc, ch)
     local function tutorial()
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
-        local tutorial_goldwin_talk = chr_get_quest(ch, "tutorial_goldwin_talk")
+        local tutorial_godwin_talk = chr_get_quest(ch, "tutorial_godwin_talk")
 
         if tutorial_fight == "beat_dummies" then
             local dummies = ch:kill_count("training dummy")
@@ -41,7 +41,7 @@ local function instructor_talk(npc, ch)
                 say("Come on, smash some more of the training dummies.")
             end
         else
-            if tutorial_goldwin_talk ~= "done" then
+            if tutorial_godwin_talk ~= "done" then
                 -- player should first talk to godwin!
                 say("Please report to Veteran Godwin to get your first assignment.")
                 return false

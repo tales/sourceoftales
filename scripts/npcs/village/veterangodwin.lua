@@ -27,7 +27,7 @@ local patrol = NPCPatrol:new("Veteran Godwin")
 local function veteran_talk(npc, ch)
     patrol:block(ch)
 
-    local function send_tutorial(tutorial_goldwin_talk, tutorial_fight, tutorial_equip)
+    local function send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
         say("Hey, rookie. You aren't paid for standing in the landscape "
             .. "and looking like a sheep.")
         say("You should better hurry to get to the basic training unless you "
@@ -54,9 +54,9 @@ local function veteran_talk(npc, ch)
 
         -- check if tutorial quests were already assigned
         
-        if tutorial_goldwin_talk ~= "done" then
+        if tutorial_godwin_talk ~= "done" then
             -- end the quest
-            chr_set_quest(ch, "tutorial_goldwin_talk", "done")
+            chr_set_quest(ch, "tutorial_godwin_talk", "done")
             set_questlog_status(ch, QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
         end
         
