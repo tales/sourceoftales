@@ -7,8 +7,16 @@
 
 --]]
 
-local function recalculate_base_attribute(being, attribute_name)
-    local old_base = being:base_attribute(attribute_name)
+local function recalculate_base_attribute(being, attribute)
+    local attribute_name
+
+    if type(attribute) == "string" then
+        attribute_name = attribute
+    else
+        attribute_name = attribute:name()
+    end
+
+    local old_base = being:base_attribute(attribute)
     local new_base = old_base
 
     if attribute_name == "Accuracy" then
