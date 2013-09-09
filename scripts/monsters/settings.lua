@@ -6,7 +6,7 @@ return {
         ability_id = "Monster Attacks/Strike",
     },
     ["Beetle"] = {
-        aggressive="false",
+        aggressive= false,
         experience = 5,
         trackrange = 3 * TILESIZE,
         strollrange = TILESIZE,
