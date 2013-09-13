@@ -19,11 +19,6 @@
 
 --]]
 
--- mockup for questlog
-QUEST_OPEN = 0
-QUEST_FINISHED = 1
-QUEST_FAILED = 2
-
 function questlog_status_to_text(status)
     if status == QUEST_OPEN then
         return "OPEN"
@@ -39,18 +34,24 @@ end
 
 function create_questlog(ch, quest_id, status, notify, title, description)
     ch:message("Questlog updated: id=" .. tostring(quest_id) .. ", status=" .. questlog_status_to_text(status) .. ", title=[" .. title .. "], desc=[" .. description .. "], notify=" .. tostring(notify))
+
+    ch:set_questlog_status(quest_id, status, title, description, notify)
 end
 
 function set_questlog_title(ch, quest_id, title, notify)
     ch:message("Questlog updated: id=" .. tostring(quest_id) .. ", title=[" .. title .. "], notify="..tostring(notify))
+
+    ch:set_questlog_title(quest_id, title, notify)
 end
 
 function set_questlog_description(ch, quest_id, description, notify)
     ch:message("Questlog updated: id=" .. tostring(quest_id) .. ", desc=[" .. description .. "], notify="..tostring(notify))
+
+    ch:set_questlog_description(quest_id, description, notify)
 end
 
 function set_questlog_status(ch, quest_id, status, notify)
     ch:message("Questlog updated: id=" .. tostring(quest_id) .. ", status=" .. questlog_status_to_text(status) .. ", notify="..tostring(notify))
+
+    ch:set_questlog_state(quest_id, status, notify)
 end
-
-
