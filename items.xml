@@ -160,10 +160,9 @@
             <slot type="hand" required="1" />
         </equip>
         <effect trigger="equip">
-            <attack skill="Weapons_Sword" warmuptime="3" cooldowntime="3"
-                basedamage="25" deltadamage="10" chancetohit="7" range="34"
-                element="neutral" type="physical" />
             <modifier attribute="acc1" value="2.5" />
+            <modifier attribute="damage" value="25" />
+            <modifier attribute="damage delta" value="10" />
         </effect>
         <effect trigger="in-inventory">
             <modifier attribute="cap1" value="-2000" />
