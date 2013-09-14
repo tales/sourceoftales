@@ -62,5 +62,6 @@
         name="Strike"
         target="direction"
         useaction="attack"
+        icon="items/sword-iron.png"
     />
 </abilities>
