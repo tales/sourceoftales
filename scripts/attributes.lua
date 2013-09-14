@@ -166,6 +166,8 @@ local function monster_damaged(mob, source, damage, experience_attribute)
                 local gained_exp = experience_amount / receiver.total * total_experience
                 char:give_experience(gained_exp, attribute)
             end
+
+            char:increment_kill_count(mob:monster_id())
         end
     end
 end
