@@ -6,12 +6,14 @@
         target="being"
         useaction="spellcast"
         icon="icons/spell_firelion.png"
+        priority="2"
     />
     <ability
         id="2"
         name="Magic/Earthquake"
         target="being"
         useaction="spellcast"
+        priority="2"
     />
     <ability
         id="3"
@@ -19,12 +21,14 @@
         target="being"
         useaction="spellcast"
         icon="icons/spell_lightning.png"
+        priority="1"
     />
     <ability
         id="4"
         name="Magic/Heal"
         target="being"
         useaction="spellcast"
+        priority="1"
     />
     <ability
         id="5"
@@ -32,12 +36,14 @@
         target="being"
         useaction="spellcast"
         icon="icons/spell_snakebite.png"
+        priority="1"
     />
     <ability
         id="6"
         name="Magic/Insult"
         target="being"
         useaction="spellcast"
+        priority="2"
     />
     <ability
         id="7"
@@ -63,5 +69,6 @@
         target="direction"
         useaction="attack"
         icon="items/sword-iron.png"
+        priority="0"
     />
 </abilities>
