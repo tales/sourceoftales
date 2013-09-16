@@ -56,7 +56,7 @@
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43EmMH9DTLTaAq35Yw4CZX3CZS4/0SY08N1TS5ygYeoCYvEZrOwfCDfjAYGvv4AKj9esoGAWjABkAAPc0XnY=
+   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43ImertdiUYNLHBngqh/WMGDmF1zm0iN9UiPPDZX0OQoGFhCTb6ihh1KAbudAuAEfGGztHVxgtH4dBaNgFCADAKCfYSg=
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
@@ -76,7 +76,7 @@
  </layer>
  <layer name="Over" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlk0KAjEMhTM4F/AQ7v0DQb3BrDyA7vUWund2LvRoehlT6GNKYLTRYh3NBw9KaWggeU2JDMMwGlYROmTLrqF6ojVrly07PeOCaMLaU1wNUIchx4yKz+U557sWrC2vN/R7dZAMerkz6DZT0ZvoW/R7uB/b8y52JvwCXvXDUsSgb9HvoC/U5oHaxzpc/NHvd51rSXQrH6+N9Lwzd+EJzWyBwvtjzjlPON9If2t8Ca9oBMK9M+vScs4Bj8KfdVx6xp+i9Y5Wqf7VckalVpf+cyf/5nz73NK+x7mI7REjPXcbh0fB
+   eJztlkEKAjEMRTM4F/AQ7sdRENQbuPIAzl5voXvdudCj6WVMoGFKYMZ0LNZKHnwopaGB/t8WwDAMo2Wr0ClZdy2bN9qhDsm6C6cuAGaoI+jOgM+hwppp8b0+l7jXCrXHcQP/dw6SySh1B3kzF95k37Lf/Xmt56l2IfLCDM3DWtSwb9nvzFioKwMXV0tQ/dnN586jBHiW/WMjPp/c99WAt4Xl769ZR5mg3Mh818q+/ayEiPHnbqh7xzqCM8p7+pk1DElodkIV618t36jYyuk/d3V5/vV3K/Q+ToXWI0Z8XoAdSJ8=
   </data>
  </layer>
  <layer name="Collision" width="42" height="30">
@@ -94,7 +94,7 @@
    eJzt01EKABAQBUBu6/4n8CtRZAs1870ob19K3FByzEzUW7xpJzs53yWrP7R/Lwd+FbG7szv0AtacdGV0VvcA6FU3bAYo
   </data>
  </layer>
- <objectgroup name="Warps" width="42" height="30">
+ <objectgroup draworder="topdown" name="Warps" width="42" height="30">
   <object name="stairs up" type="WARP" x="320" y="128" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/casern_north"/>
@@ -103,7 +103,7 @@
   </object>
   <object name="Exit 1st level" type="WARP" x="352" y="128" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawns" width="198" height="150" visible="0">
+ <objectgroup draworder="topdown" name="Spawns" width="198" height="150" visible="0">
   <object name="beetle spawn" type="SPAWN" x="32" y="320" width="512" height="128">
    <properties>
     <property name="max_beings" value="3"/>
@@ -152,7 +152,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="SoldierPatrol" width="42" height="30" visible="0">
+ <objectgroup draworder="topdown" name="SoldierPatrol" width="42" height="30" visible="0">
   <object name="SoldierPatrol 1" type="WAYPOINT" x="1230" y="167" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
