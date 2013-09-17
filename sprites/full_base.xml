@@ -4,16 +4,16 @@
         name="stand"
         imageset="walkcycle">
         <animation direction="up">
-            <frame index="0" offsetY="8"/>
+            <frame index="0" offsetY="12"/>
         </animation>
         <animation direction="left">
-            <frame index="9" offsetY="8"/>
+            <frame index="9" offsetY="12"/>
         </animation>
         <animation direction="down">
-            <frame index="18" offsetY="8"/>
+            <frame index="18" offsetY="12"/>
         </animation>
         <animation direction="right">
-            <frame index="27" offsetY="8"/>
+            <frame index="27" offsetY="12"/>
         </animation>
     </action>
 
@@ -21,16 +21,16 @@
         name="walk"
         imageset="walkcycle">
         <animation direction="up">
-            <sequence start="1" end="8" delay="75" offsetY="8"/>
+            <sequence start="1" end="8" delay="75" offsetY="12"/>
         </animation>
         <animation direction="left">
-            <sequence start="10" end="17" delay="75" offsetY="8"/>
+            <sequence start="10" end="17" delay="75" offsetY="12"/>
         </animation>
         <animation direction="down">
-            <sequence start="19" end="26" delay="75" offsetY="8"/>
+            <sequence start="19" end="26" delay="75" offsetY="12"/>
         </animation>
         <animation direction="right">
-            <sequence start="28" end="35" delay="75" offsetY="8"/>
+            <sequence start="28" end="35" delay="75" offsetY="12"/>
         </animation>
     </action>
 
@@ -43,8 +43,8 @@
         name="dead"
         imageset="hurt">
         <animation direction="up">
-            <sequence start="0" end="4" delay="75" offsetY="8"/>
-            <frame index="5" delay="-1" offsetY="8"/>
+            <sequence start="0" end="4" delay="75" offsetY="12"/>
+            <frame index="5" delay="-1" offsetY="12"/>
         </animation>
     </action>
 
@@ -52,19 +52,19 @@
         name="attack"
         imageset="slash">
         <animation direction="up">
-            <sequence start="1" end="5" delay="75" offsetY="8" />
+            <sequence start="1" end="5" delay="75" offsetY="12" />
             <end/>
         </animation>
         <animation direction="left">
-            <sequence start="7" end="11" delay="75" offsetY="8" />
+            <sequence start="7" end="11" delay="75" offsetY="12" />
             <end/>
         </animation>
         <animation direction="down">
-            <sequence start="13" end="17" delay="75" offsetY="8" />
+            <sequence start="13" end="17" delay="75" offsetY="12" />
             <end/>
         </animation>
         <animation direction="right">
-            <sequence start="19" end="23" delay="75" offsetY="8" />
+            <sequence start="19" end="23" delay="75" offsetY="12" />
             <end/>
         </animation>
     </action>
@@ -73,21 +73,21 @@
         name="attack_bow"
         imageset="bow">
         <animation direction="up">
-            <sequence start="1" end="8" delay="100" offsetY="8" />
-            <frame index="9" delay="200" offsetY="8" />
-            <sequence start="10" end="12" delay="100" offsetY="8" />
+            <sequence start="1" end="8" delay="100" offsetY="12" />
+            <frame index="9" delay="200" offsetY="12" />
+            <sequence start="10" end="12" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="left">
-            <sequence start="14" end="25" delay="100" offsetY="8" />
+            <sequence start="14" end="25" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="down">
-            <sequence start="27" end="38" delay="100" offsetY="8" />
+            <sequence start="27" end="38" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="right">
-            <sequence start="40" end="51" delay="100" offsetY="8" />
+            <sequence start="40" end="51" delay="100" offsetY="12" />
             <end/>
         </animation>
     </action>
@@ -97,19 +97,19 @@
         imageset="spellcast">
 
         <animation direction="up">
-            <sequence start="1" end="6" delay="100" offsetY="8" />
+            <sequence start="1" end="6" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="left">
-            <sequence start="8" end="13" delay="100" offsetY="8" />
+            <sequence start="8" end="13" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="down">
-            <sequence start="15" end="20" delay="100" offsetY="8" />
+            <sequence start="15" end="20" delay="100" offsetY="12" />
             <end/>
         </animation>
         <animation direction="right">
-            <sequence start="22" end="27" delay="100" offsetY="8" />
+            <sequence start="22" end="27" delay="100" offsetY="12" />
             <end/>
         </animation>
     </action>
