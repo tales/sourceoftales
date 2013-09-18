@@ -44,6 +44,9 @@ local function chef_talk(npc, ch)
                 .. "I'm going to show you the most delicious meal you "
                 .. "ever tasted.")
             chr_set_quest(ch, "soldier_goldenfields_beetlestew", "gotorder")
+            create_questlog(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW, QUEST_OPEN,
+                true, "Beetle soup", "Bring " .. amount ..
+                " beetles to Chef Odo. He'll make a delicious beetle stew.")
         else
             say("Pah. Then don't waste my time.")
         end
@@ -64,6 +67,8 @@ local function chef_talk(npc, ch)
                 if beetle_amount >= amount then
                     ch:inv_change("Beetle Corpus", -amount)
                     ch:change_money(100)
+                    set_questlog_state(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW,
+                        QUEST_OPEN, QUEST_FINISHED, true)
                     say("Wonderful, wonderful! I'll start with the beetle "
                         .. "stew right now.")
                     chr_set_quest(ch, "soldier_goldenfields_beetlestew", "done")
