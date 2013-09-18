@@ -68,7 +68,7 @@ local function chef_talk(npc, ch)
                     ch:inv_change("Beetle Corpus", -amount)
                     ch:change_money(100)
                     set_questlog_state(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW,
-                        QUEST_OPEN, QUEST_FINISHED, true)
+                        QUEST_FINISHED, true)
                     say("Wonderful, wonderful! I'll start with the beetle "
                         .. "stew right now.")
                     chr_set_quest(ch, "soldier_goldenfields_beetlestew", "done")
