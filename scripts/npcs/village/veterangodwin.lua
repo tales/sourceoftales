@@ -139,15 +139,15 @@ local function veteran_talk(npc, ch)
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
-        local tutorial_goldwin_talk = chr_get_quest(ch, "tutorial_goldwin_talk")
+        local tutorial_godwin_talk = chr_get_quest(ch, "tutorial_godwin_talk")
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
-        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_goldwin_talk ~= "done") then
+        if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_godwin_talk ~= "done") then
             -- show tutorial talk if any of the blow is true
             -- * first talk to Godwin
             -- * quest tutorial fight is not completed
             -- * quest tutorial armor is not completed
-            send_tutorial(tutorial_goldwin_talk, tutorial_fight, tutorial_equip)
+            send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
         elseif (taxes ~= "done") then
             collect_taxes()
         else
