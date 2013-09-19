@@ -45,7 +45,7 @@ local function chef_talk(npc, ch)
                 .. "ever tasted.")
             chr_set_quest(ch, "soldier_goldenfields_beetlestew", "gotorder")
             create_questlog(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW, QUEST_OPEN,
-                true, "Beetle soup", "Bring " .. amount ..
+                true, "Beetle stew", "Bring " .. amount ..
                 " beetles to Chef Odo. He'll make a delicious beetle stew.")
         else
             say("Pah. Then don't waste my time.")
