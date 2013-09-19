@@ -36,7 +36,7 @@ local function instructor_talk(npc, ch)
                 say("Alright, that looks good. Feel free to train here "
                     .. "whenever you want.")
                 chr_set_quest(ch, "tutorial_fight", "done")
-                set_questlog_status(ch, QUESTID_TUTORIAL_FIGHT, QUEST_DONE, true)
+                set_questlog_status(ch, QUESTID_TUTORIAL_FIGHT, QUEST_FINISHED, true)
             else
                 say("Come on, smash some more of the training dummies.")
             end
