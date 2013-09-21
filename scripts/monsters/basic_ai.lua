@@ -119,10 +119,9 @@ local function update_attack_ai(mob, tick)
         return false
     end
 
-    local x, y = mob:position()
-    if x == attack_x and y == attack_y then
+    if get_distance(mob, target) <= attack_distance then
         mob:use_ability(config.ability_id, target)
-    elseif get_distance(mob, target) > attack_distance then
+    else
         mob:walk(attack_x, attack_y)
     end
     return true
