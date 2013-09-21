@@ -53,7 +53,7 @@ local function chef_talk(npc, ch)
     end
 
     local function beetle_stew_check(amount)
-        local beetle_amount = ch:inv_count(true, false, "Beetle Corpus")
+        local beetle_amount = ch:inv_count("Beetle Corpus")
         say("Please bring me " .. amount .. " beetles, so I can create the "
             .. "most delicious beetle stew.")
         if beetle_amount >= amount then
@@ -63,7 +63,7 @@ local function chef_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                beetle_amount = ch:inv_count(true, false, "Beetle Corpus")
+                beetle_amount = ch:inv_count("Beetle Corpus")
                 if beetle_amount >= amount then
                     ch:inv_change("Beetle Corpus", -amount)
                     ch:change_money(100)

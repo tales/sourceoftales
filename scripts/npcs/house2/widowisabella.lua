@@ -37,7 +37,7 @@ local function woman_talk(npc, ch)
                 .. "that I made the pumpkin bread they loved so much. "
                 .. "Dear, when was the last time that I ate pumpkin bread? "
                 .. "I don't remember...")
-            local pumpkin = ch:inv_count(true, false, "Pumpkin")
+            local pumpkin = ch:inv_count("Pumpkin")
             if pumpkin > 0 then
                 local choices = {
                     "I'm very sorry for you.",
@@ -47,7 +47,7 @@ local function woman_talk(npc, ch)
                 if res == 1 then
                     say("Ah...")
                 else
-                    pumpkin = ch:inv_count(true, false, "Pumpkin")
+                    pumpkin = ch:inv_count("Pumpkin")
                     if pumpkin > 0 then
                         ch:inv_change("Pumpkin", -1)
                         chr_set_quest(ch, "goldenfields_widow", "done")

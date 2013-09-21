@@ -137,7 +137,7 @@ local function priestess_talk(npc, ch)
             .. "We need to stop this!")
         say("Did you find anything that can help us to get more "
             .. "information about the undeads?")
-        local artifact = ch:inv_count(true, false, "Unholy Crystals")
+        local artifact = ch:inv_count("Unholy Crystals")
         if artifact > 0 then
             local choices = {
                 "Yes, I found this strange artifact.",
@@ -145,7 +145,7 @@ local function priestess_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                artifact = ch:inv_count(true, false, "Unholy Crystals")
+                artifact = ch:inv_count("Unholy Crystals")
                 if artifact > 0 then
                     ch:inv_change("Unholy Crystals", -1)
                     say("Let me see...")

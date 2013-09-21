@@ -25,7 +25,7 @@ local amount_min = 30
 local amount_max = 70
 
 money:on("pickup", function(user)
-    local count = user:inv_count(true, false, money)
+    local count = user:inv_count(money)
     local amount = count * math.random(amount_min, amount_max)
     user:inv_change(money, -count)
     user:change_money(amount)

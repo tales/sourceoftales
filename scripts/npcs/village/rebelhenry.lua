@@ -36,9 +36,9 @@ local function rebel_talk(npc, ch)
             local res = ask(choices)
             if res == 1 then
                 say("Great, we were waiting on those.")
-                local pumpkin = ch:inv_count(true, false, "Pumpkin")
-                local foodshank = ch:inv_count(true, false, "Food Shank")
-                local apple = ch:inv_count(true, false, "Apple")
+                local pumpkin = ch:inv_count("Pumpkin")
+                local foodshank = ch:inv_count("Food Shank")
+                local apple = ch:inv_count("Apple")
                 if (pumpkin >= REBEL_FOOD_PUMPKIN
                     and foodshank >= REBEL_FOOD_FOODSHANK
                     and apple >= REBEL_FOOD_APPLE)
