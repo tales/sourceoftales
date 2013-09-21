@@ -66,6 +66,8 @@ local function update_attack_ai(mob, tick)
         return false
     end
 
+    local attack_distance = mob:modified_attribute("Range")
+
     for _, being in ipairs(get_beings_in_circle(mob, config.trackrange)) do
         if being:type() == TYPE_CHARACTER
            and being:action() ~= ACTION_DEAD
@@ -74,8 +76,6 @@ local function update_attack_ai(mob, tick)
             if anger == 0 and config.aggressive then
                 anger = 1
             end
-
-            local attack_distance = mob:modified_attribute("Range")
 
             local possible_attack_positions = {
                 {
@@ -122,7 +122,7 @@ local function update_attack_ai(mob, tick)
     local x, y = mob:position()
     if x == attack_x and y == attack_y then
         mob:use_ability(config.ability_id, target)
-    else
+    elseif get_distance(mob, target) > attack_distance then
         mob:walk(attack_x, attack_y)
     end
     return true
