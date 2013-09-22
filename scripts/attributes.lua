@@ -62,7 +62,7 @@ local function recalculate_base_attribute(being, attribute)
     elseif attribute_name == "Attackspeed" then
         -- TODO: for now hardcoded in the attacks
     elseif attribute_name == "Range" then
-        new_base = 32 -- for now
+        new_base = 48 -- for now
     elseif attribute_name == "Damage" then
         if being:type() == TYPE_CHARACTER then
             new_base = being:modified_attribute("Strength")
