@@ -68,7 +68,7 @@
             <end />
         </animation>
     </action>
-    <action name="hurt" imageset="death">
+    <action name="dead" imageset="death">
         <animation direction="up">
             <sequence start="0" end="3" delay="100" />
             <frame index="4" delay="-1" />

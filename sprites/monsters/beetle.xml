@@ -49,7 +49,7 @@
             <end />
         </animation>
     </action>
-    <action name="hurt" imageset="death">
+    <action name="dead" imageset="death">
         <animation direction="down">
             <frame index="0" delay="-1" />
         </animation>
