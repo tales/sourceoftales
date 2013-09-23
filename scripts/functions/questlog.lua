@@ -35,7 +35,7 @@ end
 function create_questlog(ch, quest_id, status, notify, title, description)
     ch:message("Questlog updated: id=" .. tostring(quest_id) .. ", status=" .. questlog_status_to_text(status) .. ", title=[" .. title .. "], desc=[" .. description .. "], notify=" .. tostring(notify))
 
-    ch:set_questlog_status(quest_id, status, title, description, notify)
+    ch:set_questlog(quest_id, status, title, description, notify)
 end
 
 function set_questlog_title(ch, quest_id, title, notify)
