@@ -25,6 +25,7 @@ local range = 20 * TILESIZE
 local ability = get_ability_info("Strike")
 ability:on_use(function(user, direction, ability_id)
     user:set_ability_cooldown(ability_id, 5)
+    user:set_global_ability_cooldown(5)
 
     local range = user:modified_attribute("Range")
 
