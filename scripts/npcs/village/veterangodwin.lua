@@ -53,35 +53,35 @@ local function veteran_talk(npc, ch)
         end
 
         -- check if tutorial quests were already assigned
-        
+
         if tutorial_godwin_talk ~= "done" then
             -- end the quest
             chr_set_quest(ch, "tutorial_godwin_talk", "done")
-            set_questlog_status(ch, QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
+            ch:set_questlog_status(QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
         end
-        
-        
+
+
         if tutorial_fight == "" then
             say("Now go, talk to Instructor Alard, so he can show you how you can "
                 .. "avoid being speared by the first enemy you'll encounter.")
-            create_questlog(ch, QUESTID_TUTORIAL_FIGHT, QUEST_OPEN, true, "Learn to fight",
-                "Instructor Alard will teach you how to fight.\nTalk to him.")
+            ch:set_questlog(ch, QUESTID_TUTORIAL_FIGHT, QUEST_OPEN, "Learn to fight",
+                "Instructor Alard will teach you how to fight.\nTalk to him.", true)
         elseif tutorial_fight ~= "done" then
             say("I see you didn't finish Instructor Alard's task. You should look into it now.")
         end
-            
+
         if tutorial_equip == "" then
             say("Oh, and get your equipment from Blacwin. "
                 .. "You should at least look like a soldier.")
-            create_questlog(ch, QUESTID_TUTORIAL_EQUIP, QUEST_OPEN, true, "Look like a soldier!",
+            ch:set_questlog(ch, QUESTID_TUTORIAL_EQUIP, QUEST_OPEN, true, "Look like a soldier!",
                 "Go to Blacwin and get an armor.")
             chr_set_quest(ch, "tutorial_armor", "todo")
         elseif tutorial_equip ~= "done" then
             say("Don't forget about your armor. Talk to Blacwin.")
         end
-        
+
         say ("Come back to me when you're done.")
-        
+
     end
 
     local function collect_taxes()

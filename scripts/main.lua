@@ -32,9 +32,6 @@ require "scripts/functions/reputation"
 require "scripts/functions/stringutils"
 require "scripts/functions/tiletopixel"
 
--- Temporary questlog mockup
-require "scripts/functions/questlog"
-
 -- Monster scripts
 require "scripts/monsters"
 

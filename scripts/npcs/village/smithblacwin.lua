@@ -44,7 +44,7 @@ local function smith_talk(npc, ch)
                 ch:inv_change("Kettle hat", 1)
                 ch:inv_change("Rusty chain armor", 1)
                 chr_set_quest(ch, "tutorial_equip", "done")
-                set_questlog_status(ch, QUESTID_TUTORIAL_EQUIP, QUEST_FINISHED, true)
+                ch:set_questlog_status(QUESTID_TUTORIAL_EQUIP, QUEST_FINISHED, true)
                 local reply_equip = {
                     "You're not very talkative, are you?",
                     "Thanks."

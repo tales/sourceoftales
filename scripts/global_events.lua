@@ -43,9 +43,9 @@ local function on_chr_birth(ch)
     ch:heal()
 
     -- create initial quest
-    create_questlog(ch, QUESTID_TUTORIAL_GODWIN_TALK, QUEST_OPEN, true, "Get your first orders",
+    ch:set_questlog(QUESTID_TUTORIAL_GODWIN_TALK, QUEST_OPEN, "Get your first orders",
         "You just arrived to the Caserns.\nAs a fresh recruit, you should get your orders.\n" ..
-        "Talk to veteran Godwin to get your first assignment")
+        "Talk to veteran Godwin to get your first assignment", true)
 
     -- give players the strike ability
     ch:give_ability("Strike")

@@ -44,9 +44,9 @@ local function chef_talk(npc, ch)
                 .. "I'm going to show you the most delicious meal you "
                 .. "ever tasted.")
             chr_set_quest(ch, "soldier_goldenfields_beetlestew", "gotorder")
-            create_questlog(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW, QUEST_OPEN,
-                true, "Beetle stew", "Bring " .. amount ..
-                " beetles to Chef Odo. He'll make a delicious beetle stew.")
+            ch:set_questlog(QUESTID_GOLDENFIELDS_BEETLE_STEW, QUEST_OPEN,
+                "Beetle stew", "Bring " .. amount ..
+                " beetles to Chef Odo. He'll make a delicious beetle stew.", true)
         else
             say("Pah. Then don't waste my time.")
         end

@@ -36,7 +36,7 @@ local function instructor_talk(npc, ch)
                 say("Alright, that looks good. Feel free to train here "
                     .. "whenever you want.")
                 chr_set_quest(ch, "tutorial_fight", "done")
-                set_questlog_status(ch, QUESTID_TUTORIAL_FIGHT, QUEST_FINISHED, true)
+                ch:set_questlog_status(QUESTID_TUTORIAL_FIGHT, QUEST_FINISHED, true)
             else
                 say("Come on, smash some more of the training dummies.")
             end
@@ -69,7 +69,7 @@ local function instructor_talk(npc, ch)
                 say("Target them either by mouse or by hitting \"A\". "
                     .. "Use \"Ctrl\" to hit them then!")
                 chr_set_quest(ch, "tutorial_fight", "beat_dummies")
-                set_questlog_description(ch, QUESTID_TUTORIAL_FIGHT,
+                ch:set_questlog_description(QUESTID_TUTORIAL_FIGHT,
                     "Enter the training area and kill some dummies.")
             end
         end
