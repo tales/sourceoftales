@@ -169,6 +169,17 @@ local function monster_damaged(mob, source, damage, experience_attribute)
 
             char:increment_kill_count(mob:monster_id())
         end
+
+        if mob_config.drops then
+            for _, drop in ipairs(mob_config.drops) do
+                if drop.chance > math.random() then
+                    local position_x, position_y = mob:position()
+                    position_x = position_x + math.random(-TILESIZE, TILESIZE)
+                    position_y = position_y + math.random(-TILESIZE, TILESIZE)
+                    item_drop(position_x, position_y, drop.item)
+                end
+            end
+        end
     end
 end
 
