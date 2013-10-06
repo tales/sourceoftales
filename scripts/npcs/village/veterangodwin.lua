@@ -57,7 +57,7 @@ local function veteran_talk(npc, ch)
         if tutorial_godwin_talk ~= "done" then
             -- end the quest
             chr_set_quest(ch, "tutorial_godwin_talk", "done")
-            ch:set_questlog_status(QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
+            ch:set_questlog_state(QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
         end
 
 
