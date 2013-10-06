@@ -34,7 +34,12 @@ function Entity:change_anger(target, amount)
         mob_stati[self] = mob_status
     end
 
-    local anger = mob_status.angerlist[target] or 0
+    local anger = mob_status.angerlist[target]
+    if not anger then
+        on_remove(target, function() mob_status.angerlist[target] = nil end)
+        on_death(target, function() mob_status.angerlist[target] = nil end)
+    end
+    anger = anger or 0
     mob_status.angerlist[target] = anger + amount
     mob_stati[self].update_target_timer = 0 -- Enforce looking for new target
 end
