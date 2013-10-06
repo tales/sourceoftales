@@ -29,6 +29,11 @@ function Entity:damage(damage, source, experience_attribute)
     if hp_loss > 0 then
         local hp = self:base_attribute("HP")
         hp_loss = math.min(hp, hp_loss)
+
+        if hp_loss == 0 then
+            return
+        end
+
         self:add_hit_taken(hp_loss)
         self:set_base_attribute("HP", hp - hp_loss)
 
@@ -39,7 +44,5 @@ function Entity:damage(damage, source, experience_attribute)
                 return callback(self, source, hp_loss, experience_attribute)
             end
         end
-    else
-        hp_loss = 0
     end
 end
