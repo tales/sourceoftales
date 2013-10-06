@@ -73,8 +73,8 @@ local function veteran_talk(npc, ch)
         if tutorial_equip == "" then
             say("Oh, and get your equipment from Blacwin. "
                 .. "You should at least look like a soldier.")
-            ch:set_questlog(QUESTID_TUTORIAL_EQUIP, QUEST_OPEN, true, "Look like a soldier!",
-                "Go to Blacwin and get an armor.")
+            ch:set_questlog(QUESTID_TUTORIAL_EQUIP, QUEST_OPEN, "Look like a soldier!",
+                "Go to Blacwin and get an armor.", true)
             chr_set_quest(ch, "tutorial_armor", "todo")
         elseif tutorial_equip ~= "done" then
             say("Don't forget about your armor. Talk to Blacwin.")
