@@ -1362,22 +1362,22 @@ Skyler Robert Colladay             CC BY_SA 3.0, GPLv3         tiles/grass_night
 Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_hurt_no_hat.png
 Skyler Robert Collady              CC BY_SA 3.0, GPLv3         sprites/npcs/professor_walk_cycle_no_hat.png
 Stefan Beller                      CC BY_SA 3.0, GPLv3         tiles/water_anim.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_slash.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_spellcast.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/female_walkcycle.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_hurt.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_slash.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_spellcast.png
-Stephen Challner (AKA Redshrike)   CC BY-SA 3.0, GPLv3         sprites/characters/male_walkcycle.png
-Stephen Challner                   CC BY_SA 3.0, GPLv2         sprites/monsters/beetle.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_hurt.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_slash.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_spellcast.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_walkcycle.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_hurt.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_spellcast.png
-Stephen Challner                   CC BY_SA 3.0, GPLv3         sprites/npcs/mage_walkcycle.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/female_hurt.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/female_slash.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/female_spellcast.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/female_walkcycle.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/male_hurt.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/male_slash.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/male_spellcast.png
+Stephen Challener (AKA Redshrike)  CC BY-SA 3.0, GPLv3         sprites/characters/male_walkcycle.png
+Stephen Challener                  CC BY_SA 3.0, GPLv2         sprites/monsters/beetle.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_hurt.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_slash.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_spellcast.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/baldric_walkcycle.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/mage_hurt.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/mage_spellcast.png
+Stephen Challener                  CC BY_SA 3.0, GPLv3         sprites/npcs/mage_walkcycle.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_hurt.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_slash.png
 Thane and Stancey Brimhall         CC BY_SA 3.0, GPLv3         sprites/equipment/legs/green_trousers_male_spellcast.png
