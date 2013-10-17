@@ -86,13 +86,11 @@ local function durmark_talk(npc, ch)
                 -- Reset quest at map change or logout
                 on_remove(ch, function()
                     if bee_quest_char == ch then
-                        bee_quest_char:show_text_particle("You failed the Bee Quest.")
                         bee_quest_char = nil
                     end
                 end)
                 schedule_in(30 * 60, function()
                     if bee_quest_char == ch then
-                        bee_quest_char:show_text_particle("You took to long for the Bee Quest")
                         bee_quest_char = nil
                     end
                 end)
@@ -179,7 +177,6 @@ local function bee_remove()
         if (bee_quest_char ~= nil) and (get_distance(bee_quest_char:x(), bee_quest_char:y(),
                         bee_spawn_trigger_position.x, bee_spawn_trigger_position.y) < 20 * TILESIZE) then
             chr_set_quest(bee_quest_char, "goldenfields_durmark_bees", "reward")
-            bee_quest_char:show_text_particle("Finished bee quest! Talk to Durmark for a reward.")
         end
         
         -- Reset so quest can be done again in 30 minutes
