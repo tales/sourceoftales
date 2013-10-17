@@ -127,6 +127,11 @@ local function innkeeper_talk(npc, ch)
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
             change_reputation(ch, "rebel_reputation", "Rebels",
                              -10 + math.floor((GOLDENFIELDS_TAXES - money)/10) )
+            ch:set_questlog_state(QUESTID_GODWIN_CLAIM_TAXES, QUEST_FINISHED, true)
+            ch:set_questlog(QUESTID_GODWIN_RETURN_TAXES, QUEST_OPEN,
+                            "Deliver the collected taxes",
+                            "Hand the collected taxes to Veteran Godwin",
+                            true)
         end
     end
 

@@ -98,6 +98,11 @@ local function veteran_talk(npc, ch)
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotorder")
             say("You can find the Inn in Goldenfields south east of the "
                 .. "casern.")
+            ch:set_questlog(QUESTID_GODWIN_CLAIM_TAXES, QUEST_OPEN,
+                            "Gather taxes", "Talk to the inn keeper and " ..
+                            "gather the outstanding taxes from him.\n" ..
+                            "You can find the inn in the center of the "..
+                            "village. Near to a small pond", true)
         else
             say("Did you get the money from that innkeeper?")
             local choices = {
@@ -114,6 +119,7 @@ local function veteran_talk(npc, ch)
                     change_reputation(ch, "soldier_reputation", "Army", 10)
                     ch:change_money(40)
                     say("Well done, kid.")
+                    ch:set_questlog_state(QUESTID_GODWIN_RETURN_TAXES, QUEST_FINISHED, true)
                 else
                     say("Where is the money? Did you spend it on booze? Kid, "
                         .. "this isn't a place to fool around. "
