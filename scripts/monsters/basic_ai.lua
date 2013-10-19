@@ -44,6 +44,15 @@ function Entity:change_anger(target, amount)
     mob_stati[self].update_target_timer = 0 -- Enforce looking for new target
 end
 
+function Entity:drop_anger(target)
+    local mob_status = mob_stati[self]
+    if not mob_status then
+        return
+    end
+
+    mob_status.angerlist[target] = nil
+end
+
 local mob_config = require "scripts/monsters/settings"
 
 local function calculate_position_priority(x1, y1, x2, y2, anger, range)
