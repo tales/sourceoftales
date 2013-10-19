@@ -82,16 +82,21 @@ local function durmark_talk(npc, ch)
                               "Not at the moment. Sorry!" }
             res = ask(choices)
             if res == 1 then
+                ch:set_questlog(QUESTID_DURMARK_BEES, QUEST_OPEN, "Bzzzzzz",
+                                "Find the bee swarm which nearly attacked Durmark and kill the bees.\n "
+                                .. "He assumes the swarm has its nest in one of the tree stumps.")
                 bee_quest_char = ch
                 -- Reset quest at map change or logout
                 on_remove(ch, function()
                     if bee_quest_char == ch then
                         bee_quest_char = nil
+                        ch:set_questlog_status(QUESTID_DURMARK_BEES, QUEST_FAILED)
                     end
                 end)
                 schedule_in(30 * 60, function()
                     if bee_quest_char == ch then
                         bee_quest_char = nil
+                        ch:set_questlog_status(QUESTID_DURMARK_BEES, QUEST_FAILED)
                     end
                 end)
 
@@ -177,6 +182,7 @@ local function bee_remove()
         if (bee_quest_char ~= nil) and (get_distance(bee_quest_char:x(), bee_quest_char:y(),
                         bee_spawn_trigger_position.x, bee_spawn_trigger_position.y) < 20 * TILESIZE) then
             chr_set_quest(bee_quest_char, "goldenfields_durmark_bees", "reward")
+            bee_quest_char:set_questlog_state(QUESTID_DURMARK_BEES, QUEST_FINISHED)
         end
         
         -- Reset so quest can be done again in 30 minutes
