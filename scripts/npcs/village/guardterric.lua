@@ -20,7 +20,7 @@
 --]]
 
 local function guard_talk(npc, ch)
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("Oh my, I'm bored. I wish I'd be back in Kingstown.")
@@ -55,7 +55,7 @@ local function guard_talk(npc, ch)
         end
     elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace.")
-        change_reputation(ch, "soldier_reputation", "Army", -1)
+        ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

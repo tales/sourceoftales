@@ -111,8 +111,8 @@ local function innkeeper_talk(npc, ch)
 
             start_supply()
 
-            change_reputation(ch, "rebel_reputation", "Rebels", 10)
-            change_reputation(ch, "soldier_reputation", "Army", -10)
+            ch:change_reputation("Rebel reputation", 10)
+            ch:change_reputation("Soldier reputation", -10)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "befriended")
 
@@ -125,8 +125,8 @@ local function innkeeper_talk(npc, ch)
             ch:change_money(money)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "gotmoney")
-            change_reputation(ch, "rebel_reputation", "Rebels",
-                             -10 + math.floor((GOLDENFIELDS_TAXES - money)/10) )
+            ch:change_reputation("Rebel reputation",
+                                 -10 + math.floor((GOLDENFIELDS_TAXES - money)/10) )
             ch:set_questlog_state(QUESTID_GODWIN_CLAIM_TAXES, QUEST_FINISHED, true)
             ch:set_questlog(QUESTID_GODWIN_RETURN_TAXES, QUEST_OPEN,
                             "Deliver the collected taxes",
@@ -136,7 +136,7 @@ local function innkeeper_talk(npc, ch)
     end
 
     local function reputation_dependent()
-        local reputation = read_reputation(ch, "rebel_reputation")
+        local reputation = ch:reputation("Rebel reputation")
         if reputation >= REPUTATION_NEUTRAL then
             say("Hello. Make yourself at home.")
             local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
@@ -174,8 +174,7 @@ local function innkeeper_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
-                              "soldier_reputation", "Army")
+                apply_amnesty(npc, ch, "Rebel reputation", "Soldier reputation")
                 set_respawn()
             elseif res == 3 then
                 say("If you pay recompensation for all your actions that "
@@ -192,8 +191,7 @@ local function innkeeper_talk(npc, ch)
                 }
                 local res = ask(choices)
                 if res == 1 then
-                    apply_amnesty(npc, ch, "rebel_reputation", "Rebels",
-                                  "soldier_reputation", "Army")
+                    apply_amnesty(npc, ch, "Rebel reputation", "Soldier reputation")
                     set_respawn()
                 end
             else

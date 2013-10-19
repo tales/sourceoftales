@@ -24,7 +24,7 @@ local patrol = NPCPatrol:new("Recruit Hugh")
 local function recruit_talk(npc, ch)
     patrol:block(ch)
 
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
@@ -46,7 +46,7 @@ local function recruit_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("Wow, you really got into trouble, heh? Why are you here? "
             .. "Shouldn't you talk to Magistrate Eustace?")
-        change_reputation(ch, "soldier_reputation", "Army", -1)
+        ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Ah! Don't hurt me! Go away!")
         ch:damage({

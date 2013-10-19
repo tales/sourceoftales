@@ -36,10 +36,6 @@ local function on_chr_birth(ch)
         ch:equip_item(item)
     end
 
-    -- Set start reputation
-    chr_set_quest(ch, "soldier_reputation", tostring(REPUTATION_NEUTRAL))
-    chr_set_quest(ch, "rebel_reputation", tostring(REPUTATION_NEUTRAL))
-
     ch:heal()
 
     -- create initial quest
@@ -83,8 +79,6 @@ end)
 -- for example, be utilized for a message-of-the-day or for various
 -- handlings of offline processing mechanics.
 on_character_login(function(ch)
-    chr_request_quest(ch, "soldier_reputation", function(ch, var, value) end)
-    chr_request_quest(ch, "rebel_reputation", function(ch, var, value) end)
     chr_request_quest(ch, "respawn", function(ch, var, value) end)
     chr_request_quest(ch, "tutorial_fight", function(ch, var, value) end)
     chr_request_quest(ch, "goldenfields_shrine", function(ch, var, value) end)

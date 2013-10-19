@@ -252,4 +252,10 @@
             tag="attackspeed"
             effect="Attack speed %+.1f" />
     </attribute>
+    <attribute id="28" name="Soldier reputation"
+        scope="character"
+        />
+    <attribute id="29" name="Rebel reputation"
+        scope="character"
+        />
 </attributes>

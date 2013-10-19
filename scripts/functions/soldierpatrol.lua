@@ -40,7 +40,7 @@ function Soldier_patrol:is_aggressiveAgainst(being)
         return false
     end
 
-    local reputation = tonumber(chr_try_get_quest(being, "soldier_reputation"))
+    local reputation = being:reputation("Soldier reputation")
     if not reputation then
         return false
     end

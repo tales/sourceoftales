@@ -3,6 +3,7 @@
   Reputation related scripts
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2013 Erik Schilling
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,45 +20,23 @@
 
 --]]
 
-function is_valid_faction(faction)
-    -- TODO: make this more flexible, probably with something like this:
-    -- http://www.lua.org/pil/13.1.html
-    -- factions = {"soldier_reputation", "rebel_reputation"}
-    if faction == "soldier_reputation" or faction == "rebel_reputation" then
-        return true
-    else
-        return false
-    end
+function Entity:reputation(faction)
+    assert(faction == "Soldier reputation" or faction == "Rebel reputation")
+
+    return self:base_attribute(faction)
 end
 
-function read_reputation(ch, faction)
-    local reputation = 0
-    if is_valid_faction(faction) then
-        reputation = tonumber(chr_try_get_quest(ch, faction))
-        if (reputation == nil) then
-            reputation = 0
-            chr_set_quest(ch, faction, tostring(reputation))
-        end
-    end
-    return reputation
+function Entity:change_reputation(faction, change)
+    assert(faction == "Soldier reputation" or faction == "Rebel reputation")
+
+    local current_reputation = self:reputation(faction)
+    return self:set_base_attribute(faction, current_reputation + change)
 end
 
-function change_reputation(ch, factionvar, factionname, change)
-    reputation = read_reputation(ch, factionvar)
-    reputation = reputation + change
-    chr_set_quest(ch, factionvar, tostring(reputation))
-    if change > 0 then
-        ch:show_text_particle(factionname .. " reputation +".. change)
-    else
-        ch:show_text_particle(factionname .. " reputation ".. change)
-    end
-end
+function apply_amnesty(npc, ch, friendly_faction, foe_faction)
 
-function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
-                        foe_faction, foe_faction_name)
-
-    local reputation = read_reputation(ch, friendly_faction)
-    local foe_reputation = read_reputation(ch, foe_faction)
+    local reputation = ch:reputation(friendly_faction)
+    local foe_reputation = ch:reputation(foe_faction)
 
     local cost = - reputation -- TODO: formula
     say("You have to pay " .. cost .. " GP to make up for your crimes.")
@@ -70,9 +49,9 @@ function apply_amnesty(npc, ch, friendly_faction, friendly_faction_name,
         local money = ch:money()
         if money >= cost then
             ch:change_money(-cost)
-            change_reputation(ch, friendly_faction, friendly_faction_name, cost)
+            ch:change_reputation(friendly_faction, cost)
             -- TODO: formula
-            change_reputation(ch, foe_faction, foe_faction_name, -cost)
+            ch:change_reputation(foe_faction, -cost)
             say("I hope you learned from your mistakes.")
         else
             say("Come back when you can afford it.")

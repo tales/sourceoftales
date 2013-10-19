@@ -80,13 +80,13 @@ local function smith_talk(npc, ch)
         end
     end
 
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         chat()
     elseif reputation > REPUTATION_RELUCTANT then
         say("Go away until you've talked to Magistrate Eustace.")
-        change_reputation(ch, "soldier_reputation", "Army", -1)
+        ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Argh!")
         ch:damage({

@@ -47,8 +47,8 @@ local function rebel_talk(npc, ch)
                                     "Food Shank", -REBEL_FOOD_FOODSHANK,
                                     "Apple", -REBEL_FOOD_APPLE)
 
-                    change_reputation(ch, "rebel_reputation", "Rebels", 10)
-                    change_reputation(ch, "soldier_reputation", "Army", -5)
+                    ch:change_reputation("Rebel reputation", 10)
+                    ch:change_reputation("Soldier reputation", -5)
                     chr_set_quest(ch, "rebel_goldenfields_supplies", "done")
                     ch:inv_change("Robe Hood", 1)
                     ch:inv_change("Robe Shirt", 1)
@@ -61,13 +61,13 @@ local function rebel_talk(npc, ch)
                         .." pumpkins, ".. REBEL_FOOD_FOODSHANK
                         .. " food shanks and ".. REBEL_FOOD_APPLE
                         .. " apples.")
-                    change_reputation(ch, "rebel_reputation", "Rebels", -1)
+                    ch:change_reputation("Rebel reputation", -1)
                 end
             end
         end
     end
 
-    local reputation = read_reputation(ch, "rebel_reputation")
+    local reputation = ch:reputation("Rebel reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("Hello.")
@@ -79,7 +79,7 @@ local function rebel_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle "
             .. "this conflict.")
-        change_reputation(ch, "rebel_reputation", "Rebels", -1)
+        ch:change_reputation("Rebel reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

@@ -26,7 +26,7 @@ local function magistrate_talk(npc, ch)
         chr_set_quest(ch, "respawn", position)
     end
 
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("These rebels are really annoying. I mean as if there aren't "
@@ -46,8 +46,7 @@ local function magistrate_talk(npc, ch)
         }
         local res = ask(choices)
         if res == 1 then
-            apply_amnesty(npc, ch, "soldier_reputation", "Army",
-                          "rebel_reputation", "Rebels")
+            apply_amnesty(npc, ch, "Soldier reputation", "Rebel reputation")
             set_respawn()
         elseif res == 3 then
                 say("You'd be granted amnesty for your crimes, the army's "
@@ -62,8 +61,7 @@ local function magistrate_talk(npc, ch)
                 }
                 local res = ask(choices)
                 if res == 1 then
-                    apply_amnesty(npc, ch, "soldier_reputation", "Army",
-                                  "rebel_reputation", "Rebels")
+                    apply_amnesty(npc, ch, "Soldier reputation", "Rebel reputation")
                     set_respawn()
                 end
         else

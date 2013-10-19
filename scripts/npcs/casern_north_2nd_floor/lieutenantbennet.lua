@@ -20,7 +20,7 @@
 --]]
 
 local function lieutnant_talk(npc, ch)
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
@@ -38,7 +38,7 @@ local function lieutnant_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("You dare to come here after what you've done? "
             .. "Talk to Magistrate Eustace to get amnesty from your crimes!")
-        change_reputation(ch, "soldier_reputation", "Army", -1)
+        ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("I can't deny you're brave, but that won't help you now!")
         ch:damage(90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

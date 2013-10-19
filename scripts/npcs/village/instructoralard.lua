@@ -132,14 +132,14 @@ local function instructor_talk(npc, ch)
         return
     end
 
-    local reputation = read_reputation(ch, "soldier_reputation")
+    local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         about_questions()
     elseif reputation > REPUTATION_RELUCTANT then
         say("You shouldn't be here until you recompensed for your misconduct. "
             .. "Talk to Magistrate Eustace in Goldenfields.")
-        change_reputation(ch, "soldier_reputation", "Army", -1)
+        ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("You dare to come here after what you've done?! "
             .. "You won't have much time to regret this!")

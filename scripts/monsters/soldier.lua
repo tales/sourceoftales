@@ -29,12 +29,12 @@ local function damaged(mob, aggressor, hploss)
 
     if mob:base_attribute("HP") > 0 then return end
 
-    local reputation_soldier = tonumber(chr_try_get_quest(aggressor, "soldier_reputation"))
-    local reputation_rebel = tonumber(chr_try_get_quest(aggressor, "rebel_reputation"))
+    local reputation_soldier = aggressor:reputation("Soldier reputation")
+    local reputation_rebel = aggressor:reputation("Rebel reputation")
     if not reputation_soldier or not reputation_rebel then return end
 
-    change_reputation(aggressor, "soldier_reputation", "Army", -4)
-    change_reputation(aggressor, "rebel_reputation", "Rebels", 2)
+    aggressor:change_reputation("Soldier reputation", -4)
+    aggressor:change_reputation("Rebel reputation", 2)
 end
 
 local soldiers = {

@@ -24,7 +24,7 @@ local patrol = NPCPatrol:new("Rebel Damien")
 local function rebel_talk(npc, ch)
     patrol:block(ch)
 
-    local reputation = read_reputation(ch, "rebel_reputation")
+    local reputation = ch:reputation("Rebel reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
         say("So you're joining us? The life as an outlaw isn't a piece of "
@@ -34,7 +34,7 @@ local function rebel_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("You worked against us. Talk to Innkeeper Norman to settle "
             .. "this conflict.")
-        change_reputation(ch, "rebel_reputation", "Rebels", -1)
+        ch:change_reputation("Rebel reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         ch:damage(60, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
