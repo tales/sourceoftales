@@ -43,7 +43,8 @@ local function instructor_talk(npc, ch)
         else
             if tutorial_godwin_talk ~= "done" then
                 -- player should first talk to godwin!
-                say("Please report to Veteran Godwin to get your first assignment.")
+                say("New recruit? Please report to Veteran Godwin to get your "
+                    .. "first assignment. Though he will probably send you back to me to train you...")
                 return false
             elseif tutorial_fight == "done" then
                 if tutorial_equip ~= "done" then
@@ -66,8 +67,6 @@ local function instructor_talk(npc, ch)
                 ch:inv_change("Shortsword", 1)
                 say ("Alright, now equip it and try it out on some of the "
                     .. "training dummies.")
-                say("Target them either by mouse or by hitting \"A\". "
-                    .. "Use \"Ctrl\" to hit them then!")
                 chr_set_quest(ch, "tutorial_fight", "beat_dummies")
                 ch:set_questlog_description(QUESTID_TUTORIAL_FIGHT,
                     "Enter the training area and kill some dummies.")
