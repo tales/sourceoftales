@@ -30,7 +30,6 @@ local function damaged(mob, aggressor, hploss)
 
     local reputation_soldier = aggressor:reputation("Soldier reputation")
     local reputation_rebel = aggressor:reputation("Rebel reputation")
-    if not reputation_soldier or not reputation_rebel then return end
 
     aggressor:change_reputation("Soldier reputation", 2)
     aggressor:change_reputation("Rebel reputation", -4)
