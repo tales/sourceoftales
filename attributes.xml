@@ -254,8 +254,10 @@
     </attribute>
     <attribute id="28" name="Soldier reputation"
         scope="character"
+        persistent="true"
         />
     <attribute id="29" name="Rebel reputation"
         scope="character"
+        persistent="true"
         />
 </attributes>
