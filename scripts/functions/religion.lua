@@ -41,10 +41,6 @@ function creation_myth(npc, ch)
         .. "demand, since their power would get weaker and weaker over time "
         .. "while the Third God would grow. But they love their creations, "
         .. "and can't bring themselves to abandon them. So they accept.",
-        "Ignis and Aquaria hesitate to accept this "
-        .. "demand, since their power would get weaker and weaker over time "
-        .. "while the Third God would grow. But they love their creations, "
-        .. "and can't bring themselves to abandon them. So they accept.",
         "Then something surprising happens. The "
         .. "creatures living on the earth, love back their creators and "
         .. "this replenishs Ignis's and Aquaria's power.",
