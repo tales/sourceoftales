@@ -67,7 +67,7 @@ local function chef_talk(npc, ch)
                 if beetle_amount >= amount then
                     ch:inv_change("Beetle Corpus", -amount)
                     ch:change_money(100)
-                    set_questlog_state(ch, QUESTID_GOLDENFIELDS_BEETLE_STEW,
+                    ch:set_questlog_state(QUESTID_GOLDENFIELDS_BEETLE_STEW,
                         QUEST_FINISHED, true)
                     say("Wonderful, wonderful! I'll start with the beetle "
                         .. "stew right now.")
