@@ -137,8 +137,8 @@ Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtles
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         particles/turtleshell_side.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         sprites/equipment/hand/sword_sheet_128.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/farming_fishing.png
-Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/fence_alt.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/fence.png
+Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/fence_alt.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/plants.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/plowed_soil.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/reed.png
@@ -147,6 +147,9 @@ Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/sandwater.p
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/tallgrass.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/wheat.png
 Daniel Eddeland                    CC BY_SA 3.0, GPLv3         tiles/youngwheat.png
+Daniel Eddeland (http://opengameart.org/content/lpc-style-farm-animals) CC BY 3.0, GPLv3 sprites/monsters/chicken_death.png
+Daniel Eddeland (http://opengameart.org/content/lpc-style-farm-animals) CC BY 3.0, GPLv3 sprites/monsters/chicken_pick.png
+Daniel Eddeland (http://opengameart.org/content/lpc-style-farm-animals) CC BY 3.0, GPLv3 sprites/monsters/chicken_walkcycle.png
 David E. Gervais                   CC BY_SA 3.0                items/Ahammer1.png
 David E. Gervais                   CC BY_SA 3.0                items/ArmorChainMailAugmented.png
 David E. Gervais                   CC BY_SA 3.0                items/ArmorChainMailBar.png

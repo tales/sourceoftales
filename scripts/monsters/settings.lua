@@ -123,5 +123,12 @@ return {
             { chance = 0.50, item = "Some Gold Coins"},
             { chance = 0.40, item = "Many Gold Coins"},
         },
-    }
+    },
+    ["Chicken"] = {
+        aggressive = false,
+        cowardly = true,
+        experience = 10,
+        trackrange = 3 * TILESIZE,
+        strollrange = TILESIZE,
+    },
 }

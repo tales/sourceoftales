@@ -133,6 +133,21 @@ local function update_attack_ai(mob, tick)
         return false
     end
 
+    if config.cowardly then
+        local d_x = mob:x() - attack_x
+        local d_y = mob:y() - attack_y
+
+        local squared_length = d_x * d_x + d_y * d_y
+        d_x = d_x * (d_x < 0 and -d_x or d_x) / squared_length
+        d_y = d_y * (d_y < 0 and -d_y or d_y) / squared_length
+
+        d_x = d_x * config.strollrange + math.random(-TILESIZE, TILESIZE)
+        d_y = d_y * config.strollrange + math.random(-TILESIZE, TILESIZE)
+
+        mob:walk(mob:x() + d_x, mob:y() + d_y)
+        return
+    end
+
     if get_distance(mob, target) <= attack_distance then
         mob:use_ability(config.ability_id, target)
     else

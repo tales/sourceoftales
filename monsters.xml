@@ -232,5 +232,23 @@
         <attribute id="Defense" value="5" />
         <ability id="Monster Attacks/Skeletonking monsterspawn" />
     </monster>
+    <monster id="13" name="Chicken" targetCursor="small">
+        <sprite>monsters/chicken.xml</sprite>
+        <attributes
+            size="4"
+            mutation="50"
+            />
+        <attribute id="HP" value="150" />
+        <attribute id="Max HP" value="150" />
+        <attribute id="Movement speed" value="2" />
+        <attribute id="Defense" value="5" />
+        <attribute id="Attackspeed" value="7" />
+        <attribute id="Range" value="48" />
+        <attribute id="Damage" value="20" />
+        <attribute id="Damage Delta" value="2" />
+        <attribute id="Hit chance" value="100" />
+        <attribute id="Dodge" value="1" />
+        <ability id="Monster Attacks/Strike" />
+    </monster>
 </monsters>
 
