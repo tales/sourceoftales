@@ -111,7 +111,7 @@ function Entity:give_experience(experience, attribute)
     local old_experience = self:base_attribute(attribute or "XP")
     local old_level = self:level()
     self:set_base_attribute(attribute or "XP", old_experience + experience)
-    f self:level() > old_level then
+    if self:level() > old_level then
         self:say("LEVELUP!!!")
         self:set_attribute_points(self:attribute_points() + 1)
         self:set_correction_points(self:correction_points() + 1)

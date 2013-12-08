@@ -144,7 +144,11 @@ local function update_attack_ai(mob, tick)
         d_x = d_x * config.strollrange + math.random(-TILESIZE, TILESIZE)
         d_y = d_y * config.strollrange + math.random(-TILESIZE, TILESIZE)
 
-        mob:walk(mob:x() + d_x, mob:y() + d_y, config.flee_speed)
+        local speed_modifier = config.flee_speed_modifier;
+        if speed_modifier then
+            mob:apply_attribute_modifier("Movement speed", speed_modifier, 0, 100)
+        end
+        mob:walk(mob:x() + d_x, mob:y() + d_y)
         return
     end
 
