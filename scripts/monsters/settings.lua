@@ -127,7 +127,7 @@ return {
     ["Chicken"] = {
         aggressive = false,
         cowardly = true,
-        experience = 10,
+        experience = 3,
         trackrange = 3 * TILESIZE,
         strollrange = TILESIZE,
     },
