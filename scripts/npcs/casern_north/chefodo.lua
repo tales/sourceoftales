@@ -70,7 +70,7 @@ local function chef_talk(npc, ch)
                     ch:set_questlog_state(QUESTID_GOLDENFIELDS_BEETLE_STEW,
                         QUEST_FINISHED, true)
                     say("Wonderful, wonderful! I'll start with the beetle "
-                        .. "stew right now.")
+                        .. "stew right now. Here's something for your trouble!")
                     chr_set_quest(ch, "soldier_goldenfields_beetlestew", "done")
                 else
                     say("Eh? Don't talk nonsense.")
