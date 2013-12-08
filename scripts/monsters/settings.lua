@@ -1,7 +1,7 @@
 return {
     ["training dummy"] = {
         aggressive = true,
-        experience = 1,
+        experience = 2,
         trackrange = TILESIZE,
         ability_id = "Monster Attacks/Strike",
     },
