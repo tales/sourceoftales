@@ -57,7 +57,7 @@ local function recalculate_base_attribute(being, attribute)
         new_base = 2000 + being:modified_attribute("Strength") * 180
     elseif attribute_name == "Level" then
         local xp = being:base_attribute("XP")
-        new_base = 5 * math.pow(1.4, xp + 2) - 5 * math.pow(1.4, 3)
+        new_base = math.log(xp / 5 + math.pow(1.4, 3)) / math.log(1.4) - 2;
     elseif attribute_name == "Attackspeed" then
         -- TODO: for now hardcoded in the attacks
     elseif attribute_name == "Range" then
