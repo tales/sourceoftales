@@ -130,5 +130,6 @@ return {
         experience = 3,
         trackrange = 3 * TILESIZE,
         strollrange = TILESIZE,
+        flee_speed = 4,
     },
 }

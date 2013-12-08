@@ -144,7 +144,7 @@ local function update_attack_ai(mob, tick)
         d_x = d_x * config.strollrange + math.random(-TILESIZE, TILESIZE)
         d_y = d_y * config.strollrange + math.random(-TILESIZE, TILESIZE)
 
-        mob:walk(mob:x() + d_x, mob:y() + d_y)
+        mob:walk(mob:x() + d_x, mob:y() + d_y, config.flee_speed)
         return
     end
 
