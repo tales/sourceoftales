@@ -189,8 +189,8 @@
         desc="The level of this character."
         modifiable="false"
         scope="character"
-        minimum="0"
-        maximum="100" />
+        minimum="1"
+        maximum="20" />
     <attribute id="22" name="Attackspeed"
         desc="The time in ticks which has to pass between two attack uses"
         modifiable="false"
