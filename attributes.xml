@@ -184,6 +184,7 @@
         modifiable="false"
         scope="character"
         minimum="0"
+        maximum="8186"
         persistent="true"/>
     <attribute id="21" name="Level"
         desc="The level of this character."
