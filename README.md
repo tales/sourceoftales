@@ -18,7 +18,7 @@ connect to server testing.manasource.org with server type ManaServ at Port
 
 There you go.
 
-Join the devopment
+Join the development
 ======
 Join us at Freenode in channels #sourceoftales and #sourceoftales-dev
 to chat or discuss.
