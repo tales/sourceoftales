@@ -22,12 +22,14 @@
 -->
 
 <!--
-    SQLite specific configuration.
+    SQLite specific configuration. Default database configuration.
 
     sqlite_database:    name and path to the sqlite database file
                         optional, default="mana.db"
+
+    Remember to comment this option when you switch the database configuration
 -->
-<!-- <option name="sqlite_database" value="mana.db"/> -->
+<option name="sqlite_database" value="mana.db"/>
 
 
 <!--
