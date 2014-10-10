@@ -23,7 +23,7 @@ Join the development
 Join us at Freenode in channels #sourceoftales and #sourceoftales-dev
 to chat or discuss.
 If you want to start directly producing new game content, create a fork
-and see [How-to-setup-a-local-server] to start developing.
+and see [How-to-setup-a-local-server](https://github.com/tales/sourceoftales/wiki/How-to-setup-a-local-server) to start developing.
 It is recommended to get in contact first rather than creating content first.
 
 
