@@ -89,7 +89,8 @@ local function veteran_talk(npc, ch)
         if (taxes == "") then
             say("You're done with your basic training? Very well. I've got "
                 .. "some task for you. The Innkeeper from Goldenfields, "
-                .. "Norman, is late with paying his taxes. There was quite "
+                .. "Norman, is late with paying his taxes.")
+            say("There was quite "
                 .. "some moaning among the villagers because of the extra "
                 .. "taxes due to the war. Hah! We're the ones keeping "
                 .. "them safe, ungrateful wretches.")
@@ -102,7 +103,7 @@ local function veteran_talk(npc, ch)
                             "Gather taxes", "Talk to the inn keeper and " ..
                             "gather the outstanding taxes from him.\n" ..
                             "You can find the inn in the center of the "..
-                            "village. Near to a small pond", true)
+                            "village, near to a small pond.", true)
         else
             say("Did you get the money from that innkeeper?")
             local choices = {

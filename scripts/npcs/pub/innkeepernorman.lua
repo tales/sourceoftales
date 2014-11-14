@@ -130,7 +130,7 @@ local function innkeeper_talk(npc, ch)
             ch:set_questlog_state(QUESTID_GODWIN_CLAIM_TAXES, QUEST_FINISHED, true)
             ch:set_questlog(QUESTID_GODWIN_RETURN_TAXES, QUEST_OPEN,
                             "Deliver the collected taxes",
-                            "Hand the collected taxes to Veteran Godwin",
+                            "Hand the collected taxes to Veteran Godwin.",
                             true)
         end
     end
