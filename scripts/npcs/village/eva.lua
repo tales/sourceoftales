@@ -1,6 +1,8 @@
 --[[
 
   Eva - gossiping on the market place
+  Home: House 7
+  Relationships: Sister of Thea, aunt of Emma
 
   Copyright (C) 2012 Jessica Tölke
 

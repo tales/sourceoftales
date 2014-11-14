@@ -1,6 +1,8 @@
 --[[
 
   Maid Golda
+  Home: House 9
+  Relationships: Maid of Magistrate Eustace and Lady Primeveire
 
   Copyright (C) 2012 Jessica Tölke
 

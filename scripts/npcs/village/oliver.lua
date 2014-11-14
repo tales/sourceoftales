@@ -1,6 +1,8 @@
 --[[
 
   Oliver
+  Home: House 8
+  Relationships: Son of Merchant Gilbert and Mary
 
   Copyright (C) 2012 Jessica Tölke
 

@@ -1,6 +1,8 @@
 --[[
 
   Merchant Gilbert
+  Home: House 8
+  Relationships: Husband of Mary and father of Oliver
 
   Copyright (C) 2012 Erik Schilling
   Copyright (C) 2012 Jessica Tölke

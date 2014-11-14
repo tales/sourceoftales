@@ -1,6 +1,8 @@
 --[[
 
   Mary - gossiping on the market place
+  Home: House 8
+  Relationships: Wife of Merchant Gilbert and mother of Oliver
 
   Copyright (C) 2012 Jessica Tölke
 

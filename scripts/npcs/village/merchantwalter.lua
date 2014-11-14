@@ -1,6 +1,8 @@
 --[[
 
   Walter
+  Home: House 4
+  Relationships: Husband of Merchant Anabel
 
   Copyright (C) 2012 Jessica Tölke
 

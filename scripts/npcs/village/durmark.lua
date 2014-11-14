@@ -1,6 +1,8 @@
 --[[
 
   Durmak. Is afraid of bees. He offers a repeatable quest to defeat bees.
+  Home: House 3
+  Relationships: -
 
   Global variables:
   + bee_quest_char -- Tracks the char that does the bee quest at the moment.
@@ -184,7 +186,7 @@ local function bee_remove()
             chr_set_quest(bee_quest_char, "goldenfields_durmark_bees", "reward")
             bee_quest_char:set_questlog_state(QUESTID_DURMARK_BEES, QUEST_FINISHED)
         end
-        
+
         -- Reset so quest can be done again in 30 minutes
         bee_quest_char = nil
         bee_quest_doable = false -- start delay

@@ -1,6 +1,8 @@
 --[[
 
   Magistrate Eustace
+  Home: House 9
+  Relationships: Husband of Lady Primeveire, employer of Maid Golda
 
   Copyright (C) 2012 Jessica Tölke
 

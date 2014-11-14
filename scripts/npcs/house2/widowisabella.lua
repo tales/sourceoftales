@@ -1,6 +1,8 @@
 --[[
 
   Widow Isabella
+  Home: House 2
+  Relationships: Widow of Lief, mother of Hamond (not living in Goldenfields)
 
   Copyright (C) 2012 Jessica Tölke
 

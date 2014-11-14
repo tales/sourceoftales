@@ -1,6 +1,8 @@
 --[[
 
   Millicent
+  Home: House 6
+  Relationships: Wife of Borin
 
   Copyright (C) 2012 Jessica Tölke
 

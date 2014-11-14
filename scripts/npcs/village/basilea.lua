@@ -1,6 +1,8 @@
 --[[
 
   Basilea - gossiping on the market place
+  Home: House 1
+  Relationships: Wife of Rowan
 
   Copyright (C) 2012 Jessica Tölke
 

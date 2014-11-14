@@ -1,6 +1,8 @@
 --[[
 
   Lady Primeveire
+  Home: House 9
+  Relationships: Wife of Magistrate Eustace
 
   Copyright (C) 2012 Jessica Tölke
 

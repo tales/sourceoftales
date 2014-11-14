@@ -1,6 +1,8 @@
 --[[
 
   Anabel
+  Home: House 4
+  Relationships: Wife of Merchant Walter
 
   Copyright (C) 2012 Jessica Tölke
   Copyright (C) 2012 Erik Schilling

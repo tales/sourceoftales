@@ -1,6 +1,8 @@
 --[[
 
   Emma
+  Home: House 7
+  Relationships: Daughter of Thea, niece of Emma
 
   Copyright (C) 2012 Jessica Tölke
 

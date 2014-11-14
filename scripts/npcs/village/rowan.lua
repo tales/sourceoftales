@@ -1,6 +1,8 @@
 --[[
 
   Fisherman Rowan
+  Home: House 1
+  Relationships: Husband of Basilea
 
   Copyright (C) 2012 Jessica Tölke
 

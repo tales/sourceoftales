@@ -1,6 +1,8 @@
 --[[
 
   Thea
+  Home: House 7
+  Relationships: Sister of Eva, mother of Emma
 
   Copyright (C) 2012 Jessica Tölke
 
