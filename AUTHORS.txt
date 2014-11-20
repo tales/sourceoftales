@@ -1,11 +1,11 @@
 This is the AUTHORS file describing all contributions made to create
 this game.
 
-The general concept, map layout, npc skripting, monsters, items and its
+The general concept, map layout, npc scripting, monsters, items and its
 balancing was composed by:
 
     Erik Schilling <ablu.erikschilling@googlemail.com>
-    Jessica Tölke <jtoelke@mail.upb.de>
+    Jessica Tölke <jtoelke@mail.upb.de>; Jessica Beller <jtoelke@gmx.de>
     Felix Stadthaus <jurkan@gmx.de>
     Stefan Beller <stefanbeller@googlemail.com>
     Przemysław Grzywacz <nexather@gmail.com>
