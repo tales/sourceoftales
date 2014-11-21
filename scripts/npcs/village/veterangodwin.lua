@@ -4,6 +4,7 @@
 
   Copyright (C) 2012 Jessica Tölke
   Copyright (C) 2013 Przemysław Grzywacz
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -84,11 +85,66 @@ local function veteran_talk(npc, ch)
 
     end
 
+    local function directions_to_pub()
+        say("When you leave the casern, go south east over the "
+            .. "Goldenfields market. Don't let those brash merchants "
+            .. "distract you. Further into the village there are also "
+            .. "some food stands.")
+        say("Just north of there you can find what they call a pub in this place.")
+    end
+
+    local function help_farmers()
+        local helpfarmers = chr_get_quest(ch, "soldier_goldenfields_helpfarmers")
+        if (helpfarmers == "") then
+            say("I see you finished the basic training and got your equipment. "
+                .. "I've got the perfect mission to fit your abilities.")
+            say("Arbert, a local farmer, has requested help to deal with beetles destroying the crops. "
+              .. "Go meet him to get specific instructions. "
+              .. "He's either on the fields overseeing the workers or hanging out in the pub.")
+            local choices = {
+                "I'm on my way.",
+                "You want me to hunts bugs?! I'm a soldier!"
+            }
+            local res = ask(choices)
+            if res == 1 then
+                say("So what are you still doing here? Get going!")
+            elseif res == 2 then
+                say("Yeah, I know, I know. It's ridiculous. Soldiers hunting bugs for dirty farm people... But those are the orders.")
+                say("If you need to know, they don't want the local people getting any more unhappy. Have you heard about the rebels? "
+                  .. "Unhappy villagers means more support for that nuisance.")
+                say("And now stop questioning orders and go do your job!")
+            end
+            ch:set_questlog(QUESTID_GODWIN_HELPFARMERS, QUEST_OPEN, "Bugs on the Fields",
+                "Meet Arbert in Goldenfields and get more information about the problem with the beetles.", true)
+            chr_set_quest(ch, "soldier_goldenfields_helpfarmers", "meet")
+        elseif (helpfarmers == "helped") then
+            say("Did you take care of the farmer's problem? That's great! "
+                .. "Hopefully that will stop the moaning for a while.")
+            say("You've earned yourself your first pay.")
+            say("Don't spend all of it on the pub and come back when you are ready for your next orders.")
+            chr_set_quest(ch, "soldier_goldenfields_helpfarmers", "done")
+            ch:set_questlog_state(QUESTID_GODWIN_HELPFARMERS, QUEST_FINISHED, true)
+            ch:change_money(20)
+        else
+            say("Are you still here? Go talk to Arbert to find out what's the problem with the beetles.")
+            local choices = {
+                "Yes, sir.",
+                "I can't find him."
+            }
+            local res = ask(choices)
+            if res == 2 then
+                say("If he isn't on the fields overseeing the workers, he's probably in the pub. "
+                .. "I bet he's there, lazy as he is. The pub is in the middle of the village, right behind the pond.")
+                directions_to_pub()
+            end
+        end
+    end
+
     local function collect_taxes()
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
         if (taxes == "") then
-            say("You're done with your basic training? Very well. I've got "
-                .. "some task for you. The Innkeeper from Goldenfields, "
+            say("Are you ready for your next task? Very well. I've got "
+                .. "something for you. The Innkeeper from Goldenfields, "
                 .. "Norman, is late with paying his taxes.")
             say("There was quite "
                 .. "some moaning among the villagers because of the extra "
@@ -127,15 +183,8 @@ local function veteran_talk(npc, ch)
                         .. "Get me the ".. GOLDENFIELDS_TAXES .. " GP.")
                 end
             elseif res == 3 then
-                say("You're not very clever, are you? Alright, listen.")
-                say("When you leave the casern, go south east over the "
-                    .. "Goldenfields market. Don't let those brash merchants "
-                    .. "distract you. Further into the village there are also "
-                    .. "some food stands.")
-                say("If you follow the way to the east, you'll get to some "
-                    .. "small bridge over a stream. Cross it and follow the "
-                    .. "stream to the west again and you'll find the entrance "
-                    .. "to what they call a pub in this place.")
+                say("You're not very clever, are you? All right, listen.")
+                directions_to_pub()
             end
         end
     end
@@ -147,6 +196,7 @@ local function veteran_talk(npc, ch)
         local tutorial_fight = chr_get_quest(ch, "tutorial_fight")
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
         local tutorial_godwin_talk = chr_get_quest(ch, "tutorial_godwin_talk")
+        local helpfarmers = chr_get_quest(ch, "soldier_goldenfields_helpfarmers")
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_godwin_talk ~= "done") then
@@ -155,6 +205,8 @@ local function veteran_talk(npc, ch)
             -- * quest tutorial fight is not completed
             -- * quest tutorial armor is not completed
             send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
+        elseif (helpfarmers ~= "done") then
+            help_farmers()
         elseif (taxes ~= "done") then
             collect_taxes()
         else

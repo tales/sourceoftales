@@ -765,7 +765,7 @@
   </object>
   <object name="beetle spawn" type="SPAWN" x="3522" y="3846" width="672" height="320">
    <properties>
-    <property name="max_beings" value="4"/>
+    <property name="max_beings" value="3"/>
     <property name="monster_id" value="2"/>
     <property name="spawn_rate" value="5"/>
    </properties>
@@ -781,6 +781,13 @@
    <properties>
     <property name="max_beings" value="7"/>
     <property name="monster_id" value="chicken"/>
+    <property name="spawn_rate" value="5"/>
+   </properties>
+  </object>
+  <object name="beetle spawn" type="SPAWN" x="4119" y="3147" width="668" height="653">
+   <properties>
+    <property name="max_beings" value="6"/>
+    <property name="monster_id" value="2"/>
     <property name="spawn_rate" value="5"/>
    </properties>
   </object>
