@@ -39,11 +39,7 @@ function Rebel_patrol:is_aggressiveAgainst(being)
         return false
     end
 
-    local reputation = tonumber(chr_try_get_quest(being, "rebel_reputation"))
-    if not reputation then
-        return false
-    end
-
+    local reputation = being:reputation("Rebel reputation")
     if reputation < self.min_reputation then
         return true
     end

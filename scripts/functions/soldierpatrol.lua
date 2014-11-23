@@ -41,7 +41,6 @@ function Soldier_patrol:is_aggressiveAgainst(being)
     end
 
     local reputation = being:reputation("Soldier reputation")
-
     if reputation < self.min_reputation then
         return true
     end
