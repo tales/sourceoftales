@@ -140,6 +140,74 @@ local function veteran_talk(npc, ch)
         end
     end
 
+    local function scout_forest()
+        local scoutforest = chr_get_quest(ch, "soldier_goldenfields_scoutforest")
+        if (scoutforest == "") then
+            say("I have a new task for you. Should be simple.")
+            say("Yesterday a messenger arrived, telling us the next weapon and armor supply delivery "
+                .. "has reached the mountain path and is going to arrive soon.")
+            say("But they're not here yet though I've expected them before noon. "
+                .. "I wonder if they encountered some problem, maybe a breaking of an axle. "
+                .. "They always use the carts until they break...")
+            say("I want you to go scouting and see if you can find them. "
+                .. "The path through the mountains leads to the forest in the west.")
+            say("So take the path into the forest on the west and then go north. "
+                .. "Report back to me with your findings.")
+            local choices = {
+                "Yes, sir."
+            }
+            ask(choices)
+            say("Oh, and one more thing before you go.")
+            say("There are rumors that the rebels set up camp in the forest. "
+                .. "I don't think they are any kind of a threat, but you're still rather unexperienced.")
+            say("So remember, this is a scouting mission. "
+                .. "If you get into any trouble bigger than you can handle, retreat.")
+            ch:set_questlog(QUESTID_GODWIN_SCOUTING, QUEST_OPEN, "Missing delivery",
+                "Scout the forest for a sign of the missing weapon and armor delivery.", true)
+            chr_set_quest(ch, "soldier_goldenfields_scoutforest", "started")
+        elseif (scoutforest == "started") then
+            say("Any news from the missing supply delivery yet?")
+            local choices = {
+                "Not yet, I'm on my way.",
+                "Where do you want me to look again?"
+            }
+            local res = ask(choices)
+            if (res == 2) then
+                say("Aquaria grant me patience, weren't you listening before? "
+                    .. "They are supposed to come through the forest west of here, "
+                    .. "from the northern mountain path.")
+                end
+        elseif (scoutforest == "information") then
+            say("Kid, there you are. Did you find out about the supply delivery? "
+                .. "Did their cart break?")
+            local choices = {
+                "Groups of rebels are patroling the forest.",
+                "They got into an ambush."
+            }
+            local res = ask(choices)
+            if res == 1 then
+                say("Patroling? They've reached that level of organization already? "
+                    .. "But what about the delivery?")
+                ask("They got into an ambush.")
+                say("An ambush? By the rebels? And they weren't able to fend them off?")
+            else
+                say("An ambush? How could that be? We're far behind the combat zone... ")
+                ask("Groups of rebels are patroling the forest.")
+                say("You mean to say the rebels are organized and strong enough to ambush "
+                    .. "an army supply delivery and succeed?!")
+            end
+            say("...")
+            say("Recruit " .. ch:name() .. ", I underestimated the threat those rebels pose and "
+                .. "sent you on a mission far more dangerous than I intended. "
+                .. "I'm responsible for you new kids.")
+            say("You nevertheless did your job very well. Here is a little bonus for you.")
+            chr_set_quest(ch, "soldier_goldenfields_scoutforest", "done")
+            ch:set_questlog_state(QUESTID_GODWIN_SCOUTING, QUEST_FINISHED, true)
+            ch:change_money(40)
+            say("Report back to me once you got some rest.")
+        end
+    end
+
     local function collect_taxes()
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
         if (taxes == "") then
@@ -197,6 +265,7 @@ local function veteran_talk(npc, ch)
         local tutorial_equip = chr_get_quest(ch, "tutorial_equip")
         local tutorial_godwin_talk = chr_get_quest(ch, "tutorial_godwin_talk")
         local helpfarmers = chr_get_quest(ch, "soldier_goldenfields_helpfarmers")
+        local scoutforest = chr_get_quest(ch, "soldier_goldenfields_scoutforest")
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_godwin_talk ~= "done") then
@@ -207,6 +276,8 @@ local function veteran_talk(npc, ch)
             send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
         elseif (helpfarmers ~= "done") then
             help_farmers()
+        elseif (scoutforest ~= "done") then
+            scout_forest()
         elseif (taxes ~= "done") then
             collect_taxes()
         else
@@ -228,9 +299,26 @@ local function veteran_talk(npc, ch)
     patrol:unblock(ch)
 end
 
+
+local function found_ambush_trace(ch)
+    if ch:type() ~= TYPE_CHARACTER then
+        return
+    end
+
+    local quest = chr_try_get_quest(ch, "soldier_goldenfields_scoutforest")
+    if (quest == "started") then
+        ch:message("An ambush happened here! Only some broken armor and the cart is left.")
+        ch:set_questlog_description(QUESTID_GODWIN_SCOUTING,
+                "Report back to Godwin.", true)
+        chr_set_quest(ch, "soldier_goldenfields_scoutforest", "information")
+    end
+end
+
 local veteran = create_npc_by_name("Veteran Godwin", veteran_talk)
 
 veteran:set_base_attribute(16, 1)
 patrol:assign_being(veteran)
 schedule_every(10, function() patrol:logic() end)
+
+create_trigger_by_name("Ambush trace", found_ambush_trace)
 

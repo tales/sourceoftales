@@ -575,6 +575,7 @@
     <property name="sprite_id" value="10"/>
    </properties>
   </object>
+  <object name="Ambush trace" type="TRIGGER" x="960" y="2240" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawns" width="200" height="200">
   <object name="training dummy spawn" type="SPAWN" x="1440" y="1120" width="448" height="288">
