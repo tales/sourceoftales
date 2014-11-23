@@ -111,8 +111,8 @@ local function innkeeper_talk(npc, ch)
 
             start_supply()
 
-            ch:change_reputation("Rebel reputation", 10)
-            ch:change_reputation("Soldier reputation", -10)
+            ch:change_reputation("Rebel reputation", 2 * REPUTATION_ONTRIAL + 1) -- remove the malus from completing the tutorial
+            ch:change_reputation("Soldier reputation", REPUTATION_RELUCTANT)
 
             chr_set_quest(ch, "soldier_goldenfields_taxes", "befriended")
 

@@ -59,6 +59,7 @@ local function veteran_talk(npc, ch)
             -- end the quest
             chr_set_quest(ch, "tutorial_godwin_talk", "done")
             ch:set_questlog_state(QUESTID_TUTORIAL_GODWIN_TALK, QUEST_FINISHED, true)
+            ch:change_reputation("Rebel reputation", REPUTATION_RELUCTANT - 1)
         end
 
 
