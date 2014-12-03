@@ -3,6 +3,7 @@
   Chef Odo
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,8 +21,20 @@
 --]]
 
 local function chef_talk(npc, ch)
+    local function guard_duty()
+        say("Why are you in my kitchen? I'm working here!")
+        local choices = {
+                "I have orders to bring food to the prisoners.",
+                "Just saying hi."
+        }
+        local res = ask(choices)
+        if res == 1 then
+            say("Don't bother me with trivia like that! Ask John.")
+        end
+    end
+
     local function beetle_stew_start(amount)
-        say("What are you doing in my kitchen? Don't stand in the way! "
+        say("Don't loiter in my kitchen! Don't stand in the way! "
             .. "Unless you're here to help?")
         local choices = {
             "What do you need help with?",
@@ -81,6 +94,11 @@ local function chef_talk(npc, ch)
 
     local BEETLE_AMOUNT = 10
     local beetle_quest = chr_get_quest(ch, "soldier_goldenfields_beetlestew")
+    local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
+
+    if guardduty == "started" then
+        guard_duty()
+    end
 
     if beetle_quest == "done" then
         say("Ah, my friend. Thanks again for bringing me those beetles. "
