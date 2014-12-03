@@ -209,6 +209,25 @@ local function veteran_talk(npc, ch)
         end
     end
 
+    local function guard_duty()
+        local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
+        if (guardduty == "") then
+            say("All right, rookie. It's your turn with guard duty in the prison. "
+                .. "Fetch their food in the kitchen and bring it to them.")
+            ch:set_questlog(QUESTID_GODWIN_GUARDDUTY, QUEST_OPEN, "The other side of the medal...",
+                "Fetch food for the prisoners from the kitchen in the casern.", true)
+            chr_set_quest(ch, "soldier_goldenfields_guardduty", "started")
+        elseif (guardduty == "reportback") then
+            say("Back from the grunt work? I know guard duty is boring, kid, but it's part of the job.")
+            chr_set_quest(ch, "soldier_goldenfields_guardduty", "done")
+            ch:set_questlog_state(QUESTID_GODWIN_GUARDDUTY, QUEST_FINISHED, true)
+            ch:change_money(20)
+            say("Report back to me when you're ready for your next task.")
+        else
+            say("You're supposed to be on guard duty in the prison. What are you doing here?")
+        end
+    end
+
     local function collect_taxes()
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
         if (taxes == "") then
@@ -267,6 +286,7 @@ local function veteran_talk(npc, ch)
         local tutorial_godwin_talk = chr_get_quest(ch, "tutorial_godwin_talk")
         local helpfarmers = chr_get_quest(ch, "soldier_goldenfields_helpfarmers")
         local scoutforest = chr_get_quest(ch, "soldier_goldenfields_scoutforest")
+        local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
         local taxes = chr_get_quest(ch, "soldier_goldenfields_taxes")
 
         if (tutorial_fight ~= "done") or (tutorial_equip ~= "done") or (tutorial_godwin_talk ~= "done") then
@@ -279,6 +299,8 @@ local function veteran_talk(npc, ch)
             help_farmers()
         elseif (scoutforest ~= "done") then
             scout_forest()
+        elseif (guardduty ~= "done") then
+            guard_duty()
         elseif (taxes ~= "done") then
             collect_taxes()
         else
