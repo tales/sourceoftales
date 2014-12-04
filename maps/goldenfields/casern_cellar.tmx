@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="42" height="30" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="strings_theme.ogg"/>
@@ -56,12 +55,12 @@
  </layer>
  <layer name="Decor" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43ImertdiUYNLHBngqh/WMGDmF1zm0iN9UiPPDZX0OQoGFhCTb6ihh1KAbudAuAEfGGztHVxgtH4dBaNgFCADAKCfYSg=
+   eJxjYBgFowA72A/EB/DIxzAyMBgxMzAYA3EsI50chQUcAeKjeOQTgW6zArrRGoiTBtCdowABVJkH2gXEAU0s7jwATEMHh0A6ugJ041Ukd95iYWC4zUIem57gOdDOFyzksU3omK6+AO38ykIeG9mda6AYBoiND5CetUj6sKVVWgJi4mMwAGLiYzAAUtNuxgCVQTZ43ImertdiUYNLHBngqh/WMGDmF1zm0iN9UiPPDZX0OQoGFhCTb6ihh1KAbudAuGEUjIJRMAqGGwAAZCFQmQ==
   </data>
  </layer>
  <layer name="Decor2" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4AykMxMHXMOMDIwHGQkXd80FsJqghkhmBrgCtCcq2SYNZMId0YwQvAoGNzg0hCJI1UseXM6EemQ3kATiztnDUJ3DmagDgxDDSqVxbQE2kA36gwSdw7GvIANDPW8QEwdPRgAMXX0KBgFo2AUjIJRMApGAT0BABkXC6g=
+   eJxjYBgFo4AykMxMHXMOMDIwHGQkXd80FsJqghkhmBrgCtCcq2SYNZMId0YwQvAoGNzg0hCJI1UseXM6EemQ3kATiztnDUJ3DmagDgxDDSqVxbQE2kA36gwSdw7GvIAN0Dov3GFBYFoAYupoYsBLFgSmBSCmjh4Fo2AUjIJRMApGwSigJwAAXlERDw==
   </data>
  </layer>
  <layer name="Decor3" width="42" height="30">
@@ -76,12 +75,12 @@
  </layer>
  <layer name="Over" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlkEKAjEMRTM4F/AQ7sdRENQbuPIAzl5voXvdudCj6WVMoGFKYMZ0LNZKHnwopaGB/t8WwDAMo2Wr0ClZdy2bN9qhDsm6C6cuAGaoI+jOgM+hwppp8b0+l7jXCrXHcQP/dw6SySh1B3kzF95k37Lf/Xmt56l2IfLCDM3DWtSwb9nvzFioKwMXV0tQ/dnN586jBHiW/WMjPp/c99WAt4Xl769ZR5mg3Mh818q+/ayEiPHnbqh7xzqCM8p7+pk1DElodkIV618t36jYyuk/d3V5/vV3K/Q+ToXWI0Z8XoAdSJ8=
+   eJztlkEKAjEMRTM4F/AQ7sdRENQbzMoD6F5voXvdudCj6WVMYMKEwGg6FkslDz6U0tBA/28L4DiO07Ex6JSsu47mg7aoQ7LuwqkLgBnqCLYz4HOosGZa/K7PJe61Qu1xvIP/OwfNZJS6g7yZK2+yb9nvct7qeapdqLwwQ/OwVjXsW/Y7M1bqy8ClrSWo/tzO586jBHiW78dOfL6576sBbwtL7m9ZR5mg3Oh818a+ZVZCxMi5G+res47gjPKeMrOOownNTqhi/av1GxVbOf3nrpnkOfQ+ToXVI058XlxPQ2g=
   </data>
  </layer>
  <layer name="Collision" width="42" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlNsOwCAIQ43//9F7N7qV1gs4mjQxRvSAaC2l1HQ6uN+0+syZrDO51f1u42Sl3veuPKJyjnjbtZaxUodeXBTO3rwq5LxRbslp42TjlD5C+hvlZOq5ktNy7208wqkoGie7zivn1/tGOJkeZv0HTg/ywon+C5E5d/YjmsdpVu/1jMR5mx8HRgZ/
+   eJztk1kKACAIRKX7H7r/aJkcWywHBiIyn2ZJRFI47Nw9rc5pyWrJzd73GqdW7HvvqsMrZ4u3PDuzZvpQi/PCWdtnheRr1Racc5zaOGaOkPlGOTX9tHIvH/LuZTzCycgbp/bcrZyj/62ZtZX+gfMGBaetds4e04vTnCjraUZPnK85A7r/BlU=
   </data>
  </layer>
  <layer name="Shadow" width="42" height="30">
@@ -94,7 +93,7 @@
    eJzt01EKABAQBUBu6/4n8CtRZAs1870ob19K3FByzEzUW7xpJzs53yWrP7R/Lwd+FbG7szv0AtacdGV0VvcA6FU3bAYo
   </data>
  </layer>
- <objectgroup draworder="topdown" name="Warps" width="42" height="30">
+ <objectgroup name="Warps" width="42" height="30">
   <object name="stairs up" type="WARP" x="320" y="128" width="32" height="32">
    <properties>
     <property name="DEST_MAP" value="goldenfields/casern_north"/>
@@ -103,7 +102,7 @@
   </object>
   <object name="Exit 1st level" type="WARP" x="352" y="128" width="32" height="32"/>
  </objectgroup>
- <objectgroup draworder="topdown" name="Spawns" width="198" height="150" visible="0">
+ <objectgroup name="Spawns" width="198" height="150" visible="0">
   <object name="beetle spawn" type="SPAWN" x="32" y="320" width="512" height="128">
    <properties>
     <property name="max_beings" value="3"/>
@@ -152,7 +151,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup draworder="topdown" name="SoldierPatrol" width="42" height="30" visible="0">
+ <objectgroup name="SoldierPatrol" width="42" height="30" visible="0">
   <object name="SoldierPatrol 1" type="WAYPOINT" x="1230" y="167" width="32" height="32">
    <properties>
     <property name="stroll" value="32"/>
