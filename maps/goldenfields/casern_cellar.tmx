@@ -93,6 +93,72 @@
    eJzt01EKABAQBUBu6/4n8CtRZAs1870ob19K3FByzEzUW7xpJzs53yWrP7R/Lwd+FbG7szv0AtacdGV0VvcA6FU3bAYo
   </data>
  </layer>
+ <objectgroup name="NPCS" width="42" height="30">
+  <object name="Guard Dain" type="NPC_POSITION" x="512" y="128" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="3"/>
+   </properties>
+  </object>
+  <object name="Prisoner Asher" type="NPC_POSITION" x="416" y="448" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="9"/>
+   </properties>
+  </object>
+  <object name="Prisoner David" type="NPC_POSITION" x="352" y="384" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="23"/>
+   </properties>
+  </object>
+  <object name="Prisoner Saer" type="NPC_POSITION" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="8"/>
+   </properties>
+  </object>
+  <object name="Prisoner Gamel" type="NPC_POSITION" x="225" y="385" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="7"/>
+   </properties>
+  </object>
+  <object name="Prisoner Gavin" type="NPC_POSITION" x="480" y="352" width="32" height="32">
+   <properties>
+    <property name="gender" value="male"/>
+    <property name="sprite_id" value="21"/>
+   </properties>
+  </object>
+  <object name="Prisoner Berta" type="NPC_POSITION" x="896" y="544" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="19"/>
+   </properties>
+  </object>
+  <object name="Prisoner Haunild" type="NPC_POSITION" x="800" y="480" width="32" height="32">
+   <properties>
+    <property name="gender" value="female"/>
+    <property name="sprite_id" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Waypoints" width="42" height="30">
+  <object name="Prisoner Saer 1" type="WAYPOINT" x="96" y="384" width="32" height="32"/>
+  <object name="Prisoner David 1" type="WAYPOINT" x="316" y="386" width="32" height="32"/>
+  <object name="Prisoner Saer 2" type="WAYPOINT" x="162" y="416" width="32" height="32"/>
+  <object name="Prisoner Saer 3" type="WAYPOINT" x="46" y="400" width="32" height="32"/>
+  <object name="Prisoner Saer 4" type="WAYPOINT" x="96" y="329" width="32" height="32"/>
+  <object name="Prisoner Gamel 1" type="WAYPOINT" x="259" y="386" width="32" height="32"/>
+  <object name="Prisoner Gavin 1" type="WAYPOINT" x="506" y="400" width="32" height="32"/>
+  <object name="Prisoner Gavin 2" type="WAYPOINT" x="441" y="391" width="32" height="32"/>
+  <object name="Prisoner Gavin 3" type="WAYPOINT" x="396" y="401" width="32" height="32"/>
+  <object name="Prisoner Gavin 4" type="WAYPOINT" x="347" y="412" width="32" height="32"/>
+  <object name="Prisoner Gavin 5" type="WAYPOINT" x="466" y="419" width="32" height="32"/>
+  <object name="Prisoner Haunild 1" type="WAYPOINT" x="888" y="450" width="32" height="32"/>
+  <object name="Prisoner Haunild 2" type="WAYPOINT" x="799" y="416" width="32" height="32"/>
+  <object name="Prisoner Haunild 3" type="WAYPOINT" x="811" y="474" width="32" height="32"/>
+ </objectgroup>
  <objectgroup name="Warps" width="42" height="30">
   <object name="stairs up" type="WARP" x="320" y="128" width="32" height="32">
    <properties>
