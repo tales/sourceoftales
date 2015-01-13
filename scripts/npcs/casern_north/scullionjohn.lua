@@ -34,7 +34,7 @@ local function scullion_talk(npc, ch)
             say("Finally, you're late. Here it is.")
             say("Oh, and you might want to give it to the prisoners directly. "
                 .. "Sometimes the guard down there... likes some extra rations, if you know what I mean.")
-            -- TODO: give food items: add new item bread?
+            ch:inv_change("Bread", GUARDDUTY_BREADAMOUNT)
             chr_set_quest(ch, "soldier_goldenfields_guardduty", "gotfood")
             ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
                 "Deliver the food to the prison in the casern's cellar.", true)

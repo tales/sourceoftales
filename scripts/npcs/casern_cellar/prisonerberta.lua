@@ -22,13 +22,20 @@
 local function prisoner_talk(npc, ch)
     local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
 
-    if guardduty == "gotfood" or guardduty == "delivered4food" then
+    if guardduty == "gotfood" or guardduty == "deliveredfoodmales" then
         say("Do you bring our food? I'm so glad.")
         say("The regular guard often takes some of the food for himself, "
             .."so we're starving.")
-        -- TODO: remove from inventory
+
+        local bread = ch:inv_count("Bread")
+        if (bread >= GUARDDUTY_BREADAMOUNT_F) then
+            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_F)
+        else
+            say("Oh, you don't have it?")
+        end
+
         if guardduty == "gotfood" then
-            chr_set_quest(ch, "soldier_goldenfields_guardduty", "delivered2food")
+            chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfoodfemales")
             say("Don't forget the male prisoners in the other cell.")
         else
             chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfood")

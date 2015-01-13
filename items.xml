@@ -450,4 +450,9 @@
             <consumes />
         </effect>
     </item>
+    <item id="60" max-per-slot="255" name="Bread"
+        description="Hard Bread"
+        image="FoodBread.png"
+        value="5">
+    </item>
 </items>

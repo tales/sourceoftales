@@ -31,13 +31,18 @@ local function guard_talk(npc, ch)
         if (res == 1) then
             say("Fine. Go ahead, just follow the stink, you can't miss it.")
         else
-            say("Great! Now you can go upst-")
-            say("Did you hear that? I bet that was this farmer brat again. "
-                .. "Can you go and check him out in the cell?")
-            -- TODO: check and remove items from inventory
-            chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfood")
-            ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
-                "Talk to Prisoner Asher in the casern prison cell.", true)
+            local bread = ch:inv_count("Bread")
+            if (bread >= GUARDDUTY_BREADAMOUNT) then
+                ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT)
+                chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfood")
+                ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
+                    "Talk to Prisoner Asher in the casern prison cell.", true)
+                say("Great! Now you can go upst-")
+                say("Did you hear that? I bet that was this farmer brat again. "
+                    .. "Can you go and check him out in the cell?")
+            else
+                say("Hey, did you forget to bring it with you? Fool!")
+            end
         end
     end
 

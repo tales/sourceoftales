@@ -55,9 +55,16 @@ local function prisoner_talk(npc, ch)
 
     local function deliver_food()
         say("Do you have our food? Finally!")
-        -- TODO: remove from inventory
+
+        local bread = ch:inv_count("Bread")
+        if (bread >= GUARDDUTY_BREADAMOUNT_M) then
+            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_M)
+        else
+            say("Oh, you don't have it?")
+        end
+
         if guardduty == "gotfood" then
-            chr_set_quest(ch, "soldier_goldenfields_guardduty", "delivered4food")
+            chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfoodmales")
             say("Don't forget the female prisoners in the other cell.")
             say("But please, can you come back here afterwards? I have a small favor to ask.")
         else
@@ -72,7 +79,7 @@ local function prisoner_talk(npc, ch)
 
     local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
 
-    if guardduty == "gotfood" or guardduty == "delivered2food" then
+    if guardduty == "gotfood" or guardduty == "deliveredfoodfemales" then
         deliver_food()
     elseif guardduty == "deliveredfood" then
         ask_favor()
