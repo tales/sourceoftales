@@ -63,6 +63,8 @@ local function prisoner_talk(npc, ch)
             say("Oh, you don't have it?")
         end
 
+        local guardduty = chr_get_quest(ch, "soldier_goldenfields_guardduty")
+
         if guardduty == "gotfood" then
             chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfoodmales")
             say("Don't forget the female prisoners in the other cell.")
@@ -81,6 +83,8 @@ local function prisoner_talk(npc, ch)
 
     if guardduty == "gotfood" or guardduty == "deliveredfoodfemales" then
         deliver_food()
+    elseif guardduty == "deliveredfoodmales" then
+        say("Don't forget the female prisoners in the other cell.")
     elseif guardduty == "deliveredfood" then
         ask_favor()
     elseif guardduty == "delivermessage" then
