@@ -2,7 +2,7 @@
 
   Borin
   Home: House 6
-  Relationships: Husband of Millicent
+  Relationships: Husband of Millicent, father of Prisoner Asher
 
   Copyright (C) 2012 Jessica Tölke
 

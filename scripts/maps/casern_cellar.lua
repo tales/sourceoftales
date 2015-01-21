@@ -1,8 +1,9 @@
 --[[
 
-    Inside the casern.
+    Cellar of the casern.
 
   Copyright (C) 2012 Felix Stadthaus
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -25,6 +26,16 @@ atinit(function()
 
     require "scripts/functions/guardpatrol"
     require "scripts/functions/soldierpatrol"
+
+    require "scripts/npcs/casern_cellar/guarddain"
+    require "scripts/npcs/casern_cellar/prisonerasher"
+    require "scripts/npcs/casern_cellar/prisonerberta"
+    require "scripts/npcs/casern_cellar/prisonerdavid"
+    require "scripts/npcs/casern_cellar/prisonergamel"
+    require "scripts/npcs/casern_cellar/prisonergavin"
+    require "scripts/npcs/casern_cellar/prisonerhaunild"
+    require "scripts/npcs/casern_cellar/prisonersaer"
+
 -- Soldier patrols
     local soldierpatrol = Soldier_patrol:new("SoldierPatrol", 10 * TILESIZE, REPUTATION_RELUCTANT)
     schedule_every(1, function() soldierpatrol:logic() end)

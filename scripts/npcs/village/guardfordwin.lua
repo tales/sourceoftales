@@ -52,7 +52,7 @@ local function guard_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace "
             .. "in Goldenfields.")
-        ch:_reputation("Soldier reputation", "Army", -1)
+        ch:reputation("Soldier reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

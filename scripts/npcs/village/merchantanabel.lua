@@ -37,7 +37,8 @@ local function merchant_talk(npc, ch)
         trade(false, {
             { "Pumpkin", 10, 50 },
             { "Food Shank", 10, 130 },
-            { "Apple", 10, 40 }
+            { "Apple", 10, 40 },
+            { "Bread", 10, 50 }
         })
     elseif res== 2 then
         say("Sure. Show me what you have.")
