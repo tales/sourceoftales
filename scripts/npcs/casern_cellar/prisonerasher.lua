@@ -27,11 +27,10 @@ local function prisoner_talk(npc, ch)
         say("And tell her that I'm sorry that I lost control. "
             .."I made everything worse by trying to throw out those soldiers and getting myself arrested.")
         say("I really wish I could do something to help her.")
-        local choices = {
+        local res = ask {
             "Ok, I will tell her.",
             "What happened to you?"
         }
-        local res = ask(choices)
 
         if res == 2 then
             say("I got myself arrested for resisting the orders of the king and his representatives.")
@@ -57,8 +56,8 @@ local function prisoner_talk(npc, ch)
         say("Do you have our food? Finally!")
 
         local bread = ch:inv_count("Bread")
-        if (bread >= GUARDDUTY_BREADAMOUNT_M) then
-            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_M)
+        if (bread >= GUARDDUTY_BREADAMOUNT_MALES) then
+            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_MALES)
         else
             say("Oh, you don't have it?")
         end

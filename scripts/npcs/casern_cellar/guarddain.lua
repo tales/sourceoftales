@@ -23,11 +23,10 @@ local function guard_talk(npc, ch)
     local function deliver_food()
         say("Or do you have the food? Excellent! I was getting hun... "
             .."I mean, you can leave the rations here with me, I will take care of bringing it to the prisoners.")
-        local choices = {
+        local res = ask {
             "I will give it to them myself.",
             "Sure, here it is."
         }
-        local res = ask(choices)
         if (res == 1) then
             say("Fine. Go ahead, just follow the stink, you can't miss it.")
         else
@@ -35,9 +34,9 @@ local function guard_talk(npc, ch)
             if (bread >= GUARDDUTY_BREADAMOUNT) then
                 ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT)
                 chr_set_quest(ch, "soldier_goldenfields_guardduty", "deliveredfood")
+                say("Great! Now you can go upst-")
                 ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
                     "Talk to Prisoner Asher in the casern prison cell.", true)
-                say("Great! Now you can go upst-")
                 say("Did you hear that? I bet that was this farmer brat again. "
                     .. "Can you go and check him out in the cell?")
             else
@@ -63,7 +62,7 @@ local function guard_talk(npc, ch)
     elseif reputation > REPUTATION_RELUCTANT then
         say("To get amnesty for your misconducts talk to Magistrate Eustace "
             .. "in Goldenfields.")
-        ch:_reputation("Soldier reputation", "Army", -1)
+        ch:reputation("Soldier reputation", "Army", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Traitor!")
         ch:damage(80, 10, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)

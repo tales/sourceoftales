@@ -23,11 +23,10 @@
 local function scullion_talk(npc, ch)
     local function guard_duty()
         say("Are you here to get the food for the poor bastards down in the prison?")
-        local choices = {
+        local res = ask {
             "Yeah.",
             "No, I'm just hungry."
         }
-        local res = ask(choices)
         if (res == 2) then
             say("I'll just get into trouble for sneaking you some extra food! Forget about that!")
         else

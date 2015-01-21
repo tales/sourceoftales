@@ -27,10 +27,7 @@ local function woman_talk(npc, ch)
     patrol:block(ch)
 
     local function hear_message()
-        local choices = {
-            "I have a message for you. (Deliver message)"
-        }
-        local res = ask(choices)
+        local res = ask {"I have a message for you. (Deliver message)"}
 
         chr_set_quest(ch, "soldier_goldenfields_guardduty", "reportback")
         ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
@@ -38,11 +35,10 @@ local function woman_talk(npc, ch)
 
         say("It's very kind of you to come here and tell me about that. Thank you!")
 
-        local choices = {
+        local res = ask {
             "I'm glad I could help, see you.",
             "What happened to get him into prison?"
         }
-        local res = ask(choices)
         if res == 2 then
             say("Oh, it was a stupid, stupid thing. We couldn't pay our taxes and "
                 .. "he resisted the soldiers coming to get them, he got angry and attacked them.")

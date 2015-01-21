@@ -28,8 +28,8 @@ local function prisoner_talk(npc, ch)
             .."so we're starving.")
 
         local bread = ch:inv_count("Bread")
-        if (bread >= GUARDDUTY_BREADAMOUNT_F) then
-            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_F)
+        if (bread >= GUARDDUTY_BREADAMOUNT_FEMALES) then
+            ch:inv_change("Bread", -GUARDDUTY_BREADAMOUNT_FEMALES)
         else
             say("Oh, you don't have it?")
         end
