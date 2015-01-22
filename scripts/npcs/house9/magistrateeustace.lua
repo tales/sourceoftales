@@ -5,6 +5,7 @@
   Relationships: Husband of Lady Primeveire, employer of Maid Golda
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,7 +22,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Magistrate Eustace")
+
 local function magistrate_talk(npc, ch)
+    patrol:block(ch)
     local function set_respawn()
          -- LATER: find out how this can be done without hard coded numbers
         local position = 1 .. " " .. 2272 .. " " .. 1472
@@ -70,11 +74,11 @@ local function magistrate_talk(npc, ch)
             say("No? Well, we don't have any business with each other then.")
         end
     end
+    patrol:unblock(ch)
 end
 
 local magistrate = create_npc_by_name("Magistrate Eustace", magistrate_talk)
 
 magistrate:set_base_attribute(16, 1)
-local patrol = Patrol:new("Magistrate Eustace")
 patrol:assign_being(magistrate)
 schedule_every(15, function() patrol:logic() end)

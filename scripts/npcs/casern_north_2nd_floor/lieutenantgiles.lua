@@ -3,6 +3,7 @@
   Lieutenant Giles
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,13 +20,16 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Lieutenant Giles")
+
 local function lieutnant_talk(npc, ch)
+    patrol:block(ch)
     say("We're trying to discuss something important here. Go back downstairs.")
+    patrol:unblock(ch)
 end
 
 local lieutnant = create_npc_by_name("Lieutenant Giles", lieutnant_talk)
 
 lieutnant:set_base_attribute(16, 3)
-local patrol = Patrol:new("Lieutenant Giles")
 patrol:assign_being(lieutnant)
 schedule_every(9, function() patrol:logic() end)

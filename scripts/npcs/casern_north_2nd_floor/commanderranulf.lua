@@ -3,6 +3,7 @@
   Commander Ranulf
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,14 +20,17 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Commander Ranulf")
+
 local function commander_talk(npc, ch)
+    patrol:block(ch)
     say("What are you doing here? Do you have anything important to report?")
     say("If this is not the case, go back to your duties.")
+    patrol:unblock(ch)
 end
 
 local commander = create_npc_by_name("Commander Ranulf", commander_talk)
 
 commander:set_base_attribute(16, 2)
-local patrol = Patrol:new("Commander Ranulf")
 patrol:assign_being(commander)
 schedule_every(7, function() patrol:logic() end)

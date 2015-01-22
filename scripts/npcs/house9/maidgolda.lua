@@ -5,6 +5,7 @@
   Relationships: Maid of Magistrate Eustace and Lady Primeveire
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,15 +22,18 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Maid Golda")
+
 local function maid_talk(npc, ch)
+    patrol:block(ch)
     say("Oh, hello. What are you doing here? Do you want to talk to "
         .. "Magistrate Eustace? He should be in the entrance room.")
     say("I need to work, otherwise Lady Primeveire will get angry with me.")
+    patrol:unblock(ch)
 end
 
 local maid = create_npc_by_name("Maid Golda", maid_talk)
 
 maid:set_base_attribute(16, 1)
-local patrol = Patrol:new("Maid Golda")
 patrol:assign_being(maid)
 schedule_every(11, function() patrol:logic() end)

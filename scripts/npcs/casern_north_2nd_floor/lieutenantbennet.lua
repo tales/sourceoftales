@@ -3,6 +3,7 @@
   Lieutenant Bennet
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,7 +20,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Lieutenant Bennet")
+
 local function lieutnant_talk(npc, ch)
+    patrol:block(ch)
     local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
@@ -43,11 +47,11 @@ local function lieutnant_talk(npc, ch)
         say("I can't deny you're brave, but that won't help you now!")
         ch:damage(90, 30, 9999, DAMAGE_PHYSICAL, ELEMENT_NEUTRAL)
     end
+    patrol:unblock(ch)
 end
 
 local lieutnant = create_npc_by_name("Lieutenant Bennet", lieutnant_talk)
 
 lieutnant:set_base_attribute(16, 1)
-local patrol = Patrol:new("Lieutenant Bennet")
 patrol:assign_being(lieutnant)
 schedule_every(13, function() patrol:logic() end)

@@ -20,7 +20,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Scullion John")
+
 local function scullion_talk(npc, ch)
+    patrol:block(ch)
     local function guard_duty()
         say("Are you here to get the food for the poor bastards down in the prison?")
         local res = ask {
@@ -49,11 +52,11 @@ local function scullion_talk(npc, ch)
           .. "potatoes. Then I have to cut the mushrooms.")
       say("Chef Odo will get angry if I'm not fast enough!")
     end
+    patrol:unblock(ch)
 end
 
 local scullion = create_npc_by_name("Scullion John", scullion_talk)
 
 scullion:set_base_attribute(16, 2)
-local patrol = Patrol:new("Scullion John")
 patrol:assign_being(scullion)
 schedule_every(3, function() patrol:logic() end)

@@ -5,6 +5,7 @@
   Relationships: Widow of Lief, mother of Hamond (not living in Goldenfields)
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,7 +22,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Widow Isabella")
+
 local function woman_talk(npc, ch)
+    patrol:block(ch)
     local function pumpkin_quest()
         say("Welcome to my house. Did you come here to cheer up an old "
             .. "and lonely woman?")
@@ -73,11 +77,11 @@ local function woman_talk(npc, ch)
     else
         pumpkin_quest()
     end
+    patrol:unblock(ch)
 end
 
 local woman = create_npc_by_name("Widow Isabella", woman_talk)
 
 woman:set_base_attribute(16, 1)
-local patrol = Patrol:new("Widow Isabella")
 patrol:assign_being(woman)
 schedule_every(42, function() patrol:logic() end)

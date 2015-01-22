@@ -19,10 +19,12 @@
 
 --]]
 
-local patrol = Patrol:new("Prisoner Gavin")
+local patrol = NPCPatrol:new("Prisoner Gavin")
 
 local function prisoner_talk(npc, ch)
+    patrol:block(ch)
     say("Hey you! Is it funny to watch the helpless prisoners?")
+    patrol:unblock(ch)
 end
 
 local prisoner = create_npc_by_name("Prisoner Gavin", prisoner_talk)

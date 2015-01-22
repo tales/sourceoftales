@@ -3,6 +3,7 @@
   Recruit Alan
 
   Copyright (C) 2012 Jessica Tölke
+  Copyright (C) 2014 Jessica Beller
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,15 +20,18 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Recruit Alan")
+
 local function recruit_talk(npc, ch)
+    patrol:block(ch)
     say("Ah, I'm bored. There wasn't much going on since I arrived here. "
         .. "I hope those rebels will stir some trouble, "
         .. "a decent fight would be fun by now.")
+    patrol:unblock(ch)
 end
 
 local recruit = create_npc_by_name("Recruit Alan", recruit_talk)
 
 recruit:set_base_attribute(16, 2)
-local patrol = Patrol:new("Recruit Alan")
 patrol:assign_being(recruit)
 schedule_every(5, function() patrol:logic() end)

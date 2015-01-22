@@ -20,7 +20,10 @@
 
 --]]
 
+local patrol = NPCPatrol:new("Chef Odo")
+
 local function chef_talk(npc, ch)
+    patrol:block(ch)
     local function guard_duty()
         say("Why are you in my kitchen? I'm working here!")
         local choices = {
@@ -109,12 +112,12 @@ local function chef_talk(npc, ch)
     else
         beetle_stew_start(BEETLE_AMOUNT)
     end
+    patrol:unblock(ch)
 end
 
 local chef = create_npc_by_name("Chef Odo", chef_talk)
 
 chef:set_base_attribute(16, 1)
-local patrol = Patrol:new("Chef Odo")
 patrol:assign_being(chef)
 schedule_every(11, function() patrol:logic() end)
 
