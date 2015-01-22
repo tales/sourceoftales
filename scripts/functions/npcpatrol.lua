@@ -28,12 +28,12 @@ local mt = {__index=NPCPatrol}
 function NPCPatrol:new(name)
     local patrol = Patrol:new(name)
     setmetatable(patrol, mt)
-    patrol.blocked_dialouges = {}
+    patrol.blocked_dialogues = {}
     return patrol
 end
 
 function NPCPatrol:block(ch, delay)
-    self.blocked_dialouges[ch] = delay or -1
+    self.blocked_dialogues[ch] = delay or -1
     for _, member in ipairs(self.members) do
         member:walk(member:position())
     end
@@ -43,17 +43,17 @@ function NPCPatrol:block(ch, delay)
 end
 
 function NPCPatrol:unblock(ch)
-    self.blocked_dialouges[ch] = nil
+    self.blocked_dialogues[ch] = nil
 end
 
 function NPCPatrol:logic()
     local free = true
-    for ch, timer in pairs(self.blocked_dialouges) do
+    for ch, timer in pairs(self.blocked_dialogues) do
         if timer > 1 or timer < 0 then
             free = false
-            self.blocked_dialouges[ch] = timer - 1
+            self.blocked_dialogues[ch] = timer - 1
         else
-            self.blocked_dialouges[ch] = nil
+            self.blocked_dialogues[ch] = nil
         end
     end
 
@@ -62,3 +62,14 @@ function NPCPatrol:logic()
     end
 end
 
+function NPCPatrol:create_npc(talk_func, update_func)
+    talk_func = function(npc, ch)
+        self:block(ch)
+        talk_func(npc, ch)
+        self:unblock(ch)
+    end
+
+    local npc = create_npc_by_name(self.name, talk_func, update_func)
+    self:assign_being(npc)
+    return npc
+end
