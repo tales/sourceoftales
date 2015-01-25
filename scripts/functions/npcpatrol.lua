@@ -63,13 +63,13 @@ function NPCPatrol:logic()
 end
 
 function NPCPatrol:create_npc(talk_func, update_func)
-    talk_func = function(npc, ch)
+    local blocking_talk_func = function(npc, ch)
         self:block(ch)
         talk_func(npc, ch)
         self:unblock(ch)
     end
 
-    local npc = create_npc_by_name(self.name, talk_func, update_func)
+    local npc = create_npc_by_name(self.name, blocking_talk_func, update_func)
     self:assign_being(npc)
     return npc
 end
