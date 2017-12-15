@@ -1,0 +1,15 @@
+{
+    "maps": [
+        {
+            "fileName": "goldenfields/main.tmx",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "fileName": "mountainwatch/main.tmx",
+            "x": 0,
+            "y": -6400
+        }
+    ],
+    "type": "world"
+}
