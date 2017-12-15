@@ -1,12 +1,12 @@
 --[[
 
   Script for grouping beings together and letting them patroul
-  
+
   For creating a patrol choose a name. Then add objects to the map.
   The name of the object has to start with the name followed by a space
   and then the index number of the waypoint. The type of the object has to
   be set to WAYPOINT.
-  
+
   Possible object parameters:
    + stroll    -> The radius in pixels that will allow the beings to stroll
                   is a being out of this radius it will walk to a random
@@ -58,12 +58,13 @@ function Patrol:new(name)
             path[id] = {x=x + w / 2, y=y + h / 2, tolerance=tolerance, stroll=stroll}
         end
     end
-    
+
     assert(#path >= 1, "Path \"" .. name .. "\" need to have at least one waypoint")
 
     return setmetatable({
         position_index = 1,
         path = path,
+        name = name,
         members = {}
     }, mt)
 end

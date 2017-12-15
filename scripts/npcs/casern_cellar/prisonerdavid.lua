@@ -22,13 +22,10 @@
 local patrol = NPCPatrol:new("Prisoner David")
 
 local function prisoner_talk(npc, ch)
-    patrol:block(ch)
     say("...")
-    patrol:unblock(ch)
 end
 
-local prisoner = create_npc_by_name("Prisoner David", prisoner_talk)
-
+local prisoner = patrol:create_npc(prisoner_talk)
 prisoner:set_base_attribute(16, 2)
-patrol:assign_being(prisoner)
+
 schedule_every(3, function() patrol:logic() end)
