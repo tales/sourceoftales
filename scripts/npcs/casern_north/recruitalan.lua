@@ -24,9 +24,9 @@ local patrol = NPCPatrol:new("Recruit Alan")
 
 local function recruit_talk(npc, ch)
     patrol:block(ch)
-    say("Ah, I'm bored. There wasn't much going on since I arrived here. "
-        .. "I hope those rebels will stir some trouble, "
-        .. "a decent fight would be fun by now.")
+    say("Ah, I'm bored. There hasn't been much going on since I arrived here. "
+        .. "I hope those rebels stir up some trouble, "
+        .. "a decent fight would be fun.")
     patrol:unblock(ch)
 end
 
