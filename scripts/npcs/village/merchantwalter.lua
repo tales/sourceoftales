@@ -45,7 +45,7 @@ local function merchant_talk(npc, ch)
         say("Of course!")
         trade(true)
     elseif res == 3 then
-        say("I hope you won't have to regret that!")
+        say("I hope you won't regret that!")
     end
 end
 
