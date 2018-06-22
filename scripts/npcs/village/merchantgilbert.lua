@@ -25,7 +25,7 @@
 local function merchant_talk(npc, ch)
     say("Welcome to my little shop! I'm sure you're interested in the high "
         .. "quality armor I'm selling. Do you really want to get into a "
-        .. "battle with those wastage you got in the casern? Have a look at "
+        .. "battle with that wastage you got in the casern? Have a look at "
         .. "what I have to offer... it might save your life!")
 
     local choices = {
