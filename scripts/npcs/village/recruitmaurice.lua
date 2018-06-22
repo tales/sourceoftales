@@ -35,14 +35,14 @@ local function recruit_talk(npc, ch)
         local res = ask(choices)
 
         if res == 1 then
-            say("Oh, I just don't want to spent the rest of my life with "
+            say("Oh, I just don't want to spent the rest of my life doing "
                 .. "farm work. You know, I've got so many brothers and "
-                .. "sisters, I didn't like the thought to drudge on a dirty "
+                .. "sisters, I didn't like the thought of drudging on a dirty "
                 .. "farm all my life for my oldest brothers benefit. "
                 .. "So I ran away when I was twelve.")
-            say("I tramped around the area some while, finding some work to "
+            say("I tramped around the area for some while, finding some work to "
                 .. "do here and there, but that's a cumbersome life. "
-                .. "When I met the recruiter, I decided to rather become I "
+                .. "When I met the recruiter, I decided that I would rather become a "
                 .. "soldier. I'm going to see the world, and maybe I can "
                 .. "find some nice place to live after my time of service.")
         elseif res == 2 then
@@ -50,7 +50,7 @@ local function recruit_talk(npc, ch)
                 .. "out here to Goldenfields to hire people? I mean, nothing "
                 .. "ever happens here and usually there are only a handful of "
                 .. "old soldiers here in the casern who feel bored to death.")
-            say("After the basic training we're probably going to be send to "
+            say("After the basic training we're probably going to be sent to "
                 .. "more interesting places.")
             say("At least I hope so. If those rebels become a more serious "
                 .. "problem, they might need us here.")
@@ -64,7 +64,7 @@ local function recruit_talk(npc, ch)
             if res == 2 then
                 say("Didn't you hear? Some people got upset about the "
                     .. "increased taxes and started rioting. So far they "
-                    .. "didn't seem very organized, but I heard rumors that "
+                    .. "don't seem very organized, but I heard rumors that "
                     .. "they're getting more successful.")
             end
         elseif res == 3 then
