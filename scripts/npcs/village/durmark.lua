@@ -113,7 +113,7 @@ local function durmark_talk(npc, ch)
     end
 
     local function about_reward()
-        say("Ah! Thank you a lot!")
+        say("Ah! thank's a lot!")
         set_quest("goldenfields_durmark_bees", "")
         set_quest("goldenfields_durmark_bees_counter",
             (tonumber(quest("goldenfields_durmark_bees_counter")) or 0) + 1)
