@@ -35,10 +35,10 @@ local function rebel_talk(npc, ch)
         say("Henry spent a lot of time helping out at the inn, to earn some "
             .. "money. Norman always supported them.")
         say("Then his father went missing on a campaign, and the kingdom "
-            .. "stopped to pay. Technically Henry's family had a right "..
-            "for compensation money. The families of dead soldiers get that.")
+            .. "stopped paying. Technically Henry's family had a right "..
+            "to compensation money. The families of dead soldiers get that.")
         say("But the officials refused, because it's not proven that Henry's "
-            .. "father is dead, he just got missing.")
+            .. "father is dead, he just went missing.")
         say("I think those experiences are a main reason why Henry is "
             .. "fighting against the kingdom.")
     elseif reputation > REPUTATION_RELUCTANT then
