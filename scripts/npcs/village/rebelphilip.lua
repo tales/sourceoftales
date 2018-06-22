@@ -28,7 +28,7 @@ local function rebel_talk(npc, ch)
 
     if reputation >= REPUTATION_NEUTRAL then
         say("Henry is really inspiring. I was frustrated with the situation "
-            .. "since a long while, but now Henry finally shows me a way to "
+            .. "for a long while, but now Henry finally showed me a way to "
             .. "do something against the unjustice of the king and his "
             .. "followers.")
     elseif reputation > REPUTATION_RELUCTANT then
