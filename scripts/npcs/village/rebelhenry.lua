@@ -30,7 +30,7 @@ local function rebel_talk(npc, ch)
         local supplies = chr_get_quest(ch, "rebel_goldenfields_supplies")
         if supplies == "started" then
             local choices = {
-                "Innkeeper Norman asked me to bring you this supplies.",
+                "Innkeeper Norman asked me to bring you these supplies.",
                 "What can I do to help?"
             }
             local res = ask(choices)
@@ -73,7 +73,7 @@ local function rebel_talk(npc, ch)
         say("Hello.")
         deliver_supplies()
         say("The army is sending out more and more patrols. You can help by "
-            .. "fighting them back.")
+            .. "fighting back.")
         goldenfields_check_bounty(npc, ch,
                                   "rebel_goldenfields_killsoldiers", "Soldier")
     elseif reputation > REPUTATION_RELUCTANT then
