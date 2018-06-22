@@ -77,7 +77,7 @@ local function innkeeper_talk(npc, ch)
                 end
             end
         else
-            say("The army squeezes the last money out of the upright citizens, "
+            say("The army squeezes the last of the money out of the upright citizens, "
                 .. "to pay for a war that happens far away, for a king we "
                 .. "don't know and who probably never heard that Goldenfields "
                 .. "even exists.")
