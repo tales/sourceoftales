@@ -85,7 +85,8 @@ local function smith_talk(npc, ch)
     if reputation >= REPUTATION_NEUTRAL then
         chat()
     elseif reputation > REPUTATION_RELUCTANT then
-        say("Go away until you've talked to Magistrate Eustace.")
+        say("Go away!")
+        say("Talk to Magistrate Eustace.")
         ch:change_reputation("Soldier reputation", -1)
     else -- reputation <= REPUTATION_RELUCTANT
         say("Argh!")
@@ -102,4 +103,3 @@ local smith = create_npc_by_name("Smith Blacwin", smith_talk)
 smith:set_base_attribute(16, 1)
 patrol:assign_being(smith)
 schedule_every(12, function() patrol:logic() end)
-
