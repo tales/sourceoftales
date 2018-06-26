@@ -158,7 +158,7 @@ local function priestess_talk(npc, ch)
                         -- LATER: remove the part about closed path after we
                         -- added more content
                     say("Your journey might be dangerous, so I'll grant "
-                        .. "you further knowledge in the god's powers.")
+                        .. "you further knowledge of the gods' powers.")
                     local magic = chr_get_quest(ch, "magic")
                     chr_set_quest(ch, "goldenfields_shrine", "done")
                     if magic == "fire" then
