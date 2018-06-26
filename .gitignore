@@ -19,6 +19,3 @@ maps/*.png
 
 # OS X leftovers
 .DS_Store
-
-# imported scripts from manasource
-scripts/lua
