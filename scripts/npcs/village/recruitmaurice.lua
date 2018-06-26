@@ -40,7 +40,7 @@ local function recruit_talk(npc, ch)
                 .. "sisters, I didn't like the thought of drudging on a dirty "
                 .. "farm all my life for my oldest brothers benefit. "
                 .. "So I ran away when I was twelve.")
-            say("I tramped around the area for some while, finding some work to "
+            say("I tramped around the area for a while, finding some work to "
                 .. "do here and there, but that's a cumbersome life. "
                 .. "When I met the recruiter, I decided that I would rather become a "
                 .. "soldier. I'm going to see the world, and maybe I can "
