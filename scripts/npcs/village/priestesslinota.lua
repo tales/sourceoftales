@@ -261,7 +261,7 @@ local function priestess_talk(npc, ch)
                 .. "I shouldn't leave the shrine unless there's "
                 .. "an emergency. You could prove yourself by going "
                 .. "instead. But I warn you, it could be dangerous.")
-            say("If this doesn't discourage you, I'll explain to you "
+            say("If this doesn't discourage you, I'll explain"
                 .. "the issue.")
             local choices = {
                 "I'm not afraid!",
