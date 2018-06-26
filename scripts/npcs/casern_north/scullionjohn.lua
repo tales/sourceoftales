@@ -30,9 +30,7 @@ local function scullion_talk(npc, ch)
             "Yeah.",
             "No, I'm just hungry."
         }
-        if (res == 2) then
-            say("I'll just get into trouble for sneaking you some extra food! Forget about that!")
-        else
+        if (res == 1) then
             say("Finally, you're late. Here it is.")
             say("Oh, and you might want to give it to the prisoners directly. "
                 .. "Sometimes the guard down there... likes some extra rations, if you know what I mean.")
@@ -40,6 +38,8 @@ local function scullion_talk(npc, ch)
             chr_set_quest(ch, "soldier_goldenfields_guardduty", "gotfood")
             ch:set_questlog_description(QUESTID_GODWIN_GUARDDUTY,
                 "Deliver the food to the prison in the casern's cellar.", true)
+        else
+            say("I'll just get into trouble for sneaking you some extra food! Forget about that!")
         end
     end
 

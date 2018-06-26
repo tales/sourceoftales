@@ -28,7 +28,7 @@ local function man_talk(npc, ch)
     patrol:block(ch)
     say("Hello. Here are the farmworker's quarters. Most of us live here "
         .. "for the summer to help out with the field work, and then "
-        .. "travel to other place where we can find other work.")
+        .. "travel to other places where we can find other work.")
     patrol:unblock(ch)
 end
 
@@ -37,4 +37,3 @@ local man = create_npc_by_name("Thomas", man_talk)
 man:set_base_attribute(16, 1)
 patrol:assign_being(man)
 schedule_every(14, function() patrol:logic() end)
-

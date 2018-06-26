@@ -23,7 +23,7 @@ local function guard_talk(npc, ch)
     local reputation = ch:reputation("Soldier reputation")
 
     if reputation >= REPUTATION_NEUTRAL then
-        say("Oh my, I'm bored. I wish I'd be back in Kingstown.")
+        say("Oh my, I'm bored. I wish I was back in Kingstown.")
 
         local choices = {
             "Tell me about Kingstown!",

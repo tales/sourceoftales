@@ -31,7 +31,7 @@ local function veteran_talk(npc, ch)
     local function send_tutorial(tutorial_godwin_talk, tutorial_fight, tutorial_equip)
         say("Hey, rookie. You aren't paid for standing in the landscape "
             .. "and looking like a sheep.")
-        say("You should better hurry to get to the basic training unless you "
+        say("You'd better hurry and get to the basic training unless you "
             .. "want to do extra hours in the kitchen during the next month.")
 
         local choices = {
@@ -42,8 +42,8 @@ local function veteran_talk(npc, ch)
         local res = ask(choices)
 
         if res == 1 then
-            say("Don't make me laugh! I'd be surprised if you'd know at what "
-                .. "end to hold a sword.")
+            say("Don't make me laugh! I'd be surprised if you know what "
+                .. "end to hold a sword at.")
         elseif res == 2 then
             say("Watch out, this isn't a friendly place for a wimp.")
         elseif res == 3 then
@@ -64,8 +64,8 @@ local function veteran_talk(npc, ch)
 
 
         if tutorial_fight == "" then
-            say("Now go, talk to Instructor Alard, so he can show you how you can "
-                .. "avoid being speared by the first enemy you'll encounter.")
+            say("Now go, talk to Instructor Alard, so he can show you how to "
+                .. "avoid being speared by the first enemy you encounter.")
             ch:set_questlog(QUESTID_TUTORIAL_FIGHT, QUEST_OPEN, "Learn to fight",
                 "Instructor Alard will teach you how to fight.\nTalk to him.", true)
         elseif tutorial_fight ~= "done" then
@@ -147,7 +147,7 @@ local function veteran_talk(npc, ch)
             say("I have a new task for you. Should be simple.")
             say("Yesterday a messenger arrived, telling us the next weapon and armor supply delivery "
                 .. "has reached the mountain path and is going to arrive soon.")
-            say("But they're not here yet though I've expected them before noon. "
+            say("But they're not here yet although I expected them before noon. "
                 .. "I wonder if they encountered some problem, maybe a breaking of an axle. "
                 .. "They always use the carts until they break...")
             say("I want you to go scouting and see if you can find them. "
@@ -344,4 +344,3 @@ patrol:assign_being(veteran)
 schedule_every(10, function() patrol:logic() end)
 
 create_trigger_by_name("Ambush trace", found_ambush_trace)
-

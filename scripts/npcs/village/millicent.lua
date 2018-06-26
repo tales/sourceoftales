@@ -49,7 +49,7 @@ local function woman_talk(npc, ch)
                 .. "we had to sell it and our fields to Arbert. If we don't work hard enough "
                 .. "he's going to kick us out and hire someone else instead.")
             say("Not that I blame him for that, times are hard and he has to pay his taxes too.")
-            say("Really, I'm not surprised that so many of the young people go and join those rebel group.")
+            say("Really, I'm not surprised that so many of the young people go and join that rebel group.")
         end
     end
 

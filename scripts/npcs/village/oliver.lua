@@ -33,7 +33,7 @@ local function man_talk(npc, ch)
     }
     local res = ask(choices)
     if res == 2 then
-        say("Oh, I'm just hanging around. I helped my father to bring his "
+        say("Oh, I'm just hanging around. I helped my father bring his "
             .. "goods in front of the casern and now I feel tired.")
         say("I don't like all this work. My father wants me to take over "
             .. "his shop when I'm a bit older, but all this "

@@ -27,7 +27,7 @@ local function woman_talk(npc, ch)
     patrol:block(ch)
 
     say("Did you already see Aquaria's shrine? You have to enter the "
-        .. "mountains north west of there, then go east and south again.")
+        .. "mountains north west of here, then go east and south again.")
     say("I still think it'd be easier to just build a bridge across the "
         .. "river. But Priestess Linota is against that.")
     say("She says she needs some distance to the mundane village life, "

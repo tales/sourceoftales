@@ -26,9 +26,9 @@ local patrol = NPCPatrol:new("Thea")
 local function woman_talk(npc, ch)
     patrol:block(ch)
 
-    say("I'm really worried about all these boys out there in the forest.")
+    say("I'm really worried about all those boys out there in the forest.")
     say("Fighting against the king is a rather serious thing. "
-        .. "I wonder if they're aware what danger they put themselves into.")
+        .. "I wonder if they're aware of what danger they're putting themselves into.")
     patrol:unblock(ch)
 end
 
@@ -37,4 +37,3 @@ local woman = create_npc_by_name("Thea", woman_talk)
 woman:set_base_attribute(16, 2)
 patrol:assign_being(woman)
 schedule_every(3, function() patrol:logic() end)
-

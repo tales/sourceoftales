@@ -44,7 +44,7 @@ local function instructor_talk(npc, ch)
             if tutorial_godwin_talk ~= "done" then
                 -- player should first talk to godwin!
                 say("New recruit? Please report to Veteran Godwin to get your "
-                    .. "first assignment. Though he will probably send you back to me to train you...")
+                    .. "first assignment. Though he will probably send you back to me so I can train you...")
                 return false
             elseif tutorial_fight == "done" then
                 if tutorial_equip ~= "done" then
@@ -81,7 +81,7 @@ local function instructor_talk(npc, ch)
             .. "Intelligence, Dexterity and Willpower.")
         say("Strength affects how strong you can strike.")
         say("Agility makes you move faster. The higher the value the "
-            .. "higher the chance to dodge an enemy's attack.")
+            .. "higher the chance you dodge an enemy's attack.")
         say("Vitality determines how fast you regenerate and how much damage "
             .. "you can take.")
         say("Intelligence affects how fast your spells regenerate.")
@@ -152,4 +152,3 @@ local function instructor_talk(npc, ch)
 end
 
 local instructor = create_npc_by_name("Instructor Alard", instructor_talk)
-

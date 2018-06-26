@@ -109,7 +109,7 @@ local function priestess_talk(npc, ch)
     local function explain_specials()
         say("To access your divine powers, press the button marked with a "
             .. "star. To use a spell, click on it. "
-            .. "After you used it, you'll have to wait a while until you "
+            .. "After you use it, you'll have to wait a while until you "
             .. "can ask your god for help again.")
             --LATER: change when client has shortcuts
     end
@@ -118,8 +118,8 @@ local function priestess_talk(npc, ch)
         say("Is there anything else I can help you with?")
         local choices = {
             "No, I'm all right.",
-            "I have some question about the gods.",
-            "Can you explain me how to use specials?"
+            "I have some questions about the gods.",
+            "Can you explain to me how to use specials?"
         }
         local res = ask(choices)
 
@@ -136,7 +136,7 @@ local function priestess_talk(npc, ch)
             .. "the skeletons in the cave come from. "
             .. "We need to stop this!")
         say("Did you find anything that can help us to get more "
-            .. "information about the undeads?")
+            .. "information about the undead?")
         local artifact = ch:inv_count("Unholy Crystals")
         if artifact > 0 then
             local choices = {
@@ -150,7 +150,7 @@ local function priestess_talk(npc, ch)
                     ch:inv_change("Unholy Crystals", -1)
                     say("Let me see...")
                     say("This is... very alarming. The order needs to be "
-                        .. "informed about that. I'll write a letter "
+                        .. "informed about this. I'll write a letter "
                         .. "explaining what we found out.")
                     say("Once the path above the mountains is open again, "
                         .. "please bring this letter to the shrine of "
@@ -158,7 +158,7 @@ local function priestess_talk(npc, ch)
                         -- LATER: remove the part about closed path after we
                         -- added more content
                     say("Your journey might be dangerous, so I'll grant "
-                        .. "you further knowledge in the gods powers.")
+                        .. "you further knowledge of the gods' powers.")
                     local magic = chr_get_quest(ch, "magic")
                     chr_set_quest(ch, "goldenfields_shrine", "done")
                     if magic == "fire" then
@@ -199,12 +199,12 @@ local function priestess_talk(npc, ch)
             }
             local res = ask(choices)
             if res == 1 then
-                say("I thank the gods you're save! It was irresponsible from "
+                say("I thank the gods you're safe! It was irresponsible for "
                     .. "me to send you there without proper protection.")
             end
         end
-        say("Oh, this are terrible news you're bringing. Listen, this "
-            .. "means someone found a way to prevent the soul's power to be "
+        say("Oh, this is terrible news you're bringing me. Listen, this "
+            .. "means someone found a way to prevent the soul's power from being "
             .. "taken by The Third God. This is a sacrilege against the gods!")
         say("As I said, there are records about a similiar thing happening "
             .. "a long while ago... ah, if I'd only remember what exactly "
@@ -247,7 +247,7 @@ local function priestess_talk(npc, ch)
 
     local function start_quest()
         say("Magic is a blessing from our gods. As a priestess, I "
-            .. "could asks the gods to recognize you and "
+            .. "could ask the gods to recognize you and "
             .. "aid you with their powers.")
         say("But this shouldn't be done frivolously, so I won't do "
             .. "that until I know you're worthy this blessing.")
@@ -261,7 +261,7 @@ local function priestess_talk(npc, ch)
                 .. "I shouldn't leave the shrine unless there's "
                 .. "an emergency. You could prove yourself by going "
                 .. "instead. But I warn you, it could be dangerous.")
-            say("If this doesn't discourage you, I'll explain you "
+            say("If this doesn't discourage you, I'll explain"
                 .. "the issue.")
             local choices = {
                 "I'm not afraid!",
